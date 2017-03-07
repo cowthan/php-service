@@ -1,0 +1,4089 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VERSION\n"
+"POT-Creation-Date: 2015-06-27 16:40+0000\n"
+"PO-Revision-Date: 2015-06-27 16:40+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE TEAM <EMAIL@ADDRESS>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:845
+msgid "Fluid"
+msgstr "Адаптивний"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:16
+msgid "You can also <a data-trigger=\"anywhere-upload-input-camera\">take a picture</a> or <a data-modal=\"form\" data-target=\"anywhere-upload-paste-url\">add image URLs</a>."
+msgstr "Ви також можете<a data-trigger=\"anywhere-upload-input-camera\">взяти зображення</a> або <a data-modal=\"form\" data-target=\"anywhere-upload-paste-url\">додати посилання на зображення</a>."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:845
+msgid "Fixed"
+msgstr "Фіксований"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:387
+#: ../../../app/themes/Peafowl/views/dashboard.php:670
+#: ../../../app/themes/Peafowl/views/dashboard.php:683
+msgid "This setting is disabled when personal mode is active."
+msgstr "Даний параметр відключений, коли персональний режим активний."
+
+#: ../../../app/themes/Peafowl/views/album.php:16
+#: ../../../app/themes/Peafowl/views/image.php:69
+msgid "This content is private"
+msgstr "Цей контент приватний"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:849
+msgid "Both methods use a fixed width but fluid method uses automatic heights."
+msgstr "Обидва методи використовують фіксовану ширину, але в адаптивному методі, висота обчислюється із збереженням пропорцій зображення."
+
+#: ../../../app/routes/route.image.php:127
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:99
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:85
+msgid "Embed codes"
+msgstr "Коди для вбудовування"
+
+#: ../../../app/lib/classes/class.album.php:318
+#: ../../../app/lib/classes/class.user.php:105
+#, php-format
+msgid "%s's images"
+msgstr "%s зображень"
+
+#: ../../../app/routes/route.dashboard.php:270
+#: ../../../app/themes/Peafowl/header.php:178
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:37
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:62
+msgid "All"
+msgstr "Всі"
+
+#: ../../../app/routes/route.dashboard.php:371
+msgid "Invalid watermark percentage"
+msgstr "Невірний відсоток водяного знаку"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:61
+msgid "Select category"
+msgstr "Виберіть категорію"
+
+#: ../../../app/routes/route.image.php:144
+msgid "Image ID"
+msgstr "ID зображення"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:18
+msgid "Album description"
+msgstr "Опис альбому"
+
+#: ../../../app/routes/route.image.php:148
+msgid "Uploader IP"
+msgstr "IP автора"
+
+#: ../../../app/routes/route.dashboard.php:376
+msgid "Invalid watermark opacity"
+msgstr "Невірна прозорість водяного знаку"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:19
+msgid "Brief description of this album"
+msgstr "Короткий опис цього альбому"
+
+#: ../../../app/routes/route.dashboard.php:275
+#: ../../../app/routes/route.image.php:149
+#: ../../../app/themes/Peafowl/views/dashboard.php:1488
+msgid "search content"
+msgstr "пошук вмісту"
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:41
+#: ../../../app/themes/Peafowl/snippets/form_category.php:3
+msgid "Category"
+msgstr "Категорія"
+
+#: ../../../app/routes/route.image.php:152
+msgid "Upload date"
+msgstr "Дата завантаження"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:22
+msgid "You can add more images <a data-trigger=\"anywhere-upload-input\">from your computer</a> or <a data-modal=\"form\" data-target=\"anywhere-upload-paste-url\">from image URLs</a>."
+msgstr "Ви можете додати більше зображень<a data-trigger=\"anywhere-upload-input\">зі свого комп'ютера</a> або <a data-modal=\"form\" data-target=\"anywhere-upload-paste-url\">з посилання на зображення</a>."
+
+#: ../../../app/themes/Peafowl/snippets/form_category.php:9
+msgid "No category"
+msgstr "Без категорії"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:154
+msgid "Edit image"
+msgstr "Редагувати зображення"
+
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:5
+msgid "Category name"
+msgstr "Назва категорії"
+
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:9
+msgid "Category URL key"
+msgstr "Ключ для посилання категорії"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:23
+msgid "You can <a data-trigger=\"anywhere-upload-input\">add more images</a> or <a data-modal=\"form\" data-target=\"anywhere-upload-paste-url\">add image URLs</a>."
+msgstr "Ви можете <a data-trigger=\"anywhere-upload-input\">додати більше зображень</a> або <a data-modal=\"form\" data-target=\"anywhere-upload-paste-url\">додати посилання на зображення</a>."
+
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:13
+msgid "Brief description of this category"
+msgstr "Короткий опис цьої категорії"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:167
+msgid "Resize image"
+msgstr "Змінити розмір зображення"
+
+#: ../../../app/lib/functions.render.php:300
+msgid "We use our own and third party cookies to improve your browsing experience and our services. If you continue using our website is understood that you accept this cookie policy."
+msgstr "Ми використовуємо наші власні і сторонні куки для поліпшення роботи нашого сайту в Інтернеті. Якщо ви продовжуєте використовувати наш сайт, відповідно ви приймаєте цю політику."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:148
+msgid "Remove"
+msgstr "Видалити"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:170
+#: ../../../app/themes/Peafowl/views/dashboard.php:429
+#: ../../../app/themes/Peafowl/views/dashboard.php:442
+#: ../../../app/themes/Peafowl/views/dashboard.php:502
+msgid "Width"
+msgstr "Ширина"
+
+#: ../../../app/routes/route.dashboard.php:235
+msgid "Additional settings"
+msgstr "Додаткові налаштування"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:20
+msgid "Edit or resize an image by clicking the image preview"
+msgstr "Відредагувати або змінити розмір зображення натиснувши на попередній перегляд"
+
+#: ../../../app/themes/Peafowl/mails/account-welcome.php:8
+msgid "By the way, here is you very own awesome profile page: <a href=\"%u\">%n</a>. Go ahead and customize it, its yours!."
+msgstr "До речі, ваша особиста сторінка розташована за адресою: <a href=\"%u\">%n</a>. Ви можете налаштувати її за своїм смаком. Вона ваша!"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:791
+msgid "Enable this if you want to show not safe content in listings. This setting doesn't affect administrators and can be overridden by user own settings."
+msgstr "Увімкніть, щоб відображати небезпечний зміст. Ця установка не впливає на адміністраторів і може бути скасована користувачем з власних настройок"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:173
+#: ../../../app/themes/Peafowl/views/dashboard.php:432
+#: ../../../app/themes/Peafowl/views/dashboard.php:505
+msgid "Height"
+msgstr "Висота"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:97
+msgid "Storage region"
+msgstr "Регіон сховища"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:21
+msgid "Edit or resize an image by touching the image preview"
+msgstr "Відредагувати або змінити розмір зображення торкнувшись попередній перегляд"
+
+#: ../../../app/themes/Peafowl/snippets/form_move_existing_album.php:15
+msgid "create new album"
+msgstr "створити новий альбом"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:911
+msgid "Main color"
+msgstr "Основний колір"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:176
+msgid "Note: Animated GIF images won't be resized."
+msgstr "Примітка: Анімовані GIF зображення не можуть міняти розмір"
+
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:19
+msgid "Enter the username or email address that you used to create your account to continue."
+msgstr "Для продовження введіть ім'я користувача або електронну адресу пошти яку ви використовували для створення вашого аккаунту."
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:8
+msgid "Untitled album"
+msgstr "Безіменний альбом"
+
+#: ../../../app/themes/Peafowl/views/account/awaiting-confirmation.php:9
+#, php-format
+msgid "An email to %s has been sent with instructions to activate your account. The activation link is only valid for 48 hours. If you don't receive the instructions try checking your junk or spam filters."
+msgstr "Інструкції з активації вашого аккаунта були відправлені на %s. Посилання для активації дійсне протягом 48 годин. Якщо ви не отримали повідомлення перевірте папку Спам."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:471
+msgid "Watermark user toggles"
+msgstr "Перемикач водяного знаку користувача"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:26
+#: ../../../app/themes/Peafowl/views/dashboard.php:341
+msgid "Public"
+msgstr "Публічне"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:794
+msgid "Blur NSFW content in listings"
+msgstr "Робити не чітким NSFW контент в списку"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:420
+msgid "\"Original\" will try to keep the image source name while \"Random\" will generate a random name. \"Mixed\" is a combination of both methods."
+msgstr "\"Оригінал\" спробує зберегти початкове ім'я зображення, \"Випадкове\" створить випадкове ім'я, \"Змішане\" - комбінація цих двох методів."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:158
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:186
+#: ../../../app/themes/Peafowl/snippets/form_album.php:18
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:12
+#: ../../../app/themes/Peafowl/snippets/form_image.php:4
+#: ../../../app/themes/Peafowl/snippets/form_image.php:28
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:9
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:15
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:104
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:108
+#: ../../../app/themes/Peafowl/views/dashboard.php:1133
+#: ../../../app/themes/Peafowl/views/dashboard.php:1143
+msgid "optional"
+msgstr "Не обов'язково"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:734
+msgid "Block image uploads by IP if the system notice a flood  behavior based on the number of uploads per time period. This setting doesn't affect administrators."
+msgstr "Блокувати завантаження зображень по IP, якщо на підставі кількості завантажень, система виявить підозру на флуд. Цей параметр не впливає на адміністраторів."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:912
+msgid "Hexadecimal color value"
+msgstr "Шістнадцяткове значення кольору"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:474
+msgid "Enable watermark on guest uploads"
+msgstr "Включити водяний знак для гостьових загрузок"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:187
+#: ../../../app/themes/Peafowl/snippets/form_image.php:29
+msgid "Brief description of this image"
+msgstr "Короткий опис зображення"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:800
+msgid "Enable this if you want to apply a blur effect on the NSFW images in listings."
+msgstr "Включіть це, якщо хочете використовувати розмите зображення для NSFW контенту в списку"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:752
+msgid "If enabled the system will send an email on flood incidents."
+msgstr "При включенні цієї опції, система буде повідомляти про флуд-атаках поштою."
+
+#: ../../../app/routes/route.explore.php:81
+#: ../../../app/themes/Peafowl/header.php:188
+#: ../../../app/themes/Peafowl/header.php:206
+#: ../../../app/themes/Peafowl/views/dashboard.php:280
+#: ../../../app/themes/Peafowl/views/explore.php:9
+msgid "Explore"
+msgstr "Огляд"
+
+#: ../../../app/install/template/ready.php:31
+#: ../../../app/themes/Peafowl/views/dashboard.php:1538
+msgid "From email address"
+msgstr "Адреса відправника"
+
+#: ../../../app/themes/Peafowl/views/account/email-needed.php:12
+msgid "A confirmation link will be sent to this email with details to activate your account."
+msgstr "На вашу адресу буде надіслане посилання для активації облікового запису."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:914
+#, php-format
+msgid "Use this to set the main theme color. Value must be in <a href=\"%s\" target=\"_blank\">hex format</a>."
+msgstr "Використовуйте це, щоб встановити основну колірну тему. Значення має бути в <a href=\"%s\" target=\"_blank\">Hex форматі</a>."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:479
+msgid "Enable watermark on user uploads"
+msgstr "Включити водяний знак для загрузок користувачів"
+
+#: ../../../app/themes/Peafowl/mails/account-change-email.php:4
+msgid "We received a request to change the email of your <a href=\"%u\">%n</a> account at %w."
+msgstr "Ми отримали запит на зміну адреси електронної пошти для вашого облікового запису <a href=\"%u\">%n</a> на %w."
+
+#: ../../../app/themes/Peafowl/pages/contact.php:11
+msgid "DMCA complaint"
+msgstr "DMCA скарга"
+
+#: ../../../app/themes/Peafowl/mails/account-change-email.php:6
+#, php-format
+msgid "To complete the process you must <a href=\"%s\">activate your email</a>."
+msgstr "Чтобы завершить это действие вы должны <a href=\"%s\">активировать свой Email</a>."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:320
+#: ../../../app/themes/Peafowl/views/dashboard.php:1229
+#, php-format
+msgid "Your user id is: %s"
+msgstr "Ваш id користувача: %s"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:25
+msgid "Invalid message"
+msgstr "Неправильне повідомлення"
+
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_admin_tools.php:3
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_admin_tools.php:4
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:3
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:4
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_admin_tools.php:3
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_admin_tools.php:4
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:3
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:4
+#: ../../../app/lib/chevereto.js:3464 ../../../app/lib/chevereto.min.js:162
+#: ../../../lib/Peafowl/peafowl.js:628 ../../../lib/Peafowl/peafowl.min.js:37
+msgid "Select"
+msgstr "Виділити"
+
+#: ../../../app/themes/Peafowl/mails/account-change-email.php:8
+#: ../../../app/themes/Peafowl/mails/account-confirm.php:8
+#: ../../../app/themes/Peafowl/mails/account-password-reset.php:8
+#, php-format
+msgid "Alternatively you can copy and paste the URL into your browser: <a href=\"%s\">%s</a>"
+msgstr "Також ви можете скопіювати цю адресу і вставити її у вікно браузера: <a href=\"%s\">%s</a>"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:918
+msgid "Top bar color"
+msgstr "Колір верхньої панелі"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:484
+msgid "Enable watermark on admin uploads"
+msgstr "Включити водяний знак для загрузок адміністратора"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:28
+msgid "Invalid subject"
+msgstr "Неправильна тема"
+
+#: ../../../app/themes/Peafowl/mails/account-change-email.php:10
+#: ../../../app/themes/Peafowl/mails/account-confirm.php:10
+#: ../../../app/themes/Peafowl/mails/account-password-reset.php:10
+msgid "If you didn't intend this just ignore this message."
+msgstr "Якщо ви не робили цього, просто ігноруйте це повідомлення."
+
+#: ../../../app/themes/Peafowl/pages/contact.php:36
+msgid "Invalid reCAPTCHA"
+msgstr "Неправильна reCAPTCHA"
+
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:52
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:47
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:37
+#: ../../../lib/Peafowl/peafowl.js:408 ../../../lib/Peafowl/peafowl.js:2261
+#: ../../../lib/Peafowl/peafowl.min.js:24
+#: ../../../lib/Peafowl/peafowl.min.js:126
+msgid "Submit"
+msgstr "Надіслати"
+
+#: ../../../app/themes/Peafowl/mails/account-change-email.php:12
+#: ../../../app/themes/Peafowl/mails/account-confirm.php:12
+#: ../../../app/themes/Peafowl/mails/account-password-reset.php:12
+#, php-format
+msgid "This request was made from IP: %s"
+msgstr "IP-адресу, з якої було зроблено запит:%s"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:81
+msgid "Mail error"
+msgstr "Помилка електронної пошти"
+
+#: ../../../app/themes/Peafowl/mails/account-confirm.php:4
+msgid "We received a request to register the %n account at %w."
+msgstr "Ми отримали запит на реєстрацію аккаунта %n на %w."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:921
+#: ../../../app/themes/Peafowl/views/dashboard.php:938
+#: ../../../app/themes/Peafowl/views/dashboard.php:1176
+msgid "Black"
+msgstr "Чорний"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:490
+msgid "Watermark file toggles"
+msgstr "Перемикач водяних знаків"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:93
+msgid "Message sent"
+msgstr "Повідомлення надіслано"
+
+#: ../../../app/themes/Peafowl/mails/account-confirm.php:6
+#, php-format
+msgid "To complete the process you must <a href=\"%s\">activate your account</a>."
+msgstr "Щоб завершити цю дію ви повинні <a href=\"%s\">активувати свій акаунт</a>."
+
+#: ../../../app/themes/Peafowl/pages/contact.php:137
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:76
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:80
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:92
+#: ../../../app/themes/Peafowl/views/dashboard.php:1815
+#: ../../../app/themes/Peafowl/views/settings.php:429
+#: ../../../lib/Peafowl/peafowl.js:2263
+#: ../../../lib/Peafowl/peafowl.min.js:126
+msgid "cancel"
+msgstr "скасувати"
+
+#: ../../../app/themes/Peafowl/mails/account-password-reset.php:4
+msgid "We received a request to reset the password for your <a href=\"%u\">%n</a> account."
+msgstr "Ми отримали запит на скидання пароля вашого акаунта <a href=\"%u\">%n</a>."
+
+#: ../../../app/themes/Peafowl/pages/contact.php:99
+msgid "If you want to send a message fill the form below."
+msgstr "Якщо ви хочете відправити повідомлення, заповніть форму нижче."
+
+#: ../../../app/themes/Peafowl/header.php:285
+#: ../../../app/themes/Peafowl/header.php:332
+#: ../../../app/themes/Peafowl/pages/contact.php:137
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:76
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:80
+#: ../../../app/themes/Peafowl/snippets/form_album.php:12
+#: ../../../app/themes/Peafowl/snippets/form_move_existing_album.php:15
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:13
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:32
+#: ../../../app/themes/Peafowl/views/account/awaiting-confirmation.php:10
+#: ../../../app/themes/Peafowl/views/account/email-changed.php:11
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:16
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:26
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:16
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:13
+#: ../../../app/themes/Peafowl/views/dashboard.php:1815
+#: ../../../app/themes/Peafowl/views/login.php:22
+#: ../../../app/themes/Peafowl/views/login.php:62
+#: ../../../app/themes/Peafowl/views/settings.php:320
+#: ../../../app/themes/Peafowl/views/settings.php:429
+#: ../../../app/themes/Peafowl/views/signup.php:22
+#: ../../../app/themes/Peafowl/views/signup.php:73
+#: ../../../lib/Peafowl/peafowl.js:483 ../../../lib/Peafowl/peafowl.js:2262
+#: ../../../lib/Peafowl/peafowl.min.js:30
+#: ../../../lib/Peafowl/peafowl.min.js:126
+msgid "or"
+msgstr "або"
+
+#: ../../../app/themes/Peafowl/mails/account-password-reset.php:6
+#, php-format
+msgid "To reset your password <a href=\"%s\">follow this link</a>."
+msgstr "Щоб скинути пароль, <a href=\"%s\">перейдіть за цим посиланням</a>"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:921
+#: ../../../app/themes/Peafowl/views/dashboard.php:939
+#: ../../../app/themes/Peafowl/views/dashboard.php:1177
+msgid "White"
+msgstr "Білий"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:101
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:4
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:3
+#: ../../../app/themes/Peafowl/views/dashboard.php:579
+#: ../../../app/themes/Peafowl/views/dashboard.php:1471
+#: ../../../app/themes/Peafowl/views/settings.php:330
+msgid "Name"
+msgstr "Ім'я"
+
+#: ../../../app/themes/Peafowl/mails/account-welcome.php:4
+msgid "Hi %n, welcome to %w"
+msgstr "Привіт %n, Ласкаво просимо на %w"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:102
+msgid "Your name"
+msgstr "Ваше ім'я"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:111
+msgid "Subject"
+msgstr "Тема"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:499
+msgid "Minimum image size needed to apply watermark"
+msgstr "Мінімальний розмір файлу потрібний для встановлення водяного знаку"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:125
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:15
+#: ../../../app/themes/Peafowl/views/dashboard.php:630
+msgid "Message"
+msgstr "Повідомлення"
+
+#: ../../../app/themes/Peafowl/mails/account-welcome.php:10
+msgid "Thank you for joining"
+msgstr "Спасибі за те, що ви з нами"
+
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_admin_tools.php:7
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:7
+msgid "Toggle unsafe flag"
+msgstr "Переключити в небезпечне"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:137
+msgid "Send message"
+msgstr "Надіслати повідомлення"
+
+#: ../../../app/themes/Peafowl/mails/footer.php:3
+msgid "This email was sent from %w %u"
+msgstr "Це повідомлення було відправлено з %w %u"
+
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:15
+msgid "An email with instructions to reset your password has been sent to the registered email address. If you don't receive the instructions try checking your junk or spam filters."
+msgstr "Інструкції по скиданню паролю були надіслані на вашу адресу. Якщо ви їх не отримали, перевірте папку Спам."
+
+#: ../../../app/themes/Peafowl/pages/contact.php:10
+msgid "General questions/comments"
+msgstr "Загальні питання / коментарі"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:929
+msgid "Top bar button color"
+msgstr "Колір кнопки верхньої панелі"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:510
+msgid "Images smaller than this won't be watermarked. Use zero (0) to don't set a minimum image size limit."
+msgstr "Зображення меньше за ... не буде ставитись водяний знак. Використовуйте 0 для того щоб не встановлювати мінімальний розмір зображення"
+
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:16
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:26
+msgid "Resend instructions"
+msgstr "Повторити відправку інструкцій"
+
+#: ../../../app/lib/classes/class.album.php:94
+msgid "Untitled"
+msgstr "Безіменний"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:99
+msgid "We will be in touch soon."
+msgstr "Ми скоро з вами зв'яжемося."
+
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:24
+msgid "A previous email has been sent with instructions to reset your password. If you did not receive the instructions try checking your junk or spam filters."
+msgstr "Вам вже було надіслано повідомлення з інструкціями щодо скидання пароля. Якщо ви не отримали повідомлення, перевірте папку Спам."
+
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:32
+msgid "Enter your username or the email address that you used to create your account."
+msgstr "Введіть ім'я користувача та адресу електронної пошти, використані при реєстрації."
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:15
+msgid "Your password has been changed. You can now try logging in using your new password."
+msgstr "Пароль успішно змінений. Ви можете увійти використовуючи ваш новий пароль."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:933
+#: ../../../app/themes/Peafowl/views/dashboard.php:1171
+msgid "Blue"
+msgstr "Синій"
+
+#: ../../../app/routes/route.settings.php:402
+#: ../../../app/themes/Peafowl/views/dashboard.php:1838
+#: ../../../app/themes/Peafowl/views/settings.php:443
+msgid "Changes have been saved."
+msgstr "Зміни збережені."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:40
+msgid "No <span data-text=\"queue-objects\">images</span> have been uploaded"
+msgstr "Не було завантажено жодного <span data-text=\"queue-objects\">зображення</span>"
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:16
+msgid "Login now"
+msgstr "Увійти зараз"
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:22
+msgid "Enter the new password that you want to use."
+msgstr "Введіть новий пароль"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:934
+#: ../../../app/themes/Peafowl/views/dashboard.php:1172
+msgid "Green"
+msgstr "Зелений"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:543
+msgid "Watermark percentage"
+msgstr "Відсоток водяного знаку"
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:28
+msgid "New Password"
+msgstr "Новий пароль"
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:29
+#: ../../../app/themes/Peafowl/views/settings.php:272
+msgid "Enter your new password"
+msgstr "Введіть ваш новий пароль"
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:34
+#: ../../../app/themes/Peafowl/views/settings.php:294
+msgid "Confirm password"
+msgstr "Підтвердіть пароль"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:935
+#: ../../../app/themes/Peafowl/views/dashboard.php:1173
+msgid "Orange"
+msgstr "Помаранчевий"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:548
+msgid "Watermark percentual size relative to the target image area. Values 1 to 100."
+msgstr "Відношення розміру водяного знаку по відношенню до розміру картинки. Від 1 до 100."
+
+#: ../../../app/lib/functions.php:67
+#, php-format
+msgid "%s ago"
+msgstr "%s тому"
+
+#: ../../../app/lib/functions.php:67
+msgid "moments ago"
+msgstr "хвилин тому"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:493
+msgid "Enable watermark on GIF image uploads"
+msgstr "Включити водяний знак на GIF зображенні при загрузці"
+
+#: ../../../app/themes/Peafowl/header.php:339
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:88
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:89
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:122
+#: ../../../app/themes/Peafowl/views/dashboard.php:94
+#: ../../../app/themes/Peafowl/views/dashboard.php:95
+#: ../../../app/themes/Peafowl/views/settings.php:137
+#: ../../../app/themes/Peafowl/views/settings.php:138
+#: ../../../app/themes/Peafowl/views/signup.php:39
+#: ../../../app/themes/Peafowl/views/signup.php:40
+msgid "Username"
+msgstr "Ім'я користувача"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:13
+msgid "Drag and drop images here to upload"
+msgstr "Перетягніть сюди зображення для завантаження"
+
+#: ../../../app/routes/route.account.php:73
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:8
+msgid "Reset password"
+msgstr "Скинути пароль"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:520
+msgid "You will get best results with plain logos with drop shadow. You can use a large image if the file size is not that big (recommended max. is 16KB). Must be a PNG."
+msgstr "Ви отримаєте кращі результати з простих логотипів з тінню. Ви можете використовувати збільшене зображення, якщо розмір файлу не такий великий (рекомендується макс. 16KB). Повинно бути PNG."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:15
+msgid "You can also <a data-trigger=\"anywhere-upload-input\">browse from your computer</a> or <a data-modal=\"form\" data-target=\"anywhere-upload-paste-url\">add image URLs</a>."
+msgstr "Ви також можете завантажити зображення <a data-trigger=\"anywhere-upload-input\">зі свого комп'ютера</a> або вказати <a data-modal=\"form\" data-target=\"anywhere-upload-paste-url\">прямі посилання</a>."
+
+#: ../../../app/routes/route.account.php:74
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:8
+msgid "Resend account activation"
+msgstr "Повторити відправку посилання для активації"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:27
+msgid "Uploading <span data-text=\"queue-size\">0</span> <span data-text=\"queue-objects\">images</span>"
+msgstr "Завантажується <span data-text=\"queue-size\">0</span> <span data-text=\"queue-objects\">зображення</span>"
+
+#: ../../../app/routes/route.account.php:76
+#: ../../../app/themes/Peafowl/views/account/email-needed.php:8
+msgid "Add your email address"
+msgstr "Додати адресу електронної пошти"
+
+#: ../../../app/routes/route.account.php:77
+#: ../../../app/themes/Peafowl/views/account/email-changed.php:7
+msgid "Email changed"
+msgstr "Адреса електронної пошти змінена"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:28
+msgid "The queue is being uploaded. It will take just a few seconds to complete."
+msgstr "Завантажується черга зображень. Це може зайняти деякий час."
+
+#: ../../../app/routes/route.account.php:95
+#: ../../../app/routes/route.login.php:71
+#: ../../../app/routes/route.settings.php:136
+#: ../../../app/routes/route.signup.php:73
+msgid "The reCAPTCHA wasn't entered correctly"
+msgstr "Ви невірно ввели капчу"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:32
+msgid "Upload complete"
+msgstr "Завантаження завершено"
+
+#: ../../../app/routes/route.account.php:119
+#: ../../../app/routes/route.account.php:164
+#: ../../../app/routes/route.account.php:271
+msgid "Invalid Username/Email"
+msgstr "Невірне Ім'я користувача / Email"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:34
+#, php-format
+msgid "Content added to <a data-text=\"upload-target\" data-link=\"upload-target\" href=\"%s\">public stream</a>. You can <a data-modal=\"form\" data-target=\"form-uploaded-create-album\">create an album</a> or <a data-modal=\"form\" data-target=\"form-uploaded-move-album\">move the <span data-text=\"queue-objects\">images</span></a> to an existing album."
+msgstr "Вміст добавлено в<a data-text=\"upload-target\" data-link=\"upload-target\" href=\"%s\">загальний доступ</a>. ви можете<a data-modal=\"form\" data-target=\"form-uploaded-create-album\">створити альбом</a> або <a data-modal=\"form\" data-target=\"form-uploaded-move-album\">перемістити <span data-text=\"queue-objects\">зображення</span></a> у вже існуючий."
+
+#: ../../../app/routes/route.account.php:140
+#: ../../../app/routes/route.account.php:299
+#: ../../../app/routes/route.account.php:321
+#: ../../../app/routes/route.account.php:388
+#: ../../../app/routes/route.json.php:24 ../../../app/routes/route.json.php:37
+#: ../../../app/routes/route.json.php:49
+#: ../../../app/routes/route.json.php:533
+#: ../../../app/routes/route.json.php:595
+#: ../../../app/routes/route.json.php:644
+#: ../../../app/routes/route.json.php:691
+#: ../../../app/themes/Peafowl/pages/contact.php:17
+#: ../../../app/themes/Peafowl/views/request-denied.php:8
+msgid "Request denied"
+msgstr "У запиті відмовлено"
+
+#: ../../../app/routes/route.account.php:145
+msgid "Account needs to be activated to use this feature"
+msgstr "Для використання цієї функції, аккаунт повинен бути активований"
+
+#: ../../../app/routes/route.dashboard.php:154
+msgid "update"
+msgstr "оновлення"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:41
+msgid "Some errors have occured and the system couldn't process your request."
+msgstr "У процесі обробки запиту сталася помилка."
+
+#: ../../../app/routes/route.account.php:151
+msgid "Account already activated"
+msgstr "Аккаунт вже активований"
+
+#: ../../../app/routes/route.dashboard.php:640
+msgid "Invalid URL"
+msgstr "Невірне посилання"
+
+#: ../../../app/routes/route.account.php:192
+msgid "Allow up to 15 minutes for the email. You can try again later."
+msgstr "Зачекайте повідомлення хоча б 15 хвилин. Після цього спробуйте ще раз."
+
+#: ../../../app/routes/route.album.php:151
+msgid "%a album hosted in %w"
+msgstr "%a альбом розміщений в %w"
+
+#: ../../../app/lib/classes/class.image.php:849
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:76
+msgid "Private upload"
+msgstr "Приховане завантаження"
+
+#: ../../../app/routes/route.account.php:231
+#, php-format
+msgid "Reset your password at %s"
+msgstr "Скинути пароль на %s"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:80
+msgid "Uploading"
+msgstr "Завантажується"
+
+#: ../../../app/routes/route.account.php:233
+#: ../../../app/routes/route.account.php:454
+#: ../../../app/routes/route.settings.php:269
+#: ../../../app/routes/route.signup.php:193
+#, php-format
+msgid "Confirmation required at %s"
+msgstr "Підтвердження реєстрації на %s"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:80
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:93
+msgid "cancel remaining"
+msgstr "скасувати решту"
+
+#: ../../../app/routes/route.account.php:342
+#: ../../../app/routes/route.signup.php:216
+#, php-format
+msgid "Welcome to %s"
+msgstr "Ласкаво просимо на %s"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:925
+msgid "If you set this to \"white\" the top bar and all the black tones will be changed to white tones."
+msgstr "Якщо ви встановите колір верхньої панелі на \"білий\" тоді всі темні тони будуть замінені на білі тони."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:85
+msgid "Note: Some images couldn't be uploaded."
+msgstr "Увага: Деякі зображення не були завантажені."
+
+#: ../../../app/install/installer.php:939
+#: ../../../app/routes/route.account.php:357
+#: ../../../app/routes/route.json.php:556
+#: ../../../app/routes/route.settings.php:309
+#: ../../../app/routes/route.signup.php:103
+msgid "Invalid password"
+msgstr "Неправильний пароль"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:85
+msgid "learn more"
+msgstr "детальніше"
+
+#: ../../../app/routes/route.account.php:360
+#: ../../../app/routes/route.settings.php:313
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:36
+#: ../../../app/themes/Peafowl/views/settings.php:279
+#: ../../../app/themes/Peafowl/views/settings.php:296
+#: ../../../app/lib/chevereto.js:1441 ../../../app/lib/chevereto.min.js:55
+msgid "Passwords don't match"
+msgstr "Паролі не збігаються"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:86
+msgid "Check the <a data-modal=\"simple\" data-target=\"failed-upload-result\">error report</a> for more information."
+msgstr "Перевірте <a data-modal=\"simple\" data-target=\"failed-upload-result\">звіт про помилки</a> для отримання більш докладної інформації."
+
+#: ../../../app/install/installer.php:933
+#: ../../../app/install/installer.php:942
+#: ../../../app/install/installer.php:945
+#: ../../../app/routes/route.account.php:414
+#: ../../../app/routes/route.json.php:551
+#: ../../../app/routes/route.settings.php:179
+#: ../../../app/routes/route.signup.php:97
+#: ../../../app/themes/Peafowl/pages/contact.php:31
+msgid "Invalid email"
+msgstr "Невірна адреса електронної пошти"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:89
+msgid "max"
+msgstr "макс."
+
+#: ../../../app/routes/route.account.php:422
+#: ../../../app/routes/route.json.php:571
+#: ../../../app/routes/route.settings.php:229
+#: ../../../app/routes/route.signup.php:141
+msgid "Email already being used"
+msgstr "Адреса вже використовується"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:91
+msgid "close"
+msgstr "закрити"
+
+#: ../../../app/routes/route.account.php:508
+#: ../../../app/routes/route.signup.php:236
+#: ../../../app/themes/Peafowl/pages/contact.php:146
+#: ../../../app/lib/chevereto.js:264 ../../../lib/Peafowl/peafowl.js:195
+#: ../../../lib/Peafowl/peafowl.min.js:10
+msgid "Check the errors in the form to continue."
+msgstr "Перед продовження перевірте форму на наявність помилок"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:6
+msgid "Links"
+msgstr "Посилання"
+
+#: ../../../app/routes/route.dashboard.php:38
+msgid "Stats"
+msgstr "Статистика"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:9
+msgid "Viewer links"
+msgstr "Посилання на перегляд"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:14
+msgid "Direct links"
+msgstr "Прямі посилання"
+
+#: ../../../app/routes/route.dashboard.php:40
+#: ../../../app/routes/route.search.php:90
+#: ../../../app/routes/route.user.php:205
+#: ../../../app/themes/Peafowl/header.php:368
+#: ../../../app/themes/Peafowl/views/settings.php:77
+#: ../../../app/themes/Peafowl/views/user.php:125
+msgid "Albums"
+msgstr "Альбоми"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:21
+msgid "HTML Codes"
+msgstr "HTML коди"
+
+#: ../../../app/routes/route.dashboard.php:41
+#: ../../../app/routes/route.dashboard.php:222
+#: ../../../app/routes/route.search.php:97
+msgid "Users"
+msgstr "Користувачі"
+
+#: ../../../app/routes/route.dashboard.php:42
+#: ../../../app/routes/route.settings.php:484
+#: ../../../app/themes/Peafowl/header.php:369
+msgid "Settings"
+msgstr "Налаштування"
+
+#: ../../../app/routes/route.dashboard.php:153
+msgid "Chevereto version"
+msgstr "Версія Chevereto"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:34
+msgid "HTML medium linked"
+msgstr "HTML середнього розміру з посиланням"
+
+#: ../../../app/routes/route.dashboard.php:161
+msgid "PHP version"
+msgstr "Версія PHP"
+
+#: ../../../app/lib/classes/class.storage.php:408
+#: ../../../app/lib/classes/class.storage.php:468
+msgid "Can't verify storage credentials."
+msgstr "Не вдалося перевірити облікові дані для зберігання."
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:39
+msgid "HTML thumbnail linked"
+msgstr "HTML код мініатюри з посиланням"
+
+#: ../../../app/routes/route.dashboard.php:165
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:114
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:115
+msgid "Server"
+msgstr "Сервер"
+
+#: ../../../app/routes/route.dashboard.php:229
+msgid "External storage"
+msgstr "Зовнішнє сховище"
+
+#: ../../../app/routes/route.dashboard.php:39
+#: ../../../app/routes/route.search.php:83
+#: ../../../app/routes/route.user.php:199
+#: ../../../app/themes/Peafowl/views/settings.php:73
+#: ../../../app/themes/Peafowl/views/user.php:125
+msgid "Images"
+msgstr "Зображення"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:46
+msgid "BBCodes"
+msgstr "BB-коди"
+
+#: ../../../app/routes/route.dashboard.php:169
+msgid "MySQL version"
+msgstr "Версія MySQL"
+
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:9
+msgid "Only letters, numbers, and hyphens"
+msgstr "Тільки букви, цифри та дефіси"
+
+#: ../../../app/routes/route.dashboard.php:173
+msgid "MySQL server info"
+msgstr "Інформація про сервер MySQL"
+
+#: ../../../app/loader.php:177
+msgid "You have been forbidden to use this website."
+msgstr "Вам заборонено користуватися цим сайтом."
+
+#: ../../../app/routes/route.dashboard.php:177
+msgid "GD Library"
+msgstr "Бібліотека GD"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:4
+msgid "Storage name"
+msgstr "Назва сховища"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:64
+msgid "BBCode thumbnail linked"
+msgstr "BB-код мініатюри з посиланням"
+
+#: ../../../app/routes/route.dashboard.php:181
+msgid "File uploads"
+msgstr "Завантаження файлів"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:7
+msgid "API"
+msgstr "API"
+
+#: ../../../app/routes/route.dashboard.php:233
+msgid "IP bans"
+msgstr "IP блокування"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:192
+msgid "Add image URLs"
+msgstr "Додайте посилання на зображення"
+
+#: ../../../app/routes/route.dashboard.php:182
+#: ../../../app/themes/Peafowl/views/dashboard.php:273
+#: ../../../app/themes/Peafowl/views/dashboard.php:283
+#: ../../../app/themes/Peafowl/views/dashboard.php:293
+#: ../../../app/themes/Peafowl/views/dashboard.php:374
+#: ../../../app/themes/Peafowl/views/dashboard.php:383
+#: ../../../app/themes/Peafowl/views/dashboard.php:454
+#: ../../../app/themes/Peafowl/views/dashboard.php:666
+#: ../../../app/themes/Peafowl/views/dashboard.php:679
+#: ../../../app/themes/Peafowl/views/dashboard.php:701
+#: ../../../app/themes/Peafowl/views/dashboard.php:710
+#: ../../../app/themes/Peafowl/views/dashboard.php:739
+#: ../../../app/themes/Peafowl/views/dashboard.php:749
+#: ../../../app/themes/Peafowl/views/dashboard.php:788
+#: ../../../app/themes/Peafowl/views/dashboard.php:797
+#: ../../../app/themes/Peafowl/views/dashboard.php:806
+#: ../../../app/themes/Peafowl/views/dashboard.php:816
+#: ../../../app/themes/Peafowl/views/dashboard.php:962
+#: ../../../app/themes/Peafowl/views/dashboard.php:1017
+#: ../../../app/themes/Peafowl/views/dashboard.php:1027
+#: ../../../app/themes/Peafowl/views/dashboard.php:1039
+#: ../../../app/themes/Peafowl/views/dashboard.php:1051
+#: ../../../app/themes/Peafowl/views/dashboard.php:1061
+#: ../../../app/themes/Peafowl/views/dashboard.php:1071
+#: ../../../app/themes/Peafowl/views/dashboard.php:1083
+#: ../../../app/themes/Peafowl/views/dashboard.php:1190
+#: ../../../app/themes/Peafowl/views/dashboard.php:1351
+#: ../../../app/themes/Peafowl/views/dashboard.php:1360
+#: ../../../app/themes/Peafowl/views/dashboard.php:1370
+#: ../../../app/themes/Peafowl/views/dashboard.php:1405
+#: ../../../app/themes/Peafowl/views/dashboard.php:1415
+#: ../../../app/themes/Peafowl/views/dashboard.php:1605
+#: ../../../app/themes/Peafowl/views/dashboard.php:1631
+#: ../../../app/themes/Peafowl/views/dashboard.php:1664
+#: ../../../app/themes/Peafowl/views/dashboard.php:1690
+#: ../../../app/themes/Peafowl/views/dashboard.php:1716
+#: ../../../app/themes/Peafowl/views/dashboard.php:1735
+#: ../../../app/themes/Peafowl/views/dashboard.php:1780
+#: ../../../app/themes/Peafowl/views/dashboard.php:1802
+msgid "Enabled"
+msgstr "Вкл."
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:58
+msgid "Storage bucket"
+msgstr "Корзина сховища"
+
+#: ../../../app/routes/route.dashboard.php:226
+msgid "Banners"
+msgstr "Банери"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:194
+msgid "Add the image URLs here"
+msgstr "Додайте сюди посилання на зображення"
+
+#: ../../../app/routes/route.dashboard.php:182
+#: ../../../app/themes/Peafowl/views/dashboard.php:273
+#: ../../../app/themes/Peafowl/views/dashboard.php:283
+#: ../../../app/themes/Peafowl/views/dashboard.php:293
+#: ../../../app/themes/Peafowl/views/dashboard.php:374
+#: ../../../app/themes/Peafowl/views/dashboard.php:383
+#: ../../../app/themes/Peafowl/views/dashboard.php:454
+#: ../../../app/themes/Peafowl/views/dashboard.php:666
+#: ../../../app/themes/Peafowl/views/dashboard.php:679
+#: ../../../app/themes/Peafowl/views/dashboard.php:701
+#: ../../../app/themes/Peafowl/views/dashboard.php:710
+#: ../../../app/themes/Peafowl/views/dashboard.php:739
+#: ../../../app/themes/Peafowl/views/dashboard.php:749
+#: ../../../app/themes/Peafowl/views/dashboard.php:788
+#: ../../../app/themes/Peafowl/views/dashboard.php:797
+#: ../../../app/themes/Peafowl/views/dashboard.php:806
+#: ../../../app/themes/Peafowl/views/dashboard.php:816
+#: ../../../app/themes/Peafowl/views/dashboard.php:962
+#: ../../../app/themes/Peafowl/views/dashboard.php:1017
+#: ../../../app/themes/Peafowl/views/dashboard.php:1027
+#: ../../../app/themes/Peafowl/views/dashboard.php:1039
+#: ../../../app/themes/Peafowl/views/dashboard.php:1051
+#: ../../../app/themes/Peafowl/views/dashboard.php:1061
+#: ../../../app/themes/Peafowl/views/dashboard.php:1071
+#: ../../../app/themes/Peafowl/views/dashboard.php:1083
+#: ../../../app/themes/Peafowl/views/dashboard.php:1190
+#: ../../../app/themes/Peafowl/views/dashboard.php:1351
+#: ../../../app/themes/Peafowl/views/dashboard.php:1360
+#: ../../../app/themes/Peafowl/views/dashboard.php:1370
+#: ../../../app/themes/Peafowl/views/dashboard.php:1405
+#: ../../../app/themes/Peafowl/views/dashboard.php:1415
+#: ../../../app/themes/Peafowl/views/dashboard.php:1605
+#: ../../../app/themes/Peafowl/views/dashboard.php:1631
+#: ../../../app/themes/Peafowl/views/dashboard.php:1664
+#: ../../../app/themes/Peafowl/views/dashboard.php:1690
+#: ../../../app/themes/Peafowl/views/dashboard.php:1716
+#: ../../../app/themes/Peafowl/views/dashboard.php:1735
+#: ../../../app/themes/Peafowl/views/dashboard.php:1780
+#: ../../../app/themes/Peafowl/views/dashboard.php:1802
+msgid "Disabled"
+msgstr "Викл."
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:63
+msgid "Key"
+msgstr "Ключ"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:211
+msgid "Website keywords"
+msgstr "Ключові слова"
+
+#: ../../../app/routes/route.json.php:471
+#: ../../../app/routes/route.json.php:662
+msgid "IP address already banned"
+msgstr "IP адреса вже заблокована"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:209
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:27
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:31
+msgid "Create album"
+msgstr "створити альбом"
+
+#: ../../../app/routes/route.dashboard.php:185
+msgid "Max. upload size"
+msgstr "Макс. розмір файлу"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:64
+msgid "Storage key"
+msgstr "Ключ сховища"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:210
+msgid "The uploaded content will be moved to this newly created album. You can also move the content to an <a class=\"modal-switch\" data-switch=\"move-existing-album\">existing album</a>."
+msgstr "Завантажений вміст буде поміщено в новий альбом. Ви також можете перемістити вміст в <a class=\"modal-switch\" data-switch=\"move-existing-album\">існуючий альбом</a>."
+
+#: ../../../app/routes/route.dashboard.php:189
+msgid "Max. post size"
+msgstr "Макс. розмір POST-запиту"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:67
+msgid "Secret"
+msgstr "Секретний ключ"
+
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:4
+msgid "IP address"
+msgstr "IP адреса"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:221
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:28
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:46
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:70
+msgid "Move to album"
+msgstr "Перемістити до альбому"
+
+#: ../../../app/routes/route.dashboard.php:193
+msgid "Max. execution time"
+msgstr "Макс. час виконання"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:68
+msgid "Storage secret"
+msgstr "Секретний ключ сховища"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:514
+msgid "Watermark image"
+msgstr "Зображення захисного знаку"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:222
+msgid "Select an existing album to move the uploaded content. You can also <a class=\"modal-switch\" data-switch=\"move-new-album\">create a new album</a> and move the content there."
+msgstr "Виберіть існуючий альбом для переміщення завантаженого вмісту. Ви також можете <a class=\"modal-switch\" data-switch=\"move-new-album\">створити новий альбом</a> і перемістити вміст в нього."
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:139
+msgid "Storage URL"
+msgstr "Адреса сховища"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:238
+msgid "Error report"
+msgstr "Звіт про помилки"
+
+#: ../../../app/routes/route.dashboard.php:197
+msgid "Memory limit"
+msgstr "Обмеження пам'яті"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:178
+#: ../../../app/themes/Peafowl/views/dashboard.php:182
+msgid "Add storage"
+msgstr "Додати сховище"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:523
+msgid "Watermark position"
+msgstr "Положення захисного знаку"
+
+#: ../../../app/routes/route.dashboard.php:217
+#: ../../../app/themes/Peafowl/views/settings.php:336
+msgid "Website"
+msgstr "Сайт"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:588
+#, php-format
+msgid "Do you really want to delete the %s category? This can't be undone."
+msgstr "Ви дійсно хочете видалити категорію %s? Ця дія незворотня"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:527
+msgid "left top"
+msgstr "зліва зверху"
+
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:9
+msgid "Expiration date"
+msgstr "Дата закінчення"
+
+#: ../../../app/themes/Peafowl/snippets/form_move_existing_album.php:3
+msgid "Existing album"
+msgstr "Існуючий альбом"
+
+#: ../../../app/routes/route.dashboard.php:220
+msgid "Image upload"
+msgstr "Завантаж. і зберігання"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:528
+msgid "left center"
+msgstr "зліва по центру"
+
+#: ../../../app/routes/route.dashboard.php:361
+msgid "Invalid thumb height"
+msgstr "Неправильна висота мініатюри"
+
+#: ../../../app/themes/Peafowl/snippets/form_move_existing_album.php:9
+#: ../../../app/lib/chevereto.js:2609 ../../../app/lib/chevereto.js:3549
+#: ../../../app/lib/chevereto.min.js:119 ../../../app/lib/chevereto.min.js:167
+msgid "private"
+msgstr "приховане"
+
+#: ../../../app/routes/route.dashboard.php:223
+#: ../../../app/themes/Peafowl/views/dashboard.php:736
+msgid "Flood protection"
+msgstr "Захист від флуду"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:529
+msgid "left bottom"
+msgstr "зліва знизу"
+
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:10
+msgid "YYYY-MM-DD HH:MM:SS"
+msgstr "YYYY-MM-DD HH:MM:SS"
+
+#: ../../../app/routes/route.dashboard.php:366
+msgid "Invalid medium width"
+msgstr "Неправильна ширина зображення середнього розміру"
+
+#: ../../../app/themes/Peafowl/snippets/image_album_slice.php:14
+msgid "view more"
+msgstr "показати ще"
+
+#: ../../../app/routes/route.dashboard.php:224
+#: ../../../app/themes/Peafowl/views/dashboard.php:884
+msgid "Theme"
+msgstr "Тема"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:530
+msgid "center top"
+msgstr "по центру зверху"
+
+#: ../../../app/lib/classes/class.image.php:1108
+msgid "view"
+msgid_plural "views"
+msgstr[0] "перегляд"
+msgstr[1] "перегляда"
+msgstr[2] "переглядів"
+
+#: ../../../app/routes/route.dashboard.php:381
+msgid "Invalid theme"
+msgstr "Неправильний стиль"
+
+#: ../../../app/themes/Peafowl/snippets/listing.php:22
+#: ../../../app/themes/Peafowl/snippets/templates_content_listing.php:6
+#: ../../../app/themes/Peafowl/snippets/templates_content_listing.php:9
+msgid "Load more"
+msgstr "Завантажити ще"
+
+#: ../../../app/routes/route.dashboard.php:227
+msgid "System"
+msgstr "Система"
+
+#: ../../../app/routes/route.dashboard.php:154
+msgid "check for updates"
+msgstr "перевірити оновлення"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:531
+msgid "center center"
+msgstr "по центру"
+
+#: ../../../app/lib/classes/class.listing.php:238
+#: ../../../app/routes/route.album.php:169
+#: ../../../app/themes/Peafowl/snippets/breadcrum_owner_card.php:25
+#: ../../../app/themes/Peafowl/views/album.php:34
+#: ../../../app/themes/Peafowl/views/user.php:87
+#: ../../../app/lib/chevereto.js:2108 ../../../app/lib/chevereto.min.js:92
+msgid "image"
+msgid_plural "images"
+msgstr[0] "зображення"
+msgstr[1] "зображень"
+msgstr[2] "зображень"
+
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:10
+msgid "Example"
+msgstr "Приклад"
+
+#: ../../../app/routes/route.dashboard.php:421
+msgid "Invalid email mode"
+msgstr "Неправильний режим електронної пошти"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:10
+msgid "Select all"
+msgstr "виділити все"
+
+#: ../../../app/routes/route.dashboard.php:230
+#: ../../../app/themes/Peafowl/views/dashboard.php:99
+msgid "Email"
+msgstr "Електронна пошта"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:276
+msgid "Enable this if you want to allow the search feature."
+msgstr "Ввімкніть цю опцію, щоб дозволити пошук."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:532
+msgid "center bottom"
+msgstr "по центру знизу"
+
+#: ../../../app/lib/functions.php:37 ../../../app/lib/functions.php:49
+msgid "year"
+msgid_plural "years"
+msgstr[0] "рік"
+msgstr[1] "років"
+msgstr[2] "років"
+
+#: ../../../app/routes/route.dashboard.php:426
+msgid "Invalid SMTP port"
+msgstr "Неправильний SMTP порт"
+
+#: ../../../app/routes/route.dashboard.php:231
+#: ../../../app/themes/Peafowl/views/album.php:79
+msgid "Social networks"
+msgstr "Соціальні мережі"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:296
+msgid "Enable this if you want to allow the random feature."
+msgstr "Ввімкніть цю опцію, щоб дозволити кнопку \"Випадкове\"."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:533
+msgid "right top"
+msgstr "праворуч зверху"
+
+#: ../../../app/lib/functions.php:38 ../../../app/lib/functions.php:50
+msgid "month"
+msgid_plural "months"
+msgstr[0] "місяць"
+msgstr[1] "місяців"
+msgstr[2] "місяців"
+
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:12
+msgid "Until which date this IP address will be banned? Leave it empty for no expiration."
+msgstr "До якого часу ця IP-адреса буде заблокована? Залиште його порожнім для безтермінового блокування."
+
+#: ../../../app/routes/route.dashboard.php:232
+msgid "External services"
+msgstr "Сторонні сервіси"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:534
+msgid "right center"
+msgstr "праворуч по центру"
+
+#: ../../../app/lib/functions.php:39 ../../../app/lib/functions.php:51
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "тиждень"
+msgstr[1] "тижнів"
+msgstr[2] "тижнів"
+
+#: ../../../app/routes/route.dashboard.php:487
+msgid "Invalid upload image path"
+msgstr "Неправильна папка завантаження зображень"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:41
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_admin_tools.php:7
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_admin_tools.php:8
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:12
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:13
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_admin_tools.php:12
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_admin_tools.php:13
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:20
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:21
+#: ../../../app/themes/Peafowl/views/dashboard.php:588
+#: ../../../app/themes/Peafowl/views/dashboard.php:637
+msgid "Delete"
+msgstr "Видалити"
+
+#: ../../../app/routes/route.dashboard.php:326
+msgid "Invalid website name"
+msgstr "Невірна назва сайту"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:535
+msgid "right bottom"
+msgstr "праворуч знизу"
+
+#: ../../../app/lib/functions.php:40 ../../../app/lib/functions.php:52
+msgid "day"
+msgid_plural "days"
+msgstr[0] "день"
+msgstr[1] "днів"
+msgstr[2] "днів"
+
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:16
+msgid "Text message, HTML or a redirect URL"
+msgstr "Текстове повідомлення, HTML або перенаправлення URL"
+
+#: ../../../app/routes/route.dashboard.php:514
+#, php-format
+msgid "Max. allowed %s"
+msgstr "Макс. дозволено %s"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:10
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:42
+msgid "Clear selection"
+msgstr "Зняти виділення"
+
+#: ../../../app/routes/route.dashboard.php:331
+msgid "Invalid language"
+msgstr "Неправильна мова"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:540
+msgid "Relative position of the watermark image. First horizontal align then vertical align."
+msgstr "Відносне положення захисного знаку. Першим вказано положення по горизонталі, другий по вертикалі."
+
+#: ../../../app/lib/functions.php:41 ../../../app/lib/functions.php:53
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "година"
+msgstr[1] "годин"
+msgstr[2] "годин"
+
+#: ../../../app/routes/route.dashboard.php:577
+msgid "Invalid SMTP server"
+msgstr "Неправильний SMTP сервер"
+
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:5
+#, php-format
+msgid "To use all the features of this site you must be logged in. If you don't have an account you can <a href=\"%s\">sign up</a> right now."
+msgstr "Ви повинні увійти, щоб використовувати всі можливості цього сайту. Якщо у вас ще немає облікового запису, ви можете <a href=\"%s\">зареєструватися</a> просто зараз."
+
+#: ../../../app/routes/route.dashboard.php:336
+msgid "Invalid timezone"
+msgstr "Невірний часовий пояс"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:551
+msgid "Watermark margin"
+msgstr "Поля захисного знаку"
+
+#: ../../../app/lib/functions.php:42 ../../../app/lib/functions.php:54
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "хвилина"
+msgstr[1] "хвилин"
+msgstr[2] "хвилин"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:165
+#: ../../../app/themes/Peafowl/views/dashboard.php:169
+#: ../../../app/themes/Peafowl/views/image.php:225
+msgid "Add IP ban"
+msgstr "Додати блокування по IP"
+
+#: ../../../app/routes/route.dashboard.php:578
+msgid "Invalid SMTP username"
+msgstr "Неправильне SMTP ім'я"
+
+#: ../../../app/routes/route.dashboard.php:341
+#: ../../../app/routes/route.dashboard.php:386
+#: ../../../app/routes/route.dashboard.php:511
+#: ../../../app/routes/route.dashboard.php:658
+msgid "Invalid value"
+msgstr "Некоректне значення"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:556
+msgid "Margin from the border of the image to the watermark image."
+msgstr "Поля від кордону зображення до захисного знаку."
+
+#: ../../../app/lib/functions.php:43 ../../../app/lib/functions.php:55
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "секунда"
+msgstr[1] "секунд"
+msgstr[2] "секунд"
+
+#: ../../../app/themes/Peafowl/snippets/modal_share.php:10
+msgid "Link"
+msgstr "Посилання"
+
+#: ../../../app/routes/route.dashboard.php:346
+msgid "Invalid upload storage mode"
+msgstr "Невірний спосіб зберігання файлів."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:559
+msgid "Watermark opacity"
+msgstr "Прозорість захисного знаку"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:629
+msgid "Expires"
+msgstr "Закінчення"
+
+#: ../../../app/routes/route.dashboard.php:828
+#: ../../../app/themes/Peafowl/header.php:371
+#: ../../../app/themes/Peafowl/views/dashboard.php:9
+msgid "Dashboard"
+msgstr "Панель керування"
+
+#: ../../../app/themes/Peafowl/snippets/template_content_empty.php:5
+#: ../../../app/themes/Peafowl/views/index.php:63
+msgid "There's nothing to show here."
+msgstr "Немає елементів для відображення."
+
+#: ../../../app/routes/route.dashboard.php:351
+msgid "Invalid upload filenaming"
+msgstr "Невірний метод зберігання імен файлів"
+
+#: ../../../app/routes/route.dashboard.php:431
+msgid "Invalid SMTP security"
+msgstr "Невірні налаштування безпеки SMTP сервера"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:564
+msgid "Opacity of the watermark in the final watermarked image. Values 0 to 100."
+msgstr "Прозорість захисного знаку при накладенні на зображення. Повинно бути в діапазоні від 0 до 100."
+
+#: ../../../app/routes/route.account.php:129
+msgid "User doesn't have an email."
+msgstr "Для цього користувача не задано адресу електронної пошти."
+
+#: ../../../app/routes/route.json.php:44 ../../../app/routes/route.json.php:59
+#: ../../../app/routes/route.json.php:232
+#: ../../../app/routes/route.json.php:718
+#: ../../../app/routes/route.json.php:782
+#: ../../../app/routes/route.json.php:883
+#: ../../../app/routes/route.json.php:1026
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:4
+msgid "Login needed"
+msgstr "Необхідний вхід"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:32
+msgid "All the images will be moved to this newly created album. You can also move the images to an <a class=\"modal-switch\" data-switch=\"move-existing-album\">existing album</a>."
+msgstr "Всі зображення будуть поміщені в цей новий альбом. Ви також можете перемістити зображення в <a class=\"modal-switch\" data-switch=\"move-existing-album\">існуючий альбом</a>."
+
+#: ../../../app/routes/route.dashboard.php:356
+msgid "Invalid thumb width"
+msgstr "Невірна ширина мініатюри"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:465
+#: ../../../app/themes/Peafowl/views/dashboard.php:953
+#, php-format
+msgid "Warning: Can't write in %s"
+msgstr "Увага: Не можу записати в %s"
+
+#: ../../../app/routes/route.dashboard.php:194
+#, php-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d секунд"
+msgstr[1] "%d секунди"
+msgstr[2] "%d секунди"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:637
+#, php-format
+msgid "Do you really want to remove the ban to the IP %s? This can't be undone."
+msgstr "Ви дійсно хочете зняти блокування IP %s ? Це не може бути скасовано."
+
+#: ../../../app/routes/route.login.php:133
+msgid "Wrong Username/Email password combination"
+msgstr "Неправильне ім'я користувача або пароль"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:50
+msgid "Select an existing album to move the image. You can also <a class=\"modal-switch\" data-switch=\"move-new-album\">create a new album</a> and move the image there."
+msgstr "Виберіть існуючий альбом, щоб перемістити зображення. Ви також можете <a class=\"modal-switch\" data-switch=\"move-new-album\">створити новий альбом</a> і перемістити зображення в нього."
+
+#: ../../../app/routes/route.login.php:148
+#: ../../../app/themes/Peafowl/header.php:269
+#: ../../../app/themes/Peafowl/header.php:275
+#: ../../../app/themes/Peafowl/views/login.php:8
+#: ../../../app/themes/Peafowl/views/login.php:52
+msgid "Sign in"
+msgstr "Вхід"
+
+#: ../../../app/themes/Peafowl/snippets/listing.php:91
+msgid "Previous"
+msgstr "Попередня"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:651
+msgid "Banned IP address will be forbidden to use the entire website."
+msgstr "Заблокованій IP-адресі буде заборонено використовувати весь веб-сайт."
+
+#: ../../../app/routes/route.logout.php:29
+#: ../../../app/themes/Peafowl/views/logout.php:8
+msgid "Logged out"
+msgstr "Вийти"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:71
+msgid "Select an existing album to move the images. You can also <a class=\"modal-switch\" data-switch=\"move-new-album\">create a new album</a> and move the images there."
+msgstr "Виберіть існуючий альбом, щоб перемістити зображення. Ви також можете <a class=\"modal-switch\" data-switch=\"move-new-album\">створити новий альбом</a> і перемістити зображення в нього."
+
+#: ../../../app/themes/Peafowl/snippets/listing.php:98
+msgid "Next"
+msgstr "Наступна"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:22
+msgid "Image"
+msgid_plural "Images"
+msgstr[0] "Зображення"
+msgstr[1] "Зображень"
+msgstr[2] "Зображень"
+
+#: ../../../app/routes/route.search.php:129
+#: ../../../app/themes/Peafowl/header.php:215
+#: ../../../app/themes/Peafowl/header.php:220
+#: ../../../app/themes/Peafowl/views/dashboard.php:270
+msgid "Search"
+msgstr "Пошук"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:106
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:110
+msgid "Confirm deletion"
+msgstr "Підтвердіть видалення"
+
+#: ../../../app/routes/route.dashboard.php:225
+#: ../../../app/routes/route.settings.php:62
+#: ../../../app/themes/Peafowl/views/dashboard.php:689
+#: ../../../app/themes/Peafowl/views/dashboard.php:1241
+msgid "Homepage"
+msgstr "Головна сторінка"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:653
+msgid "Edit IP ban"
+msgstr "Редагувати блокування IP"
+
+#: ../../../app/routes/route.settings.php:58
+msgid "Account"
+msgstr "Акаунт"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:107
+msgid "Do you really want to remove this content? This can't be undone."
+msgstr "Ви дійсно хочете видалити даний вміст? Ця дія є незворотня."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:34
+#: ../../../app/themes/Peafowl/views/dashboard.php:90
+#: ../../../app/themes/Peafowl/views/settings.php:120
+msgid "User"
+msgid_plural "Users"
+msgstr[0] "Користувача"
+msgstr[1] "Користувачів"
+msgstr[2] "Користувачів"
+
+#: ../../../app/routes/route.settings.php:59
+msgid "Profile"
+msgstr "Профіль"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:111
+msgid "Do you really want to remove all the selected content? This can't be undone."
+msgstr "Ви дійсно хочете видалити всі виділені зображення? Ця дія є незворотня."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:371
+msgid "Enable uploads"
+msgstr "Включити завантаження"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:855
+msgid "Listing columns number"
+msgstr "Кількість колонок"
+
+#: ../../../app/routes/route.settings.php:60
+#: ../../../app/themes/Peafowl/header.php:292
+#: ../../../app/themes/Peafowl/header.php:340
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:92
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:93
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:126
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:21
+#: ../../../app/themes/Peafowl/views/dashboard.php:104
+#: ../../../app/themes/Peafowl/views/dashboard.php:105
+#: ../../../app/themes/Peafowl/views/login.php:39
+#: ../../../app/themes/Peafowl/views/settings.php:288
+#: ../../../app/themes/Peafowl/views/signup.php:49
+#: ../../../app/themes/Peafowl/views/signup.php:50
+msgid "Password"
+msgstr "Пароль"
+
+#: ../../../app/themes/Peafowl/tpl_list_item/image_description_guest.php:2
+msgid "Uploaded by guest to Public"
+msgstr "Завантажено гостем в загальний доступ"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:377
+msgid "Enable this if you want to allow image uploads. This setting doesn't affect administrators."
+msgstr "Увімкніть цю опцію, якщо ви хочете дозволити завантаження зображень. Цей параметр не впливає на адміністраторів."
+
+#: ../../../app/routes/route.settings.php:255
+#, php-format
+msgid "An email has been sent to %s with instructions to activate this email"
+msgstr "На %s було надіслано повідомлення з інструкціями щодо активації"
+
+#: ../../../app/themes/Peafowl/tpl_list_item/image_description_owner.php:2
+#, php-format
+msgid "From %s"
+msgstr "З альбому %s"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:89
+#: ../../../app/themes/Peafowl/views/settings.php:119
+msgid "Administrator"
+msgstr "Адміністратор"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:856
+msgid "Here you can set how many columns are used based on each target device."
+msgstr "Тут ви можете встановити, скільки стовпців використовуються на основі кожного цільового пристрою."
+
+#: ../../../app/lib/functions.php:205
+#, php-format
+msgid "You haven't changed the default email settings. Go to <a href='%s'>Dashboard > Settings > Email</a> to fix this."
+msgstr "Ви не змінили налаштування електронної пошти за замовчуванням. Перейдіть в <a href='%s'>Панель управління > Налаштування</a> для виправлення."
+
+#: ../../../app/routes/route.settings.php:288
+#: ../../../app/themes/Peafowl/pages/contact.php:22
+msgid "Invalid name"
+msgstr "Неправильне ім'я"
+
+#: ../../../app/themes/Peafowl/tpl_list_item/image_description_user.php:2
+msgid "From %a by %u"
+msgstr "З альбому %a від %u"
+
+#: ../../../app/themes/Peafowl/snippets/breadcrum_owner_card.php:26
+#: ../../../app/themes/Peafowl/views/user.php:87
+msgid "album"
+msgid_plural "albums"
+msgstr[0] "альбом"
+msgstr[1] "альбомів"
+msgstr[2] "альбомів"
+
+#: ../../../app/themes/Peafowl/header.php:222
+msgid "Close"
+msgstr "Закрити"
+
+#: ../../../app/routes/route.settings.php:291
+msgid "Invalid website"
+msgstr "Неправильний веб-сайт"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:146
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:6
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:12
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:13
+msgid "Edit"
+msgstr "Редагувати"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:858
+msgid "Phone"
+msgstr "Телефон"
+
+#: ../../../app/themes/Peafowl/header.php:222
+#: ../../../app/themes/Peafowl/header.php:226
+msgid "Advanced search"
+msgstr "Розширений пошук"
+
+#: ../../../app/routes/route.settings.php:299
+msgid "Wrong password"
+msgstr "Неправильний пароль"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:52
+msgid "Select an existing album to move the album contents. You can also <a class=\"modal-switch\" data-switch=\"move-new-album\">create a new album</a> and move the album contents there."
+msgstr "Виберіть існуючий альбом в який буде переміщено вміст. Ви також можете <a class=\"modal-switch\" data-switch=\"move-new-album\">створити новий альбом</a> для цього вмісту."
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:6
+msgid "All these words"
+msgstr "Зі словами"
+
+#: ../../../app/routes/route.settings.php:302
+msgid "Use a new password"
+msgstr "Використайте новий пароль"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:862
+msgid "Phablet"
+msgstr "Фаблет"
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:7
+msgid "Type the important words: tri-colour rat terrier"
+msgstr "Введіть ключові слова: слава україні героям слава"
+
+#: ../../../app/routes/route.json.php:1063
+#, php-format
+msgid "%s has been disconnected."
+msgstr "%s вимкнено."
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:10
+msgid "This exact word or phrase"
+msgstr "Зі словосполученням"
+
+#: ../../../app/routes/route.settings.php:421
+msgid "Password has been changed"
+msgstr "Пароль успішно змінений"
+
+#: ../../../app/routes/route.settings.php:426
+msgid "Password has been created."
+msgstr "Пароль успішно створений."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:866
+msgid "Tablet"
+msgstr "Планшет"
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:11
+msgid "Put exact words in quotes: \"rat terrier\""
+msgstr "Укладіть словосполучення в лапки: \"слава україні\""
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:20
+msgid "None of these words"
+msgstr "Без слів"
+
+#: ../../../app/routes/route.settings.php:441
+msgid "Wrong Username/Email values"
+msgstr "Невірне Ім'я користувача / Email"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:870
+msgid "Laptop"
+msgstr "Ноутбук"
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:21
+msgid "Put a minus sign just before words you don't want: -rodent -\"Jack Russell\""
+msgstr "Поставте знак мінуса перед словами: -колір - \"український той\""
+
+#: ../../../app/routes/route.signup.php:251
+#: ../../../app/themes/Peafowl/header.php:316
+#: ../../../app/themes/Peafowl/header.php:322
+#: ../../../app/themes/Peafowl/views/index.php:81
+#: ../../../app/themes/Peafowl/views/signup.php:8
+#: ../../../app/themes/Peafowl/views/signup.php:63
+msgid "Create account"
+msgstr "Створити обліковий запис"
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:66
+msgid "Storage"
+msgstr "Сховище"
+
+#: ../../../app/loader.php:373 ../../../app/themes/Peafowl/views/404.php:6
+msgid "That page doesn't exist"
+msgstr "Ця сторінка не існує"
+
+#: ../../../app/lib/classes/class.image.php:608
+#: ../../../app/lib/classes/class.image.php:673
+msgid "Duplicated upload"
+msgstr "Подвійне завантаження"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:874
+msgid "Desktop"
+msgstr "ПК"
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:81
+msgid "Uploader IP address"
+msgstr "По IP-адресі"
+
+#: ../../../app/routes/route.dashboard.php:416
+msgid "Invalid user id"
+msgstr "Неправильний ідентифікатор користувача"
+
+#: ../../../app/themes/Peafowl/views/404.php:7
+msgid "The requested page was not found."
+msgstr "Сторінку не знайдено"
+
+#: ../../../app/themes/Peafowl/header.php:56
+#: ../../../app/themes/Peafowl/views/index.php:46
+#: ../../../app/themes/Peafowl/views/user.php:124
+#, php-format
+msgid "%s's Images"
+msgstr "%s Зображень"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:719
+msgid "User avatar max. filesize"
+msgstr "Аватар користувача макс. розмір файлу"
+
+#: ../../../app/themes/Peafowl/views/404.php:22
+msgid "The user has been deleted"
+msgstr "Користувач видалений"
+
+#: ../../../app/themes/Peafowl/header.php:56
+#: ../../../app/themes/Peafowl/views/user.php:124
+#, php-format
+msgid "%s's Albums"
+msgstr "Альбоми %s"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:663
+msgid "Enable signups"
+msgstr "Включити реєстрацію"
+
+#: ../../../app/routes/route.settings.php:484
+#, php-format
+msgid "Settings for %s"
+msgstr "Налаштування %s"
+
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:22
+#: ../../../app/lib/chevereto.js:1162 ../../../app/lib/chevereto.js:1238
+#: ../../../app/lib/chevereto.js:1316 ../../../app/lib/chevereto.js:1464
+#: ../../../app/lib/chevereto.min.js:45 ../../../app/lib/chevereto.min.js:49
+#: ../../../app/lib/chevereto.min.js:53 ../../../app/lib/chevereto.min.js:56
+#: ../../../lib/Peafowl/peafowl.js:2494 ../../../lib/Peafowl/peafowl.js:3009
+#: ../../../lib/Peafowl/peafowl.min.js:145
+#: ../../../lib/Peafowl/peafowl.min.js:176
+msgid "An error occurred. Please try again later."
+msgstr "У процесі виконання сталася помилка. Будь ласка спробуйте пізніше."
+
+#: ../../../app/loader.php:272
+#: ../../../app/themes/Peafowl/views/settings.php:407
+msgid "Feel free to browse and discover all my shared images and albums."
+msgstr "Не соромтеся, щоб переглянути всі мої завантажені зображення та альбоми."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:669
+msgid "Enable this if you want to allow users to signup."
+msgstr "Увімкніть, щоб дозволити реєстрацію користувачів."
+
+#: ../../../app/routes/route.image.php:149
+msgid "Ban IP"
+msgstr "Блокування IP"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:18
+#: ../../../app/themes/Peafowl/views/album.php:22
+#: ../../../app/themes/Peafowl/views/album.php:118
+msgid "Edit album details"
+msgstr "Редагувати альбом"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:320
+#: ../../../app/themes/Peafowl/views/settings.php:69
+msgid "User ID"
+msgstr "ID користувача"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:722
+#, php-format
+msgid "Max. allowed filesize for user avatar image. (Max allowed by server is %s)"
+msgstr "Максимально дозволений розмір файлу для аватару користувача. (Макс. дозволено на сервері %s)"
+
+#: ../../../app/routes/route.image.php:149
+msgid "IP already banned"
+msgstr "IP адреса вже заблокована"
+
+#: ../../../app/themes/Peafowl/views/album.php:25
+msgid "Delete album"
+msgstr "Видалити альбом"
+
+#: ../../../app/loader.php:275
+#: ../../../app/themes/Peafowl/views/settings.php:413
+msgid "View all my images"
+msgstr "Переглянути всі мої зображення"
+
+#: ../../../app/routes/route.album.php:107
+#: ../../../app/themes/Peafowl/snippets/modal_share.php:4
+#: ../../../app/themes/Peafowl/views/album.php:36
+#: ../../../app/themes/Peafowl/views/image.php:91
+msgid "Share"
+msgstr "Поділитися"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:725
+msgid "User background max. filesize"
+msgstr "Фонове зображення сторінки користувача макс. розмір файлу"
+
+#: ../../../app/routes/route.album.php:80
+#: ../../../app/routes/route.category.php:48
+#: ../../../app/routes/route.dashboard.php:716
+#: ../../../app/routes/route.dashboard.php:745
+#: ../../../app/routes/route.dashboard.php:774
+#: ../../../app/routes/route.explore.php:34
+#: ../../../app/routes/route.user.php:139
+#: ../../../app/routes/route.user.php:177
+#: ../../../app/themes/Peafowl/views/index.php:46
+msgid "Most recent"
+msgstr "Нові"
+
+#: ../../../app/routes/route.album.php:88
+#: ../../../app/routes/route.category.php:56
+#: ../../../app/routes/route.dashboard.php:724
+#: ../../../app/routes/route.dashboard.php:753
+#: ../../../app/routes/route.dashboard.php:782
+#: ../../../app/routes/route.explore.php:42
+#: ../../../app/routes/route.user.php:147
+#: ../../../app/routes/route.user.php:183
+msgid "Oldest"
+msgstr "Старі"
+
+#: ../../../app/themes/Peafowl/header.php:301
+#, php-format
+msgid "Don't have an account? <a href='%s'>Sign up</a> now."
+msgstr "У вас ще немає аккаунта? <a href='%s'>Зареєструйтесь</a> зараз."
+
+#: ../../../app/routes/route.album.php:96
+#: ../../../app/routes/route.category.php:64
+#: ../../../app/routes/route.dashboard.php:732
+#: ../../../app/routes/route.explore.php:50
+#: ../../../app/routes/route.user.php:155
+msgid "Most viewed"
+msgstr "Найпопулярніші"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:728
+#, php-format
+msgid "Max. allowed filesize for user background image. (Max allowed by server is %s)"
+msgstr "Максимально дозволений розмір файлу для фонового зображення сторінки користувача. (Макс. дозволено на сервері %s)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:87
+#: ../../../app/themes/Peafowl/views/settings.php:115
+msgid "Role"
+msgstr "Роль"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:14
+msgid "Select the images to upload"
+msgstr "Виберіть зображення для завантаження"
+
+#: ../../../app/themes/Peafowl/snippets/modal_share.php:14
+#: ../../../app/themes/Peafowl/views/album.php:74
+#: ../../../app/themes/Peafowl/views/image.php:282
+msgid "Note: This content is private. Change privacy to \"public\" to share."
+msgstr "Увага: Це прихований вміст. Щоб поділиться ним, поміняйте налаштування видимості на \"Публічне\"."
+
+#: ../../../app/routes/route.dashboard.php:451
+msgid "Invalid website privacy mode"
+msgstr "Невірний режим конфіденційності сайту"
+
+#: ../../../app/themes/Peafowl/views/album.php:86
+msgid "Album link"
+msgstr "Посилання на альбом"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:458
+msgid "Enable this to put a logo or anything you want in image uploads."
+msgstr "Увімкніть, щоб помістити логотип або будь-яке інше зображення на всі завантаження."
+
+#: ../../../app/themes/Peafowl/views/404.php:22
+#: ../../../app/themes/Peafowl/views/album.php:134
+#: ../../../app/themes/Peafowl/views/user.php:158
+#: ../../../app/lib/chevereto.js:3442 ../../../app/lib/chevereto.min.js:160
+msgid "The content has been deleted."
+msgstr "Вміст видалено."
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:13
+msgid "Action"
+msgstr "Дія"
+
+#: ../../../app/routes/route.album.php:116
+#: ../../../app/routes/route.image.php:134
+msgid "Full info"
+msgstr "Детальна інформація"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:73
+msgid "Client email"
+msgstr "Клієнт електронної пошти"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:7
+msgid "Album name"
+msgstr "Назва альбому"
+
+#: ../../../app/themes/Peafowl/views/album.php:25
+msgid "Do you really want to delete this album and all of its images? This can't be undone."
+msgstr "Ви дійсно хочете видалити цей альбом з усіма зображеннями? Ця дія є незворотньою."
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:13
+msgid "Selection"
+msgstr "З виділеними"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:24
+msgid "Album Privacy"
+msgstr "Видимість альбому"
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:35
+#: ../../../app/themes/Peafowl/views/settings.php:278
+msgid "Re-enter your new password"
+msgstr "Підтвердіть новий пароль"
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:29
+#: ../../../app/themes/Peafowl/views/dashboard.php:105
+#: ../../../app/themes/Peafowl/views/settings.php:272
+#: ../../../app/themes/Peafowl/views/settings.php:289
+#: ../../../app/themes/Peafowl/views/signup.php:50
+#, php-format
+msgid "%d characters min"
+msgstr "мін. %d символів"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:402
+msgid "Where to store the images? Relative to Chevereto root."
+msgstr "Де зберігати зображення? Щодо шляху до Chevereto."
+
+#: ../../../app/routes/route.dashboard.php:500
+msgid "Invalid call to action URL"
+msgstr "Невірна дія для посилання"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:74
+msgid "Google Cloud client email"
+msgstr "Google Cloud клієнт електронної пошти"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:25
+msgid "Who can view this content"
+msgstr "Хто може переглядати цей контент"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:27
+msgid "Private (just me)"
+msgstr "Приховане (тільки я)"
+
+#: ../../../app/themes/Peafowl/views/account/awaiting-confirmation.php:7
+msgid "Your account is almost ready"
+msgstr "Ваш обліковий запис майже готовий"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:75
+#, php-format
+msgid "You will need a <a %s>service account</a> for this."
+msgstr "Вам потрібно <a %s>обліковий запис служби</a> для цього"
+
+#: ../../../app/themes/Peafowl/views/account/awaiting-confirmation.php:10
+#: ../../../app/themes/Peafowl/views/account/email-changed.php:11
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:16
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:26
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:16
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:13
+#: ../../../app/themes/Peafowl/views/logout.php:13
+#: ../../../app/themes/Peafowl/views/request-denied.php:13
+msgid "Go to homepage"
+msgstr "Головна"
+
+#: ../../../app/lib/classes/class.storage.php:449
+#: ../../../app/lib/chevereto.js:2988 ../../../app/lib/chevereto.min.js:136
+#, python-format, php-format, javascript-format
+msgid "Storage capacity can't be lower than its current usage (%s)."
+msgstr "Ємність не може бути нижчою, ніж його поточне використання (%s)."
+
+#: ../../../app/themes/Peafowl/views/account/awaiting-confirmation.php:10
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:13
+msgid "Resend activation"
+msgstr "Повторити відправку посилання для активації"
+
+#: ../../../app/lib/classes/class.storage.php:715
+msgid "Unlimited"
+msgstr "Необмежений"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:78
+msgid "Private key"
+msgstr "Приватний ключ"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:40
+#: ../../../app/themes/Peafowl/views/dashboard.php:1510
+msgid "Disk used"
+msgstr "Використано місця на диску"
+
+#: ../../../app/lib/classes/class.storage.php:715
+msgid "used"
+msgstr "використано"
+
+#: ../../../app/routes/route.dashboard.php:766
+msgid "Top users"
+msgstr "Топ користувачів"
+
+#: ../../../app/routes/route.dashboard.php:261
+msgid "Local"
+msgstr "Локальне"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:197
+msgid "Website name"
+msgstr "Назва сайту"
+
+#: ../../../app/routes/route.dashboard.php:265
+msgid "External"
+msgstr "Зовнішнє"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:79
+msgid "Google Cloud JSON key"
+msgstr "Google Cloud JSON ключ"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:202
+msgid "Website doctitle"
+msgstr "Заголовок сайту"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:48
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:96
+msgid "Region"
+msgstr "Регіон"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:206
+msgid "Website description"
+msgstr "Опис сайту"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:158
+#: ../../../app/themes/Peafowl/snippets/form_image.php:4
+#: ../../../app/themes/Peafowl/views/dashboard.php:1155
+#: ../../../app/themes/Peafowl/views/settings.php:400
+msgid "Title"
+msgstr "Заголовок"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:115
+msgid "Hostname or IP of the storage server"
+msgstr "Адреса або IP сервера"
+
+#: ../../../app/install/template/ready.php:47
+#: ../../../app/themes/Peafowl/views/dashboard.php:305
+msgid "Community"
+msgstr "Спільнота"
+
+#: ../../../app/themes/Peafowl/snippets/form_image.php:5
+msgid "Untitled image"
+msgstr "Безіменне"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:118
+msgid "Path"
+msgstr "Шлях"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:35
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:85
+msgid "Assign category"
+msgstr "Присвоїти категорію"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:87
+msgid "All the selected images will be assigned to this category."
+msgstr "Вибрані зображення будуть переміщені в дану категорію."
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:119
+msgid "Server path where the files will be stored"
+msgstr "Шлях до місця зберігання зображень на віддаленому сервері"
+
+#: ../../../app/install/template/ready.php:47
+#: ../../../app/themes/Peafowl/views/dashboard.php:305
+msgid "Personal"
+msgstr "Особистий"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:92
+msgid "There is no categories."
+msgstr "Категорії не задані."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:232
+msgid "Default time zone"
+msgstr "Часовий пояс  за замовчуванням"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:236
+#: ../../../app/themes/Peafowl/views/settings.php:216
+msgid "Select region"
+msgstr "Оберіть регіон"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:132
+msgid "Storage capacity"
+msgstr "Доступний простір"
+
+#: ../../../app/install/template/ready.php:45
+#: ../../../app/themes/Peafowl/views/dashboard.php:309
+msgid "You can switch the website mode anytime."
+msgstr "Ви можете переключити режим веб-сайту в будь-який час."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:827
+msgid "How many items should be displayed per page listing."
+msgstr "Скільки зображень відображати на сторінку."
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:133
+msgid "Example: 20 GB, 1 TB, etc."
+msgstr "Наприклад 20 GB, 1 TB і т. д."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:380
+msgid "Guest uploads"
+msgstr "Гостьові завантаження"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:135
+msgid "This storage will be disabled when it reach this capacity. Leave it blank or zero for no limit."
+msgstr "Сховище буде відключився при досягненні цього ліміту. Залиште поле порожнім або вкажіть нуль для відключення ліміту."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:386
+msgid "Enable this if you want to allow non registered users to upload."
+msgstr "Увімкніть цю опцію, якщо хочете дозволити завантажувати зображення незареєстрованим користувачам."
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:140
+msgid "The system will map the images of this storage to this URL."
+msgstr "Система буде використовувати дану адресу при формуванні посилань на зображення з цього сховища."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:319
+msgid "Personal mode target user"
+msgstr "Особистий режим цільового користувача"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:393
+msgid "Max. filesize"
+msgstr "Макс. розмір файлу"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:396
+#, php-format
+msgid "Max. allowed filesize. (Max allowed by server is %s)"
+msgstr "Макс. дозволений розмір файлу (Обмеження серверу: %s)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:399
+msgid "Image path"
+msgstr "Шлях до зображень"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:322
+msgid "Numeric ID of the target user for personal mode."
+msgstr "Цифровий ідентифікатор цільового користувача для особистого режиму."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:400
+msgid "Relative to Chevereto root"
+msgstr "Відносно шляху до Chevereto"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:405
+msgid "Storage mode"
+msgstr "Режим зберігання"
+
+#: ../../../app/routes/route.dashboard.php:441
+#: ../../../app/routes/route.dashboard.php:555
+msgid "Invalid personal mode user ID"
+msgstr "Невірний персональний режим користувача з ідентифікатором"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:325
+msgid "Personal mode routing"
+msgstr "Особистий режим направлення"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:408
+msgid "Datefolders"
+msgstr "Папки по датах"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:408
+msgid "Direct"
+msgstr "Прямий"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:119
+msgid "Server path"
+msgstr "Шлях"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:411
+#, php-format
+msgid "Datefolders creates %s structure"
+msgstr "\"Папки по датах\" створює структуру виду %s"
+
+#: ../../../app/routes/route.dashboard.php:218
+msgid "Content"
+msgstr "Зміст"
+
+#: ../../../app/routes/route.dashboard.php:446
+msgid "Invalid or reserved route"
+msgstr "Невірний або зарезервований шлях"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:123
+msgid "Server username"
+msgstr "Ім'я користувача"
+
+#: ../../../app/lib/functions.php:197
+#, php-format
+msgid "System database is outdated. You need to run the <a href=\"%s\">update</a> tool."
+msgstr "Системна база даних застаріла. Вам необхідно запустити <a href=\"%s\">систему поновлення</a>"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:328
+msgid "Custom route to map /username to /something. Use \"/\" to map to homepage."
+msgstr "Звичайне перенаправлення з /ім'я-користувача в /кудась. Використовуйте \"/\" для направлення на домашню сторінку."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:414
+msgid "File naming method"
+msgstr "Назви файлів"
+
+#: ../../../app/install/installer.php:948
+#: ../../../app/routes/route.dashboard.php:436
+msgid "Invalid website mode"
+msgstr "Невірний режим веб-сайту"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:127
+msgid "Server password"
+msgstr "Пароль"
+
+#: ../../../app/lib/functions.php:200
+#, php-format
+msgid "Website is in maintenance mode. To revert this setting go to <a href=\"%s\">Dashboard > Settings</a>."
+msgstr "Сайт знаходиться в режимі обслуговування. Щоб змінити параметри перейдіть в <a href=\"%s\">Панель управління> Налаштування</a>"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:417
+msgid "Original"
+msgstr "Оригінал"
+
+#: ../../../app/routes/route.dashboard.php:456
+msgid "Invalid website content privacy mode"
+msgstr "Невірний режим видимості вмісту"
+
+#: ../../../app/themes/Peafowl/header.php:243
+#, php-format
+msgid "Notices (%s)"
+msgstr "Повідомлення (%s)"
+
+#: ../../../app/themes/Peafowl/header.php:233
+#: ../../../app/themes/Peafowl/views/dashboard.php:290
+#: ../../../app/themes/Peafowl/views/dashboard.php:417
+msgid "Random"
+msgstr "Випадкове"
+
+#: ../../../app/routes/route.json.php:540
+#: ../../../app/routes/route.json.php:602
+msgid "Missing values"
+msgstr "Відсутні значення"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:24
+msgid "HTML image"
+msgstr "HTML зображення"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:338
+msgid "Website privacy mode"
+msgstr "Режим конфіденційності сайту"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:417
+msgid "Mixed"
+msgstr "Змішане"
+
+#: ../../../app/routes/route.json.php:561
+msgid "Invalid role"
+msgstr "Невірна роль"
+
+#: ../../../app/routes/route.json.php:566
+msgid "Username already being used"
+msgstr "Користувач з таким ім'ям вже існує."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:426
+msgid "Thumb size"
+msgstr "Розмір мініатюри"
+
+#: ../../../app/themes/Peafowl/snippets/form_move_existing_album.php:3
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:8
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:9
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:16
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:17
+#: ../../../app/themes/Peafowl/views/dashboard.php:28
+msgid "Album"
+msgid_plural "Albums"
+msgstr[0] "Альбом"
+msgstr[1] "Альбоми"
+msgstr[2] "Альбомів"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:80
+#: ../../../app/themes/Peafowl/views/dashboard.php:84
+msgid "Add user"
+msgstr "Додати користувача"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:29
+msgid "HTML full linked"
+msgstr "HTML код оригіналу з посиланням"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:437
+msgid "Thumbnails will be fixed to this size."
+msgstr "Мініатюра буде обмежена цим розміром."
+
+#: ../../../app/install/template/ready.php:44
+#: ../../../app/themes/Peafowl/views/dashboard.php:302
+msgid "Website mode"
+msgstr "Режим роботи сайту"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:440
+msgid "Medium size"
+msgstr "Середній розмір"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:341
+msgid "Private"
+msgstr "Приватний"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:445
+msgid "Height will be automatic calculated."
+msgstr "Висота буде обчислена автоматично."
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:49
+msgid "BBCode full"
+msgstr "BB-код оригіналу з посиланням"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:351
+msgid "Content privacy mode"
+msgstr "Режим видимості вмісту"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:746
+msgid "Notify to email"
+msgstr "Повідомити електронною поштою"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:355
+#: ../../../app/themes/Peafowl/views/dashboard.php:940
+#: ../../../app/themes/Peafowl/views/dashboard.php:1178
+msgid "Default"
+msgstr "За замовчуванням"
+
+#: ../../../app/themes/Peafowl/mails/account-welcome.php:6
+msgid "Now that your account is ready you can enjoy uploading your images, creating albums and setting the privacy of your content as well as many more cool things that you will discover."
+msgstr "Тепер коли реєстрація завершена, ви можете насолоджуватися завантаженням зображень, створенням альбомів, зміною налаштувань видимості вмісту, а також багатьма іншими перевагами."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:356
+msgid "Force private (self)"
+msgstr "Приховані (тільки власник)"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:54
+msgid "BBCode full linked"
+msgstr "BB-код оригіналу з посиланням"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:755
+msgid "Minute limit"
+msgstr "Завантаження за хвилину"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:357
+msgid "Force private (anyone with the link)"
+msgstr "Приховані (тільки за посиланням)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:286
+msgid "Enable this if you want to allow the explore page."
+msgstr "Увімкніть цю опцію, щоб дозволити використання сторінки Огляд."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:760
+msgid "Hourly limit"
+msgstr "Завантаження за годину"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:362
+msgid "Forced privacy modes will override user selected privacy."
+msgstr "При включенні примусових режимів видимості, зазначені користувачами значення будуть проігноровані."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:765
+msgid "Daily limit"
+msgstr "Завантаження за день"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:824
+msgid "List items per page"
+msgstr "Елементів на сторінку"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:84
+msgid "Identity URL"
+msgstr "Ідентичне посилання"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:770
+msgid "Weekly limit"
+msgstr "Завантаження за тиждень"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:831
+msgid "List pagination mode"
+msgstr "Режим розбиття на сторінки"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:775
+msgid "Monthly limit"
+msgstr "Завантаження за місяць"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:834
+msgid "Endless scrolling"
+msgstr "Нескінченна прокрутка"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:882
+#, php-format
+msgid "Put your themes in the %s folder"
+msgstr "Помістіть свої теми в папку %s"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:834
+msgid "Classic pagination"
+msgstr "Нумеровані сторінки"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:85
+msgid "Identity API endpoint"
+msgstr "Ідентична кінцева точка API"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:838
+msgid "What pagination method should be used."
+msgstr "Який спосіб розбиття на сторінки використовувати."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:785
+msgid "Show not safe content in listings"
+msgstr "Показувати небезпечний зміст"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:85
+msgid "API endpoint for OpenStack identity"
+msgstr "Кінцева точка API для ідентифікації в OpenStack"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:803
+msgid "Show banners in not safe content"
+msgstr "Показувати банери на сторінках з небезпечним змістом."
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:12
+msgid "move to existing album"
+msgstr "перемістити в існуючий"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:809
+msgid "Enable this if you want to show banners in not safe content pages."
+msgstr "Увімкніть, якщо ви хочете показувати банери на сторінках з небезпечним змістом."
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:100
+msgid "Container"
+msgstr "Контейнер"
+
+#: ../../../app/install/template/ready.php:32
+#: ../../../app/themes/Peafowl/views/dashboard.php:1541
+msgid "Sender email for emails sent to users."
+msgstr "Адреса відправника для розсилки повідомлень користувачам."
+
+#: ../../../app/routes/route.dashboard.php:219
+#: ../../../app/themes/Peafowl/views/dashboard.php:1255
+msgid "Listings"
+msgstr "Списки"
+
+#: ../../../app/install/template/ready.php:36
+#: ../../../app/themes/Peafowl/views/dashboard.php:1544
+msgid "Incoming email address"
+msgstr "Адреса для вхідних повідомлень"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:101
+msgid "Storage container"
+msgstr "Сховище контейнера"
+
+#: ../../../app/install/template/ready.php:37
+#: ../../../app/themes/Peafowl/views/dashboard.php:1547
+msgid "Recipient for contact form and system alerts."
+msgstr "Адреса для форми зворотного зв'язку і системних повідомлень."
+
+#: ../../../app/routes/route.account.php:72
+#: ../../../app/themes/Peafowl/header.php:295
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:24
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:8
+#: ../../../app/themes/Peafowl/views/login.php:41
+#: ../../../app/themes/Peafowl/views/settings.php:265
+msgid "Forgot password?"
+msgstr "Забули пароль?"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:104
+msgid "Tenant id"
+msgstr "Орендар ID"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:179
+#: ../../../app/themes/Peafowl/snippets/form_image.php:25
+msgid "Mark this if the image is not family safe"
+msgstr "Помітити це зображення як небезпечне"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:105
+msgid "Tenant id (account id)"
+msgstr "Орендар ID (акаунт ID)"
+
+#: ../../../app/routes/route.dashboard.php:396
+msgid "Invalid theme main color"
+msgstr "Невірний основний колір теми"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:181
+#: ../../../app/themes/Peafowl/snippets/form_image.php:25
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:37
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_admin_tools.php:8
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:8
+msgid "Flag as unsafe"
+msgstr "Помітити як небезпечне"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:76
+msgid "Change upload privacy"
+msgstr "Змінити видимість завантаження"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:77
+msgid "Mark this if the upload is not family safe"
+msgstr "Помітити це зображення як невідповідне для сімейного перегляду"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:108
+msgid "Tenant name"
+msgstr "Ім'я орендара"
+
+#: ../../../app/routes/route.dashboard.php:401
+msgid "Invalid theme top bar color"
+msgstr "Невірний колір верхньої панелі теми"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:77
+msgid "Not family safe upload"
+msgstr "Небезпечний вміст"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:28
+msgid "Private (anyone with the link)"
+msgstr "Приховане (тільки за посиланням)"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:20
+msgid "Get embed codes"
+msgstr "Отримати коди для вбудовування"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:109
+msgid "Tenant name (account name)"
+msgstr "Орендар ім'я (ім'я облікового запису)"
+
+#: ../../../app/routes/route.dashboard.php:406
+msgid "Invalid theme top bar button color"
+msgstr "Невірний колір кнопки верхньої панелі теми"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:36
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_admin_tools.php:9
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:9
+msgid "Flag as safe"
+msgstr "Помітити як безпечне"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:97
+msgid "Confirm flag content as safe"
+msgstr "Підтвердити позначку вмісту як безпечний"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:98
+msgid "Do you really want to flag this content as safe?"
+msgstr "Ви дійсно хочете помітити це вміст як безпечний?"
+
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:12
+#, php-format
+msgid "An email to %s has been sent with instructions to activate your account. If you don't receive the instructions try checking your junk or spam filters."
+msgstr "Інструкції по активації облікового запису були відправлені на %s . Якщо ви не отримали повідомлення, перевірте папку Спам."
+
+#: ../../../app/routes/route.dashboard.php:461
+msgid "Invalid homepage style"
+msgstr "Невірний стиль домашньої сторінки"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:101
+msgid "Confirm flag content as unsafe"
+msgstr "Підтвердити позначку вмісту як небезпечний"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:102
+msgid "Do you really want to flag this content as unsafe?"
+msgstr "Ви дійсно хочете помітити це вміст як небезпечний?"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:345
+msgid "Private mode will make the website only available for registered users."
+msgstr "Приватний сайт буде доступний тільки для зареєстрованих користувачів."
+
+#: ../../../app/routes/route.dashboard.php:466
+msgid "Invalid homepage call to action button color"
+msgstr "Неправильний колір кнопки виклику домашньої сторінки"
+
+#: ../../../app/install/installer.php:936
+#: ../../../app/routes/route.json.php:546
+#: ../../../app/routes/route.settings.php:175
+#: ../../../app/routes/route.signup.php:100
+msgid "Invalid username"
+msgstr "Неправильне ім'я користувача"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:59
+msgid "BBCode medium linked"
+msgstr "BB-код середнього розміру з посиланням"
+
+#: ../../../app/routes/route.image.php:185
+msgid "Image %i in %a album"
+msgstr "Картинка %i в %a альбомі"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:686
+msgid "Logged user logo link"
+msgstr "Посилання для логотипу користувачів"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:676
+msgid "Username routing"
+msgstr "Адресація користувачів"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:689
+msgid "User profile"
+msgstr "Профіль користувача"
+
+#: ../../../app/routes/route.image.php:187
+msgid "Image %i in %c category"
+msgstr "Картинка %i в %c категорії"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:698
+msgid "Require email confirmation"
+msgstr "Вимагати підтвердження електронної пошти"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:704
+msgid "Enable this if users must validate their email address on sign up."
+msgstr "Ввімкніть цю опцію, щоб вимагати підтвердження адреси електронної пошти при реєстрації."
+
+#: ../../../app/routes/route.image.php:189
+msgid "Image %i hosted in %w"
+msgstr "Картинка %i розміщена в %w"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:713
+msgid "Enable this if users using social networks to register must provide an email address."
+msgstr "Ввімкніть цю опцію, якщо ви хочете, щоб користувачам, які реєструються через соціальні мережі, необхідно було вказувати адресу електронної пошти."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:682
+#, php-format
+msgid "Enable this if you want to use %s/username URLs instead of %s/user/username."
+msgstr "Ввімкніть цю опцію, якщо ви хочете використовувати адреси профілів виду %s/ім'я_користувача замість %s/user/ім'я_користувача"
+
+#: ../../../app/themes/Peafowl/views/account/email-changed.php:10
+#, php-format
+msgid "You have successfully changed your account email to %s"
+msgstr "Ви успішно поміняли адресу електронної пошти на %s"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:707
+msgid "Require email for social signup"
+msgstr "Вимагати Email-адресу при реєстрації через соціальну мережу"
+
+#: ../../../app/themes/Peafowl/views/account/email-changed.php:11
+msgid "Go to my profile"
+msgstr "Перейти на мою сторінку"
+
+#: ../../../app/routes/route.search.php:118
+#, php-format
+msgid "Image search results for %s"
+msgstr "Результат пошуку картинки для %s"
+
+#: ../../../app/themes/Peafowl/header.php:338
+#: ../../../app/themes/Peafowl/pages/contact.php:106
+#: ../../../app/themes/Peafowl/views/account/email-needed.php:15
+#: ../../../app/themes/Peafowl/views/dashboard.php:100
+#: ../../../app/themes/Peafowl/views/settings.php:149
+#: ../../../app/themes/Peafowl/views/signup.php:34
+#: ../../../app/themes/Peafowl/views/signup.php:35
+msgid "Email address"
+msgstr "Адреса електронної пошти"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:107
+#: ../../../app/themes/Peafowl/views/account/email-needed.php:16
+#: ../../../app/themes/Peafowl/views/settings.php:150
+msgid "Your email address"
+msgstr "Ваша адреса електронної пошти"
+
+#: ../../../app/routes/route.search.php:121
+#, php-format
+msgid "Album search results for %s"
+msgstr "Результат пошуку альбома для %s"
+
+#: ../../../app/themes/Peafowl/views/account/email-needed.php:26
+msgid "Add email"
+msgstr "Додати адресу електронної пошти"
+
+#: ../../../app/routes/route.dashboard.php:221
+msgid "Categories"
+msgstr "Категорії"
+
+#: ../../../app/routes/route.dashboard.php:391
+msgid "Invalid theme tone"
+msgstr "Неправильний стиль теми"
+
+#: ../../../app/themes/Peafowl/header.php:258
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:76
+msgid "Upload"
+msgstr "Завантаження"
+
+#: ../../../app/routes/route.search.php:124
+#, php-format
+msgid "User search results for %s"
+msgstr "Результат пошуку користувача для %s"
+
+#: ../../../app/routes/route.dashboard.php:411
+msgid "Invalid theme image listing size"
+msgstr "Невірний розмір зображення для списків"
+
+#: ../../../app/themes/Peafowl/header.php:281
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:11
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:34
+#: ../../../app/themes/Peafowl/views/login.php:18
+#: ../../../app/themes/Peafowl/views/login.php:65
+#: ../../../app/themes/Peafowl/views/signup.php:18
+#: ../../../app/themes/Peafowl/views/signup.php:76
+msgid "Sign in with another account"
+msgstr "Увійти через"
+
+#: ../../../app/routes/route.image.php:177
+#, php-format
+msgid "%s images"
+msgstr "%s зображень"
+
+#: ../../../app/themes/Peafowl/header.php:291
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:20
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:38
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:39
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:23
+#: ../../../app/themes/Peafowl/views/login.php:34
+#: ../../../app/themes/Peafowl/views/login.php:35
+msgid "Username or Email address"
+msgstr "Ім'я користувача або Email"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:152
+#: ../../../app/themes/Peafowl/views/dashboard.php:156
+msgid "Add category"
+msgstr "Додати категорію"
+
+#: ../../../app/themes/Peafowl/header.php:294
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:23
+#: ../../../app/themes/Peafowl/views/login.php:53
+msgid "Keep me logged in"
+msgstr "Запам'ятати мене"
+
+#: ../../../app/routes/route.user.php:274
+msgid "%n (%u) albums on %w"
+msgstr "%n (%u) альбомів в %w"
+
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:8
+#: ../../../app/themes/Peafowl/views/dashboard.php:580
+msgid "URL key"
+msgstr "Ключ для посилання"
+
+#: ../../../app/themes/Peafowl/header.php:328
+msgid "Sign up with another account"
+msgstr "Зареєструватися через"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:186
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:12
+#: ../../../app/themes/Peafowl/snippets/form_image.php:28
+#: ../../../app/themes/Peafowl/views/dashboard.php:581
+msgid "Description"
+msgstr "Опис"
+
+#: ../../../app/themes/Peafowl/header.php:341
+#: ../../../app/themes/Peafowl/views/signup.php:65
+#, php-format
+msgid "By signing up you agree to our <a href=\"%s\">Terms of service</a>"
+msgstr "Реєструючись на цьому сайті, ви погоджуєтеся з <a href=\"%s\">Правилами</a>"
+
+#: ../../../app/themes/Peafowl/header.php:367
+msgid "My Profile"
+msgstr "Мій профіль"
+
+#: ../../../app/routes/route.user.php:279
+msgid "%n (%u) on %w"
+msgstr "%n (%u) в %w"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:604
+msgid "Note: Deleting a category doesn't delete the images that belongs to that category."
+msgstr "Замітка: Видалення категорії не спричинить за собою видалення зображень."
+
+#: ../../../app/themes/Peafowl/header.php:373
+msgid "Sign out"
+msgstr "Вийти"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:606
+msgid "Edit category"
+msgstr "Змінити категорію"
+
+#: ../../../app/routes/route.image.php:120
+#: ../../../app/themes/Peafowl/header.php:385
+msgid "About"
+msgstr "Інформація"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:813
+msgid "Show not safe content in random mode"
+msgstr "Показувати небезпечне зміст в режимі випадкового зображення"
+
+#: ../../../app/routes/route.dashboard.php:228
+msgid "Languages"
+msgstr "Мови"
+
+#: ../../../app/themes/Peafowl/header.php:389
+msgid "Terms of service"
+msgstr "Правила"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:27
+msgid "complete"
+msgstr "повністю"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:901
+msgid "Tone"
+msgstr "Стиль"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:692
+msgid "Configure the link used in the logo when user is logged in."
+msgstr "Налаштуйте посилання яке буде використовуватись в логотипі коли користувач увійде"
+
+#: ../../../app/themes/Peafowl/header.php:390
+msgid "Privacy"
+msgstr "Конфіденційність"
+
+#: ../../../app/routes/route.settings.php:61
+msgid "Linked accounts"
+msgstr "Пов'язані акаунти"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:904
+msgid "Light"
+msgstr "Світлий"
+
+#: ../../../app/themes/Peafowl/header.php:391
+#: ../../../app/themes/Peafowl/pages/contact.php:4
+#: ../../../app/themes/Peafowl/pages/contact.php:93
+msgid "Contact"
+msgstr "Зворотній зв'язок"
+
+#: ../../../app/themes/Peafowl/views/404.php:11
+msgid "Search something else"
+msgstr "Знайти щось ще"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:904
+msgid "Dark"
+msgstr "Темний"
+
+#: ../../../app/routes/route.dashboard.php:471
+msgid "Invalid homepage call to action functionality"
+msgstr "Невірний виклик дії"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:451
+msgid "Watermarks"
+msgstr "Водяні знаки"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:842
+msgid "Image listing size"
+msgstr "Розмір мініатюр в списку"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:16
+#: ../../../app/themes/Peafowl/views/image.php:75
+#: ../../../app/themes/Peafowl/views/image.php:441
+msgid "Edit image details"
+msgstr "Редагувати зображення"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:35
+msgid "You can <a href=\"%s\">create an account</a> or <a href=\"%l\">sign in</a> to save future uploads in your account."
+msgstr "Ви можете <a href=\"%s\">зареєструватися</a> або <a href=\"%l\">знак в</a>, щоб зберегти в майбутньому додавання у вашому обліковому записі."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1116
+#, php-format
+msgid "Select the homepage style. To customize it further edit app/themes/%s/views/index.php"
+msgstr "Виберіть стиль головної сторінки. Щоб налаштувати його відредагуйте app/themes/%s/views/index.php"
+
+#: ../../../app/themes/Peafowl/views/image.php:78
+msgid "Do you really want to delete this image? This can't be undone."
+msgstr "Ви дійсно хочете видалити дане зображення? Ця дія є незворотньою"
+
+#: ../../../app/themes/Peafowl/views/image.php:78
+msgid "Delete image"
+msgstr "Видалити зображення"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1228
+msgid "User IDs"
+msgstr "ID користувача"
+
+#: ../../../app/themes/Peafowl/views/image.php:144
+#, php-format
+msgid "Added to %s"
+msgstr "Додано до %s"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1156
+#: ../../../app/themes/Peafowl/views/dashboard.php:1161
+#, php-format
+msgid "This will be added inside the homepage %s tag. Leave it blank to use the default contents."
+msgstr "Це буде додано в середину домашньої сторінки %s як тег. Залиште поле пустим, якщо ви хочете використати дані по-замовчуванню"
+
+#: ../../../app/themes/Peafowl/views/image.php:151
+#, php-format
+msgid "Uploaded %s"
+msgstr "Завантажено %s"
+
+#: ../../../app/themes/Peafowl/views/image.php:149
+#, php-format
+msgid "Uploaded to %s"
+msgstr "Завантажені в %s"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1160
+#: ../../../app/themes/Peafowl/views/settings.php:406
+msgid "Paragraph"
+msgstr "Пункт"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1198
+msgid "Call to action functionality"
+msgstr "Заклик до дії"
+
+#: ../../../app/themes/Peafowl/views/image.php:188
+#: ../../../app/themes/Peafowl/views/image.php:249
+msgid "Share image"
+msgstr "Поділитися"
+
+#: ../../../app/themes/Peafowl/views/image.php:260
+msgid "In this album"
+msgstr "У цьому альбомі"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1202
+msgid "Trigger uploader"
+msgstr "Трігери завантаження"
+
+#: ../../../app/themes/Peafowl/views/image.php:287
+msgid "Image links"
+msgstr "Посилання на зображення"
+
+#: ../../../app/themes/Peafowl/views/image.php:289
+msgid "Image URL"
+msgstr "Пряме посилання"
+
+#: ../../../app/themes/Peafowl/views/image.php:142
+msgid "Added to %a and categorized in %c"
+msgstr "Додано до %a в категорію %c"
+
+#: ../../../app/themes/Peafowl/views/image.php:295
+msgid "Image link"
+msgstr "Посилання "
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1203
+msgid "Open URL"
+msgstr "Відкрити посилання"
+
+#: ../../../app/themes/Peafowl/views/image.php:301
+msgid "Thumbnail URL"
+msgstr "Мініатюра"
+
+#: ../../../app/themes/Peafowl/views/image.php:310
+msgid "Medium URL"
+msgstr "Середній розмір"
+
+#: ../../../app/themes/Peafowl/views/image.php:328
+#: ../../../app/themes/Peafowl/views/image.php:348
+#: ../../../app/themes/Peafowl/views/image.php:371
+#: ../../../app/themes/Peafowl/views/image.php:396
+msgid "Image embed codes"
+msgstr "Коди для вбудовування зображення"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1212
+msgid "Call to action URL"
+msgstr "Дія для посилання"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1215
+msgid "A relative URL like %r will be mapped to %l"
+msgstr "Відносне посилання як %r буде відображено в %l"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1221
+msgid "Call to action HTML"
+msgstr "Дія для HTML"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1222
+msgid "This will be added inside the call to action <a> tag. Leave it blank to use the default contents."
+msgstr "Це буде додано в дію для тега <a>. Залиште це поле порожнім, щоб використовувати вміст за замовчуванням."
+
+#: ../../../app/themes/Peafowl/views/logout.php:12
+#, php-format
+msgid "You have been logged off %s. Hope to see you soon."
+msgstr "Успішний вихід з системи. До нових зустрічей на %s."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1783
+#, php-format
+msgid "Cloudflare is auto detected using %s."
+msgstr "Cloudflare автоматично визначено, використано %s."
+
+#: ../../../app/lib/chevereto.js:3472 ../../../app/lib/chevereto.min.js:162
+msgid "Unselect"
+msgstr "Зняти виділення"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1799
+msgid "Cookie law compliance"
+msgstr "Дотримання правил куків"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1408
+msgid "Enable this if you want to automatically detect and set the right language for each user."
+msgstr "Включити це, якщо ви хочете, щоб автоматично виявлялась і встановлювалась правильна мова для кожного користувача."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1815
+#: ../../../app/themes/Peafowl/views/settings.php:429
+#: ../../../lib/Peafowl/peafowl.js:408 ../../../lib/Peafowl/peafowl.min.js:24
+msgid "Save changes"
+msgstr "Зберегти зміни"
+
+#: ../../../app/lib/chevereto.js:782 ../../../app/lib/chevereto.js:969
+#: ../../../app/lib/chevereto.js:1065 ../../../app/lib/chevereto.min.js:32
+#: ../../../app/lib/chevereto.min.js:39 ../../../app/lib/chevereto.min.js:41
+#: ../../../lib/Peafowl/peafowl.js:2295
+#: ../../../lib/Peafowl/peafowl.min.js:129
+msgid "Confirm"
+msgstr "Підтвердити"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1805
+msgid "Enable this to display a message that complies with the EU Cookie law requirements. Note: You only need this if your website is hosted in the EU and if you add tracking cookies."
+msgstr "Цей параметр використовується для відображення повідомлення, що відповідає вимогам законодавства ЄС про куки. Примітка: Вам потрібно тільки це, якщо ваш сайт розміщений в ЄС, і якщо ви додали відстеження куків."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1412
+msgid "Language chooser"
+msgstr "Вибір мови"
+
+#: ../../../lib/Peafowl/peafowl.js:2525
+#: ../../../lib/Peafowl/peafowl.min.js:145
+msgid "Confirm action"
+msgstr "Підтвердіть дію"
+
+#: ../../../app/themes/Peafowl/views/signup.php:45
+msgid "resend account activation"
+msgstr "Повторити відправку посилання для активації"
+
+#: ../../../lib/Peafowl/peafowl.js:467 ../../../lib/Peafowl/peafowl.min.js:29
+msgid "Changes saved successfully."
+msgstr "Зміни успішно збережені."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1418
+msgid "Enable this if you want to allow language selection."
+msgstr "Ввімкніть це, якщо хочете дозволити вибір мови"
+
+#: ../../../lib/Peafowl/peafowl.js:25 ../../../lib/Peafowl/peafowl.js:483
+#: ../../../lib/Peafowl/peafowl.min.js:1
+#: ../../../lib/Peafowl/peafowl.min.js:30
+msgid "All the changes that you have made will be lost if you continue."
+msgstr "Якщо ви продовжите, всі зроблені вами зміни будуть втрачені."
+
+#: ../../../lib/Peafowl/peafowl.js:483 ../../../lib/Peafowl/peafowl.min.js:30
+msgid "Go back to form"
+msgstr "Повернуться до форми"
+
+#: ../../../app/themes/Peafowl/views/signup.php:45
+#, php-format
+msgid "If you have already signed up maybe you need to request to %s"
+msgstr "Якщо ви вже зареєструвалися, можливо, вам потрібно запросити %s"
+
+#: ../../../lib/Peafowl/peafowl.js:483 ../../../lib/Peafowl/peafowl.min.js:30
+msgid "continue anyway"
+msgstr "все одно продовжити"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1425
+msgid "Enabled languages"
+msgstr "Дозволені мови"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1838
+#: ../../../app/themes/Peafowl/views/settings.php:443
+msgid "Check the errors to proceed."
+msgstr "Перед тим як продовжити, перевірте правильність заповнення."
+
+#: ../../../app/themes/Peafowl/views/settings.php:285
+msgid "Add a password to be able to login using your username or email."
+msgstr "Додайте пароль, щоб мати можливість входити з використанням імені користувача або адреси електронної"
+
+#: ../../../app/themes/Peafowl/views/request-denied.php:12
+msgid "You either don't have permission to access this page or the link has expired."
+msgstr "У вас немає прав на доступ до даної сторінки або посилання застаріло."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:936
+#: ../../../app/themes/Peafowl/views/dashboard.php:1174
+msgid "Red"
+msgstr "Червоний"
+
+#: ../../../app/themes/Peafowl/views/search.php:8
+#: ../../../app/themes/Peafowl/views/user.php:111
+msgid "Results for"
+msgstr "Результати для"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:937
+#: ../../../app/themes/Peafowl/views/dashboard.php:1175
+msgid "Grey"
+msgstr "Сірий"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:945
+msgid "Color for the top bar buttons like the \"Create account\" button."
+msgstr "Колір кнопки \"Створити обліковий запис\" у верхній панелі кнопок ."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1036
+msgid "Enable show Exif data"
+msgstr "Включити показ Exif даних"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1042
+msgid "Enable this if you want to show image Exif data."
+msgstr "Включіть це, якщо ви хочете показувати Exif дані."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1719
+#, php-format
+msgid "CDN allows you to offload static content to several edge servers making your website faster. If you don't have a CDN provider you should try %s."
+msgstr "CDN дозволяє збільшити швидкість роботи сайту і знизити навантаження на сервер шляхом перенесення статичного вмісту на кілька переферейних серверів. Якщо ви ще не використовуєте CDN, спробуйте %s."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1139
+msgid "Vector version or your website logo in SVG format (only for homepage)."
+msgstr "Векторна версія логотипу вашого сайту у SVG форматі (тільки для домашньої сторінки)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1149
+msgid "Bitmap version or your website logo (only for homepage). PNG format is recommended."
+msgstr "Растрова версія логотипу вашого сайту у PNG форматі (тільки для домашньої сторінки)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1167
+msgid "Call to action button color"
+msgstr "Колір кнопки дії"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1183
+msgid "Color of the homepage call to action button."
+msgstr "Колір кнопки переходу на домашню сторінку"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1187
+msgid "Call to action outline style button"
+msgstr "Контур кнопки для дії"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:971
+#: ../../../app/themes/Peafowl/views/dashboard.php:1133
+msgid "Vector logo image"
+msgstr "Векторний логотип"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:977
+msgid "Vector version or your website logo in SVG format."
+msgstr "Векторний логотип вашого сайту у форматі SVG."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1194
+msgid "Enable this to use outline style for the homepage call to action button."
+msgstr "Включіть це, щоб використовувати стиль обведення кнопки загрузки на стартовій сторінці."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:983
+#: ../../../app/themes/Peafowl/views/dashboard.php:1143
+msgid "Raster logo image"
+msgstr "Растровий логотип"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:989
+msgid "Bitmap version or your website logo. PNG format is recommended."
+msgstr "Растровий логотип вашого сайту. Рекомендується використовувати формат PNG."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1002
+msgid "Favicon image"
+msgstr "Іконка сайту"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1348
+msgid "Minify code"
+msgstr "Мінімізувати код"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1030
+msgid "Enable this if you want to allow right click on image viewer page."
+msgstr "Включіть це, якщо Ви хочете дозволити меню правої клавіши миші"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1092
+msgid "Custom CSS code"
+msgstr "Власний CSS"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1093
+msgid "Put your custom CSS code here. It will be placed as <style> just before the closing </head> tag."
+msgstr "Вставте сюди ваш власний CSS код. Він буде вставлений за допомогою тега <style> перед закриваючим тегом </head>"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1354
+msgid "Enable this if you want to auto minify CSS and JS code."
+msgstr "Включіть це, якщо ви хочете автоматично мінімізувати CSS та JS код."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1024
+msgid "Enable right click on image"
+msgstr "Включити меню правої клавіши миші на зображенні"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1097
+msgid "Custom JS code"
+msgstr "Власний JS"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1098
+msgid "Put your custom JS code here. It will be placed as <script> just before the closing </head> tag."
+msgstr "Вставте сюди ваш власний JS код. Він буде вставлений за допомогою тега <script> перед закриваючим тегом </head>"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1008
+msgid "Favicon image. Image must have same width and height."
+msgstr "Іконка вашого сайту. Ширина і висота даного зображення повинні бути однакові."
+
+#: ../../../app/themes/Peafowl/views/image.php:163
+msgid "Less Exif data"
+msgstr "Менше даних Exif"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1457
+msgid "Toggle this to enable or disable HTTPS"
+msgstr "Змініть цю настройку щоб включити або відключити HTTPS"
+
+#: ../../../app/themes/Peafowl/views/image.php:163
+msgid "More Exif data"
+msgstr "Більше даних Exif"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1458
+msgid "Toggle this to enable or disable this storage"
+msgstr "Змініть цю настройку щоб включити або відключити це сховище"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1476
+msgid "Active"
+msgstr "Активне"
+
+#: ../../../app/themes/Peafowl/views/settings.php:159
+msgid "Newsletter"
+msgstr "Інформаційна розсилка"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1522
+msgid "Edit storage"
+msgstr "Змінити"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:993
+msgid "Logo height"
+msgstr "Висота логотипу"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:994
+#: ../../../app/themes/Peafowl/views/dashboard.php:1229
+msgid "No value"
+msgstr "Немає значення"
+
+#: ../../../app/themes/Peafowl/views/settings.php:162
+#, php-format
+msgid "Send me emails with news about %s"
+msgstr "Посилати мені листи з новинами про %s"
+
+#: ../../../app/lib/chevereto.js:2998 ../../../app/lib/chevereto.min.js:138
+msgid "Invalid URL."
+msgstr "Неправильна адреса."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:996
+msgid "Use this to set the logo height if needed."
+msgstr "Використовуйте це поле, якщо необхідно вказати висоту логотипу."
+
+#: ../../../app/lib/chevereto.js:3049 ../../../app/lib/chevereto.min.js:141
+msgid "Storage successfully edited."
+msgstr "Сховище змінено."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1048
+msgid "Enable social share"
+msgstr "Увімкнути опцію \"поділитися\""
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1054
+msgid "Enable this if you want to show social network buttons to share content."
+msgstr "Ввімкніть цю опцію, щоб показувати кнопки соціальних мереж."
+
+#: ../../../app/themes/Peafowl/views/settings.php:168
+msgid "Content settings"
+msgstr "Налаштування контенту"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1058
+msgid "Enable embed codes (content)"
+msgstr "Коди для вбудовування (в перегляді)"
+
+#: ../../../app/lib/chevereto.js:901 ../../../app/lib/chevereto.min.js:34
+msgid "Select existing album"
+msgstr "Виберіть існуючий альбом"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1064
+msgid "Enable this if you want to show embed codes for the content."
+msgstr "Ввімкніть цю опцію, якщо ви хочете показувати коди для вбудовування в перегляді зображень."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1068
+msgid "Enable embed codes (uploader)"
+msgstr "Коди для вбудовування (у завантажувачі)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1074
+msgid "Enable this if you want to show embed codes when upload gets completed."
+msgstr "Ввімкніть цю опцію, якщо ви хочете показувати коди для вбудовування після завершення завантаження."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:959
+msgid "Enable vector logo"
+msgstr "Увімкнути векторний логотип"
+
+#: ../../../app/themes/Peafowl/views/image.php:204
+#: ../../../app/themes/Peafowl/views/image.php:210
+msgid "Album ID"
+msgstr "ID альбома"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:966
+msgid "Enable vector logo for high quality logo in devices with high pixel density."
+msgstr "Увімкніть векторний логотип для підвищення якості зображення на дисплеях з великою щільністю пікселів."
+
+#: ../../../app/themes/Peafowl/views/settings.php:171
+msgid "Show not safe content in listings (from others)"
+msgstr "Показувати небезпечний зміст (від інших)"
+
+#: ../../../app/lib/chevereto.js:1477 ../../../app/lib/chevereto.min.js:57
+msgid "Your website is running the latest version of Chevereto."
+msgstr "Ви використовуєте останню версію Chevereto."
+
+#: ../../../app/lib/chevereto.js:1472 ../../../app/lib/chevereto.min.js:57
+#, python-format, javascript-format
+msgid "Update available (%s)"
+msgstr "Доступне оновлення (%s)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1243
+msgid "Before cover (homepage)"
+msgstr "До обкладинки (на головній)"
+
+#: ../../../app/lib/chevereto.js:1473 ../../../app/lib/chevereto.min.js:57
+#, python-format, javascript-format
+msgid "There is an update available for your system. Go to %s to proceed to download the file."
+msgstr "Доступне оновлення системи. Перейдіть за адресою %s для завантаження нової версії"
+
+#: ../../../app/themes/Peafowl/views/settings.php:341
+msgid "Bio"
+msgstr "Біографія"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1247
+msgid "After cover (homepage)"
+msgstr "Після обкладинки (на головній)"
+
+#: ../../../app/lib/chevereto.js:1473 ../../../app/lib/chevereto.min.js:57
+msgid "The release notes for the update available are:"
+msgstr "Список змін та примітки до випуску:"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1251
+msgid "After listing (homepage)"
+msgstr "Після списку зображень (на головній)"
+
+#: ../../../app/lib/chevereto.js:2975 ../../../app/lib/chevereto.js:3225
+#: ../../../app/lib/chevereto.js:3254 ../../../app/lib/chevereto.min.js:135
+#: ../../../app/lib/chevereto.min.js:150 ../../../app/lib/chevereto.min.js:151
+msgid "Please fill all the required fields."
+msgstr "Будь ласка заповніть всі необхідні поля."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1267
+msgid "Content (image and album)"
+msgstr "Вміст (зображення та альбоми)"
+
+#: ../../../app/lib/chevereto.js:2632 ../../../app/lib/chevereto.min.js:120
+msgid "Invalid URL key."
+msgstr "Невірний URL ключ."
+
+#: ../../../app/themes/Peafowl/views/settings.php:342
+msgid "Tell us a little bit about you"
+msgstr "Розкажіть нам трошки про себе"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1269
+msgid "Tab about column"
+msgstr "Вкладка про зображення"
+
+#: ../../../app/lib/chevereto.js:2647 ../../../app/lib/chevereto.min.js:122
+msgid "Category URL key already being used."
+msgstr "Такий URL ключ вже використовується."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1273
+msgid "Before comments"
+msgstr "Перед коментарями"
+
+#: ../../../app/themes/Peafowl/views/user.php:15
+msgid "Upload profile background"
+msgstr "Завантажити фон профілю"
+
+#: ../../../app/lib/chevereto.js:2725 ../../../app/lib/chevereto.min.js:124
+msgid "Category successfully deleted."
+msgstr "Категорія вилучена."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1279
+msgid "Image page"
+msgstr "Сторінка зображення"
+
+#: ../../../app/themes/Peafowl/views/user.php:17
+msgid "Change background"
+msgstr "Змінити фон"
+
+#: ../../../app/lib/chevereto.js:3273 ../../../app/lib/chevereto.min.js:152
+msgid "User added successfully."
+msgstr "Користувач доданий."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1281
+msgid "Inside viewer top (image page)"
+msgstr "У заголовку переглядача (сторінка зображення)"
+
+#: ../../../app/themes/Peafowl/views/settings.php:318
+#: ../../../app/themes/Peafowl/views/user.php:21
+msgid "Upload new image"
+msgstr "Завантажити зображення"
+
+#: ../../../lib/Peafowl/peafowl.js:2537
+#: ../../../lib/Peafowl/peafowl.min.js:146
+msgid "information"
+msgstr "інформація"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1286
+msgid "Inside viewer foot (image page)"
+msgstr "Внизу переглядача (сторінка зображення)"
+
+#: ../../../app/themes/Peafowl/views/user.php:22
+msgid "Delete background"
+msgstr "Видалити фон"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1291
+msgid "After image viewer (image page)"
+msgstr "Після зображення (сторінка зображення)"
+
+#: ../../../app/themes/Peafowl/views/user.php:64
+msgid "Edit profile"
+msgstr "Редагувати профіль"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1295
+msgid "Before header (image page)"
+msgstr "Перед заголовком (сторінка зображення)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1299
+msgid "After header (image page)"
+msgstr "Після заголовка (сторінка зображення)"
+
+#: ../../../app/themes/Peafowl/views/settings.php:36
+#: ../../../app/themes/Peafowl/views/user.php:68
+msgid "Delete user"
+msgstr "Видалити користувача"
+
+#: ../../../app/lib/chevereto.js:668 ../../../app/lib/chevereto.js:740
+#: ../../../app/lib/chevereto.js:923 ../../../app/lib/chevereto.js:2423
+#: ../../../app/lib/chevereto.js:2476 ../../../app/lib/chevereto.js:2574
+#: ../../../app/lib/chevereto.min.js:25 ../../../app/lib/chevereto.min.js:29
+#: ../../../app/lib/chevereto.min.js:35 ../../../app/lib/chevereto.min.js:111
+#: ../../../app/lib/chevereto.min.js:114 ../../../app/lib/chevereto.min.js:118
+msgid "You must enter the album name."
+msgstr "Ви повинні ввести назву альбому."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1303
+msgid "Footer (image page)"
+msgstr "Нижній колонтитул (сторінка зображення)"
+
+#: ../../../app/lib/chevereto.js:1184 ../../../app/lib/chevereto.js:1264
+#: ../../../app/lib/chevereto.min.js:46 ../../../app/lib/chevereto.min.js:51
+msgid "Please select a valid image file type."
+msgstr "Будь ласка виберіть правильний формат зображення."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1309
+msgid "Album page"
+msgstr "Сторінка альбому"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1761
+msgid "How many failed attempts are needed to ask for reCAPTCHA? Use zero (0) to always show reCAPTCHA."
+msgstr "Після скількох невдалих спроб потрібно використовувати reCAPTCHA ? Використовуйте нуль (0), щоб завжди показувати reCAPTCHA."
+
+#: ../../../app/lib/chevereto.js:1189 ../../../app/lib/chevereto.js:1269
+#: ../../../app/lib/chevereto.min.js:47 ../../../app/lib/chevereto.min.js:52
+#, python-format, javascript-format
+msgid "Please select a picture of at most %s size."
+msgstr "Будь ласка, виберіть зображення не більше %s розміром."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1311
+msgid "Before header (album page)"
+msgstr "Перед заголовком (сторінка альбому)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1315
+msgid "After header (album page)"
+msgstr "Після заголовка (сторінка альбому)"
+
+#: ../../../app/lib/chevereto.js:1236 ../../../app/lib/chevereto.min.js:49
+msgid "Profile image updated."
+msgstr "Зображення профілю оновлено."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1321
+msgid "User profile page"
+msgstr "Профіль користувача"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1014
+msgid "Enable download button"
+msgstr "Включити кнопку завантаження"
+
+#: ../../../app/themes/Peafowl/views/settings.php:81
+msgid "Register date"
+msgstr "Дата реєстрації"
+
+#: ../../../app/lib/chevereto.js:1306 ../../../app/lib/chevereto.min.js:53
+msgid "Profile background image updated."
+msgstr "Фон профілю оновлений."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1323
+msgid "After top (user profile)"
+msgstr "Після заголовка (профіль користувача)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1020
+msgid "Enable this if you want to show the image download button."
+msgstr "Увімкніть, щоб показувати кнопку завантаження зображення."
+
+#: ../../../app/themes/Peafowl/views/index.php:15
+msgid "Upload and share your images."
+msgstr "Завантажуйте і діліться зображеннями."
+
+#: ../../../app/themes/Peafowl/views/settings.php:99
+msgid "Status"
+msgstr "Статус"
+
+#: ../../../app/lib/chevereto.js:1378 ../../../app/lib/chevereto.min.js:54
+msgid "Profile background image deleted."
+msgstr "Фон профілю видалений."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1327
+msgid "Before listing (user profile)"
+msgstr "Перед списком зображень (профіль користувача)"
+
+#: ../../../app/themes/Peafowl/views/index.php:63
+#, php-format
+msgid "Fill this section uploading pictures to %s account.<br>You can edit the target user in your dashboard settings."
+msgstr "Заповніть цей розділ, завантажуючи зображення від імені %s.<br>Ви можете поміняти цього користувача в панелі управління."
+
+#: ../../../app/themes/Peafowl/views/settings.php:103
+msgid "Valid"
+msgstr "Підтверджений"
+
+#: ../../../app/lib/chevereto.js:1383 ../../../app/lib/chevereto.min.js:54
+msgid "Error deleting profile background image."
+msgstr "При видаленні фону профілю виникла помилка."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1333
+msgid "Explore page"
+msgstr "Сторінка Огляд"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1651
+msgid "Twitter account"
+msgstr "Акаунт в Twitter"
+
+#: ../../../app/lib/chevereto.js:2771 ../../../app/lib/chevereto.min.js:126
+#, python-format, javascript-format
+msgid "Category %s added."
+msgstr "Категорія %s додана."
+
+#: ../../../app/themes/Peafowl/views/index.php:79
+msgid "Sign up to unlock all the features"
+msgstr "Зареєструватися, щоб отримати більше можливостей."
+
+#: ../../../app/themes/Peafowl/views/settings.php:104
+msgid "Banned"
+msgstr "Забанений"
+
+#: ../../../app/lib/chevereto.js:2551 ../../../app/lib/chevereto.min.js:118
+msgid "Image edited successfully."
+msgstr "Зображення успішно змінене."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1335
+msgid "After top (explore page)"
+msgstr "Після заголовка (сторінка огляд)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1738
+#, php-format
+msgid "You need a <a href=\"%s\" target=\"_blank\">reCAPTCHA key</a> for this."
+msgstr "Для цього вам необхідний <a href=\"%s\" target=\"_blank\">ключ reCAPTCHA</a>."
+
+#: ../../../app/themes/Peafowl/views/index.php:80
+msgid "Manage your content, create private albums, customize your profile and more."
+msgstr "Керуйте аккаунтом, створюйте альбоми, змінюйте свій профіль і багато іншого."
+
+#: ../../../app/themes/Peafowl/views/settings.php:105
+msgid "Awaiting email"
+msgstr "Чекає повідомлення"
+
+#: ../../../app/lib/chevereto.js:2614 ../../../app/lib/chevereto.min.js:119
+msgid "Album edited successfully."
+msgstr "Альбом успішно відредагований."
+
+#: ../../../app/themes/Peafowl/views/image.php:348
+msgid "Linked image"
+msgstr "Зображення з посиланням"
+
+#: ../../../app/lib/chevereto.js:2792 ../../../app/lib/chevereto.min.js:127
+msgid "Invalid expiration date."
+msgstr "Неправильна дата закінчення терміну дії."
+
+#: ../../../app/themes/Peafowl/views/settings.php:106
+msgid "Awaiting confirmation"
+msgstr "В черзі"
+
+#: ../../../app/lib/chevereto.js:3450 ../../../app/lib/chevereto.js:3541
+#: ../../../app/lib/chevereto.js:3624 ../../../app/lib/chevereto.js:3633
+#: ../../../app/lib/chevereto.min.js:161 ../../../app/lib/chevereto.min.js:167
+#: ../../../app/lib/chevereto.min.js:169
+msgid "The content has been moved."
+msgstr "Вміст переміщено."
+
+#: ../../../app/themes/Peafowl/views/image.php:371
+msgid "Linked medium"
+msgstr "Зображення середнього розміру з посиланням"
+
+#: ../../../app/themes/Peafowl/views/settings.php:389
+#, php-format
+msgid "Connect %s"
+msgstr "Пов'язати %s"
+
+#: ../../../app/lib/chevereto.js:3541 ../../../app/lib/chevereto.min.js:167
+msgid "The content has been edited."
+msgstr "Вміст змінено."
+
+#: ../../../app/themes/Peafowl/views/image.php:396
+msgid "Linked thumbnail"
+msgstr "Мініатюра з посиланням"
+
+#: ../../../app/themes/Peafowl/views/settings.php:181
+msgid "Language"
+msgstr "Мова"
+
+#: ../../../app/lib/chevereto.js:1898 ../../../app/lib/chevereto.min.js:77
+msgid "File too big."
+msgstr "Файл занадто великий."
+
+#: ../../../app/themes/Peafowl/views/settings.php:211
+msgid "Timezone"
+msgstr "Часовий пояс"
+
+#: ../../../app/lib/chevereto.js:1909 ../../../app/lib/chevereto.js:2091
+#: ../../../app/lib/chevereto.min.js:79 ../../../app/lib/chevereto.min.js:91
+msgid "Some files couldn't be added"
+msgstr "Деякі файли не були додані."
+
+#: ../../../app/lib/chevereto.js:2858 ../../../app/lib/chevereto.min.js:133
+#, python-format, javascript-format
+msgid "IP %s banned."
+msgstr "IP %s вже заблокована."
+
+#: ../../../app/themes/Peafowl/views/settings.php:262
+msgid "Current password"
+msgstr "Поточний пароль"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1240
+msgid "Here you can set the codes for the predefined ad spaces."
+msgstr "Тут ви можете ввести коди для заданих місць розміщення реклами."
+
+#: ../../../app/themes/Peafowl/views/settings.php:263
+msgid "Enter your current password"
+msgstr "Введіть ваш поточний пароль"
+
+#: ../../../app/lib/chevereto.js:2938 ../../../app/lib/chevereto.min.js:134
+msgid "IP ban successfully deleted."
+msgstr "Блокування IP адреси успішно видалено."
+
+#: ../../../app/themes/Peafowl/views/settings.php:271
+msgid "New password"
+msgstr "Новий пароль"
+
+#: ../../../app/themes/Peafowl/views/settings.php:277
+msgid "Confirm new password"
+msgstr "Повторіть новий пароль"
+
+#: ../../../app/themes/Peafowl/views/settings.php:138
+#: ../../../app/themes/Peafowl/views/signup.php:40
+msgid "%i to %f characters<br>Letters, numbers and \"_\""
+msgstr "від %i до %f знаків<br>Букви, цифри і \"_\""
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1557
+msgid "How to send emails? SMTP recommended."
+msgstr "Як відправляти повідомлення? Рекомендується використовувати SMTP."
+
+#: ../../../app/themes/Peafowl/views/settings.php:285
+msgid "This user doesn't have a password. Add one using this form."
+msgstr "У цього користувача не встановлений пароль. Додайте його через дану форму."
+
+#: ../../../app/themes/Peafowl/views/settings.php:36
+#: ../../../app/themes/Peafowl/views/user.php:68
+msgid "Do you really want to delete this user? This can't be undone."
+msgstr "Ви дійсно хочете видалити даного користувача? Ця дія є незворотньою."
+
+#: ../../../app/themes/Peafowl/views/login.php:40
+#: ../../../app/themes/Peafowl/views/settings.php:289
+msgid "Enter your password"
+msgstr "Введите ваш пароль"
+
+#: ../../../app/themes/Peafowl/views/user.php:22
+msgid "The profile background image will be deleted. This can't be undone. Are you sure that you want to delete the profile background image?"
+msgstr "Фон профілю буде видалений.  Ви дійсно хочете видалити фон профілю?"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1213
+msgid "Enter an absolute or relative URL"
+msgstr "Введіть абсолютне або відносне посилання"
+
+#: ../../../app/themes/Peafowl/views/settings.php:295
+msgid "Re-enter your password"
+msgstr "Повторіть пароль"
+
+#: ../../../app/themes/Peafowl/views/settings.php:320
+msgid "Delete existing image"
+msgstr "Видалити"
+
+#: ../../../app/themes/Peafowl/views/settings.php:314
+#: ../../../lib/Peafowl/peafowl.js:3432
+#: ../../../lib/Peafowl/peafowl.min.js:215
+msgid "loading"
+msgstr "Завантаження"
+
+#: ../../../app/themes/Peafowl/views/settings.php:333
+msgid "This is your real name, not your username."
+msgstr "Це ваше справжнє ім'я, а не ім'я користувача."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1434
+msgid "Unchecked languages won't be used in your website."
+msgstr "Не відзначені мови не будуть використовуватись на вашому сайті."
+
+#: ../../../app/themes/Peafowl/views/settings.php:337
+msgid "http://yourwebsite.com"
+msgstr "http://yourwebsite.com"
+
+#: ../../../app/themes/Peafowl/views/settings.php:353
+msgid "User has no connections."
+msgstr "У користувача немає зв'язків з іншими акаунтами."
+
+#: ../../../app/themes/Peafowl/views/settings.php:357
+msgid "Link your account to external services to be able to login and share content."
+msgstr "Зв'яжіть ваш аккаунт з соціальними мережами і сторонніми сервісами, щоб мати можливість входити через них і ділиться зображеннями."
+
+#: ../../../app/themes/Peafowl/views/settings.php:364
+#, php-format
+msgid "Do you really want to disconnect %s from this account?"
+msgstr "Ви дійсно хочете відв'язати %s від цього аккаунта?"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1389
+msgid "Default language"
+msgstr "Мова за замовчуванням"
+
+#: ../../../app/themes/Peafowl/views/settings.php:365
+#, php-format
+msgid "This account is connected to %s"
+msgstr "Цей акаунт пов'язаний з %s"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1398
+msgid "Default base language to use."
+msgstr "Використовується за замовчуванням мова."
+
+#: ../../../app/themes/Peafowl/views/settings.php:367
+#, php-format
+msgid "Do you really want to disconnect your %s account?"
+msgstr "Ви дійсно хочете відв'язати ваш аккаунт %s?"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1402
+msgid "Auto language"
+msgstr "Автоматичний вибір мови"
+
+#: ../../../app/themes/Peafowl/views/settings.php:369
+#, php-format
+msgid "You will be logged out and you won't be able to login to your account using this %s account."
+msgstr "Буде виконаний вихід із системи і ви більше не зможете входити через акаунт %s."
+
+#: ../../../app/themes/Peafowl/views/settings.php:371
+#, php-format
+msgid "Your account is connected to %s"
+msgstr "Ваш аккаунт пов'язаний з %s"
+
+#: ../../../app/themes/Peafowl/views/settings.php:376
+msgid "disconnect"
+msgstr "відв'язати"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1693
+msgid "You need a <a href=\"http://vk.com/dev\" target=\"_blank\">VK app</a> for this."
+msgstr "Для цього вам необхідні <a href=\"http://vk.com/dev\" target=\"_blank\">інструменти розробника ВКонтакті</a>."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1698
+msgid "VK client id"
+msgstr "Для ID клієнта ВКонтакті"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1703
+msgid "VK client secret"
+msgstr "Секретний ключ клієнта ВКонтакті"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1474
+msgid "Quota"
+msgstr "Квота"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1509
+msgid "Storage method"
+msgstr "Тип сховища"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1520
+msgid "Local storage is used by default or when no external storage is active."
+msgstr "Локальне сховище використовується за замовчуванням або за відсутності активних зовнішніх сховищ."
+
+#: ../../../app/lib/chevereto.js:2986 ../../../app/lib/chevereto.min.js:136
+msgid "Invalid storage capacity value. Make sure to use a valid format."
+msgstr "Невірне значення доступного дискового простору. Переконайтеся, що ви використовуєте допустимий формат."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1357
+msgid "Maintenance"
+msgstr "Обслуговування"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1363
+msgid "When enabled the website will show a maintenance message. This setting doesn't affect administrators."
+msgstr "При включенні, відображає на сайті повідомлення про технічне обслуговування. Ця установка не впливає на адміністраторів."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1231
+msgid "Comma-separated list of target user IDs to show images on homepage. Leave it blank or zero to display all recent images."
+msgstr "Список числових ідентифікаторів користувачів (через кому), зображення яких, будуть відображені на головній сторінці. Залиште поле порожнім або вкажіть нуль, щоб показувати всі нові зображення."
+
+#: ../../../app/themes/Peafowl/views/maintenance.php:7
+msgid "Website under maintenance"
+msgstr "Сайт на обслуговуванні"
+
+#: ../../../app/themes/Peafowl/views/maintenance.php:8
+msgid "We're performing scheduled maintenance tasks in the website. Please come back in a few minutes."
+msgstr "Ми виконуємо планові роботи з технічного обслуговування на веб-сайті. Будь ласка, поверніться до нас трошки пізніше"
+
+#: ../../../app/themes/Peafowl/views/settings.php:412
+msgid "Button"
+msgstr "Кнопка"
+
+#: ../../../app/lib/chevereto.js:2807 ../../../app/lib/chevereto.min.js:129
+#, python-format, javascript-format
+msgid "IP %s already banned."
+msgstr "IP адреса %s вже заблокована"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1343
+msgid "Crypt salt"
+msgstr "Криптографічна сіль"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1345
+msgid "This is the salt used to convert numeric ID to alphanumeric. It was generated on install."
+msgstr "Ця сіль використовується для перетворення цифрових ID в літерні. Вона була створена при установці."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1532
+msgid "From name"
+msgstr "Відправник"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1535
+msgid "Sender name for emails sent to users."
+msgstr "Ім'я відправника для розсилки повідомлень користувачам."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1080
+msgid "Not safe content checkbox in uploader"
+msgstr "Показувати у завантажувачі настройку для небезпечного змісту"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1086
+msgid "Enable this if you want to show a checkbox to indicate not safe content upload."
+msgstr "Увімкніть, щоб дати користувачам можливість вказувати безпеку зображення при завантаженні."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1257
+msgid "Before pagination"
+msgstr "Перед роздільником сторінок"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1261
+msgid "After pagination"
+msgstr "Після роздільник сторінок"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1550
+msgid "Email mode"
+msgstr "Режим електронної пошти"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1283
+#: ../../../app/themes/Peafowl/views/dashboard.php:1288
+msgid "Expected banner size 728x90"
+msgstr "Рекомендований розмір банера 728x90"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1562
+msgid "SMTP server and port"
+msgstr "SMTP сервер та порт"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1790
+msgid "API v1 key"
+msgstr "Ключ API v1"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1565
+msgid "SMTP server"
+msgstr "SMTP сервер"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1578
+msgid "SMTP username"
+msgstr "Ім'я користувача SMTP"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1583
+msgid "SMTP password"
+msgstr "Пароль SMTP"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1588
+msgid "SMTP security"
+msgstr "Безпека SMTP"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1591
+msgid "Unsecured"
+msgstr "Небезпечний"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1608
+msgid "You need a <a href=\"https://developers.facebook.com/\" target=\"_blank\">Facebook app</a> for this."
+msgstr "Для цього вам необхідні <a href=\"https://developers.facebook.com/\" target=\"_blank\"> інструменти розробника Facebook</a>."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1613
+msgid "Facebook app id"
+msgstr "ID Facebook app"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1618
+msgid "Facebook app secret"
+msgstr "Секрет Facebook app"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1634
+msgid "You need a <a href=\"https://apps.twitter.com\" target=\"_blank\">Twitter app</a> for this."
+msgstr "Для цього вам необхідні <a href=\"https://apps.twitter.com\" target=\"_blank\">інструменти розробника Twitter</a>."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1639
+msgid "Twitter API key"
+msgstr "Ключ Twitter API"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1644
+msgid "Twitter API secret"
+msgstr "Секрет Twitter API"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1667
+msgid "You need a <a href=\"https://cloud.google.com/console\" target=\"_blank\">Google app</a> for this."
+msgstr "Для цього вам необхідні <a href=\"https://cloud.google.com/console\" target=\"_blank\"> інструменти розробника Google</a>."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1672
+msgid "Google client id"
+msgstr "ID клиента Google"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1677
+msgid "Google client secret"
+msgstr "Секрет клієнта Google"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1367
+msgid "PHP error reporting"
+msgstr "Звіти про помилки PHP"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1744
+msgid "reCAPTCHA public key"
+msgstr "Публічний ключ reCAPTCHA"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1749
+msgid "reCAPTCHA private key"
+msgstr "Закритий ключ reCAPTCHA"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1373
+#, php-format
+msgid "Enable this if you want to print errors generated by PHP <a %s>error_reporting()</a>. This should be disabled in production."
+msgstr "Увімкніть це, якщо ви хочете щоб показувало помилки PHP <a %s>error_reporting()</a>. По замовчуванню це відключено."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1756
+msgid "reCAPTCHA threshold"
+msgstr "Поріг спрацьовування reCAPTCHA"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1767
+msgid "Comment code"
+msgstr "Код для системи коментарів"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1376
+msgid "Debug level"
+msgstr "Рівень налагодження"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1768
+msgid "Disqus, Facebook or anything you want. It will be used in image view."
+msgstr "Disqus, Facebook або будь-яка система на ваш вибір. Вона буде використана при перегляді зображення."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1772
+msgid "Analytics code"
+msgstr "Код для збору статистики"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1773
+msgid "Google Analytics or anything you want. It will be added to the theme footer."
+msgstr "Google Analytics або система збору статистики на ваш вибір. Цей код буде додано до \"підвал\" теми."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1379
+msgid "None"
+msgstr "Ні"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1105
+msgid "Style"
+msgstr "Стиль"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1379
+msgid "Error log"
+msgstr "Журнал помилок"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1109
+msgid "Landing page"
+msgstr "Стартова сторінка"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1110
+msgid "Split landing + images"
+msgstr "Стартова сторінка + зображення"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1379
+msgid "Print errors without error log"
+msgstr "Друк помилок без журналу помилок"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1379
+msgid "Print and log errors"
+msgstr "Друк і журнал помилок"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1121
+msgid "Cover image"
+msgstr "Зображення обкладинки"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1382
+#, php-format
+msgid "To configure the debug level check the <a %s>debug documentation</a>. Default level is \"Error log\" (1)."
+msgstr "Щоб налаштувати рівень налагодження перевірте <a %s>документацію по налагодженню</a>. Рівень за замовчуванням є \"Журнал помилок\" (1)."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1520
+#, php-format
+msgid "If you need help check the <a %s>storage documentation</a>."
+msgstr "Якщо вам потрібна допомога зверніться до <a %s>документації</a>."
+
+#: ../../../app/themes/Peafowl/views/index.php:17
+#, php-format
+msgid "Drag and drop anywhere you want and start uploading your images now. %s limit. Direct image links, BBCode and HTML thumbnails."
+msgstr "Перетягніть зображення яке Ви хочете загрузити в будь-яке місце і почніть завантажувати свої картинки. %s обмеження на один файл. Прямі посилання зображення, BBCode і HTML мініатюри."
+
+#: ../../../app/themes/Peafowl/views/index.php:25
+msgid "Start uploading"
+msgstr "Почати завантаження"
+
+#: ../../../lib/Peafowl/peafowl.js:2440
+#: ../../../lib/Peafowl/peafowl.min.js:142
+msgid "Saving"
+msgstr "збереження"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1788
+#, php-format
+msgid "For documentation about the API check the <a %s>API documentation</a>"
+msgstr "Документація по API доступна за адресою <a %s>API документація</a>"
+
+#: ../../../lib/Peafowl/peafowl.js:2445
+#: ../../../lib/Peafowl/peafowl.min.js:142
+msgid "Sending"
+msgstr "Відправка"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1793
+#, php-format
+msgid "Use this key when using the <a %s>API v1</a>."
+msgstr "Використовуйте цей ключ для <a %s>API v1</a>."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1111
+msgid "Route explore"
+msgstr "Переадресація в Огляд"
+
+#: ../../../app/themes/Peafowl/views/image.php:63
+msgid "Guest"
+msgstr "Гість"
+

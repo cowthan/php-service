@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex,nofollow" />
+	<title>WordPress &rsaquo; 调整配置文件</title>
+	<link rel='stylesheet' id='open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='buttons-css'  href='buttons.min.css?ver=4.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='install-css'  href='install.min.css?ver=4.5.3' type='text/css' media='all' />
+</head>
+<body class="wp-core-ui">
+<p id="logo"><a href="https://cn.wordpress.org/" tabindex="-1">WordPress</a></p>
+<h1 class="screen-reader-text">设置您的数据库连接</h1>
+<form method="post" action="setup-config.php?step=2">
+	<p>请在下方填写您的数据库连接信息。如果您不确定，请联系您的服务提供商。</p>
+	<table class="form-table">
+		<tr>
+			<th scope="row"><label for="dbname">数据库名</label></th>
+			<td><input name="dbname" id="dbname" type="text" size="25" value="wordpress" /></td>
+			<td>将WordPress安装到哪个数据库？</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="uname">用户名</label></th>
+			<td><input name="uname" id="uname" type="text" size="25" value="用户名" /></td>
+			<td>您的数据库用户名。</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="pwd">密码</label></th>
+			<td><input name="pwd" id="pwd" type="text" size="25" value="密码" autocomplete="off" /></td>
+			<td>您的数据库密码。</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="dbhost">数据库主机</label></th>
+			<td><input name="dbhost" id="dbhost" type="text" size="25" value="localhost" /></td>
+			<td>如果<code>localhost</code>不能用，您通常可以从网站服务提供商处得到正确的信息。</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="prefix">表前缀</label></th>
+			<td><input name="prefix" id="prefix" type="text" value="wp_" size="25" /></td>
+			<td>如果您希望在同一个数据库安装多个WordPress，请修改前缀。</td>
+		</tr>
+	</table>
+		<input type="hidden" name="language" value="zh_CN" />
+	<p class="step"><input name="submit" type="submit" value="提交" class="button button-large" /></p>
+</form>
+<script type='text/javascript' src='jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='language-chooser.min.js?ver=4.5.3'></script>
+</body>
+</html>

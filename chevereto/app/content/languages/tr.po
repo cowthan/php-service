@@ -1,0 +1,2997 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VERSION\n"
+"POT-Creation-Date: 2015-04-13 17:55+0000\n"
+"PO-Revision-Date: 2015-04-13 17:55+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE TEAM <EMAIL@ADDRESS>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../../app/install/installer.php:826
+#: ../../../app/install/installer.php:835
+#: ../../../app/install/installer.php:838
+#: ../../../app/routes/route.account.php:402
+#: ../../../app/routes/route.json.php:551
+#: ../../../app/routes/route.settings.php:170
+#: ../../../app/routes/route.signup.php:95
+#: ../../../app/themes/Peafowl/pages/contact.php:31
+msgid "Invalid email"
+msgstr "Geçersiz Mail Adresi. Lütfen Kontrol Ediniz."
+
+#: ../../../app/install/installer.php:829
+#: ../../../app/routes/route.json.php:546
+#: ../../../app/routes/route.settings.php:166
+#: ../../../app/routes/route.signup.php:98
+msgid "Invalid username"
+msgstr "Geçersiz Kullanıcı Adı"
+
+#: ../../../app/install/installer.php:832
+#: ../../../app/routes/route.account.php:345
+#: ../../../app/routes/route.json.php:556
+#: ../../../app/routes/route.settings.php:300
+#: ../../../app/routes/route.signup.php:101
+msgid "Invalid password"
+msgstr "Geçersiz Şifre. Lütfen kontrol ederek tekrar deneyiniz."
+
+#: ../../../app/install/template/ready.php:31
+#: ../../../app/themes/Peafowl/views/dashboard.php:1463
+msgid "From email address"
+msgstr "Gönderen e-posta adresi"
+
+#: ../../../app/install/template/ready.php:32
+#: ../../../app/themes/Peafowl/views/dashboard.php:1466
+msgid "Sender email for emails sent to users."
+msgstr "E-Posta gönderilecek kullanıcıların mail adres veya adreslerini belirtiniz."
+
+#: ../../../app/install/template/ready.php:36
+#: ../../../app/themes/Peafowl/views/dashboard.php:1469
+msgid "Incoming email address"
+msgstr "Gelen E-Posta Adresi"
+
+#: ../../../app/install/template/ready.php:37
+#: ../../../app/themes/Peafowl/views/dashboard.php:1472
+msgid "Recipient for contact form and system alerts."
+msgstr "Hatalar ve sistem uyarıları için iletişim formu"
+
+#: ../../../app/lib/classes/class.album.php:94
+msgid "Untitled"
+msgstr "Başlıksız / isimsiz"
+
+#: ../../../app/lib/classes/class.album.php:318
+#: ../../../app/lib/classes/class.user.php:105
+#, php-format
+msgid "%s's images"
+msgstr "%s'in Resimleri"
+
+#: ../../../app/lib/classes/class.image.php:695
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:69
+msgid "Private upload"
+msgstr "Gizli Yükleme"
+
+#: ../../../app/lib/classes/class.image.php:954
+msgid "view"
+msgid_plural "views"
+msgstr[0] "görüntüleme"
+msgstr[1] "görüntüleme"
+
+#: ../../../app/lib/classes/class.listing.php:238
+#: ../../../app/routes/route.album.php:169
+#: ../../../app/themes/Peafowl/snippets/breadcrum_owner_card.php:25
+#: ../../../app/themes/Peafowl/views/album.php:34
+#: ../../../app/themes/Peafowl/views/user.php:87
+#: ../../../app/lib/chevereto.js:1866 ../../../app/lib/chevereto.min.js:88
+msgid "image"
+msgid_plural "images"
+msgstr[0] "resim"
+msgstr[1] "resimler"
+
+#: ../../../app/lib/classes/class.storage.php:303
+#: ../../../app/lib/classes/class.storage.php:358
+msgid "Can't verify storage credentials."
+msgstr "Bellek verileriniz doğrulanamıyor."
+
+#: ../../../app/lib/classes/class.storage.php:339
+#: ../../../app/lib/chevereto.js:2719 ../../../app/lib/chevereto.min.js:132
+#, python-format, php-format, javascript-format
+msgid "Storage capacity can't be lower than its current usage (%s)."
+msgstr "Depolama kapasitesi bundan daha düşük olamaz. (%s)."
+
+#: ../../../app/lib/classes/class.storage.php:551
+msgid "Unlimited"
+msgstr "Sınırsız"
+
+#: ../../../app/lib/classes/class.storage.php:551
+msgid "used"
+msgstr "Eski"
+
+#: ../../../app/lib/functions.php:37 ../../../app/lib/functions.php:49
+msgid "year"
+msgid_plural "years"
+msgstr[0] "yıl"
+msgstr[1] "yıllar"
+
+#: ../../../app/lib/functions.php:38 ../../../app/lib/functions.php:50
+msgid "month"
+msgid_plural "months"
+msgstr[0] "ay"
+msgstr[1] "aylar"
+
+#: ../../../app/lib/functions.php:39 ../../../app/lib/functions.php:51
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "hafta"
+msgstr[1] "haftalar"
+
+#: ../../../app/lib/functions.php:40 ../../../app/lib/functions.php:52
+msgid "day"
+msgid_plural "days"
+msgstr[0] "gün"
+msgstr[1] "günler"
+
+#: ../../../app/lib/functions.php:41 ../../../app/lib/functions.php:53
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "saat"
+msgstr[1] "saat"
+
+#: ../../../app/lib/functions.php:42 ../../../app/lib/functions.php:54
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "dakika"
+msgstr[1] "dakikalar"
+
+#: ../../../app/lib/functions.php:43 ../../../app/lib/functions.php:55
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "saniye"
+msgstr[1] "saniyeler"
+
+#: ../../../app/lib/functions.php:67
+#, php-format
+msgid "%s ago"
+msgstr "%s den önce"
+
+#: ../../../app/lib/functions.php:67
+msgid "moments ago"
+msgstr "Dakika Önce"
+
+#: ../../../app/lib/functions.php:195
+#, php-format
+msgid "System database is outdated. You need to run the <a href=\"%s\">update</a> tool."
+msgstr "Veritabanı güncel değil. Güncelleme <a href=\"%s\">update</a> yazılımını çalıştırın."
+
+#: ../../../app/lib/functions.php:198
+#, php-format
+msgid "Website is in maintenance mode. To revert this setting go to <a href=\"%s\">Dashboard > Settings</a>."
+msgstr "Website bakım modunda. Geri almak için şuraya gidin <a href=\"%s\">Panel> Ayarları</a>."
+
+#: ../../../app/lib/functions.php:203
+#, php-format
+msgid "You haven't changed the default email settings. Go to <a href='%s'>Dashboard > Settings > Email</a> to fix this."
+msgstr "Önceki email ayarlarını değiştirmediniz.. Buraya giderek <a href='%s'>Panel > Ayarları> Email</a> düzeltiniz."
+
+#: ../../../app/loader.php:168
+msgid "You have been forbidden to use this website."
+msgstr "Bu siteyi kullanmanız yasaklanmıştır."
+
+#: ../../../app/loader.php:326 ../../../app/themes/Peafowl/views/404.php:6
+msgid "That page doesn't exist"
+msgstr "Aradığınız sayfa bulunmamaktadır."
+
+#: ../../../app/routes/route.account.php:73
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:8
+msgid "Reset password"
+msgstr "Şifrenizi Sıfırlayın"
+
+#: ../../../app/routes/route.account.php:74
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:8
+msgid "Resend account activation"
+msgstr "Hesap etkinleştirme kodunu tekrar gönder"
+
+#: ../../../app/routes/route.account.php:76
+#: ../../../app/themes/Peafowl/views/account/email-needed.php:8
+msgid "Add your email address"
+msgstr "Mail adresinizi ekleyin"
+
+#: ../../../app/routes/route.account.php:77
+#: ../../../app/themes/Peafowl/views/account/email-changed.php:7
+msgid "Email changed"
+msgstr "Mail Adresi Değiştirildi"
+
+#: ../../../app/routes/route.account.php:95
+#: ../../../app/routes/route.login.php:71
+#: ../../../app/routes/route.settings.php:128
+#: ../../../app/routes/route.signup.php:73
+msgid "The reCAPTCHA wasn't entered correctly"
+msgstr "Güvenlik kodu doğru değil. Lütfen tekrar deneyiniz"
+
+#: ../../../app/routes/route.account.php:119
+#: ../../../app/routes/route.account.php:164
+#: ../../../app/routes/route.account.php:260
+msgid "Invalid Username/Email"
+msgstr "Geçersiz Kullanıcı Adı / Mail Adresi"
+
+#: ../../../app/routes/route.account.php:129
+msgid "User doesn't have an email."
+msgstr "Kullanıcının e-mail hesabı yok."
+
+#: ../../../app/routes/route.account.php:140
+#: ../../../app/routes/route.account.php:287
+#: ../../../app/routes/route.account.php:309
+#: ../../../app/routes/route.account.php:376
+#: ../../../app/routes/route.json.php:24 ../../../app/routes/route.json.php:37
+#: ../../../app/routes/route.json.php:49
+#: ../../../app/routes/route.json.php:533
+#: ../../../app/routes/route.json.php:595
+#: ../../../app/routes/route.json.php:644
+#: ../../../app/routes/route.json.php:691
+#: ../../../app/themes/Peafowl/pages/contact.php:17
+#: ../../../app/themes/Peafowl/views/request-denied.php:8
+msgid "Request denied"
+msgstr "İstek Reddedildi"
+
+#: ../../../app/routes/route.account.php:145
+msgid "Account needs to be activated to use this feature"
+msgstr "Bu hesabın kullanılması için etkinleştirilmesi gereklidir. Lütfen mail adresinizi kontrol ederek hesabınızı etkinleştiriniz."
+
+#: ../../../app/routes/route.account.php:151
+msgid "Account already activated"
+msgstr "Hesap zaten aktif"
+
+#: ../../../app/routes/route.account.php:181
+msgid "Allow up to 15 minutes for the email. You can try again later."
+msgstr "Mail için lütfen 15 dakika bekleyip tekrar kontrol ediniz."
+
+#: ../../../app/routes/route.account.php:220
+#, php-format
+msgid "Reset your password at %s"
+msgstr "%s şifrenizi sıfırlayınız"
+
+#: ../../../app/routes/route.account.php:222
+#: ../../../app/routes/route.account.php:442
+#: ../../../app/routes/route.settings.php:260
+#: ../../../app/routes/route.signup.php:180
+#, php-format
+msgid "Confirmation required at %s"
+msgstr "%s onaylanması gerekli"
+
+#: ../../../app/routes/route.account.php:330
+#: ../../../app/routes/route.signup.php:203
+#, php-format
+msgid "Welcome to %s"
+msgstr "Hoşgeldin %s"
+
+#: ../../../app/routes/route.account.php:348
+#: ../../../app/routes/route.settings.php:304
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:36
+#: ../../../app/themes/Peafowl/views/settings.php:265
+#: ../../../app/themes/Peafowl/views/settings.php:282
+#: ../../../app/lib/chevereto.js:1270 ../../../app/lib/chevereto.min.js:54
+msgid "Passwords don't match"
+msgstr "Şifreleriniz eşleşmiyor"
+
+#: ../../../app/routes/route.account.php:410
+#: ../../../app/routes/route.json.php:571
+#: ../../../app/routes/route.settings.php:220
+#: ../../../app/routes/route.signup.php:137
+msgid "Email already being used"
+msgstr "Bu mail adresi kullanılmaktadır."
+
+#: ../../../app/routes/route.account.php:496
+#: ../../../app/routes/route.signup.php:223
+#: ../../../app/themes/Peafowl/pages/contact.php:146
+#: ../../../lib/Peafowl/peafowl.js:194 ../../../lib/Peafowl/peafowl.min.js:10
+msgid "Check the errors in the form to continue."
+msgstr "Lütfen devam etmek için hataları kontrol ediniz."
+
+#: ../../../app/routes/route.album.php:80
+#: ../../../app/routes/route.category.php:48
+#: ../../../app/routes/route.dashboard.php:663
+#: ../../../app/routes/route.dashboard.php:692
+#: ../../../app/routes/route.dashboard.php:721
+#: ../../../app/routes/route.explore.php:34
+#: ../../../app/routes/route.user.php:131
+#: ../../../app/routes/route.user.php:169
+#: ../../../app/themes/Peafowl/views/index.php:46
+msgid "Most recent"
+msgstr "Yeni Yüklenen Resimler"
+
+#: ../../../app/routes/route.album.php:88
+#: ../../../app/routes/route.category.php:56
+#: ../../../app/routes/route.dashboard.php:671
+#: ../../../app/routes/route.dashboard.php:700
+#: ../../../app/routes/route.dashboard.php:729
+#: ../../../app/routes/route.explore.php:42
+#: ../../../app/routes/route.user.php:139
+#: ../../../app/routes/route.user.php:175
+msgid "Oldest"
+msgstr "Eskiler"
+
+#: ../../../app/routes/route.album.php:96
+#: ../../../app/routes/route.category.php:64
+#: ../../../app/routes/route.dashboard.php:679
+#: ../../../app/routes/route.explore.php:50
+#: ../../../app/routes/route.user.php:147
+msgid "Most viewed"
+msgstr "En Çok Görüntülenen Resimler"
+
+#: ../../../app/routes/route.album.php:107
+#: ../../../app/themes/Peafowl/snippets/modal_share.php:4
+#: ../../../app/themes/Peafowl/views/album.php:36
+#: ../../../app/themes/Peafowl/views/image.php:91
+msgid "Share"
+msgstr "Paylaş"
+
+#: ../../../app/routes/route.album.php:116
+#: ../../../app/routes/route.image.php:132
+msgid "Full info"
+msgstr "Geniş Bilgi"
+
+#: ../../../app/routes/route.dashboard.php:38
+msgid "Stats"
+msgstr "İstatistikler"
+
+#: ../../../app/routes/route.dashboard.php:40
+#: ../../../app/routes/route.search.php:90
+#: ../../../app/routes/route.user.php:197
+#: ../../../app/themes/Peafowl/header.php:364
+#: ../../../app/themes/Peafowl/views/settings.php:77
+#: ../../../app/themes/Peafowl/views/user.php:125
+msgid "Albums"
+msgstr "Albümler"
+
+#: ../../../app/routes/route.dashboard.php:41
+#: ../../../app/routes/route.dashboard.php:222
+#: ../../../app/routes/route.search.php:97
+msgid "Users"
+msgstr "Kullanıcılar"
+
+#: ../../../app/routes/route.dashboard.php:42
+#: ../../../app/routes/route.settings.php:442
+#: ../../../app/themes/Peafowl/header.php:365
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: ../../../app/routes/route.dashboard.php:153
+msgid "Chevereto version"
+msgstr "Chevereto Versiyon"
+
+#: ../../../app/routes/route.dashboard.php:154
+msgid "update"
+msgstr "güncelleştirme"
+
+#: ../../../app/routes/route.dashboard.php:154
+msgid "check for updates"
+msgstr "gücelleştirmeleri kontrol et"
+
+#: ../../../app/routes/route.dashboard.php:161
+msgid "PHP version"
+msgstr "PHP Versiyon"
+
+#: ../../../app/routes/route.dashboard.php:165
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:39
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:40
+msgid "Server"
+msgstr "Server"
+
+#: ../../../app/routes/route.dashboard.php:169
+msgid "MySQL version"
+msgstr "MySQL Versiyon"
+
+#: ../../../app/routes/route.dashboard.php:173
+msgid "MySQL server info"
+msgstr "MySQL Server Bilgileri"
+
+#: ../../../app/routes/route.dashboard.php:177
+msgid "GD Library"
+msgstr "GD Kütüphanesi"
+
+#: ../../../app/routes/route.dashboard.php:181
+msgid "File uploads"
+msgstr "Yüklenen REsimler"
+
+#: ../../../app/routes/route.dashboard.php:182
+#: ../../../app/themes/Peafowl/views/dashboard.php:273
+#: ../../../app/themes/Peafowl/views/dashboard.php:283
+#: ../../../app/themes/Peafowl/views/dashboard.php:293
+#: ../../../app/themes/Peafowl/views/dashboard.php:338
+#: ../../../app/themes/Peafowl/views/dashboard.php:347
+#: ../../../app/themes/Peafowl/views/dashboard.php:418
+#: ../../../app/themes/Peafowl/views/dashboard.php:438
+#: ../../../app/themes/Peafowl/views/dashboard.php:448
+#: ../../../app/themes/Peafowl/views/dashboard.php:458
+#: ../../../app/themes/Peafowl/views/dashboard.php:610
+#: ../../../app/themes/Peafowl/views/dashboard.php:623
+#: ../../../app/themes/Peafowl/views/dashboard.php:645
+#: ../../../app/themes/Peafowl/views/dashboard.php:654
+#: ../../../app/themes/Peafowl/views/dashboard.php:683
+#: ../../../app/themes/Peafowl/views/dashboard.php:693
+#: ../../../app/themes/Peafowl/views/dashboard.php:732
+#: ../../../app/themes/Peafowl/views/dashboard.php:742
+#: ../../../app/themes/Peafowl/views/dashboard.php:752
+#: ../../../app/themes/Peafowl/views/dashboard.php:898
+#: ../../../app/themes/Peafowl/views/dashboard.php:953
+#: ../../../app/themes/Peafowl/views/dashboard.php:963
+#: ../../../app/themes/Peafowl/views/dashboard.php:975
+#: ../../../app/themes/Peafowl/views/dashboard.php:987
+#: ../../../app/themes/Peafowl/views/dashboard.php:997
+#: ../../../app/themes/Peafowl/views/dashboard.php:1007
+#: ../../../app/themes/Peafowl/views/dashboard.php:1019
+#: ../../../app/themes/Peafowl/views/dashboard.php:1126
+#: ../../../app/themes/Peafowl/views/dashboard.php:1287
+#: ../../../app/themes/Peafowl/views/dashboard.php:1296
+#: ../../../app/themes/Peafowl/views/dashboard.php:1305
+#: ../../../app/themes/Peafowl/views/dashboard.php:1330
+#: ../../../app/themes/Peafowl/views/dashboard.php:1340
+#: ../../../app/themes/Peafowl/views/dashboard.php:1530
+#: ../../../app/themes/Peafowl/views/dashboard.php:1556
+#: ../../../app/themes/Peafowl/views/dashboard.php:1589
+#: ../../../app/themes/Peafowl/views/dashboard.php:1615
+#: ../../../app/themes/Peafowl/views/dashboard.php:1641
+#: ../../../app/themes/Peafowl/views/dashboard.php:1660
+#: ../../../app/themes/Peafowl/views/dashboard.php:1705
+msgid "Enabled"
+msgstr "Açık"
+
+#: ../../../app/routes/route.dashboard.php:182
+#: ../../../app/themes/Peafowl/views/dashboard.php:273
+#: ../../../app/themes/Peafowl/views/dashboard.php:283
+#: ../../../app/themes/Peafowl/views/dashboard.php:293
+#: ../../../app/themes/Peafowl/views/dashboard.php:338
+#: ../../../app/themes/Peafowl/views/dashboard.php:347
+#: ../../../app/themes/Peafowl/views/dashboard.php:418
+#: ../../../app/themes/Peafowl/views/dashboard.php:438
+#: ../../../app/themes/Peafowl/views/dashboard.php:448
+#: ../../../app/themes/Peafowl/views/dashboard.php:458
+#: ../../../app/themes/Peafowl/views/dashboard.php:610
+#: ../../../app/themes/Peafowl/views/dashboard.php:623
+#: ../../../app/themes/Peafowl/views/dashboard.php:645
+#: ../../../app/themes/Peafowl/views/dashboard.php:654
+#: ../../../app/themes/Peafowl/views/dashboard.php:683
+#: ../../../app/themes/Peafowl/views/dashboard.php:693
+#: ../../../app/themes/Peafowl/views/dashboard.php:732
+#: ../../../app/themes/Peafowl/views/dashboard.php:742
+#: ../../../app/themes/Peafowl/views/dashboard.php:752
+#: ../../../app/themes/Peafowl/views/dashboard.php:898
+#: ../../../app/themes/Peafowl/views/dashboard.php:953
+#: ../../../app/themes/Peafowl/views/dashboard.php:963
+#: ../../../app/themes/Peafowl/views/dashboard.php:975
+#: ../../../app/themes/Peafowl/views/dashboard.php:987
+#: ../../../app/themes/Peafowl/views/dashboard.php:997
+#: ../../../app/themes/Peafowl/views/dashboard.php:1007
+#: ../../../app/themes/Peafowl/views/dashboard.php:1019
+#: ../../../app/themes/Peafowl/views/dashboard.php:1126
+#: ../../../app/themes/Peafowl/views/dashboard.php:1287
+#: ../../../app/themes/Peafowl/views/dashboard.php:1296
+#: ../../../app/themes/Peafowl/views/dashboard.php:1305
+#: ../../../app/themes/Peafowl/views/dashboard.php:1330
+#: ../../../app/themes/Peafowl/views/dashboard.php:1340
+#: ../../../app/themes/Peafowl/views/dashboard.php:1530
+#: ../../../app/themes/Peafowl/views/dashboard.php:1556
+#: ../../../app/themes/Peafowl/views/dashboard.php:1589
+#: ../../../app/themes/Peafowl/views/dashboard.php:1615
+#: ../../../app/themes/Peafowl/views/dashboard.php:1641
+#: ../../../app/themes/Peafowl/views/dashboard.php:1660
+#: ../../../app/themes/Peafowl/views/dashboard.php:1705
+msgid "Disabled"
+msgstr "Kapalı"
+
+#: ../../../app/routes/route.dashboard.php:185
+msgid "Max. upload size"
+msgstr "Maksimum Resim Yükleme Boyutu"
+
+#: ../../../app/routes/route.dashboard.php:189
+msgid "Max. post size"
+msgstr "Maksimum Mesaj Boyutu"
+
+#: ../../../app/routes/route.dashboard.php:193
+msgid "Max. execution time"
+msgstr "Maksimum Yürütme Zamanı"
+
+#: ../../../app/routes/route.dashboard.php:194
+#, php-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d saniye"
+msgstr[1] "%d saniyeler"
+
+#: ../../../app/routes/route.dashboard.php:197
+msgid "Memory limit"
+msgstr "Hafıza Boyutu"
+
+#: ../../../app/routes/route.dashboard.php:217
+#: ../../../app/themes/Peafowl/views/settings.php:322
+msgid "Website"
+msgstr "Site Adresi"
+
+#: ../../../app/routes/route.dashboard.php:218
+msgid "Content"
+msgstr "İçerik"
+
+#: ../../../app/routes/route.dashboard.php:219
+#: ../../../app/themes/Peafowl/views/dashboard.php:1191
+msgid "Listings"
+msgstr "Listeler"
+
+#: ../../../app/routes/route.dashboard.php:220
+msgid "Image upload"
+msgstr "Resim Yükle"
+
+#: ../../../app/routes/route.dashboard.php:221
+msgid "Categories"
+msgstr "Kategoriler"
+
+#: ../../../app/routes/route.dashboard.php:223
+#: ../../../app/themes/Peafowl/views/dashboard.php:680
+msgid "Flood protection"
+msgstr "Koruma"
+
+#: ../../../app/routes/route.dashboard.php:224
+#: ../../../app/themes/Peafowl/views/dashboard.php:820
+msgid "Theme"
+msgstr "Tema"
+
+#: ../../../app/routes/route.dashboard.php:225
+#: ../../../app/themes/Peafowl/views/dashboard.php:633
+#: ../../../app/themes/Peafowl/views/dashboard.php:1177
+msgid "Homepage"
+msgstr "Anasayfa"
+
+#: ../../../app/routes/route.dashboard.php:226
+msgid "Banners"
+msgstr "Bannerler"
+
+#: ../../../app/routes/route.dashboard.php:227
+msgid "System"
+msgstr "Sistem"
+
+#: ../../../app/routes/route.dashboard.php:229
+msgid "External storage"
+msgstr "Harici Depolama"
+
+#: ../../../app/routes/route.dashboard.php:230
+#: ../../../app/themes/Peafowl/views/dashboard.php:99
+msgid "Email"
+msgstr "Mail"
+
+#: ../../../app/routes/route.dashboard.php:231
+#: ../../../app/themes/Peafowl/views/album.php:79
+msgid "Social networks"
+msgstr "Sosyal Ağlar"
+
+#: ../../../app/routes/route.dashboard.php:232
+msgid "External services"
+msgstr "Dış Hizmetler (Harici Servis)"
+
+#: ../../../app/routes/route.dashboard.php:233
+msgid "IP bans"
+msgstr "İp Banlama"
+
+#: ../../../app/routes/route.dashboard.php:260
+msgid "Local"
+msgstr "Yerel"
+
+#: ../../../app/routes/route.dashboard.php:264
+msgid "External"
+msgstr "Harici"
+
+#: ../../../app/routes/route.dashboard.php:269
+#: ../../../app/themes/Peafowl/header.php:174
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:37
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:62
+msgid "All"
+msgstr "Hepsi"
+
+#: ../../../app/routes/route.dashboard.php:274
+#: ../../../app/routes/route.image.php:147
+#: ../../../app/themes/Peafowl/views/dashboard.php:1413
+msgid "search content"
+msgstr "İçerik Arama"
+
+#: ../../../app/routes/route.dashboard.php:311
+msgid "Invalid website name"
+msgstr "Geçersiz Website Adresi"
+
+#: ../../../app/routes/route.dashboard.php:316
+msgid "Invalid language"
+msgstr "Geçersiz Dil Dosyası"
+
+#: ../../../app/routes/route.dashboard.php:321
+msgid "Invalid timezone"
+msgstr "Geçersiz Zaman Dilimi"
+
+#: ../../../app/routes/route.dashboard.php:326
+#: ../../../app/routes/route.dashboard.php:361
+#: ../../../app/routes/route.dashboard.php:471
+#: ../../../app/routes/route.dashboard.php:605
+msgid "Invalid value"
+msgstr "Geçersiz Değer"
+
+#: ../../../app/routes/route.dashboard.php:331
+msgid "Invalid upload storage mode"
+msgstr "Geçersiz Resim Yükleme Modu"
+
+#: ../../../app/routes/route.dashboard.php:336
+msgid "Invalid upload filenaming"
+msgstr "Geçersiz Resim İsimleri"
+
+#: ../../../app/routes/route.dashboard.php:341
+msgid "Invalid thumb width"
+msgstr "Geçersiz Küçük Resim Genişliği"
+
+#: ../../../app/routes/route.dashboard.php:346
+msgid "Invalid thumb height"
+msgstr "Geçersiz Küçük (trumb) Resim Yüksekliği. Lütfen Ayarlarınızı Kontrol Ediniz."
+
+#: ../../../app/routes/route.dashboard.php:351
+msgid "Invalid medium width"
+msgstr "Geçersiz Orta Genişlik. Lütfen Ayarlarınızı Kontrol Ediniz"
+
+#: ../../../app/routes/route.dashboard.php:356
+msgid "Invalid theme"
+msgstr "Geçersiz Tema ! Lütfen Ayarlarınızı Kontrol Ediniz."
+
+#: ../../../app/routes/route.dashboard.php:366
+msgid "Invalid theme tone"
+msgstr "Geçersiz tema tonu."
+
+#: ../../../app/routes/route.dashboard.php:386
+msgid "Invalid theme image listing size"
+msgstr "Geçersiz tema listeleme boyutu."
+
+#: ../../../app/routes/route.dashboard.php:391
+msgid "Invalid user id"
+msgstr "Geçersiz Kullanıcı ID"
+
+#: ../../../app/routes/route.dashboard.php:396
+msgid "Invalid email mode"
+msgstr "Geçersiz Mail Modu ! Lütfen Mail Ayarlarınızı Kontrol Ediniz."
+
+#: ../../../app/routes/route.dashboard.php:401
+msgid "Invalid SMTP port"
+msgstr "Geçersiz SMTP Portu ! Mail Gönderim Ayarlarınızı Kontrol Ediniz"
+
+#: ../../../app/routes/route.dashboard.php:406
+msgid "Invalid SMTP security"
+msgstr "Geçersiz SMTP"
+
+#: ../../../app/routes/route.dashboard.php:411
+msgid "Invalid website mode"
+msgstr "Geçersiz website modu."
+
+#: ../../../app/routes/route.dashboard.php:416
+msgid "Invalid website content privacy mode"
+msgstr "Geçersiz website içerik gizlilik modu."
+
+#: ../../../app/routes/route.dashboard.php:447
+msgid "Invalid upload image path"
+msgstr "Hata ! Lütfen Resim Yükleme Klasörünü ve Chmod Değerlerini Kontrol Ediniz."
+
+#: ../../../app/routes/route.dashboard.php:474
+#, php-format
+msgid "Max. allowed %s"
+msgstr "Maksimum Resim Yükleme İznini Belirtiniz (%s olarak)"
+
+#: ../../../app/routes/route.dashboard.php:524
+msgid "Invalid SMTP server"
+msgstr "Geçersiz SMTP Server Ayarı ! Lütfen SMTP Server Ayarınızı Kontrol Ediniz."
+
+#: ../../../app/routes/route.dashboard.php:525
+msgid "Invalid SMTP username"
+msgstr "Geçersiz SMTP Kullanıcı Adı Ayarı ! Lütfen SMTP Server Ayarınızı Kontrol Ediniz."
+
+#: ../../../app/routes/route.dashboard.php:587
+msgid "Invalid URL"
+msgstr "Geçersiz URL"
+
+#: ../../../app/routes/route.dashboard.php:713
+msgid "Top users"
+msgstr "En İyi Kullanıcılar"
+
+#: ../../../app/routes/route.dashboard.php:775
+#: ../../../app/themes/Peafowl/header.php:367
+#: ../../../app/themes/Peafowl/views/dashboard.php:9
+msgid "Dashboard"
+msgstr "Kullanıcı Kontrol Paneli"
+
+#: ../../../app/routes/route.explore.php:81
+#: ../../../app/themes/Peafowl/header.php:184
+#: ../../../app/themes/Peafowl/header.php:202
+#: ../../../app/themes/Peafowl/views/dashboard.php:280
+#: ../../../app/themes/Peafowl/views/explore.php:9
+msgid "Explore"
+msgstr "Araştır (keşfet)"
+
+#: ../../../app/routes/route.image.php:118
+#: ../../../app/themes/Peafowl/header.php:381
+msgid "About"
+msgstr "Hakkımızda"
+
+#: ../../../app/routes/route.image.php:125
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:92
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:85
+msgid "Embed codes"
+msgstr "Embed (Paylaşım) Kodları"
+
+#: ../../../app/routes/route.image.php:142
+msgid "Image ID"
+msgstr "Resim ID"
+
+#: ../../../app/routes/route.image.php:146
+msgid "Uploader IP"
+msgstr "Resim yükleyenin IP adresi"
+
+#: ../../../app/routes/route.image.php:150
+msgid "Upload date"
+msgstr "Yükleme Zamanı"
+
+#: ../../../app/routes/route.image.php:175
+#, php-format
+msgid "%s images"
+msgstr "%s resimler"
+
+#: ../../../app/routes/route.json.php:44 ../../../app/routes/route.json.php:59
+#: ../../../app/routes/route.json.php:232
+#: ../../../app/routes/route.json.php:718
+#: ../../../app/routes/route.json.php:782
+#: ../../../app/routes/route.json.php:883
+#: ../../../app/routes/route.json.php:1026
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:4
+msgid "Login needed"
+msgstr "İşlem Yapmak İçin Giriş Yapmanız Gereklidir"
+
+#: ../../../app/routes/route.json.php:471
+#: ../../../app/routes/route.json.php:662
+msgid "IP address already banned"
+msgstr "İP adresi zaten yasaklandı."
+
+#: ../../../app/routes/route.json.php:540
+#: ../../../app/routes/route.json.php:602
+msgid "Missing values"
+msgstr "Eksik değerler"
+
+#: ../../../app/routes/route.json.php:561
+msgid "Invalid role"
+msgstr "Geçersiz rol"
+
+#: ../../../app/routes/route.json.php:566
+msgid "Username already being used"
+msgstr "Kullanıcı adı zaten kullanıyor."
+
+#: ../../../app/routes/route.json.php:1063
+#, php-format
+msgid "%s has been disconnected."
+msgstr "%s bağlantısı kesildi"
+
+#: ../../../app/routes/route.login.php:133
+msgid "Wrong Username/Email password combination"
+msgstr "Geçersiz Kullanıcı Adı ve Şifre ! Lütfen Kullanıcı Adı ve Şifre Ayarlarınızı Kontrol Ederek Tekrar Giriş Yapınız. "
+
+#: ../../../app/routes/route.login.php:148
+#: ../../../app/themes/Peafowl/header.php:265
+#: ../../../app/themes/Peafowl/header.php:271
+#: ../../../app/themes/Peafowl/views/login.php:8
+#: ../../../app/themes/Peafowl/views/login.php:52
+msgid "Sign in"
+msgstr "Giriş Yap"
+
+#: ../../../app/routes/route.logout.php:29
+#: ../../../app/themes/Peafowl/views/logout.php:8
+msgid "Logged out"
+msgstr "Çıkış "
+
+#: ../../../app/routes/route.search.php:129
+#: ../../../app/themes/Peafowl/header.php:211
+#: ../../../app/themes/Peafowl/header.php:216
+#: ../../../app/themes/Peafowl/views/dashboard.php:270
+msgid "Search"
+msgstr "Arama"
+
+#: ../../../app/routes/route.settings.php:58
+msgid "Account"
+msgstr "Hesabım"
+
+#: ../../../app/routes/route.settings.php:59
+msgid "Profile"
+msgstr "Kullanıcı Profili"
+
+#: ../../../app/routes/route.settings.php:60
+#: ../../../app/themes/Peafowl/header.php:288
+#: ../../../app/themes/Peafowl/header.php:336
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:51
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:21
+#: ../../../app/themes/Peafowl/views/dashboard.php:104
+#: ../../../app/themes/Peafowl/views/dashboard.php:105
+#: ../../../app/themes/Peafowl/views/login.php:39
+#: ../../../app/themes/Peafowl/views/settings.php:274
+#: ../../../app/themes/Peafowl/views/signup.php:44
+#: ../../../app/themes/Peafowl/views/signup.php:45
+msgid "Password"
+msgstr "Kullanıcı Şifresi"
+
+#: ../../../app/routes/route.settings.php:61
+msgid "Linked accounts"
+msgstr "Bağlı hesaplar"
+
+#: ../../../app/routes/route.settings.php:246
+#, php-format
+msgid "An email has been sent to %s with instructions to activate this email"
+msgstr "Lütfen %s Adresinize Gönderilen Aktivasyon Kodunu Onaylamanız Gerekmektedir. Aksi Takdirde Üyelik İşleminiz Onaylanmayacaktır."
+
+#: ../../../app/routes/route.settings.php:279
+#: ../../../app/themes/Peafowl/pages/contact.php:22
+msgid "Invalid name"
+msgstr "Geçersiz İsim (Ad) ! Lütfen Kontrol Ediniz."
+
+#: ../../../app/routes/route.settings.php:282
+msgid "Invalid website"
+msgstr "Geçersiz Website Adresi ! Lütfen Kontrol Ediniz."
+
+#: ../../../app/routes/route.settings.php:290
+msgid "Wrong password"
+msgstr "Geçersiz Şifre ! Lütfen Şifrenizi Kontrol Ediniz."
+
+#: ../../../app/routes/route.settings.php:293
+msgid "Use a new password"
+msgstr "Şifrenizi mi Unuttunuz ? Yeni Şifre Oluşturmak İçin Tıklayınız"
+
+#: ../../../app/routes/route.settings.php:360
+#: ../../../app/themes/Peafowl/views/dashboard.php:1751
+#: ../../../app/themes/Peafowl/views/settings.php:409
+msgid "Changes have been saved."
+msgstr "Değişiklikler kaydedildi."
+
+#: ../../../app/routes/route.settings.php:379
+msgid "Password has been changed"
+msgstr "Şifreniz Başarılı Bir Şekilde Değiştirildi. Yeni Şifre İle Giriş Yapabilirsiniz."
+
+#: ../../../app/routes/route.settings.php:384
+msgid "Password has been created."
+msgstr "Parola oluşturuldu."
+
+#: ../../../app/routes/route.settings.php:399
+msgid "Wrong Username/Email values"
+msgstr "Geçersiz Kullanıcı Adı / Email Adresi ! Lütfen Kullanıcı Adı ve/veya E Mail Adresini Kontrol Ediniz."
+
+#: ../../../app/routes/route.settings.php:442
+#, php-format
+msgid "Settings for %s"
+msgstr "%s Ayarları"
+
+#: ../../../app/routes/route.signup.php:238
+#: ../../../app/themes/Peafowl/header.php:312
+#: ../../../app/themes/Peafowl/header.php:318
+#: ../../../app/themes/Peafowl/views/index.php:81
+#: ../../../app/themes/Peafowl/views/signup.php:8
+#: ../../../app/themes/Peafowl/views/signup.php:58
+msgid "Create account"
+msgstr "Kaydol"
+
+#: ../../../app/themes/Peafowl/header.php:56
+#: ../../../app/themes/Peafowl/views/index.php:46
+#: ../../../app/themes/Peafowl/views/user.php:124
+#, php-format
+msgid "%s's Images"
+msgstr "%s Resimleri"
+
+#: ../../../app/themes/Peafowl/header.php:56
+#: ../../../app/themes/Peafowl/views/user.php:124
+#, php-format
+msgid "%s's Albums"
+msgstr "%s Albümleri"
+
+#: ../../../app/themes/Peafowl/header.php:218
+msgid "Close"
+msgstr "Çıkış"
+
+#: ../../../app/themes/Peafowl/header.php:218
+#: ../../../app/themes/Peafowl/header.php:222
+msgid "Advanced search"
+msgstr "Gelişmiş arama"
+
+#: ../../../app/themes/Peafowl/header.php:229
+#: ../../../app/themes/Peafowl/views/dashboard.php:290
+#: ../../../app/themes/Peafowl/views/dashboard.php:381
+msgid "Random"
+msgstr "Rastgele İsim"
+
+#: ../../../app/themes/Peafowl/header.php:239
+#, php-format
+msgid "Notices (%s)"
+msgstr "Bildirimler (%s)"
+
+#: ../../../app/themes/Peafowl/header.php:254
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:69
+msgid "Upload"
+msgstr "Resim Yükle"
+
+#: ../../../app/themes/Peafowl/header.php:277
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:11
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:34
+#: ../../../app/themes/Peafowl/views/login.php:18
+#: ../../../app/themes/Peafowl/views/login.php:65
+#: ../../../app/themes/Peafowl/views/signup.php:18
+#: ../../../app/themes/Peafowl/views/signup.php:71
+msgid "Sign in with another account"
+msgstr "Başka bir hesap ile oturum açın"
+
+#: ../../../app/themes/Peafowl/header.php:281
+#: ../../../app/themes/Peafowl/header.php:328
+#: ../../../app/themes/Peafowl/pages/contact.php:137
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:69
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:73
+#: ../../../app/themes/Peafowl/snippets/form_album.php:12
+#: ../../../app/themes/Peafowl/snippets/form_move_existing_album.php:15
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:13
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:32
+#: ../../../app/themes/Peafowl/views/account/awaiting-confirmation.php:10
+#: ../../../app/themes/Peafowl/views/account/email-changed.php:11
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:16
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:26
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:16
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:13
+#: ../../../app/themes/Peafowl/views/dashboard.php:1728
+#: ../../../app/themes/Peafowl/views/login.php:22
+#: ../../../app/themes/Peafowl/views/login.php:62
+#: ../../../app/themes/Peafowl/views/settings.php:306
+#: ../../../app/themes/Peafowl/views/settings.php:395
+#: ../../../app/themes/Peafowl/views/signup.php:22
+#: ../../../app/themes/Peafowl/views/signup.php:68
+#: ../../../lib/Peafowl/peafowl.js:480 ../../../lib/Peafowl/peafowl.js:2192
+#: ../../../lib/Peafowl/peafowl.min.js:29
+#: ../../../lib/Peafowl/peafowl.min.js:120
+msgid "or"
+msgstr "veya"
+
+#: ../../../app/themes/Peafowl/header.php:287
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:20
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:38
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:39
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:23
+#: ../../../app/themes/Peafowl/views/login.php:34
+#: ../../../app/themes/Peafowl/views/login.php:35
+msgid "Username or Email address"
+msgstr "Kullanıcı adınız veya e-posta adresiniz"
+
+#: ../../../app/themes/Peafowl/header.php:290
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:23
+#: ../../../app/themes/Peafowl/views/login.php:53
+msgid "Keep me logged in"
+msgstr "Beni Hatırla"
+
+#: ../../../app/themes/Peafowl/header.php:297
+#, php-format
+msgid "Don't have an account? <a href='%s'>Sign up</a> now."
+msgstr "Hesabınız yok mu? <a href='%s'>Hesap aç</a>"
+
+#: ../../../app/themes/Peafowl/header.php:324
+msgid "Sign up with another account"
+msgstr "Yeni kullanıcı hesabı oluşturmak mı istiyorsunuz ?"
+
+#: ../../../app/themes/Peafowl/header.php:334
+#: ../../../app/themes/Peafowl/pages/contact.php:106
+#: ../../../app/themes/Peafowl/views/account/email-needed.php:15
+#: ../../../app/themes/Peafowl/views/dashboard.php:100
+#: ../../../app/themes/Peafowl/views/settings.php:143
+#: ../../../app/themes/Peafowl/views/signup.php:34
+#: ../../../app/themes/Peafowl/views/signup.php:35
+msgid "Email address"
+msgstr "E Mail Adresi"
+
+#: ../../../app/themes/Peafowl/header.php:335
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:47
+#: ../../../app/themes/Peafowl/views/dashboard.php:94
+#: ../../../app/themes/Peafowl/views/dashboard.php:95
+#: ../../../app/themes/Peafowl/views/settings.php:137
+#: ../../../app/themes/Peafowl/views/settings.php:138
+#: ../../../app/themes/Peafowl/views/signup.php:39
+#: ../../../app/themes/Peafowl/views/signup.php:40
+msgid "Username"
+msgstr "Kullanıcı Adı"
+
+#: ../../../app/themes/Peafowl/header.php:337
+#: ../../../app/themes/Peafowl/views/signup.php:60
+#, php-format
+msgid "By signing up you agree to our <a href=\"%s\">Terms of service</a>"
+msgstr "Üye olarak <a href=\"%s\">hizmet şartlarını</a> kabul ederim."
+
+#: ../../../app/themes/Peafowl/header.php:363
+msgid "My Profile"
+msgstr "Benim Profilim"
+
+#: ../../../app/themes/Peafowl/header.php:369
+msgid "Sign out"
+msgstr "Oturumu Kapat"
+
+#: ../../../app/themes/Peafowl/header.php:385
+msgid "Terms of service"
+msgstr "Hizmet Koşulları"
+
+#: ../../../app/themes/Peafowl/header.php:386
+msgid "Privacy"
+msgstr "Gizlilik ve Şartlar"
+
+#: ../../../app/themes/Peafowl/header.php:387
+#: ../../../app/themes/Peafowl/pages/contact.php:4
+#: ../../../app/themes/Peafowl/pages/contact.php:93
+msgid "Contact"
+msgstr "İletişim"
+
+#: ../../../app/themes/Peafowl/mails/account-change-email.php:4
+msgid "We received a request to change the email of your <a href=\"%u\">%n</a> account at %w."
+msgstr "%w adresinden <a href=\"%u\">%n</a> hesabınizin e-posta adresinizin değiştirmek için bir istek geldi."
+
+#: ../../../app/themes/Peafowl/mails/account-change-email.php:6
+#, php-format
+msgid "To complete the process you must <a href=\"%s\">activate your email</a>."
+msgstr "Işleminizi tamamlamak için, <a href=\"%s\"> e-posta adresinizi onaylamanız gerekiyor. </a>"
+
+#: ../../../app/themes/Peafowl/mails/account-change-email.php:8
+#: ../../../app/themes/Peafowl/mails/account-confirm.php:8
+#: ../../../app/themes/Peafowl/mails/account-password-reset.php:8
+#, php-format
+msgid "Alternatively you can copy and paste the URL into your browser: <a href=\"%s\">%s</a>"
+msgstr "Alternatif olarak linki kopyalayıp tarayıcınıza yapıştırınız. <a href=\"%s\">%s</a>"
+
+#: ../../../app/themes/Peafowl/mails/account-change-email.php:10
+#: ../../../app/themes/Peafowl/mails/account-confirm.php:10
+#: ../../../app/themes/Peafowl/mails/account-password-reset.php:10
+msgid "If you didn't intend this just ignore this message."
+msgstr "Böyle bir şey yapmadıysanız bu mesajı yoksayın."
+
+#: ../../../app/themes/Peafowl/mails/account-change-email.php:12
+#: ../../../app/themes/Peafowl/mails/account-confirm.php:12
+#: ../../../app/themes/Peafowl/mails/account-password-reset.php:12
+#, php-format
+msgid "This request was made from IP: %s"
+msgstr "Bu istek %s IP den yapıldı."
+
+#: ../../../app/themes/Peafowl/mails/account-confirm.php:4
+msgid "We received a request to register the %n account at %w."
+msgstr "Hesabı %n  kaydettirmek için %w bir istek aldık."
+
+#: ../../../app/themes/Peafowl/mails/account-confirm.php:6
+#, php-format
+msgid "To complete the process you must <a href=\"%s\">activate your account</a>."
+msgstr "İşlemi tamamlamak için hesabını etkinleştir <a href=\"%s\">tıklayın</a>."
+
+#: ../../../app/themes/Peafowl/mails/account-password-reset.php:4
+msgid "We received a request to reset the password for your <a href=\"%u\">%n</a> account."
+msgstr "<a href=\"%u\">%n</a> hesabı için şifre sıfırlama talebi aldık."
+
+#: ../../../app/themes/Peafowl/mails/account-password-reset.php:6
+#, php-format
+msgid "To reset your password <a href=\"%s\">follow this link</a>."
+msgstr "şifreni tazelemek için <a href=\"%s\">bu linki takip et</a>."
+
+#: ../../../app/themes/Peafowl/mails/account-welcome.php:4
+msgid "Hi %n, welcome to %w"
+msgstr "Merhaba %n, %w hoşgeldin."
+
+#: ../../../app/themes/Peafowl/mails/account-welcome.php:6
+msgid "Now that your account is ready you can enjoy uploading your images, creating albums and setting the privacy of your content as well as many more cool things that you will discover."
+msgstr "Hesabınız hazır. Şimdi resim yüklemenin ve daha bir çok özelliğin keyfini çıkarabilirisiniz."
+
+#: ../../../app/themes/Peafowl/mails/account-welcome.php:10
+msgid "Thank you for joining"
+msgstr "Katıldığınız için teşekkür ederiz."
+
+#: ../../../app/themes/Peafowl/mails/footer.php:3
+msgid "This email was sent from %w %u"
+msgstr "Bu email %w %u tarafından gönderilmiştir"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:10
+msgid "General questions/comments"
+msgstr "Genel sorular/yorumlar"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:11
+msgid "DMCA complaint"
+msgstr "DMCA şikayet"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:25
+msgid "Invalid message"
+msgstr "Geçersiz mesaj (ileti). Lütfen geçerli bir mesaj yazınız."
+
+#: ../../../app/themes/Peafowl/pages/contact.php:28
+msgid "Invalid subject"
+msgstr "Geçersiz konu. Lütfen geçerli bir konu yazınız."
+
+#: ../../../app/themes/Peafowl/pages/contact.php:36
+msgid "Invalid reCAPTCHA"
+msgstr "Geçersiz güvenlik kodu. Lütfen güvenlik kodlarını kontrol ediniz."
+
+#: ../../../app/themes/Peafowl/pages/contact.php:81
+msgid "Mail error"
+msgstr "Hatalı (geçersiz) mail adresi."
+
+#: ../../../app/themes/Peafowl/pages/contact.php:93
+msgid "Message sent"
+msgstr "Mesajınız başarılı bir şekilde gönderildi."
+
+#: ../../../app/themes/Peafowl/pages/contact.php:99
+msgid "We will be in touch soon."
+msgstr "Size en kısa sürede ulaşacağız."
+
+#: ../../../app/themes/Peafowl/pages/contact.php:99
+msgid "If you want to send a message fill the form below."
+msgstr "Mesaj göndermek için aşağıdaki formu doldurup gönderiniz."
+
+#: ../../../app/themes/Peafowl/pages/contact.php:101
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:4
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:3
+#: ../../../app/themes/Peafowl/views/dashboard.php:523
+#: ../../../app/themes/Peafowl/views/dashboard.php:1396
+#: ../../../app/themes/Peafowl/views/settings.php:316
+msgid "Name"
+msgstr "İsim (Ad)"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:102
+msgid "Your name"
+msgstr "İsminiz (Adınız)"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:107
+#: ../../../app/themes/Peafowl/views/account/email-needed.php:16
+#: ../../../app/themes/Peafowl/views/settings.php:144
+msgid "Your email address"
+msgstr "Senin Email Adresin"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:111
+msgid "Subject"
+msgstr "Mesaj Konusu"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:125
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:15
+#: ../../../app/themes/Peafowl/views/dashboard.php:574
+msgid "Message"
+msgstr "Mesajınız"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:137
+msgid "Send message"
+msgstr "Mesajı Gönder"
+
+#: ../../../app/themes/Peafowl/pages/contact.php:137
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:69
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:73
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:85
+#: ../../../app/themes/Peafowl/views/dashboard.php:1728
+#: ../../../app/themes/Peafowl/views/settings.php:395
+#: ../../../lib/Peafowl/peafowl.js:2193
+#: ../../../lib/Peafowl/peafowl.min.js:120
+msgid "cancel"
+msgstr "İptal Et"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:13
+msgid "Drag and drop images here to upload"
+msgstr "Resimleri Yüklemek için sürükle ve bırak"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:14
+msgid "Select the images to upload"
+msgstr "Yüklemek istediğiniz resmi seçin."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:15
+msgid "You can also <a data-trigger=\"anywhere-upload-input\">browse from your computer</a> or <a data-modal=\"form\" data-target=\"anywhere-upload-paste-url\">add image URLs</a>."
+msgstr "veya <a data-trigger=\"anywhere-upload-input\">Bilgisayarıma Gözat</a> Veya <a data-modal=\"form\" data-target=\"anywhere-upload-paste-url\">URL ile Resim Ekle</a>."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:16
+msgid "You can also <a data-trigger=\"anywhere-upload-input-camera\">take a picture</a>."
+msgstr "Ayrıca<a data-trigger=\"anywhere-upload-input-camera\">yeni resim çekebilirsiniz</a>."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:20
+msgid "Uploading <span data-text=\"queue-size\">0</span> <span data-text=\"queue-objects\">images</span>"
+msgstr "Yüklenen <span data-text=\"queue-size\">0</span> <span data-text=\"queue-objects\">Resimler</span>"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:21
+msgid "The queue is being uploaded. It will take just a few seconds to complete."
+msgstr "Resimlerin düzenlenmesi yapılıyor. Bu işlem birkaç saniye sürebilir."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:25
+msgid "Upload complete"
+msgstr "Yükleme Tamamlandı"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:27
+#, php-format
+msgid "Content added to <a data-text=\"upload-target\" data-link=\"upload-target\" href=\"%s\">public stream</a>. You can <a data-modal=\"form\" data-target=\"form-uploaded-create-album\">create an album</a> or <a data-modal=\"form\" data-target=\"form-uploaded-move-album\">move the <span data-text=\"queue-objects\">images</span></a> to an existing album."
+msgstr "Yüklenen Resimlerinizi nerede saklayacaksınız ? <a data-text=\"upload-target\" data-link=\"upload-target\" href=\"%s\">Albümsüz genel olarak kullanmak istiyorum.</a>. veya <a data-modal=\"form\" data-target=\"form-uploaded-create-album\">Resimler için yeni bir Albüm oluştur</a> veya <a data-modal=\"form\" data-target=\"form-uploaded-move-album\">move the <span data-text=\"queue-objects\">images</span></a> Kullandığım albümlerimden birine ekle."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:28
+msgid "You can <a href=\"%s\">create an account</a> or <a href=\"%l\">sign in</a> to save future uploads in your account."
+msgstr "Yüklediginiz resimleri hesabınıza kayit etmek icin buradan <a href=\"%s\">yeni bir hesap oluşturabilirsiniz</a> veya <a href=\"%l\">Giriş yapabilirsiniz</a>"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:33
+msgid "No <span data-text=\"queue-objects\">images</span> have been uploaded"
+msgstr "Hiçbir <span data-text=\"queue-objects\">resim</span> yüklenmedi."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:34
+msgid "Some errors have occured and the system couldn't process your request."
+msgstr "Hata! Lütfen işlemlerini tekrar deneyiniz"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:54
+msgid "Select category"
+msgstr "Kategori Seçin"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:69
+msgid "Change upload privacy"
+msgstr "Yükleme gizliliği değiştir"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:70
+msgid "Mark this if the upload is not family safe"
+msgstr "Yükleyeceğiniz resim Aile için uygun değilse bu işareti seç"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:70
+msgid "Not family safe upload"
+msgstr "Aile için güvenli bir yükleme değil"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:73
+msgid "Uploading"
+msgstr "Yükleniyor"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:73
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:86
+msgid "cancel remaining"
+msgstr "Yüklemeyi İptal Et"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:78
+msgid "Note: Some images couldn't be uploaded."
+msgstr "Not : Bazı resimler yüklenemedi."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:78
+msgid "learn more"
+msgstr "Daha Fazla Bilgi"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:79
+msgid "Check the <a data-modal=\"simple\" data-target=\"failed-upload-result\">error report</a> for more information."
+msgstr "Daha fazla bilgi için <a data-modal=\"simple\" data-target=\"failed-upload-result\">hata raporunu</a> kontrol ediniz."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:82
+msgid "max"
+msgstr "Maksimum"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:84
+msgid "close"
+msgstr "kapat"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:143
+msgid "Add image URLs"
+msgstr "URL ile Resim Yükle"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:145
+msgid "Add the image URLs here"
+msgstr "URL ile Resmi Buradan Yükleyin"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:160
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:26
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:31
+msgid "Create album"
+msgstr "Yeni Albüm Oluştur"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:161
+msgid "The uploaded content will be moved to this newly created album. You can also move the content to an <a class=\"modal-switch\" data-switch=\"move-existing-album\">existing album</a>."
+msgstr "Yüklenen resimler yeni bir albüme taşınacaktır. İsterseniz resimlerinizi <a class=\"modal-switch\" data-switch=\"move-existing-album\">mevcut albümlerden</a>.birisini seçebilirsiniz."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:172
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:27
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:46
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:70
+msgid "Move to album"
+msgstr "Resimleri Albüme Taşı"
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:173
+msgid "Select an existing album to move the uploaded content. You can also <a class=\"modal-switch\" data-switch=\"move-new-album\">create a new album</a> and move the content there."
+msgstr "Yüklenen resimleri taşımak için bir albüm seçiniz. İsterseniz <a class=\"modal-switch\" data-switch=\"move-new-album\">yeni bir albüm</a> oluşturarak resimlerinizi yeni albüme taşıyabilirsiniz."
+
+#: ../../../app/themes/Peafowl/snippets/anywhere_upload.php:189
+msgid "Error report"
+msgstr "Hata raporu"
+
+#: ../../../app/themes/Peafowl/snippets/breadcrum_owner_card.php:26
+#: ../../../app/themes/Peafowl/views/user.php:87
+msgid "album"
+msgid_plural "albums"
+msgstr[0] "albüm"
+msgstr[1] "albümler"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:6
+msgid "Links"
+msgstr "Linkler"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:9
+msgid "Viewer links"
+msgstr "Görüntülenen bağlantılar"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:14
+msgid "Direct links"
+msgstr "Direk Linkler"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:21
+msgid "HTML Codes"
+msgstr "HTML Kodları"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:24
+msgid "HTML embed"
+msgstr "HTML Paylaşım (Embed) Kodu"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:29
+msgid "HTML original linked"
+msgstr "HTML Original Link"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:34
+msgid "HTML medium linked"
+msgstr "HTML Standart Resim Link"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:39
+msgid "HTML thumbnail linked"
+msgstr "HTML Küçük Resim Link"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:46
+msgid "BBCodes"
+msgstr "BBKodları"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:49
+msgid "BBCode embed"
+msgstr "BB Paylaşım (Embed) Kod"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:54
+msgid "BBCode original linked"
+msgstr "BB Original Resim Link"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:59
+msgid "BBCode medium linked"
+msgstr "BB Standart resim link"
+
+#: ../../../app/themes/Peafowl/snippets/embed_tpl.php:64
+msgid "BBCode thumbnail linked"
+msgstr "BB Küçük Resim Link"
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:6
+msgid "All these words"
+msgstr "Tüm bu kelimeler"
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:7
+msgid "Type the important words: tri-colour rat terrier"
+msgstr "Önemli olan kelimeleri giriniz: üç renkli sıçan terieri."
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:10
+msgid "This exact word or phrase"
+msgstr "Bu kelime veya cümle"
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:11
+msgid "Put exact words in quotes: \"rat terrier\""
+msgstr "Tırnak arasına kesin kelimeler koymak: \"osmanlı imparatorluğu\""
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:20
+msgid "None of these words"
+msgstr "Bu kelimelerden hiçbiri değil"
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:41
+#: ../../../app/themes/Peafowl/snippets/form_category.php:3
+msgid "Category"
+msgstr "Kategori"
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:66
+msgid "Storage"
+msgstr "Depolama"
+
+#: ../../../app/themes/Peafowl/snippets/form_advanced_search.php:81
+msgid "Uploader IP address"
+msgstr "Yükleyici İP adresi"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:7
+msgid "Album name"
+msgstr "Albüm İsmi"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:8
+msgid "Untitled album"
+msgstr "İsimsiz Albüm"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:12
+msgid "move to existing album"
+msgstr "mevcut albümü taşı"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:18
+msgid "Album description"
+msgstr "Albüm bilgileri"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:18
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:12
+#: ../../../app/themes/Peafowl/snippets/form_image.php:4
+#: ../../../app/themes/Peafowl/snippets/form_image.php:28
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:9
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:15
+#: ../../../app/themes/Peafowl/views/dashboard.php:1069
+#: ../../../app/themes/Peafowl/views/dashboard.php:1079
+msgid "optional"
+msgstr "Opsiyonel"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:19
+msgid "Brief description of this album"
+msgstr "Albüm hakkında kısa tanım"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:24
+msgid "Album Privacy"
+msgstr "Albümü Gizle"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:25
+msgid "Who can view this content"
+msgstr "Bu İçeriği Kimler Görüntüleyebilir ?"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:26
+#: ../../../app/themes/Peafowl/views/dashboard.php:305
+msgid "Public"
+msgstr "Genel"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:27
+msgid "Private (just me)"
+msgstr "Özel ve Gizli (Sadece Ben)"
+
+#: ../../../app/themes/Peafowl/snippets/form_album.php:28
+msgid "Private (anyone with the link)"
+msgstr "Özel (bağlantıya sahip herkes görebilir)"
+
+#: ../../../app/themes/Peafowl/snippets/form_category.php:9
+msgid "No category"
+msgstr "Kategori yok"
+
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:5
+msgid "Category name"
+msgstr "Kategori ismi"
+
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:8
+#: ../../../app/themes/Peafowl/views/dashboard.php:524
+msgid "URL key"
+msgstr "URL anahtarı"
+
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:9
+msgid "Category URL key"
+msgstr "Kategori URL anahtarı"
+
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:9
+msgid "Only letters, numbers, and hyphens"
+msgstr "Sadece harfler, rakamlar ve tire"
+
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:12
+#: ../../../app/themes/Peafowl/snippets/form_image.php:28
+#: ../../../app/themes/Peafowl/views/dashboard.php:525
+msgid "Description"
+msgstr "Tanımlar"
+
+#: ../../../app/themes/Peafowl/snippets/form_category_edit.php:13
+msgid "Brief description of this category"
+msgstr "Kategori hakkında kısa tanım"
+
+#: ../../../app/themes/Peafowl/snippets/form_image.php:4
+#: ../../../app/themes/Peafowl/views/dashboard.php:1091
+msgid "Title"
+msgstr "Başlık"
+
+#: ../../../app/themes/Peafowl/snippets/form_image.php:5
+msgid "Untitled image"
+msgstr "İsimsiz resim"
+
+#: ../../../app/themes/Peafowl/snippets/form_image.php:25
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:36
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_admin_tools.php:8
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:8
+msgid "Flag as unsafe"
+msgstr "Güvenli değil olarak işaretle"
+
+#: ../../../app/themes/Peafowl/snippets/form_image.php:29
+msgid "Brief description of this image"
+msgstr "Resmin kısa açılaması"
+
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:4
+msgid "IP address"
+msgstr "İP adresi"
+
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:9
+msgid "Expiration date"
+msgstr "Son kullanma tarihi"
+
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:10
+msgid "YYYY-MM-DD HH:MM:SS"
+msgstr "YYYY-AA-GG SS:DD:SS"
+
+#: ../../../app/themes/Peafowl/snippets/form_ip_ban_edit.php:10
+msgid "Example"
+msgstr "Örnek"
+
+#: ../../../app/themes/Peafowl/snippets/form_move_existing_album.php:3
+msgid "Existing album"
+msgstr "Mevcut Albüm"
+
+#: ../../../app/themes/Peafowl/snippets/form_move_existing_album.php:3
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:8
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:9
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:16
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:17
+#: ../../../app/themes/Peafowl/views/dashboard.php:28
+msgid "Album"
+msgid_plural "Albums"
+msgstr[0] "Albüm"
+msgstr[1] "Albümler"
+
+#: ../../../app/themes/Peafowl/snippets/form_move_existing_album.php:9
+#: ../../../app/lib/chevereto.js:2341 ../../../app/lib/chevereto.js:3254
+#: ../../../app/lib/chevereto.min.js:115 ../../../app/lib/chevereto.min.js:162
+msgid "private"
+msgstr "Gizli"
+
+#: ../../../app/themes/Peafowl/snippets/form_move_existing_album.php:15
+msgid "create new album"
+msgstr "Yeni Albüm Oluştur"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:4
+msgid "Storage name"
+msgstr "Depolayıcı ismi"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:7
+msgid "API"
+msgstr "API"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:16
+msgid "Region"
+msgstr "Bölge"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:26
+msgid "Storage bucket"
+msgstr "Depolama kova"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:29
+msgid "Key"
+msgstr "Anahtar"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:30
+msgid "Storage key"
+msgstr "Depolama anahtarı"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:33
+msgid "Secret"
+msgstr "Gizli"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:34
+msgid "Storage secret"
+msgstr "Depolama gizli"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:40
+msgid "Hostname or IP of the storage server"
+msgstr "Depolama sunucusunun adı veya ip adresi"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:43
+msgid "Path"
+msgstr "Yol"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:44
+msgid "Server path"
+msgstr "Sunucu yolu"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:44
+msgid "Server path where the files will be stored"
+msgstr "Dosyaların depolanacağı sunucu yolu"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:48
+msgid "Server username"
+msgstr "Sunucu kullanıcı adı"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:52
+msgid "Server password"
+msgstr "Sunucu şirfesi"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:57
+msgid "Storage capacity"
+msgstr "Depolama kapasitesi"
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:58
+msgid "Example: 20 GB, 1 TB, etc."
+msgstr "Örnek: 20 GB, 1 TB, vs."
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:60
+msgid "This storage will be disabled when it reach this capacity. Leave it blank or zero for no limit."
+msgstr "Bu kapasiteye ulaştığında bu depolama devre dışı bırakılacak. Boş bırakın veya limitsiz için sıfır yazın."
+
+#: ../../../app/themes/Peafowl/snippets/form_storage_edit.php:64
+msgid "Storage URL"
+msgstr "Depolama URL"
+
+#: ../../../app/themes/Peafowl/snippets/image_album_slice.php:14
+msgid "view more"
+msgstr "Daha Fazlası"
+
+#: ../../../app/themes/Peafowl/snippets/listing.php:22
+#: ../../../app/themes/Peafowl/snippets/templates_content_listing.php:6
+#: ../../../app/themes/Peafowl/snippets/templates_content_listing.php:9
+msgid "Load more"
+msgstr "Daha Fazla Yükle"
+
+#: ../../../app/themes/Peafowl/snippets/listing.php:91
+msgid "Previous"
+msgstr "Önceki"
+
+#: ../../../app/themes/Peafowl/snippets/listing.php:98
+msgid "Next"
+msgstr "İleri"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:10
+msgid "Select all"
+msgstr "Hepsini Seç"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:11
+msgid "Selection"
+msgstr "Seç"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:12
+msgid "Action"
+msgstr "Eylem"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:19
+msgid "Get embed codes"
+msgstr "Embed kodları alın"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:34
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:85
+msgid "Assign category"
+msgstr "Kategori atama"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:35
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_admin_tools.php:9
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:9
+msgid "Flag as safe"
+msgstr "Güvenli olarak işaretle"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:40
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_admin_tools.php:7
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_admin_tools.php:8
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:12
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:13
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_admin_tools.php:12
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_admin_tools.php:13
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:20
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:21
+#: ../../../app/themes/Peafowl/views/dashboard.php:532
+#: ../../../app/themes/Peafowl/views/dashboard.php:581
+msgid "Delete"
+msgstr "Sil"
+
+#: ../../../app/themes/Peafowl/snippets/listing_tools_editor.php:41
+msgid "Clear selection"
+msgstr "Seçimi Temizle"
+
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:5
+#, php-format
+msgid "To use all the features of this site you must be logged in. If you don't have an account you can <a href=\"%s\">sign up</a> right now."
+msgstr "Hesabınız varsa lütfen giriş yapınız. Hesabınız yoksa bütün fonksiyonlardan faydalanmak için lütfen <a href=\"%s\">kayıt</a> olunuz."
+
+#: ../../../app/themes/Peafowl/snippets/modal_login.php:24
+msgid "forgot?"
+msgstr "Unuttunuz Mu ?"
+
+#: ../../../app/themes/Peafowl/snippets/modal_share.php:10
+msgid "Link"
+msgstr "Link"
+
+#: ../../../app/themes/Peafowl/snippets/modal_share.php:14
+#: ../../../app/themes/Peafowl/views/album.php:74
+#: ../../../app/themes/Peafowl/views/image.php:282
+msgid "Note: This content is private. Change privacy to \"public\" to share."
+msgstr "Not: Bu içerik Özeldir. Paylaşmak için Gizlilik Ayarlarını Değiştirin"
+
+#: ../../../app/themes/Peafowl/snippets/template_content_empty.php:5
+#: ../../../app/themes/Peafowl/views/index.php:63
+msgid "There's nothing to show here."
+msgstr "Burada gösterilecek birşey yok."
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:16
+#: ../../../app/themes/Peafowl/views/image.php:75
+#: ../../../app/themes/Peafowl/views/image.php:441
+msgid "Edit image details"
+msgstr "Resim düzenleme ayrıntıları"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:18
+#: ../../../app/themes/Peafowl/views/album.php:22
+#: ../../../app/themes/Peafowl/views/album.php:118
+msgid "Edit album details"
+msgstr "Albüm ayarlarını Düzenle"
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:32
+msgid "All the images will be moved to this newly created album. You can also move the images to an <a class=\"modal-switch\" data-switch=\"move-existing-album\">existing album</a>."
+msgstr "Resimleriniz yeni oluşturulacak bir albüme taşınacaktır. İsterseniz resimlerinizi <a class=\"modal-switch\" data-switch=\"move-existing-album\">mevcut albümlerden</a>.birisine taşıyabilirsiniz."
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:50
+msgid "Select an existing album to move the image. You can also <a class=\"modal-switch\" data-switch=\"move-new-album\">create a new album</a> and move the image there."
+msgstr "Yüklenen resimleri taşımak için bir albüm seçiniz. İsterseniz <a class=\"modal-switch\" data-switch=\"move-new-album\">yeni bir albüm</a> oluşturarak resimlerinizi yeni albüme taşıyabilirsiniz."
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:52
+msgid "Select an existing album to move the album contents. You can also <a class=\"modal-switch\" data-switch=\"move-new-album\">create a new album</a> and move the album contents there."
+msgstr "Lütfen albüm içeriklerini taşımak için varolan bir albüm seçiniz. Ayrıca <a class=\"modal-switch\" data-switch=\"move-new-album\">Buradan</a> yeni albüm yaratarak içeriklerinizi taşıyabilirsiniz."
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:71
+msgid "Select an existing album to move the images. You can also <a class=\"modal-switch\" data-switch=\"move-new-album\">create a new album</a> and move the images there."
+msgstr "Yüklenen resimleri taşımak için bir albüm seçiniz. İsterseniz <a class=\"modal-switch\" data-switch=\"move-new-album\">yeni bir albüm</a> oluşturarak resimlerinizi yeni albüme taşıyabilirsiniz."
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:87
+msgid "All the selected images will be assigned to this category."
+msgstr "Seçilen tüm görüntüler bu kategoriye tahsis edilecektir."
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:106
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:110
+msgid "Confirm deletion"
+msgstr "Silmek istediğinizden emin misiniz. Eminseniz onaylayınız."
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:107
+msgid "Do you really want to remove this content? This can't be undone."
+msgstr "Resim veya resimleri silmek istediğinizden eminmisiniz. Resimler geri dönüşümü olmaksızın silinecektir."
+
+#: ../../../app/themes/Peafowl/snippets/user_items_editor.php:111
+msgid "Do you really want to remove all the selected content? This can't be undone."
+msgstr "Seçili resimleri silmek istediğinizden eminmisiniz ?. Resimler geri dönüşümü olmaksızın silinecektir."
+
+#: ../../../app/themes/Peafowl/tpl_list_item/image_description_guest.php:2
+msgid "Uploaded by guest to Public"
+msgstr "Kayıtsız kullanıcılar tarafından yüklenildi"
+
+#: ../../../app/themes/Peafowl/tpl_list_item/image_description_owner.php:2
+#, php-format
+msgid "From %s"
+msgstr "Yükleyen %s"
+
+#: ../../../app/themes/Peafowl/tpl_list_item/image_description_user.php:2
+msgid "From %a by %u"
+msgstr "Yükleyen %a Paylaşan %u"
+
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_admin_tools.php:3
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_admin_tools.php:4
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:3
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:4
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_admin_tools.php:3
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_admin_tools.php:4
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:3
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:4
+#: ../../../app/lib/chevereto.js:3186 ../../../app/lib/chevereto.min.js:157
+#: ../../../lib/Peafowl/peafowl.js:625 ../../../lib/Peafowl/peafowl.min.js:36
+msgid "Select"
+msgstr "Seçiniz"
+
+#: ../../../app/themes/Peafowl/tpl_list_item/item_album_edit_tools.php:6
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:12
+#: ../../../app/themes/Peafowl/tpl_list_item/item_image_edit_tools.php:13
+msgid "Edit"
+msgstr "Düzenle"
+
+#: ../../../app/themes/Peafowl/views/404.php:7
+msgid "The requested page was not found."
+msgstr "Aradığınız Sayfa Bulunmamaktadır. Lütfen Kontrol Ederek Tekrar Deneyiniz."
+
+#: ../../../app/themes/Peafowl/views/404.php:11
+msgid "Search something else"
+msgstr "Başka bir şey ara"
+
+#: ../../../app/themes/Peafowl/views/404.php:22
+msgid "The user has been deleted"
+msgstr "Geçersiz veya Silinmiş Kullanıcı. Lütfen Bilgilerinizi Kontrol Ederek Tekrar Deneyiniz."
+
+#: ../../../app/themes/Peafowl/views/404.php:22
+#: ../../../app/themes/Peafowl/views/album.php:134
+#: ../../../app/themes/Peafowl/views/user.php:158
+#: ../../../app/lib/chevereto.js:3163 ../../../app/lib/chevereto.min.js:155
+msgid "The content has been deleted."
+msgstr "İçerik silindi."
+
+#: ../../../app/themes/Peafowl/views/account/awaiting-confirmation.php:7
+msgid "Your account is almost ready"
+msgstr "Hesabınız Nerdeyse Hazır. Lütfen Email Adresinize Gelen Aktivasyon İşlemini Gerçekleştiriniz."
+
+#: ../../../app/themes/Peafowl/views/account/awaiting-confirmation.php:9
+#, php-format
+msgid "An email to %s has been sent with instructions to activate your account. The activation link is only valid for 48 hours. If you don't receive the instructions try checking your junk or spam filters."
+msgstr "%s hesabınızı etkinleştirmek için mail gönderildi. Aktivasyon işlemi 48 saat için geçerlidir. Mail almadığınızı düşünüyorsanız lütfen spam veya önemsiz kutularını kontrol ediniz. "
+
+#: ../../../app/themes/Peafowl/views/account/awaiting-confirmation.php:10
+#: ../../../app/themes/Peafowl/views/account/email-changed.php:11
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:16
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:26
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:16
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:13
+#: ../../../app/themes/Peafowl/views/logout.php:13
+#: ../../../app/themes/Peafowl/views/request-denied.php:13
+msgid "Go to homepage"
+msgstr "Ana Sayfaya Dön"
+
+#: ../../../app/themes/Peafowl/views/account/awaiting-confirmation.php:10
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:13
+msgid "Resend activation"
+msgstr "Aktivasyon Mailini Tekrar Gönder"
+
+#: ../../../app/themes/Peafowl/views/account/email-changed.php:10
+#, php-format
+msgid "You have successfully changed your account email to %s"
+msgstr "Değiştirmiş olduğunuz mail adresi %s. Yanlışlık olduğunu veya hatalı olduğunu düşünüyorsanız ayarlarını kontrol ediniz veya bize ulaşınız."
+
+#: ../../../app/themes/Peafowl/views/account/email-changed.php:11
+msgid "Go to my profile"
+msgstr "Benim Profilime Dön"
+
+#: ../../../app/themes/Peafowl/views/account/email-needed.php:12
+msgid "A confirmation link will be sent to this email with details to activate your account."
+msgstr "Onay linki ve hesapla ilgili bilgiler mail olarak gönderilecektir."
+
+#: ../../../app/themes/Peafowl/views/account/email-needed.php:26
+msgid "Add email"
+msgstr "Email Ekle"
+
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:15
+msgid "An email with instructions to reset your password has been sent to the registered email address. If you don't receive the instructions try checking your junk or spam filters."
+msgstr "Şifrenizi sıfırlamak için gerekli bilgiler kayıtlı mail adresinize gönderildi. Bazı mail sunucularında mailler \"Spam, Önemsiz, Gereksiz mail\" kutularını düşebilmektedir. Kontrol etmeyi unutmayınız."
+
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:16
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:26
+msgid "Resend instructions"
+msgstr "Tekrar Gönder"
+
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:22
+#: ../../../app/lib/chevereto.js:989 ../../../app/lib/chevereto.js:1065
+#: ../../../app/lib/chevereto.js:1143 ../../../app/lib/chevereto.js:1293
+#: ../../../app/lib/chevereto.min.js:44 ../../../app/lib/chevereto.min.js:48
+#: ../../../app/lib/chevereto.min.js:52 ../../../app/lib/chevereto.min.js:55
+#: ../../../lib/Peafowl/peafowl.js:2422 ../../../lib/Peafowl/peafowl.js:2937
+#: ../../../lib/Peafowl/peafowl.min.js:138
+#: ../../../lib/Peafowl/peafowl.min.js:169
+msgid "An error occurred. Please try again later."
+msgstr "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:24
+msgid "A previous email has been sent with instructions to reset your password. If you did not receive the instructions try checking your junk or spam filters."
+msgstr "Önceki gönderilen eposta içerisinde şifrenizi sıfırlama talimatı bulunmaktaydı.Şayet talimatı almadıysanız eposta spam veya önemsiz klasörlerine kontrol ediniz."
+
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:32
+msgid "Enter your username or the email address that you used to create your account."
+msgstr "Hesabınızı oluştururken belirttiğiniz email adresini yazınız."
+
+#: ../../../app/themes/Peafowl/views/account/password-forgot.php:52
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:47
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:37
+#: ../../../lib/Peafowl/peafowl.js:407 ../../../lib/Peafowl/peafowl.js:2191
+#: ../../../lib/Peafowl/peafowl.min.js:23
+#: ../../../lib/Peafowl/peafowl.min.js:120
+msgid "Submit"
+msgstr "Teslim Et"
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:15
+msgid "Your password has been changed. You can now try logging in using your new password."
+msgstr "Şifreniz başarıyla değiştirildi. Artık yeni şifrenizle giriş yapabilirsiniz."
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:16
+msgid "Login now"
+msgstr "Giriş Yap"
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:22
+msgid "Enter the new password that you want to use."
+msgstr "Kullanmak istediğiniz yeni şifrenizi belirtiniz."
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:28
+msgid "New Password"
+msgstr "Yeni Şifreniz"
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:29
+#: ../../../app/themes/Peafowl/views/dashboard.php:105
+#: ../../../app/themes/Peafowl/views/settings.php:258
+#: ../../../app/themes/Peafowl/views/settings.php:275
+#: ../../../app/themes/Peafowl/views/signup.php:45
+#, php-format
+msgid "%d characters min"
+msgstr "en az %d karakter"
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:29
+#: ../../../app/themes/Peafowl/views/settings.php:258
+msgid "Enter your new password"
+msgstr "Yeni Şifrenizi Yazınız"
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:34
+#: ../../../app/themes/Peafowl/views/settings.php:280
+msgid "Confirm password"
+msgstr "Şifrenizi Tekrardan Yazınız."
+
+#: ../../../app/themes/Peafowl/views/account/password-reset.php:35
+#: ../../../app/themes/Peafowl/views/settings.php:264
+msgid "Re-enter your new password"
+msgstr "Lütfen Yeni Şifrenizi Tekrardan Yazınız."
+
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:12
+#, php-format
+msgid "An email to %s has been sent with instructions to activate your account.n\\If you don't receive the instructions try checking your junk or spam filters."
+msgstr "%s adresinize aktivasyon maili gönderildi. Lütfen mail sunucunuzdaki \"Spam, Önemsiz, Gereksiz mail\" kutularını kontrol ediniz."
+
+#: ../../../app/themes/Peafowl/views/account/resend-activation.php:19
+msgid "Enter the email address that you used to create your account to continue."
+msgstr "Hesabınızı oluşturduğunuz mail adresini giriniz."
+
+#: ../../../app/themes/Peafowl/views/album.php:16
+#: ../../../app/themes/Peafowl/views/image.php:69
+msgid "This content is private"
+msgstr "Özel içerik !"
+
+#: ../../../app/themes/Peafowl/views/album.php:25
+msgid "Do you really want to delete this album and all of its images? This can't be undone."
+msgstr "Gerçekten bu albümü ve içindekileri silmek istiyormusun? Bu işlemin geri dönüşü yok."
+
+#: ../../../app/themes/Peafowl/views/album.php:25
+msgid "Delete album"
+msgstr "Albümü Sil"
+
+#: ../../../app/themes/Peafowl/views/album.php:86
+msgid "Album link"
+msgstr "Albüm Link Adresi"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:22
+msgid "Image"
+msgid_plural "Images"
+msgstr[0] "Resim"
+msgstr[1] "Resimler"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:34
+#: ../../../app/themes/Peafowl/views/dashboard.php:90
+#: ../../../app/themes/Peafowl/views/settings.php:120
+msgid "User"
+msgid_plural "Users"
+msgstr[0] "Üye"
+msgstr[1] "Üyeler"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:40
+#: ../../../app/themes/Peafowl/views/dashboard.php:1435
+msgid "Disk used"
+msgstr "Kullanılan Disk Alanı"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:80
+#: ../../../app/themes/Peafowl/views/dashboard.php:84
+msgid "Add user"
+msgstr "Kullanıcı ekle"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:87
+#: ../../../app/themes/Peafowl/views/settings.php:115
+msgid "Role"
+msgstr "Rolü"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:89
+#: ../../../app/themes/Peafowl/views/settings.php:119
+msgid "Administrator"
+msgstr "Yönetici"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:152
+#: ../../../app/themes/Peafowl/views/dashboard.php:156
+msgid "Add category"
+msgstr "Kategori ekle"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:165
+#: ../../../app/themes/Peafowl/views/dashboard.php:169
+#: ../../../app/themes/Peafowl/views/image.php:225
+msgid "Add IP ban"
+msgstr "İP yasağı ekle"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:178
+#: ../../../app/themes/Peafowl/views/dashboard.php:182
+msgid "Add storage"
+msgstr "Depolama ekle"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:197
+msgid "Website name"
+msgstr "Site Adını Yazınız."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:202
+msgid "Website doctitle"
+msgstr "Sitenizin Başlığını Yazınız."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:206
+msgid "Website description"
+msgstr "Sitenizin Açıklamasını Yazınız."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:211
+msgid "Website keywords"
+msgstr "Websitesi anahtar kelimeler"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:232
+msgid "Default time zone"
+msgstr "Varsayılan Zaman Dilimi"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:236
+#: ../../../app/themes/Peafowl/views/settings.php:202
+msgid "Select region"
+msgstr "Bölge Seçiniz."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:276
+msgid "Enable this if you want to allow the search feature."
+msgstr "Eğer arama özelliğine izin vermek istiyorsanız bunu etkinleştirin."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:286
+msgid "Enable this if you want to allow the explore page."
+msgstr "Sayfayi keşfetmek izni vermek icin etkinleştirin."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:296
+msgid "Enable this if you want to allow the random feature."
+msgstr "Eğer rastgele özelliğine izin vermek istiyorsanız bunu etkinleştirin."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:302
+msgid "Website mode"
+msgstr "Website modu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:315
+msgid "Content privacy mode"
+msgstr "İçerik gizlilik modu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:319
+#: ../../../app/themes/Peafowl/views/dashboard.php:876
+#: ../../../app/themes/Peafowl/views/dashboard.php:1114
+msgid "Default"
+msgstr "Varsayılan"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:335
+msgid "Enable uploads"
+msgstr "Desteklenen Formatlar"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:341
+msgid "Enable this if you want to allow image uploads. This setting doesn't affect administrators."
+msgstr "Resim yükleme izin vermek için bunu etkinleştirin. Bu ayar, yöneticilerin etkilemez."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:344
+msgid "Guest uploads"
+msgstr "Misafirlerin Yüklediği Resimler"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:350
+msgid "Enable this if you want to allow non registered users to upload."
+msgstr "Misafir Kullanıcıların Resim Yüklemesini İstiyorsanız Bunu Etkinleştirmeniz Gerekmektedir. "
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:357
+msgid "Max. filesize"
+msgstr "Maksimum Resim Boyutu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:360
+#, php-format
+msgid "Max. allowed filesize. (Max allowed by server is %s)"
+msgstr "Maksimum Yüklenecek Resimlerin Boyutu: %s"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:363
+msgid "Image path"
+msgstr "Resim Yolu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:364
+msgid "Relative to Chevereto root"
+msgstr "Chevereto Root (Ana Dizin) Yolu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:366
+msgid "Where to store the images? Relative to Chevereto root."
+msgstr "Resimleri depolama  yeri neresidir ?. Chevereto root dosyasına göre"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:369
+msgid "Storage mode"
+msgstr "Saklama (Depolama) Modu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:372
+msgid "Datefolders"
+msgstr "Klasör Tarihleri"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:372
+msgid "Direct"
+msgstr "Doğrudan (Direk)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:375
+#, php-format
+msgid "Datefolders creates %s structure"
+msgstr "Klasör Tarihlerinin %s Yapısı"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:378
+msgid "File naming method"
+msgstr "Dosya İsimlendirme Yöntemi"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:381
+msgid "Original"
+msgstr "Orijinal İsmi"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:381
+msgid "Mixed"
+msgstr "Karıştırılmış İsim"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:384
+msgid "\"Original\" will try to keep the image source name while \"Random\" will generate a random name. \"Mixed\" is a combination of both methods."
+msgstr "\"Original\" resim ismi veya \"Random\" will generate a random name. \"Mixed\" is a combination of both methods."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:390
+msgid "Thumb size"
+msgstr "Küçük Resim Boyutu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:401
+msgid "Thumbnails will be fixed to this size."
+msgstr "Resimlere Eklenecek Trumbnails (Küçük Logo) Boyutunu."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:404
+msgid "Medium size"
+msgstr "Orta Boy Resim Boyutu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:409
+msgid "Height will be automatic calculated."
+msgstr "Resim Yüksekliğini Otomatik Ayarlama"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:466
+msgid "Watermark image"
+msgstr "Filigran resmi"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:472
+msgid "Watermark image to use. Must be a PNG."
+msgstr "Filigran görüntü kullanmak için seçin. PNG olmalı."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:475
+msgid "Watermark position"
+msgstr "Filigran konumu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:479
+msgid "left top"
+msgstr "Sol üst"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:480
+msgid "left center"
+msgstr "Sol orta"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:481
+msgid "left bottom"
+msgstr "Sol alt"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:482
+msgid "center top"
+msgstr "Üst orta"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:483
+msgid "center center"
+msgstr "Orta merkez"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:484
+msgid "center bottom"
+msgstr "Alt orta"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:485
+msgid "right top"
+msgstr "Sağ üst"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:486
+msgid "right center"
+msgstr "Sağ orta"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:487
+msgid "right bottom"
+msgstr "Sağ alt"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:495
+msgid "Watermark margin"
+msgstr "Filigran Kenar"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:503
+msgid "Watermark opacity"
+msgstr "Filigran şeffaglığı"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:550
+msgid "Edit category"
+msgstr "Kategori düzenle"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:573
+msgid "Expires"
+msgstr "Sona ermek"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:597
+msgid "Edit IP ban"
+msgstr "Banlı İP düzenleme"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:607
+msgid "Enable signups"
+msgstr "Üyelik Kayıtları Açık Kalsın"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:613
+msgid "Enable this if you want to allow users to signup."
+msgstr "Kullanıcıların kayıt için izin vermek istiyorsanız bunu etkinleştirin."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:620
+msgid "Username routing"
+msgstr "Kullanıcı adı yönlendirme"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:633
+msgid "User profile"
+msgstr "Kullanıcı profili"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:636
+msgid "Configure the link used in the logo when user is logged in."
+msgstr "Kullanıcı giriş yaptığında logosunda kullanılan bağlantıyı yapılandırın."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:648
+msgid "Enable this if users must validate their email address on sign up."
+msgstr "Bunu işaretlerseniz kullanıcılar e-posta adresini doğrulaması gerekecektir."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:651
+msgid "Require email for social signup"
+msgstr "Sosyal kaydolma için e-posta iste"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:678
+msgid "Block image uploads by IP if the system notice a flood  behavior based on the number of uploads per time period. This setting doesn't affect administrators."
+msgstr "ip başına yüklenecek resim sayısını ve periyodunu belirtiniz. "
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:690
+msgid "Notify to email"
+msgstr "Durumu Mail Olarak Bildir"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:696
+msgid "If enabled the system will send an email on flood incidents."
+msgstr "Sistem etkinse bir mail gönderilecektir."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:699
+msgid "Minute limit"
+msgstr "Dakikada Resim Yükleme Sınırı"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:704
+msgid "Hourly limit"
+msgstr "Saatte Resim Yükleme Sınırı"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:709
+msgid "Daily limit"
+msgstr "Günlük Resim Yükleme Sınırı"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:714
+msgid "Weekly limit"
+msgstr "Haftalık Resim Yükleme Sınırı"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:719
+msgid "Monthly limit"
+msgstr "Aylık Resim Yükleme Sınırı"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:760
+msgid "List items per page"
+msgstr "Sayfa başına Liste öğeleri"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:763
+msgid "How many items should be displayed per page listing."
+msgstr "Listede Kaç Adet Resim Sergilemek İstiyorsanız Belirtiniz"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:767
+msgid "List pagination mode"
+msgstr "Liste sayfalama modu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:770
+msgid "Endless scrolling"
+msgstr "Sonsuz kaydırma"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:778
+msgid "Image listing size"
+msgstr "Görüntü listeleme boyutu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:781
+msgid "Fluid"
+msgstr "Akışkan"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:781
+msgid "Fixed"
+msgstr "Çözüldü"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:794
+msgid "Phone"
+msgstr "Telefon"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:802
+msgid "Tablet"
+msgstr "Tablet"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:806
+msgid "Laptop"
+msgstr "Laptop"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:810
+msgid "Desktop"
+msgstr "Masaüstü"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:818
+#, php-format
+msgid "Put your themes in the %s folder"
+msgstr "Tema Klasörü %s"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:837
+msgid "Tone"
+msgstr "Ton"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:840
+msgid "Light"
+msgstr "Hafif (beyaz)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:840
+msgid "Dark"
+msgstr "Koyu (siyah)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:895
+msgid "Enable vector logo"
+msgstr "Vektorel logo acik"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:938
+msgid "Favicon image"
+msgstr "Favicon resmi"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:944
+msgid "Favicon image. Image must have same width and height."
+msgstr "Favicon görüntü. Görüntü aynı genişliğe ve yüksekliğe sahip olmalıdır."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:950
+msgid "Enable download button"
+msgstr "İndirme butonu açık."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:956
+msgid "Enable this if you want to show the image download button."
+msgstr "Görüntü indirme düğmesini göstermek istiyorsanız bunu etkinleştirin."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:984
+msgid "Enable social share"
+msgstr "Sosyal paylaşma etkinleştir"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:990
+msgid "Enable this if you want to show social network buttons to share content."
+msgstr "Eğer içerik paylaşmak için sosyal ağ düğmelerini göstermek istiyorsanız bunu etkinleştirin."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:994
+msgid "Enable embed codes (content)"
+msgstr " Embed kodları etkinleştirme (içerik)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1028
+msgid "Custom CSS code"
+msgstr "Özel CSS kodu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1033
+msgid "Custom JS code"
+msgstr "Özel JS kodu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1041
+msgid "Style"
+msgstr "Stil"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1057
+msgid "Cover image"
+msgstr "Kapak resmi"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1164
+msgid "User IDs"
+msgstr "Kullanıcı Kimlikleri"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1176
+msgid "Here you can set the codes for the predefined ad spaces."
+msgstr "Burada önceden tanımlanmış reklam alanları için kodları ayarlayabilirsiniz."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1179
+msgid "Before cover (homepage)"
+msgstr "Kapaktan önce (anasayfa)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1183
+msgid "After cover (homepage)"
+msgstr "Kapaktan sonra (anasayfa)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1187
+msgid "After listing (homepage)"
+msgstr "Listeledikten sonra (anasayfa)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1203
+msgid "Content (image and album)"
+msgstr "İçerik (görüntü ve albüm)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1209
+msgid "Before comments"
+msgstr "Yorumlardan önce"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1215
+msgid "Image page"
+msgstr "Resim sayfası"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1217
+msgid "Inside viewer top (image page)"
+msgstr "İç izleyici üst (resim sayfası)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1219
+#: ../../../app/themes/Peafowl/views/dashboard.php:1224
+msgid "Expected banner size 728x90"
+msgstr "Önerilen afiş boyutu 728x90"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1222
+msgid "Inside viewer foot (image page)"
+msgstr "İç izleyici ayak (resim sayfası)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1227
+msgid "After image viewer (image page)"
+msgstr "Resim görüntüleyici (görüntü sayfası) sonra"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1231
+msgid "Before header (image page)"
+msgstr "Başlıktan önce (resim sayfası)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1235
+msgid "After header (image page)"
+msgstr "Başlığından sonra (resim sayfası)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1239
+msgid "Footer (image page)"
+msgstr "Alt (görüntü sayfası)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1245
+msgid "Album page"
+msgstr "Albüm sayfası"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1247
+msgid "Before header (album page)"
+msgstr "Başlıktan önce (albüm sayfası)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1251
+msgid "After header (album page)"
+msgstr "Başlığından sonra (albüm sayfası)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1257
+msgid "User profile page"
+msgstr "Kullanıcı Profil Sayfası"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1259
+msgid "After top (user profile)"
+msgstr "Üst sonra (kullanıcı profili)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1263
+msgid "Before listing (user profile)"
+msgstr "Listeleme önce (kullanıcı profili)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1269
+msgid "Explore page"
+msgstr "Sayfayı keşfedin"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1271
+msgid "After top (explore page)"
+msgstr "Üst sonra (sayfa keşfetmek)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1279
+msgid "Crypt salt"
+msgstr "Crypt salt"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1281
+msgid "This is the salt used to convert numeric ID to alphanumeric. It was generated on install."
+msgstr "Kullanıcı İD Kimlik Numarasıdır. Bu İD üzerinden işlemler yapılacaktır."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1293
+msgid "Error reporting"
+msgstr "Hata Raporu Gönder"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1299
+msgid "Enable this if you need to debug PHP errors."
+msgstr "PHP hatalarını ayıklamak için etkinleştiriniz."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1302
+msgid "Maintenance"
+msgstr "Bakım"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1308
+msgid "When enabled the website will show a maintenance message. This setting doesn't affect administrators."
+msgstr "Etkinleştirildiğinde website bakım mesajı gösterecektir. Bu ayar, yöneticileri etkilemez."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1314
+msgid "Default language"
+msgstr "Varsayılan Dil Ayarını Seçiniz."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1323
+msgid "Default base language to use."
+msgstr "Varsayılan Temel Dil Ayarını Belirtiniz."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1327
+msgid "Auto language"
+msgstr "Otomatik Dil Seçimi"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1399
+msgid "Quota"
+msgstr "Kota"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1401
+msgid "Active"
+msgstr "Aktif"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1434
+msgid "Storage method"
+msgstr "Depolama yöntemi"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1457
+msgid "From name"
+msgstr "İsminiz (Adınız)"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1460
+msgid "Sender name for emails sent to users."
+msgstr "Email gönderilecek kullanıcıların isim veya isimlerini yazınız.."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1475
+msgid "Email mode"
+msgstr "E-posta modu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1482
+msgid "How to send emails? SMTP recommended."
+msgstr "Emailler nasıl gönderilecek? SMTP önerilir."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1487
+msgid "SMTP server and port"
+msgstr "SMTP server adresi ve port numarası"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1490
+msgid "SMTP server"
+msgstr "SMTP server"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1503
+msgid "SMTP username"
+msgstr "SMTP Kullanıcı Adı"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1508
+msgid "SMTP password"
+msgstr "SMTP Şifre"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1513
+msgid "SMTP security"
+msgstr "SMTP Güvenliğini"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1516
+msgid "Unsecured"
+msgstr "Güvensiz"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1533
+msgid "You need a <a href=\"https://developers.facebook.com/\" target=\"_blank\">Facebook app</a> for this."
+msgstr "Bu modu kullanmak için Facebook uygulaması gerekmektedir. Örnek olarak  <a href=\"https://developers.facebook.com/\" target=\"_blank\">Facebook app </a>"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1538
+msgid "Facebook app id"
+msgstr "Facebook app id"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1543
+msgid "Facebook app secret"
+msgstr "Facebook app secret kodu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1559
+msgid "You need a <a href=\"https://apps.twitter.com\" target=\"_blank\">Twitter app</a> for this."
+msgstr "Bu modu kullanmak için Twitter uygulaması gerekmektedir. Örnek olarak <a href=\"https://apps.twitter.com\" target=\"_blank\">Twitter app</a>"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1564
+msgid "Twitter API key"
+msgstr "Twitter API anahtarı"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1569
+msgid "Twitter API secret"
+msgstr "Twitter API secret kodu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1576
+msgid "Twitter account"
+msgstr "Twitter hesabı"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1592
+msgid "You need a <a href=\"https://cloud.google.com/console\" target=\"_blank\">Google app</a> for this."
+msgstr "Bu modu kullanmak için Google uygulaması gerekmektedir. Örnek olarak <a href=\"https://cloud.google.com/console\" target=\"_blank\">Google app</a>"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1597
+msgid "Google client id"
+msgstr "Google client id"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1602
+msgid "Google client secret"
+msgstr "Google client secret kodu"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1669
+msgid "reCAPTCHA public key"
+msgstr "reCAPTCHA public key"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1674
+msgid "reCAPTCHA private key"
+msgstr "reCAPTCHA private key"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1681
+msgid "reCAPTCHA threshold"
+msgstr "reCAPTCHA threshold"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1692
+msgid "Comment code"
+msgstr "Kodun İçeriği"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1693
+msgid "Disqus, Facebook or anything you want. It will be used in image view."
+msgstr "Disqus, Facebook veya başka bir yerden görüntü almak istiyorum. Alınacak görüntü profilde gösterilecektir."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1697
+msgid "Analytics code"
+msgstr "Google Analytics kodunuzu giriniz."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1698
+msgid "Google Analytics or anything you want. It will be added to the theme footer."
+msgstr "Google analitik kodununun özelliklerini sayfanın altında göstermek istiyormusunuz?"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1708
+msgid "Enable this if you are using Cloudflare."
+msgstr "Cloudfare kullanıyorsanız etkinleştiriniz."
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1728
+#: ../../../app/themes/Peafowl/views/settings.php:395
+#: ../../../lib/Peafowl/peafowl.js:407 ../../../lib/Peafowl/peafowl.min.js:23
+msgid "Save changes"
+msgstr "Değişiklikler Kaydedildi"
+
+#: ../../../app/themes/Peafowl/views/dashboard.php:1751
+#: ../../../app/themes/Peafowl/views/settings.php:409
+msgid "Check the errors to proceed."
+msgstr "Hataları denetlemek için devam edin."
+
+#: ../../../app/themes/Peafowl/views/image.php:63
+msgid "Guest"
+msgstr "Misafir Kullanıcı"
+
+#: ../../../app/themes/Peafowl/views/image.php:78
+msgid "Do you really want to delete this image? This can't be undone."
+msgstr "Bu resmi silmek istediğinizden emin misiniz ?. Resim geri dönüşümü olmaksızın silinecektir."
+
+#: ../../../app/themes/Peafowl/views/image.php:78
+msgid "Delete image"
+msgstr "Resmi Sil"
+
+#: ../../../app/themes/Peafowl/views/image.php:144
+#, php-format
+msgid "Added to %s"
+msgstr "Eklenecek Resimler %s"
+
+#: ../../../app/themes/Peafowl/views/image.php:151
+#, php-format
+msgid "Uploaded %s"
+msgstr "Yüklenecek Resimler %s"
+
+#: ../../../app/themes/Peafowl/views/image.php:188
+#: ../../../app/themes/Peafowl/views/image.php:249
+msgid "Share image"
+msgstr "Paylaşılan Resim"
+
+#: ../../../app/themes/Peafowl/views/image.php:204
+#: ../../../app/themes/Peafowl/views/image.php:210
+msgid "Album ID"
+msgstr "Albüm No"
+
+#: ../../../app/themes/Peafowl/views/image.php:260
+msgid "In this album"
+msgstr "Albümü"
+
+#: ../../../app/themes/Peafowl/views/image.php:287
+msgid "Image links"
+msgstr "Resim Linkleri"
+
+#: ../../../app/themes/Peafowl/views/image.php:289
+msgid "Image URL"
+msgstr "Resim URL Adresi"
+
+#: ../../../app/themes/Peafowl/views/image.php:295
+msgid "Image link"
+msgstr "Resim Link"
+
+#: ../../../app/themes/Peafowl/views/image.php:301
+msgid "Thumbnail URL"
+msgstr "Küçük Resim URL"
+
+#: ../../../app/themes/Peafowl/views/image.php:310
+msgid "Medium URL"
+msgstr "Resim URL"
+
+#: ../../../app/themes/Peafowl/views/image.php:328
+#: ../../../app/themes/Peafowl/views/image.php:348
+#: ../../../app/themes/Peafowl/views/image.php:371
+#: ../../../app/themes/Peafowl/views/image.php:396
+msgid "Image embed codes"
+msgstr "Resmin Embed (Paylaşım) Kodları"
+
+#: ../../../app/themes/Peafowl/views/index.php:15
+msgid "Upload and share your images."
+msgstr "Resimlerinizi yükleyin veya paylaşin."
+
+#: ../../../app/themes/Peafowl/views/index.php:17
+#, php-format
+msgid "Drag and drop anywhere you want and start uploading your images now. %s limit. Direct image links, BBCode and HTML thumbnails."
+msgstr "Resimleri yüklemek için sürükle ve bırak. %s limit. Doğrudan linkler, BBcode veya Html küçük resimler."
+
+#: ../../../app/themes/Peafowl/views/index.php:25
+msgid "Start uploading"
+msgstr "Yüklemeye Başla"
+
+#: ../../../app/themes/Peafowl/views/index.php:79
+msgid "Sign up to unlock all the features"
+msgstr "Tüm özellikleri kullanmak icin kayıt olunuz"
+
+#: ../../../app/themes/Peafowl/views/index.php:80
+msgid "Manage your content, create private albums, customize your profile and more."
+msgstr "Hesabınızı yönetin, özel albüm oluşturun, profilinizi özelleştirin ve daha fazlasi."
+
+#: ../../../app/themes/Peafowl/views/login.php:40
+#: ../../../app/themes/Peafowl/views/settings.php:275
+msgid "Enter your password"
+msgstr "Şifrenizi Yazınız."
+
+#: ../../../app/themes/Peafowl/views/logout.php:12
+#, php-format
+msgid "You have been logged off %s. Hope to see you soon."
+msgstr "%s. Sizi en kısa sürede tekrardan görmek dileğiyle"
+
+#: ../../../app/themes/Peafowl/views/request-denied.php:12
+msgid "You either don't have permission to access this page or the link has expired."
+msgstr "Bu bağlantıya erişmek veya işlem yapmak için geçerli süreniz dolmuştur. Tekrar deneyiniz."
+
+#: ../../../app/themes/Peafowl/views/search.php:8
+#: ../../../app/themes/Peafowl/views/user.php:111
+msgid "Results for"
+msgstr "Sonuçlar"
+
+#: ../../../app/themes/Peafowl/views/settings.php:36
+#: ../../../app/themes/Peafowl/views/user.php:68
+msgid "Do you really want to delete this user? This can't be undone."
+msgstr "Bu kullanıcıyı gerçekten silmek istiyor musunuz ?  Bu işlem geri alınamaz !"
+
+#: ../../../app/themes/Peafowl/views/settings.php:36
+#: ../../../app/themes/Peafowl/views/user.php:68
+msgid "Delete user"
+msgstr "Kullanıcıyı Sil"
+
+#: ../../../app/themes/Peafowl/views/settings.php:69
+msgid "User ID"
+msgstr "Kullanıcı ID"
+
+#: ../../../app/themes/Peafowl/views/settings.php:81
+msgid "Register date"
+msgstr "Kayıt Zamanı"
+
+#: ../../../app/themes/Peafowl/views/settings.php:99
+msgid "Status"
+msgstr "Durumu"
+
+#: ../../../app/themes/Peafowl/views/settings.php:103
+msgid "Valid"
+msgstr "Geçerli"
+
+#: ../../../app/themes/Peafowl/views/settings.php:104
+msgid "Banned"
+msgstr "Yasaklanmış"
+
+#: ../../../app/themes/Peafowl/views/settings.php:105
+msgid "Awaiting email"
+msgstr "Mail Bekleniyor."
+
+#: ../../../app/themes/Peafowl/views/settings.php:106
+msgid "Awaiting confirmation"
+msgstr "Onay Bekleniyor"
+
+#: ../../../app/themes/Peafowl/views/settings.php:138
+#: ../../../app/themes/Peafowl/views/signup.php:40
+msgid "%i to %f characters<br>Letters, numbers and \"_\""
+msgstr "%i - %f karakterleri<br>Harfler, rekamlar ve \"_\""
+
+#: ../../../app/themes/Peafowl/views/settings.php:167
+msgid "Language"
+msgstr "Dil"
+
+#: ../../../app/themes/Peafowl/views/settings.php:197
+msgid "Timezone"
+msgstr "Saat Dilimi"
+
+#: ../../../app/themes/Peafowl/views/settings.php:248
+msgid "Current password"
+msgstr "Şifrenizi Yazınız"
+
+#: ../../../app/themes/Peafowl/views/settings.php:249
+msgid "Enter your current password"
+msgstr "Lütfen kullandığınız şifreyi yazınız"
+
+#: ../../../app/themes/Peafowl/views/settings.php:257
+msgid "New password"
+msgstr "Yeni Şifrenizi Yazınız"
+
+#: ../../../app/themes/Peafowl/views/settings.php:263
+msgid "Confirm new password"
+msgstr "Yeni Şifrenizi Tekrar Yazınız."
+
+#: ../../../app/themes/Peafowl/views/settings.php:271
+msgid "Add a password to be able to login using your username or email."
+msgstr "Kullanıcı adınız veya e-postanız ile giriş yapabilmek için lütfen bir parola belirleyin."
+
+#: ../../../app/themes/Peafowl/views/settings.php:271
+msgid "This user doesn't have a password. Add one using this form."
+msgstr "Belirttiğiniz kullanıcı mevcut değildir. Lütfen yeni bir kullanıcı kaydı yapınız."
+
+#: ../../../app/themes/Peafowl/views/settings.php:281
+msgid "Re-enter your password"
+msgstr "Şifrenizi Tekrar Yazınız."
+
+#: ../../../app/themes/Peafowl/views/settings.php:300
+#: ../../../lib/Peafowl/peafowl.js:3356
+#: ../../../lib/Peafowl/peafowl.min.js:207
+msgid "loading"
+msgstr "Yükleniyor..."
+
+#: ../../../app/themes/Peafowl/views/settings.php:304
+#: ../../../app/themes/Peafowl/views/user.php:21
+msgid "Upload new image"
+msgstr "Yeni Resim Yükle"
+
+#: ../../../app/themes/Peafowl/views/settings.php:306
+msgid "Delete existing image"
+msgstr "Kullandığınız resimlerden silmek istermisiniz ?"
+
+#: ../../../app/themes/Peafowl/views/settings.php:319
+msgid "This is your real name, not your username."
+msgstr "Bu isimde bir kullanıcı adı bulunamadı."
+
+#: ../../../app/themes/Peafowl/views/settings.php:323
+msgid "http://yourwebsite.com"
+msgstr "http://sizinsiteniz.com"
+
+#: ../../../app/themes/Peafowl/views/settings.php:339
+msgid "User has no connections."
+msgstr "Kullanıcı bağlantıları mevcut değildir."
+
+#: ../../../app/themes/Peafowl/views/settings.php:343
+msgid "Link your account to external services to be able to login and share content."
+msgstr "Lütfen içerik ve paylaşımlarınız için hesaplarınızı bağlayınız."
+
+#: ../../../app/themes/Peafowl/views/settings.php:350
+#, php-format
+msgid "Do you really want to disconnect %s from this account?"
+msgstr "%s kullanıcısının bağlantısını kesmek istediğinizden eminmisiniz ?"
+
+#: ../../../app/themes/Peafowl/views/settings.php:351
+#, php-format
+msgid "This account is connected to %s"
+msgstr "Bu kullanıcı %s ile bağlanır."
+
+#: ../../../app/themes/Peafowl/views/settings.php:353
+#, php-format
+msgid "Do you really want to disconnect your %s account?"
+msgstr "%s kullanıcısı ile bağlantıyı kesmek istediğinizden eminmisiniz ?"
+
+#: ../../../app/themes/Peafowl/views/settings.php:355
+#, php-format
+msgid "You will be logged out and you won't be able to login to your account using this %s account."
+msgstr "Siz giriş yaptığınızda %s kullanıcıların hesabınıza girişi mümkün olmayacaktır."
+
+#: ../../../app/themes/Peafowl/views/settings.php:357
+#, php-format
+msgid "Your account is connected to %s"
+msgstr "Hesabınız %s bağlanır."
+
+#: ../../../app/themes/Peafowl/views/settings.php:362
+msgid "disconnect"
+msgstr "Bağlantıyı Kes"
+
+#: ../../../app/themes/Peafowl/views/settings.php:375
+#, php-format
+msgid "Connect %s"
+msgstr "Bağlan %s"
+
+#: ../../../app/themes/Peafowl/views/user.php:15
+msgid "Upload profile background"
+msgstr "Profilinizin arka planına resim yüklemek ister misiniz ?"
+
+#: ../../../app/themes/Peafowl/views/user.php:17
+msgid "Change background"
+msgstr "Arka planı değiştir."
+
+#: ../../../app/themes/Peafowl/views/user.php:22
+msgid "The profile background image will be deleted. This can't be undone. Are you sure that you want to delete the profile background image?"
+msgstr "Profilinizin arkaplan resmi silinecektir. Bu işlem geri alınamaz. Silmek istediğinize emin misiniz?"
+
+#: ../../../app/themes/Peafowl/views/user.php:22
+msgid "Delete background"
+msgstr "Arka Planı Sil"
+
+#: ../../../app/themes/Peafowl/views/user.php:64
+msgid "Edit profile"
+msgstr "Profili Düzenle"
+
+#: ../../../app/lib/chevereto.js:496 ../../../app/lib/chevereto.js:568
+#: ../../../app/lib/chevereto.js:750 ../../../app/lib/chevereto.js:2155
+#: ../../../app/lib/chevereto.js:2208 ../../../app/lib/chevereto.js:2306
+#: ../../../app/lib/chevereto.min.js:20 ../../../app/lib/chevereto.min.js:24
+#: ../../../app/lib/chevereto.min.js:30 ../../../app/lib/chevereto.min.js:107
+#: ../../../app/lib/chevereto.min.js:110 ../../../app/lib/chevereto.min.js:114
+msgid "You must enter the album name."
+msgstr "Albüm ismi girmelisiniz."
+
+#: ../../../app/lib/chevereto.js:610 ../../../app/lib/chevereto.js:796
+#: ../../../app/lib/chevereto.js:892 ../../../app/lib/chevereto.min.js:27
+#: ../../../app/lib/chevereto.min.js:34 ../../../app/lib/chevereto.min.js:36
+#: ../../../lib/Peafowl/peafowl.js:2225
+#: ../../../lib/Peafowl/peafowl.min.js:123
+msgid "Confirm"
+msgstr "Onayla"
+
+#: ../../../app/lib/chevereto.js:728 ../../../app/lib/chevereto.min.js:29
+msgid "Select existing album"
+msgstr "Mevcut olan albümü seçin"
+
+#: ../../../app/lib/chevereto.js:1011 ../../../app/lib/chevereto.js:1091
+#: ../../../app/lib/chevereto.min.js:45 ../../../app/lib/chevereto.min.js:50
+msgid "Please select a valid image file type."
+msgstr "Lütfen geçerli bir dosya türü seçiniz."
+
+#: ../../../app/lib/chevereto.js:1016 ../../../app/lib/chevereto.js:1096
+#: ../../../app/lib/chevereto.min.js:46 ../../../app/lib/chevereto.min.js:51
+#, python-format, javascript-format
+msgid "Please select a picture of at most %s size."
+msgstr "Lütfen en fazla %s boyutunda bir resim seçiniz."
+
+#: ../../../app/lib/chevereto.js:1063 ../../../app/lib/chevereto.min.js:48
+msgid "Profile image updated."
+msgstr "Profil resmini güncelledi."
+
+#: ../../../app/lib/chevereto.js:1133 ../../../app/lib/chevereto.min.js:52
+msgid "Profile background image updated."
+msgstr "Profil arka plan görüntüsü güncellendi."
+
+#: ../../../app/lib/chevereto.js:1207 ../../../app/lib/chevereto.min.js:53
+msgid "Profile background image deleted."
+msgstr "Profil arka plan resim silindi."
+
+#: ../../../app/lib/chevereto.js:1212 ../../../app/lib/chevereto.min.js:53
+msgid "Error deleting profile background image."
+msgstr "Profil arka plan resmi silinirken hata oluştu"
+
+#: ../../../app/lib/chevereto.js:1690 ../../../app/lib/chevereto.min.js:74
+msgid "File too big."
+msgstr "Dosya çok büyük."
+
+#: ../../../app/lib/chevereto.js:1701 ../../../app/lib/chevereto.js:1849
+#: ../../../app/lib/chevereto.min.js:76 ../../../app/lib/chevereto.min.js:87
+msgid "Some files couldn't be added"
+msgstr "Bazı dosyalar eklenemedi"
+
+#: ../../../app/lib/chevereto.js:2283 ../../../app/lib/chevereto.min.js:114
+msgid "Image edited successfully."
+msgstr "Resim başarıyla düzenlenmiş."
+
+#: ../../../app/lib/chevereto.js:2346 ../../../app/lib/chevereto.min.js:115
+msgid "Album edited successfully."
+msgstr "Albüm başarıyla düzenlenmiş."
+
+#: ../../../app/lib/chevereto.js:2364 ../../../app/lib/chevereto.min.js:116
+msgid "Invalid URL key."
+msgstr "Geçersiz URL key"
+
+#: ../../../app/lib/chevereto.js:3171 ../../../app/lib/chevereto.js:3246
+#: ../../../app/lib/chevereto.js:3329 ../../../app/lib/chevereto.js:3338
+#: ../../../app/lib/chevereto.min.js:156 ../../../app/lib/chevereto.min.js:162
+#: ../../../app/lib/chevereto.min.js:164
+msgid "The content has been moved."
+msgstr "İçerik taşındı."
+
+#: ../../../app/lib/chevereto.js:3191 ../../../app/lib/chevereto.min.js:157
+msgid "Unselect"
+msgstr "Seçimleri Sıfırla"
+
+#: ../../../app/lib/chevereto.js:3246 ../../../app/lib/chevereto.min.js:162
+msgid "The content has been edited."
+msgstr "İçerik düzenlendi."
+
+#: ../../../lib/Peafowl/peafowl.js:25 ../../../lib/Peafowl/peafowl.js:480
+#: ../../../lib/Peafowl/peafowl.min.js:1
+#: ../../../lib/Peafowl/peafowl.min.js:29
+msgid "All the changes that you have made will be lost if you continue."
+msgstr "Devam etmeniz durumunda yaptığınız değişiklikler kabul edilmeyecektir"
+
+#: ../../../lib/Peafowl/peafowl.js:464 ../../../lib/Peafowl/peafowl.min.js:28
+msgid "Changes saved successfully."
+msgstr "Değişiklikler başarıyla kaydedildi."
+
+#: ../../../lib/Peafowl/peafowl.js:480 ../../../lib/Peafowl/peafowl.min.js:29
+msgid "Go back to form"
+msgstr "Form'a geri dön"
+
+#: ../../../lib/Peafowl/peafowl.js:480 ../../../lib/Peafowl/peafowl.min.js:29
+msgid "continue anyway"
+msgstr "Devam etmek istediğinizden emin misiniz ?"
+
+#: ../../../lib/Peafowl/peafowl.js:2368
+#: ../../../lib/Peafowl/peafowl.min.js:135
+msgid "Saving"
+msgstr "Kaydet"
+
+#: ../../../lib/Peafowl/peafowl.js:2373
+#: ../../../lib/Peafowl/peafowl.min.js:135
+msgid "Sending"
+msgstr "Gönder"
+
+#: ../../../lib/Peafowl/peafowl.js:2453
+#: ../../../lib/Peafowl/peafowl.min.js:138
+msgid "Confirm action"
+msgstr "Eylemi onayla"
+

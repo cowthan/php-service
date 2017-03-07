@@ -1,0 +1,27 @@
+DROP TABLE IF EXISTS `%table_prefix%users`;
+CREATE TABLE `%table_prefix%users` (
+  `user_id` bigint(32) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(255) DEFAULT NULL,
+  `user_username` varchar(255) NOT NULL,
+  `user_date` datetime NOT NULL,
+  `user_date_gmt` datetime NOT NULL,
+  `user_email` varchar(255) DEFAULT NULL,
+  `user_avatar_filename` varchar(255) DEFAULT NULL,
+  `user_facebook_username` varchar(255) DEFAULT NULL,
+  `user_twitter_username` varchar(255) DEFAULT NULL,
+  `user_website` varchar(255) DEFAULT NULL,
+  `user_background_filename` varchar(255) DEFAULT NULL,
+  `user_bio` varchar(255) DEFAULT NULL,
+  `user_timezone` varchar(255) NOT NULL,
+  `user_language` varchar(255) DEFAULT NULL,
+  `user_status` enum('valid','awaiting-confirmation','awaiting-email','banned') NOT NULL,
+  `user_is_admin` tinyint(1) NOT NULL DEFAULT '0',
+  `user_newsletter_subscribe` tinyint(1) NOT NULL DEFAULT '1',
+  `user_show_nsfw_listings` tinyint(1) NOT NULL DEFAULT '0',
+  `user_image_count` bigint(32) NOT NULL DEFAULT '0',
+  `user_album_count` bigint(32) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `username` (`user_username`) USING BTREE,
+  UNIQUE KEY `email` (`user_email`) USING BTREE,
+  FULLTEXT KEY `searchindex` (`user_name`,`user_username`)
+) ENGINE=%table_engine% DEFAULT CHARSET=utf8;

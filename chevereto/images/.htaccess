@@ -1,0 +1,6 @@
+<Files .*>
+order allow,deny
+deny from all
+</Files>
+
+SetHandler default-handler

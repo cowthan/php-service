@@ -1,0 +1,4 @@
+<div class="list-item-desc text-decoration-none">
+	<div class="position-absolute left-10"><a href="%IMAGE_URL_VIEWER%" class="text-decoration-none list-item-desc-title" data-text="image-title-truncated" data-content="image-link" title="%IMAGE_TITLE%">%IMAGE_TITLE_TRUNCATED%</a><span class="display-block font-size-small"><?php _se('From %s', '<a href="%IMAGE_ALBUM_URL%" data-text="album-name" data-content="album-link">%IMAGE_ALBUM_NAME%</a>'); ?></span></div>
+	<div class="position-absolute right-10 text-align-right"><span>%IMAGE_VIEWS%</span><span class="display-block">%IMAGE_VIEWS_LABEL%</span></div>
+</div>
