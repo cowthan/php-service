@@ -60,7 +60,7 @@ ptitle("strpos：查找子串");
 ///查找子串，无则返回false，有则返回起始下标
 $str = "cccc333@163.com";
 $pos = strpos($str, "@");
-pt("源字符串" . $str);
+pt("源字符串：" . $str);
 if($pos === false){
 	pt("没找到子串@");
 }else{
@@ -77,7 +77,7 @@ ptitle("substr：抽取子串");
 ///如果start是负数，且超过了开始位置，则start是0
 ///负数的情况下，如果开始位置在结束为止之后，则；结果为空
 $str = "0123456";
-pt("源字符串" . $str);
+pt("源字符串：" . $str);
 pt('substr($str, 0, 6) = ' . substr($str, 0, 6));
 pt('substr($str, 0, 100) = ' . substr($str, 0, 100));
 pt('substr($str, 0, -1) = ' . substr($str, 0, -2));
@@ -94,14 +94,79 @@ ptitle("substr_replace：按下标替换");
 	///start是负数，也是从后数，超出开头，则为0
 	///start是0，len是0，表示把从开头开始的0个字符替换为xxx，即插入到开头
 $str = "0123456";
-pt("源字符串" . $str);
+pt("源字符串：" . $str);
 pt('substr_replace($str, "--abcdefg--", 5) = ' . substr_replace($str, "--abcdefg--", 5));
 pt('substr_replace($str, "--abcdefg--", -2) = ' . substr_replace($str, "--abcdefg--", -2));
 pt('substr_replace($str, "--abcdefg--", -200) = ' . substr_replace($str, "--abcdefg--", -200));
 pt('substr_replace($str, "--abcdefg--", 5, 1) = ' . substr_replace($str, "--abcdefg--", 5, 1));
 pt('substr_replace($str, "--abcdefg--", 5, -1) = ' . substr_replace($str, "--abcdefg--", 5, -1));pt('substr_replace($str, "--abcdefg--", 0, 0) = ' . substr_replace($str, "--abcdefg--", 0, 0));
 
+///------------------------------------
+ptitle("str_replace：按子串替换");
+$str = "012345623456";
+pt("源字符串：" . $str);
+pt("str_replace('234', '----', \$str) = " . str_replace('234', '----', $str));
 
+///------------------------------------
+ptitle("strrev：按字节反转");
+$str = "This is a map! 而我，是你二大爷。";  ///所以，注意，汉子的两个字节是一个字，这两个字节也反转了。。。
+pt("源字符串：" . $str);
+pt(strrev($str));
+
+///------------------------------------
+ptitle("explode：炸开字符串");
+$str = "This is a  map!";  
+pt("源字符串：" . $str);
+$arr = explode(' ', $str);
+pt($arr);
+pt($arr, false);
+
+
+///------------------------------------
+///注意，explode和implode一点儿都不智能，不能处理分隔符的连续的情况，不能处理数组元素是null的情况（会当成空串拼上）
+ptitle("implode：把数组合成字符串");
+$str = "This is a map!";  
+pt("源字符串：" . $str);
+$arr = explode(' ', $str);
+$arr[] = null;$arr[] = 1;
+$arr = array_reverse($arr);
+$str = implode('--', $arr);
+pt($str);
+
+///------------------------------------
+ptitle("ucfirst：首单词的首字母大写");
+$str = "this is a map!";  
+pt("源字符串：" . $str);
+pt(ucfirst($str));
+
+///------------------------------------
+ptitle("ucwords：所有单词的首字符大写");
+$str = "this is a map!";  
+pt("源字符串：" . $str);
+pt(ucwords($str));
+
+///------------------------------------
+ptitle("strtoupper和strtolower，全变大写或小写");
+$str = "This iS A map!";  
+pt("源字符串：" . $str);
+pt(strtoupper($str));
+pt(strtolower($str));
+
+///------------------------------------
+ptitle("算法：生成随机字符串");
+function str_rand($len = 32, $chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"){
+		
+	if(!is_int($len) || $len == 0){
+		return '';
+	}
+	$llll = strlen($chars) - 1;
+	$str = "";
+	for($i = $len; $i > 0; $i--){
+		$str .= $chars[mt_rand(0, $llll)];
+	}
+	return $str;	
+}
+pt("随机字符串：" . str_rand(5));
 
 ///------------------------------------
 ptitle("算法：Look and Say");
@@ -156,7 +221,7 @@ for($row = 0; $row < count($arr); $row++){
 
 //============================oooooo
 include("./footer.php");
-footer(str_replace("/service/test/", "", $_SERVER['SCRIPT_NAME']));	
+footer(str_replace("/service/lesson/", "", $_SERVER['SCRIPT_NAME']));	
 	
 	
 	

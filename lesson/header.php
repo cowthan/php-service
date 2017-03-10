@@ -56,10 +56,26 @@ function pt1($msg){
 	$test = $msg . "<br/>";
 }
 
-function pt($msg = ""){
+function pt($msg = "", $horizontal = true){
 	global $test;
-	$test = $test . $msg . "<br/>";
+	if(is_array($msg)){
+		$sep = $horizontal ? ", " : ",<br/>";
+		if(count($msg) == 0){
+			$test = $test . "[]" . "<br/>";
+		}else{
+			$test = $test . "[" . ($horizontal ? " " : "<br/>"); 
+			foreach($msg as $m){
+				$test = $test . (!$horizontal ? "&nbsp;&nbsp;&nbsp;&nbsp;" : "") . $m . $sep;
+			}
+			$test = $test . ($horizontal ? " " : "") . "]<br/>"; 
+		}
+	}else{
+		$test = $test . $msg . "<br/>";
+	}
+	
 }
+
+
 
 function ptitle($msg = ""){
 	global $test;
