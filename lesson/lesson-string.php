@@ -153,6 +153,71 @@ pt(strtoupper($str));
 pt(strtolower($str));
 
 ///------------------------------------
+ptitle("ltrim, rtrim,trim：去除空白字符");
+////空白字符包括：换行，回车，空格，水平制表符，垂直制表符
+$str = "  This iS A map!	\n   	";
+pt("源字符串：---" . $str . "----");
+pt('ltrim($str) = ---' . ltrim($str) . '---');
+pt('rtrim($str) = ---' . rtrim($str) . '---');
+pt('trim($str) = ---' . trim($str) . '---');
+pt('trim("1234 aaaa 23-sdf-23", "0..9") = ---' .trim("1234 aaaa 23-sdf-23", "0..9") . '---');
+pt('trim("1233445!!!",  "!") = ---' .trim("1233445;", ";") . '---');
+
+
+///------------------------------------
+ptitle("fputcsv：输出CSV到文件");
+
+ob_start();
+
+$sales = array(
+	array("东北", "2017-03-10", 12.54),
+	array("西北", "2017-03-10", 12.54),
+	array("东南", "2017-03-10", 12.54),
+	array("西南", "2017-03-10", 12.54),
+	array("所有区域", "2017-03-10", 12.54),
+);
+
+pt("原数组：");
+pt($sales);
+
+echo "--------csv 开始--------" . BR;
+$fh = fopen('php://output', 'w') or die("打不开php://output");
+foreach ($sales as $sale) {
+	fputcsv($fh, $sale) or die("写不进php://output");
+}
+
+fclose($fh) or die("关不上php://output");
+echo BR . "--------csv 结束--------" . BR;
+
+$output = ob_get_contents();
+ob_end_clean();
+pt(str_replace("\n", BR, $output));
+
+///------------------------------------
+///fgetcsv($fp)：会按行读取，如果平均行长度超过8192，可以自己指定第二个参数
+//csv会自动处理字段中的逗号，不会和分隔符逗号混淆，所以你还是应该使用csv函数，而不是自己用explode拆
+ptitle("fgetcsv和str_getcsv：读取csv");
+$output = <<<EOT
+东北,2017-03-10,12.54\n
+西北,2017-03-10,12.54\n
+东南,2017-03-10,12.54\n
+西南,2017-03-10,12.54\n
+所有区域,2017-03-10,12.54\n
+EOT;
+
+pt0("<table>");
+$line = str_getcsv($output, ',');
+pt0('<tr>');
+for($i = 0; $i < count($line); $i++){
+	pt0('<td>' . htmlentities($line[$i]) . '</td>');
+}
+pt0('</tr>');
+pt0("</table>");
+
+pt("===========================");
+pt($line);
+
+///------------------------------------
 ptitle("算法：生成随机字符串");
 function str_rand($len = 32, $chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"){
 		
@@ -221,7 +286,7 @@ for($row = 0; $row < count($arr); $row++){
 
 //============================oooooo
 include("./footer.php");
-footer(str_replace("/service/lesson/", "", $_SERVER['SCRIPT_NAME']));	
+footer(str_replace(PATH, "", $_SERVER['SCRIPT_NAME']));
 	
 	
 	

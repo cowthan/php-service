@@ -5,7 +5,7 @@ $html = <<<EOT
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>php lessons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 	<script type="text/javascript" src="syntax/scripts/shCore.js"></script>
@@ -15,19 +15,28 @@ $html = <<<EOT
   </head>
   <body style="background: white; font-family: 微软雅黑;line-height:30px">
     <div class="container" style="width:100%">
-		<div class="left" style="padding:10px;border:1px solid green;float:left;width:48%;height:600px;">
-		<h3>This is 右边代码的输出</h3><br/>
-		<hr/>
-		<p >
-		====test====
-		</p>
+
+    	<div class="sidebar" style="padding:10px;border:1px solid green;float:left;width:15%;">
+    		<ul>
+    			<li><a href="lesson-string.php">字符串</a></li>
+    			<li><a href="lesson-array.php">数组</a></li>
+    			<li><a href="lesson-file.php">文件</a></li>
+    		</ul>
+    	</div>
+
+		<div class="left" style="padding:10px;border:1px solid green;float:left;width:40%;height:600px;">
+			<h3>This is 右边代码的输出</h3><br/>
+			<hr/>
+			<p >
+			====test====
+			</p>
 		</div>
-		<div class="right" style="padding:10px;border:1px solid red;float:right;width:48%;height:600px;">
-		<h3>This is 左边输出的代码</h3><br/>
-		<hr/>
-		<p>
-		====body====
-		</p>
+		<div class="right" style="padding:10px;border:1px solid red;float:right;width:40%;height:600px;">
+			<h3>This is 左边输出的代码</h3><br/>
+			<hr/>
+			<p>
+			====body====
+			</p>
 		</div>
 		<div style="clear:both;"></div>
     </div> <!-- /container -->
@@ -56,25 +65,34 @@ function pt1($msg){
 	$test = $msg . "<br/>";
 }
 
-function pt($msg = "", $horizontal = true){
-	global $test;
+
+function to_string($msg, $horizontal = true){
+	$s = "";
 	if(is_array($msg)){
 		$sep = $horizontal ? ", " : ",<br/>";
 		if(count($msg) == 0){
-			$test = $test . "[]" . "<br/>";
+			$s = $s . "[]" . "<br/>";
 		}else{
-			$test = $test . "[" . ($horizontal ? " " : "<br/>"); 
-			foreach($msg as $m){
-				$test = $test . (!$horizontal ? "&nbsp;&nbsp;&nbsp;&nbsp;" : "") . $m . $sep;
+			$s = $s . "[" . ($horizontal ? " " : "<br/>");
+			foreach($msg as $k => $m){
+				$s = $s . (!$horizontal ? "&nbsp;&nbsp;&nbsp;&nbsp;" : "") . $k . ' => ' . to_string($m, $horizontal) . $sep;
 			}
-			$test = $test . ($horizontal ? " " : "") . "]<br/>"; 
+			$s = $s . ($horizontal ? " " : "") . "]<br/>";
 		}
 	}else{
-		$test = $test . $msg . "<br/>";
+		$s = $msg . "";
 	}
-	
+	return $s;
 }
 
+function pt($msg = "", $horizontal = true){
+	global $test;
+	$test .= to_string($msg, $horizontal) . "<br/>";
+}
+function pt0($msg = "", $horizontal = true){
+	global $test;
+	$test .= to_string($msg, $horizontal);
+}
 
 
 function ptitle($msg = ""){
@@ -84,7 +102,7 @@ function ptitle($msg = ""){
 }
 
 define("BR", "<br/>");
-
+define("PATH", "/service/lesson/");
 
 
 	
