@@ -18,9 +18,13 @@ $html = <<<EOT
 
     	<div class="sidebar" style="padding:10px;border:1px solid green;float:left;width:15%;">
     		<ul>
+    			<li><a href="tmpl.php">phpinfo</a></li>
     			<li><a href="lesson-string.php">字符串</a></li>
+    			<li><a href="lesson-blade.php">Blade模板引擎</a></li>
     			<li><a href="lesson-array.php">数组</a></li>
     			<li><a href="lesson-file.php">文件</a></li>
+    			<li><a href="lesson-db.php">数据库</a></li>
+    			<li><a href="lesson-db-laravel.php">lavarel数据库--Eloquent</a></li>
     		</ul>
     	</div>
 
@@ -104,9 +108,21 @@ function ptitle($msg = ""){
 define("BR", "<br/>");
 define("PATH", "/service/lesson/");
 
+$sales = array(
+		array("东北", "2017-03-10", 12.54),
+		array("西北", "2017-03-10", 12.54),
+		array("东南", "2017-03-10", 12.54),
+		array("西南", "2017-03-10", 12.54),
+		array("所有区域", "2017-03-10", 12.54),
+);
 
-	
-	
+$books = array(
+		array("王二", "青岛", 1990),
+		array("张三", "北京", 1989),
+		array("李四", "上海", 1988),
+		array("王五", "广东", 1987),
+);
+
 	
 	
 	

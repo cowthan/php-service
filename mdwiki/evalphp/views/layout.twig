@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <title>Eval</title>
+
+    <link rel="stylesheet" href="/css/main.min.css">
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Eval</a>
+            <p class="navbar-text" id="codeID"></p>
+            <div id="loader"></div>
+        </div>
+        <nav>
+            <form class="nav navbar-form navbar-right">
+                {% if isSaveAvailable is defined %}
+                    {%  if isSaveAvailable %}
+                        <div class="button-with-hotkey">
+                            <button type="submit" class="btn btn-outline-inverse" onclick="saveForm(); return false;">Save</button>
+                            <div class="button-hotkey" data-os="mac">⌘ + S</div>
+                            <div class="button-hotkey" data-os="windows">Ctrl + S</div>
+                        </div>
+                    {% else %}
+                        <div class="button-with-hotkey">
+                            <button type="button" class="btn btn-outline-inverse disabled" data-toggle="tooltip" data-placement="bottom" title="Unavailable to save">Save</button>
+                        </div>
+                    {% endif %}
+                {% endif %}
+                <div class="button-with-hotkey">
+                    <button type="submit" class="btn btn-primary" onclick="sendForm(); return false;">Eval</button>
+                    <div class="button-hotkey" data-os="mac">⌘ + Enter</div>
+                    <div class="button-hotkey" data-os="windows">Ctrl + Enter</div>
+                </div>
+            </form>
+        </nav>
+    </div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+<script src="/js/main.min.js"></script>
+</body>
+</html>

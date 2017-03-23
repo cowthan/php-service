@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+    <h2>Welcome to use Blade</h2>
+    <h2>Blade 中的 {{ }} 表达式的返回值将被自动传递给 PHP 的 htmlentities 函数进行处理，以防止 XSS 攻击。</h2>
+    <hr/>
+
+    <h2>展示数据--普通变量</h2>
+    <h2>@{{$a}} = <?php echo e($a); ?></h2>
+    <h2>{{time()}} = <?php echo e(time()); ?></h2>
+    <h2>{{ isset($name) ? $name : 'Default' }} = <?php echo e(isset($name) ? $name : 'Default'); ?></h2>
+    <h2>{{ isset($a) ? $name : 'Default' }} = <?php echo e(isset($a) ? $a : 'Default'); ?></h2>
+    <h2>{{ $name or 'Default' }} = <?php echo e(isset($name) ? $name : 'Default'); ?></h2>
+    <h2>{{ $a or 'Default' }} = <?php echo e(isset($a) ? $a : 'Default'); ?></h2>
+    <h2>htmlentities转义：{{ $ahhh }} = <?php echo e($ahhh); ?></h2>
+    <h2>禁止htmlentities转义：{!! $ahhh !!} = <?php echo $ahhh; ?></h2>
+
+    <hr/>
+    <h2>判断</h2>
+   <?php /* <pre>
+        @if($x == 1)
+            <h2>1 -- {{ $x }} = <?php echo e($x); ?></h2>
+        @elseif($x == 2)
+            <h2>2 -- {{ $x }} = <?php echo e($x); ?></h2>
+        @else
+            <h2>3 -- {{ $x }} = <?php echo e($x); ?></h2>
+        @endif
+    </pre>*/ ?>
+    <?php if($x == 1): ?>
+        <h2>1 -- {{ $x }} = <?php echo e($x); ?></h2>
+    <?php elseif($x == 2): ?>
+        <h2>2 -- {{ $x }} = <?php echo e($x); ?></h2>
+    <?php else: ?>
+        <h2>3 -- {{ $x }} = <?php echo e($x); ?></h2>
+    <?php endif; ?>
+
+    <?php if ( ! ($x == 2)): ?>
+        <h2>1 -- {{ $x }} = <?php echo e($x); ?></h2>
+    <?php endif; ?>
+
+    <hr/>
+    <h2>循环@for</h2>
+    <?php for($i = 0; $i < 3; $i++): ?>
+        <h2>The current value is <?php echo e($i); ?></h2>
+    <?php endfor; ?>
+
+    <hr/>
+    <h2>循环@foreach</h2>
+    <?php $__currentLoopData = $users; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $k => $user): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+        <p>This is user <?php echo e($k); ?>  => <?php echo e($user); ?></p>
+    <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+
+    <hr/>
+    <h2>循环@forelse</h2>
+    <?php $__empty_1 = true; $__currentLoopData = $users2; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); $__empty_1 = false; ?>
+        <li><?php echo e($user->name); ?></li>
+    <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); if ($__empty_1): ?>
+        <p>No users</p>
+    <?php endif; ?>
+
+    <hr/>
+    <h2>循环@while</h2>
+    <?php while($x > 0): ?>
+        <?php echo e($x--); ?> -- loop<br/>
+    <?php endwhile; ?>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "require": {
+    "xiaoler/blade":"*",
+    "illuminate/database":"~4.2"
+
+  }
+}

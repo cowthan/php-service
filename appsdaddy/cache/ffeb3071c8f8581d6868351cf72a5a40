@@ -1,0 +1,52 @@
+<?php $__env->startSection('title', 'Dashboard'); ?>
+
+
+<?php $__env->startSection('content'); ?>
+    <div class="row state-overview">
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <div class="symbol terques">
+                              <i class="icon-user"></i>
+                          </div>
+                          <div class="value">
+                              <h1><?php echo e($userCount); ?></h1>
+                              <p>用户数</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <div class="symbol red">
+                              <i class="icon-tags"></i>
+                          </div>
+                          <div class="value">
+                              <h1><?php echo e($adminCount); ?></h1>
+                              <p>管理员数</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <div class="symbol yellow">
+                              <i class="icon-shopping-cart"></i>
+                          </div>
+                          <div class="value">
+                              <h1><?php echo e($taskCount); ?></h1>
+                              <p>任务数</p>
+                          </div>
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <div class="symbol blue">
+                              <i class="icon-bar-chart"></i>
+                          </div>
+                          <div class="value">
+                              <h1><?php echo e($todayTaskCount); ?></h1>
+                              <p>新增任务</p>
+                          </div>
+                      </section>
+                  </div>
+              </div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

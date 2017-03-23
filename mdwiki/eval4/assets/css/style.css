@@ -1,0 +1,1602 @@
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Removes default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * Sets consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #eee;
+    color: #222;
+    text-shadow: none;
+}
+
+::selection {
+    background: #eee;
+    color: #222;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+label {
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    padding: 0.2em 0;
+    background: #ccc;
+    color: #000;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+pre,
+code {
+    font-family: Monaco, Menlo, "Andale Mono", "lucida console", "Courier New", monospace;
+}
+
+.console {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    background: #222;
+}
+
+.response {
+    display: none;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    max-height: 40%;
+    color: #fff;
+    list-style: none;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.response .muted,
+.response .divider {
+    color: #666;
+}
+
+.response .output {
+    overflow: auto;
+    margin: 0;
+    padding: 1.4em;
+    max-height: 40%;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.response .output .output_holder {
+    margin: 0;
+}
+
+.response .output .error {
+    margin-top: 1em;
+    background: #A04545;
+}
+
+.response .output .error:first-child {
+    margin: 0;
+}
+
+.response .output .error span {
+    display: inline-block;
+    padding: 1em;
+}
+
+.response .output .error span.file {
+    display: block;
+    padding: 0.7em 1em;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: .85em;
+}
+
+.response .output .error span.line {
+    background: rgba(0, 0, 0, .1);
+}
+
+.response .queries {
+    width: 100%;
+    border-collapse: separate;
+}
+
+.response .queries td {
+    padding: 1em;
+    vertical-align: top;
+    border-top: 1px solid rgba(255, 255, 255, .05);
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    border-right: 1px solid rgba(255, 255, 255, .05);
+    border-left: 1px solid rgba(0, 0, 0, .3);
+}
+
+.response .queries tr:first-child td {
+    border-top: 0;
+}
+
+.response .queries tr:last-child td {
+    border-bottom: 0;
+}
+
+.response .queries td:first-child {
+    border-left: 0;
+}
+
+.response .queries td:last-child {
+    border-right: 0;
+}
+
+.response .queries .time {
+    width: 100px;
+    color: #888;
+    text-align: right;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 2.2em;
+}
+
+.response .queries .query {
+    color: #80A76A;
+    font-family: Monaco, Menlo, "Andale Mono", "lucida console", "Courier New", monospace;
+}
+
+.controlbar {
+    z-index: 100;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #1e1e1e;
+    background: #2e2e2e;
+    display: -webkit-box;
+    display: -opera-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+}
+
+.no-flexbox .controlbar {
+    position: relative;
+}
+
+.controlbar .controls {
+    display: -webkit-box;
+    display: -opera-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-box-pack: justify;
+    box-pack: justify;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .05);
+    color: #777;
+    list-style: none;
+    text-shadow: 1px 1px rgba(0, 0, 0, .4);
+    font-size: .8em;
+    -webkit-box-flex: 1;
+    -opera-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+}
+
+.no-flexbox .controlbar .controls {
+    margin: 0 200px 0 0;
+}
+
+.controlbar .controls li {
+    overflow: hidden;
+    padding: 0 1.4em;
+    height: 100%;
+    border-right: 1px solid #232323;
+    border-left: 1px solid rgba(255, 255, 255, .05);
+    background-clip: border-box;
+    white-space: nowrap;
+    line-height: 50px;
+    -webkit-box-flex: 1;
+    -opera-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+}
+
+.no-flexbox .controlbar .controls li {
+    float: left;
+}
+
+.controlbar .controls li.help {
+    cursor: help;
+}
+
+.controlbar .controls li.stretch {
+    -webkit-box-flex: 4;
+    -moz-box-flex: 4;
+    -ms-box-flex: 4;
+    box-flex: 4;
+}
+
+.controlbar .controls li.error {
+    color: #DB613B;
+}
+
+.controlbar .controls li.loading {
+    width: 100%;
+    background: url('../img/loading.gif') no-repeat center center;
+}
+
+.controlbar .controls li.center {
+    text-align: center;
+}
+
+.controlbar .controls li:first-child {
+    border-left: 0;
+}
+
+.controlbar .controls li.last-of-type,
+.controlbar .controls li:last-child {
+    border-right-width: 3px;
+}
+
+.controlbar .controls li span {
+    color: #aaa;
+    font-weight: bold;
+}
+
+.controlbar .controls li .title {
+    margin-right: 5px;
+    color: inherit;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.controlbar .controls li .divider {
+    display: inline-block;
+    margin: 0 6px;
+    font-weight: normal;
+}
+
+.controlbar .controls li .slash {
+}
+
+.controlbar .controls li.button:hover,
+.controlbar .controls li.button.active {
+    background: rgba(255, 255, 255, .05);
+    cursor: pointer;
+}
+
+.controlbar .controls li.button.active {
+    background: #222;
+}
+
+.csstransforms .controlbar .controls li.button.active {
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .04);
+}
+
+.csstransforms .controlbar .controls li.button.active:hover {
+    background: rgba(255, 255, 255, .08);
+}
+
+.csstransforms .controlbar .controls li.button.active:before {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    display: block;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    background: #222;
+    -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, .08);
+    -moz-box-shadow: 1px 1px 0 rgba(255, 255, 255, .08);
+    box-shadow: 1px 1px 0 rgba(255, 255, 255, .08);
+    content: '';
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*.csstransforms .controlbar .controls li.last-button { border-right-width: 3px; }*/
+
+.no-localstorage .controlbar .controls li.remember {
+    display: none;
+}
+
+.controlbar .controls li.remember .button {
+    padding: 10px 10px 10px 0;
+    color: #666;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.controlbar .controls li.remember .button.checked {
+    color: #4D8867;
+}
+
+.controlbar .controls li.remember .button:before {
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 10px;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, .3);
+    -webkit-box-shadow: inset 0 2px 1px rgba(0, 0, 0, .2), 0 0 0 1px rgba(255, 255, 255, .03), 0 1px 0 rgba(255, 255, 255, .11);
+    -moz-box-shadow: inset 0 2px 1px rgba(0, 0, 0, .2), 0 0 0 1px rgba(255, 255, 255, .03), 0 1px 0 rgba(255, 255, 255, .11);
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, .2), 0 0 0 1px rgba(255, 255, 255, .03), 0 1px 0 rgba(255, 255, 255, .11);
+    color: #4D8867;
+    content: "\2713";
+    vertical-align: text-bottom;
+    text-align: center;
+    text-indent: 100%;
+    text-shadow: none;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.controlbar .controls li.remember .button.checked:before {
+    -webkit-box-shadow: inset 0 2px 1px rgba(0, 0, 0, .2), 0 0 10px 2px rgba(26, 121, 68, 0.60), 0 0 0 1px rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .11);
+    -moz-box-shadow: inset 0 2px 1px rgba(0, 0, 0, .2), 0 0 10px 2px rgba(26, 121, 68, 0.60), 0 0 0 1px rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .11);
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, .2), 0 0 10px 2px rgba(26, 121, 68, 0.60), 0 0 0 1px rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .11);
+    text-indent: 0;
+}
+
+.controlbar .execute {
+    width: 200px;
+    height: 100%;
+    border: 0;
+    background: #444;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .1);
+    -moz-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .1);
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, .1);
+    font-size: 1.1em;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.no-flexbox .controlbar .execute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 200px;
+}
+
+.controlbar .execute:hover {
+    background: #EB4D09;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.editor {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.editor .CodeMirror .CodeMirror-lines {
+    margin-left: 10px;
+    padding: 1.4em 1em 1.4em .2em;
+}
+
+.editor .CodeMirror .CodeMirror-gutter-text {
+    padding: 1.4em .2em 1.4em 1.4em;
+}
+
+.code {
+    min-height: 200px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    border: 0;
+    background-color: transparent;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    display: block;
+    width: 0;
+    height: 100%;
+    content: "";
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    position: static;
+    overflow: visible;
+    clip: auto;
+    margin: 0;
+    width: auto;
+    height: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    display: table; /* 2 */
+    content: " "; /* 1 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        box-shadow: none !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* BASICS */
+
+.CodeMirror {
+    /* Set height, width, borders, and global font properties here */
+    font-family: monospace;
+    height: 300px;
+}
+
+.CodeMirror-scroll {
+    /* Set scrolling behaviour here */
+    overflow: auto;
+}
+
+/* PADDING */
+
+.CodeMirror-lines {
+    padding: 4px 0; /* Vertical padding around content */
+}
+
+.CodeMirror pre {
+    padding: 0 4px; /* Horizontal padding of content */
+}
+
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+    background-color: white; /* The little square between H and V scrollbars */
+}
+
+/* GUTTER */
+
+.CodeMirror-gutters {
+    border-right: 1px solid #ddd;
+    background-color: #f7f7f7;
+    white-space: nowrap;
+}
+
+.CodeMirror-linenumbers {
+}
+
+.CodeMirror-linenumber {
+    padding: 0 3px 0 5px;
+    min-width: 20px;
+    text-align: right;
+    color: #999;
+}
+
+/* CURSOR */
+
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid black;
+    z-index: 3;
+}
+
+/* Shown when moving in bi-directional text */
+.CodeMirror div.CodeMirror-secondarycursor {
+    border-left: 1px solid silver;
+}
+
+.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
+    width: auto;
+    border: 0;
+    background: #7e7;
+    z-index: 1;
+}
+
+/* Can style cursor different in overwrite (non-insert) mode */
+.CodeMirror div.CodeMirror-cursor.CodeMirror-overwrite {
+}
+
+.cm-tab {
+    display: inline-block;
+}
+
+/* DEFAULT THEME */
+
+.cm-s-default .cm-keyword {
+    color: #708;
+}
+
+.cm-s-default .cm-atom {
+    color: #219;
+}
+
+.cm-s-default .cm-number {
+    color: #164;
+}
+
+.cm-s-default .cm-def {
+    color: #00f;
+}
+
+.cm-s-default .cm-variable {
+    color: black;
+}
+
+.cm-s-default .cm-variable-2 {
+    color: #05a;
+}
+
+.cm-s-default .cm-variable-3 {
+    color: #085;
+}
+
+.cm-s-default .cm-property {
+    color: black;
+}
+
+.cm-s-default .cm-operator {
+    color: black;
+}
+
+.cm-s-default .cm-comment {
+    color: #a50;
+}
+
+.cm-s-default .cm-string {
+    color: #a11;
+}
+
+.cm-s-default .cm-string-2 {
+    color: #f50;
+}
+
+.cm-s-default .cm-meta {
+    color: #555;
+}
+
+.cm-s-default .cm-error {
+    color: #f00;
+}
+
+.cm-s-default .cm-qualifier {
+    color: #555;
+}
+
+.cm-s-default .cm-builtin {
+    color: #30a;
+}
+
+.cm-s-default .cm-bracket {
+    color: #997;
+}
+
+.cm-s-default .cm-tag {
+    color: #170;
+}
+
+.cm-s-default .cm-attribute {
+    color: #00c;
+}
+
+.cm-s-default .cm-header {
+    color: blue;
+}
+
+.cm-s-default .cm-quote {
+    color: #090;
+}
+
+.cm-s-default .cm-hr {
+    color: #999;
+}
+
+.cm-s-default .cm-link {
+    color: #00c;
+}
+
+.cm-negative {
+    color: #d44;
+}
+
+.cm-positive {
+    color: #292;
+}
+
+.cm-header, .cm-strong {
+    font-weight: bold;
+}
+
+.cm-em {
+    font-style: italic;
+}
+
+.cm-link {
+    text-decoration: underline;
+}
+
+.cm-invalidchar {
+    color: #f00;
+}
+
+div.CodeMirror span.CodeMirror-matchingbracket {
+    color: #0f0;
+}
+
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+    color: #f22;
+}
+
+.CodeMirror-activeline-background {
+    background: #e8f2ff;
+}
+
+/* STOP */
+
+/* The rest of this file contains styles related to the mechanics of
+   the editor. You probably shouldn't touch them. */
+
+.CodeMirror {
+    line-height: 1;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    color: black;
+}
+
+.CodeMirror-scroll {
+    /* 30px is the magic margin used to hide the element's real scrollbars */
+    /* See overflow: hidden in .CodeMirror */
+    margin-bottom: -30px;
+    margin-right: -30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    height: 100%;
+    outline: none; /* Prevent dragging from highlighting the element */
+    position: relative;
+}
+
+.CodeMirror-sizer {
+    position: relative;
+}
+
+/* The fake, visible scrollbars. Used to force redraw during scrolling
+   before actuall scrolling happens, thus preventing shaking and
+   flickering artifacts. */
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+    position: absolute;
+    z-index: 6;
+    display: none;
+}
+
+.CodeMirror-vscrollbar {
+    right: 0;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.CodeMirror-hscrollbar {
+    bottom: 0;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.CodeMirror-scrollbar-filler {
+    right: 0;
+    bottom: 0;
+}
+
+.CodeMirror-gutter-filler {
+    left: 0;
+    bottom: 0;
+}
+
+.CodeMirror-gutters {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-bottom: 30px;
+    z-index: 3;
+}
+
+.CodeMirror-gutter {
+    white-space: normal;
+    height: 100%;
+    padding-bottom: 30px;
+    margin-bottom: -32px;
+    display: inline-block;
+    /* Hack to make IE7 behave */
+    *zoom: 1;
+    *display: inline;
+}
+
+.CodeMirror-gutter-elt {
+    position: absolute;
+    cursor: default;
+    z-index: 4;
+}
+
+.CodeMirror-lines {
+    cursor: text;
+}
+
+.CodeMirror pre {
+    /* Reset some styles that the rest of the page might have set */
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-width: 0;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    white-space: pre;
+    word-wrap: normal;
+    line-height: inherit;
+    color: inherit;
+    z-index: 2;
+    position: relative;
+    overflow: visible;
+}
+
+.CodeMirror-wrap pre {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: normal;
+}
+
+.CodeMirror-code pre {
+    border-right: 30px solid transparent;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.CodeMirror-wrap .CodeMirror-code pre {
+    border-right: none;
+    width: auto;
+}
+
+.CodeMirror-linebackground {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.CodeMirror-linewidget {
+    position: relative;
+    z-index: 2;
+    overflow: auto;
+}
+
+.CodeMirror-widget {
+}
+
+.CodeMirror-wrap .CodeMirror-scroll {
+    overflow-x: hidden;
+}
+
+.CodeMirror-measure {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.CodeMirror-measure pre {
+    position: static;
+}
+
+.CodeMirror div.CodeMirror-cursor {
+    position: absolute;
+    visibility: hidden;
+    border-right: none;
+    width: 0;
+}
+
+.CodeMirror-focused div.CodeMirror-cursor {
+    visibility: visible;
+}
+
+.CodeMirror-selected {
+    background: #d9d9d9;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+    background: #d7d4f0;
+}
+
+.cm-searching {
+    background: #ffa;
+    background: rgba(255, 255, 0, .4);
+}
+
+/* IE7 hack to prevent it from returning funny offsetTops on the spans */
+.CodeMirror span {
+    *vertical-align: text-bottom;
+}
+
+@media print {
+    /* Hide the cursor when printing */
+    .CodeMirror div.CodeMirror-cursor {
+        visibility: hidden;
+    }
+}
+
+/* ambiance theme for code-mirror */
+
+/* Color scheme */
+
+.cm-s-laravel {
+    color: #aaa;
+}
+
+.cm-s-laravel .CodeMirror-gutters .CodeMirror-gutter-text {
+    color: #555;
+}
+
+.cm-s-laravel .cm-keyword {
+    color: #DB613B;
+}
+
+.cm-s-laravel .cm-atom {
+    color: #CF7EA9;
+}
+
+.cm-s-laravel .cm-number {
+    color: #86E499;
+}
+
+.cm-s-laravel .cm-def {
+    color: #aac6e3;
+}
+
+.cm-s-laravel .cm-variable {
+    color: #fff;
+}
+
+.cm-s-laravel .cm-variable-2 {
+    color: #fff;
+}
+
+.cm-s-laravel .cm-variable-3 {
+    color: #faded3;
+}
+
+.cm-s-laravel .cm-property {
+    color: #eed1b3;
+}
+
+.cm-s-laravel .cm-operator {
+    color: #fa8d6a;
+}
+
+.cm-s-laravel .cm-comment {
+    color: #555;
+}
+
+.cm-s-laravel .cm-string {
+    color: #e3b446;
+}
+
+.cm-s-laravel .cm-string-2 {
+    color: #9d937c;
+}
+
+.cm-s-laravel .cm-meta {
+    color: #D2A8A1;
+}
+
+.cm-s-laravel .cm-error {
+    color: #AF2018;
+}
+
+.cm-s-laravel .cm-qualifier {
+    color: yellow;
+}
+
+.cm-s-laravel .cm-builtin {
+    color: #9999cc;
+}
+
+.cm-s-laravel .cm-bracket {
+    color: #24C2C7;
+}
+
+.cm-s-laravel .cm-tag {
+    color: #fee4ff
+}
+
+.cm-s-laravel .cm-attribute {
+    color: #9B859D;
+}
+
+.cm-s-laravel .cm-header {
+    color: blue;
+}
+
+.cm-s-laravel .cm-quote {
+    color: #24C2C7;
+}
+
+.cm-s-laravel .cm-hr {
+    color: pink;
+}
+
+.cm-s-laravel .cm-link {
+    color: #F4C20B;
+}
+
+.cm-s-laravel .cm-special {
+    color: #FF9D00;
+}
+
+.cm-s-laravel .CodeMirror-matchingbracket {
+    color: #DF8D8D;
+    text-shadow: 1px 1px 0 #000, 0 0 3px #DF8D8D;
+    border-radius: 3px;
+}
+
+.cm-s-laravel .CodeMirror-nonmatchingbracket {
+    color: #f00;
+}
+
+.cm-s-laravel .CodeMirror-selected {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.CodeMirror-focused.cm-s-laravel .CodeMirror-selected {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Editor styling */
+.cm-s-laravel {
+    line-height: 1.40em;
+    font-family: Monaco, Menlo, "Andale Mono", "lucida console", "Courier New", monospace !important;
+    background-color: #222;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .4);
+}
+
+.cm-s-laravel .CodeMirror-gutters {
+    background: transparent;
+    padding: 0 5px;
+    border-right: 0;
+}
+
+.cm-s-laravel .CodeMirror-gutters .CodeMirror-gutter-text {
+    text-shadow: 0px 1px 1px #000;
+}
+
+.cm-s-laravel .CodeMirror-lines {
+
+}
+
+.cm-s-laravel .CodeMirror-lines .CodeMirror-cursor {
+    border-left: 2px solid #666;
+}
+
+.cm-s-laravel .activeline {
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.031);
+}
+
+
+code,
+kbd,
+pre,
+samp,
+.response,
+.editor {
+    font-size: 0.9em;
+}

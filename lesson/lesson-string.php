@@ -114,12 +114,20 @@ pt("源字符串：" . $str);
 pt(strrev($str));
 
 ///------------------------------------
-ptitle("explode：炸开字符串");
+ptitle("explode和preg_split：炸开字符串");
 $str = "This is a  map!";  
 pt("源字符串：" . $str);
-$arr = explode(' ', $str);
-pt($arr);
-pt($arr, false);
+$arr = explode(" ", $str);
+pt('explode(" ", $str) = ' . to_string($arr));
+
+$str = "my day: 1. get up 2. get dressed 3. eat toast";
+pt("源字符串：" . $str);
+$arr = preg_split("/\d\. /", $str);
+pt(' preg_split("/\d\. /", $str) = ' . to_string($arr));
+
+pt("PREG_SPLIT_DELIM_CAPTURE：表示将小括号里的分组也放在返回的数组里");
+$arr = preg_split("/(\d)\. /", $str, -1, PREG_SPLIT_DELIM_CAPTURE);
+pt(' preg_split("/(\d)\. /", $str, -1, PREG_SPLIT_DELIM_CAPTURE) = ' . to_string($arr));
 
 
 ///------------------------------------
@@ -216,6 +224,64 @@ pt0("</table>");
 
 pt("===========================");
 pt($line);
+
+///------------------------------------
+ptitle("str_repeat：字符串重复");
+pt('str_repeat("1234--", 3) = ' . str_repeat("1234--", 3));
+
+///------------------------------------
+ptitle("pack：格式化数据记录，使每个字段占据固定数目的字符--用空格填充或截取");
+////在这里突然发现一个汉字其实占了3个字节？？
+///参数A8A10A2表示，第一个字段占8个字节，第二个占10个，第三个占2个（会截断）
+foreach ($books as $book) {
+	pt(str_replace(" ", "-", pack('A8A10A2', $book[0], $book[1], $book[2])));
+}
+
+///------------------------------------
+ptitle("str_pad：使用指定字符填充字符串");
+$str = "123456789";
+pt("源字符串：---" . $str . "----");
+pt('str_pad($str, 20, "0") = ' . str_pad($str, 20, "0"));
+
+///------------------------------------
+ptitle("wordwrap：让在pre里包含的内容自动换行");
+$str = <<<EOT
+123\n4567889000009887776
+EOT;
+pt("<pre>" . wordwrap($str, 5, "--\n", 1) . "</pre>");
+
+///------------------------------------
+ptitle("转义：数据库相关转义");
+///只要是从用户那里来的输入，都不能信任
+///并且用户的输入可能又_，%等，用在like里，需要转义
+$str = "a1哈 '--\"_--%--";
+
+$db = new PDO('sqlite:/home/vagrant/Code/service/lesson/users.db');
+pt('源字符串：' . $str);
+pt('quote转义：' . $db->quote($str));
+
+pt('源字符串：' . $str);
+pt('替换_和%：' . strtr($db->quote($str), array('_' => '\_', '%' => '\%')));
+
+pt('加了quote和替换了sql通配符之后：' . "select * from profile where name like " . strtr($db->quote($str), array('_' => '\_', '%' => '\%')));
+
+
+///------------------------------------
+ptitle("生成唯一id");
+//uniqid()使用当前时间微妙数和一个随机数来生成一个很难猜的字符串
+pt('uniqid() = ' . uniqid());
+pt('md5(uniqid()) = ' . md5(uniqid()));
+
+///------------------------------------
+ptitle("工具：使用指定字符阶段或填充到指定长度");
+function str_pack($s, $len, $fillment){
+	return str_pad(substr($s, 0, $len), $len, $fillment);
+}
+
+$str = "123456789";
+pt("源字符串：---" . $str . "----");
+pt('str_pack($str, 3, "0") = ' . str_pack($str, 3, "0"));
+pt('str_pack($str, 20, "0") = ' . str_pack($str, 20, "0"));
 
 ///------------------------------------
 ptitle("算法：生成随机字符串");
