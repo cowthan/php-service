@@ -48,7 +48,7 @@ function sendMail($to,$title,$content){
     $mail->Username ='279800561@qq.com';
 
     //smtp登录的密码 使用生成的授权码（就刚才叫你保存的最新的授权码）
-    $mail->Password = 'lozfixmmfcjdcbee';
+    $mail->Password = 'nmfuxeqfervxcahg';
 
     //设置发件人邮箱地址 这里填入上述提到的“发件人邮箱”
     $mail->From = '279800561@qq.com';
