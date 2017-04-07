@@ -6,7 +6,7 @@
  *@return bool true:发送成功 false:发送失败
  */
 
-function sendMail($username, $pwd, $from, $to,$title,$content){
+function sendMail($username, $pwd, $showname, $from, $to,$title,$content){
 
     //引入PHPMailer的核心文件 使用require_once包含避免出现PHPMailer类重复定义的警告
 	require_once("./class.phpmailer.php"); 
@@ -42,7 +42,7 @@ function sendMail($username, $pwd, $from, $to,$title,$content){
     $mail->CharSet = 'UTF-8';
 
     //设置发件人姓名（昵称） 任意内容，显示在收件人邮件的发件人邮箱地址前的发件人姓名
-    $mail->FromName = '则不达自助邮件系统';
+    $mail->FromName = $showname;
 
     //smtp登录的账号 这里填入字符串格式的qq号即可
     $mail->Username = $username;
@@ -83,13 +83,14 @@ function sendMail($username, $pwd, $from, $to,$title,$content){
     }
 }
 
+$showname = $_REQUEST ['showname'];
 $username = $_REQUEST ['username'];
 $pwd = $_REQUEST ['pwd'];
 $to = $_REQUEST ['to'];
 $from = $_REQUEST ['from'];
 $subject = $_REQUEST ['subject'];
 $content = $_REQUEST ['content'];
-$flag = sendMail($username, $pwd, $from, $to, $subject, $content);
+$flag = sendMail($username, $pwd, $showname, $from, $to, $subject, $content);
 if($flag){
     echo "ok";
 }else{
@@ -99,3 +100,8 @@ if($flag){
 curl -X POST -H "Content-Type: text/html; charset=UTF-8" --data-ascii "content=derinhält&date=asdf" http://114.215.81.196/phpmailer/sendmail.php
 */
 	//phpinfo();
+/*
+http://114.215.81.196/service/mail/sendmail.php
+?showname=王二小&username=279800561&pwd=nmfuxeqfervxcahg&from=279800561@qq.com&to=279800561@qq.com&subject=ssss&content=%E5%93%88%E5%93%88%E5%93%88%E5%93%88%E5%93%88%E5%93%88
+
+*/
