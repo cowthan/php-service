@@ -6,11 +6,11 @@
  *@return bool true:发送成功 false:发送失败
  */
 
-function sendMail($to,$title,$content){
+function sendMail($username, $pwd, $from, $to,$title,$content){
 
     //引入PHPMailer的核心文件 使用require_once包含避免出现PHPMailer类重复定义的警告
-	require_once("PHPMailer/class.phpmailer.php"); 
-    require_once("PHPMailer/class.smtp.php");
+	require_once("./class.phpmailer.php"); 
+    require_once("./class.smtp.php");
     //实例化PHPMailer核心类
     $mail = new PHPMailer();
 
@@ -42,16 +42,16 @@ function sendMail($to,$title,$content){
     $mail->CharSet = 'UTF-8';
 
     //设置发件人姓名（昵称） 任意内容，显示在收件人邮件的发件人邮箱地址前的发件人姓名
-    $mail->FromName = 'LSGO实验室';
+    $mail->FromName = '则不达自助邮件系统';
 
     //smtp登录的账号 这里填入字符串格式的qq号即可
-    $mail->Username ='279800561@qq.com';
+    $mail->Username = $username;
 
     //smtp登录的密码 使用生成的授权码（就刚才叫你保存的最新的授权码）
-    $mail->Password = 'nmfuxeqfervxcahg';
+    $mail->Password = $pwd;
 
     //设置发件人邮箱地址 这里填入上述提到的“发件人邮箱”
-    $mail->From = '279800561@qq.com';
+    $mail->From = $from;
 
     //邮件正文是否为html编码 注意此处是一个方法 不再是属性 true或false
     $mail->isHTML(true); 
@@ -82,10 +82,14 @@ function sendMail($to,$title,$content){
         return false;
     }
 }
+
+$username = $_REQUEST ['username'];
+$pwd = $_REQUEST ['pwd'];
 $to = $_REQUEST ['to'];
+$from = $_REQUEST ['from'];
 $subject = $_REQUEST ['subject'];
 $content = $_REQUEST ['content'];
-$flag = sendMail($to, $subject, $content);
+$flag = sendMail($username, $pwd, $from, $to, $subject, $content);
 if($flag){
     echo "ok";
 }else{
