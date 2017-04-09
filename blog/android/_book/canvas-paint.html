@@ -1,0 +1,1587 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>draw和canvas，paint详解 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="anim.html" />
+    
+    
+    <link rel="prev" href="view.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">----安卓 UI----</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="view.html">
+            
+                <a href="view.html">
+            
+                    
+                    自定义控件和measure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="canvas-paint.html">
+            
+                <a href="canvas-paint.html">
+            
+                    
+                    draw和canvas，paint详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="anim.html">
+            
+                <a href="anim.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="notify.html">
+            
+                <a href="notify.html">
+            
+                    
+                    notify系列库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="loading.html">
+            
+                <a href="loading.html">
+            
+                    
+                    loading系列库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="status-ui.html">
+            
+                <a href="status-ui.html">
+            
+                    
+                    StatusUI系列库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="touch-scroll.html">
+            
+                <a href="touch-scroll.html">
+            
+                    
+                    滑动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="layout.html">
+            
+                <a href="layout.html">
+            
+                    
+                    Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="item-template.html">
+            
+                <a href="item-template.html">
+            
+                    
+                    列表Adapter模板化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="recyclerview.html">
+            
+                <a href="recyclerview.html">
+            
+                    
+                    RecyclerView全解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="design.html">
+            
+                <a href="design.html">
+            
+                    
+                    MeterialDesign详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="component.html">
+            
+                <a href="component.html">
+            
+                    
+                    AyoComponent基础库--Activity和Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="systembartint.html">
+            
+                <a href="systembartint.html">
+            
+                    
+                    SystembarTint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="permission-ask.html">
+            
+                <a href="permission-ask.html">
+            
+                    
+                    权限控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">----安卓 foundation----</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="mvp.html">
+            
+                <a href="mvp.html">
+            
+                    
+                    MVP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="rxjava.html">
+            
+                <a href="rxjava.html">
+            
+                    
+                    RxJava
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="lang.html">
+            
+                <a href="lang.html">
+            
+                    
+                    常用工具类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="xml.html">
+            
+                <a href="xml.html">
+            
+                    
+                    xml解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="json-reporter.html">
+            
+                <a href="json-reporter.html">
+            
+                    
+                    Json解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="inject.html">
+            
+                <a href="inject.html">
+            
+                    
+                    ButterKnife
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="thread.html">
+            
+                <a href="thread.html">
+            
+                    
+                    安卓线程和looper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="eventbus.html">
+            
+                <a href="eventbus.html">
+            
+                    
+                    EventBus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="db.html">
+            
+                <a href="db.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">----Gradle----</li>
+        
+        
+    
+
+    
+        
+        <li class="header">----工具----</li>
+        
+        
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >draw和canvas，paint详解</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="draw&#x548C;canvas&#xFF0C;paint&#x8BE6;&#x89E3;">draw&#x548C;canvas&#xFF0C;paint&#x8BE6;&#x89E3;</h1>
+<p>&#x5BF9;&#x5E94;&#x7684;github&#x5730;&#x5740;&#xFF1A;<a href="https://github.com/cowthan/UI-Robot" target="_blank">https://github.com/cowthan/UI-Robot</a></p>
+<p>&#x6E90;&#x7801;&#x7684;&#x4F7F;&#x7528;&#x6587;&#x6863;&#xFF1A;</p>
+<p>DemoBase&#x662F;&#x6BCF;&#x4E2A;Demo Activity&#x7684;&#x57FA;&#x7C7B;&#xFF0C;&#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-number">1</span> &#x521B;&#x5EFA;Test View&#xFF0C;&#x57FA;&#x7C7B;&#x662F;BaseView
+<span class="hljs-meta">@Override</span>
+<span class="hljs-function"><span class="hljs-keyword">protected</span> BaseView <span class="hljs-title">createTestView</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">//&#x521D;&#x59CB;&#x5316;notify&#x6761;</span>
+    setNotify(<span class="hljs-string">&quot;&quot;</span>);
+
+    <span class="hljs-comment">//&#x662F;&#x5426;&#x663E;&#x793A;&#x5DE6;&#x53F3;TouchBoard</span>
+    enableLeftTouchBoard(<span class="hljs-keyword">false</span>);
+    enableRightTouchBoard(<span class="hljs-keyword">false</span>);
+
+    <span class="hljs-comment">//&#x8BBE;&#x7F6E;Test View&#x7684;&#x80CC;&#x666F;&#xFF0C;&#x5176;&#x5B9E;&#x8BBE;&#x7F6E;&#x7684;&#x7236;&#x63A7;&#x4EF6;FrameLayout&#x7684;&#x80CC;&#x666F;&#xFF0C;&#x9ED8;&#x8BA4;&#x900F;&#x660E;&#xFF0C;&#x4F46;&#x6709;&#x65F6;&#x900F;&#x660E;&#x770B;&#x6548;&#x679C;&#x4E0D;&#x592A;&#x597D;</span>
+    setTestViewBackgroundStroke(); <span class="hljs-comment">//&#x7ED9;&#x4E2A;&#x7EBF;&#x6846;&#x5305;&#x56F4;&#x56DB;&#x5468;</span>
+    setTestViewBackgroundFill(<span class="hljs-keyword">int</span> bgColor); <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x586B;&#x5145;</span>
+    <span class="hljs-comment">//&#x8FD9;&#x4FE9;&#x51B2;&#x7A81;</span>
+
+    <span class="hljs-comment">//&#x8FD4;&#x56DE;Test View</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ColorView(getActivity());
+}
+
+<span class="hljs-number">2</span> &#x63A7;&#x5236;Test View&#x7684;&#x70B9;&#x51FB;&#xFF0C;&#x6ED1;&#x52A8;&#xFF0C;&#x5DE6;&#x53F3;TOuchBoard&#x7684;&#x70B9;&#x51FB;&#xFF0C;&#x6ED1;&#x52A8;
+
+
+<span class="hljs-number">3</span> &#x83B7;&#x53D6;<span class="hljs-function">Test View
+<span class="hljs-title">getTestView</span><span class="hljs-params">()</span></span>;
+
+<span class="hljs-number">4</span> &#x6A2A;&#x6761;&#x63D0;&#x793A;
+setNotify(String s)
+
+<span class="hljs-number">5</span> &#x89C2;&#x5BDF;Test View&#x7684;&#x4E8B;&#x4EF6;&#x53D8;&#x5316;&#xFF0C;&#x914D;&#x5408;<span class="hljs-function">setNotify
+
+<span class="hljs-title">getTestView</span><span class="hljs-params">()</span>.<span class="hljs-title">getObservable</span><span class="hljs-params">()</span>.<span class="hljs-title">addObserver</span><span class="hljs-params">(new Observer()</span></span>{
+
+});
+</code></pre>
+<h1 id="canvas&#x548C;paint&#x8BE6;&#x89E3;">Canvas&#x548C;Paint&#x8BE6;&#x89E3;</h1>
+<p>&#x672C;&#x6587;&#x7684;&#x5185;&#x5BB9;&#x662F;Canvas&#x548C;Paint&#xFF0C;&#x662F;&#x672C;&#x4EBA;&#x7684;&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x65E5;&#x540E;&#x597D;&#x67E5;  </p>
+<ul>
+<li>&#x914D;&#x5957;&#x7684;&#x8FD8;&#x6709;&#xFF1A;<ul>
+<li>anim&#x7CFB;&#x5217;</li>
+<li>touch&#x548C;scroll&#x7CFB;&#x5217;</li>
+<li>api demo&#x7CFB;&#x5217;-----&#x8FD9;&#x91CC;&#x9762;&#x7684;&#x4E1C;&#x897F;&#x4F1A;&#x5206;&#x5230;&#x5404;&#x4E2A;&#x5176;&#x4ED6;&#x7CFB;&#x5217;&#x91CC;</li>
+<li>&#x5B89;&#x5353;&#x81EA;&#x5E26;&#x63A7;&#x4EF6;&#x7CFB;&#x5217;&#xFF0C;&#x5305;&#x62EC;&#x539F;&#x751F;&#xFF0C;material&#x7CFB;&#x5217;&#xFF0C;&#x5E38;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x7CFB;&#x5217;&#xFF0C;&#x8FD9;&#x4E2A;&#x6BD4;&#x8F83;&#x5927;</li>
+<li>Camera Preview&#x5F15;&#x51FA;&#x7684;SurfaceView&#xFF0C;TextureView&#xFF0C;OpenGL&#x7CFB;&#x5217;&#xFF0C;&#x8FD9;&#x4E2A;&#x592A;&#x6DF1;</li>
+<li>&#x5B66;&#x5B8C;&#x8FD9;&#x4E00;&#x5957;&#xFF0C;&#x5728;&#x5B89;&#x5353;&#x7279;&#x6548;&#x65B9;&#x9762;&#x5C31;&#x80FD;&#x72EC;&#x9738;&#x5929;&#x4E0B;&#xFF0C;&#x5929;&#x60E8;&#x5730;&#x6101;</li>
+</ul>
+</li>
+</ul>
+<p>&#x5B89;&#x88C5;demo apk&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/11.png" alt=""></p>
+<p>&#x672C;&#x6587;&#x5BF9;&#x5E94;&#x7684;&#x4EE3;&#x7801;&#x90FD;&#x5728;&#xFF1A;<br><a href="https://github.com/cowthan/UI-Robot" target="_blank">https://github.com/cowthan/UI-Robot</a></p>
+<h1 id="1-&#x5173;&#x4E8E;ondraw">1 &#x5173;&#x4E8E;onDraw</h1>
+<h2 id="11-16ms&#x548C;&#x6389;&#x5E27;&#x7684;&#x95EE;&#x9898;">1.1 16ms&#x548C;&#x6389;&#x5E27;&#x7684;&#x95EE;&#x9898;</h2>
+<p>&#x5F97;&#x77E5;&#x9053;16ms&#x4E00;&#x5E27;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5982;&#x679C;&#x6E32;&#x67D3;&#x4E00;&#x5E27;&#x8D85;&#x8FC7;16ms&#xFF0C;&#x5982;&#x7528;&#x4E86;20ms&#x6E32;&#x67D3;&#xFF0C;&#x4E0B;&#x4E00;&#x5E27;&#x7684;&#x5207;&#x6362;&#x5C31;&#x6765;&#x4E0D;&#x53CA;&#xFF0C;&#x8FD9;&#x4E00;&#x5E27;&#x5C31;&#x6301;&#x7EED;&#x4E86;32ms&#xFF0C;&#x5C31;&#x51FA;&#x73B0;&#x4E86;&#x6389;&#x5E27;&#xFF0C;&#x6389;&#x5E27;&#x591A;&#x4E86;&#xFF0C;&#x7528;&#x6237;&#x5C31;&#x4F1A;&#x611F;&#x89C9;&#x5230;&#x754C;&#x9762;&#x5361;&#x987F;</p>
+<h2 id="12-ondraw&#x57FA;&#x672C;&#x5957;&#x8DEF;">1.2 onDraw&#x57FA;&#x672C;&#x5957;&#x8DEF;</h2>
+<ul>
+<li>&#x4E0D;&#x8981;&#x5728;onDraw&#x91CC;new&#x53EF;&#x4EE5;&#x91CD;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;onDraw&#x91CC;&#x7684;&#x6027;&#x80FD;&#x5FC5;&#x987B;&#x4E25;&#x683C;&#x8003;&#x8651;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * &#x81EA;&#x5B9A;&#x4E49;&#x63A7;&#x4EF6;&#xFF1A;&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x5706;&#x73AF;
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomView1</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">View</span></span>{
+
+    <span class="hljs-keyword">private</span> Paint mPaint;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">CustomView1</span><span class="hljs-params">(Context context)</span> </span>{
+        <span class="hljs-keyword">super</span>(context);
+        initPaint();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">CustomView1</span><span class="hljs-params">(Context context, AttributeSet attrs)</span> </span>{
+        <span class="hljs-keyword">super</span>(context, attrs);
+        initPaint();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">CustomView1</span><span class="hljs-params">(Context context, AttributeSet attrs, <span class="hljs-keyword">int</span> defStyleAttr)</span> </span>{
+        <span class="hljs-keyword">super</span>(context, attrs, defStyleAttr);
+        initPaint();
+    }
+
+    <span class="hljs-meta">@TargetApi</span>(Build.VERSION_CODES.LOLLIPOP)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">CustomView1</span><span class="hljs-params">(Context context, AttributeSet attrs, <span class="hljs-keyword">int</span> defStyleAttr, <span class="hljs-keyword">int</span> defStyleRes)</span> </span>{
+        <span class="hljs-keyword">super</span>(context, attrs, defStyleAttr, defStyleRes);
+        initPaint();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">initPaint</span><span class="hljs-params">()</span></span>{
+        mPaint = <span class="hljs-keyword">new</span> Paint(Paint.ANTI_ALIAS_FLAG);
+        <span class="hljs-comment">/*
+         * &#x8BBE;&#x7F6E;&#x753B;&#x7B14;&#x6837;&#x5F0F;&#x4E3A;&#x63CF;&#x8FB9;&#xFF0C;&#x5706;&#x73AF;&#x561B;&#x2026;&#x2026;&#x5F53;&#x7136;&#x4E0D;&#x80FD;&#x586B;&#x5145;&#x4E0D;&#x7136;&#x5C31;&#x4E48;&#x610F;&#x601D;&#x4E86;
+         *
+         * &#x753B;&#x7B14;&#x6837;&#x5F0F;&#x5206;&#x4E09;&#x79CD;&#xFF1A;
+         * 1.Paint.Style.STROKE&#xFF1A;&#x63CF;&#x8FB9;
+         * 2.Paint.Style.FILL_AND_STROKE&#xFF1A;&#x63CF;&#x8FB9;&#x5E76;&#x586B;&#x5145;
+         * 3.Paint.Style.FILL&#xFF1A;&#x586B;&#x5145;
+         */</span>
+        mPaint.setStyle(Paint.Style.STROKE);
+
+        <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x753B;&#x7B14;&#x989C;&#x8272;&#x4E3A;&#x6D45;&#x7070;&#x8272;</span>
+        mPaint.setColor(Color.LTGRAY);
+
+        <span class="hljs-comment">/*
+         * &#x8BBE;&#x7F6E;&#x63CF;&#x8FB9;&#x7684;&#x7C97;&#x7EC6;&#xFF0C;&#x5355;&#x4F4D;&#xFF1A;&#x50CF;&#x7D20;px&#xFF0C;&#x9ED8;&#x8BA4;0
+         * &#x6CE8;&#x610F;&#xFF1A;&#x5F53;setStrokeWidth(0)&#x7684;&#x65F6;&#x5019;&#x63CF;&#x8FB9;&#x5BBD;&#x5EA6;&#x5E76;&#x4E0D;&#x4E3A;0&#x800C;&#x662F;&#x53EA;&#x5360;&#x4E00;&#x4E2A;&#x50CF;&#x7D20;
+         */</span>
+        mPaint.setStrokeWidth(<span class="hljs-number">10</span>);
+
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onDraw</span><span class="hljs-params">(Canvas canvas)</span> </span>{
+        <span class="hljs-keyword">super</span>.onDraw(canvas);
+
+        <span class="hljs-comment">// &#x7ED8;&#x5236;&#x5706;&#x73AF;</span>
+        canvas.drawCircle(Display.screenWidth / <span class="hljs-number">2</span>, Display.screenHeight / <span class="hljs-number">2</span>, radius, mPaint);
+
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">float</span> radius = <span class="hljs-number">50</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setRadius</span><span class="hljs-params">(<span class="hljs-keyword">float</span> r)</span></span>{
+        <span class="hljs-keyword">this</span>.radius = r;
+        <span class="hljs-keyword">if</span>(<span class="hljs-keyword">this</span>.radius &gt;= <span class="hljs-number">150</span>) <span class="hljs-keyword">this</span>.radius = <span class="hljs-number">50</span>;
+        postInvalidate();
+    }
+}
+</code></pre>
+<ul>
+<li>&#x6548;&#x679C;&#x5C31;&#x662F;&#x753B;&#x4E86;&#x4E00;&#x4E2A;&#x5706;&#x73AF;&#xFF0C;&#x81F3;&#x4E8E;padding&#x548C;wrap_content&#x7684;&#x8003;&#x8651;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;&#x4E0A;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;</li>
+<li><p>&#x5982;&#x679C;&#x4F60;&#x5728;&#x5916;&#x90E8;&#x7528;&#x52A8;&#x753B;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;&#x4E0D;&#x65AD;&#x8C03;&#x7528;setRadius&#xFF0C;&#x5706;&#x73AF;&#x5C31;&#x52A8;&#x8D77;&#x6765;&#x4E86;</p>
+</li>
+<li><p>&#x8FD9;&#x91CC;&#x6CE8;&#x610F;invalidate&#x548C;postInvalidate&#xFF0C;&#x8FD8;&#x6709;requestLayout</p>
+<ul>
+<li>invalidate&#xFF1A;&#x5F53;&#x524D;View&#x91CD;&#x7ED8;&#xFF0C;&#x53EA;&#x80FD;&#x5728;UI&#x7EBF;&#x7A0B;&#x8C03;&#x7528;</li>
+<li>postInvalidate&#xFF1A;&#x5F53;&#x524D;View&#x91CD;&#x7ED8;&#xFF0C;&#x4E0D;&#x7BA1;&#x5728;&#x54EA;&#x4E2A;&#x7EBF;&#x7A0B;&#x8C03;&#x7528;&#xFF0C;&#x90FD;&#x5728;UI&#x7EBF;&#x7A0B;&#x6267;&#x884C;</li>
+<li>requestLayout&#xFF1A;&#x8BF7;&#x6C42;&#x7236;&#x63A7;&#x4EF6;&#x91CD;&#x65B0;measure&#x548C;layout&#xFF0C;&#x5F53;&#x7136;&#x6B64;&#x63A7;&#x4EF6;&#x672C;&#x8EAB;&#x4E5F;&#x4F1A;&#x91CD;&#x7ED8;</li>
+</ul>
+</li>
+</ul>
+<p>&#x53EF;&#x60DC;&#x8FD9;&#x91CC;&#x6CA1;&#x56FE;</p>
+<h1 id="2-&#x5165;&#x95E8;">2 &#x5165;&#x95E8;</h1>
+<p>canvas&#x662F;&#x7EB8;&#xFF0C;paint&#x662F;&#x7B14;  </p>
+<p>&#x4E0B;&#x9762;&#x5148;&#x6765;&#x8BF4;&#x8BF4;Paint&#x7684;&#x57FA;&#x672C;&#x8BBE;&#x7F6E;&#xFF0C;&#x590D;&#x6742;&#x7684;&#x4F1A;&#x653E;&#x5230;&#x540E;&#x9762;&#x7EC6;&#x8BF4;&#x3002;</p>
+<pre><code class="lang-java">Paint mPaint = <span class="hljs-keyword">new</span> Paint();
+
+<span class="hljs-comment">///---&#x6297;&#x952F;&#x9F7F;</span>
+paint.setAntiAlias(<span class="hljs-keyword">true</span>);
+&#x6216;&#x8005;mPaint = <span class="hljs-keyword">new</span> Paint(Paint.ANTI_ALIAS_FLAG);
+&#x6297;&#x952F;&#x9F7F;&#xFF0C;&#x8BA9;&#x56FE;&#x50CF;&#x8FB9;&#x7F18;&#x663E;&#x5F97;&#x66F4;&#x5706;&#x6ED1;&#x5149;&#x6CFD;&#x52A8;&#x611F;&#x7684;&#x7B97;&#x6CD5;
+&#x6297;&#x952F;&#x9F7F;&#xFF0C;&#x952F;&#x9F7F;&#x662F;&#x4F9D;&#x8D56;&#x4E8E;&#x7B97;&#x6CD5;&#x7684;&#xFF0C;&#x7B97;&#x6CD5;&#x51B3;&#x5B9A;&#x6297;&#x952F;&#x9F7F;&#x7684;&#x6548;&#x7387;&#xFF0C;&#x5728;&#x6211;&#x4EEC;&#x7ED8;&#x5236;&#x68F1;&#x89D2;&#x5206;&#x660E;&#x7684;&#x56FE;&#x50CF;&#x65F6;&#xFF0C;&#x6BD4;&#x5982;&#x4E00;&#x4E2A;&#x77E9;&#x5F62;&#x3001;&#x4E00;&#x5F20;&#x4F4D;&#x56FE;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x6253;&#x5F00;&#x6297;&#x952F;&#x9F7F;
+
+<span class="hljs-comment">///---&#x6297;&#x6296;&#x52A8;</span>
+mPaint.setDither(<span class="hljs-keyword">false</span>);
+&#x6297;&#x6296;&#x52A8;&#xFF0C;&#x4F7F;&#x989C;&#x8272;&#x7684;&#x8FC7;&#x6E21;&#x66F4;&#x67D4;&#x548C;
+
+<span class="hljs-comment">///---&#x8BBE;&#x7F6E;&#x989C;&#x8272;</span>
+mPaint.setAlpha(<span class="hljs-number">255</span>);  <span class="hljs-comment">//[0..255]</span>
+mPaint.setARGB(a, r, g, b);  <span class="hljs-comment">// &#x548C;setColor&#x4E00;&#x6837;&#xFF0C;&#x8FD9;&#x91CC;&#x6BCF;&#x4E2A;&#x503C;&#x90FD;&#x662F;(0..255)</span>
+mPaint.setColor(Color.BLUE);
+
+
+<span class="hljs-comment">///---&#x7EBF;&#x6846;&#x98CE;&#x683C;</span>
+mPaint.setStyle(Paint.Style style);
+Paint.Style.FILL    &#x586B;&#x5145;
+Paint.Style.STROKE   &#x753B;&#x8FB9;&#x6846;
+Paint.Style.FILL_AND_STROKE &#x5373;&#x586B;&#x5145;&#xFF0C;&#x4E5F;&#x753B;&#x8FB9;&#x6846;
+
+<span class="hljs-comment">///---&#x7EBF;&#x6761;&#x5BBD;&#x5EA6;</span>
+mPaint.setStrokeWidth(<span class="hljs-number">10</span>); <span class="hljs-comment">//px&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;0&#xFF0C;&#x4F46;0&#x4E0D;&#x662F;&#x770B;&#x4E0D;&#x89C1;&#xFF0C;&#x800C;&#x662F;&#x5360;&#x4E00;&#x4E2A;&#x50CF;&#x7D20;</span>
+
+<span class="hljs-comment">///---&#x7B14;&#x7684;&#x503E;&#x659C;&#x5EA6;</span>
+mPaint.setStrokeMiter(<span class="hljs-number">20</span>);  <span class="hljs-comment">//&#x662F;&#x8BBE;&#x7F6E;&#x7B14;&#x753B;&#x7684;&#x503E;&#x659C;&#x5EA6;&#xFF0C;&#x5982;&#xFF1A;&#x5C0F;&#x65F6;&#x5019;&#x7528;&#x7684;&#x94C5;&#x7B14;&#xFF0C;&#x524A;&#x7684;&#x65F6;&#x5019;&#x659C;&#x4E0E;&#x5782;&#x76F4;&#x524A;&#x51FA;&#x6765;&#x7684;&#x7B14;&#x5C16;&#x6548;&#x679C;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;</span>
+
+<span class="hljs-comment">///---&#x7B14;&#x89E6;</span>
+<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x7B14;&#x89E6;&#x7684;&#x6837;&#x5F0F;&#xFF1A;&#x5F71;&#x54CD;&#x753B;&#x7B14;&#x7684;&#x59CB;&#x672B;&#x7AEF;&#xFF0C;&#x4F60;&#x753B;&#x4E00;&#x6761;line&#xFF0C;&#x7136;&#x540E;&#x589E;&#x52A0;strokeWidth&#xFF0C;&#x7B14;&#x89E6;&#x5C31;&#x80FD;&#x660E;&#x663E;&#x770B;&#x51FA;&#x6765;</span>
+mPaint.setStrokeCap(Paint.Cap.BUTT);
+mPaint.setStrokeCap(Paint.Cap.ROUND);
+mPaint.setStrokeCap(Paint.Cap.SQUARE);
+
+<span class="hljs-comment">///---&#x7ED3;&#x5408;&#x5904;&#x6837;&#x5F0F;</span>
+<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x7ED3;&#x5408;&#x5904;&#x7684;&#x6837;&#x5B50;&#xFF1A;&#x5F71;&#x54CD;&#x753B;&#x7B14;&#x7684;&#x7ED3;&#x5408;&#x5904;&#xFF0C;&#x77E9;&#x5F62;&#xFF0C;&#x6247;&#x5F62;&#x7684;&#x7ED3;&#x5408;&#x5904;&#x90FD;&#x4F1A;&#x88AB;&#x6B64;&#x5C5E;&#x6027;&#x5F71;&#x54CD;&#xFF0C;strokeWidth&#x8BBE;&#x7F6E;&#x5927;&#x70B9;&#x5C31;&#x884C;</span>
+mPaint.setStrokeJoin(Paint.Join.BEVEL); <span class="hljs-comment">//BEVEL&#xFF1A;&#x7ED3;&#x5408;&#x5904;&#x4E3A;&#x76F4;&#x7EBF;</span>
+mPaint.setStrokeJoin(Paint.Join.MITER); <span class="hljs-comment">//Miter:&#x7ED3;&#x5408;&#x5904;&#x4E3A;&#x9510;&#x89D2;</span>
+mPaint.setStrokeJoin(Paint.Join.ROUND); <span class="hljs-comment">//Round:&#x7ED3;&#x5408;&#x5904;&#x4E3A;&#x5706;&#x5F27;</span>
+
+<span class="hljs-comment">///---&#x7EBF;&#x6761;&#x6548;&#x679C;</span>
+&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x753B;&#x7EBF;&#x6761;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5982;line&#xFF0C;path&#xFF0C;rect&#xFF0C;circle&#xFF0C;oval&#xFF0C;arc&#x7B49;
+mPaint.setPathEffect(PathEffect pe);
+
+<span class="hljs-comment">///---FilterBitmap</span>
+mPaint.setFilterBitmap(<span class="hljs-keyword">false</span>);
+&#x5982;&#x679C;&#x8BE5;&#x9879;&#x8BBE;&#x7F6E;&#x4E3A;<span class="hljs-keyword">true</span>&#xFF0C;&#x5219;&#x56FE;&#x50CF;&#x5728;&#x52A8;&#x753B;&#x8FDB;&#x884C;&#x4E2D;&#x4F1A;&#x6EE4;&#x6389;&#x5BF9;Bitmap&#x56FE;&#x50CF;&#x7684;&#x4F18;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x52A0;&#x5FEB;&#x663E;&#x793A;&#x901F;&#x5EA6;&#xFF0C;&#x672C;&#x8BBE;&#x7F6E;&#x9879;&#x4F9D;&#x8D56;&#x4E8E;dither&#x548C;xfermode&#x7684;&#x8BBE;&#x7F6E;  
+
+<span class="hljs-comment">///---&#x5176;&#x4ED6;</span>
+mPaint.set(Paint src);
+&#x628A;&#x53E6;&#x4E00;&#x4E2A;&#x753B;&#x7B14;&#x7684;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;Copy&#x8FC7;&#x6765;
+
+mPaint.setFlags(<span class="hljs-keyword">int</span> flags);
+&#x8FD9;&#x51E0;&#x4E2A;flag&#x5176;&#x5B9E;&#x90FD;&#x6709;&#x5BF9;&#x5E94;&#x7684;set&#x65B9;&#x6CD5;
+Paint.ANTI_ALIAS_FLAG;
+Paint.DEV_KERN_TEXT_FLAG;
+Paint.DITHER_FLAG;
+Paint.FILTER_BITMAP_FLAG;
+Paint.EMBEDDED_BITMAP_TEXT_FLAG;
+Paint.FAKE_BOLD_TEXT_FLAG;
+Paint.LINEAR_TEXT_FLAG;
+Paint.STRIKE_THRU_TEXT_FLAG;
+Paint.SUBPIXEL_TEXT_FLAG;
+Paint.UNDERLINE_TEXT_FLAG;
+Paint.HINTING_OFF;
+Paint.HINTING_ON
+</code></pre>
+<h2 id="21-&#x6297;&#x952F;&#x9F7F;">2.1 &#x6297;&#x952F;&#x9F7F;</h2>
+<p>&#x4F7F;&#x8FB9;&#x7F18;&#x66F4;&#x5E73;&#x6ED1;</p>
+<pre><code class="lang-java">mPaint.setAntiAlias(<span class="hljs-keyword">true</span>);
+mPaint = <span class="hljs-keyword">new</span> Paint(Paint.ANTI_ALIAS_FLAG);
+mPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
+</code></pre>
+<p>&#x6297;&#x952F;&#x9F7F;&#x6548;&#x679C;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/view_1.png" alt="">    </p>
+<p>&#x8FD9;&#x4E2A;&#x4E0D;&#x591A;&#x8BF4;&#x4E86;&#xFF0C;&#x4E00;&#x822C;&#x5E26;&#x7740;&#x8FD9;&#x4E2A;&#x8BBE;&#x7F6E;&#x5C31;&#x884C;</p>
+<h2 id="22-&#x6297;&#x6296;&#x52A8;">2.2 &#x6297;&#x6296;&#x52A8;</h2>
+<p>&#x6297;&#x6296;&#x52A8;&#xFF0C;&#x4F7F;&#x989C;&#x8272;&#x7684;&#x8FC7;&#x6E21;&#x66F4;&#x67D4;&#x548C;</p>
+<pre><code class="lang-java">mPaint.setDither(<span class="hljs-keyword">true</span>);
+mPaint = <span class="hljs-keyword">new</span> Paint(Paint.DITHER_FLAG);
+mPaint.setFlags(Paint.DITHER_FLAG);
+</code></pre>
+<p>&#x6297;&#x6296;&#x52A8;&#x6548;&#x679C;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/view_2.png" alt="">  </p>
+<p>&#x5927;&#x5BB6;&#x770B;&#x5230;&#x7684;&#x8FD9;&#x5F20;&#x4E03;&#x5F69;&#x6E10;&#x53D8;&#x56FE;&#x662F;&#x4E00;&#x5F20;RGB565&#x6A21;&#x5F0F;&#x4E0B;&#x56FE;&#x7247;&#xFF0C;&#x5373;&#x4FBF;&#x56FE;&#x7247;&#x4E0D;&#x662F;&#x5F88;&#x5927;&#x6211;&#x4EEC;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x5F88;&#x6E05;&#x6670;&#x5730;&#x770B;&#x5230;&#x5728;&#x4E24;&#x79CD;&#x989C;&#x8272;&#x4EA4;&#x63A5;&#x7684;&#x5730;&#x65B9;&#x6709;&#x4E00;&#x4E9B;&#x8272;&#x5757;&#x4E4B;&#x7C7B;&#x7684;&#x4E1C;&#x897F;&#x611F;&#x89C9;&#x5F88;&#x4E0D;&#x67D4;&#x548C;&#xFF0C;<br>&#x56E0;&#x4E3A;&#x5728;RGB&#x6A21;&#x5F0F;&#x4E0B;&#x53EA;&#x80FD;&#x663E;&#x793A;2^16=65535&#x79CD;&#x8272;&#x5F69;&#xFF0C;&#x56E0;&#x6B64;&#x5F88;&#x591A;&#x4E30;&#x5BCC;&#x7684;&#x8272;&#x5F69;&#x53D8;&#x5316;&#x65E0;&#x6CD5;&#x5448;&#x73B0;&#xFF0C;&#x800C;Android&#x5462;&#x4E3A;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x6297;&#x6296;&#x52A8;&#x8FD9;&#x4E48;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x4F1A;&#x5C06;&#x76F8;&#x90BB;&#x50CF;&#x7D20;&#x4E4B;&#x95F4;&#x989C;&#x8272;&#x503C;<br>&#x8FDB;&#x884C;&#x4E00;&#x79CD;&#x201C;&#x4E2D;&#x548C;&#x201D;&#x4EE5;&#x5448;&#x73B0;&#x4E00;&#x4E2A;&#x66F4;&#x7EC6;&#x817B;&#x7684;&#x8FC7;&#x6E21;&#x8272;<br>&#x653E;&#x5927;&#x6765;&#x770B;&#xFF0C;&#x5176;&#x5728;&#x5F88;&#x591A;&#x76F8;&#x90BB;&#x50CF;&#x7D20;&#x4E4B;&#x95F4;&#x63D2;&#x5165;&#x4E86;&#x4E00;&#x4E2A;&#x201C;&#x4E2D;&#x95F4;&#x503C;&#x201D;<br>&#x6297;&#x6296;&#x52A8;&#x4E0D;&#x662F;Android&#x7684;&#x4E13;&#x5229;&#xFF0C;&#x662F;&#x56FE;&#x5F62;&#x56FE;&#x50CF;&#x9886;&#x57DF;&#x7684;&#x4E00;&#x79CD;&#x89E3;&#x51B3;&#x4F4D;&#x56FE;&#x7CBE;&#x5EA6;&#x7684;&#x6280;&#x672F;</p>
+<h2 id="23-&#x8BBE;&#x7F6E;&#x753B;&#x7B14;&#x989C;&#x8272;">2.3 &#x8BBE;&#x7F6E;&#x753B;&#x7B14;&#x989C;&#x8272;</h2>
+<p>&#x8BBE;&#x7F6E;&#x753B;&#x7B14;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x6CE8;&#x610F;&#xFF0C;&#x9664;&#x4E86;&#x8FD9;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x5728;drawBitmap&#x65F6;&#xFF0C;Paint&#x5176;&#x5B9E;&#x67D3;&#x4E0A;&#x4E86;bitmap&#x7684;&#x989C;&#x8272;</p>
+<pre><code class="lang-java">mPaint.setAlpha(<span class="hljs-number">255</span>);  <span class="hljs-comment">//[0..255]</span>
+mPaint.setARGB(a, r, g, b);  <span class="hljs-comment">// &#x548C;setColor&#x4E00;&#x6837;&#xFF0C;&#x8FD9;&#x91CC;&#x6BCF;&#x4E2A;&#x503C;&#x90FD;&#x662F;(0..255)</span>
+mPaint.setColor(Color.BLUE);
+</code></pre>
+<ul>
+<li>&#x753B;&#x7B14;&#x7684;&#x989C;&#x8272;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x505A;&#x53D8;&#x6362;&#x6216;&#x8005;&#x88AB;&#x66FF;&#x6362;&#xFF1A;<ul>
+<li>ColorFilter&#x4F1A;&#x5728;&#x753B;&#x7B14;&#x989C;&#x8272;&#x4E0A;&#x505A;&#x8FC7;&#x6EE4;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;<ul>
+<li>&#x989C;&#x8272;&#x77E9;&#x9635;&#x53D8;&#x6362;&#xFF08;ColorMatrixColorFilter&#xFF09;</li>
+<li>&#x5149;&#x7167;&#x53D8;&#x6362;&#xFF08;LightingColorFilter&#xFF09;</li>
+<li>&#x8272;&#x5F69;&#x53D8;&#x6362;&#xFF08;PorterDuffColorFilter&#xFF09;</li>
+</ul>
+</li>
+<li>Shader&#xFF1A;shader&#x5373;&#x7740;&#x8272;&#x5668;&#xFF0C;&#x4F1A;&#x66FF;&#x6362;&#x6389;Paint&#x672C;&#x8EAB;&#x7684;&#x989C;&#x8272;<ul>
+<li>BitmapShader&#xFF1A;&#x4F7F;&#x7528;bitmap&#x6765;&#x7740;&#x8272;&#xFF0C;&#x9ED8;&#x8BA4;&#x4ECE;top-left&#x6765;&#x753B;bitmap<ul>
+<li>&#x5982;&#x679C;bitmap&#x5C0F;&#x4E8E;&#x7ED8;&#x5236;&#x533A;&#x57DF;&#xFF0C;&#x5219;&#x6D89;&#x53CA;&#x5230;Shader.TileMode&#x4E2D;&#x7684;&#x4E09;&#x79CD;&#x586B;&#x5145;&#x6A21;&#x5F0F;</li>
+</ul>
+</li>
+<li>LinearGradient</li>
+<li>RadialGradient</li>
+<li>SweepGradient
+*&#x4E0A;&#x9762;&#x4E09;&#x79CD;&#x662F;&#x989C;&#x8272;&#x6E10;&#x53D8;&#x6548;&#x679C;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="24-&#x8BBE;&#x7F6E;style&#xFF1A;&#x586B;&#x5145;&#x6A21;&#x5F0F;">2.4 &#x8BBE;&#x7F6E;Style&#xFF1A;&#x586B;&#x5145;&#x6A21;&#x5F0F;</h2>
+<pre><code class="lang-java">mPaint.setStyle(Paint.Style style);
+Paint.Style.FILL    &#x586B;&#x5145;&#x989C;&#x8272;&#xFF08;&#x4F7F;&#x7528;&#x753B;&#x7B14;&#x989C;&#x8272;&#xFF09;
+Paint.Style.STROKE   &#x753B;&#x8FB9;&#x6846;
+Paint.Style.FILL_AND_STROKE &#x5373;&#x586B;&#x5145;&#xFF0C;&#x4E5F;&#x753B;&#x8FB9;&#x6846;
+</code></pre>
+<p>&#x6548;&#x679C;&#x770B;&#x4E0B;&#x56FE;&#xFF0C;&#x54EA;&#x4E2A;&#x662F;stroke&#x54EA;&#x4E2A;&#x662F;fill&#x4E00;&#x76EE;&#x4E86;&#x7136;&#x4E86;&#x5427;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_stroke.png" alt=""><br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_fill.png" alt="">  </p>
+<p>&#x5173;&#x4E8E;FILL_AND_STROKE&#xFF0C;&#x600E;&#x4E48;&#x624D;&#x80FD;&#x770B;&#x51FA;&#x6765;&#x5462;&#xFF0C;&#x56E0;&#x4E3A;paint&#x7684;&#x989C;&#x8272;&#x4E00;&#x6837;&#xFF0C;&#x6240;&#x4EE5;&#x586B;&#x5145;&#x8272;&#x548C;&#x7EBF;&#x6846;&#x989C;&#x8272;&#x4E5F;&#x4E00;&#x6837;&#xFF0C;<br>&#x5176;&#x5B9E;fill&#x65F6;&#xFF0C;&#x6539;&#x53D8;strokeWidth&#x662F;&#x6CA1;&#x53CD;&#x5E94;&#x7684;&#xFF0C;&#x800C;&#x53EA;&#x8981;&#x7ED8;&#x5236;&#x4E86;stroke&#xFF0C;&#x6539;&#x53D8;strokeWidth&#x5C31;&#x6709;&#x53CD;&#x5E94;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_stroke_fill.gif" alt="">  </p>
+<h2 id="25-stroke&#x76F8;&#x5173;&#xFF1A;&#x7EBF;&#x6846;&#x5BBD;&#xFF0C;&#x7B14;&#x89E6;&#xFF0C;&#x8FDE;&#x63A5;&#x5904;">2.5 Stroke&#x76F8;&#x5173;&#xFF1A;&#x7EBF;&#x6846;&#x5BBD;&#xFF0C;&#x7B14;&#x89E6;&#xFF0C;&#x8FDE;&#x63A5;&#x5904;</h2>
+<pre><code class="lang-java">mPaint.setStrokeWidth(<span class="hljs-number">10</span>); <span class="hljs-comment">//px&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;0&#xFF0C;&#x4F46;0&#x4E0D;&#x662F;&#x770B;&#x4E0D;&#x89C1;&#xFF0C;&#x800C;&#x662F;&#x5360;&#x4E00;&#x4E2A;&#x50CF;&#x7D20;</span>
+mPaint.setStrokeMiter(<span class="hljs-number">20</span>);  <span class="hljs-comment">//&#x662F;&#x8BBE;&#x7F6E;&#x7B14;&#x753B;&#x7684;&#x503E;&#x659C;&#x5EA6;&#xFF0C;&#x5982;&#xFF1A;&#x5C0F;&#x65F6;&#x5019;&#x7528;&#x7684;&#x94C5;&#x7B14;&#xFF0C;&#x524A;&#x7684;&#x65F6;&#x5019;&#x659C;&#x4E0E;&#x5782;&#x76F4;&#x524A;&#x51FA;&#x6765;&#x7684;&#x7B14;&#x5C16;&#x6548;&#x679C;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;</span>
+
+<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x7B14;&#x89E6;&#x7684;&#x6837;&#x5F0F;&#xFF1A;&#x5F71;&#x54CD;&#x753B;&#x7B14;&#x7684;&#x59CB;&#x672B;&#x7AEF;&#xFF0C;&#x4F60;&#x753B;&#x4E00;&#x6761;line&#xFF0C;&#x7136;&#x540E;&#x589E;&#x52A0;strokeWidth&#xFF0C;&#x7B14;&#x89E6;&#x5C31;&#x80FD;&#x660E;&#x663E;&#x770B;&#x51FA;&#x6765;</span>
+mPaint.setStrokeCap(Paint.Cap.BUTT);
+mPaint.setStrokeCap(Paint.Cap.ROUND);
+mPaint.setStrokeCap(Paint.Cap.SQUARE);
+
+<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x7ED3;&#x5408;&#x5904;&#x7684;&#x6837;&#x5B50;&#xFF1A;&#x5F71;&#x54CD;&#x753B;&#x7B14;&#x7684;&#x7ED3;&#x5408;&#x5904;&#xFF0C;&#x77E9;&#x5F62;&#xFF0C;&#x6247;&#x5F62;&#x7684;&#x7ED3;&#x5408;&#x5904;&#x90FD;&#x4F1A;&#x88AB;&#x6B64;&#x5C5E;&#x6027;&#x5F71;&#x54CD;&#xFF0C;strokeWidth&#x8BBE;&#x7F6E;&#x5927;&#x70B9;&#x5C31;&#x884C;</span>
+mPaint.setStrokeJoin(Paint.Join.BEVEL); <span class="hljs-comment">//BEVEL&#xFF1A;&#x7ED3;&#x5408;&#x5904;&#x4E3A;&#x76F4;&#x7EBF;</span>
+mPaint.setStrokeJoin(Paint.Join.MITER); <span class="hljs-comment">//Miter:&#x7ED3;&#x5408;&#x5904;&#x4E3A;&#x9510;&#x89D2;</span>
+mPaint.setStrokeJoin(Paint.Join.ROUND); <span class="hljs-comment">//Round:&#x7ED3;&#x5408;&#x5904;&#x4E3A;&#x5706;&#x5F27;</span>
+</code></pre>
+<p>StrokeWidth&#x5C31;&#x4E0D;&#x591A;&#x8BF4;&#x4E86;&#xFF0C;&#x5C31;&#x662F;&#x7EBF;&#x6846;&#x5BBD;&#x5EA6;  </p>
+<p>StrokeMiter&#x6211;&#x4E5F;&#x6CA1;&#x592A;&#x660E;&#x767D;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x600E;&#x4E48;&#x770B;&#x6548;&#x679C;  </p>
+<p>&#x7B14;&#x89E6;&#xFF0C;Cap&#xFF0C;&#x63A7;&#x5236;&#x7EBF;&#x6761;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0B;&#x7B14;&#x548C;&#x8D77;&#x7B14;&#x65F6;&#x523B;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x770B;&#x4E0B;&#x56FE;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_cap.gif" alt="">  </p>
+<p>&#x7EBF;&#x6761;&#x62D0;&#x89D2;&#x5904;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x7ED3;&#x5408;&#x5904;&#x7684;&#x6837;&#x5F0F;&#xFF0C;Join&#xFF0C;&#x4E0B;&#x9762;&#x662F;drawRect&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_join.gif" alt="">  </p>
+<p>&#x6CE8;&#x610F;&#xFF0C;Cap&#x548C;Join&#x5728;stroke width&#x591F;&#x5BBD;&#x65F6;&#x624D;&#x80FD;&#x770B;&#x51FA;&#x6765;&#xFF0C;&#x5C31;&#x4E00;&#x6761;&#x7EC6;&#x7EBF;&#x65F6;&#x6CA1;&#x5565;&#x770B;&#x7684;</p>
+<h2 id="26-patheffect&#x76F8;&#x5173;">2.6 PathEffect&#x76F8;&#x5173;</h2>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x7EBF;&#x6846;&#x6837;&#x5F0F;&#xFF1A;&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x753B;&#x7EBF;&#x6761;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5982;line&#xFF0C;path&#xFF0C;rect&#xFF0C;circle&#xFF0C;oval&#xFF0C;arc&#x7B49;</span>
+mPaint.setPathEffect(PathEffect pe);
+
+&#x5177;&#x4F53;&#x6837;&#x5F0F;&#x7531;&#x5B50;&#x7C7B;&#x5B9E;&#x73B0;&#xFF1A;
+CornerPathEffect
+DiscretePathEffect
+DashPathEffect
+PathDashPathEffect
+
+&#x4E0B;&#x9762;&#x4E24;&#x4E2A;&#x662F;&#x7EC4;&#x5408;&#x6837;&#x5F0F;&#xFF0C;&#x90FD;&#x662F;&#x652F;&#x6301;&#x4E24;&#x79CD;&#x6837;&#x5F0F;&#x7684;&#x7EC4;&#x5408;
+SumPathEffect
+ComposePathEffect
+</code></pre>
+<p>&#x8DEF;&#x5F84;&#x6837;&#x5F0F;&#xFF0C;&#x56DB;&#x79CD;&#x5177;&#x4F53;&#x6837;&#x5F0F;&#x672C;&#x8EAB;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x6548;&#x679C;&#xFF0C;&#x518D;&#x914D;&#x5408;Sum&#x548C;Compose&#xFF0C;&#x4E8C;&#x8005;&#x4E4B;&#x95F4;&#x4E5F;&#x53EF;&#x4EE5;&#x518D;&#x5D4C;&#x5957;&#xFF0C;<br>&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x4EA7;&#x751F;&#x7684;&#x6548;&#x679C;&#x662F;&#x5F88;&#x96BE;&#x7A77;&#x5C3D;&#x7684;&#xFF0C;&#x4E0B;&#x9762;&#x65F6;&#x4ECE;&#x522B;&#x7684;&#x5730;&#x65B9;&#x627E;&#x5230;&#x7684;&#x56FE;&#xFF0C;&#x5C55;&#x793A;&#x4E86;&#x5927;&#x4F53;&#x6548;&#x679C;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_patheffect2.png" alt="">  </p>
+<p><code>&#x5706;&#x6ED1;&#x6548;&#x679C;&#xFF1A;</code></p>
+<pre><code>CornerPathEffect(10)&#xFF1A;&#x5706;&#x89D2;&#xFF0C;&#x53D6;&#x51FA;&#x8DEF;&#x5F84;&#x91CC;&#x7684;&#x68F1;&#x89D2;&#xFF0C;&#x53C2;&#x6570;&#x662F;radius
+</code></pre><p><code>&#x79BB;&#x6563;&#x6548;&#x679C;&#xFF1A;</code></p>
+<pre><code>DiscretePathEffect(float segmentLength, float deviation)&#xFF1A;&#x8FD9;&#x662F;&#x4EC0;&#x4E48;&#x6548;&#x679C;&#xFF0C;
+</code></pre><p>&#x7ED9;&#x4E00;&#x5F20;&#x56FE;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#xFF1A;<code>DiscretePathEffect(3.0F, 5.0F)</code><br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_descrete.png" alt=""></p>
+<p><code>&#x70B9;&#x753B;&#x7EBF;&#xFF1A;</code></p>
+<pre><code>DashPathEffect(new float[] { 20, 10, 5, 10 }, mPhase)
+&#x53C2;&#x6570;float[]&#x7684;&#x610F;&#x601D;&#x5E94;&#x8BE5;&#x662F;&#x6307;&#x5B9A;&#x4E86;&#x7EBF;&#x957F;--&#x95F4;&#x9694;&#x957F;--&#x7EBF;&#x957F;--&#x95F4;&#x9694;&#x957F;--...
+&#x53C2;&#x6570;2&#x662F;offset into the intervals array&#xFF0C;&#x901A;&#x8FC7;&#x53D8;&#x6362;&#x8FD9;&#x4E2A;&#xFF0C;&#x5E94;&#x8BE5;&#x80FD;&#x8BA9;&#x7EBF;&#x6761;&#x51FA;&#x73B0;&#x4E2A;&#x6D41;&#x52A8;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x4E0D;&#x8FC7;&#x6CA1;&#x8BD5;&#x8FC7;
+</code></pre><p><code>PathDashPathEffect</code></p>
+<pre><code>Path path = new Path();
+path.addRect(0, 0, 8, 8, Path.Direction.CCW);
+PathDashPathEffect effect = new PathDashPathEffect(path, 12, mPhase, PathDashPathEffect.Style.ROTATE);
+&#x8FD9;&#x4E2A;&#x6211;&#x8FDE;&#x540D;&#x5B57;&#x90FD;&#x4E0D;&#x77E5;&#x9053;&#xFF0C;&#x4E0D;&#x8FC7;&#x529F;&#x80FD;&#x5C31;&#x592A;&#x5F3A;&#x5927;&#x4E86;&#xFF0C;&#x6307;&#x5B9A;&#x4E2A;Path&#x6765;&#x51B3;&#x5B9A;&#x7EBF;&#x6761;&#x6837;&#x5F0F;
+&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x5C31;&#x662F;&#x7EBF;&#x6761;&#x6837;&#x5F0F;&#x662F;&#x4E00;&#x4E2A;&#x4E2A;&#x7684;8&#x50CF;&#x7D20;&#x5BBD;&#x9AD8;&#x7684;&#x77E9;&#x5F62;
+&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E2A;circle&#xFF0C;&#x5706;&#x70B9;&#x6784;&#x6210;&#x7684;&#x865A;&#x7EBF;
+&#x5982;&#x679C;path&#x662F;&#x811A;&#x5370;&#x7684;&#x5F62;&#x72B6;&#xFF0C;&#x8FD9;&#x4E2A;&#x6548;&#x679C;&#x5C31;&#x53EF;&#x4EE5;&#x6A21;&#x62DF;&#x5C0F;&#x8DEF;&#x4E0A;&#x7684;&#x811A;&#x5370;
+&#x3002;&#x3002;&#x3002;
+&#x60F3;&#x8C61;&#x7A7A;&#x95F4;&#x8FD8;&#x662F;&#x633A;&#x5927;&#x7684;
+</code></pre><p><code>ComposePathEffect&#x548C;SumPathEffect</code></p>
+<pre><code>effect = new ComposePathEffect(mEffects[2], mEffects[4]);
+effect = new SumPathEffect(mEffects[4], mEffects[3]);
+
+&#x8FD9;&#x4E24;&#x4E2A;&#x80AF;&#x5B9A;&#x4E5F;&#x90FD;&#x6709;&#x8BF4;&#x6CD5;&#xFF0C;&#x4E0D;&#x8FC7;&#x4E0D;&#x592A;&#x61C2;
+</code></pre><h1 id="3-canvas">3 Canvas</h1>
+<h2 id="31-&#x80FD;&#x753B;&#x4EC0;&#x4E48;">3.1 &#x80FD;&#x753B;&#x4EC0;&#x4E48;</h2>
+<pre><code class="lang-java">
+<span class="hljs-comment">///---&#x753B;&#x80CC;&#x666F;&#x80FD;&#x7528;&#x4E0A;&#xFF0C;&#x586B;&#x6EE1;&#x6574;&#x4E2A;Canvas</span>
+canvas.drawARGB();
+canvas.drawColor();
+canvas.drawPaint();
+
+<span class="hljs-comment">///---&#x753B;&#x70B9;</span>
+canvas.drawPoint(x, y, paint);
+canvas.drawPoints(<span class="hljs-keyword">float</span>[] pts, <span class="hljs-keyword">int</span> offest, <span class="hljs-keyword">int</span> count, paint);
+pts:[x0 y0 x1 y1 x2 y2 ...]
+offset: Number of values to skip before starting to draw
+count: &#x753B;&#x51E0;&#x4E2A;&#x70B9;&#xFF0C;skip&#x8FC7;offset&#x4E2A;&#x503C;&#x4E4B;&#x540E;&#xFF0C;&#x5904;&#x7406;count&#x4E2A;&#x70B9;&#xFF0C;&#x6CE8;&#x610F;&#xFF0C;&#x662F;count*<span class="hljs-number">2</span>&#x4E2A;&#x503C;
+
+<span class="hljs-comment">///---&#x753B;&#x7EBF;</span>
+canvas.drawLine(x, y, paint);
+canvas.drawLines(<span class="hljs-keyword">float</span>[] pts, <span class="hljs-keyword">int</span> offset, <span class="hljs-keyword">int</span> count,  Paint paint)
+pts&#x7684;&#x4E2A;&#x6570;&#x662F;<span class="hljs-number">4</span>&#x7684;&#x500D;&#x6570;&#xFF0C;&#x56E0;&#x4E3A;<span class="hljs-number">4</span>&#x4E2A;&#x503C;&#x662F;&#x4E24;&#x4E2A;&#x70B9;&#xFF0C;&#x786E;&#x5B9A;&#x4E00;&#x6761;&#x76F4;&#x7EBF;
+offest: Number of values in the array to skip before drawing
+count&#xFF1A;&#x753B;&#x51E0;&#x6761;&#x76F4;&#x7EBF;&#xFF0C;skip&#x8FC7;offset&#x4E2A;&#x503C;&#x4E4B;&#x540E;&#xFF0C;&#x5904;&#x7406;count&#x6761;&#x76F4;&#x7EBF;&#xFF0C;&#x6CE8;&#x610F;&#xFF0C;&#x662F;count*<span class="hljs-number">4</span>&#x4E2A;&#x503C;
+drawLines&#x662F;&#x79BB;&#x6563;&#x7684;&#x76F4;&#x7EBF;
+
+<span class="hljs-comment">///---&#x5706;</span>
+<span class="hljs-comment">///&#x652F;&#x6301;FILL</span>
+canvas.drawCircle(cx, cy, radius, paint);    <span class="hljs-comment">//&#x6307;&#x5B9A;&#x5706;&#x5FC3;&#x548C;&#x534A;&#x5F84;</span>
+
+<span class="hljs-comment">///---&#x77E9;&#x5F62;&#x548C;&#x5706;&#x89D2;&#x77E9;&#x5F62;</span>
+<span class="hljs-comment">///&#x652F;&#x6301;FILL</span>
+canvas.drawRect(Rect&#x6216;RectF);       <span class="hljs-comment">//Rect&#x5904;&#x7406;int&#xFF0C;RectF&#x5904;&#x7406;float</span>
+drawRect(<span class="hljs-keyword">float</span> left, <span class="hljs-keyword">float</span> top, <span class="hljs-keyword">float</span> right, <span class="hljs-keyword">float</span> bottom, Paint paint)
+drawRect(Rect r, Paint paint)
+drawRect(RectF rect, Paint paint)
+drawRoundRect(RectF rect, <span class="hljs-keyword">float</span> rx, <span class="hljs-keyword">float</span> ry, Paint paint)
+
+<span class="hljs-comment">///---&#x692D;&#x5706;</span>
+<span class="hljs-comment">///&#x652F;&#x6301;FILL</span>
+canvas.drawOval();
+RectF rectF = <span class="hljs-keyword">new</span> RectF(<span class="hljs-number">50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>+rectW, <span class="hljs-number">50</span>+rectH);
+canvas.drawOval(rectF, paint);
+
+<span class="hljs-comment">///---&#x5F27;&#x6216;&#x6247;&#x5F62;</span>
+<span class="hljs-comment">///&#x652F;&#x6301;FILL</span>
+canvas.drawArc();
+RectF rectF = <span class="hljs-keyword">new</span> RectF(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">200</span>, <span class="hljs-number">200</span>);
+canvas.drawArc(rectF, startAngle, sweepAngle, useCenter, paint);
+
+<span class="hljs-comment">///---&#x753B;Bitmap</span>
+drawBitmap(Bitmap bitmap, <span class="hljs-keyword">float</span> left, <span class="hljs-keyword">float</span> top, Paint paint)<span class="hljs-comment">//left&#x548C;top&#xFF1A;The position of the left side of the bitmap being drawn</span>
+drawBitmap(Bitmap bitmap, Rect src, RectF dst, Paint paint)
+drawBitmap(Bitmap bitmap, Rect src, Rect dst, Paint paint)
+drawBitmap(Bitmap bitmap, Matrix matrix, Paint paint)
+
+<span class="hljs-comment">///---&#x753B;Patch</span>
+canvas.drawPatch()
+drawPatch(NinePatch patch, Rect dst, Paint paint)
+drawPatch(NinePatch patch, RectF dst, Paint paint)
+
+<span class="hljs-comment">///---&#x753B;&#x6587;&#x5B57;</span>
+canvas.drawText();
+canvas.drawTextOnPath();
+canvas.drawTextRun();
+
+<span class="hljs-comment">///---&#x753B;Picture</span>
+canvas.drawPicture();
+drawPicture(Picture picture)
+drawPicture(Picture picture, RectF dst)<span class="hljs-comment">//stretched to fit into the dst rectangle</span>
+drawPicture(Picture picture, Rect dst)
+Picture&#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;Canvas&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4E0A;&#x9762;&#x7ED8;&#x56FE;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x663E;&#x793A;
+<span class="hljs-function">Canvas <span class="hljs-title">beginRecording</span><span class="hljs-params">(<span class="hljs-keyword">int</span> width, <span class="hljs-keyword">int</span> height)</span></span>;
+...&#x5BF9;canva&#x8FDB;&#x884C;&#x7ED8;&#x5236;..
+endRecording(); <span class="hljs-comment">//end&#x4E4B;&#x540E;Cavans&#x5BF9;&#x8C61;&#x4E0D;&#x53EF;&#x4EE5;&#x518D;&#x4FEE;&#x6539;</span>
+Picture.draw(Canvas canvas) <span class="hljs-comment">//&#x5C06;picture&#x7ED8;&#x5236;&#x5230;&#x6307;&#x5B9A;canvas&#x4E0A;</span>
+
+<span class="hljs-comment">///---&#x753B;Vertices</span>
+canvas.drawVertices();
+<span class="hljs-comment">//&#x8FD9;&#x4E2A;&#x8BFE;&#x9898;&#x6BD4;&#x8F83;&#x5927;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;&#x9876;&#x70B9;&#x6E32;&#x67D3;&#x76F8;&#x5173;</span>
+<span class="hljs-comment">//http://blog.csdn.net/droidpioneer/article/details/24848249</span>
+<span class="hljs-comment">//&#x53EF;&#x4EE5;&#x5BF9;&#x56FE;&#x7247;&#x8FDB;&#x884C;&#x53D8;&#x6362;&#xFF0C;&#x7406;&#x8BBA;&#x4E0A;&#x597D;&#x50CF;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x53D8;&#x6362;&#xFF0C;&#x552F;&#x4E00;&#x9700;&#x8981;&#x7684;&#x5C31;&#x662F;&#x7B97;&#x51FA;&#x9876;&#x70B9;&#x6570;&#x7EC4;</span>
+<span class="hljs-comment">//&#x6211;&#x4E5F;&#x4E0D;&#x662F;&#x592A;&#x61C2;&#x554A;&#xFF0C;&#x597D;&#x50CF;&#x548C;BitmapMesh&#x539F;&#x7406;&#x5DEE;&#x4E0D;&#x591A;</span>
+
+<span class="hljs-comment">///---&#x7F51;&#x683C;&#x53D8;&#x6362;</span>
+canvas.drawBitmapMesh()
+drawBitmapMesh(Bitmap bitmap, <span class="hljs-keyword">int</span> meshWidth, <span class="hljs-keyword">int</span> meshHeight, <span class="hljs-keyword">float</span>[] verts, <span class="hljs-keyword">int</span> vertOffset, <span class="hljs-keyword">int</span>[] colors, <span class="hljs-keyword">int</span> colorOffset, Paint paint)
+&#x53EF;&#x4EE5;&#x5BF9;&#x56FE;&#x7247;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x53D8;&#x6362;
+&#x6BD4;Matrix&#x7528;&#x8D77;&#x6765;&#x9EBB;&#x70E6;&#xFF0C;&#x56E0;&#x4E3A;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x8BA1;&#x7B97;&#x53D8;&#x6362;&#x6548;&#x679C;&#x5BF9;&#x5E94;&#x7684;&#x7F51;&#x683C;&#x5750;&#x6807;&#x6570;&#x7EC4;
+&#x6BD4;OpenGL&#x901F;&#x5EA6;&#x6162;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x9AD8;&#x7EA7;&#x70B9;&#x7684;&#x53D8;&#x6362;&#x6548;&#x679C;&#xFF0C;&#x4E00;&#x822C;&#x90FD;&#x9009;&#x7528;OpenGL
+&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x6709;&#x70B9;&#x9AD8;&#x4E0D;&#x6210;&#x4F4E;&#x4E0D;&#x5C31;&#x7684;&#x611F;&#x89C9;
+&#x539F;&#x7406;&#xFF1A;
+<span class="hljs-number">1</span> meshWidth&#x548C;meshHeight&#x6307;&#x5B9A;&#x4E86;&#x5C06;Bitmap&#x5207;&#x5206;&#x4E3A;&#x51E0;&#x4E2A;&#x7F51;&#x683C;&#xFF0C;
+&#x5982;&#x679C;meshWidth = <span class="hljs-number">9</span>&#xFF0C;meshHeight = <span class="hljs-number">19</span>  
+&#x5219;&#x6A2A;&#x5411;<span class="hljs-number">9</span>&#x683C;&#xFF0C;<span class="hljs-number">10</span>&#x6761;&#x7EBF;
+&#x7EB5;&#x5411;<span class="hljs-number">19</span>&#x683C;&#xFF0C;<span class="hljs-number">20</span>&#x6761;&#x7EBF;
+&#x6A2A;&#x5411;&#x6709;<span class="hljs-number">20</span>&#x4E2A;&#x70B9;
+&#x7EB5;&#x5411;&#x6709;<span class="hljs-number">10</span>&#x4E2A;&#x70B9;
+&#x4E00;&#x5171;<span class="hljs-number">200</span>&#x4E2A;&#x70B9;
+&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x51FA;&#x4E00;&#x4E2A;<span class="hljs-number">200</span>&#x4E2A;&#x70B9;&#x7684;verts&#x6570;&#x7EC4;&#xFF0C; [x,y,x,y,x,y...]  <span class="hljs-number">400</span>&#x4E2A;&#x5143;&#x7D20;
+&#x8FD9;&#x5C31;&#x662F;&#x539F;&#x59CB;&#x9876;&#x70B9;
+verts&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E3A;&#x8FD9;&#x7EC4;&#x9876;&#x70B9;&#xFF0C;&#x5C31;&#x662F;&#x4E0D;&#x5BF9;Bitmap&#x505A;&#x4EFB;&#x4F55;&#x53D8;&#x6362;
+&#x8FD9;&#x91CC;&#x9762;&#x7684;&#x9876;&#x70B9;&#x4F4D;&#x7F6E;&#x53D8;&#x4E86;&#xFF0C;&#x5C31;&#x662F;&#x5BF9;Bitmap&#x8FDB;&#x884C;&#x4E86;&#x53D8;&#x6362;
+&#x4F8B;&#x5982;&#x5E73;&#x79FB;&#x6548;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x6240;&#x6709;&#x9876;&#x70B9;&#x7684;x&#x503C;&#x90FD;+<span class="hljs-number">100</span>&#xFF0C;&#x8868;&#x793A;&#x5BF9;Bitmap&#x53F3;&#x79FB;<span class="hljs-number">100</span>
+
+<span class="hljs-number">2</span> &#x6240;&#x4EE5;verts.length = (meshWidth + <span class="hljs-number">1</span>) * (meshHeight + <span class="hljs-number">1</span>)
+
+&#x6CE8;&#x610F;&#xFF0C;verts&#x662F;&#x53D8;&#x6362;&#x4E4B;&#x540E;&#x7684;&#x6570;&#x7EC4;
+
+<span class="hljs-number">3</span> vertOffset&#xFF1A;&#x5BF9;verts&#x5FFD;&#x7565;&#x524D;offset&#x4E2A;&#x6570;&#x503C;
+
+
+<span class="hljs-comment">///&#x53D8;&#x6362;&#x76F8;&#x5173;</span>
+canvas.translate();
+canvas.scale();
+canvas.rotate();
+canvas.skew();
+canvas.setMatrix();
+canvas.concat();
+
+<span class="hljs-comment">///&#x56FE;&#x5C42;&#x76F8;&#x5173;</span>
+canvas.save();
+canvas.saveLayer();
+canvas.restore();
+canvas.restoreToCount();
+
+<span class="hljs-comment">///&#x526A;&#x5207;&#x76F8;&#x5173;</span>
+canvas.clipPath();
+canvas.clipRect();
+
+<span class="hljs-comment">///&#x5176;&#x4ED6;</span>
+canvas.setDrawFilter();
+canvas.setDensity();
+canvas.setBitmap();
+canvas.isHardwareAccelerated();
+canvas.isOpaque();
+canvas.quickReject();
+</code></pre>
+<h2 id="32-&#x70B9;point&#xFF0C;&#x7EBF;line&#xFF0C;&#x8DEF;&#x5F84;path">3.2 &#x70B9;Point&#xFF0C;&#x7EBF;Line&#xFF0C;&#x8DEF;&#x5F84;Path</h2>
+<p>&#x70B9;Point&#xFF0C;&#x7EBF;Line&#x90FD;<code>&#x4E0D;&#x652F;&#x6301;FILL</code><br>&#x8DEF;&#x5F84;Path<code>&#x652F;&#x6301;FILL</code></p>
+<p>&#x9700;&#x8981;&#x91CD;&#x70B9;&#x8BF4;&#x7684;&#x5C31;&#x662F;Path&#xFF0C;&#x8FD9;&#x4E2A;&#x5B9E;&#x5728;&#x592A;&#x5F3A;&#x5927;&#x4E86;&#xFF0C;&#x4EE5;&#x540E;&#x8981;&#x8BF4;&#x7684;Path&#x52A8;&#x753B;&#xFF0C;&#x4E5F;&#x662F;&#x57FA;&#x4E8E;&#x5B83;<br>Path&#x80FD;&#x753B;&#x8DEF;&#x5F84;&#xFF0C;&#x5404;&#x79CD;&#x95ED;&#x5408;&#x548C;&#x975E;&#x95ED;&#x5408;&#x7684;&#x56FE;&#x5F62;&#xFF0C;&#x80FD;&#x753B;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#xFF08;&#x4E8C;&#x9636;quad&#x548C;&#x4E09;&#x9636;cubic&#xFF09;</p>
+<ul>
+<li>&#x6CE8;&#x610F;&#xFF1A;<ul>
+<li>drawPoint&#xFF0C;&#x7ED8;&#x5236;&#x7684;&#x70B9;&#x7684;&#x5927;&#x5C0F;&#x4F1A;&#x88AB;stroke width&#x5F71;&#x54CD;</li>
+<li>drawLine&#xFF0C;&#x662F;&#x4E24;&#x4E2A;&#x70B9;&#x786E;&#x5B9A;&#x7684;&#x4E00;&#x6761;&#x76F4;&#x7EBF;</li>
+<li>drawLines&#x662F;&#x591A;&#x6761;&#x79BB;&#x6563;&#x7684;&#x76F4;&#x7EBF;</li>
+</ul>
+</li>
+</ul>
+<p><code>&#x753B;Path</code></p>
+<pre><code>
+canvas.drawPath();
+&#x8FD9;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x633A;&#x91CD;&#x8981;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x6D89;&#x53CA;&#x5230;&#xFF1A;
+Path&#xFF1A;&#x8DEF;&#x5F84;&#x672C;&#x8EAB;
+PathEffect&#xFF1A;&#x8BBE;&#x7F6E;&#x7ED9;Paint&#xFF0C;&#x8868;&#x793A;&#x7EBF;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x865A;&#x7EBF;&#x70B9;&#x753B;&#x7EBF;&#x4E4B;&#x7C7B;&#x7684;&#xFF0C;&#x6709;6&#x4E2A;&#x5B50;&#x7C7B;
+canvas.clipPath&#x4E5F;&#x7528;&#x5230;&#x4E86;path
+path&#x63CF;&#x8FF0;&#x7684;&#x4E00;&#x7EC4;&#x70B9;&#xFF0C;&#x7531;&#x76F8;&#x90BB;&#x7684;&#x4E24;&#x4E2A;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x8DEF;&#x5F84;&#x6784;&#x6210;&#xFF0C;&#x662F;&#x8FDE;&#x7EED;&#x7684;
+&#x8DEF;&#x5F84;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A;
+moveTo(float dx, float dy) &#xFF1A;&#x8D77;&#x70B9;
+lineTo(float dx, float dy) &#xFF1A;&#x76F4;&#x7EBF;
+quadTo(float dx1, float dy1, float dx2, float dy2)  &#xFF1A;&#x4E8C;&#x9636;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;
+cubicTo(float x1, float y1, float x2, float y2, float x3, float y3)&#xFF1A;&#x4E09;&#x9636;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;
+arcTo (RectF oval, float startAngle, float sweepAngle, boolean forceMoveTo)  &#xFF1A;&#x5F27;&#x7EBF;
+
+&#x589E;&#x91CF;&#x7ED8;&#x5236;&#xFF1A;
+rCubicTo(float x1, float y1, float x2, float y2, float x3, float y3)  
+rLineTo(float dx, float dy)  
+rMoveTo(float dx, float dy)  
+rQuadTo(float dx1, float dy1, float dx2, float dy2)  
+
+path.addX&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E00;&#x6BB5;&#x8DEF;&#x5F84;&#xFF0C;&#x6DFB;&#x52A0;&#x7684;&#x8DDF;&#x4E4B;&#x524D;&#x7684;&#xFF0C;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x8FDE;&#x7EED;&#x7684;
+addCircle(float x, float y, float radius, Path.Direction dir)  
+addOval(float left, float top, float right, float bottom, Path.Direction dir)  
+addRect(float left, float top, float right, float bottom, Path.Direction dir)  
+addRoundRect(float left, float top, float right, float bottom, float rx, float ry, Path.Direction dir)  
+RectF oval = new RectF(100, 100, 300, 400);  
+mPath.addArc(oval, 0, 90);  
+
+add&#x7CFB;&#x5217;&#x91CC;&#x7684;&#x53C2;&#x6570;Path.Direction&#x7684;&#x610F;&#x601D;
+&#x95ED;&#x5408;&#x66F2;&#x7EBF;&#x7684;&#x95ED;&#x5408;&#x65B9;&#x5411;&#xFF0C;&#x4E24;&#x4E2A;&#x65B9;&#x5411;:CCW&#xFF08;&#x9006;&#x65F6;&#x9488;&#xFF09;&#x548C;CW&#xFF08;&#x987A;&#x65F6;&#x9488;&#xFF09;
+&#x914D;&#x5408;&#x65B9;&#x6CD5;
+drawTextOnPath(String text, Path path, float hOffset, float vOffset, Paint paint) 
+&#x5C31;&#x597D;&#x7406;&#x89E3;&#x4E86;
+&#x95ED;&#x5408;&#x65B9;&#x5411;&#x4F1A;&#x5F71;&#x54CD;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x6587;&#x5B57;&#x65B9;&#x5411;&#x548C;&#x5728;&#x95ED;&#x5408;&#x56FE;&#x5F62;&#x7684;&#x5185;&#x90E8;&#x8FD8;&#x662F;&#x5916;&#x90E8;
+
+
+path.close()&#xFF1A;&#x5F3A;&#x5236;path&#x95ED;&#x5408;&#xFF0C;&#x5373;&#x5F3A;&#x5236;&#x52A0;&#x4E00;&#x6761;&#x4ECE;&#x8D77;&#x70B9;&#x5012;&#x7EC8;&#x70B9;&#x7684;&#x76F4;&#x7EBF;
+path.reset()&#xFF1A;&#x6E05;&#x9664;&#x73B0;&#x6709;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x53EF;&#x4EE5;&#x91CD;&#x65B0;&#x4ECE;moveTo&#x5F00;&#x59CB;&#x7ED8;&#x5236;path
+
+&#x6CE8;&#x610F;&#xFF1A;
+path&#x603B;&#x662F;&#x4ECE;moveTo&#x5F00;&#x59CB;
+lineTo, quadTo, cubicTo, arcTo&#x5305;&#x62EC;&#x5BF9;&#x5E94;&#x7684;r&#x7CFB;&#x5217;&#x65B9;&#x6CD5;&#xFF0C;&#x662F;path&#x7684;&#x63CF;&#x8FF0;
+close&#x4F1A;&#x8FFD;&#x52A0;&#x95ED;&#x5408;&#x76F4;&#x7EBF;&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x4EE5;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x70B9;&#x7ED3;&#x675F;
+reset&#xFF1A;&#x6E05;&#x9664;path&#xFF0C;&#x53EF;&#x4EE5;&#x91CD;&#x65B0;moveTo
+add&#x7CFB;&#x5217;&#x65B9;&#x6CD5;&#x4F1A;&#x7ED9;path&#x6DFB;&#x52A0;&#x79BB;&#x6563;&#x7684;&#x8DEF;&#x5F84;
+</code></pre><p>&#x770B;&#x56FE;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_path_line.gif" alt=""><br>&#x56FE;&#x91CC;&#x624B;&#x6307;&#x677E;&#x5F00;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x4E86;path.close()&#xFF0C;&#x6240;&#x6709;&#x4F1A;&#x6709;&#x4E00;&#x6761;&#x5F3A;&#x5236;&#x95ED;&#x5408;&#x7684;&#x76F4;&#x7EBF;&#xFF0C;&#x6BCF;&#x6B21;finger down&#x90FD;path.reset()&#x7136;&#x540E;moveTo(x, y)<br>&#x8FD9;&#x91CC;&#x7684;&#x8DEF;&#x5F84;&#x7531;lineTo&#x7ED8;&#x5236;  </p>
+<p>&#x4E8C;&#x9636;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#xFF1A;quadTo&#x548C;rQuadTo<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_quad.gif" alt="">  </p>
+<p>&#x4E09;&#x9636;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#xFF1A;cubicTo&#x548C;rCubicTo<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_cubic.gif" alt=""><br>&#x4E24;&#x4E2A;&#x63A7;&#x5236;&#x70B9;&#x914D;&#x5408;&#x7684;&#x5BF9;&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x6A21;&#x62DF;&#x676F;&#x4E2D;&#x6C34;&#x9762;&#x6643;&#x52A8;&#x6548;&#x679C;&#xFF0C;&#x518D;&#x81EA;&#x5DF1;&#x628A;&#x5E95;&#x8FB9;&#x548C;&#x4FA7;&#x8FB9;&#x7684;&#x76F4;&#x7EBF;&#x753B;&#x4E0A;&#xFF0C;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x95ED;&#x5408;path&#xFF0C;<br>&#x5229;&#x7528;clip&#x586B;&#x5145;path&#x7A7A;&#x95F4;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x676F;&#x4E2D;&#x6C34;&#x7279;&#x6548;&#xFF0C;&#x8FD9;&#x91CC;&#x4E0D;&#x5728;&#x5C55;&#x793A;<br>&#x518D;&#x914D;&#x5408;path&#x52A8;&#x753B;&#xFF0C;&#x7ED9;&#x51E0;&#x4E2A;&#x6C14;&#x6CE1;&#x6643;&#x4E0A;&#x6765;&#xFF0C;&#x4E0D;&#x9519;&#x5427;</p>
+<h2 id="33-&#x57FA;&#x672C;&#x56FE;&#x5F62;">3.3 &#x57FA;&#x672C;&#x56FE;&#x5F62;</h2>
+<p>&#x8FD9;&#x91CC;&#x8BF4;&#x8BF4;&#x5706;&#xFF0C;&#x77E9;&#x5F62;&#xFF0C;&#x5706;&#x89D2;&#x77E9;&#x5F62;&#xFF0C;&#x692D;&#x5706;&#xFF0C;&#x6247;&#x5F62;&#xFF0C;&#x8FD9;&#x51E0;&#x4E2A;&#x90FD;<code>&#x652F;&#x6301;FILL</code><br>&#x5176;&#x5B9E;&#x8BF4;&#x591A;&#x4E86;&#x4E5F;&#x6CA1;&#x7528;&#xFF0C;&#x8FD9;&#x91CC;&#x53EA;&#x7ED9;&#x51FA;&#x53C2;&#x6570;&#x57FA;&#x672C;&#x7528;&#x6CD5;&#x548C;&#x5C55;&#x793A;&#x4E00;&#x4E0B;&#x53EF;&#x80FD;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x5177;&#x4F53;&#x8FD8;&#x5F97;&#x81EA;&#x5DF1;&#x591A;&#x5199;demo&#x5C1D;&#x8BD5;  </p>
+<h3 id="331-&#x5706;">3.3.1 &#x5706;</h3>
+<pre><code class="lang-java">canvas.drawCircle(cx, cy, radius, paint);    <span class="hljs-comment">//&#x6307;&#x5B9A;&#x5706;&#x5FC3;&#x548C;&#x534A;&#x5F84;</span>
+</code></pre>
+<p><code>&#x7EBF;&#x6846;</code><br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_circle_stroke.png" alt="">  </p>
+<p><code>&#x586B;&#x5145;</code><br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_circle_fill.png" alt="">  </p>
+<p><code>&#x63A7;&#x5236;stroke width&#x753B;&#x5706;&#x73AF;</code><br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_circle_stroke2.png" alt="">  </p>
+<h3 id="332-&#x77E9;&#x5F62;">3.3.2 &#x77E9;&#x5F62;</h3>
+<pre><code class="lang-java">canvas.drawRect(Rect&#x6216;RectF);       <span class="hljs-comment">//Rect&#x5904;&#x7406;int&#xFF0C;RectF&#x5904;&#x7406;float</span>
+drawRect(<span class="hljs-keyword">float</span> left, <span class="hljs-keyword">float</span> top, <span class="hljs-keyword">float</span> right, <span class="hljs-keyword">float</span> bottom, Paint paint)
+drawRect(Rect r, Paint paint)
+drawRect(RectF rect, Paint paint)
+</code></pre>
+<p><code>Join&#x4F1A;&#x5F71;&#x54CD;&#x7EBF;&#x6846;&#x7684;&#x7ED3;&#x5408;&#x5904;&#x6548;&#x679C;</code><br>Join.BEVEL&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/rect_bevel.png" alt="">    </p>
+<p>Join.MITER&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/rect_miter.png" alt="">    </p>
+<p>Join.ROUND&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/rect_round.png" alt="">    </p>
+<p>&#x586B;&#x5145;&#xFF1A;&#xFF08;&#x4E0D;&#x4F1A;&#x53D7;Join&#x5F71;&#x54CD;&#xFF09;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/rect_fill.png" alt="">    </p>
+<p>Rect&#x548C;RectF&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code>uninon, intersect, contains&#x70B9;&#xFF0C;contains&#x77E9;&#x5F62;&#x7B49;&#xFF0C;&#x5C31;&#x4E0D;&#x591A;&#x8BF4;&#x4E86;
+</code></pre><h3 id="333-&#x5706;&#x89D2;&#x77E9;&#x5F62;">3.3.3 &#x5706;&#x89D2;&#x77E9;&#x5F62;</h3>
+<pre><code class="lang-java">drawRoundRect(RectF rect, <span class="hljs-keyword">float</span> rx, <span class="hljs-keyword">float</span> ry, Paint paint)
+</code></pre>
+<p>&#x6CE8;&#x610F;&#x53C2;&#x6570;rx&#x548C;ry&#xFF0C;&#x5C31;&#x662F;x&#x65B9;&#x5411;&#x548C;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x62D0;&#x89D2;&#x5F27;&#x5EA6;&#xFF0C;&#x770B;&#x5982;&#x4E0B;&#x6548;&#x679C;&#xFF0C;&#x80FD;&#x77E5;&#x9053;&#x4E2A;&#x5927;&#x6982;&#x5427;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_round_rect.png" alt=""></p>
+<h3 id="334-&#x692D;&#x5706;">3.3.4 &#x692D;&#x5706;</h3>
+<pre><code class="lang-java">canvas.drawOval();
+RectF rectF = <span class="hljs-keyword">new</span> RectF(<span class="hljs-number">50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>+rectW, <span class="hljs-number">50</span>+rectH);
+canvas.drawOval(rectF, paint);
+</code></pre>
+<p>&#x692D;&#x5706;&#x7531;&#x4E00;&#x4E2A;&#x5916;&#x63A5;&#x77E9;&#x5F62;&#x51B3;&#x5B9A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_oval_stroke.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_oval_fill.png" alt=""></p>
+<h3 id="335-&#x6247;&#x5F62;&#x548C;&#x5F27;">3.3.5 &#x6247;&#x5F62;&#x548C;&#x5F27;</h3>
+<pre><code class="lang-java"><span class="hljs-comment">///---&#x6247;&#x5F62;&#x548C;&#x5F27;</span>
+<span class="hljs-comment">///&#x652F;&#x6301;FILL</span>
+canvas.drawArc();
+RectF rectF = <span class="hljs-keyword">new</span> RectF(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">200</span>, <span class="hljs-number">200</span>);
+canvas.drawArc(rectF, startAngle, sweepAngle, useCenter, paint);
+</code></pre>
+<ul>
+<li>&#x7531;&#x4E00;&#x4E2A;&#x5916;&#x63A5;&#x77E9;&#x5F62;&#x51B3;&#x5B9A;&#x4E00;&#x4E2A;&#x692D;&#x5706;&#xFF0C;&#x5728;&#x692D;&#x5706;&#x91CC;&#x53D6;&#x4E00;&#x4E2A;&#x8D77;&#x59CB;&#x89D2;&#x5EA6;&#x548C;&#x4E00;&#x4E2A;&#x8DE8;&#x5EA6;&#xFF0C;&#x5C31;&#x662F;&#xFF1A;<ul>
+<li>&#x5982;&#x679C;&#x8981;&#x5706;&#x5FC3;&#x5230;&#x5F27;&#x7EBF;&#x7684;&#x8FDE;&#x7EBF;&#xFF0C;&#x5219;&#x662F;&#x4E00;&#x4E2A;&#x6247;&#x5F62;</li>
+<li>&#x5426;&#x5219;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5F27;&#x7EBF;&#xFF0C;&#x6216;&#x8005;&#x5728;FILL&#x6A21;&#x5F0F;&#x4E0B;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x77E5;&#x9053;&#x540D;&#x5B57;&#x7684;&#x5F62;&#x72B6;</li>
+</ul>
+</li>
+</ul>
+<p>&#x770B;&#x56FE;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_arc.gif" alt=""></p>
+<h2 id="35-bitmap">3.5 Bitmap</h2>
+<pre><code class="lang-java"><span class="hljs-comment">///---&#x753B;Bitmap</span>
+drawBitmap(Bitmap bitmap, <span class="hljs-keyword">float</span> left, <span class="hljs-keyword">float</span> top, Paint paint)<span class="hljs-comment">//left&#x548C;top&#xFF1A;The position of the left side of the bitmap being drawn</span>
+drawBitmap(Bitmap bitmap, Rect src, RectF dst, Paint paint)
+drawBitmap(Bitmap bitmap, Rect src, Rect dst, Paint paint)
+drawBitmap(Bitmap bitmap, Matrix matrix, Paint paint)
+
+<span class="hljs-comment">///---&#x753B;Patch</span>
+canvas.drawPatch()
+drawPatch(NinePatch patch, Rect dst, Paint paint)
+drawPatch(NinePatch patch, RectF dst, Paint paint)
+</code></pre>
+<ul>
+<li>&#x6CE8;&#x610F;&#xFF1A;<ul>
+<li>drawBitmap&#x603B;&#x662F;&#x4F1A;&#x5C1D;&#x8BD5;&#x628A;src&#x533A;&#x57DF;&#x5168;&#x90E8;&#x753B;&#x5230;dest&#x91CC;&#xFF0C;&#x56FE;&#x7247;&#x4F1A;&#x62C9;&#x4F38;&#x53D8;&#x5F62;&#xFF0C;&#x5BF9;&#x4E8E;png&#x56FE;&#x7247;&#x6765;&#x8BF4;&#x662F;&#x8FD9;&#x6837;</li>
+<li>&#x5BF9;&#x4E8E;jpg&#x56FE;&#x7247;&#x6765;&#x8BF4;&#xFF0C;&#x6CA1;&#x505A;&#x8FC7;&#x592A;&#x591A;&#x7814;&#x7A76;&#xFF0C;&#x4F46;&#x662F;&#x56FE;&#x7247;&#x4E0D;&#x4F1A;&#x4FDD;&#x8BC1;&#x5168;&#x663E;&#x793A;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x4FDD;&#x8BC1;&#x4E0D;&#x53D8;&#x5F62;</li>
+<li>&#x5982;&#x679C;&#x9700;&#x8981;bitmap&#x9002;&#x5E94;view&#x7684;&#x5C3A;&#x5BF8;&#xFF0C;&#x5E94;&#x8BE5;&#x7528;drawBitmap(Bitmap bitmap, Matrix matrix, Paint paint)</li>
+<li>ImageView&#x662F;&#x4F9D;&#x9760;canvas&#x53D8;&#x6362;&#x548C;Drawable&#x7ED8;&#x5236;Bitmap</li>
+<li>drawBitmap&#x53EF;&#x4EE5;&#x7ED9;Paint&#x53C2;&#x6570;&#x4F20;&#x5165;null</li>
+<li>&#x5982;&#x679C;&#x4F20;&#x5165;paint&#xFF0C;&#x5219;paint&#x7684;color&#x5C5E;&#x6027;&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#x4E86;&#xFF0C;&#x4F46;ColorFilter&#xFF0C;Xfermode&#x7B49;&#x8FD8;&#x8D77;&#x4F5C;&#x7528;</li>
+</ul>
+</li>
+</ul>
+<h2 id="36-picture">3.6 Picture</h2>
+<pre><code class="lang-java"><span class="hljs-comment">///---&#x753B;Picture</span>
+canvas.drawPicture();
+drawPicture(Picture picture)
+drawPicture(Picture picture, RectF dst)<span class="hljs-comment">//stretched to fit into the dst rectangle</span>
+drawPicture(Picture picture, Rect dst)
+Picture&#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;Canvas&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4E0A;&#x9762;&#x7ED8;&#x56FE;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x663E;&#x793A;
+<span class="hljs-function">Canvas <span class="hljs-title">beginRecording</span><span class="hljs-params">(<span class="hljs-keyword">int</span> width, <span class="hljs-keyword">int</span> height)</span></span>;
+...&#x5BF9;canva&#x8FDB;&#x884C;&#x7ED8;&#x5236;..
+endRecording(); <span class="hljs-comment">//end&#x4E4B;&#x540E;Cavans&#x5BF9;&#x8C61;&#x4E0D;&#x53EF;&#x4EE5;&#x518D;&#x4FEE;&#x6539;</span>
+Picture.draw(Canvas canvas) <span class="hljs-comment">//&#x5C06;picture&#x7ED8;&#x5236;&#x5230;&#x6307;&#x5B9A;canvas&#x4E0A;</span>
+</code></pre>
+<ul>
+<li>&#x6CE8;&#x610F;&#xFF1A;<ul>
+<li>&#x53EF;&#x4EE5;&#x5728;&#x5B50;&#x7EBF;&#x7A0B;&#xFF0C;&#x6216;&#x8005;&#x521D;&#x59CB;&#x5316;&#x65F6;&#xFF0C;&#x5B9E;&#x73B0;&#x5728;Picture&#x63D0;&#x4F9B;&#x7684;Canvas&#x4E0A;&#x7ED8;&#x56FE;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x663E;&#x793A;</li>
+<li>&#x5728;onDraw&#x91CC;&#xFF0C;drawPicture&#x5C31;&#x4F1A;&#x5C06;&#x8FD9;&#x4E9B;&#x7ED8;&#x5236;&#x7ED3;&#x679C;&#x7ED8;&#x5236;&#x5230;&#x771F;&#x6B63;&#x7684;Canvas&#x4E0A;&#xFF0C;&#x663E;&#x793A;&#x5728;&#x754C;&#x9762;&#x4E0A;</li>
+</ul>
+</li>
+</ul>
+<p>Picture</p>
+<h2 id="37-vertices">3.7 Vertices</h2>
+<pre><code class="lang-java">
+<span class="hljs-comment">///---&#x753B;Vertices</span>
+canvas.drawVertices();
+<span class="hljs-comment">//&#x8FD9;&#x4E2A;&#x8BFE;&#x9898;&#x6BD4;&#x8F83;&#x5927;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;&#x9876;&#x70B9;&#x6E32;&#x67D3;&#x76F8;&#x5173;</span>
+<span class="hljs-comment">//http://blog.csdn.net/droidpioneer/article/details/24848249</span>
+<span class="hljs-comment">//&#x53EF;&#x4EE5;&#x5BF9;&#x56FE;&#x7247;&#x8FDB;&#x884C;&#x53D8;&#x6362;&#xFF0C;&#x7406;&#x8BBA;&#x4E0A;&#x597D;&#x50CF;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x53D8;&#x6362;&#xFF0C;&#x552F;&#x4E00;&#x9700;&#x8981;&#x7684;&#x5C31;&#x662F;&#x7B97;&#x51FA;&#x9876;&#x70B9;&#x6570;&#x7EC4;</span>
+<span class="hljs-comment">//&#x6211;&#x4E5F;&#x4E0D;&#x662F;&#x592A;&#x61C2;&#x554A;&#xFF0C;&#x597D;&#x50CF;&#x548C;BitmapMesh&#x539F;&#x7406;&#x5DEE;&#x4E0D;&#x591A;</span>
+</code></pre>
+<h2 id="38-text">3.8 Text</h2>
+<pre><code class="lang-java"><span class="hljs-comment">///---&#x753B;&#x6587;&#x5B57;</span>
+canvas.drawText(txt, startX, startY, paint);
+startX, startY&#x5BF9;&#x5E94;&#x7684;&#x70B9;&#x5F80;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x8D70;&#xFF0C;&#x51B3;&#x5B9A;&#x4E86;base line
+
+canvas.drawTextOnPath();
+canvas.drawTextRun();
+
+<span class="hljs-comment">///&#x753B;&#x6587;&#x5B57;&#x76F8;&#x5173;&#x7684;&#xFF0C;&#x540E;&#x9762;&#x4F1A;&#x5355;&#x72EC;&#x5206;&#x6790;&#x5B57;&#x4F53;&#x76F8;&#x5173;</span>
+mPaint.setTextAlign(Align align);
+mPaint.setTextLocale(Locale.CHINESE);
+mPaint.setTextScaleX(<span class="hljs-keyword">float</span> scaleX);
+mPaint.setTextSize(<span class="hljs-keyword">float</span> textSize);
+mPaint.setTextSkewX(<span class="hljs-keyword">float</span> skewZ);
+mPaint.setTypeface(Typeface typeface);
+
+mPaint.setFakeBoldText(<span class="hljs-keyword">false</span>);
+mPaint.setLinearText(<span class="hljs-keyword">false</span>);
+mPaint.setStrikeThruText(<span class="hljs-keyword">false</span>);
+mPaint.setUnderlineText(<span class="hljs-keyword">false</span>);
+mPaint.setSubpixelText(<span class="hljs-keyword">false</span>);
+mPaint.setHinting(<span class="hljs-keyword">int</span> mode);
+</code></pre>
+<p>drawText&#x4F1A;&#x53D7;FILL&#xFF0C;STROKE&#x5F71;&#x54CD;&#xFF0C;&#x4E5F;&#x4F1A;&#x53D7;stroke width&#x5F71;&#x54CD;  </p>
+<p>&#x8FD9;&#x91CC;&#x6709;&#x51E0;&#x4E2A;&#x57FA;&#x672C;&#x6982;&#x5FF5;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_text_line.png" alt=""><br>&#x8FD8;&#x6709;&#x4E00;&#x6761;&#x7EBF;&#x662F;leading&#xFF0C;&#x63A7;&#x5236;&#x884C;&#x95F4;&#x8DDD;&#xFF0C;&#x5355;&#x884C;&#x6587;&#x5B57;&#x8FD9;&#x4E2A;&#x503C;&#x5C31;&#x662F;0&#xFF0C;&#x5373;leading&#x7EBF;&#x548C;base&#x7EBF;&#x91CD;&#x5408;  </p>
+<pre><code class="lang-java">&#x8FD9;&#x51E0;&#x4E2A;&#x503C;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5F97;&#x5230;&#xFF1A;
+Paint.FontMetrics mFontMetrics = paint.getFontMetrics();
+
+Log.d(<span class="hljs-string">&quot;aa&quot;</span>, <span class="hljs-string">&quot;ascent&#xFF1A;&quot;</span> + mFontMetrics.ascent);
+Log.d(<span class="hljs-string">&quot;aa&quot;</span>, <span class="hljs-string">&quot;top&#xFF1A;&quot;</span> + mFontMetrics.top);
+Log.d(<span class="hljs-string">&quot;aa&quot;</span>, <span class="hljs-string">&quot;leading&#xFF1A;&quot;</span> + mFontMetrics.leading);
+Log.d(<span class="hljs-string">&quot;aa&quot;</span>, <span class="hljs-string">&quot;descent&#xFF1A;&quot;</span> + mFontMetrics.descent);
+Log.d(<span class="hljs-string">&quot;aa&quot;</span>, <span class="hljs-string">&quot;bottom&#xFF1A;&quot;</span> + mFontMetrics.bottom);
+<span class="hljs-keyword">float</span> totalWidth = paint.measureText(txt);  <span class="hljs-comment">///&#x6D4B;&#x91CF;&#x6587;&#x5B57;&#x5BBD;&#x5EA6;</span>
+
+<span class="hljs-comment">//&#x5404;&#x81EA;&#x5750;&#x6807;&#x5C31;&#x80FD;&#x8BA1;&#x7B97;&#x51FA;&#x6765;&#x4E86;</span>
+<span class="hljs-keyword">float</span> ascentPostion = startY + mFontMetrics.ascent;
+<span class="hljs-keyword">float</span> descentPostion = startY + mFontMetrics.descent;
+<span class="hljs-keyword">float</span> topPosition = startY + mFontMetrics.top;
+<span class="hljs-keyword">float</span> bottomPosition = startY + mFontMetrics.bottom;
+<span class="hljs-keyword">float</span> basePosition = startY;
+</code></pre>
+<p>&#x6D4B;&#x91CF;&#x6587;&#x5B57;&#x5BBD;&#x5EA6;</p>
+<pre><code>float totalWidth = paint.measureText(txt);
+</code></pre><ul>
+<li>&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x95EE;&#x9898;&#xFF1A;<ul>
+<li>&#x8BA9;&#x6587;&#x672C;&#x5C45;&#x4E2D;&#xFF1A;&#x9700;&#x8981;&#x7ED3;&#x5408;baseline&#x8FD9;&#x51E0;&#x4E2A;&#x53C2;&#x6570;&#x8BA1;&#x7B97;</li>
+<li>&#x5904;&#x7406;&#x6362;&#x884C;&#x7B26;&#xFF1A;StaticLayout</li>
+<li>draw on path&#x4E5F;&#x633A;&#x6709;&#x610F;&#x601D;&#xFF0C;&#x6587;&#x5B57;&#x8D70;&#x5411;&#x7531;Path&#x7684;&#x8DEF;&#x5F84;&#x6307;&#x5B9A;</li>
+<li>&#x5220;&#x9664;&#x7EBF;&#xFF0C;&#x4E0B;&#x5212;&#x7EBF;&#x7B49;</li>
+</ul>
+</li>
+</ul>
+<p>&#x8BBE;&#x7F6E;paint.setStyle(STROKE)&#x65F6;&#xFF0C;&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_text_stroke.png" alt="">    </p>
+<h2 id="39-bitmapmesh">3.9 BitmapMesh</h2>
+<pre><code class="lang-java"><span class="hljs-comment">///---&#x7F51;&#x683C;&#x53D8;&#x6362;</span>
+canvas.drawBitmapMesh()
+drawBitmapMesh(Bitmap bitmap, <span class="hljs-keyword">int</span> meshWidth, <span class="hljs-keyword">int</span> meshHeight, <span class="hljs-keyword">float</span>[] verts, <span class="hljs-keyword">int</span> vertOffset, <span class="hljs-keyword">int</span>[] colors, <span class="hljs-keyword">int</span> colorOffset, Paint paint)
+&#x53EF;&#x4EE5;&#x5BF9;&#x56FE;&#x7247;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x53D8;&#x6362;
+&#x6BD4;Matrix&#x7528;&#x8D77;&#x6765;&#x9EBB;&#x70E6;&#xFF0C;&#x56E0;&#x4E3A;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x8BA1;&#x7B97;&#x53D8;&#x6362;&#x6548;&#x679C;&#x5BF9;&#x5E94;&#x7684;&#x7F51;&#x683C;&#x5750;&#x6807;&#x6570;&#x7EC4;
+&#x6BD4;OpenGL&#x901F;&#x5EA6;&#x6162;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x9AD8;&#x7EA7;&#x70B9;&#x7684;&#x53D8;&#x6362;&#x6548;&#x679C;&#xFF0C;&#x4E00;&#x822C;&#x90FD;&#x9009;&#x7528;OpenGL
+&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x6709;&#x70B9;&#x9AD8;&#x4E0D;&#x6210;&#x4F4E;&#x4E0D;&#x5C31;&#x7684;&#x611F;&#x89C9;
+&#x539F;&#x7406;&#xFF1A;
+<span class="hljs-number">1</span> meshWidth&#x548C;meshHeight&#x6307;&#x5B9A;&#x4E86;&#x5C06;Bitmap&#x5207;&#x5206;&#x4E3A;&#x51E0;&#x4E2A;&#x7F51;&#x683C;&#xFF0C;
+&#x5982;&#x679C;meshWidth = <span class="hljs-number">9</span>&#xFF0C;meshHeight = <span class="hljs-number">19</span>  
+&#x5219;&#x6A2A;&#x5411;<span class="hljs-number">9</span>&#x683C;&#xFF0C;<span class="hljs-number">10</span>&#x6761;&#x7EBF;
+&#x7EB5;&#x5411;<span class="hljs-number">19</span>&#x683C;&#xFF0C;<span class="hljs-number">20</span>&#x6761;&#x7EBF;
+&#x6A2A;&#x5411;&#x6709;<span class="hljs-number">20</span>&#x4E2A;&#x70B9;
+&#x7EB5;&#x5411;&#x6709;<span class="hljs-number">10</span>&#x4E2A;&#x70B9;
+&#x4E00;&#x5171;<span class="hljs-number">200</span>&#x4E2A;&#x70B9;
+&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x51FA;&#x4E00;&#x4E2A;<span class="hljs-number">200</span>&#x4E2A;&#x70B9;&#x7684;verts&#x6570;&#x7EC4;&#xFF0C; [x,y,x,y,x,y...]  <span class="hljs-number">400</span>&#x4E2A;&#x5143;&#x7D20;
+&#x8FD9;&#x5C31;&#x662F;&#x539F;&#x59CB;&#x9876;&#x70B9;
+verts&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E3A;&#x8FD9;&#x7EC4;&#x9876;&#x70B9;&#xFF0C;&#x5C31;&#x662F;&#x4E0D;&#x5BF9;Bitmap&#x505A;&#x4EFB;&#x4F55;&#x53D8;&#x6362;
+&#x8FD9;&#x91CC;&#x9762;&#x7684;&#x9876;&#x70B9;&#x4F4D;&#x7F6E;&#x53D8;&#x4E86;&#xFF0C;&#x5C31;&#x662F;&#x5BF9;Bitmap&#x8FDB;&#x884C;&#x4E86;&#x53D8;&#x6362;
+&#x4F8B;&#x5982;&#x5E73;&#x79FB;&#x6548;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x6240;&#x6709;&#x9876;&#x70B9;&#x7684;x&#x503C;&#x90FD;+<span class="hljs-number">100</span>&#xFF0C;&#x8868;&#x793A;&#x5BF9;Bitmap&#x53F3;&#x79FB;<span class="hljs-number">100</span>
+
+<span class="hljs-number">2</span> &#x6240;&#x4EE5;verts.length = (meshWidth + <span class="hljs-number">1</span>) * (meshHeight + <span class="hljs-number">1</span>)
+
+&#x6CE8;&#x610F;&#xFF0C;verts&#x662F;&#x53D8;&#x6362;&#x4E4B;&#x540E;&#x7684;&#x6570;&#x7EC4;
+
+<span class="hljs-number">3</span> vertOffset&#xFF1A;&#x5BF9;verts&#x5FFD;&#x7565;&#x524D;offset&#x4E2A;&#x6570;&#x503C;
+</code></pre>
+<p>&#x80FD;&#x5BF9;Bitmap&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x53D8;&#x6362;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x6743;&#x5A01;&#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x76F4;&#x63A5;&#x62F7;&#x8FC7;&#x6765;&#x4E86;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_bitmap_mesh.gif" alt=""></p>
+<h2 id="310-clip&#x529F;&#x80FD;">3.10 clip&#x529F;&#x80FD;</h2>
+<p>&#x88C1;&#x526A;&#x753B;&#x5E03;&#xFF0C;&#x9650;&#x5B9A;&#x53EF;&#x7ED8;&#x5236;&#x533A;&#x57DF;&#xFF0C;&#x5E76;&#x4E14;&#x88C1;&#x526A;&#x6307;&#x5B9A;&#x7684;&#x77E9;&#x5F62;&#xFF0C;path&#x7B49;&#xFF0C;&#x53D7;&#x5230;&#x5F53;&#x524D;Matrix&#x7684;&#x5F71;&#x54CD;<br>clipRegion&#x91CC;&#x5916;&#xFF0C;Region&#x6307;&#x5B9A;&#x4E2A;&#x77E9;&#x5F62;&#xFF0C;&#x4F46;&#x4E0D;&#x53D7;Matrix&#x5F71;&#x54CD;&#xFF0C;&#x5982;&#x4ECA;&#x5DF2;&#x5E9F;&#x5F03;</p>
+<ul>
+<li>&#x6240;&#x4EE5;&#xFF0C;&#x73B0;&#x5728;&#x5C31;&#x5269;&#x4E0B;&#xFF1A;<ul>
+<li>clipRect&#xFF1A;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;Rect&#x4E3A;&#x526A;&#x5207;&#x533A;&#x57DF;</li>
+<li>clipPath&#xFF1A;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;Path&#x7684;&#x95ED;&#x5408;&#x56FE;&#x5F62;&#x4E3A;&#x526A;&#x5207;&#x533A;&#x57DF;&#xFF08;Path&#x4F1A;&#x81EA;&#x52A8;close&#xFF09;</li>
+<li>clipRect&#x548C;clipPath&#x53EF;&#x4EE5;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Region.Op&#x8FDB;&#x884C;&#x7EC4;&#x5408;<ul>
+<li>DIFFERENCE&#xFF1A; &#x4FDD;&#x7559;&#x524D;&#x533A;&#x57DF;&#x4E2D;&#x7684;&#x548C;&#x540E;&#x533A;&#x57DF;&#x4E0D;&#x91CD;&#x5408;&#x7684;&#x5730;&#x65B9;</li>
+<li>REVERSE_DIFFERENCE&#xFF1A;&#x4FDD;&#x7559;&#x540E;&#x533A;&#x57DF;&#x4E2D;&#x7684;&#x548C;&#x524D;&#x533A;&#x57DF;&#x4E0D;&#x91CD;&#x5408;&#x7684;&#x5730;&#x65B9;&quot;);</li>
+<li>INTERSECT&#xFF1A;&#x4FDD;&#x7559;&#x524D;&#x540E;&#x533A;&#x57DF;&#x91CD;&#x5408;&#x7684;&#x5730;&#x65B9;&quot;);</li>
+<li>REPLACE&#xFF1A;&#x53EA;&#x4FDD;&#x7559;&#x540E;&#x533A;&#x57DF;--&#x8FD9;&#x4E2A;&#x5E94;&#x8BE5;&#x662F;&#x9ED8;&#x8BA4;&#x503C;</li>
+<li>UNION&#xFF1A;&#x4FDD;&#x7559;&#x524D;&#x540E;&#x533A;&#x57DF;&quot;);</li>
+<li>XOR&#xFF1A;&#x5BF9;&#x4E8E;UNION&#xFF0C;&#x62A0;&#x51FA;INTERSECT&#xFF0C;&#x5373;&#x53BB;&#x6389;&#x524D;&#x540E;&#x91CD;&#x5408;&#x7684;&#x5730;&#x65B9;&quot;);</li>
+</ul>
+</li>
+<li>&#x88C1;&#x526A;&#x4E4B;&#x540E;&#xFF0C;draw&#x7684;&#x4EFB;&#x4F55;&#x5185;&#x5BB9;&#xFF0C;&#x90FD;&#x53EA;&#x7ED8;&#x5236;&#x5728;&#x88C1;&#x526A;&#x533A;&#x57DF;&#x5185;</li>
+</ul>
+</li>
+</ul>
+<p>&#x770B;&#x4E0B;&#x6548;&#x679C;&#x5427;&#xFF1A;</p>
+<pre><code>// &#x88C1;&#x526A;&#x533A;&#x57DF;A
+canvas.clipRect(mRegionA);
+// &#x88C1;&#x526A;&#x533A;&#x57DF;B
+canvas.clipPath(path, Region.Op.DIFFERENCE);
+
+Region.Op.DIFFERENCE&#x6307;&#x5B9A;&#x4E86;&#x4E8C;&#x8005;&#x7684;&#x53E0;&#x52A0;&#x65B9;&#x5F0F;
+</code></pre><p>&#x56FE;&#x4E2D;&#x7EA2;&#x8272;&#x533A;&#x57DF;&#x5C31;&#x662F;&#x526A;&#x5207;&#x533A;&#x57DF;&#xFF0C;&#x7EA2;&#x8272;&#x662F;&#x901A;&#x8FC7;drawColor&#x7ED8;&#x5236;&#x4E0A;&#x7684;&#xFF0C;&#x9ED8;&#x8BA4;drawColor&#x4F1A;&#x7ED8;&#x5236;canvas&#x5168;&#x5C4F;&#xFF0C;&#x4F46;&#x5176;&#x5B9E;&#x53D7;&#x5236;&#x4E8E;clip&#x533A;&#x57DF;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_clip_op.gif" alt=""></p>
+<h2 id="311-&#x56FE;&#x5C42;&#x53CA;&#x5176;matrix&#x53D8;&#x6362;">3.11 &#x56FE;&#x5C42;&#x53CA;&#x5176;Matrix&#x53D8;&#x6362;</h2>
+<p>&#x5176;&#x5B9E;&#x8DDF;&#x52A8;&#x753B;&#x7684;&#x6548;&#x679C;&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x90FD;&#x662F;&#x5E73;&#x79FB;&#xFF0C;&#x65CB;&#x8F6C;&#xFF0C;&#x7F29;&#x653E;&#xFF0C;&#x9519;&#x5207;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x8FC7;Matrix&#x6307;&#x5B9A;&#x53D8;&#x6362;&#x6548;&#x679C;  </p>
+<pre><code>///&#x53D8;&#x6362;&#x76F8;&#x5173;
+canvas.translate(translateX, translatey)
+canvas.scale(sx, sy, centerX, centerY);
+canvas.rotate(rotate, centerX, centerY)
+canvas.skew(sx, sy)
+canvas.setMatrix(matrix);
+Matrix&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF1A;
+&#x2014;&#x2014;&#x63D0;&#x4F9B;&#x4E86;set&#x7CFB;&#x5217;&#xFF1A;&#x662F;&#x66FF;&#x6362;&#x5F53;&#x524D;&#x77E9;&#x9635;&#xFF0C;&#x5982;setTranslate, setRotate..
+&#x2014;&#x2014;&#x63D0;&#x4F9B;&#x4E86;post&#x7CFB;&#x5217;&#xFF1A;&#x662F;&#x77E9;&#x9635;&#x76F8;&#x4E58;&#xFF0C;&#x4E14;&#x987A;&#x5E8F;&#x662F;&#x5F53;&#x524D;Matrix * post&#x7684;&#x77E9;&#x9635;&#xFF0C;&#x77E9;&#x9635;&#x76F8;&#x4E58;&#x4E0D;&#x652F;&#x6301;&#x4EA4;&#x6362;&#x5F8B;
+&#x2014;&#x2014;&#x63D0;&#x4F9B;&#x4E86;pre&#x7CFB;&#x5217;&#xFF1A;&#x4E5F;&#x662F;&#x77E9;&#x9635;&#x76F8;&#x4E58;&#xFF0C;&#x4F46;&#x987A;&#x5E8F;&#x662F;pre&#x7684;&#x77E9;&#x9635; * &#x5F53;&#x524D;&#x77E9;&#x9635;
+
+canvas.concat();
+
+///&#x56FE;&#x5C42;&#x76F8;&#x5173;
+canvas.save();
+canvas.saveLayer();
+canvas.restore();
+canvas.restoreToCount();
+</code></pre><ul>
+<li>&#x56FE;&#x5C42;&#x76F8;&#x5173;&#xFF1A;<ul>
+<li>canvas.save()&#x548C;canvas.restore()&#xFF0C;&#x6216;&#x8005;restoreToCount&#xFF0C;&#x610F;&#x601D;&#x662F;&#x9501;&#x5B9A;&#x5F53;&#x524D;clip&#x548C;matrix</li>
+<li>&#x5728;save&#x548C;restore&#x4E4B;&#x95F4;&#x7684;clip&#x548C;matrix&#xFF0C;&#x90FD;&#x4E0D;&#x4F1A;&#x5E26;&#x5230;&#x8FD9;&#x4E2A;&#x4EE3;&#x7801;&#x6BB5;&#x4E4B;&#x5916;</li>
+<li>&#x5E95;&#x5C42;&#x7528;&#x5230;&#x4E86;&#x6808;&#x5E27;&#xFF0C;&#x6BCF;save&#x4E00;&#x4E0B;&#xFF0C;&#x5C31;&#x662F;&#x5728;&#x6808;&#x91CC;&#x52A0;&#x4E86;&#x4E00;&#x5E27;&#xFF0C;&#x627E;clip&#x548C;matrix&#xFF0C;&#x5C31;&#x627E;&#x8FD9;&#x4E00;&#x5E27;&#x7684;</li>
+<li>save&#x65F6;&#xFF0C;&#x4E4B;&#x524D;&#x7684;clip&#x548C;matrix&#x90FD;&#x88AB;&#x4FDD;&#x5B58;&#x4E86;&#x4E0A;&#x4E00;&#x5E27;&#x91CC;</li>
+<li>restore&#x65F6;&#xFF0C;&#x5F39;&#x51FA;&#x4E00;&#x5E27;&#xFF0C;&#x90A3;&#x4E0A;&#x4E00;&#x5E27;&#x7684;clip&#x548C;matrix&#x5C31;&#x56DE;&#x6765;&#x4E86;</li>
+<li>save()&#x8FD8;&#x662F;&#x4F1A;&#x5728;&#x5F53;&#x524D;bitmap&#x7ED8;&#x5236;&#xFF08;canvas&#x90FD;&#x5BF9;&#x5E94;&#x4E00;&#x5F20;bitmap&#xFF09;</li>
+<li>&#x4F46;&#x662F;saveToLayer&#x4F1A;&#x518D;&#x5F00;&#x4E00;&#x5F20;Bitmap&#xFF0C;&#x4E14;&#x4E0D;restore&#xFF0C;&#x7ED8;&#x5236;&#x7ED3;&#x679C;&#x4E0D;&#x4F1A;&#x663E;&#x793A;&#x5728;UI&#x4E0A;</li>
+<li>&#x6240;&#x4EE5;saveToLayer&#x662F;&#x5341;&#x5206;&#x6602;&#x8D35;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x4E0D;&#x80FD;&#x968F;&#x4FBF;&#x7528;</li>
+</ul>
+</li>
+</ul>
+<h1 id="4-paint&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;">4 Paint&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;</h1>
+<h2 id="41-paint&#x7B80;&#x4ECB;">4.1 Paint&#x7B80;&#x4ECB;</h2>
+<pre><code class="lang-java">
+<span class="hljs-comment">///---&#x989C;&#x8272;&#x77E9;&#x9635;&#xFF1A;&#x5BF9;&#x989C;&#x8272;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#xFF0C;&#x5373;&#x5BF9;&#x989C;&#x8272;&#x8FDB;&#x884C;&#x53D8;&#x6362;&#xFF0C;&#x4F5C;&#x7528;&#x4E8E;Paint&#x7684;&#x5F53;&#x524D;&#x989C;&#x8272;&#xFF0C;&#x6216;&#x8005;drawBitmap&#x7684;&#x989C;&#x8272;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x6EE4;&#x955C;&#x6548;&#x679C;</span>
+mPaint.setColorFilter(ColorMatrixColorFilter);
+<span class="hljs-comment">//LightingColorFilter&#xFF1A;&#x5149;&#x7167;&#x989C;&#x8272;&#x8FC7;&#x6EE4;</span>
+<span class="hljs-comment">//PorterDuffColorFilter&#xFF1A;&#x753B;&#x5E03;&#x56FE;&#x50CF;&#x548C;&#x6307;&#x5B9A;&#x989C;&#x8272;&#x7684;&#x6DF7;&#x5408;&#x6A21;&#x5F0F;--&#x8272;&#x5F69;&#x6DF7;&#x5408;</span>
+
+<span class="hljs-comment">//BitmapShader&#xFF1A;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x4F4D;&#x56FE;&#x4F5C;&#x4E3A;&#x753B;&#x5237;&#xFF0C;&#x7528;&#x8FD9;&#x4E2A;&#x4F4D;&#x56FE;&#x6765;&#x753B;&#x56FE;&#x5F62;&#xFF0C;&#x4F1A;&#x66FF;&#x6362;&#x6389;Paint&#x7684;&#x5F53;&#x524D;&#x989C;&#x8272;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x62FF;&#x6765;drawBitmap&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x7528;bitmap&#x505A;&#x753B;&#x5237;</span>
+<span class="hljs-comment">//LinearGradient&#xFF1A;&#x7EBF;&#x6027;&#x6E10;&#x53D8;</span>
+<span class="hljs-comment">//RadialGradient&#xFF1A;&#x8F90;&#x5C04;&#x6E10;&#x53D8;</span>
+<span class="hljs-comment">//SweepGradient&#xFF1A;&#x626B;&#x63CF;&#x6E10;&#x53D8;</span>
+<span class="hljs-comment">//&#x753B;&#x9634;&#x5F71;&#xFF0C;&#x906E;&#x7F69;&#x7B49;&#xFF0C;&#x529F;&#x80FD;&#x4E5F;&#x5F88;&#x5F3A;&#x5927;</span>
+mPaint.setShader(Shader shader);
+
+<span class="hljs-comment">///---&#x9634;&#x5F71;&#x548C;&#x6D6E;&#x5C42;&#xFF1A;&#x4E0D;&#x652F;&#x6301;&#x786C;&#x4EF6;&#x52A0;&#x901F;</span>
+mPaint.setMaskFilter(MaskFilter mf);
+<span class="hljs-comment">//BlurMaskFilter&#xFF0C;&#x6A21;&#x7CCA;&#x5904;&#x7406;,&#x9634;&#x5F71;&#x6548;&#x679C;; EmbossMaskFilter&#xFF0C;&#x6D6E;&#x96D5;&#x5904;&#x7406;&#xFF0C;&#x4F7F;&#x56FE;&#x50CF;&#x51F8;&#x8D77;&#xFF0C;&#x6709;&#x7ACB;&#x4F53;&#x611F;</span>
+
+<span class="hljs-comment">///---&#x56FE;&#x50CF;&#x6DF7;&#x5408;&#xFF1A;&#x753B;&#x4E24;&#x5C42;&#x56FE;&#x50CF;&#xFF0C;&#x6307;&#x5B9A;&#x4E8C;&#x8005;&#x7684;&#x6DF7;&#x5408;&#x7B97;&#x6CD5;&#xFF0C;&#x5C31;&#x80FD;&#x5F97;&#x5230;&#x5404;&#x79CD;&#x6548;&#x679C;</span>
+<span class="hljs-comment">// &#x8FD9;&#x4E2A;&#x662F;&#x56FE;&#x5F62;&#x6DF7;&#x5408;&#xFF0C;&#x4E0D;&#x662F;&#x8272;&#x5F69;&#x6DF7;&#x5408;&#xFF0C;&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x7684;&#x533A;&#x522B;</span>
+<span class="hljs-comment">// draw&#x4E24;&#x4E2A;&#x4E1C;&#x897F;&#xFF0C;&#x9ED8;&#x8BA4;&#x5C31;&#x662F;&#x540E;&#x7ED8;&#x5236;&#x7684;&#x8986;&#x76D6;&#x524D;&#x7ED8;&#x5236;&#x7684;&#xFF0C;Xfermode&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x53E0;&#x52A0;&#x6A21;&#x5F0F;</span>
+mPaint.setXfermode(Xfermode xfermode);
+
+
+<span class="hljs-comment">///---&#x5DF2;&#x5E9F;&#x5F03;</span>
+<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x5149;&#x6805;&#xFF0C;&#x5149;&#x6805;&#x8FD9;&#x4E1C;&#x897F;&#x6D89;&#x53CA;&#x592A;&#x591A;&#x592A;&#x591A;&#x7269;&#x7406;&#x77E5;&#x8BC6;&#xFF0C;&#x800C;&#x4E14;&#x8BE5;&#x65B9;&#x6CD5;&#x540C;&#x6837;&#x4E0D;&#x652F;&#x6301;HW&#x5728;API 21&#x4E2D;&#x9057;&#x5F03;&#x4E86;</span>
+mPaint.setRasterizer(Resterizer rasterizer);
+
+<span class="hljs-comment">///---&#x8FD9;&#x4E2A;&#x4EC0;&#x4E48;</span>
+mPaint.setShadowLayer(<span class="hljs-keyword">float</span> radius, <span class="hljs-keyword">float</span> dx, <span class="hljs-keyword">float</span> dy, <span class="hljs-keyword">int</span> shadowColor);
+</code></pre>
+<h2 id="42-colorfilter&#xFF1A;&#x989C;&#x8272;&#x77E9;&#x9635;">4.2 ColorFilter&#xFF1A;&#x989C;&#x8272;&#x77E9;&#x9635;</h2>
+<h3 id="421-colormatrixcolorfilter&#xFF1A;&#x6EE4;&#x955C;">4.2.1 ColorMatrixColorFilter&#xFF1A;&#x6EE4;&#x955C;</h3>
+<p>&#x7ED9;&#x4E00;&#x4E2A;&#x77E9;&#x9635;&#xFF0C;4*4&#x7684;&#x77E9;&#x9635;&#xFF0C;&#x5BF9;paint&#x7684;&#x989C;&#x8272;&#x8FDB;&#x884C;&#x53D8;&#x6362;&#xFF0C;&#x5982;&#x6E05;&#x9664;&#x67D0;&#x4E00;&#x79CD;&#x989C;&#x8272;&#xFF0C;&#x52A0;&#x6DF1;&#x67D0;&#x4E00;&#x79CD;&#x989C;&#x8272;&#xFF0C;&#x53EA;&#x7559;&#x9ED1;&#x767D;&#x8272;&#x7B49;</p>
+<pre><code class="lang-java">paint.setColor(Color.RED);
+paint.setColorFilter(<span class="hljs-keyword">new</span> ColorMatrixColorFilter(matrix));
+canvas.drawCircle(w/<span class="hljs-number">2</span>, h/<span class="hljs-number">2</span>, <span class="hljs-number">150</span>, paint);
+&#x8FD9;&#x91CC;&#x753B;&#x51FA;&#x6765;&#x7684;&#x5706;&#xFF0C;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x7EA2;&#x8272;&#xFF0C;&#x56E0;&#x4E3A;Color.RED&#x88AB;ColorFilter&#x505A;&#x4E86;&#x53D8;&#x6362;&#xFF0C;&#x5BF9;&#x4E8E;drawBitmap&#x4E5F;&#x662F;&#x4E00;&#x6837;&#x9053;&#x7406;
+
+&#x6784;&#x9020;ColorMatrix&#xFF1A;&#x8FD9;&#x91CC;&#x5C31;&#x7ED9;&#x51FA;&#x4FE9;&#x4F8B;&#x5B50;
+<span class="hljs-string">&quot;&#x989C;&#x8272;&#x53D8;&#x6DF1;&quot;</span>&#xFF1A;<span class="hljs-keyword">new</span> ColorMatrix(<span class="hljs-keyword">new</span> <span class="hljs-keyword">float</span>[]{
+                    <span class="hljs-number">0.5F</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+                    <span class="hljs-number">0</span>, <span class="hljs-number">0.5F</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+                    <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.5F</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+                    <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>,
+            })
+<span class="hljs-string">&quot;&#x9ED1;&#x767D;&#x7167;&quot;</span>&#xFF1A;<span class="hljs-keyword">new</span> ColorMatrix(<span class="hljs-keyword">new</span> <span class="hljs-keyword">float</span>[]{
+                    <span class="hljs-number">0.33F</span>, <span class="hljs-number">0.59F</span>, <span class="hljs-number">0.11F</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+                    <span class="hljs-number">0.33F</span>, <span class="hljs-number">0.59F</span>, <span class="hljs-number">0.11F</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+                    <span class="hljs-number">0.33F</span>, <span class="hljs-number">0.59F</span>, <span class="hljs-number">0.11F</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+                    <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>,
+            })
+</code></pre>
+<p>&#x5177;&#x4F53;&#x539F;&#x7406;&#x6211;&#x4E5F;&#x4E0D;&#x6E05;&#x695A;&#x4E86;&#xFF0C;&#x770B;&#x770B;&#x6548;&#x679C;&#x5427;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/color_matrix.gif" alt=""></p>
+<h3 id="422-lightingcolorfilter&#xFF1A;&#x5149;&#x7167;&#x6EE4;&#x955C;">4.2.2 LightingColorFilter&#xFF1A;&#x5149;&#x7167;&#x6EE4;&#x955C;</h3>
+<p>&#x8FD9;&#x91CC;&#x6709;&#x4E2A;&#x8BA1;&#x7B97;&#x516C;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x989C;&#x8272;&#x8FDB;&#x884C;&#x53D8;&#x6362;&#xFF0C;&#x66F4;&#x5E95;&#x5C42;&#x7684;&#x6211;&#x4E5F;&#x5C31;&#x4E0D;&#x61C2;&#x4E86;</p>
+<pre><code>public static Pair&lt;String, LightingColorFilter&gt;[] filters = new Pair[]{
+        new Pair(&quot;&#x539F;&#x56FE;&quot;, new LightingColorFilter(0xFFFFFFFF, 0x00000000)),
+        new Pair(&quot;&#x589E;&#x52A0;&#x7EA2;&#x8272;&quot;, new LightingColorFilter(0xFFFFFFFF, 0x00FF0000)),
+        new Pair(&quot;&#x5C4F;&#x853D;&#x7EFF;&#x8272;&quot;, new LightingColorFilter(0xFFFF00FF, 0x00000000)),
+        new Pair(&quot;&#x53D8;&#x6210;&#x9EC4;&#x8272;&quot;, new LightingColorFilter(0xFFFFFFFF, 0X00FFFF00)),
+};
+
+paint.setColorFilter(colorFilter);
+canvas.drawBitmap(mBitmap, 0, 0, paint);
+</code></pre><p>&#x8FD8;&#x662F;&#x770B;&#x770B;&#x6548;&#x679C;&#x5427;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/lighting_filter.gif" alt=""></p>
+<h3 id="423-porterduffcolorfilter&#xFF1A;&#x56FE;&#x7247;&#x548C;&#x6307;&#x5B9A;&#x989C;&#x8272;&#x7684;&#x6DF7;&#x5408;">4.2.3 PorterDuffColorFilter&#xFF1A;&#x56FE;&#x7247;&#x548C;&#x6307;&#x5B9A;&#x989C;&#x8272;&#x7684;&#x6DF7;&#x5408;</h3>
+<p>&#x8FD9;&#x4E2A;&#x662F;&#x8272;&#x5F69;&#x6DF7;&#x5408;&#xFF0C;PorterDuffXfermode&#x662F;&#x56FE;&#x5F62;&#x6DF7;&#x5408;&#xFF0C;&#x6CE8;&#x610F;&#x533A;&#x522B;</p>
+<p>&#x4F60;&#x7684;Paint&#x672C;&#x8EAB;&#x662F;&#x5E26;&#x6709;&#x989C;&#x8272;&#x7684;&#xFF0C;&#x6216;&#x8005;&#x4F60;drawBitmap&#x65F6;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x753B;&#x7B14;&#x5E26;&#x6709;&#x989C;&#x8272;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x989C;&#x8272;A<br>&#x7136;&#x540E;&#x901A;&#x8FC7;paint.setColorFilter(new PorterDuffColorFilter(int color, PorterDuff.Mode mode)<br>&#x4F60;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#xFF0C;&#x6211;&#x4EEC;&#x53EB;&#x5B83;&#x989C;&#x8272;B&#xFF0C;&#x4EE5;&#x53CA;&#x4E00;&#x4E2A;&#x6DF7;&#x5408;&#x6A21;&#x5F0F;<br>&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#x7684;&#x4F5C;&#x7528;&#x5C31;&#x662F;&#xFF0C;&#x901A;&#x8FC7;mode&#x6307;&#x5B9A;&#x989C;&#x8272;A&#x548C;&#x989C;&#x8272;B&#x7684;&#x6DF7;&#x5408;&#x65B9;&#x5F0F;</p>
+<p>&#x6240;&#x4EE5;&#x4F60;&#x5FC5;&#x987B;&#x7ED9;Paint&#x6307;&#x5B9A;&#x4E00;&#x4E2A;PorterDuffColorFilter&#xFF0C;&#x7136;&#x540E;&#x7528;&#x8FD9;&#x4E2A;Paint&#x53BB;draw&#x4E1C;&#x897F;&#xFF0C;&#x624D;&#x6709;&#x6548;&#x679C;&#xFF0C;<br>&#x6240;&#x4EE5;&#x8FD9;&#x53EA;&#x662F;&#x989C;&#x8272;&#x6DF7;&#x5408;&#xFF0C;&#x6DF7;&#x5408;&#x6548;&#x679C;&#x5FC5;&#x7136;&#x5B8C;&#x5168;&#x4F5C;&#x7528;&#x4E8E;&#x7ED8;&#x5236;&#x51FA;&#x7684;&#x4E1C;&#x897F;&#x4E0A;<br>&#x529F;&#x80FD;&#x6BD4;PorterDuffXFermode&#x5C31;&#x5F31;&#x591A;&#x4E86;</p>
+<pre><code>paint.setColorFilter(new PorterDuffColorFilter(Color.BLUE, mode));
+canvas.drawBitmap(mBitmap, 0, 0, paint);
+
+mode&#x7684;&#x503C;&#xFF1A;
+public static Pair&lt;String, PorterDuff.Mode&gt;[] porterDuffModes = new Pair[]{
+        new Pair(&quot;CLEAR&#xFF1A;src&#x78B0;&#x5230;&#x7684;&#x533A;&#x57DF;&#xFF0C;&#x989C;&#x8272;&#x90FD;&#x88AB;&#x6E05;&#x695A;&#xFF0C;&#x62A0;&#x51FA;&#x6765;&#x4E00;&#x5757;&quot;, PorterDuff.Mode.CLEAR),
+        new Pair(&quot;DARKEN&#xFF1A;&#xFF1F;&#xFF1F;&#xFF1F;src&#x76F4;&#x63A5;&#x8986;&#x76D6;&#x5728;dest&#x8EAB;&#x4E0A;&quot;, PorterDuff.Mode.DARKEN),
+        new Pair(&quot;LIGHTEN&#xFF1A;&#xFF1F;&#xFF1F;&#xFF1F;src&#x76F4;&#x63A5;&#x8986;&#x76D6;&#x5728;dest&#x8EAB;&#x4E0A;&quot;, PorterDuff.Mode.LIGHTEN),
+        new Pair(&quot;ADD&#xFF1A;&quot;, PorterDuff.Mode.ADD),
+        new Pair(&quot;MULTIPLY&quot;, PorterDuff.Mode.MULTIPLY),
+        new Pair(&quot;XOR&quot;, PorterDuff.Mode.XOR),
+        new Pair(&quot;SCREEN&quot;, PorterDuff.Mode.SCREEN),
+        new Pair(&quot;OVERLAY&quot;, PorterDuff.Mode.OVERLAY),
+        new Pair(&quot;DST&quot;, PorterDuff.Mode.DST),
+        new Pair(&quot;DST_ATOP&quot;, PorterDuff.Mode.DST_ATOP),
+        new Pair(&quot;DST_IN&quot;, PorterDuff.Mode.DST_IN),
+        new Pair(&quot;DST_OUT&quot;, PorterDuff.Mode.DST_OUT),
+        new Pair(&quot;DST_OVER&quot;, PorterDuff.Mode.DST_OVER),
+        new Pair(&quot;SRC&quot;, PorterDuff.Mode.SRC),
+        new Pair(&quot;SRC_ATOP&quot;, PorterDuff.Mode.SRC_ATOP),
+        new Pair(&quot;SRC_IN&quot;, PorterDuff.Mode.SRC_IN),
+        new Pair(&quot;SRC_OUT&quot;, PorterDuff.Mode.SRC_OUT),
+        new Pair(&quot;SRC_OVER&quot;, PorterDuff.Mode.SRC_OVER),
+};
+</code></pre><p>&#x4E0D;&#x5E9F;&#x8BDD;&#xFF0C;&#x76F4;&#x63A5;&#x4E0A;&#x56FE;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/porter_duff_color_filter.gif" alt=""></p>
+<h2 id="43-xfermode&#xFF1A;&#x56FE;&#x50CF;&#x6DF7;&#x5408;">4.3 Xfermode&#xFF1A;&#x56FE;&#x50CF;&#x6DF7;&#x5408;</h2>
+<p>AvoidXfermode&#x548C;PixelXorXfermode&#x5DF2;&#x88AB;&#x5E9F;&#x5F03;&#xFF08;&#x56E0;&#x4E3A;&#x4E0D;&#x652F;&#x6301;&#x786C;&#x4EF6;&#x52A0;&#x901F;&#x5728;API 16&#x5DF2;&#x7ECF;&#x8FC7;&#x65F6;&#x4E86;&#xFF09;  </p>
+<p>&#x5E38;&#x7528;&#x7684;&#x5C31;&#x662F;PorterDuffXfermode&#xFF08;&#x56FE;&#x5F62;&#x6DF7;&#x5408;&#x6A21;&#x5F0F;&#xFF09;&#xFF0C;&#x63A7;&#x5236;&#x56FE;&#x5F62;&#x91CD;&#x5408;&#x6A21;&#x5F0F;&#x548C;&#x989C;&#x8272;&#x5904;&#x7406;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x8BF4;&#x8BF4;PorterDuffXfermode&#x7684;&#x7528;&#x6CD5;</p>
+<pre><code class="lang-java">
+&#x6D89;&#x53CA;&#x5230;&#x7684;mode&#x4E5F;&#x662F;PorterDuff.Mode
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Pair&lt;String, PorterDuff.Mode&gt;[] porterDuffModes = <span class="hljs-keyword">new</span> Pair[]{
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;CLEAR&#xFF1A;src&#x78B0;&#x5230;&#x7684;&#x533A;&#x57DF;&#xFF0C;&#x989C;&#x8272;&#x90FD;&#x88AB;&#x6E05;&#x695A;&#xFF0C;&#x62A0;&#x51FA;&#x6765;&#x4E00;&#x5757;&quot;</span>, PorterDuff.Mode.CLEAR),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;DARKEN&#xFF1A;&#xFF1F;&#xFF1F;&#xFF1F;src&#x76F4;&#x63A5;&#x8986;&#x76D6;&#x5728;dest&#x8EAB;&#x4E0A;&quot;</span>, PorterDuff.Mode.DARKEN),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;LIGHTEN&#xFF1A;&#xFF1F;&#xFF1F;&#xFF1F;src&#x76F4;&#x63A5;&#x8986;&#x76D6;&#x5728;dest&#x8EAB;&#x4E0A;&quot;</span>, PorterDuff.Mode.LIGHTEN),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;ADD&#xFF1A;&quot;</span>, PorterDuff.Mode.ADD),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;MULTIPLY&quot;</span>, PorterDuff.Mode.MULTIPLY),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;XOR&quot;</span>, PorterDuff.Mode.XOR),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;SCREEN&quot;</span>, PorterDuff.Mode.SCREEN),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;OVERLAY&quot;</span>, PorterDuff.Mode.OVERLAY),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;DST&quot;</span>, PorterDuff.Mode.DST),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;DST_ATOP&quot;</span>, PorterDuff.Mode.DST_ATOP),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;DST_IN&quot;</span>, PorterDuff.Mode.DST_IN),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;DST_OUT&quot;</span>, PorterDuff.Mode.DST_OUT),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;DST_OVER&quot;</span>, PorterDuff.Mode.DST_OVER),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;SRC&quot;</span>, PorterDuff.Mode.SRC),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;SRC_ATOP&quot;</span>, PorterDuff.Mode.SRC_ATOP),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;SRC_IN&quot;</span>, PorterDuff.Mode.SRC_IN),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;SRC_OUT&quot;</span>, PorterDuff.Mode.SRC_OUT),
+        <span class="hljs-keyword">new</span> Pair(<span class="hljs-string">&quot;SRC_OVER&quot;</span>, PorterDuff.Mode.SRC_OVER),
+};
+</code></pre>
+<p>&#x5404;&#x4E2A;mode&#x5BF9;&#x5E94;&#x7684;&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;&#x8FD9;&#x662F;ApiDemo&#x91CC;&#x7684;&#x56FE;&#x7247;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode.jpeg" alt="">  </p>
+<p>&#x4F46;&#x662F;&#x6309;&#x7167;&#x6211;demo&#x91CC;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6548;&#x679C;&#x8FD8;&#x6709;&#x70B9;&#x51FA;&#x5165;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_clear.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_src.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_dst.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_src_over.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_dst_over.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_src_in.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_dst_in.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_src_out.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_dst_out.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_src_atop.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_dst_atop.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_xor.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_darken.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_lighten.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_multiply.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_screen.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_add.png" alt="">
+<img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_overlay.png" alt=""></p>
+<p>&#x4E0D;&#x8981;&#x7EA0;&#x7ED3;&#x4E86;&#xFF0C;&#x548C;ApiDemo&#x7684;&#x4EE3;&#x7801;&#x4E00;&#x6BD4;&#x8F83;&#x5C31;&#x77E5;&#x9053;&#x600E;&#x4E48;&#x56DE;&#x4E8B;&#x4E86;&#xFF1A;<br>&#x6211;&#x7684;dst&#x662F;drawCircle&#xFF0C;src&#x662F;drawRect<br>ApiDemo&#x7684;dst&#x662F;&#x4E00;&#x4E2A;&#x753B;&#x4E86;circle&#x7684;Bitmap&#xFF0C;src&#x662F;&#x4E00;&#x4E2A;&#x753B;&#x4E86;Rect&#x7684;Bitmap  </p>
+<ul>
+<li>&#x6240;&#x4EE5;&#x4F7F;&#x7528;Xfermode&#x5F97;&#x6EE1;&#x8DB3;&#x51E0;&#x4E2A;&#x6761;&#x4EF6;&#xFF1A;<ul>
+<li>&#x5FC5;&#x987B;&#x5728;saveLayer&#x91CC;&#xFF0C;&#x4E0B;&#x9762;&#x6709;&#x5B9E;&#x4F8B;&#x4EE3;&#x7801;</li>
+<li>src&#x548C;dst&#x5FC5;&#x987B;&#x90FD;&#x662F;drawBitmap</li>
+</ul>
+</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;  </p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">static</span> Bitmap <span class="hljs-title">makeDst</span><span class="hljs-params">(<span class="hljs-keyword">int</span> w, <span class="hljs-keyword">int</span> h)</span> </span>{
+    Bitmap bm = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+    Canvas c = <span class="hljs-keyword">new</span> Canvas(bm);
+    Paint p = <span class="hljs-keyword">new</span> Paint(Paint.ANTI_ALIAS_FLAG);
+
+    p.setColor(<span class="hljs-number">0xFFFFCC44</span>);
+    c.drawOval(<span class="hljs-keyword">new</span> RectF(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, w*<span class="hljs-number">3</span>/<span class="hljs-number">4</span>, h*<span class="hljs-number">3</span>/<span class="hljs-number">4</span>), p);
+    <span class="hljs-keyword">return</span> bm;
+}
+
+<span class="hljs-comment">// create a bitmap with a rect, used for the &quot;src&quot; image</span>
+<span class="hljs-function"><span class="hljs-keyword">static</span> Bitmap <span class="hljs-title">makeSrc</span><span class="hljs-params">(<span class="hljs-keyword">int</span> w, <span class="hljs-keyword">int</span> h)</span> </span>{
+    Bitmap bm = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+    Canvas c = <span class="hljs-keyword">new</span> Canvas(bm);
+    Paint p = <span class="hljs-keyword">new</span> Paint(Paint.ANTI_ALIAS_FLAG);
+
+    p.setColor(<span class="hljs-number">0xFF66AAFF</span>);
+    c.drawRect(w/<span class="hljs-number">3</span>, h/<span class="hljs-number">3</span>, w*<span class="hljs-number">19</span>/<span class="hljs-number">20</span>, h*<span class="hljs-number">19</span>/<span class="hljs-number">20</span>, p);
+    <span class="hljs-keyword">return</span> bm;
+}
+
+bmDst = makeDst(w, h);
+bmSrc = makeSrc(w, h);
+
+&#x5728;onDraw&#x91CC;&#xFF1A;
+<span class="hljs-comment">//--------------------</span>
+<span class="hljs-keyword">int</span> sc = canvas.saveLayer(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, w, h, <span class="hljs-keyword">null</span>, Canvas.MATRIX_SAVE_FLAG |
+        Canvas.CLIP_SAVE_FLAG |
+        Canvas.HAS_ALPHA_LAYER_SAVE_FLAG |
+        Canvas.FULL_COLOR_LAYER_SAVE_FLAG |
+        Canvas.CLIP_TO_LAYER_SAVE_FLAG);
+
+<span class="hljs-comment">//&#x7ED8;&#x5236;dst&#xFF1A;&#x4E00;&#x4E2A;&#x5706;&#xFF0C;&#x9EC4;&#x8272;</span>
+paint.setColor(Color.YELLOW);
+canvas.drawBitmap(bmDst, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, paint);
+
+<span class="hljs-comment">//&#x8BBE;&#x7F6E;xfermode&#xFF0C;&#x7ED8;&#x5236;src&#xFF0C;&#x4E00;&#x4E2A;&#x77E9;&#x5F62;&#xFF0C;&#x84DD;&#x8272;</span>
+<span class="hljs-keyword">if</span>(mode != <span class="hljs-keyword">null</span>) paint.setXfermode(<span class="hljs-keyword">new</span> PorterDuffXfermode(mode));
+paint.setColor(Color.parseColor(<span class="hljs-string">&quot;#0000ff&quot;</span>));
+canvas.drawBitmap(bmSrc, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, paint);
+
+<span class="hljs-comment">//&#x6062;&#x590D;paint</span>
+paint.setXfermode(<span class="hljs-keyword">null</span>);
+
+canvas.restoreToCount(sc);
+<span class="hljs-comment">//-------------------</span>
+
+&#x8FD9;&#x6837;&#x6548;&#x679C;&#x5C31;&#x8DDF;ApiDemo&#x4E00;&#x6837;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x4E0A;&#x9762;&#x6211;&#x81EA;&#x5DF1;&#x505A;&#x7684;&#x8FD9;&#x51E0;&#x4E2A;&#x56FE;&#x540C;&#x5B66;&#x4EEC;&#x4E0D;&#x8981;&#x7EA0;&#x7ED3;&#x4E86;&#xFF0C;&#x6211;&#x4E0D;&#x5220;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x8D39;&#x4E86;&#x8001;&#x5927;&#x52B2;&#x505A;&#x51FA;&#x6765;&#x7684;
+
+
+&#x770B;ApiDemo&#x7684;&#x56FE;&#xFF0C;&#x80CC;&#x666F;&#x77E5;&#x9053;&#x600E;&#x4E48;&#x753B;&#x7684;&#x5417;&#xFF1F;
+<span class="hljs-comment">///&#x7ED8;&#x5236;&#x7F51;&#x683C;&#x80CC;&#x666F;</span>
+<span class="hljs-comment">// draw the checker-board pattern</span>
+paint.setStyle(Paint.Style.FILL);
+paint.setShader(mBG);
+canvas.drawRect(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, w, h, paint);
+
+<span class="hljs-comment">//&#x521D;&#x59CB;&#x5316;Shader</span>
+Bitmap bm = Bitmap.createBitmap(<span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[] { <span class="hljs-number">0xFFFFFFFF</span>, <span class="hljs-number">0xFFCCCCCC</span>,
+            <span class="hljs-number">0xFFCCCCCC</span>, <span class="hljs-number">0xFFFFFFFF</span> }, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>,
+            Bitmap.Config.RGB_565);
+mBG = <span class="hljs-keyword">new</span> BitmapShader(bm,
+Shader.TileMode.REPEAT,
+Shader.TileMode.REPEAT);
+Matrix m = <span class="hljs-keyword">new</span> Matrix();
+m.setScale(<span class="hljs-number">6</span>, <span class="hljs-number">6</span>);
+mBG.setLocalMatrix(m);
+</code></pre>
+<ul>
+<li><p>&#x5F97;&#x660E;&#x767D;&#x51E0;&#x4E2A;&#x6982;&#x5FF5;&#xFF1A;</p>
+<ul>
+<li>Xfermode&#x4F5C;&#x7528;&#x4E8E;&#x524D;&#x540E;&#x4E24;&#x6B21;&#x7ED8;&#x5236;</li>
+<li>&#x597D;&#x50CF;&#x662F;&#x901A;&#x8FC7;&#x989C;&#x8272;&#x8BA1;&#x7B97;&#x516C;&#x5F0F;&#xFF0C;&#x5B9E;&#x73B0;&#x6DF7;&#x5408;&#x6548;&#x679C;&#xFF0C;&#x5982;&#x91CD;&#x5408;&#x533A;&#x57DF;&#x4FDD;&#x7559;&#xFF0C;&#x91CD;&#x5408;&#x533A;&#x57DF;&#x900F;&#x660E;&#x7B49;</li>
+<li>Xfermode&#x662F;&#x9488;&#x5BF9;Canvas&#x7684;&#x4E00;&#x4E2A;bitmap&#x64CD;&#x4F5C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x9488;&#x5BF9;&#x4E00;&#x4E2A;&#x56FE;&#x5C42;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x822C;&#x4F1A;&#x901A;&#x8FC7;saveLayer&#x5212;&#x5206;&#x51FA;&#x9700;&#x8981;&#x53D8;&#x6362;&#x7684;&#x56FE;&#x5C42;</li>
+<li>&#x5982;&#x679C;&#x53EA;&#x4F7F;&#x7528;save()&#x6216;&#x8005;&#x4E0D;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;save&#x65B9;&#x6CD5;&#xFF0C;Xfermode&#x8BBE;&#x7F6E;&#x4E4B;&#x540E;&#x753B;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x4F1A;&#x548C;&#x5F53;&#x524D;&#x56FE;&#x5C42;&#x6240;&#x6709;&#x4E1C;&#x897F;&#x6DF7;&#x5408;</li>
+</ul>
+</li>
+<li><p>Xfermode&#x90FD;&#x80FD;&#x5B9E;&#x73B0;&#x4EC0;&#x4E48;&#x6548;&#x679C;&#xFF1F;&#x53EF;&#x591A;&#x4E86;</p>
+<ul>
+<li>&#x7528;&#x8499;&#x7248;&#x62A0;&#x56FE;</li>
+<li>&#x5728;&#x754C;&#x9762;&#x4E0A;&#x8986;&#x76D6;&#x4E00;&#x5C42;&#x900F;&#x660E;&#x9ED1;&#x8272;&#x6D6E;&#x5C42;&#xFF08;dst&#xFF09;&#xFF0C;&#x518D;&#x7ED9;&#x4E00;&#x4E2A;&#x900F;&#x660E;circle&#x6216;rect&#xFF08;src&#xFF09;&#xFF0C;&#x5C31;&#x80FD;&#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x754C;&#x9762;&#x4E0A;&#x67D0;&#x4E2A;&#x533A;&#x57DF;</li>
+</ul>
+</li>
+</ul>
+<p>&#x4E0B;&#x9762;&#x7ED9;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x8FD9;&#x91CC;&#x53EA;&#x7ED9;&#x56FE;&#xFF0C;&#x4EE3;&#x7801;&#x90FD;&#x5728;demo&#x91CC;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_xfermode_1.gif" alt=""></p>
+<h2 id="44-shader">4.4 Shader</h2>
+<p>Shader&#x662F;&#x7740;&#x8272;&#x5668;&#xFF0C;paint.setShader(Shader)&#xFF0C;&#x4F1A;&#x66FF;&#x4EE3;paint&#x672C;&#x8EAB;&#x7684;color&#xFF0C;<br>&#x5728;&#x7ED8;&#x5236;&#x5404;&#x79CD;&#x56FE;&#x5F62;&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x7528;&#x6307;&#x5B9A;&#x7684;shader&#x6765;&#x7740;&#x8272;&#xFF0C;&#x4E00;&#x822C;&#x7684;shader&#x662F;LinearGradient&#xFF0C;<br>RadialGradient&#xFF0C;SweepGradient&#x4E09;&#x4E2A;&#x6E10;&#x53D8;&#x8272;&#xFF0C;&#x518D;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;BitmapShader</p>
+<h3 id="441-bitmapshader">4.4.1 BitmapShader</h3>
+<p>&#x4F7F;&#x7528;&#x4E00;&#x4E2A;bitmap&#x4F5C;&#x4E3A;&#x753B;&#x5237;&#xFF0C;&#x5982;drawCircle&#x65F6;&#xFF0C;circle&#x5C31;&#x4F1A;&#x4EE5;&#x8FD9;&#x4E2A;bitmap&#x4F5C;&#x4E3A;&#x7EB9;&#x7406;  </p>
+<pre><code class="lang-java">BitmapShader mBitmapShader = <span class="hljs-keyword">new</span> BitmapShader(bitmap, Shader.TileMode.REPEAT, Shader.TileMode.REPEAT);
+getPaint().setShader(mBitmapShader);
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x5C31;&#x4E0D;&#x7ED9;&#x56FE;&#x4E86;&#xFF0C;&#x7279;&#x522B;&#x6CE8;&#x610F;&#x7684;&#x53C2;&#x6570;2&#x548C;3&#xFF0C;&#x662F;bitmap&#x4E0D;&#x80FD;&#x5145;&#x6EE1;&#x6240;&#x7ED8;&#x56FE;&#x5F62;&#x65F6;&#xFF0C;&#x5982;&#x4F55;&#x586B;&#x5145;</p>
+<h3 id="442-&#x6E10;&#x53D8;">4.4.2 &#x6E10;&#x53D8;</h3>
+<p>LinearGradient&#xFF1A;&#x7EBF;&#x6027;&#x6E10;&#x53D8;<br>RadialGradient&#xFF1A;&#x8F90;&#x5C04;&#x6E10;&#x53D8;<br>SweepGradient&#xFF1A;&#x626B;&#x63CF;&#x6E10;&#x53D8;<br>&#x6E10;&#x53D8;&#x53EF;&#x4EE5;&#x7ED9;&#x56FE;&#x50CF;&#x52A0;&#x6D6E;&#x5C42;&#xFF0C;&#x5468;&#x56F4;&#x6700;&#x6A21;&#x7CCA;&#xFF0C;&#x4E2D;&#x95F4;&#x6700;&#x6E05;&#x695A;  </p>
+<pre><code class="lang-java">paint.setShader(<span class="hljs-keyword">new</span> LinearGradient(startX, startY, endX, endY, startColor, endColor, tileMode));
+paint.setShader(<span class="hljs-keyword">new</span> LinearGradient(startX, startY, endX, endY,
+            <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[] { Color.RED, Color.YELLOW, Color.GREEN, Color.CYAN, Color.BLUE },
+            <span class="hljs-keyword">new</span> <span class="hljs-keyword">float</span>[] { <span class="hljs-number">0</span>, <span class="hljs-number">0.1F</span>, <span class="hljs-number">0.5F</span>, <span class="hljs-number">0.7F</span>, <span class="hljs-number">0.8F</span> },
+            tileMode));
+titleMode&#x662F;&#x63A7;&#x5236;&#x8FB9;&#x754C;&#x8272;&#x5982;&#x4F55;&#x91CD;&#x590D;
+&#x7B2C;&#x4E8C;&#x4E2A;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x4E86;&#x591A;&#x4E2A;&#x989C;&#x8272;&#xFF0C;&#x4EE5;&#x53CA;&#x4E00;&#x4E2A;<span class="hljs-keyword">float</span>[]&#xFF0C;&#x610F;&#x601D;&#x662F;&#x5728;&#x6307;&#x5B9A;&#x76F4;&#x7EBF;&#x4E0A;&#xFF0C;&#x6BCF;&#x4E2A;&#x6E10;&#x53D8;&#x6240;&#x5360;&#x7684;&#x8DDD;&#x79BB;&#x6BD4;&#x91CD;
+
+paint.setShader(<span class="hljs-keyword">new</span> RadialGradient(cx, cy, radius, startColor, endColor, tileMode));
+&#x4E5F;&#x6709;&#x591A;&#x4E2A;color&#x6E10;&#x53D8;&#x7684;&#x65B9;&#x6CD5;
+
+paint.setShader(<span class="hljs-keyword">new</span> SweepGradient(cx, cy, startColor, endColor));
+&#x4E5F;&#x6709;&#x591A;&#x4E2A;color&#x6E10;&#x53D8;&#x7684;&#x65B9;&#x6CD5;
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x7ED9;&#x51E0;&#x4E2A;&#x56FE;&#x770B;&#x4E00;&#x4E0B;&#x6548;&#x679C;&#xFF1A;<br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/shader_linear.png" alt=""><br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/shader_radial.png" alt=""><br><img src="https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/shader_sweep.png" alt="">  </p>
+<h2 id="45-maskfilter&#xFF1A;&#x906E;&#x7F69;&#x8FC7;&#x6EE4;&#x5668;">4.5 MaskFilter&#xFF1A;&#x906E;&#x7F69;&#x8FC7;&#x6EE4;&#x5668;</h2>
+<p>&#x8FD9;&#x4E2A;&#x4E0D;&#x652F;&#x6301;&#x786C;&#x4EF6;&#x52A0;&#x901F;&#xFF0C;&#x7565;&#x8FC7;&#x4E86;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x53EF;&#x4EE5;&#x770B;&#x770B;demo&#x91CC;&#x7684;&#x76F8;&#x5173;&#x6548;&#x679C;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="view.html" class="navigation navigation-prev " aria-label="Previous page: 自定义控件和measure">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="anim.html" class="navigation navigation-next " aria-label="Next page: 动画">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"draw和canvas，paint详解","level":"1.3","depth":1,"next":{"title":"动画","level":"1.4","depth":1,"path":"anim.md","ref":"anim.md","articles":[]},"previous":{"title":"自定义控件和measure","level":"1.2","depth":1,"path":"view.md","ref":"view.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"canvas-paint.md","mtime":"2017-04-09T11:03:55.443Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T13:32:53.234Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

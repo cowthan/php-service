@@ -1,0 +1,591 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Json解析 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="inject.html" />
+    
+    
+    <link rel="prev" href="xml.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">----安卓 UI----</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="view.html">
+            
+                <a href="view.html">
+            
+                    
+                    自定义控件和measure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="canvas-paint.html">
+            
+                <a href="canvas-paint.html">
+            
+                    
+                    draw和canvas，paint详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="anim.html">
+            
+                <a href="anim.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="notify.html">
+            
+                <a href="notify.html">
+            
+                    
+                    notify系列库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="loading.html">
+            
+                <a href="loading.html">
+            
+                    
+                    loading系列库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="status-ui.html">
+            
+                <a href="status-ui.html">
+            
+                    
+                    StatusUI系列库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="touch-scroll.html">
+            
+                <a href="touch-scroll.html">
+            
+                    
+                    滑动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="layout.html">
+            
+                <a href="layout.html">
+            
+                    
+                    Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="item-template.html">
+            
+                <a href="item-template.html">
+            
+                    
+                    列表Adapter模板化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="recyclerview.html">
+            
+                <a href="recyclerview.html">
+            
+                    
+                    RecyclerView全解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="design.html">
+            
+                <a href="design.html">
+            
+                    
+                    MeterialDesign详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="component.html">
+            
+                <a href="component.html">
+            
+                    
+                    AyoComponent基础库--Activity和Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="systembartint.html">
+            
+                <a href="systembartint.html">
+            
+                    
+                    SystembarTint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="permission-ask.html">
+            
+                <a href="permission-ask.html">
+            
+                    
+                    权限控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">----安卓 foundation----</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="mvp.html">
+            
+                <a href="mvp.html">
+            
+                    
+                    MVP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="rxjava.html">
+            
+                <a href="rxjava.html">
+            
+                    
+                    RxJava
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="lang.html">
+            
+                <a href="lang.html">
+            
+                    
+                    常用工具类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="xml.html">
+            
+                <a href="xml.html">
+            
+                    
+                    xml解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.6" data-path="json-reporter.html">
+            
+                <a href="json-reporter.html">
+            
+                    
+                    Json解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="inject.html">
+            
+                <a href="inject.html">
+            
+                    
+                    ButterKnife
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="thread.html">
+            
+                <a href="thread.html">
+            
+                    
+                    安卓线程和looper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="eventbus.html">
+            
+                <a href="eventbus.html">
+            
+                    
+                    EventBus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="db.html">
+            
+                <a href="db.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">----Gradle----</li>
+        
+        
+    
+
+    
+        
+        <li class="header">----工具----</li>
+        
+        
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Json解析</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="json&#x5355;&#x5B57;&#x6BB5;&#x62A5;&#x9519;&#x5668;">Json&#x5355;&#x5B57;&#x6BB5;&#x62A5;&#x9519;&#x5668;</h1>
+<ul>
+<li>&#x4E3A;&#x4F55;&#xFF1A;<ul>
+<li>ios&#x7684;json&#x89E3;&#x6790;&#x6BD4;&#x8F83;&#x667A;&#x80FD;&#xFF0C;&#x80FD;&#x8DF3;&#x8FC7;&#x5355;&#x5B57;&#x6BB5;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x4E0D;&#x803D;&#x8BEF;&#x5176;&#x4ED6;&#x5B57;&#x6BB5;</li>
+<li>&#x6240;&#x4EE5;&#x63A5;&#x53E3;&#x6709;&#x95EE;&#x9898;&#x65F6;&#xFF0C;ios&#x603B;&#x662F;&#x80FD;&#x6B63;&#x5E38;&#x663E;&#x793A;&#xFF0C;&#x5B89;&#x5353;&#x8FD9;&#x603B;&#x662F;&#x9875;&#x9762;&#x627E;&#x4E0D;&#x5230;&#xFF0C;&#x6D4B;&#x8BD5;&#x8001;&#x6765;&#x627E;&#x5B89;&#x5353;</li>
+<li>&#x800C;&#x4E14;&#x597D;&#x50CF;fastjson&#x4E0D;&#x652F;&#x6301;&#x5FFD;&#x7565;&#x5355;&#x5B57;&#x6BB5;&#x7684;&#x9519;&#x8BEF;&#xFF08;token&#x6D41;&#x89E3;&#x6790;&#xFF0C;&#x4E0D;&#x597D;&#x8DF3;&#x8FC7;&#x9519;&#x8BEF;&#x5B57;&#x7B26;&#x540E;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF09;</li>
+<li>&#x53E6;&#x5916;&#xFF0C;&#x8C03;&#x63A5;&#x53E3;&#x65F6;&#xFF0C;&#x603B;&#x662F;&#x8981;&#x770B;log&#x62F7;json&#x770B;&#x9519;&#x8BEF;&#xFF0C;&#x6BD4;&#x8F83;&#x7E41;&#x7410;</li>
+<li>&#x6240;&#x4EE5;&#x6709;&#x4E86;&#x8FD9;&#x4E48;&#x4E2A;&#x5E93;&#xFF1A;<ul>
+<li>fastjson&#x89E3;&#x6790;&#x51FA;&#x9519;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x518D;&#x89E3;&#x6790;&#x4E00;&#x4E0B;&#xFF0C;&#x627E;&#x51FA;&#x67D0;&#x4E2A;&#x5355;&#x72EC;&#x5B57;&#x6BB5;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x800C;&#x4E14;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x5355;&#x5B57;&#x6BB5;&#x9519;&#x8BEF;&#xFF0C; &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x81F3;&#x5C11;&#x53EF;&#x7528;&#x7684;&#x4E1A;&#x52A1;bean</li>
+<li>&#x5F0A;&#x7AEF;&#xFF1A;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5168;&#x662F;&#x9ED8;&#x8BA4;&#x503C;&#x7684;&#x4E1A;&#x52A1;bean</li>
+<li>&#x4F9D;&#x8D56;&#x4E8E;&#x5B89;&#x5353;&#x5185;&#x7F6E;&#x7684;org.json&#xFF0C;&#x6700;&#x597D;&#x53EA;&#x7528;&#x4E8E;&#x5F00;&#x53D1;&#x9636;&#x6BB5;</li>
+<li>json&#x7684;&#x9519;&#x8BEF;&#x4F1A;&#x81EA;&#x52A8;&#x53D1;&#x90AE;&#x4EF6;</li>
+</ul>
+</li>
+<li>&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x5F00;&#x53D1;&#x6D4B;&#x8BD5;&#x9636;&#x6BB5;&#x914D;&#x5408;&#x90AE;&#x7BB1;&#x76D1;&#x63A7;&#x4E00;&#x4E9B;&#x53EF;&#x9884;&#x89C1;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x7701;&#x6389;&#x4E86;&#x4E00;&#x90E8;&#x5206;&#x63D2;&#x624B;&#x673A;&#x770B;log&#x627E;&#x9519;&#x8BEF;&#x7684;&#x5DE5;&#x4F5C;</li>
+</ul>
+</li>
+</ul>
+<pre><code>json = &quot;{\&quot;product_code\&quot;:\&quot;dxn040\&quot;,\&quot;type_id\&quot;:\&quot;asas1\&quot;,\&quot;title\&quot;:\&quot;dxn\\u7403\\u978b2\\u53f7\\u4ed3\&quot;,\&quot;sale_price\&quot;:\&quot;0.01\&quot;,\&quot;list_price\&quot;:\&quot;100\&quot;,\&quot;postage\&quot;:0,\&quot;is_haitao\&quot;:{},\&quot;is_buyable\&quot;:true,\&quot;sales\&quot;:3,\&quot;status\&quot;:{\&quot;key\&quot;:\&quot;in_stock\&quot;,\&quot;title\&quot;:\&quot;\\u552e\\u5356\\u4e2d\&quot;,\&quot;color\&quot;:\&quot;\&quot;},\&quot;tags\&quot;:[{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;value\&quot;:\&quot;AG\&quot;},{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;value\&quot;:\&quot;\\u957f\\u9489\&quot;}],\&quot;label\&quot;:\&quot;C\\u7f57\\u540c\\u6b3e\&quot;,\&quot;labels\&quot;:[{\&quot;type\&quot;:\&quot;image\&quot;,\&quot;value\&quot;:\&quot;http:\\/\\/test1-img1.dongqiudi.net\\/www\\/M00\\/00\\/13\\/ChOOulfstbmAZmBJAAAJcdrkyj0236.png\&quot;,\&quot;layer\&quot;:1},{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;value\&quot;:\&quot;\\u513f\\u7ae5\\u6b3e\&quot;,\&quot;layer\&quot;:2}],\&quot;groups\&quot;:null,\&quot;spec_img\&quot;:{\&quot;url\&quot;:\&quot;http:\\/\\/test1-img1.dongqiudi.net\\/www\\/M00\\/0C\\/44\\/ChOOuljlsO2AfX52AABiqK0Ixpk347.png\&quot;,\&quot;width\&quot;:510,\&quot;height\&quot;:255},\&quot;good_comment\&quot;:{},\&quot;show_img_url\&quot;:\&quot;http:\\/\\/test1-img1.dongqiudi.net\\/www\\/M00\\/0C\\/44\\/ChOOuljlsMyADj3RAACa2npzVIA143.png\&quot;,\&quot;slides\&quot;:[{\&quot;img_url\&quot;:\&quot;http:\\/\\/test1-img1.dongqiudi.net\\/www\\/M00\\/0C\\/44\\/ChOOuljlsMyADj3RAACa2npzVIA143.png\&quot;}],\&quot;warehouse_info\&quot;:\&quot;\\u5317\\u4eac2\\u53f7\\u4ed3\\uff0c16:45\\u4e4b\\u524d\\u8ba2\\u5355\\u5f53\\u65e5\\u53d1\\u8d27\\uff0c16:45\\u4e4b\\u540e\\u8ba2\\u5355\\u6b21\\u65e5\\u53d1\\u8d27\&quot;,\&quot;warehouse_id\&quot;:\&quot;3\&quot;,\&quot;description\&quot;:\&quot;https:\\/\\/test1-mall.dongqiudi.com\\/api\\/product\\/attribute?code=dxn040&amp;type=base\&quot;,\&quot;more_detail\&quot;:\&quot;https:\\/\\/test1-mall.dongqiudi.com\\/api\\/product\\/attribute?code=dxn040\&quot;,\&quot;comment_total\&quot;:0,\&quot;go_pick_tips\&quot;:\&quot;\\u8bf7\\u9009\\u62e9\\u989c\\u8272\\u5c3a\\u7801\&quot;,\&quot;service\&quot;:[{\&quot;title\&quot;:\&quot;\\u6b63\\u54c1\\u4fdd\\u8bc1\&quot;,\&quot;img_url\&quot;:\&quot;http:\\/\\/test1-img1.dongqiudi.net\\/fastdfs\\/M00\\/00\\/18\\/oYYBAFaaHseAAXdAAAAHyXmS-0M222.png\&quot;,\&quot;scheme\&quot;:\&quot;dongqiudi:\\/\\/\\/news\\/143584\&quot;},{\&quot;title\&quot;:\&quot;\\u987a\\u4e30\\u5305\\u90ae\&quot;,\&quot;img_url\&quot;:\&quot;http:\\/\\/test1-img1.dongqiudi.net\\/fastdfs\\/M00\\/00\\/18\\/oYYBAFaaHseAAXdAAAAHyXmS-0M222.png\&quot;,\&quot;scheme\&quot;:\&quot;dongqiudi:\\/\\/\\/news\\/143584\&quot;},{\&quot;title\&quot;:\&quot;\\u65e0\\u5fe7\\u552e\\u540e\&quot;,\&quot;img_url\&quot;:\&quot;http:\\/\\/test1-img1.dongqiudi.net\\/fastdfs\\/M00\\/00\\/18\\/oYYBAFaaHseAAXdAAAAHyXmS-0M222.png\&quot;,\&quot;scheme\&quot;:\&quot;dongqiudi:\\/\\/\\/news\\/143584\&quot;}],\&quot;recommend_product_list\&quot;:[{\&quot;product_code\&quot;:\&quot;\\u8001\\u7248\\u672c\\u6570\\u636e\\u6d4b\\u8bd5\&quot;,\&quot;type_id\&quot;:\&quot;1\&quot;,\&quot;img_url\&quot;:\&quot;http:\\/\\/test1-img1.dongqiudi.net\\/www\\/M00\\/00\\/17\\/ChOOulgAUAmAHwi_AAAEJfDvq6w016.png\&quot;,\&quot;title\&quot;:\&quot;\\u5f00\\u6253\\u7684\\u6162\\u662f\\u62c9\\u7f8e\\u7684\\u62c9\\u8428\&quot;,\&quot;sale_price\&quot;:\&quot;299\&quot;,\&quot;list_price\&quot;:\&quot;399\&quot;,\&quot;postage\&quot;:\&quot;0\&quot;,\&quot;is_haitao\&quot;:false,\&quot;is_buyable\&quot;:true,\&quot;sales\&quot;:2,\&quot;status\&quot;:{\&quot;key\&quot;:\&quot;in_stock\&quot;,\&quot;title\&quot;:\&quot;\\u552e\\u5356\\u4e2d\&quot;,\&quot;color\&quot;:\&quot;\&quot;},\&quot;tags\&quot;:[{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;value\&quot;:\&quot;SG\&quot;},{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;value\&quot;:\&quot;\\u77ed\\u9489\&quot;}],\&quot;label\&quot;:\&quot;\\u6885\\u897f\\u540c\\u6b3e\&quot;,\&quot;labels\&quot;:[{\&quot;type\&quot;:\&quot;image\&quot;,\&quot;value\&quot;:\&quot;http:\\/\\/test1-img1.dongqiudi.net\\/www\\/M00\\/00\\/13\\/ChOOulfstiCAJ3VOAAAMnHcqOb8588.png\&quot;,\&quot;layer\&quot;:1},{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;value\&quot;:\&quot;\\u7403\\u661f\\u540c\\u6b3e\&quot;,\&quot;layer\&quot;:2}]},{\&quot;product_code\&quot;:\&quot;dxn041\&quot;,\&quot;type_id\&quot;:\&quot;1\&quot;,\&quot;img_url\&quot;:\&quot;http:\\/\\/test1-img1.dongqiudi.net\\/www\\/M00\\/0C\\/44\\/ChOOuljluZSAbirtAAC81Ri9QMk631.jpg\&quot;,\&quot;title\&quot;:\&quot;dxn041\\u7403\\u978b\\u9999\\u6e2f\\u4ed3\&quot;,\&quot;sale_price\&quot;:\&quot;0.01\&quot;,\&quot;list_price\&quot;:\&quot;300\&quot;,\&quot;postage\&quot;:\&quot;0\&quot;,\&quot;is_haitao\&quot;:true,\&quot;is_buyable\&quot;:true,\&quot;sales\&quot;:3,\&quot;status\&quot;:{\&quot;key\&quot;:\&quot;in_stock\&quot;,\&quot;title\&quot;:\&quot;\\u552e\\u5356\\u4e2d\&quot;,\&quot;color\&quot;:\&quot;\&quot;},\&quot;tags\&quot;:[{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;value\&quot;:\&quot;AG\&quot;},{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;value\&quot;:\&quot;\\u957f\\u9489\&quot;}],\&quot;label\&quot;:\&quot;\\u6885\\u897f\\u540c\\u6b3e\&quot;,\&quot;labels\&quot;:[{\&quot;type\&quot;:\&quot;image\&quot;,\&quot;value\&quot;:\&quot;http:\\/\\/test1-img1.dongqiudi.net\\/www\\/M00\\/00\\/13\\/ChOOulfstdyAABSeAAANHQo3fRI038.png\&quot;,\&quot;layer\&quot;:1},{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;value\&quot;:\&quot;\\u6885\\u897f\\u540c\\u6b3e\&quot;,\&quot;layer\&quot;:2}]},{\&quot;product_code\&quot;:\&quot;\\u591a\\u89c4\\u5219\\u6a21\\u677f2\&quot;,\&quot;type_id\&quot;:\&quot;1\&quot;,\&quot;img_url\&quot;:\&quot;http:\\/\\/test1-img1.dongqiudi.net\\/www\\/M00\\/00\\/10\\/ChOOulfg3_aAUxfEAACUin7WpGc669.jpg\&quot;,\&quot;title\&quot;:\&quot;\\u591a\\u89c4\\u5219\\u6a21\\u677f2\\u3010\\u5317\\u4eac\\u4ed3\\u5e93\\u3011\&quot;,\&quot;sale_price\&quot;:\&quot;0.02\&quot;,\&quot;list_price\&quot;:\&quot;1\&quot;,\&quot;postage\&quot;:\&quot;0\&quot;,\&quot;is_haitao\&quot;:false,\&quot;is_buyable\&quot;:true,\&quot;sales\&quot;:6,\&quot;status\&quot;:{\&quot;key\&quot;:\&quot;in_stock\&quot;,\&quot;title\&quot;:\&quot;\\u552e\\u5356\\u4e2d\&quot;,\&quot;color\&quot;:\&quot;\&quot;},\&quot;tags\&quot;:[{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;value\&quot;:\&quot;AG\&quot;},{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;value\&quot;:\&quot;\\u77ed\\u9489\&quot;}],\&quot;label\&quot;:\&quot;\\u6885\\u897f\\u540c\\u6b3e\&quot;,\&quot;labels\&quot;:[]}]}&quot;;
+GoodsDetailModel g = JsonSplitter.toObject(json, GoodsDetailModel.class);
+</code></pre><p>&#x62A5;&#x9519;&#x4FE1;&#x606F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>04-06 18:58:04.259 32256-32378/? E/jssssssss: &#x89E3;&#x6790;&#x9519;&#x8BEF;&#xFF0C;&#x5B57;&#x6BB5;&#x662F;(good_comment), &#x539F;&#x56E0;: &#x5217;&#x8868;&#x6839;&#x672C;&#x6027;&#x9519;&#x8BEF;&#xFF0C;&#x9700;&#x8981;&#x4E2A;[], &#x539F;&#x59CB;json&#x662F;&#xFF1A;{}
+04-06 18:58:04.260 32256-32378/? E/jssssssss: &#x89E3;&#x6790;&#x9519;&#x8BEF;&#xFF0C;&#x5B57;&#x6BB5;&#x662F;(groups), &#x539F;&#x56E0;: &#x5217;&#x8868;&#x6839;&#x672C;&#x6027;&#x9519;&#x8BEF;&#xFF0C;&#x9700;&#x8981;&#x4E2A;[], &#x539F;&#x59CB;json&#x662F;&#xFF1A;null
+04-06 18:58:04.263 32256-32378/? E/jssssssss: &#x89E3;&#x6790;&#x9519;&#x8BEF;&#xFF0C;&#x5B57;&#x6BB5;&#x662F;(is_haitao), &#x539F;&#x56E0;: getBoolean &#x9519;&#x8BEF;--Value {} at is_haitao of type org.json.JSONObject cannot be converted to boolean, &#x539F;&#x59CB;json&#x662F;&#xFF1A;{}
+
+&#x540C;&#x65F6;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x7528;&#x7684;&#x4E1A;&#x52A1;bean&#x5BF9;&#x8C61;
+</code></pre><p>&#x5E76;&#x4E14;&#x80FD;&#x81EA;&#x52A8;&#x53D1;&#x90AE;&#x4EF6;&#x7ED9;&#x4F60;&#x8BBE;&#x5B9A;&#x7684;&#x90AE;&#x7BB1;&#xFF0C;&#x90AE;&#x7BB1;&#x5728;JsonTool&#x7C7B;&#x91CC;&#x8BBE;&#x7F6E;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="xml.html" class="navigation navigation-prev " aria-label="Previous page: xml解析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="inject.html" class="navigation navigation-next " aria-label="Next page: ButterKnife">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Json解析","level":"2.6","depth":1,"next":{"title":"ButterKnife","level":"2.7","depth":1,"path":"inject.md","ref":"inject.md","articles":[]},"previous":{"title":"xml解析","level":"2.5","depth":1,"path":"xml.md","ref":"xml.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"json-reporter.md","mtime":"2017-04-09T13:17:35.179Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T13:32:53.234Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
