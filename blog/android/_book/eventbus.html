@@ -208,7 +208,33 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="item-template.html">
+        <li class="chapter " data-level="1.10" data-path="textview.html">
+            
+                <a href="textview.html">
+            
+                    
+                    TextView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="drawable.html">
+            
+                <a href="drawable.html">
+            
+                    
+                    Drawable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="item-template.html">
             
                 <a href="item-template.html">
             
@@ -221,7 +247,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="recyclerview.html">
+        <li class="chapter " data-level="1.13" data-path="recyclerview.html">
             
                 <a href="recyclerview.html">
             
@@ -234,7 +260,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="design.html">
+        <li class="chapter " data-level="1.14" data-path="design.html">
             
                 <a href="design.html">
             
@@ -247,7 +273,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="component.html">
+        <li class="chapter " data-level="1.15" data-path="component.html">
             
                 <a href="component.html">
             
@@ -260,7 +286,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="systembartint.html">
+        <li class="chapter " data-level="1.16" data-path="systembartint.html">
             
                 <a href="systembartint.html">
             
@@ -273,7 +299,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="permission-ask.html">
+        <li class="chapter " data-level="1.17" data-path="permission-ask.html">
             
                 <a href="permission-ask.html">
             
@@ -483,6 +509,226 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="eventbus">EventBus</h1>
+<h1 id="eventbus">Eventbus</h1>
+<hr>
+<h1 id="&#x4E8B;&#x4EF6;&#x603B;&#x7EBF;">&#x4E8B;&#x4EF6;&#x603B;&#x7EBF;</h1>
+<ul>
+<li>&#x4E8B;&#x4EF6;&#x603B;&#x7EBF;<ul>
+<li>EventBus&#x4F7F;&#x7528;</li>
+<li>EventBus&#x4EE3;&#x7801;&#x89E3;&#x6790;</li>
+<li>EventBus&#x4F7F;&#x7528;&#x573A;&#x666F;</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>&#x600E;&#x4E48;&#x4F7F;&#x7528;&#xFF1F;<ul>
+<li>&#x5B9A;&#x4E49;&#x4E2A;&#x4E8B;&#x4EF6;Event&#x7C7B;</li>
+<li>&#x6CE8;&#x518C;&#x548C;&#x6CE8;&#x9500;&#xFF1A;&#x8C01;&#x5BF9;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x611F;&#x5174;&#x8DA3;&#xFF1F;</li>
+<li>&#x5B9A;&#x4E49;&#x63A5;&#x6536;&#x5668;&#xFF1A;&#x600E;&#x4E48;&#x4E2A;&#x611F;&#x5174;&#x8DA3;&#x6CD5;&#xFF1F;</li>
+<li>&#x53D1;&#x9001;&#x4E8B;&#x4EF6;&#xFF1A;&#x4E8B;&#x4EF6;&#x4ECE;&#x8C01;&#x90A3;&#x53D1;&#x51FA;&#xFF1F;</li>
+</ul>
+</li>
+</ul>
+<h3 id="">#</h3>
+<h2 id="1-&#x591A;&#x8BF4;&#x65E0;&#x76CA;&#xFF0C;&#x76F4;&#x63A5;&#x8D34;&#x4EE3;&#x7801;&#x5427;">1 &#x591A;&#x8BF4;&#x65E0;&#x76CA;&#xFF0C;&#x76F4;&#x63A5;&#x8D34;&#x4EE3;&#x7801;&#x5427;</h2>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.cowthan.sample.zeventbus;
+
+<span class="hljs-keyword">import</span> android.os.Bundle;
+<span class="hljs-keyword">import</span> android.view.View;
+<span class="hljs-keyword">import</span> android.widget.Button;
+<span class="hljs-keyword">import</span> android.widget.TextView;
+
+<span class="hljs-keyword">import</span> com.cowthan.sample.BaseActivity;
+<span class="hljs-keyword">import</span> com.cowthan.sample.R;
+
+<span class="hljs-keyword">import</span> org.ayo.eventbus.EventBus;
+
+<span class="hljs-comment">/**
+ * Created by Administrator on 2016/1/26.
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EventBusDemoActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseActivity</span></span>{
+
+    TextView tv_receiver;
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.ac_eventbus);
+
+        Button btn_post = findViewById(R.id.btn_post);
+        tv_receiver = findViewById(R.id.tv_reveiver);
+
+        EventBus.getDefault().register(<span class="hljs-keyword">this</span>);
+
+        btn_post.setOnClickListener(<span class="hljs-keyword">new</span> View.OnClickListener() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(View view)</span> </span>{
+                AnyEvent e = <span class="hljs-keyword">new</span> AnyEvent();
+                e.time = System.currentTimeMillis() + <span class="hljs-string">&quot;&quot;</span>;
+                EventBus.getDefault().post(e);
+            }
+        });
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onDestroy</span><span class="hljs-params">()</span> </span>{
+        EventBus.getDefault().unregister(<span class="hljs-keyword">this</span>);
+        <span class="hljs-keyword">super</span>.onDestroy();
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnyEvent</span></span>{
+        <span class="hljs-keyword">public</span> String time;
+    }
+
+    <span class="hljs-comment">//&#x65B9;&#x6CD5;&#x540D;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;</span>
+    <span class="hljs-meta">@Subscribe</span>(threadMode = ThreadMode.MAIN)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onEventMainThread</span><span class="hljs-params">(AnyEvent e)</span></span>{
+        tv_receiver.setText(<span class="hljs-string">&quot;&#x6536;&#x5230;&#x4E2A;&#x4E8B;&#x4EF6;&#xFF1A;&quot;</span> + e.time);
+    }
+}
+</code></pre>
+<p>&#x5BF9;&#x5E94;&#x7684;&#x5E03;&#x5C40;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot;
+    android:background=&quot;#ffffff&quot;
+    &gt;
+
+    &lt;Button
+        android:id=&quot;@+id/btn_post&quot;
+        android:layout_width=&quot;wrap_content&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:layout_centerHorizontal=&quot;true&quot;
+        android:layout_centerVertical=&quot;true&quot;
+        android:padding=&quot;10dp&quot;
+        android:text=&quot;&#x53D1;&#x51FA;&#x4E2A;&#x4E8B;&#x4EF6;&quot; /&gt;
+
+    &lt;TextView
+        android:id=&quot;@+id/tv_reveiver&quot;
+        android:layout_width=&quot;wrap_content&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:layout_below=&quot;@+id/btn_post&quot;
+        android:layout_centerHorizontal=&quot;true&quot;
+        android:layout_marginTop=&quot;56dp&quot;
+        android:text=&quot;&#x6536;&#x5230;&#x4E2A;&#x4E8B;&#x4EF6;&#xFF1A;&quot;
+        android:textAppearance=&quot;?android:attr/textAppearanceLarge&quot; /&gt;
+
+
+&lt;/RelativeLayout&gt;
+</code></pre><h2 id="2-&#x8FD9;&#x4E2A;&#x5C0F;&#x6846;&#x67B6;&#x5B8C;&#x5168;&#x662F;&#x975E;&#x4FB5;&#x5165;&#x5F0F;&#x7684;&#xFF0C;&#x4E0D;&#x5F97;&#x4E0D;&#x8D5E;">2 &#x8FD9;&#x4E2A;&#x5C0F;&#x6846;&#x67B6;&#x5B8C;&#x5168;&#x662F;&#x975E;&#x4FB5;&#x5165;&#x5F0F;&#x7684;&#xFF0C;&#x4E0D;&#x5F97;&#x4E0D;&#x8D5E;</h2>
+<h2 id="3-&#x4E8B;&#x4EF6;&#x63A5;&#x6536;&#x5668;&#x8FD0;&#x884C;&#x5728;&#x54EA;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF1F;">3 &#x4E8B;&#x4EF6;&#x63A5;&#x6536;&#x5668;&#x8FD0;&#x884C;&#x5728;&#x54EA;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF1F;</h2>
+<pre><code>public void onEventMainThread(param)
+{
+    UI&#x7EBF;&#x7A0B;
+}
+
+public void onEventPostThread(param)
+{
+    &#x4E8B;&#x4EF6;&#x5728;&#x54EA;&#x513F;&#x53D1;&#x9001;&#xFF0C;&#x5C31;&#x5728;&#x54EA;&#x513F;&#x5904;&#x7406;
+}
+
+public void onEventBackgroundThread(param)
+{
+    &#x540E;&#x53F0;&#x7EBF;&#x7A0B;&#xFF0C;&#x5C31;&#x4E00;&#x4E2A;
+}
+
+public void onEventAsync(param)
+{
+    &#x540E;&#x53F0;&#x7EBF;&#x7A0B;&#xFF0C;&#x6BCF;&#x4E2A;Event&#x5F00;&#x4E00;&#x4E2A;
+}
+
+///&#x6CE8;&#x89E3;
+///threadMode&#x53EF;&#x4EE5;&#x662F;&#xFF1A;
+@Subscribe(threadMode = ThreadMode.MAIN)
+public void onEvent(param){
+
+}
+</code></pre><h2 id="4-&#x65B0;&#x7248;&#x7684;eventbus&#x652F;&#x6301;&#x6CE8;&#x89E3;&#xFF0C;&#x4E5F;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x6CE8;&#x89E3;">4 &#x65B0;&#x7248;&#x7684;EventBus&#x652F;&#x6301;&#x6CE8;&#x89E3;&#xFF0C;&#x4E5F;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x6CE8;&#x89E3;</h2>
+<p>&#x622A;&#x6B62;2016.4.16&#x7684;&#x65B0;&#x7248;&#x672C;&#xFF0C;&#x662F;&#x5F3A;&#x5236;&#x4F7F;&#x7528;&#x6CE8;&#x89E3;&#xFF0C;&#x57FA;&#x672C;&#x4EE3;&#x7801;&#x5C31;&#x53EF;&#x4EE5;&#x8BF4;&#x660E;&#x4E00;&#x5207;&#x4E86;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Subscribe</span>(threadMode = ThreadMode.MAIN)
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onEvent</span><span class="hljs-params">(param)</span></span>{
+
+}
+
+<span class="hljs-meta">@Subscribe</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onEvent</span><span class="hljs-params">(AnyEventType event)</span> </span>{<span class="hljs-comment">/* Do something */</span>};
+
+<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> Subscribe {
+    <span class="hljs-function">ThreadMode <span class="hljs-title">threadMode</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> ThreadMode.POSTING</span>;
+
+    <span class="hljs-comment">/**
+     * If true, delivers the most recent sticky event (posted with
+     * {<span class="hljs-doctag">@link</span> EventBus#postSticky(Object)}) to this subscriber (if event available).
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">sticky</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">false</span></span>;
+
+    <span class="hljs-comment">/** Subscriber priority to influence the order of event delivery.
+     * Within the same delivery thread ({<span class="hljs-doctag">@link</span> ThreadMode}), higher priority subscribers will receive events before
+     * others with a lower priority. The default priority is 0. Note: the priority does *NOT* affect the order of
+     * delivery among subscribers with different {<span class="hljs-doctag">@link</span> ThreadMode}s! */</span>
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">priority</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> 0</span>;
+}
+
+<span class="hljs-comment">//&#x8FD9;&#x56DB;&#x79CD;&#x7EBF;&#x7A0B;&#x6A21;&#x5F0F;&#x4E0A;&#x9762;&#x6709;&#x4E86;&#xFF0C;&#x4E0D;&#x7528;&#x518D;&#x89E3;&#x91CA;&#x4E86;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> ThreadMode {
+    POSTING,
+    MAIN,
+    BACKGROUND,
+    ASYNC
+}
+</code></pre>
+<h2 id="5-sticky&#x548C;priority&#xFF1A;registerobject-subscriber-boolean-sticky-int-priority">5 sticky&#x548C;priority&#xFF1A;register(Object subscriber, boolean sticky, int priority)</h2>
+<p>&#x5C1A;&#x672A;&#x7814;&#x7A76;</p>
+<h2 id="6-&#x4EE3;&#x7801;&#x89E3;&#x6790;">6 &#x4EE3;&#x7801;&#x89E3;&#x6790;</h2>
+<ul>
+<li><p>&#x5927;&#x4F53;&#x6D41;&#x7A0B;&#xFF1A;</p>
+<ul>
+<li>register&#x65B9;&#x6CD5;&#x4E2D;&#x4F1A;&#x7ED9;&#x6240;&#x6709;subscriber&#xFF0C;Event&#x5B58;&#x8D77;&#x6765;&#xFF0C;&#x4FBF;&#x4E8E;&#x67E5;&#x627E;</li>
+<li>post&#x65B9;&#x6CD5;&#x6700;&#x7EC8;&#x8D70;&#x5230;&#x4E86;postToSubscription(Subscription subscription, Object event, boolean isMainThread)</li>
+<li>postToSubscription&#x65B9;&#x6CD5;&#x4E2D;&#x5C31;&#x5F00;&#x59CB;&#x8003;&#x8651;&#x7EBF;&#x7A0B;&#x4E86;&#xFF1A;<ul>
+<li>post&#x7EBF;&#x7A0B;&#xFF1A;&#x5728;&#x54EA;&#x513F;&#x53D1;&#x4E8B;&#x4EF6;&#xFF0C;&#x5C31;&#x5728;&#x54EA;&#x513F;&#x8C03;&#x7528;</li>
+<li>&#x4E3B;&#x7EBF;&#x7A0B;&#xFF1A;MainThread&#xFF0C;&#x5BF9;&#x5E94;HandlerPoster&#xFF0C;&#x662F;&#x4E00;&#x4E2A;Handler&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#xFF0C;looper&#x662F;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;looper&#xFF08;Looper.getMainLooper()&#xFF09;&#xFF0C;
+&#x4E5F;&#x662F;&#x4E2A;&#x5FAA;&#x73AF;&#x5904;&#x7406;&#x6240;&#x6709;Event</li>
+<li>Background&#x7EBF;&#x7A0B;&#xFF1A;&#x5BF9;&#x5E94;BackgroundPoster&#xFF0C;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x7EBF;&#x7A0B;&#x6C60;&#x662F;Executors.newCachedThreadPool()&#xFF0C;&#x53EF;&#x4EE5;&#x5728;EventBus&#x7684;Builder&#x4E2D;&#x914D;&#x7F6E;&#xFF0C;
+run&#x8D77;&#x6765;&#x4E4B;&#x540E;&#xFF0C;&#x662F;&#x5728;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E2D;&#x5FAA;&#x73AF;&#x5904;&#x7406;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x6240;&#x6709;Event</li>
+<li>Async&#x7EBF;&#x7A0B;&#xFF1A;&#x5BF9;&#x5E94;AyncPoster&#xFF0C;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x7EBF;&#x7A0B;&#x6C60;&#x662F;Executors.newCachedThreadPool()&#xFF0C;&#x53EF;&#x4EE5;&#x5728;EventBus&#x7684;Builder&#x4E2D;&#x914D;&#x7F6E;&#xFF0C;
+&#x6CA1;&#x6709;&#x5FAA;&#x73AF;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;Event&#x90FD;&#x662F;&#x8D77;&#x4E00;&#x4E2A;&#x65B0;&#x7EBF;&#x7A0B;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x961F;&#x5217;&#x6D88;&#x606F;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li>&#x65B9;&#x5F0F;1&#xFF1A;&#x5728;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x5FAA;&#x73AF;&#x5904;&#x7406;</li>
+<li>&#x65B9;&#x5F0F;2&#xFF1A;&#x6BCF;&#x4E2A;&#x6D88;&#x606F;&#x5F00;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;</li>
+</ul>
+</li>
+</ul>
+<h2 id="7-&#x4F7F;&#x7528;&#x573A;&#x666F;">7 &#x4F7F;&#x7528;&#x573A;&#x666F;</h2>
+<ul>
+<li><p>&#x57FA;&#x672C;&#x4E0A;&#x6240;&#x6709;&#x4F60;&#x611F;&#x89C9;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x8D77;&#x6765;&#x6709;&#x70B9;&#x9EBB;&#x70E6;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;EventBus&#x6765;&#x5904;&#x7406;&#xFF1A;</p>
+<ul>
+<li>Activity&#x95F4;&#x4F20;&#x9012;&#xFF0C;&#x4F46;&#x6CE8;&#x610F;&#xFF1A;<ul>
+<li>&#x4E0D;&#x5EFA;&#x8BAE;fragment&#x95F4;&#x4F7F;&#x7528;EventBus</li>
+<li>&#x4E0D;&#x5EFA;&#x8BAE;fragment&#x4E0E;Activity&#x4E4B;&#x95F4;&#x4F7F;&#x7528;EventBus</li>
+</ul>
+</li>
+<li>&#x7EC4;&#x4EF6;&#x95F4;&#x4F20;&#x9012;&#xFF1A;<ul>
+<li>service&#x548C;Activity</li>
+<li>broadcast&#x548C;Activity</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x603B;&#x7ED3;&#xFF1A;</p>
+<ul>
+<li>&#x6709;&#x7236;&#x5B50;&#x5173;&#x7CFB;&#x7684;&#x4E24;&#x4E2A;&#x4E1C;&#x897F;&#xFF0C;&#x4E4B;&#x95F4;&#x5E94;&#x8BE5;&#x76F8;&#x4E92;&#x6301;&#x6709;&#x5F15;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x4FE1;</li>
+<li>&#x5E76;&#x5217;&#x5173;&#x7CFB;&#xFF0C;&#x987A;&#x5E8F;&#x5173;&#x7CFB;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x63A8;&#x8350;&#x901A;&#x8FC7;EventBus&#x901A;&#x4FE1;</li>
+</ul>
+</li>
+</ul>
+<h2 id="9-&#x5F02;&#x5E38;&#x5904;&#x7406;">9 &#x5F02;&#x5E38;&#x5904;&#x7406;</h2>
+<p>&#x6CA1;&#x600E;&#x4E48;&#x770B;&#xFF0C;&#x6BD4;&#x5982;ThrowableFailureEvent&#xFF0C;ErrorDialogConfig&#x8FD9;&#x4E9B;&#x4E1C;&#x897F;&#xFF0C;&#x5E72;&#x5565;&#x7684;&#x90FD;</p>
 
                                 
                                 </section>
@@ -526,7 +772,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"EventBus","level":"2.9","depth":1,"next":{"title":"数据库","level":"2.10","depth":1,"path":"db.md","ref":"db.md","articles":[]},"previous":{"title":"安卓线程和looper","level":"2.8","depth":1,"path":"thread.md","ref":"thread.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"eventbus.md","mtime":"2017-04-09T13:26:36.493Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T13:32:53.234Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"EventBus","level":"2.9","depth":1,"next":{"title":"数据库","level":"2.10","depth":1,"path":"db.md","ref":"db.md","articles":[]},"previous":{"title":"安卓线程和looper","level":"2.8","depth":1,"path":"thread.md","ref":"thread.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"eventbus.md","mtime":"2017-04-09T14:52:16.840Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T14:58:02.537Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

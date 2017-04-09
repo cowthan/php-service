@@ -208,7 +208,33 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="item-template.html">
+        <li class="chapter " data-level="1.10" data-path="textview.html">
+            
+                <a href="textview.html">
+            
+                    
+                    TextView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="drawable.html">
+            
+                <a href="drawable.html">
+            
+                    
+                    Drawable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="item-template.html">
             
                 <a href="item-template.html">
             
@@ -221,7 +247,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="recyclerview.html">
+        <li class="chapter " data-level="1.13" data-path="recyclerview.html">
             
                 <a href="recyclerview.html">
             
@@ -234,7 +260,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="design.html">
+        <li class="chapter " data-level="1.14" data-path="design.html">
             
                 <a href="design.html">
             
@@ -247,7 +273,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="component.html">
+        <li class="chapter " data-level="1.15" data-path="component.html">
             
                 <a href="component.html">
             
@@ -260,7 +286,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="systembartint.html">
+        <li class="chapter " data-level="1.16" data-path="systembartint.html">
             
                 <a href="systembartint.html">
             
@@ -273,7 +299,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="permission-ask.html">
+        <li class="chapter " data-level="1.17" data-path="permission-ask.html">
             
                 <a href="permission-ask.html">
             
@@ -483,6 +509,77 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="mvp">MVP</h1>
+<h1 id="&#x7B80;&#x6613;mvp&#xFF1A;&#x8C37;&#x6B4C;contract&#x98CE;&#x683C;">&#x7B80;&#x6613;MVP&#xFF1A;&#x8C37;&#x6B4C;contract&#x98CE;&#x683C;</h1>
+<hr>
+<p>&#x57FA;&#x7C7B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">AyoPresenter</span>&lt;<span class="hljs-title">T</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AyoView</span>&gt;</span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">attachView</span><span class="hljs-params">(T view)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">detachView</span><span class="hljs-params">()</span></span>;
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">AyoView</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">showError</span><span class="hljs-params">(String msg)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">useNightMode</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> isNight)</span></span>;
+}
+`
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x9996;&#x5148;&#x5728;&#x9879;&#x76EE;app&#x4E2D;&#x81EA;&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BasePresenter</span>&lt;<span class="hljs-title">T</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AyoView</span>&gt; </span>{
+
+    <span class="hljs-keyword">private</span> Activity mActivity;
+    <span class="hljs-keyword">private</span> T v;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Activity <span class="hljs-title">activity</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> mActivity;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> T <span class="hljs-title">view</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> v;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">BasePresenter</span><span class="hljs-params">(Activity a)</span></span>{
+        mActivity = a;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">attachView</span><span class="hljs-params">(T view)</span> </span>{
+        v = view;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">detachView</span><span class="hljs-params">()</span> </span>{
+        v = <span class="hljs-keyword">null</span>;
+    }
+
+}
+</code></pre>
+<p>&#x7136;&#x540E;&#xFF0C;&#x5B9A;&#x4E49;&#x6761;&#x7EA6;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">LoginContract</span> </span>{
+
+    <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">View</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AyoView</span> </span>{
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onLoginOk</span><span class="hljs-params">()</span></span>;
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onLoginFail</span><span class="hljs-params">(String failMessage)</span></span>;
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">refreshLoginStatus</span><span class="hljs-params">(String s)</span></span>;
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">refreshAccountInfo</span><span class="hljs-params">(String username, String pwd)</span></span>;
+    }
+
+    <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Presenter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AyoPresenter</span>&lt;<span class="hljs-title">View</span>&gt; </span>{
+
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> PLATFORM_QQ = <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> PLATFORM_WB = <span class="hljs-number">2</span>;
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> PLATFORM_WX = <span class="hljs-number">3</span>;
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">doLogin</span><span class="hljs-params">(String username, String pwd)</span></span>;
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">clickRegist</span><span class="hljs-params">()</span></span>;
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">clickForget</span><span class="hljs-params">()</span></span>;
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">clickSocialLogin</span><span class="hljs-params">(<span class="hljs-keyword">int</span> platform)</span></span>;
+    }
+}
+</code></pre>
+<p>&#x7136;&#x540E;&#xFF0C;&#x5B9E;&#x73B0;LoginContract.View&#xFF0C;&#x548C;LoginContract.Presenter</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LoginPresenter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BasePresenter</span>&lt;<span class="hljs-title">LoginContract</span>.<span class="hljs-title">View</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">LoginContract</span>.<span class="hljs-title">Presenter</span></span>{
+
+}
+</code></pre>
 
                                 
                                 </section>
@@ -526,7 +623,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MVP","level":"2.1","depth":1,"next":{"title":"RxJava","level":"2.2","depth":1,"path":"rxjava.md","ref":"rxjava.md","articles":[]},"previous":{"title":"权限控制","level":"1.15","depth":1,"path":"permission-ask.md","ref":"permission-ask.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mvp.md","mtime":"2017-04-09T13:26:36.486Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T13:32:53.234Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MVP","level":"2.1","depth":1,"next":{"title":"RxJava","level":"2.2","depth":1,"path":"rxjava.md","ref":"rxjava.md","articles":[]},"previous":{"title":"权限控制","level":"1.17","depth":1,"path":"permission-ask.md","ref":"permission-ask.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mvp.md","mtime":"2017-04-09T14:53:26.171Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T14:58:02.537Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

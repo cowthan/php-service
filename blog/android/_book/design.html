@@ -208,7 +208,33 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="item-template.html">
+        <li class="chapter " data-level="1.10" data-path="textview.html">
+            
+                <a href="textview.html">
+            
+                    
+                    TextView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="drawable.html">
+            
+                <a href="drawable.html">
+            
+                    
+                    Drawable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="item-template.html">
             
                 <a href="item-template.html">
             
@@ -221,7 +247,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="recyclerview.html">
+        <li class="chapter " data-level="1.13" data-path="recyclerview.html">
             
                 <a href="recyclerview.html">
             
@@ -234,7 +260,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.12" data-path="design.html">
+        <li class="chapter active" data-level="1.14" data-path="design.html">
             
                 <a href="design.html">
             
@@ -247,7 +273,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="component.html">
+        <li class="chapter " data-level="1.15" data-path="component.html">
             
                 <a href="component.html">
             
@@ -260,7 +286,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="systembartint.html">
+        <li class="chapter " data-level="1.16" data-path="systembartint.html">
             
                 <a href="systembartint.html">
             
@@ -273,7 +299,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="permission-ask.html">
+        <li class="chapter " data-level="1.17" data-path="permission-ask.html">
             
                 <a href="permission-ask.html">
             
@@ -483,6 +509,496 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="meterialdesign&#x8BE6;&#x89E3;">MeterialDesign&#x8BE6;&#x89E3;</h1>
+<h1 id="meterial&#xFF1A;coordinatrlayout">Meterial&#xFF1A;CoordinatrLayout</h1>
+<p>&#x53C2;&#x8003;&#xFF1A;
+<a href="http://blog.csdn.net/u010687392/article/details/46852565" target="_blank">http://blog.csdn.net/u010687392/article/details/46852565</a>
+<a href="http://blog.csdn.net/xyz_lmn/article/details/48055919" target="_blank">http://blog.csdn.net/xyz_lmn/article/details/48055919</a>
+<a href="http://www.open-open.com/lib/view/open1438265746378.html" target="_blank">http://www.open-open.com/lib/view/open1438265746378.html</a>
+<a href="http://blog.csdn.net/pengkv/article/details/46429759" target="_blank">http://blog.csdn.net/pengkv/article/details/46429759</a></p>
+<p>&#x8FD9;&#x4E2A;&#x63A7;&#x4EF6;&#x7B80;&#x76F4;&#x4E86;&#xFF0C;&#x771F;TM&#x590D;&#x6742;&#x554A;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x4E00;&#x5C42;&#x4E00;&#x5C42;&#x6765;&#x5256;&#x6790;</p>
+<ul>
+<li>&#x5230;&#x5E95;&#x662F;&#x4E2A;&#x5565;<ul>
+<li>&#x5B83;&#x662F;&#x7EC4;&#x7EC7;&#x5B83;&#x4F17;&#x591A;&#x5B50;view&#x4E4B;&#x95F4;&#x4E92;&#x76F8;&#x534F;&#x4F5C;&#x7684;&#x4E00;&#x4E2A;ViewGroup&#xFF0C;&#x8981;&#x89E3;&#x51B3;&#x7684;&#x5C31;&#x662F;&#x6ED1;&#x52A8;&#x76F8;&#x5173;&#x7684;&#x95EE;&#x9898;</li>
+<li>CoordinatorLayout &#x7684;&#x795E;&#x5947;&#x4E4B;&#x5904;&#x5C31;&#x5728;&#x4E8E; Behavior &#x5BF9;&#x8C61;</li>
+<li>CoordinatorLayout&#x4F7F;&#x5F97;&#x5B50;view&#x4E4B;&#x95F4;&#x77E5;&#x9053;&#x4E86;&#x5F7C;&#x6B64;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x4E00;&#x4E2A;&#x5B50;view&#x7684;&#x53D8;&#x5316;&#x53EF;&#x4EE5;&#x901A;&#x77E5;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x5B50;view</li>
+<li>CoordinatorLayout &#x6240;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x5C31;&#x662F;&#x5F53;&#x6210;&#x4E00;&#x4E2A;&#x901A;&#x4FE1;&#x7684;&#x6865;&#x6881;&#xFF0C;&#x8FDE;&#x63A5;&#x4E0D;&#x540C;&#x7684;view&#xFF0C;&#x4F7F;&#x7528; Behavior &#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x901A;&#x4FE1;</li>
+<li>&#x53EF;&#x4EE5;&#x8DDF;&#x4E00;&#x4E2A;AppBarLayout&#x4F5C;&#x4E3A;&#x5B50;View</li>
+<li>&#x7136;&#x540E;&#x8DDF;&#x4E00;&#x4E2A;&#x6EDA;&#x52A8;&#x63A7;&#x4EF6;&#xFF0C;LinearLayout&#x3001;RecyclerView&#x3001;NestedScrollView&#x7B49;(ScorllView&#x4E0D;&#x884C;&#xFF09;&#xFF0C; &#x5E76;&#x6807;&#x8BB0;app:layout_behavior=&quot;@string/appbar_scrolling_view_behavior&quot;</li>
+<li>&#x5176;&#x5B9E;&#x662F;&#x4E2A;FrameLayout&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x7528;layout_gravity&#x6765;&#x63A7;&#x5236;&#x5B50;&#x63A7;&#x4EF6;&#x4F4D;&#x7F6E;</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-actionbarlayout">1 ActionBarLayout</h2>
+<pre><code class="lang-xml">&#x4E00;&#x822C;&#x7528;&#x6CD5;&#xFF1A;
+
+<span class="hljs-tag">&lt;<span class="hljs-name">android.support.design.widget.CoordinatorLayout</span>
+    <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/coordinator_layout&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">android.support.design.widget.AppBarLayout</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/appbar_layout&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:fitsSystemWindows</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">android.support.v7.widget.Toolbar</span>
+            <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/toolBar&quot;</span>
+            <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+            <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;?attr/actionBarSize&quot;</span>
+            <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;#30469b&quot;</span>
+            <span class="hljs-attr">app:layout_scrollFlags</span>=<span class="hljs-string">&quot;scroll|enterAlways&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">android.support.design.widget.TabLayout</span>
+            <span class="hljs-attr">......</span>
+             /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">android.support.design.widget.AppBarLayout</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">LinearLayout</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">&quot;vertical&quot;</span>
+        <span class="hljs-attr">android:scrollbars</span>=<span class="hljs-string">&quot;none&quot;</span>
+        <span class="hljs-attr">app:layout_behavior</span>=<span class="hljs-string">&quot;@string/appbar_scrolling_view_behavior&quot;</span>&gt;</span>
+ <span class="hljs-comment">&lt;!-- content view .....--&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">LinearLayout</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">android.support.design.widget.CoordinatorLayout</span>&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6CE8;&#x610F;&#xFF1A;<ul>
+<li>ToolBar&#x6807;&#x8BB0;&#x4E86;layout_scrollFlags&#x6EDA;&#x52A8;&#x4E8B;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;LinearLayout&#x6EDA;&#x52A8;&#x65F6;&#x4FBF;&#x53EF;&#x89E6;&#x53D1;ToolBar&#x4E2D;&#x7684;layout_scrollFlags&#x6548;&#x679C;<ul>
+<li>&#x5373;&#x5F80;&#x4E0A;&#x6ED1;&#x52A8;&#x9690;&#x85CF;ToolBar&#xFF0C;&#x4E0B;&#x6ED1;&#x51FA;&#x73B0;ToolBar</li>
+<li>&#x800C;&#x4E0D;&#x4F1A;&#x9690;&#x85CF;TabLayout&#xFF0C;&#x56E0;&#x4E3A;TabLayout&#x6CA1;&#x6709;&#x6807;&#x8BB0;scrollFlags&#x4E8B;&#x4EF6;&#xFF0C;&#x6240;&#x4EE5;TabLayout&#x4F1A;&#x5438;&#x9876;</li>
+<li>&#x8FD9;&#x4E2A;&#x673A;&#x5236;&#x53EA;&#x6709;&#x5728;AppbarLayout&#x4F5C;&#x4E3A;CoordinatorLayout&#x7684;&#x5B50;View&#x65F6;&#xFF0C;&#x624D;&#x4F1A;&#x6FC0;&#x6D3B;</li>
+<li>&#x6CE8;&#x610F;&#xFF1A;&#x5438;&#x9876;&#x7684;&#x5E94;&#x8BE5;&#x5728;&#x88AB;&#x9690;&#x85CF;&#x7684;&#x63A7;&#x4EF6;&#x4E0B;&#x9762;</li>
+</ul>
+</li>
+<li>layout_scrollFlags&#x4E2D;&#x7684;&#x51E0;&#x4E2A;&#x503C;&#xFF1A;&#x53EA;&#x6709;&#x5728;AppBarLayout&#x91CC;&#x624D;&#x6709;&#x7528;<ul>
+<li>scroll: &#x6240;&#x6709;&#x60F3;&#x6EDA;&#x52A8;&#x51FA;&#x5C4F;&#x5E55;&#x7684;view&#x90FD;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E2A;flag&#xFF0C; &#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E2A;flag&#x7684;view&#x5C06;&#x88AB;&#x56FA;&#x5B9A;&#x5728;&#x5C4F;&#x5E55;&#x9876;&#x90E8;</li>
+<li>enterAlways:&#x8FD9;&#x4E2A;flag&#x8BA9;&#x4EFB;&#x610F;&#x5411;&#x4E0B;&#x7684;&#x6EDA;&#x52A8;&#x90FD;&#x4F1A;&#x5BFC;&#x81F4;&#x8BE5;view&#x53D8;&#x4E3A;&#x53EF;&#x89C1;&#xFF0C;&#x542F;&#x7528;&#x5FEB;&#x901F;&#x201C;&#x8FD4;&#x56DE;&#x6A21;&#x5F0F;&#x201D;&#x3002;</li>
+<li>enterAlwaysCollapsed:&#x5F53;&#x4F60;&#x7684;&#x89C6;&#x56FE;&#x5DF2;&#x7ECF;&#x8BBE;&#x7F6E;minHeight&#x5C5E;&#x6027;&#x53C8;&#x4F7F;&#x7528;&#x6B64;&#x6807;&#x5FD7;&#x65F6;&#xFF0C;&#x4F60;&#x7684;&#x89C6;&#x56FE;&#x53EA;&#x80FD;&#x5DF2;&#x6700;&#x5C0F;&#x9AD8;&#x5EA6;&#x8FDB;&#x5165;&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x6EDA;&#x52A8;&#x89C6;&#x56FE;&#x5230;&#x8FBE;&#x9876;&#x90E8;&#x65F6;&#x624D;&#x6269;&#x5927;&#x5230;&#x5B8C;&#x6574;&#x9AD8;&#x5EA6;&#x3002;</li>
+<li>exitUntilCollapsed:&#x6EDA;&#x52A8;&#x9000;&#x51FA;&#x5C4F;&#x5E55;&#xFF0C;&#x6700;&#x540E;&#x6298;&#x53E0;&#x5728;&#x9876;&#x7AEF;&#x3002;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-floatingactionbutton">2 FloatingActionButton</h2>
+<p>FloatingActionButton&#x662F;&#x6700;&#x7B80;&#x5355;&#x7684;&#x4F7F;&#x7528;CoordinatorLayout&#x7684;&#x4F8B;&#x5B50;&#xFF0C;FloatingActionButton&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;FloatingActionButton.Behavior&#x3002;</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">android.support.design.widget.CoordinatorLayout</span>
+    <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">android.support.design.widget.FloatingActionButton</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/fab&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_gravity</span>=<span class="hljs-string">&quot;end|bottom&quot;</span>
+        <span class="hljs-attr">android:layout_margin</span>=<span class="hljs-string">&quot;16dp&quot;</span>
+        <span class="hljs-attr">android:src</span>=<span class="hljs-string">&quot;@drawable/ic_done&quot;</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">android.support.design.widget.CoordinatorLayout</span>&gt;</span>
+</code></pre>
+<h2 id="3-collapsingtoolbarlayout">3 CollapsingToolbarLayout</h2>
+<p>CollapsingToolbarLayout&#x4F5C;&#x7528;&#x662F;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x6298;&#x53E0;&#x7684;Toolbar
+&#x6240;&#x4EE5;&#x5FC5;&#x987B;&#x548C;Toolbar&#x914D;&#x5408;&#x4F7F;&#x7528;</p>
+<p>&#x6548;&#x679C;&#xFF1A;
+(./doc/img/c1.jpg)</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">android.support.design.widget.CoordinatorLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/main_content&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:fitsSystemWindows</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">android.support.design.widget.AppBarLayout</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/appbar&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;256dp&quot;</span>
+        <span class="hljs-attr">android:theme</span>=<span class="hljs-string">&quot;@style/ThemeOverlay.AppCompat.Dark.ActionBar&quot;</span>
+        <span class="hljs-attr">android:fitsSystemWindows</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">android.support.design.widget.CollapsingToolbarLayout</span>
+            <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/collapsing_toolbar&quot;</span>
+            <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+            <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+            <span class="hljs-attr">app:layout_scrollFlags</span>=<span class="hljs-string">&quot;scroll|exitUntilCollapsed&quot;</span>
+            <span class="hljs-attr">android:fitsSystemWindows</span>=<span class="hljs-string">&quot;true&quot;</span>
+            <span class="hljs-attr">app:contentScrim</span>=<span class="hljs-string">&quot;?attr/colorPrimary&quot;</span>
+            <span class="hljs-attr">app:expandedTitleMarginStart</span>=<span class="hljs-string">&quot;48dp&quot;</span>
+            <span class="hljs-attr">app:expandedTitleMarginEnd</span>=<span class="hljs-string">&quot;64dp&quot;</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
+                <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/backdrop&quot;</span>
+                <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+                <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+                <span class="hljs-attr">android:scaleType</span>=<span class="hljs-string">&quot;centerCrop&quot;</span>
+                <span class="hljs-attr">android:fitsSystemWindows</span>=<span class="hljs-string">&quot;true&quot;</span>
+                <span class="hljs-attr">android:src</span>=<span class="hljs-string">&quot;@drawable/header&quot;</span>
+                <span class="hljs-attr">app:layout_collapseMode</span>=<span class="hljs-string">&quot;parallax&quot;</span>
+                /&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">android.support.v7.widget.Toolbar</span>
+                <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/toolbar&quot;</span>
+                <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+                <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;?attr/actionBarSize&quot;</span>
+                <span class="hljs-attr">app:popupTheme</span>=<span class="hljs-string">&quot;@style/ThemeOverlay.AppCompat.Light&quot;</span>
+                <span class="hljs-attr">app:layout_collapseMode</span>=<span class="hljs-string">&quot;pin&quot;</span> /&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">android.support.design.widget.CollapsingToolbarLayout</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">android.support.design.widget.AppBarLayout</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">android.support.v4.widget.NestedScrollView</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">app:layout_behavior</span>=<span class="hljs-string">&quot;@string/appbar_scrolling_view_behavior&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">LinearLayout</span>
+            <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+            <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+            <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">&quot;vertical&quot;</span>
+            <span class="hljs-attr">android:paddingTop</span>=<span class="hljs-string">&quot;24dp&quot;</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">android.support.v7.widget.CardView</span>
+                <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+                <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+                <span class="hljs-attr">android:layout_margin</span>=<span class="hljs-string">&quot;16dp&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">LinearLayout</span>
+                    <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;@style/Widget.CardContent&quot;</span>
+                    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+                    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+                        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+                        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+                        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;CardView&quot;</span>
+                        <span class="hljs-attr">android:textAppearance</span>=<span class="hljs-string">&quot;@style/TextAppearance.AppCompat.Title&quot;</span> /&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+                        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+                        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+                        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/card_string&quot;</span> /&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">LinearLayout</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">android.support.v7.widget.CardView</span>&gt;</span>
+          &#x2026;&#x2026;
+        <span class="hljs-tag">&lt;/<span class="hljs-name">LinearLayout</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">android.support.v4.widget.NestedScrollView</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">android.support.design.widget.FloatingActionButton</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">app:layout_anchor</span>=<span class="hljs-string">&quot;@id/appbar&quot;</span>
+        <span class="hljs-attr">app:layout_anchorGravity</span>=<span class="hljs-string">&quot;bottom|right|end&quot;</span>
+        <span class="hljs-attr">android:src</span>=<span class="hljs-string">&quot;@drawable/ic_done&quot;</span>
+        <span class="hljs-attr">android:layout_margin</span>=<span class="hljs-string">&quot;@dimen/fab_margin&quot;</span>
+        <span class="hljs-attr">android:clickable</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">android.support.design.widget.CoordinatorLayout</span>&gt;</span>
+</code></pre>
+<h1 id="meterial&#xFF1A;tablayout">Meterial&#xFF1A;TabLayout</h1>
+<ul>
+<li>&#x8FD9;&#x4E2A;&#x5C31;&#x662F;indicator&#x7684;&#x5B98;&#x65B9;&#x6846;&#x67B6;<ul>
+<li>&#x6D89;&#x53CA;&#x5230;TabLayout, Tab, TabView, TabItem</li>
+<li>&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;item&#x600E;&#x4E48;&#x663E;&#x793A;<ul>
+<li>&#x53C2;&#x8003;&#xFF1A;<a href="http://www.jianshu.com/p/7f79b08f5afa" target="_blank">http://www.jianshu.com/p/7f79b08f5afa</a></li>
+<li>&#x53C2;&#x8003;&#xFF1A;<a href="http://blog.csdn.net/chendong_/article/details/53044528" target="_blank">http://blog.csdn.net/chendong_/article/details/53044528</a></li>
+</ul>
+</li>
+<li>&#x9ED8;&#x8BA4;&#x7684;&#x6837;&#x5F0F;&#x662F;&#x6587;&#x5B57;+&#x6A2A;&#x7EBF;</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-&#x57FA;&#x672C;&#x4F7F;&#x7528;">1 &#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
+<pre><code>&lt;android.support.design.widget.TabLayout
+            android:id=&quot;@+id/tabLayout&quot;
+            android:layout_width=&quot;match_parent&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:background=&quot;#30469b&quot;
+            app:tabGravity=&quot;fill&quot;
+            app:tabMode=&quot;fixed&quot;
+            app:tabSelectedTextColor=&quot;#ff0000&quot;
+            app:tabTextColor=&quot;#ffffff&quot; /&gt;
+</code></pre><ul>
+<li>TabLayout&#x5B9E;&#x73B0;&#x4E86;&#xFF1A;<ul>
+<li>&#x56FA;&#x5B9A;&#x7684;Tab&#xFF0C;&#x6839;&#x636E;TabLayout&#x7684;&#x5BBD;&#x5EA6;&#x9002;&#x914D;&#x6BCF;&#x4E2A;Item&#x7684;&#x5BBD;&#x5EA6;</li>
+<li>&#x56FA;&#x5B9A;&#x7684;Tab&#xFF0C;&#x5728;TabLayout&#x4E2D;&#x5C45;&#x4E2D;&#x663E;&#x793A;&#x6240;&#x6709;Item</li>
+<li>&#x53EF;&#x6ED1;&#x52A8;&#x7684;Tab</li>
+</ul>
+</li>
+</ul>
+<p>(./doc/img/TL1.gif)
+(./doc/img/TL2.gif)
+(./doc/img/TL3.gif)</p>
+<ul>
+<li>&#x5E38;&#x7528;&#x5C5E;&#x6027;&#xFF1A;<ul>
+<li>tabGravity  &#x2014;Tab&#x7684;&#x91CD;&#x5FC3;&#xFF0C;&#x6709;&#x586B;&#x5145;&#x548C;&#x5C45;&#x4E2D;&#x4E24;&#x4E2A;&#x503C;&#xFF0C;&#x4E3A;&#x522B;&#x4E3A;fill&#x548C;center</li>
+<li>tabMode  &#x2014;Tab&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x6709;&#x56FA;&#x5B9A;&#x548C;&#x6EDA;&#x52A8;&#x4E24;&#x4E2A;&#x6A21;&#x5F0F;&#xFF0C;&#x5206;&#x522B;&#x4E3A; fixed &#x548C; scrollable</li>
+<li>tabTextColor  &#x2014;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x72B6;&#x6001;&#x4E0B;Tab&#x4E0A;&#x5B57;&#x4F53;&#x7684;&#x989C;&#x8272;</li>
+<li>tabSelectedTextColor  &#x2014;&#x8BBE;&#x7F6E;&#x9009;&#x4E2D;&#x72B6;&#x6001;&#x4E0B;Tab&#x4E0A;&#x5B57;&#x4F53;&#x7684;&#x989C;&#x8272;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-java">&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x52A8;&#x6001;&#x52A0;&#x5165;Tab
+TabLayout mTabLayout = (TabLayout) findViewById(R.id.tabLayout);
+mTabLayout.addTab(mTabLayout.newTab().setText(<span class="hljs-string">&quot;TabOne&quot;</span>));<span class="hljs-comment">//&#x7ED9;TabLayout&#x6DFB;&#x52A0;Tab</span>
+mTabLayout.addTab(mTabLayout.newTab().setText(<span class="hljs-string">&quot;TabTwo&quot;</span>));
+mTabLayout.addTab(mTabLayout.newTab().setText(<span class="hljs-string">&quot;TabThree&quot;</span>));
+<span class="hljs-comment">//&#x7ED9;TabLayout&#x8BBE;&#x7F6E;&#x5173;&#x8054;ViewPager&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;ViewPager&#xFF0C;&#x90A3;&#x4E48;ViewPagerAdapter&#x4E2D;&#x7684;getPageTitle()&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x5C31;&#x662F;Tab&#x4E0A;&#x7684;&#x6807;&#x9898;</span>
+
+&#x8BBE;&#x7F6E;ViewPager
+ViewPager mViewPager = (ViewPager) findViewById(R.id.viewpager);
+MyViewPagerAdapter viewPagerAdapter = <span class="hljs-keyword">new</span> MyViewPagerAdapter(getSupportFragmentManager());
+viewPagerAdapter.addFragment(FragmentOne.newInstance(), <span class="hljs-string">&quot;TabOne&quot;</span>);<span class="hljs-comment">//&#x6DFB;&#x52A0;Fragment</span>
+viewPagerAdapter.addFragment(FragmentTwo.newInstance(), <span class="hljs-string">&quot;TabTwo&quot;</span>);
+viewPagerAdapter.addFragment(FragmentThree.newInstance(), <span class="hljs-string">&quot;TabThree&quot;</span>);
+mViewPager.setAdapter(viewPagerAdapter);<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x9002;&#x914D;&#x5668;</span>
+
+&#x8FDE;&#x63A5;TabLayout&#x548C;ViewPager
+mTabLayout.setupWithViewPager(mViewPager);
+</code></pre>
+<h2 id="2-&#x81EA;&#x5B9A;&#x4E49;&#x6837;&#x5F0F;">2 &#x81EA;&#x5B9A;&#x4E49;&#x6837;&#x5F0F;</h2>
+<p><a href="http://blog.csdn.net/chendong_/article/details/53044528" target="_blank">http://blog.csdn.net/chendong_/article/details/53044528</a></p>
+<p><a href="http://www.jianshu.com/p/7f79b08f5afa" target="_blank">http://www.jianshu.com/p/7f79b08f5afa</a></p>
+<h1 id="meterial&#xFF1A;&#x4E3B;&#x9898;">Meterial&#xFF1A;&#x4E3B;&#x9898;</h1>
+<h2 id="1-&#x4E3B;&#x9898;&#x989C;&#x8272;">1 &#x4E3B;&#x9898;&#x989C;&#x8272;</h2>
+<p>&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x7528;AppCompatActivity&#xFF0C;&#x4E5F;&#x5C31;&#x53EA;&#x80FD;&#x7528;AppCompat&#x7684;&#x4E3B;&#x9898;&#xFF0C;&#x8FD9;&#x7C7B;&#x4E3B;&#x9898;&#x4F1A;&#x6309;&#x7167;21&#x5212;&#x5206;&#xFF0C;21&#x4EE5;&#x4E0A;&#x4F1A;&#x52A0;&#x8F7D;Material&#x7684;&#x4E3B;&#x9898;</p>
+<pre><code>values&#x76EE;&#x5F55;&#x7684;style.xml
+
+&lt;style name=&quot;AppTheme&quot; parent=&quot;Theme.AppCompat.Light.NoActionBar&quot;&gt;
+    &lt;!-- Customize your theme here. --&gt;
+    &lt;item name=&quot;colorPrimary&quot;&gt;@color/colorPrimary&lt;/item&gt;
+    &lt;item name=&quot;colorPrimaryDark&quot;&gt;@color/colorPrimaryDark&lt;/item&gt;
+    &lt;item name=&quot;colorAccent&quot;&gt;@color/colorAccent&lt;/item&gt;
+
+    &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+    &lt;item name=&quot;android:windowBackground&quot;&gt;@drawable/logo&lt;/item&gt;
+&lt;/style&gt;
+
+&lt;style name=&quot;AppTheme.Transparent&quot; parent=&quot;Theme.AppCompat.Light.NoActionBar&quot;&gt;
+    &lt;item name=&quot;android:windowIsTranslucent&quot;&gt;true&lt;/item&gt;
+    &lt;item name=&quot;android:windowAnimationStyle&quot;&gt;@style/Animation.Activity.Translucent.Style&lt;/item&gt;
+&lt;/style&gt;
+
+values-21&#x76EE;&#x5F55;&#x7684;style.xml
+&lt;style name=&quot;AppTheme&quot; parent=&quot;Theme.AppCompat.Light.NoActionBar&quot;&gt;
+    &lt;!-- Customize your theme here. --&gt;
+    &lt;item name=&quot;colorPrimary&quot;&gt;@color/colorPrimary&lt;/item&gt;
+    &lt;item name=&quot;colorPrimaryDark&quot;&gt;@color/colorPrimaryDark&lt;/item&gt;
+    &lt;item name=&quot;colorAccent&quot;&gt;@color/colorAccent&lt;/item&gt;
+    &lt;item name=&quot;android:textColorPrimary&quot;&gt;@color/textColorPrimary&lt;/item&gt;
+    &lt;item name=&quot;android:navigationBarColor&quot;&gt;@color/navigationBarColor&lt;/item&gt;
+    &lt;item name=&quot;android:colorControlHighlight&quot;&gt;@color/colorControlHighlight&lt;/item&gt;
+
+
+    &lt;item name=&quot;android:windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+    &lt;item name=&quot;android:windowBackground&quot;&gt;@drawable/logo&lt;/item&gt;
+&lt;/style&gt;
+</code></pre><h1 id="meterial&#xFF1A;toolbar">Meterial&#xFF1A;Toolbar</h1>
+<p>&#x53C2;&#x8003;&#xFF1A;
+<a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/1118/2006.html" target="_blank">http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/1118/2006.html</a></p>
+<ul>
+<li>&#x7531;&#x8FD9;&#x4E2A;Toolbar&#x5F15;&#x51FA;&#x6765;&#x7684;&#x51E0;&#x4E2A;&#x5730;&#x65B9;&#x8FD8;&#x662F;&#x633A;&#x5947;&#x8469;&#x7684;&#xFF1A;<ul>
+<li>systembar&#x8BBE;&#x7F6E;&#x6210;&#x6D45;&#x8272;&#x80CC;&#x666F;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5B57;&#x4F53;&#x5C31;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x6210;&#x6DF1;&#x8272;<ul>
+<li>&#x4F46;&#x53EA;&#x652F;&#x6301;&#x5C0F;&#x7C73;&#xFF0C;&#x9B45;&#x65CF;&#xFF0C;6.0&#x4EE5;&#x4E0A;&#x7CFB;&#x7EDF;</li>
+<li>&#x4F46;6.0&#x7684;&#x4E09;&#x661F;&#x8FD8;&#x662F;&#x6CA1;&#x6CD5;&#x628A;systembar&#x8BBE;&#x7F6E;&#x6210;&#x767D;&#x8272;&#xFF0C;&#x4E00;&#x65E6;&#x7ED9;&#x767D;&#x8272;&#xFF0C;&#x5C31;&#x4F1A;&#x663E;&#x793A;&#x6210;&#x7070;&#x6761;</li>
+</ul>
+</li>
+<li>clipToPadding&#x548C;clipToChildren&#x7684;&#x610F;&#x601D;&#xFF0C;&#x8FD8;&#x662F;&#x6CA1;&#x5F04;&#x61C2;</li>
+<li>windowIsTranlusent&#x7684;&#x95EE;&#x9898;&#xFF0C;swipeback&#x9700;&#x8981;&#x5417;</li>
+<li>Toolbar&#x8FD8;&#x662F;&#x6CA1;&#x6CD5;&#x6EE1;&#x8DB3;&#x56FD;&#x5185;&#x7684;&#x6807;&#x9898;&#x680F;&#x9700;&#x6C42;&#x554A;</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-&#x5173;&#x4E8E;style">1 &#x5173;&#x4E8E;Style</h2>
+<p>Toolbar&#x53D6;&#x4EE3;&#x4E86;ActionBar&#xFF0C;&#x53EA;&#x6709;api-21&#x624D;&#x80FD;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x5F97;&#x7528;support-v7&#x91CC;&#x7684;toolbar</p>
+<p>&#x4F7F;&#x7528; Toolbar&#xFF0C;&#x9996;&#x5148;&#x8981;&#x5C06;&#x8BA9;&#x539F;&#x672C;&#x7684; ActionBar &#x9690;&#x85CF;&#x8D77;&#x6765;</p>
+<p>&#x5148;&#x6574;&#x4E00;&#x4E0B;style</p>
+<ul>
+<li>res/values-v21/styles.xml  &#x662F;&#x5B89;&#x5353;5.0&#x7684;&#x6837;&#x5F0F;</li>
+<li>res/values/styles.xml</li>
+</ul>
+<p>&#x4F7F;&#x7528;toolbar&#x65F6;&#xFF0C;&#x4E0A;&#x9762;&#x4E24;&#x4E2A;style&#x90FD;&#x9700;&#x8981;&#x8C03;&#x6574;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- Base application theme. --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;AppTheme&quot;</span> <span class="hljs-attr">parent</span>=<span class="hljs-string">&quot;AppTheme.Base&quot;</span>&gt;</span><span class="undefined">
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;AppTheme.Base&quot;</span> <span class="hljs-attr">parent</span>=<span class="hljs-string">&quot;Theme.AppCompat.NoActionBar&quot;</span>&gt;</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;windowActionBar&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">del</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;android:windowNoTitle&quot;</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">del</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x4F7F;&#x7528; API Level 22 &#x7F16;&#x8BD1;&#x7684;&#x8BDD;&#xFF0C;&#x8981;&#x62FF;&#x6389;&#x524D;&#x7F00;&#x5B57; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;windowNoTitle&quot;</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span>
+
+5.0&#x91CC;
+<span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;AppTheme&quot;</span> <span class="hljs-attr">parent</span>=<span class="hljs-string">&quot;AppTheme.Base&quot;</span>&gt;</span><span class="undefined">
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span>
+
+&#x6CE8;&#x610F;&#xFF1A;
+1 AppTheme.Base&#x662F;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x52A0;&#x7684;&#xFF0C;&#x5C31;&#x662F;&#x8981;&#x9690;&#x85CF;ActionBar
+2 &#x6CE8;&#x610F;&#x7528;api-22&#x7F16;&#x8BD1;&#xFF0C;&#x8981;&#x62FF;&#x6389;&#x524D;&#x7F00;&#x5B57;&#xFF0C;&#x4E3A;&#x5565;
+</code></pre>
+<h2 id="2-&#x5E03;&#x5C40;">2 &#x5E03;&#x5C40;</h2>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">android.support.v7.widget.Toolbar</span>
+  <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/toolbar&quot;</span>
+  <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;?attr/actionBarSize&quot;</span>
+  <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span> &gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">android.support.v7.widget.Toolbar</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-xml">&#x83DC;&#x5355;&#xFF1A;
+<span class="hljs-tag">&lt;<span class="hljs-name">menu</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+      <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+      <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span>
+      <span class="hljs-attr">tools:context</span>=<span class="hljs-string">&quot;.MainActivity&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/action_edit&quot;</span>
+        <span class="hljs-attr">android:title</span>=<span class="hljs-string">&quot;@string/action_edit&quot;</span>
+        <span class="hljs-attr">android:orderInCategory</span>=<span class="hljs-string">&quot;80&quot;</span>
+        <span class="hljs-attr">android:icon</span>=<span class="hljs-string">&quot;@drawable/ab_edit&quot;</span>
+        <span class="hljs-attr">app:showAsAction</span>=<span class="hljs-string">&quot;ifRoom&quot;</span> /&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/action_share&quot;</span>
+        <span class="hljs-attr">android:title</span>=<span class="hljs-string">&quot;@string/action_edit&quot;</span>
+        <span class="hljs-attr">android:orderInCategory</span>=<span class="hljs-string">&quot;90&quot;</span>
+        <span class="hljs-attr">android:icon</span>=<span class="hljs-string">&quot;@drawable/ab_share&quot;</span>
+        <span class="hljs-attr">app:showAsAction</span>=<span class="hljs-string">&quot;ifRoom&quot;</span> /&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/action_settings&quot;</span>
+        <span class="hljs-attr">android:title</span>=<span class="hljs-string">&quot;@string/action_settings&quot;</span>
+        <span class="hljs-attr">android:orderInCategory</span>=<span class="hljs-string">&quot;100&quot;</span>
+        <span class="hljs-attr">app:showAsAction</span>=<span class="hljs-string">&quot;never&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">menu</span>&gt;</span>
+</code></pre>
+<p>&#x770B;&#x8D77;&#x6765;&#xFF1A;
+(./doc/img/toobar/t2.png)</p>
+<p>&#x6240;&#x6709;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x7684;&#x6837;&#x5F0F;&#xFF1A;
+(./doc/img/toobar/t1.png)</p>
+<p>&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li>colorPrimaryDark<ul>
+<li>&#x72B6;&#x6001;&#x680F;&#x80CC;&#x666F;&#x8272;&#x3002;</li>
+<li>&#x5728; style &#x7684;&#x5C5E;&#x6027;&#x4E2D;&#x8BBE;&#x7F6E;&#x3002;</li>
+</ul>
+</li>
+<li>textColorPrimary<ul>
+<li>App bar &#x4E0A;&#x7684;&#x6807;&#x9898;&#x4E0E;&#x66F4;&#x591A;&#x83DC;&#x5355;&#x4E2D;&#x7684;&#x6587;&#x5B57;&#x989C;&#x8272;&#x3002;</li>
+<li>&#x5728; style &#x7684;&#x5C5E;&#x6027;&#x4E2D;&#x8BBE;&#x7F6E;&#x3002;</li>
+</ul>
+</li>
+<li>App bar &#x7684;&#x80CC;&#x666F;&#x8272;<ul>
+<li>Actionbar &#x7684;&#x80CC;&#x666F;&#x8272;&#x8BBE;&#x5B9A;&#x5728; style &#x4E2D;&#x7684; colorPrimary&#x3002;</li>
+<li>Toolbar &#x7684;&#x80CC;&#x666F;&#x8272;&#x5728;layout&#x6587;&#x4EF6;&#x4E2D;&#x8BBE;&#x7F6E;background&#x5C5E;&#x6027;&#x3002;</li>
+</ul>
+</li>
+<li>colorAccent<ul>
+<li>&#x5404;&#x63A7;&#x5236;&#x5143;&#x4EF6;(&#x5982;&#xFF1A;check box&#x3001;switch &#x6216;&#x662F; radoi) &#x88AB;&#x52FE;&#x9009; (checked) &#x6216;&#x662F;&#x9009;&#x5B9A; (selected) &#x7684;&#x989C;&#x8272;&#x3002;</li>
+<li>&#x5728; style &#x7684;&#x5C5E;&#x6027;&#x4E2D;&#x8BBE;&#x7F6E;&#x3002;</li>
+</ul>
+</li>
+<li>colorControlNormal<ul>
+<li>&#x5404;&#x63A7;&#x5236;&#x5143;&#x4EF6;&#x7684;&#x9884;&#x8BBE;&#x989C;&#x8272;&#x3002;</li>
+<li>&#x5728; style &#x7684;&#x5C5E;&#x6027;&#x4E2D;&#x8BBE;&#x7F6E;</li>
+</ul>
+</li>
+<li>windowBackground<ul>
+<li>App &#x7684;&#x80CC;&#x666F;&#x8272;&#x3002;</li>
+<li>&#x5728; style &#x7684;&#x5C5E;&#x6027;&#x4E2D;&#x8BBE;&#x7F6E;</li>
+</ul>
+</li>
+<li>navigationBarColor<ul>
+<li>&#x5BFC;&#x822A;&#x680F;&#x7684;&#x80CC;&#x666F;&#x8272;&#xFF0C;&#x4F46;&#x53EA;&#x80FD;&#x7528;&#x5728; API Level 21 (Android 5) &#x4EE5;&#x4E0A;&#x7684;&#x7248;&#x672C;</li>
+<li>&#x5728; style &#x7684;&#x5C5E;&#x6027;&#x4E2D;&#x8BBE;&#x7F6E;&#xFF0C;&#x53EA;&#x80FD;&#x5728;value-21&#x91CC;&#x8BBE;&#x7F6E;</li>
+<li><code>&lt;item name=&quot;android:navigationBarColor&quot;&gt;@color/accent_material_light&lt;/item&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="3-&#x4EE3;&#x7801;&#xFF1A;">3 &#x4EE3;&#x7801;&#xFF1A;</h2>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> biz.mosil.demo.toolbar;
+
+<span class="hljs-keyword">import</span> android.support.v7.app.ActionBarActivity;
+<span class="hljs-keyword">import</span> android.os.Bundle;
+<span class="hljs-keyword">import</span> android.support.v7.widget.Toolbar;
+<span class="hljs-keyword">import</span> android.view.Menu;
+<span class="hljs-keyword">import</span> android.view.MenuItem;
+<span class="hljs-keyword">import</span> android.widget.Toast;
+
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ActionBarActivity</span> </span>{
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+    <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+    <span class="hljs-comment">// App Logo</span>
+    toolbar.setLogo(R.drawable.ic_launcher);
+    <span class="hljs-comment">// Title</span>
+    toolbar.setTitle(<span class="hljs-string">&quot;My Title&quot;</span>);
+    <span class="hljs-comment">// Sub Title</span>
+    toolbar.setSubtitle(<span class="hljs-string">&quot;Sub title&quot;</span>);
+
+    setSupportActionBar(toolbar);
+
+    <span class="hljs-comment">// Navigation Icon &#x8981;&#x8A2D;&#x5B9A;&#x5728; setSupoortActionBar &#x624D;&#x6709;&#x4F5C;&#x7528;</span>
+    <span class="hljs-comment">// &#x5426;&#x5247;&#x6703;&#x51FA;&#x73FE; back bottom</span>
+    toolbar.setNavigationIcon(R.drawable.ab_android);
+    <span class="hljs-comment">// Menu item click &#x7684;&#x76E3;&#x807D;&#x4E8B;&#x4EF6;&#x4E00;&#x6A23;&#x8981;&#x8A2D;&#x5B9A;&#x5728; setSupportActionBar &#x624D;&#x6709;&#x4F5C;&#x7528;</span>
+    toolbar.setOnMenuItemClickListener(onMenuItemClick);
+  }
+
+  <span class="hljs-keyword">private</span> Toolbar.OnMenuItemClickListener onMenuItemClick = <span class="hljs-keyword">new</span> Toolbar.OnMenuItemClickListener() {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">onMenuItemClick</span><span class="hljs-params">(MenuItem menuItem)</span> </span>{
+      String msg = <span class="hljs-string">&quot;&quot;</span>;
+      <span class="hljs-keyword">switch</span> (menuItem.getItemId()) {
+        <span class="hljs-keyword">case</span> R.id.action_edit:
+          msg += <span class="hljs-string">&quot;Click edit&quot;</span>;
+          <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> R.id.action_share:
+          msg += <span class="hljs-string">&quot;Click share&quot;</span>;
+          <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> R.id.action_settings:
+          msg += <span class="hljs-string">&quot;Click setting&quot;</span>;
+          <span class="hljs-keyword">break</span>;
+      }
+
+      <span class="hljs-keyword">if</span>(!msg.equals(<span class="hljs-string">&quot;&quot;</span>)) {
+        Toast.makeText(MainActivity.<span class="hljs-keyword">this</span>, msg, Toast.LENGTH_SHORT).show();
+      }
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+  };
+
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">onCreateOptionsMenu</span><span class="hljs-params">(Menu menu)</span> </span>{
+    <span class="hljs-comment">// &#x70BA;&#x4E86;&#x8B93; Toolbar &#x7684; Menu &#x6709;&#x4F5C;&#x7528;&#xFF0C;&#x9019;&#x908A;&#x7684;&#x7A0B;&#x5F0F;&#x4E0D;&#x53EF;&#x4EE5;&#x62FF;&#x6389;</span>
+    getMenuInflater().inflate(R.menu.menu_main, menu);
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+  }
+}
+</code></pre>
 
                                 
                                 </section>
@@ -526,7 +1042,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MeterialDesign详解","level":"1.12","depth":1,"next":{"title":"AyoComponent基础库--Activity和Fragment","level":"1.13","depth":1,"path":"component.md","ref":"component.md","articles":[]},"previous":{"title":"RecyclerView全解","level":"1.11","depth":1,"path":"recyclerview.md","ref":"recyclerview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"design.md","mtime":"2017-04-09T13:26:36.480Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T13:32:53.234Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MeterialDesign详解","level":"1.14","depth":1,"next":{"title":"AyoComponent基础库--Activity和Fragment","level":"1.15","depth":1,"path":"component.md","ref":"component.md","articles":[]},"previous":{"title":"RecyclerView全解","level":"1.13","depth":1,"path":"recyclerview.md","ref":"recyclerview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"design.md","mtime":"2017-04-09T14:55:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T14:58:02.537Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

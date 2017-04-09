@@ -208,7 +208,33 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="item-template.html">
+        <li class="chapter " data-level="1.10" data-path="textview.html">
+            
+                <a href="textview.html">
+            
+                    
+                    TextView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="drawable.html">
+            
+                <a href="drawable.html">
+            
+                    
+                    Drawable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="item-template.html">
             
                 <a href="item-template.html">
             
@@ -221,7 +247,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="recyclerview.html">
+        <li class="chapter " data-level="1.13" data-path="recyclerview.html">
             
                 <a href="recyclerview.html">
             
@@ -234,7 +260,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="design.html">
+        <li class="chapter " data-level="1.14" data-path="design.html">
             
                 <a href="design.html">
             
@@ -247,7 +273,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="component.html">
+        <li class="chapter " data-level="1.15" data-path="component.html">
             
                 <a href="component.html">
             
@@ -260,7 +286,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="systembartint.html">
+        <li class="chapter " data-level="1.16" data-path="systembartint.html">
             
                 <a href="systembartint.html">
             
@@ -273,7 +299,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="permission-ask.html">
+        <li class="chapter " data-level="1.17" data-path="permission-ask.html">
             
                 <a href="permission-ask.html">
             
@@ -483,6 +509,423 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="notify&#x7CFB;&#x5217;&#x5E93;">notify&#x7CFB;&#x5217;&#x5E93;</h1>
+<h1 id="dialog--&#x901A;&#x8FC7;flyco&#x6E90;&#x7801;&#x5206;&#x6790;&#x4E00;&#x4E0B;&#x600E;&#x4E48;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x66F4;&#x901A;&#x7528;&#x7684;dialog">Dialog:  &#x901A;&#x8FC7;Flyco&#x6E90;&#x7801;&#x5206;&#x6790;&#x4E00;&#x4E0B;&#x600E;&#x4E48;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x66F4;&#x901A;&#x7528;&#x7684;Dialog</h1>
+<h2 id="1-&#x5BF9;&#x8BDD;&#x6846;&#x5927;&#x5C0F;&#x7684;&#x95EE;&#x9898;">1 &#x5BF9;&#x8BDD;&#x6846;&#x5927;&#x5C0F;&#x7684;&#x95EE;&#x9898;</h2>
+<p>Flyco&#x9ED8;&#x8BA4;&#x662F;&#x5C06;Dialog&#x8BBE;&#x7F6E;&#x4E3A;&#x5168;&#x5C4F;&#x5927;&#x5C0F;&#xFF1A;</p>
+<pre><code class="lang-java">setContentView(mLlTop, <span class="hljs-keyword">new</span> ViewGroup.LayoutParams(mDisplayMetrics.widthPixels, (<span class="hljs-keyword">int</span>) mMaxHeight));
+</code></pre>
+<p>&#x5982;&#x679C;&#x662F;Popup style&#xFF0C;&#x90A3;&#x5C31;&#x8BBE;&#x7F6E;&#x6210;wrap_content</p>
+<pre><code class="lang-java">setContentView(mLlTop, <span class="hljs-keyword">new</span> ViewGroup.LayoutParams(
+           ViewGroup.LayoutParams.WRAP_CONTENT,
+           ViewGroup.LayoutParams.WRAP_CONTENT));
+</code></pre>
+<h2 id="2-&#x6839;&#x5E03;&#x5C40;">2 &#x6839;&#x5E03;&#x5C40;</h2>
+<p>&#x603B;&#x4F53;&#x7684;&#x6839;&#x5E03;&#x5C40;&#x662F;&#x4E00;&#x4E2A;LinearLayout&#xFF0C;&#x91CC;&#x9762;&#x53C8;&#x662F;&#x4E00;&#x5C42;Vertical&#x7684;LinearLayout&#xFF0C;&#x7136;&#x540E;&#x624D;&#x662F;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x5E03;&#x5C40;</p>
+<pre><code class="lang-java">mLlTop.setGravity(Gravity.CENTER);
+
+mLlControlHeight = <span class="hljs-keyword">new</span> LinearLayout(mContext);
+mLlControlHeight.setOrientation(LinearLayout.VERTICAL);
+
+mOnCreateView = onCreateView();
+</code></pre>
+<h2 id="3-&#x5927;&#x5C0F;&#x63A7;&#x5236;">3 &#x5927;&#x5C0F;&#x63A7;&#x5236;</h2>
+<p>setUiBeforShow();</p>
+<p>&#x53EF;&#x4EE5;&#x8BBE;&#x5B9A;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;&#xFF1A;</p>
+<pre><code class="lang-java">
+widthScale(<span class="hljs-keyword">float</span> widthScale)    &#x8BBE;&#x7F6E;&#x5BF9;&#x8BDD;&#x6846;&#x5BBD;&#x5EA6;,&#x5360;&#x5C4F;&#x5E55;&#x5BBD;&#x7684;&#x6BD4;&#x4F8B;<span class="hljs-number">0</span>-<span class="hljs-number">1</span>
+heightScale(<span class="hljs-keyword">float</span> heightScale)  &#x8BBE;&#x7F6E;&#x5BF9;&#x8BDD;&#x6846;&#x9AD8;&#x5EA6;,&#x5360;&#x5C4F;&#x5E55;&#x5BBD;&#x7684;&#x6BD4;&#x4F8B;<span class="hljs-number">0</span>-<span class="hljs-number">1</span>
+<span class="hljs-comment">//&#x8FD9;&#x4E24;&#x4E2A;&#x4F1A;&#x88AB;&#x7528;&#x5728;mLlControlHeight&#x4E0A;</span>
+</code></pre>
+<h2 id="4-&#x52A8;&#x753B;&#x63A7;&#x5236;">4 &#x52A8;&#x753B;&#x63A7;&#x5236;</h2>
+<pre><code class="lang-java">
+<span class="hljs-comment">//&#x8FD9;&#x4E24;&#x4E2A;&#x4F1A;&#x88AB;&#x7528;&#x5728;mLlControlHeight&#x4E0A;</span>
+showAnim(BaseAnimatorSet showAnim)
+dismissAnim(BaseAnimatorSet dismissAnim)
+
+<span class="hljs-comment">//&#x8FD8;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;Dialog&#x5C42;&#x9762;&#x7684;&#x52A8;&#x753B;style</span>
+show(<span class="hljs-keyword">int</span> animStyle)
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">(<span class="hljs-keyword">int</span> animStyle)</span> </span>{
+    Window window = getWindow();
+    window.setWindowAnimations(animStyle);
+    show();
+}
+</code></pre>
+<h2 id="5-&#x663E;&#x793A;&#xFF0C;&#x5173;&#x95ED;&#xFF0C;&#x56DE;&#x8C03;">5 &#x663E;&#x793A;&#xFF0C;&#x5173;&#x95ED;&#xFF0C;&#x56DE;&#x8C03;</h2>
+<pre><code class="lang-java">
+//&#x8BBE;&#x7F6E;&#x81EA;&#x52A8;&#x5EF6;&#x65F6;&#x5173;&#x95ED;
+autoDismiss(boolean autoDismiss)
+autoDismissDelay(long autoDismissDelay)
+
+//
+show()
+show(int animStyle)
+
+dismiss()--&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x52A8;&#x753B;
+superDismiss() --&#x76F4;&#x63A5;&#x5173;&#x95ED;
+//
+setCanceledOnTouchOutside(boolean cancel)
+``
+
+
+## 6 &#x5176;&#x4ED6;
+
+```java
+dimEnabled(boolean isDimEnabled)   --- &#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x662F;&#x5426;&#x660F;&#x6697;
+
+//&#x5BF9;&#x8BDD;&#x6846;&#x9ED8;&#x8BA4;&#x4E3B;&#x9898;&#x8BBE;&#x7F6E;&#x6210;&#x4E86;&#xFF1A;
+/** set dialog theme(&#x8BBE;&#x7F6E;&#x5BF9;&#x8BDD;&#x6846;&#x4E3B;&#x9898;) */
+private void setDialogTheme() {
+    requestWindowFeature(Window.FEATURE_NO_TITLE);// android:windowNoTitle
+    getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));// android:windowBackground
+    getWindow().addFlags(LayoutParams.FLAG_DIM_BEHIND);// android:backgroundDimEnabled&#x9ED8;&#x8BA4;&#x662F;true&#x7684;
+}
+
+//&#x751F;&#x547D;&#x5468;&#x671F;
+show:constrouctor---show---oncreate---onStart---onAttachToWindow
+dismiss---onDetachedFromWindow---onStop
+</code></pre>
+<h2 id="7-popup&#x6A21;&#x5F0F;">7 popup&#x6A21;&#x5F0F;</h2>
+<p>&#x6709;&#x4E86;&#x4E0A;&#x9762;&#x7684;&#x5206;&#x6790;&#xFF0C;popup&#x6A21;&#x5F0F;&#x5C31;&#x6BD4;&#x8F83;&#x597D;&#x7406;&#x89E3;&#x4E86;</p>
+<pre><code class="lang-java">
+<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x6210;popup&#x6837;&#x5F0F;</span>
+BaseDialog(Context context, <span class="hljs-keyword">boolean</span> isPopupStyle)
+
+<span class="hljs-comment">//&#x5BBD;&#x9AD8;&#x63A7;&#x5236;</span>
+<span class="hljs-keyword">if</span> (mIsPopupStyle) {
+    setContentView(mLlTop, <span class="hljs-keyword">new</span> ViewGroup.LayoutParams(
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT));
+}
+
+<span class="hljs-comment">//&#x663E;&#x793A;</span>
+<span class="hljs-comment">/** show at location only valid for mIsPopupStyle true(&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x663E;&#x793A;,&#x53EA;&#x5BF9;isPopupStyle&#x4E3A;true&#x6709;&#x6548;) */</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">showAtLocation</span><span class="hljs-params">(<span class="hljs-keyword">int</span> gravity, <span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{
+    <span class="hljs-keyword">if</span> (mIsPopupStyle) {
+        Window window = getWindow();
+        LayoutParams params = window.getAttributes();
+        window.setGravity(gravity);
+        params.x = x;
+        params.y = y;
+    }
+
+    show();
+}
+
+<span class="hljs-comment">/** show at location only valid for mIsPopupStyle true(&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x663E;&#x793A;,&#x53EA;&#x5BF9;isPopupStyle&#x4E3A;true&#x6709;&#x6548;) */</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">showAtLocation</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{
+    <span class="hljs-keyword">int</span> gravity = Gravity.LEFT | Gravity.TOP;<span class="hljs-comment">//Left Top (&#x5750;&#x6807;&#x539F;&#x70B9;&#x4E3A;&#x53F3;&#x4E0A;&#x89D2;)</span>
+    showAtLocation(gravity, x, y);
+}
+</code></pre>
+<h2 id="8-&#x7528;&#x6237;&#x64CD;&#x4F5C;&#x7684;&#x56DE;&#x8C03;">8 &#x7528;&#x6237;&#x64CD;&#x4F5C;&#x7684;&#x56DE;&#x8C03;</h2>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">ActionCallback</span></span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onOk</span><span class="hljs-params">(Popable pop)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onCancel</span><span class="hljs-params">(Popable pop)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onSelected</span><span class="hljs-params">(Popable pop, <span class="hljs-keyword">int</span> action, Object extra)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">onAction</span><span class="hljs-params">(Popable pop, <span class="hljs-keyword">int</span> action, Object extra)</span></span>;
+}
+</code></pre>
+<h2 id="9-&#x5E38;&#x7528;&#x7684;&#x5F39;&#x6846;&#x6F14;&#x793A;&#x90FD;&#x5185;&#x7F6E;&#x4E86;">9 &#x5E38;&#x7528;&#x7684;&#x5F39;&#x6846;&#x6F14;&#x793A;&#x90FD;&#x5185;&#x7F6E;&#x4E86;</h2>
+<pre><code class="lang-java">ActionSheetDialog
+MaterialDialog
+NormalDialog
+NormalListDialog
+
+&#x8FD8;&#x7F3A;&#xFF1A;
+LoadingDialog
+BottomDialog--&#x5206;&#x4EAB;
+</code></pre>
+<h2 id="10-&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5BF9;&#x8BDD;&#x6846;&#x6837;&#x5F0F;">10 &#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5BF9;&#x8BDD;&#x6846;&#x6837;&#x5F0F;</h2>
+<pre><code class="lang-java">
+
+</code></pre>
+<h1 id="&#x539F;&#x751F;dialog">&#x539F;&#x751F;dialog</h1>
+<h1 id="&#x539F;&#x751F;&#x5BF9;&#x8BDD;&#x6846;&#xFF1A;alertdialog">&#x539F;&#x751F;&#x5BF9;&#x8BDD;&#x6846;&#xFF1A;AlertDialog</h1>
+<p>support v7&#x91CC;&#x4E5F;&#x6709;&#x4E2A;AlertDialog&#xFF0C;&#x4E0B;&#x9762;&#x90FD;&#x662F;&#x57FA;&#x4E8E;&#x8FD9;&#x4E2A;</p>
+<p>&#x4E09;&#x4E2A;&#x6838;&#x5FC3;&#x53C2;&#x6570;&#xFF1A;title&#xFF0C;icon&#xFF0C;msg&#xFF0C;&#x4E0D;&#x8BBE;&#x7F6E;&#x5C31;&#x6CA1;&#x6709;&#xFF0C;&#x8BBE;&#x7F6E;&#x7A7A;&#x4E5F;&#x662F;&#x6CA1;&#x8BBE;&#x7F6E;&#xFF0C;&#x4E5F;&#x4E0D;&#x5360;&#x5730;&#xFF0C;&#x90FD;&#x4E0D;&#x8BBE;&#x7F6E;&#x5C31;&#x53EA;&#x663E;&#x793A;&#x4E2A;&#x9ED1;&#x8272;&#x900F;&#x660E;&#x80CC;&#x666F;</p>
+<p>&#x6CA1;&#x6709;title&#xFF0C;&#x8BBE;&#x7F6E;icon&#x4E5F;&#x6CA1;&#x7528;</p>
+<h2 id="&#x7B2C;&#x4E00;&#x79CD;-&#x666E;&#x901A;&#x5BF9;&#x8BDD;&#x6846;">&#x7B2C;&#x4E00;&#x79CD; &#x666E;&#x901A;&#x5BF9;&#x8BDD;&#x6846;</h2>
+<pre><code class="lang-java">AlertDialog.Builder builder=<span class="hljs-keyword">new</span> AlertDialog.Builder(MainActivity.<span class="hljs-keyword">this</span>);
+builder.setTitle(<span class="hljs-string">&quot;&#x666E;&#x901A;&#x5BF9;&#x8BDD;&#x6846;&quot;</span>);<span class="hljs-comment">//&#x6807;&#x9898;</span>
+builder.setMessage(<span class="hljs-string">&quot;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x5BF9;&#x8BDD;&#x6846;&quot;</span>);<span class="hljs-comment">//&#x4FE1;&#x606F;</span>
+builder.setIcon(R.drawable.ic_launcher);<span class="hljs-comment">//&#x56FE;&#x6807;</span>
+builder.create();<span class="hljs-comment">//&#x521B;&#x5EFA;</span>
+builder.show();<span class="hljs-comment">//&#x663E;&#x793A;</span>
+</code></pre>
+<h2 id="&#x7B2C;&#x4E8C;&#x79CD;-&#x786E;&#x5B9A;&#x53D6;&#x6D88;&#x5BF9;&#x8BDD;&#x6846;">&#x7B2C;&#x4E8C;&#x79CD; &#x786E;&#x5B9A;&#x53D6;&#x6D88;&#x5BF9;&#x8BDD;&#x6846;</h2>
+<pre><code class="lang-java">AlertDialog.Builder builder2=<span class="hljs-keyword">new</span> AlertDialog.Builder(MainActivity.<span class="hljs-keyword">this</span>);
+builder2.setTitle(<span class="hljs-string">&quot;&#x786E;&#x5B9A;&#x53D6;&#x6D88;&#x5BF9;&#x8BDD;&#x6846;&quot;</span>);
+builder2.setMessage(<span class="hljs-string">&quot;&#x8BF7;&#x9009;&#x62E9;&#x786E;&#x5B9A;&#x6216;&#x53D6;&#x6D88;&quot;</span>);
+builder2.setIcon(R.drawable.ic_launcher);
+builder2.setPositiveButton(<span class="hljs-string">&quot;&#x786E;&#x5B9A;&quot;</span>, <span class="hljs-keyword">new</span> OnClickListener() {
+        <span class="hljs-comment">//&#x6B63;&#x80FD;&#x91CF;&#x6309;&#x94AE; Positive</span>
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> which)</span> </span>{
+                <span class="hljs-comment">//&#x8FD9;&#x91CC;&#x5199;&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x540E;&#x7684;&#x903B;&#x8F91;&#x4EE3;&#x7801;</span>
+                Toast.makeText(MainActivity.<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;&#x4F60;&#x70B9;&#x51FB;&#x4E86;&#x786E;&#x5B9A;&quot;</span>, <span class="hljs-number">0</span>).show();
+        }
+});
+builder2.setNegativeButton(<span class="hljs-string">&quot;&#x53D6;&#x6D88;&quot;</span>, <span class="hljs-keyword">new</span> OnClickListener() {
+        <span class="hljs-comment">//&#x8D1F;&#x80FD;&#x91CF;&#x6309;&#x94AE; NegativeButton</span>
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> which)</span> </span>{
+                Toast.makeText(MainActivity.<span class="hljs-keyword">this</span>,<span class="hljs-string">&quot;&#x4F60;&#x9009;&#x62E9;&#x4E86;&#x53D6;&#x6D88;&quot;</span>,<span class="hljs-number">0</span>).show();
+        }
+});
+builder2.create().show();
+</code></pre>
+<h2 id="&#x7B2C;&#x4E09;&#x79CD;-&#x591A;&#x6309;&#x94AE;&#x5BF9;&#x8BDD;&#x6846;">&#x7B2C;&#x4E09;&#x79CD; &#x591A;&#x6309;&#x94AE;&#x5BF9;&#x8BDD;&#x6846;</h2>
+<pre><code class="lang-java">AlertDialog.Builder builder3=<span class="hljs-keyword">new</span> AlertDialog.Builder(MainActivity.<span class="hljs-keyword">this</span>);
+builder3.setTitle(<span class="hljs-string">&quot;&#x591A;&#x4E2A;&#x6309;&#x94AE;&#x5BF9;&#x8BDD;&#x6846;&quot;</span>);
+builder3.setMessage(<span class="hljs-string">&quot;&#x8BF7;&#x9009;&#x62E9;&quot;</span>);
+builder3.setIcon(R.drawable.ic_launcher);
+builder3.setPositiveButton(<span class="hljs-string">&quot;&#x7EE7;&#x7EED;&#x6D4F;&#x89C8;&quot;</span>, <span class="hljs-keyword">new</span> OnClickListener() {
+
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> which)</span> </span>{
+                Toast.makeText(MainActivity.<span class="hljs-keyword">this</span>,<span class="hljs-string">&quot;&#x7EE7;&#x7EED;&#x6D4F;&#x89C8;&#x7CBE;&#x5F69;&#x5185;&#x5BB9;&quot;</span>,<span class="hljs-number">0</span>).show();
+        }
+});
+builder3.setNeutralButton(<span class="hljs-string">&quot;&#x6682;&#x505C;&#x4F11;&#x606F;&quot;</span>, <span class="hljs-keyword">new</span> OnClickListener() {
+
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> which)</span> </span>{
+                Toast.makeText(MainActivity.<span class="hljs-keyword">this</span>,<span class="hljs-string">&quot;&#x8D77;&#x6765;&#x6D3B;&#x52A8;&#x6D3B;&#x52A8;&#x5427;&quot;</span>, <span class="hljs-number">0</span>).show();
+        }
+});
+builder3.setNegativeButton(<span class="hljs-string">&quot;&#x79BB;&#x5F00;&#x9875;&#x9762;&quot;</span>, <span class="hljs-keyword">new</span> OnClickListener() {
+
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> which)</span> </span>{
+                Toast.makeText(MainActivity.<span class="hljs-keyword">this</span>,<span class="hljs-string">&quot;&#x6B22;&#x8FCE;&#x4E0B;&#x6B21;&#x4F7F;&#x7528;&quot;</span>, <span class="hljs-number">0</span>).show();
+        }
+});
+builder3.create().show();
+</code></pre>
+<h2 id="&#x7B2C;&#x56DB;&#x79CD;-&#x5217;&#x8868;&#x5BF9;&#x8BDD;&#x6846;">&#x7B2C;&#x56DB;&#x79CD; &#x5217;&#x8868;&#x5BF9;&#x8BDD;&#x6846;</h2>
+<p>item&#x7684;&#x5E03;&#x5C40;&#x4E0D;&#x53EF;&#x5B9A;&#x5236;</p>
+<pre><code class="lang-xml">&#x5148;&#x5728;string.xml&#x4E2D;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;
+<span class="hljs-tag">&lt;<span class="hljs-name">string-array</span>
+        <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;oem&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">item</span> &gt;</span>&#x5C0F;&#x7C73;<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">item</span> &gt;</span>&#x8363;&#x8000;<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">item</span> &gt;</span>&#x9B45;&#x65CF;<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">item</span> &gt;</span>&#x4E50;&#x89C6;<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">item</span> &gt;</span>&#x5947;&#x9177;<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">item</span> &gt;</span>&#x9524;&#x5B50;<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">string-array</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x7136;&#x540E;&#x6DFB;&#x52A0;&#x903B;&#x8F91;&#x4EE3;&#x7801;</span>
+<span class="hljs-keyword">final</span> String arrItem[]=getResources().getStringArray(R.array.oem);
+builder4.setItems(arrItem, <span class="hljs-keyword">new</span> OnClickListener() {
+
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> which)</span> </span>{
+                Toast.makeText(MainActivity.<span class="hljs-keyword">this</span>,<span class="hljs-string">&quot;&#x4F60;&#x9009;&#x62E9;&#x4E86;&#x7B2C;&quot;</span>+arrItem[which],<span class="hljs-number">0</span>).show();
+        }
+});
+builder4.create().show();
+</code></pre>
+<h2 id="&#x7B2C;&#x4E94;&#x79CD;-&#x5E26;adapter&#x7684;&#x5BF9;&#x8BDD;&#x6846;">&#x7B2C;&#x4E94;&#x79CD; &#x5E26;Adapter&#x7684;&#x5BF9;&#x8BDD;&#x6846;</h2>
+<p>item&#x7684;&#x5E03;&#x5C40;&#x53EF;&#x4EE5;&#x5B9A;&#x5236;&#xFF0C;&#x4F20;&#x5165;&#x4E00;&#x4E2A;adapter</p>
+<pre><code class="lang-java">AlertDialog.Builder builder5=<span class="hljs-keyword">new</span> AlertDialog.Builder(MainActivity.<span class="hljs-keyword">this</span>);
+builder5.setTitle(<span class="hljs-string">&quot;&#x5E26;Adapter&#x7684;&#x5BF9;&#x8BDD;&#x6846;&quot;</span>);
+builder5.setIcon(R.drawable.ic_launcher);
+<span class="hljs-comment">//&#x83B7;&#x53D6;&#x6570;&#x636E;&#x6E90;</span>
+<span class="hljs-comment">//&#x521B;&#x5EFA;&#x4E00;&#x4E2A;List&#x5BF9;&#x8C61;&#x5E76;&#x5B9E;&#x4F8B;&#x5316;</span>
+<span class="hljs-keyword">final</span> List&lt;Map&lt;String, Object&gt;&gt; list=<span class="hljs-keyword">new</span> ArrayList&lt;Map&lt;String,Object&gt;&gt;();
+<span class="hljs-comment">//&#x56FE;&#x7247;</span>
+<span class="hljs-keyword">int</span> arrImgID[]={R.drawable.ic_launcher,R.drawable.ic_launcher,R.drawable.ic_launcher,
+                R.drawable.ic_launcher,R.drawable.ic_launcher,R.drawable.ic_launcher};
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; arrImgID.length; i++) {
+        Map&lt;String,Object&gt; map=<span class="hljs-keyword">new</span> HashMap&lt;String,Object&gt;();
+        map.put(<span class="hljs-string">&quot;img&quot;</span>, arrImgID[i]);
+        map.put(<span class="hljs-string">&quot;title&quot;</span>, <span class="hljs-string">&quot;title&quot;</span>+i);
+        list.add(map);
+}
+<span class="hljs-comment">//&#x521B;&#x5EFA;Adapter&#x5BF9;&#x8C61;&#x5E76;&#x5B9E;&#x4F8B;&#x5316;</span>
+SimpleAdapter adapter=<span class="hljs-keyword">new</span> SimpleAdapter(
+                MainActivity.<span class="hljs-keyword">this</span>,
+                list,
+                R.layout.layout_test1,
+                <span class="hljs-keyword">new</span> String[]{<span class="hljs-string">&quot;img&quot;</span>,<span class="hljs-string">&quot;title&quot;</span>},
+                <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{R.id.iv,R.id.tv});
+<span class="hljs-comment">//&#x5C06;&#x6570;&#x636E;&#x586B;&#x5145;&#x5230;Adapter</span>
+builder5.setAdapter(adapter, <span class="hljs-keyword">new</span> OnClickListener() {
+
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> which)</span> </span>{
+                Toast.makeText(MainActivity.<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;&#x4F60;&#x9009;&#x62E9;&#x4E86;&quot;</span>+list.get(which).get(<span class="hljs-string">&quot;title&quot;</span>).toString().trim(), <span class="hljs-number">0</span>).show();
+        }
+});
+builder5.create().show();
+</code></pre>
+<h2 id="&#x7B2C;&#x516D;&#x79CD;-&#x5355;&#x9009;&#x5BF9;&#x8BDD;&#x6846;">&#x7B2C;&#x516D;&#x79CD; &#x5355;&#x9009;&#x5BF9;&#x8BDD;&#x6846;</h2>
+<p>&#x53EF;&#x4EE5;&#x4E0D;&#x8BBE;&#x7F6E;&#x786E;&#x5B9A;&#x53D6;&#x6D88;&#x6309;&#x94AE;&#xFF0C;&#x4F46;&#x4E0D;&#x8BBE;&#x7F6E;&#x7684;&#x8BDD;&#xFF0C;&#x5355;&#x9009;&#x70B9;&#x51FB;&#x4E4B;&#x540E;&#x5C31;&#x5F97;&#x7ACB;&#x9A6C;dismiss&#x5427;&#xFF0C;&#x5355;&#x9009;&#x5C31;&#x663E;&#x5F97;&#x6CA1;&#x610F;&#x4E49;&#x4E86;</p>
+<pre><code class="lang-java">AlertDialog.Builder builder6=<span class="hljs-keyword">new</span> AlertDialog.Builder(MainActivity.<span class="hljs-keyword">this</span>);
+builder6.setTitle(<span class="hljs-string">&quot;&#x5355;&#x9009;&#x5BF9;&#x8BDD;&#x6846;&quot;</span>);
+builder6.setIcon(R.drawable.ic_launcher);
+<span class="hljs-comment">//&#x53C2;&#x6570;1  item&#x6570;&#x636E;&#x6E90;       &#x53C2;&#x6570;2   &#x9ED8;&#x8BA4;&#x9009;&#x4E2D;&#x7684;item  &#x53C2;&#x6570;3 item&#x70B9;&#x51FB;&#x76D1;&#x542C;</span>
+builder6.setSingleChoiceItems(R.array.oem, <span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> OnClickListener() {
+
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> which)</span> </span>{
+                Toast.makeText(MainActivity.<span class="hljs-keyword">this</span>, which+<span class="hljs-string">&quot;&quot;</span>, <span class="hljs-number">0</span>).show();
+        }
+});
+<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x6309;&#x94AE;</span>
+builder6.setPositiveButton(<span class="hljs-string">&quot;&#x786E;&#x5B9A;&quot;</span>, <span class="hljs-keyword">new</span> OnClickListener() {
+
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> which)</span> </span>{
+
+        }
+});
+builder6.create().show();
+</code></pre>
+<h2 id="&#x7B2C;&#x4E03;&#x79CD;-&#x591A;&#x9009;&#x5BF9;&#x8BDD;&#x6846;">&#x7B2C;&#x4E03;&#x79CD; &#x591A;&#x9009;&#x5BF9;&#x8BDD;&#x6846;</h2>
+<pre><code class="lang-java">AlertDialog.Builder builder7=<span class="hljs-keyword">new</span> AlertDialog.Builder(MainActivity.<span class="hljs-keyword">this</span>);
+builder7.setTitle(<span class="hljs-string">&quot;&#x591A;&#x9009;&#x5BF9;&#x8BDD;&#x6846;&quot;</span>);
+builder7.setIcon(R.drawable.ic_launcher);
+builder7.setMultiChoiceItems(R.array.oem, <span class="hljs-keyword">null</span>, <span class="hljs-keyword">new</span> OnMultiChoiceClickListener() {
+
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> which, <span class="hljs-keyword">boolean</span> isChecked)</span> </span>{
+                Toast.makeText(MainActivity.<span class="hljs-keyword">this</span>, which+<span class="hljs-string">&quot;&quot;</span>+isChecked, <span class="hljs-number">0</span>).show();
+        }
+});
+builder7.create().show();
+</code></pre>
+<h2 id="&#x7B2C;&#x516B;&#x79CD;-&#x65E5;&#x671F;&#x5BF9;&#x8BDD;&#x6846;">&#x7B2C;&#x516B;&#x79CD; &#x65E5;&#x671F;&#x5BF9;&#x8BDD;&#x6846;</h2>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x521B;&#x5EFA;DatePickerDialog&#x5BF9;&#x8C61;&#x5E76;&#x5B9E;&#x4F8B;&#x5316;</span>
+<span class="hljs-comment">//&#x56FD;&#x5185;&#x5916;&#x65E5;&#x671F;&#x8BA1;&#x7B97;&#x4E0D;&#x540C;    &#x6CE8;&#x610F;&#x6B64;&#x5904;&#x8F93;&#x51FA;&#x6708;&#x4EFD;&#x9700;+1   &#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x6708;&#x4EFD;&#x9700;-1</span>
+DatePickerDialog datePickerDialog=<span class="hljs-keyword">new</span> DatePickerDialog(MainActivity.<span class="hljs-keyword">this</span>,
+                <span class="hljs-keyword">new</span> OnDateSetListener() {
+
+                        <span class="hljs-meta">@Override</span>
+                        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onDateSet</span><span class="hljs-params">(DatePicker view, <span class="hljs-keyword">int</span> year, <span class="hljs-keyword">int</span> monthOfYear,
+                                        <span class="hljs-keyword">int</span> dayOfMonth)</span> </span>{
+                                Toast.makeText(MainActivity.<span class="hljs-keyword">this</span>,
+                                                year+<span class="hljs-string">&quot;&#x5E74;&quot;</span>+(monthOfYear+<span class="hljs-number">1</span>)+<span class="hljs-string">&quot;&#x6708;&quot;</span>+dayOfMonth+<span class="hljs-string">&quot;&#x65E5;&quot;</span>, <span class="hljs-number">0</span>).show();
+                        }
+                },
+                <span class="hljs-number">2015</span>, <span class="hljs-number">8</span>, <span class="hljs-number">21</span>);
+<span class="hljs-comment">//Date&#x548C;Time&#x53EA;&#x7528;show()  &#x4E0D;&#x7528;create()</span>
+datePickerDialog.show();
+</code></pre>
+<h2 id="&#x7B2C;&#x4E5D;&#x79CD;-&#x65F6;&#x95F4;&#x5BF9;&#x8BDD;&#x6846;">&#x7B2C;&#x4E5D;&#x79CD; &#x65F6;&#x95F4;&#x5BF9;&#x8BDD;&#x6846;</h2>
+<pre><code class="lang-java">TimePickerDialog timePickerDialog=<span class="hljs-keyword">new</span> TimePickerDialog(MainActivity.<span class="hljs-keyword">this</span>,
+    <span class="hljs-keyword">new</span> OnTimeSetListener() {
+
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onTimeSet</span><span class="hljs-params">(TimePicker view, <span class="hljs-keyword">int</span> hourOfDay, <span class="hljs-keyword">int</span> minute)</span> </span>{
+                    Toast.makeText(MainActivity.<span class="hljs-keyword">this</span>,
+                                    hourOfDay+<span class="hljs-string">&quot;&#x70B9;&quot;</span>+minute+<span class="hljs-string">&quot;&#x5206;&quot;</span>, <span class="hljs-number">0</span>).show();
+            }
+    },
+    <span class="hljs-number">17</span>, <span class="hljs-number">49</span>, <span class="hljs-keyword">true</span>);
+timePickerDialog.show();
+</code></pre>
+<h2 id="&#x7B2C;&#x5341;&#x79CD;-&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8BDD;&#x6846;">&#x7B2C;&#x5341;&#x79CD; &#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8BDD;&#x6846;</h2>
+<pre><code class="lang-java">AlertDialog.Builder builder10=<span class="hljs-keyword">new</span> AlertDialog.Builder(MainActivity.<span class="hljs-keyword">this</span>);
+builder10.setTitle(<span class="hljs-string">&quot;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8BDD;&#x6846;&quot;</span>);
+builder10.setIcon(R.drawable.ic_launcher);
+<span class="hljs-comment">//&#x83B7;&#x53D6;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8BDD;&#x6846;View</span>
+View view=LayoutInflater.from(MainActivity.<span class="hljs-keyword">this</span>).inflate(R.layout.layout_test2, <span class="hljs-keyword">null</span>);
+<span class="hljs-comment">//&#x83B7;&#x53D6;&#x63A7;&#x4EF6;</span>
+<span class="hljs-keyword">final</span> EditText et_name=(EditText)view.findViewById(R.id.et_name);
+<span class="hljs-keyword">final</span> EditText et_pwd=(EditText)view.findViewById(R.id.et_pwd);
+<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x6309;&#x94AE;</span>
+builder10.setPositiveButton(<span class="hljs-string">&quot;&#x786E;&#x5B9A;&quot;</span>, <span class="hljs-keyword">new</span> OnClickListener() {
+
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> which)</span> </span>{
+                Toast.makeText(MainActivity.<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;&#x60A8;&#x7684;&#x4FE1;&#x606F;&#x4E3A; &#x59D3;&#x540D;:&quot;</span>+et_name.getText().toString()+<span class="hljs-string">&quot; &#x5BC6;&#x7801;:&quot;</span>+et_pwd.getText().toString(), <span class="hljs-number">0</span>).show();
+        }
+});
+<span class="hljs-comment">//&#x52A0;&#x8F7D;&#x81EA;&#x5B9A;&#x4E49;&#x5E03;&#x5C40;</span>
+builder10.setView(view).create().show();
+</code></pre>
+<h1 id="pop&#x5E93;">pop&#x5E93;</h1>
+<h1 id="pop---a-quick-android-dialog-building-lib">pop - a quick android dialog building lib</h1>
+<p><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt="License"></a> <a href="https://android-arsenal.com/details/1/3400" target="_blank"><img src="https://img.shields.io/badge/Android%20Arsenal-Pop-green.svg?style=true" alt="Android Arsenal"></a></p>
+<p>Buiding a dialog in android is why so much pain! Look at the following code you need to build a simple Dialog.</p>
+<pre><code class="lang-java">AlertDialog.Builder builder = <span class="hljs-keyword">new</span> AlertDialog.Builder(getActivity());
+builder.setTitle(R.string.pick_toppings);
+builder.setBody(R.string.body)
+
+<span class="hljs-comment">// Add the buttons</span>
+builder.setPositiveButton(R.string.ok, <span class="hljs-keyword">new</span> DialogInterface.OnClickListener() {
+           <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> id)</span> </span>{
+               <span class="hljs-comment">// User clicked OK button</span>
+           }
+       });
+builder.setNegativeButton(R.string.cancel, <span class="hljs-keyword">new</span> DialogInterface.OnClickListener() {
+           <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(DialogInterface dialog, <span class="hljs-keyword">int</span> id)</span> </span>{
+               <span class="hljs-comment">// User cancelled the dialog</span>
+           }
+       });
+<span class="hljs-comment">// Set other dialog properties</span>
+...
+
+<span class="hljs-comment">// Create the AlertDialog</span>
+AlertDialog dialog = builder.create();
+</code></pre>
+<h2 id="serously-no-more-pain-now-this-how-you-create-one">Serously! No more pain now. This how you create one.</h2>
+<pre><code class="lang-java">Pop.on(activity).with().title(R.string.title).body(R.string.body).show();
+</code></pre>
+<p>if you want to handle the button click, this is even more fun with naming and you can even have custom body of dialog.</p>
+<pre><code class="lang-java">               Pop.on(<span class="hljs-keyword">this</span>)
+                    .with()
+                    .title(R.string.title)
+                    .icon(R.drawable.icon)
+                    .cancelable(<span class="hljs-keyword">false</span>)
+                    .layout(R.layout.custom_pop)
+                    .when(<span class="hljs-keyword">new</span> Pop.Yah() {
+                        <span class="hljs-meta">@Override</span>
+                        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clicked</span><span class="hljs-params">(DialogInterface dialog, View view)</span> </span>{
+                            Toast.makeText(getBaseContext(), <span class="hljs-string">&quot;Yah button clicked&quot;</span>, Toast.LENGTH_LONG).show();
+                        }
+                    })
+                    .when(<span class="hljs-keyword">new</span> Pop.Nah() { <span class="hljs-comment">// ignore if dont need negative button</span>
+                        <span class="hljs-meta">@Override</span>
+                        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clicked</span><span class="hljs-params">(DialogInterface dialog, View view)</span> </span>{
+                            Toast.makeText(getBaseContext(), <span class="hljs-string">&quot;Nah button clicked&quot;</span>, Toast.LENGTH_LONG).show();
+                        }
+                    })
+                    .show(<span class="hljs-keyword">new</span> Pop.View() { <span class="hljs-comment">// assign value to view element</span>
+                          <span class="hljs-meta">@Override</span>
+                          <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">prepare</span><span class="hljs-params">(View view)</span> </span>{
+                            EditText etName = (EditText) view.findViewById(R.id.et_name);
+                            Log.i(TAG, <span class="hljs-string">&quot;etName :: &quot;</span> + etName.getText());
+                            etName.setText(<span class="hljs-string">&quot;Test Name 123&quot;</span>);
+                          }
+                     });
+</code></pre>
+<h2 id="how-to-include-it-in-your-project">How to include it in your project:</h2>
+<pre><code class="lang-groovy">dependencies {
+    compile <span class="hljs-string">&apos;com.vistrav:pop:2.0&apos;</span>
+}
+</code></pre>
+<h2 id="you-can-contribute">You can contribute!</h2>
+<p>In case you think you have some improvement, please feel free do pull request your feature and I would be happy to include it. Let&apos;s make this Pop very easy to use and rich with features.</p>
+<h2 id="other-userful-libraries">Other Userful Libraries</h2>
+<h4 id="ask---android-runtime-permissions-make-easy">Ask - Android runtime permissions make easy</h4>
+<p><a href="https://github.com/00ec454/Ask" target="_blank"><img src="https://img.shields.io/badge/github-Ask-orange.svg" alt="Github"></a> <a href="http://android-arsenal.com/details/1/3465" target="_blank"><img src="https://img.shields.io/badge/Android%20Arsenal-Ask-brightgreen.svg?style=flat" alt="Android Arsenal"></a></p>
+<h2 id="license">License</h2>
+<pre><code>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre><h1 id="ayo-notify&#x5E93;">Ayo notify&#x5E93;</h1>
 
                                 
                                 </section>
@@ -526,7 +969,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"notify系列库","level":"1.5","depth":1,"next":{"title":"loading系列库","level":"1.6","depth":1,"path":"loading.md","ref":"loading.md","articles":[]},"previous":{"title":"动画","level":"1.4","depth":1,"path":"anim.md","ref":"anim.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notify.md","mtime":"2017-04-09T13:24:36.543Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T13:32:53.234Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"notify系列库","level":"1.5","depth":1,"next":{"title":"loading系列库","level":"1.6","depth":1,"path":"loading.md","ref":"loading.md","articles":[]},"previous":{"title":"动画","level":"1.4","depth":1,"path":"anim.md","ref":"anim.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notify.md","mtime":"2017-04-09T14:51:52.309Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T14:58:02.537Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

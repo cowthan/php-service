@@ -208,7 +208,33 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="item-template.html">
+        <li class="chapter " data-level="1.10" data-path="textview.html">
+            
+                <a href="textview.html">
+            
+                    
+                    TextView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="drawable.html">
+            
+                <a href="drawable.html">
+            
+                    
+                    Drawable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="item-template.html">
             
                 <a href="item-template.html">
             
@@ -221,7 +247,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="recyclerview.html">
+        <li class="chapter " data-level="1.13" data-path="recyclerview.html">
             
                 <a href="recyclerview.html">
             
@@ -234,7 +260,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="design.html">
+        <li class="chapter " data-level="1.14" data-path="design.html">
             
                 <a href="design.html">
             
@@ -247,7 +273,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="component.html">
+        <li class="chapter " data-level="1.15" data-path="component.html">
             
                 <a href="component.html">
             
@@ -260,7 +286,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="systembartint.html">
+        <li class="chapter " data-level="1.16" data-path="systembartint.html">
             
                 <a href="systembartint.html">
             
@@ -273,7 +299,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="permission-ask.html">
+        <li class="chapter " data-level="1.17" data-path="permission-ask.html">
             
                 <a href="permission-ask.html">
             
@@ -483,6 +509,177 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="butterknife">ButterKnife</h1>
+<h1 id="&#x63A7;&#x4EF6;&#x6CE8;&#x5165;">&#x63A7;&#x4EF6;&#x6CE8;&#x5165;</h1>
+<ul>
+<li>&#x63A7;&#x4EF6;&#x6CE8;&#x5165;<ul>
+<li>XUtils&#x7684;&#x6CE8;&#x5165;&#x529F;&#x80FD;</li>
+<li>ButterKinfe</li>
+<li>&#x57FA;&#x4E8E;&#x6027;&#x80FD;&#x7684;&#x8003;&#x91CF;</li>
+</ul>
+</li>
+</ul>
+<p>XUtils&#x7684;&#x4E0D;&#x518D;&#x505A;&#x4ECB;&#x7ECD;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;ButterKnife&#xFF0C;&#x867D;&#x7136;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x7684;&#x8BC1;&#x636E;&#x8868;&#x660E;&#x4E8C;&#x8005;&#x6027;&#x80FD;&#x4E0A;&#x6709;&#x660E;&#x663E;&#x5DEE;&#x5F02;&#xFF0C;&#x4F46;
+ButterKnife&#x660E;&#x663E;&#x6BD4;XUtils&#x6D41;&#x884C;&#xFF0C;&#x800C;&#x4E14;&#x6709;&#x66F4;&#x591A;&#x7684;&#x63D2;&#x4EF6;&#x652F;&#x6301;&#xFF0C;&#x529F;&#x80FD;&#x4E5F;&#x66F4;&#x591A;</p>
+<ul>
+<li>ButterKnife&#xFF1A;<ul>
+<li>&#x6587;&#x6863;&#xFF1A;<a href="http://jakewharton.github.io/butterknife/" target="_blank">http://jakewharton.github.io/butterknife/</a></li>
+<li>Github&#xFF1A;<a href="https://github.com/JakeWharton/butterknife" target="_blank">https://github.com/JakeWharton/butterknife</a></li>
+<li>&#x63D2;&#x4EF6;&#xFF1A;<a href="http://blog.csdn.net/jdsjlzx/article/details/49101433" target="_blank">http://blog.csdn.net/jdsjlzx/article/details/49101433</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>XUtils&#x548C;ButterKnife&#x5BF9;&#x6BD4;&#xFF1A;<ul>
+<li>&#x4E8C;&#x8005;&#x90FD;&#x662F;&#x53CD;&#x5C04;&#x51FA;&#x6CE8;&#x89E3;&#xFF0C;&#x7136;&#x540E;findViewById</li>
+<li>XUtils&#x8FD8;&#x6D89;&#x53CA;&#x5230;&#x4E86;parent&#xFF1F;&#x5565;&#x610F;&#x601D;&#xFF1F;</li>
+<li>ButterKnife&#x6709;&#x7F13;&#x5B58;&#xFF0C;XUtils&#x4E0D;&#x77E5;&#x9053;&#x6709;&#x6CA1;&#x6709;</li>
+<li>&#x603B;&#x662F;&#x7528;XUtils&#x7684;&#x4E1C;&#x897F;&#x4E5F;&#x6CA1;&#x610F;&#x601D;&#xFF0C;&#x80FD;&#x4E0D;&#x7528;&#x5C31;&#x4E0D;&#x7528;&#x5427;</li>
+</ul>
+</li>
+</ul>
+<h1 id="butterknife&#x7B80;&#x964B;&#x53C2;&#x8003;&#x624B;&#x518C;&#xFF1A;&#x6587;&#x6863;&#x7684;&#x7B80;&#x5355;&#x7FFB;&#x8BD1;">ButterKnife&#x7B80;&#x964B;&#x53C2;&#x8003;&#x624B;&#x518C;&#xFF1A;&#x6587;&#x6863;&#x7684;&#x7B80;&#x5355;&#x7FFB;&#x8BD1;</h1>
+<h2 id="1-&#x63A7;&#x4EF6;&#x7ED1;&#x5B9A;">1 &#x63A7;&#x4EF6;&#x7ED1;&#x5B9A;</h2>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Activity</span> </span>{
+  <span class="hljs-meta">@Bind</span>(R.id.title) TextView title;
+  <span class="hljs-meta">@Bind</span>(R.id.subtitle) TextView subtitle;
+  <span class="hljs-meta">@Bind</span>(R.id.footer) TextView footer;
+
+  <span class="hljs-meta">@Override</span> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+    <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+    setContentView(R.layout.simple_activity);
+    ButterKnife.bind(<span class="hljs-keyword">this</span>);
+    <span class="hljs-comment">// TODO Use fields...</span>
+  }
+}
+
+&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;&#x7C7B;&#x4F3C;&#x4E0B;&#x9762;:
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bind</span><span class="hljs-params">(ExampleActivity activity)</span> </span>{
+  activity.subtitle = (android.widget.TextView) activity.findViewById(<span class="hljs-number">2130968578</span>);
+  activity.footer = (android.widget.TextView) activity.findViewById(<span class="hljs-number">2130968579</span>);
+  activity.title = (android.widget.TextView) activity.findViewById(<span class="hljs-number">2130968577</span>);
+}
+</code></pre>
+<h2 id="2-&#x8D44;&#x6E90;&#x7684;&#x6CE8;&#x5165;">2 &#x8D44;&#x6E90;&#x7684;&#x6CE8;&#x5165;</h2>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Activity</span> </span>{
+  <span class="hljs-meta">@BindString</span>(R.string.title) String title;
+  <span class="hljs-meta">@BindDrawable</span>(R.drawable.graphic) Drawable graphic;
+  <span class="hljs-meta">@BindColor</span>(R.color.red) <span class="hljs-keyword">int</span> red; <span class="hljs-comment">// int or ColorStateList field</span>
+  <span class="hljs-meta">@BindDimen</span>(R.dimen.spacer) Float spacer; <span class="hljs-comment">// int (for pixel size) or float (for exact value) field</span>
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<h2 id="3-&#x65E0;activity&#xFF1A;view&#x7684;&#x7ED1;&#x5B9A;">3 &#x65E0;Activity&#xFF1A;View&#x7684;&#x7ED1;&#x5B9A;</h2>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FancyFragment</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Fragment</span> </span>{
+  <span class="hljs-meta">@Bind</span>(R.id.button1) Button button1;
+  <span class="hljs-meta">@Bind</span>(R.id.button2) Button button2;
+
+  <span class="hljs-meta">@Override</span> <span class="hljs-function"><span class="hljs-keyword">public</span> View <span class="hljs-title">onCreateView</span><span class="hljs-params">(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)</span> </span>{
+    View view = inflater.inflate(R.layout.fancy_fragment, container, <span class="hljs-keyword">false</span>);
+    ButterKnife.bind(<span class="hljs-keyword">this</span>, view);
+    <span class="hljs-comment">// TODO Use fields...</span>
+    <span class="hljs-keyword">return</span> view;
+  }
+
+  <span class="hljs-meta">@Override</span> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onDestroyView</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">super</span>.onDestroyView();
+      ButterKnife.unbind(<span class="hljs-keyword">this</span>);
+  }
+}
+</code></pre>
+<h2 id="4-viewholder&#x7684;&#x7ED1;&#x5B9A;">4 ViewHolder&#x7684;&#x7ED1;&#x5B9A;</h2>
+<pre><code class="lang-java"><span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ViewHolder</span> </span>{
+    <span class="hljs-meta">@Bind</span>(R.id.title) TextView name;
+    <span class="hljs-meta">@Bind</span>(R.id.job_title) TextView jobTitle;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ViewHolder</span><span class="hljs-params">(View view)</span> </span>{
+      ButterKnife.bind(<span class="hljs-keyword">this</span>, view);
+    }
+}
+</code></pre>
+<h3 id="5-&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;">5 &#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;</h3>
+<pre><code class="lang-java"><span class="hljs-meta">@OnClick</span>(R.id.submit)
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">submit</span><span class="hljs-params">(View view)</span> </span>{
+  <span class="hljs-comment">// TODO submit data to server...</span>
+}
+
+<span class="hljs-meta">@OnClick</span>(R.id.submit)
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">submit</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// TODO submit data to server...</span>
+}
+
+<span class="hljs-meta">@OnClick</span>(R.id.submit)
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sayHi</span><span class="hljs-params">(Button button)</span> </span>{
+  button.setText(<span class="hljs-string">&quot;Hello!&quot;</span>);
+}
+
+<span class="hljs-meta">@OnClick</span>({ R.id.door1, R.id.door2, R.id.door3 })
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">pickDoor</span><span class="hljs-params">(DoorView door)</span> </span>{
+  <span class="hljs-keyword">if</span> (door.hasPrizeBehind()) {
+    Toast.makeText(<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;You win!&quot;</span>, LENGTH_SHORT).show();
+  } <span class="hljs-keyword">else</span> {
+    Toast.makeText(<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;Try again&quot;</span>, LENGTH_SHORT).show();
+  }
+}
+
+<span class="hljs-comment">//&#x6CE8;&#x610F;&#xFF0C;&#x81EA;&#x5B9A;&#x4E49;&#x63A7;&#x4EF6;&#xFF0C;&#x7ED9;&#x81EA;&#x5DF1;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#xFF0C;&#x4E0D;&#x7528;&#x6307;&#x5B9A;id</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FancyButton</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Button</span> </span>{
+  <span class="hljs-meta">@OnClick</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// TODO do something!</span>
+  }
+}
+</code></pre>
+<p><strong>&#x8FD9;&#x4E2A;&#x4E0D;&#x77E5;&#x9053;&#x5565;&#x610F;&#x601D;</strong></p>
+<pre><code>MULTI-METHOD LISTENERS
+
+Method annotations whose corresponding listener has multiple callbacks can be used to bind to any one of them. Each annotation has a default callback that it binds to. Specify an alternate using the callback parameter.
+
+@OnItemSelected(R.id.list_view)
+void onItemSelected(int position) {
+  // TODO ...
+}
+
+@OnItemSelected(value = R.id.maybe_missing, callback = NOTHING_SELECTED)
+void onNothingSelected() {
+  // TODO ...
+}
+</code></pre><h3 id="6-&#x7279;&#x6B8A;&#x8BED;&#x6CD5;">6 &#x7279;&#x6B8A;&#x8BED;&#x6CD5;</h3>
+<p><strong>List<view>&#x7684;&#x7ED1;&#x5B9A;</view></strong></p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bind</span>({ R.id.first_name, R.id.middle_name, R.id.last_name })
+List&lt;EditText&gt; nameViews;
+</code></pre>
+<p><strong>apply&#x65B9;&#x6CD5;</strong></p>
+<pre><code class="lang-java">ButterKnife.apply(nameViews, DISABLE);
+ButterKnife.apply(nameViews, ENABLED, <span class="hljs-keyword">false</span>);
+
+<span class="hljs-comment">//Action and Setter interfaces allow specifying simple behavior.</span>
+
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> ButterKnife.Action&lt;View&gt; DISABLE = <span class="hljs-keyword">new</span> ButterKnife.Action&lt;View&gt;() {
+  <span class="hljs-meta">@Override</span> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">apply</span><span class="hljs-params">(View view, <span class="hljs-keyword">int</span> index)</span> </span>{
+    view.setEnabled(<span class="hljs-keyword">false</span>);
+  }
+};
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> ButterKnife.Setter&lt;View, Boolean&gt; ENABLED = <span class="hljs-keyword">new</span> ButterKnife.Setter&lt;View, Boolean&gt;() {
+  <span class="hljs-meta">@Override</span> <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">set</span><span class="hljs-params">(View view, Boolean value, <span class="hljs-keyword">int</span> index)</span> </span>{
+    view.setEnabled(value);
+  }
+};
+
+<span class="hljs-comment">//An Android Property can also be used with the apply method.</span>
+
+ButterKnife.apply(nameViews, View.ALPHA, <span class="hljs-number">0.0f</span>);
+</code></pre>
+<p><strong>&#x8FD9;&#x4E2A;&#x4E5F;&#x4E0D;&#x77E5;&#x9053;&#x5565;&#x610F;&#x601D;</strong></p>
+<pre><code class="lang-java">BONUS
+
+Also included are findById methods which simplify code that still has to find views on a View, Activity, or Dialog. It uses generics to infer the <span class="hljs-keyword">return</span> type and automatically performs the cast.
+
+View view = LayoutInflater.from(context).inflate(R.layout.thing, <span class="hljs-keyword">null</span>);
+TextView firstName = ButterKnife.findById(view, R.id.first_name);
+TextView lastName = ButterKnife.findById(view, R.id.last_name);
+ImageView photo = ButterKnife.findById(view, R.id.photo);
+<span class="hljs-comment">//Add a static import for ButterKnife.findById and enjoy even more fun.</span>
+</code></pre>
 
                                 
                                 </section>
@@ -526,7 +723,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ButterKnife","level":"2.7","depth":1,"next":{"title":"安卓线程和looper","level":"2.8","depth":1,"path":"thread.md","ref":"thread.md","articles":[]},"previous":{"title":"Json解析","level":"2.6","depth":1,"path":"json-reporter.md","ref":"json-reporter.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"inject.md","mtime":"2017-04-09T13:24:36.551Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T13:32:53.234Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ButterKnife","level":"2.7","depth":1,"next":{"title":"安卓线程和looper","level":"2.8","depth":1,"path":"thread.md","ref":"thread.md","articles":[]},"previous":{"title":"Json解析","level":"2.6","depth":1,"path":"json-reporter.md","ref":"json-reporter.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"inject.md","mtime":"2017-04-09T14:46:41.969Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T14:58:02.537Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

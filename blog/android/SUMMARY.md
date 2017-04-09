@@ -10,6 +10,8 @@
 * [StatusUI系列库](status-ui.md)
 * [滑动](touch-scroll.md)
 * [Layout](layout.md)
+* [TextView](textview.md)
+* [Drawable](drawable.md)
 * [列表Adapter模板化](item-template.md)
 * [RecyclerView全解](recyclerview.md)
 * [MeterialDesign详解](design.md)
