@@ -59,7 +59,7 @@ getTestView().getObservable().addObserver(new Observer(){
     * 学完这一套，在安卓特效方面就能独霸天下，天惨地愁
 
 安装demo apk：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/11.png)
+![](./img/11.png)
 
 本文对应的代码都在：  
 https://github.com/cowthan/UI-Robot
@@ -245,7 +245,7 @@ mPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
 ```
 
 抗锯齿效果：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/view_1.png)    
+![](./img/view_1.png)    
 
 这个不多说了，一般带着这个设置就行
 
@@ -260,7 +260,7 @@ mPaint.setFlags(Paint.DITHER_FLAG);
 ```
 
 抗抖动效果  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/view_2.png)  
+![](./img/view_2.png)  
 
 大家看到的这张七彩渐变图是一张RGB565模式下图片，即便图片不是很大我们依然可以很清晰地看到在两种颜色交接的地方有一些色块之类的东西感觉很不柔和，  
 因为在RGB模式下只能显示2^16=65535种色彩，因此很多丰富的色彩变化无法呈现，而Android呢为我们提供了抗抖动这么一个方法，它会将相邻像素之间颜色值  
@@ -301,12 +301,12 @@ Paint.Style.FILL_AND_STROKE 即填充，也画边框
 ```
 
 效果看下图，哪个是stroke哪个是fill一目了然了吧  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_stroke.png)  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_fill.png)  
+![](./img/demo_stroke.png)  
+![](./img/demo_fill.png)  
 
 关于FILL_AND_STROKE，怎么才能看出来呢，因为paint的颜色一样，所以填充色和线框颜色也一样，  
 其实fill时，改变strokeWidth是没反应的，而只要绘制了stroke，改变strokeWidth就有反应：   
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_stroke_fill.gif)  
+![](./img/demo_stroke_fill.gif)  
 
 
 ## 2.5 Stroke相关：线框宽，笔触，连接处
@@ -331,10 +331,10 @@ StrokeWidth就不多说了，就是线框宽度
 StrokeMiter我也没太明白，不知道怎么看效果  
   
 笔触，Cap，控制线条开始和结束的样式，也就是下笔和起笔时刻的样式，看下图：   
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_cap.gif)  
+![](./img/demo_cap.gif)  
 
 线条拐角处，也就是结合处的样式，Join，下面是drawRect：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_join.gif)  
+![](./img/demo_join.gif)  
 
 注意，Cap和Join在stroke width够宽时才能看出来，就一条细线时没啥看的
 
@@ -359,7 +359,7 @@ ComposePathEffect
 
 路径样式，四种具体样式本身就可以通过参数配置产生不同效果，再配合Sum和Compose，二者之间也可以再嵌套，  
 所以可以产生的效果是很难穷尽的，下面时从别的地方找到的图，展示了大体效果：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_patheffect2.png)  
+![](./img/demo_patheffect2.png)  
 
 
 `圆滑效果：`
@@ -372,7 +372,7 @@ CornerPathEffect(10)：圆角，取出路径里的棱角，参数是radius
 DiscretePathEffect(float segmentLength, float deviation)：这是什么效果，
 ```
 给一张图，参数是：`DiscretePathEffect(3.0F, 5.0F)`  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_descrete.png)
+![](./img/demo_descrete.png)
 
 `点画线：`
 ```
@@ -606,15 +606,15 @@ add系列方法会给path添加离散的路径
 ```
 
 看图：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_path_line.gif)  
+![](./img/demo_path_line.gif)  
 图里手指松开时，调用了path.close()，所有会有一条强制闭合的直线，每次finger down都path.reset()然后moveTo(x, y)  
 这里的路径由lineTo绘制  
 
 二阶贝塞尔曲线：quadTo和rQuadTo  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_quad.gif)  
+![](./img/demo_quad.gif)  
 
 三阶贝塞尔曲线：cubicTo和rCubicTo  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_cubic.gif)    
+![](./img/demo_cubic.gif)    
 两个控制点配合的对的话，就可以模拟杯中水面晃动效果，再自己把底边和侧边的直线画上，形成一个闭合path，  
 利用clip填充path空间，就可以实现杯中水特效，这里不在展示  
 再配合path动画，给几个气泡晃上来，不错吧
@@ -630,15 +630,15 @@ canvas.drawCircle(cx, cy, radius, paint);    //指定圆心和半径
 ```
 
 `线框`  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_circle_stroke.png)  
+![](./img/demo_circle_stroke.png)  
 
 
 `填充`  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_circle_fill.png)  
+![](./img/demo_circle_fill.png)  
 
 
 `控制stroke width画圆环`  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_circle_stroke2.png)  
+![](./img/demo_circle_stroke2.png)  
 
 
 
@@ -652,19 +652,19 @@ drawRect(RectF rect, Paint paint)
 
 `Join会影响线框的结合处效果`  
 Join.BEVEL：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/rect_bevel.png)    
+![](./img/rect_bevel.png)    
 
 
 Join.MITER：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/rect_miter.png)    
+![](./img/rect_miter.png)    
 
 
 Join.ROUND：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/rect_round.png)    
+![](./img/rect_round.png)    
 
 
 填充：（不会受Join影响）  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/rect_fill.png)    
+![](./img/rect_fill.png)    
 
 
 Rect和RectF的方法：
@@ -679,7 +679,7 @@ drawRoundRect(RectF rect, float rx, float ry, Paint paint)
 ```
 
 注意参数rx和ry，就是x方向和方向上的拐角弧度，看如下效果，能知道个大概吧  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_round_rect.png)
+![](./img/demo_round_rect.png)
 
 ### 3.3.4 椭圆
 ```java
@@ -688,8 +688,8 @@ RectF rectF = new RectF(50, 50, 50+rectW, 50+rectH);
 canvas.drawOval(rectF, paint);
 ```
 椭圆由一个外接矩形决定  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_oval_stroke.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_oval_fill.png)
+![](./img/demo_oval_stroke.png)
+![](./img/demo_oval_fill.png)
 
 ### 3.3.5 扇形和弧
 ```java
@@ -705,7 +705,7 @@ canvas.drawArc(rectF, startAngle, sweepAngle, useCenter, paint);
     * 否则就是一个弧线，或者在FILL模式下是一个不知道名字的形状
 
 看图：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_arc.gif)
+![](./img/demo_arc.gif)
 
 ## 3.5 Bitmap
 ```java
@@ -792,7 +792,7 @@ mPaint.setHinting(int mode);
 drawText会受FILL，STROKE影响，也会受stroke width影响  
 
 这里有几个基本概念  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_text_line.png)  
+![](./img/demo_text_line.png)  
 还有一条线是leading，控制行间距，单行文字这个值就是0，即leading线和base线重合  
 
 ```java
@@ -827,7 +827,7 @@ float totalWidth = paint.measureText(txt);
     
 
 设置paint.setStyle(STROKE)时，效果如下：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_text_stroke.png)    
+![](./img/demo_text_stroke.png)    
 
 ## 3.9 BitmapMesh
 ```java
@@ -861,7 +861,7 @@ verts如果指定为这组顶点，就是不对Bitmap做任何变换
 ```
 
 能对Bitmap进行任何变换，下面是一个比较权威的示例，直接拷过来了：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_bitmap_mesh.gif)
+![](./img/demo_bitmap_mesh.gif)
 
 
 ## 3.10 clip功能
@@ -893,7 +893,7 @@ Region.Op.DIFFERENCE指定了二者的叠加方式
 ```
 
 图中红色区域就是剪切区域，红色是通过drawColor绘制上的，默认drawColor会绘制canvas全屏，但其实受制于clip区域  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_clip_op.gif)
+![](./img/demo_clip_op.gif)
 
 
 
@@ -1004,7 +1004,7 @@ canvas.drawCircle(w/2, h/2, 150, paint);
 ```
 
 具体原理我也不清楚了，看看效果吧：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/color_matrix.gif)
+![](./img/color_matrix.gif)
 
 
 
@@ -1025,7 +1025,7 @@ canvas.drawBitmap(mBitmap, 0, 0, paint);
 ```
 
 还是看看效果吧：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/lighting_filter.gif)
+![](./img/lighting_filter.gif)
 
 
 
@@ -1070,7 +1070,7 @@ public static Pair<String, PorterDuff.Mode>[] porterDuffModes = new Pair[]{
 ```
 
 不废话，直接上图：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/porter_duff_color_filter.gif)
+![](./img/porter_duff_color_filter.gif)
 
 
 ## 4.3 Xfermode：图像混合
@@ -1107,27 +1107,27 @@ public static Pair<String, PorterDuff.Mode>[] porterDuffModes = new Pair[]{
 ```
 
 各个mode对应的效果如下：这是ApiDemo里的图片  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode.jpeg)  
+![](./img/xfermode.jpeg)  
 
 但是按照我demo里的代码，效果还有点出入：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_clear.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_src.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_dst.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_src_over.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_dst_over.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_src_in.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_dst_in.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_src_out.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_dst_out.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_src_atop.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_dst_atop.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_xor.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_darken.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_lighten.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_multiply.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_screen.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_add.png)
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/xfermode/x_overlay.png)
+![](./img/xfermode/x_clear.png)
+![](./img/xfermode/x_src.png)
+![](./img/xfermode/x_dst.png)
+![](./img/xfermode/x_src_over.png)
+![](./img/xfermode/x_dst_over.png)
+![](./img/xfermode/x_src_in.png)
+![](./img/xfermode/x_dst_in.png)
+![](./img/xfermode/x_src_out.png)
+![](./img/xfermode/x_dst_out.png)
+![](./img/xfermode/x_src_atop.png)
+![](./img/xfermode/x_dst_atop.png)
+![](./img/xfermode/x_xor.png)
+![](./img/xfermode/x_darken.png)
+![](./img/xfermode/x_lighten.png)
+![](./img/xfermode/x_multiply.png)
+![](./img/xfermode/x_screen.png)
+![](./img/xfermode/x_add.png)
+![](./img/xfermode/x_overlay.png)
 
 
 不要纠结了，和ApiDemo的代码一比较就知道怎么回事了：  
@@ -1222,7 +1222,7 @@ mBG.setLocalMatrix(m);
     * 在界面上覆盖一层透明黑色浮层（dst），再给一个透明circle或rect（src），就能高亮显示界面上某个区域
     
 下面给个例子，这里只给图，代码都在demo里：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/demo_xfermode_1.gif)
+![](./img/demo_xfermode_1.gif)
 
 
 ## 4.4 Shader
@@ -1265,9 +1265,9 @@ paint.setShader(new SweepGradient(cx, cy, startColor, endColor));
 ```
 
 下面给几个图看一下效果：  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/shader_linear.png)  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/shader_radial.png)  
-![](https://raw.githubusercontent.com/cowthan/UI-Robot/master/img/shader_sweep.png)  
+![](./img/shader_linear.png)  
+![](./img/shader_radial.png)  
+![](./img/shader_sweep.png)  
 
 
 ## 4.5 MaskFilter：遮罩过滤器
