@@ -1,12 +1,62 @@
 # 滑动
 
+## 4 仿ViewPager
 
+代码里是FakeHorizontalScrollView
+
+* 技术点：
+    * 解决滑动冲突，内部可以嵌套ListView
+    * 动作完全仿ViewPager
+    * 使用了Scroller和VelocityTracker
+    * 左右可以over slide，露出FakeHorizontalScrollView的背景
+
+
+* 在这里记录一下SwipeRefresh的原理：
+    * 一个SwipeRefreshLayout，只要子控件不能再往下滑了，就激活下拉刷新效果
+        * 所以需要给每一个控件一个回调，判断能不能往下滑了
+    * 往上滑也是一个道理
+
+
+View详解
+===========================
 
 * 本文探讨的是：
     * 事件拦截
     * 常见控件的滑动事件
     * 滑动相关特效
 
+
+## 0 处理滑动
+
+处理滑动的一般代码是：
+```java
+int mLastX = 0;
+int mLastY = 0;
+
+@Override
+public boolean onTouchEvent(MotionEvent e) {
+    boolean consume = false;
+    int x = (int)e.getX();
+    int y = (int)e.getY();
+    if(e.getAction() == MotionEvent.ACTION_DOWN){
+        consume = true;
+    }else if(e.getAction() == MotionEvent.ACTION_MOVE){
+        int dx = x - mLastX;
+        int dy = y - mLastY;
+        consume = true;
+        onFingerMove(x, y, dx, dy);
+    }else if(e.getAction() == MotionEvent.ACTION_UP){
+        consume = true;
+    }
+
+    mLastX = x;
+    mLastY = y;
+    return consume;
+}
+
+
+protected void onFingerMove(int x, int y, int dx, int dy){}
+```
 
 ## 1 事件传递机制
 
@@ -720,3 +770,5 @@ Pinned效果的ExpandableListView，直接继承ExpandableListView
 
 
 ## 最后：手势
+
+
