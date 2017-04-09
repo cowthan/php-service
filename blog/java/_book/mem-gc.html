@@ -1,0 +1,583 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>内存模型和GC · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="classloader.html" />
+    
+    
+    <link rel="prev" href="advance.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Java</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="object-mgmr.html">
+            
+                <a href="object-mgmr.html">
+            
+                    
+                    对象管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="enum.html">
+            
+                <a href="enum.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="object-common.html">
+            
+                <a href="object-common.html">
+            
+                    
+                    对象通用行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="concurrent.html">
+            
+                <a href="concurrent.html">
+            
+                    
+                    线程和并发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="concurrent/how-to.html">
+            
+                <a href="concurrent/how-to.html">
+            
+                    
+                    线程和线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="concurrent/block-close.html">
+            
+                <a href="concurrent/block-close.html">
+            
+                    
+                    线程阻塞和关闭
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="concurrent/communicate.html">
+            
+                <a href="concurrent/communicate.html">
+            
+                    
+                    线程协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="concurrent/volatile.html">
+            
+                <a href="concurrent/volatile.html">
+            
+                    
+                    活性失败-volatile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="concurrent/lock.html">
+            
+                <a href="concurrent/lock.html">
+            
+                    
+                    安全性失败-锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="concurrent/thread-local.html">
+            
+                <a href="concurrent/thread-local.html">
+            
+                    
+                    线程局部存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="concurrent/others.html">
+            
+                <a href="concurrent/others.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="collections.html">
+            
+                <a href="collections.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="nio.html">
+            
+                <a href="nio.html">
+            
+                    
+                    nio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="advance.html">
+            
+                <a href="advance.html">
+            
+                    
+                    泛型，注解和反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="mem-gc.html">
+            
+                <a href="mem-gc.html">
+            
+                    
+                    内存模型和GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="classloader.html">
+            
+                <a href="classloader.html">
+            
+                    
+                    ClassLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Web</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="spring.html">
+            
+                <a href="spring.html">
+            
+                    
+                    spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GUI</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="gui-1.html">
+            
+                <a href="gui-1.html">
+            
+                    
+                    没事写个小界面什么的
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >内存模型和GC</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5185;&#x5B58;&#x6A21;&#x578B;&#x548C;gc">&#x5185;&#x5B58;&#x6A21;&#x578B;&#x548C;GC</h1>
+<h3 id="11-&#x907F;&#x514D;&#x521B;&#x5EFA;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x5BF9;&#x8C61;">11 &#x907F;&#x514D;&#x521B;&#x5EFA;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x5BF9;&#x8C61;</h3>
+<p>1 String&#x5BF9;&#x8C61;</p>
+<p>String s = new String(&quot;aaa&quot;);
+String s = &quot;aaa&quot;;
+&#x7B2C;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x662F;&#x4E0D;&#x5408;&#x9002;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x884C;&#x4EE3;&#x7801;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;String&#x5BF9;&#x8C61;&#x3002;<br>&#x53C2;&#x6570;&quot;aaa&quot;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x4E00;&#x4E2A;String&#x5BF9;&#x8C61;  </p>
+<p>2 &#x6709;&#x9759;&#x6001;&#x5DE5;&#x5382;&#xFF0C;&#x5C31;&#x4E0D;&#x8981;new</p>
+<p>&#x5982;Boolean.valueOf(String)&#x5E94;&#x8BE5;&#x4F18;&#x5148;&#x4E8E;new Boolean(String)</p>
+<p>new&#x5FC5;&#x5B9A;&#x4F1A;&#x521B;&#x5EFA;&#x65B0;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x9759;&#x6001;&#x5DE5;&#x5382;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x627F;&#x8BFA;</p>
+<p>3 &#x5DF2;&#x77E5;&#x7684;&#x4E0D;&#x4F1A;&#x4FEE;&#x6539;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x505A;&#x6210;&#x7684;&#x9759;&#x6001;&#x7684;</p>
+<p>&#x4F46;&#x5374;&#x4E0D;&#x5EFA;&#x8BAE;&#x5EF6;&#x8FDF;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x56E0;&#x4E3A;&#x4F1A;&#x4F7F;&#x903B;&#x8F91;&#x53D8;&#x7684;&#x590D;&#x6742;</p>
+<p>4 &#x4E0D;&#x592A;&#x61C2;&#xFF0C;Map.keySet&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;Set&#xFF0C;&#x5176;&#x5B9E;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</p>
+<p>&#x5E76;&#x4E14;&#x8FD9;&#x4E2A;Set&#x5BF9;&#x8C61;&#x662F;&#x53EF;&#x53D8;&#x7684;</p>
+<p>5 &#x907F;&#x514D;&#x65E0;&#x610F;&#x8BC6;&#x7684;&#x4F7F;&#x7528;&#x88C5;&#x7BB1;&#x7C7B;</p>
+<p>&#x88C5;&#x7BB1;&#x7C7B;&#x662F;&#x5B9E;&#x5B9E;&#x5728;&#x5728;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4E0D;&#x50CF;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x90A3;&#x4E48;&#x8F7B;&#x91CF;&#x7EA7;</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
+    Long sum = <span class="hljs-number">0L</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">long</span> i = <span class="hljs-number">0</span>; i &lt; Integer.MAX_VALUE; i++){
+        sum += i;
+    }
+    sysou(sum);
+}
+</code></pre>
+<p>&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;Long&#xFF0C;&#x800C;&#x4E0D;&#x662F;long&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x591A;&#x521B;&#x5EFA;&#x5927;&#x7EA6;2&#x7684;31&#x6B21;&#x65B9;&#x4E2A;Long&#x5B9E;&#x4F8B;&#xFF08;&#x5728;sum+=i&#x65F6;&#xFF09;</p>
+<p>6 &#x5BF9;&#x4EE5;&#x4E0A;&#x51E0;&#x6761;&#x539F;&#x5219;&#x4E0D;&#x8981;&#x76F2;&#x76EE;&#xFF0C;&#x5C0F;&#x5BF9;&#x8C61;&#x8FD8;&#x662F;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x521B;&#x5EFA;&#x7684;</p>
+<p>&#x5C0F;&#x5BF9;&#x8C61;&#x7684;&#x6784;&#x9020;&#x5668;&#x53EA;&#x505A;&#x5C11;&#x91CF;&#x663E;&#x5F0F;&#x5DE5;&#x4F5C;
+&#x5C0F;&#x5BF9;&#x8C61;&#x7684;&#x56DE;&#x6536;&#x4E5F;&#x5F88;&#x5EC9;&#x4EF7;
+&#x521B;&#x5EFA;&#x9644;&#x52A0;&#x7684;&#x5C0F;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x63D0;&#x5347;&#x7A0B;&#x5E8F;&#x7684;&#x6E05;&#x6670;&#x6027;&#xFF0C;&#x7B80;&#x6D01;&#x6027;&#xFF0C;&#x529F;&#x80FD;&#x6027;&#xFF0C;&#x8FD9;&#x662F;&#x597D;&#x4E8B;</p>
+<h3 id="11-&#x56DB;&#x79CD;&#x5F15;&#x7528;">11 &#x56DB;&#x79CD;&#x5F15;&#x7528;</h3>
+<h3 id="12-&#x5185;&#x5B58;&#x6A21;&#x578B;&#x548C;&#x5783;&#x573E;&#x56DE;&#x6536;">12 &#x5185;&#x5B58;&#x6A21;&#x578B;&#x548C;&#x5783;&#x573E;&#x56DE;&#x6536;</h3>
+<p>1 &#x6E05;&#x9664;&#x8FC7;&#x671F;&#x5F15;&#x7528;</p>
+<p>Java&#x8BED;&#x8A00;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x4F60;&#x968F;&#x65F6;&#x5C06;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#x7F6E;&#x4F4D;null&#x4EE5;&#x91CA;&#x653E;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#xFF0C;
+&#x4F46;&#x4E0B;&#x9762;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x4F60;&#x8FD8;&#x662F;&#x5F97;&#x8003;&#x8651;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Stack</span></span>{
+
+    <span class="hljs-keyword">private</span> Object[] elements;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> size = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> DEFAULT_INITIAL_CAPACITY = <span class="hljs-number">16</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Stack</span><span class="hljs-params">()</span></span>{
+        elements = <span class="hljs-keyword">new</span> Object[DEFAULT_INITIAL_CAPACITY];
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">push</span><span class="hljs-params">(Object e)</span></span>{
+        ensureCapacity();
+        elements[size++] = e;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Object <span class="hljs-title">pop</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">if</span>(size == <span class="hljs-number">0</span>){
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> EmptyStackException();
+        }
+
+
+        Object result = elements[--size]; 
+
+        <span class="hljs-comment">//&#x95EE;&#x9898;&#x5C31;&#x51FA;&#x5728;&#x8FD9;&#x91CC;</span>
+        elements[size] = <span class="hljs-keyword">null</span>;
+
+        <span class="hljs-keyword">return</span> result;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ensureCapacity</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">if</span>(elements.length == size)
+            elements = Arrays.copyOf(elements, <span class="hljs-number">2</span>*size + <span class="hljs-number">1</span>);
+    }
+
+}
+
+<span class="hljs-comment">/*
+
+&#x8FD9;&#x91CC;&#xFF0C;&#x4E0B;&#x6807;&#x5C0F;&#x4E8E;size&#x7684;&#x662F;&#x6570;&#x7EC4;&#x7684;&#x6D3B;&#x52A8;&#x533A;&#x57DF;&#xFF0C;&#x5982;&#x679C;&#x6D3B;&#x52A8;&#x533A;&#x57DF;&#x4E4B;&#x5916;&#x8FD8;&#x6709;&#x5F15;&#x7528;&#xFF0C;&#x5219;&#x5C31;&#x662F;&#x8FC7;&#x671F;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x9700;&#x8981;&#x6E05;&#x9664;&#xFF0C;&#x5373;&#x7F6E;&#x4E3A;null
+
+*/</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x7684;&#x542F;&#x793A;&#x5C31;&#x662F;&#xFF1A;
+1 JVM&#x4E0D;&#x77E5;&#x9053;&#x4F60;&#x7684;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x6709;&#x6548;
+2 &#x4F60;&#x81EA;&#x5DF1;&#x624D;&#x77E5;&#x9053;&#x54EA;&#x4E9B;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x9700;&#x8981;&#x91CA;&#x653E;
+    &#x60C5;&#x51B5;1&#xFF1A;&#x5F15;&#x7528;&#x53D8;&#x91CF;&#x7ED3;&#x675F;&#x4E86;&#x751F;&#x547D;&#x5468;&#x671F;&#xFF0C;&#x5219;&#x4E5F;&#x5C31;&#x81EA;&#x52A8;&#x91CA;&#x653E;&#x4E86;&#x5F15;&#x7528;
+    &#x60C5;&#x51B5;2: &#x5F15;&#x7528;&#x53D8;&#x91CF;&#x8FD8;&#x5728;&#xFF0C;&#x4F46;&#x4F60;&#x77E5;&#x9053;&#x5B83;&#x5DF2;&#x7ECF;&#x8FC7;&#x671F;&#x4E86;&#xFF0C;&#x5219;&#x624B;&#x52A8;&#x7F6E;null</p>
+<p>2 &#x7F13;&#x5B58;&#x4E2D;&#x7684;&#x5F15;&#x7528;</p>
+<p>&#x60C5;&#x51B5;1&#xFF1A;&#x8003;&#x8651;&#x4F7F;&#x7528;WeakHashMap&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x6CA1;&#x641E;&#x592A;&#x61C2;
+&#x60C5;&#x51B5;2&#xFF1A;&#x5F00;&#x4E00;&#x4E2A;&#x540E;&#x53F0;&#x7EBF;&#x7A0B;&#xFF0C;&#x6E05;&#x9664;&#x8FC7;&#x671F;&#x7F13;&#x5B58;
+&#x60C5;&#x51B5;3&#xFF1A;&#x6DFB;&#x52A0;&#x65B0;&#x6761;&#x76EE;&#x65F6;&#xFF0C;&#x6E05;&#x9664;&#x8FC7;&#x671F;&#x7F13;&#x5B58;&#xFF0C;&#x5229;&#x7528;LinkedHashMap&#x7684;removeEldestEntry&#x65B9;&#x6CD5;</p>
+<p>3 &#x76D1;&#x542C;&#x5668;&#x548C;&#x5176;&#x4ED6;&#x56DE;&#x8C03;&#x5BFC;&#x81F4;&#x7684;&#x5185;&#x5B58;&#x6CC4;&#x9732;</p>
+<p>&#x6CE8;&#x518C;&#x56DE;&#x8C03;&#xFF0C;&#x5374;&#x6CA1;&#x6709;&#x53D6;&#x6D88;&#x6CE8;&#x518C;
+&#x2014;&#x2014;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5F31;&#x5F15;&#x7528;&#x4FDD;&#x5B58;&#x56DE;&#x8C03;&#xFF0C;&#x5982;&#x4F5C;&#x4E3A;WeakHashMap&#x7684;&#x952E;</p>
+<p>4 &#x5927;&#x5BF9;&#x8C61;&#x7684;&#x91CA;&#x653E;</p>
+<p>&#x53C2;&#x8003;Bitmap.recycle()
+&#x53C2;&#x8003;TypeArray.recyle()</p>
+<p>5 &#x8D44;&#x6E90;&#x91CA;&#x653E;</p>
+<p>&#x6587;&#x4EF6;
+&#x6D41;
+MediaPlayer
+&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;
+&#x8BBE;&#x5907;&#xFF0C;&#x5982;&#x76F8;&#x673A;</p>
+<p>6 &#x7EC8;&#x7ED3;&#x65B9;&#x6CD5;&#xFF1A;finalize</p>
+<p>EJ&#x7B2C;7&#x6761;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="advance.html" class="navigation navigation-prev " aria-label="Previous page: 泛型，注解和反射">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="classloader.html" class="navigation navigation-next " aria-label="Next page: ClassLoader">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"内存模型和GC","level":"1.9","depth":1,"next":{"title":"ClassLoader","level":"1.10","depth":1,"path":"classloader.md","ref":"classloader.md","articles":[]},"previous":{"title":"泛型，注解和反射","level":"1.8","depth":1,"path":"advance.md","ref":"advance.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mem-gc.md","mtime":"2017-04-09T06:02:06.634Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T06:05:34.294Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

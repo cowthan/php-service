@@ -1,0 +1,592 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>活性失败-volatile · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="lock.html" />
+    
+    
+    <link rel="prev" href="communicate.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Java</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../object-mgmr.html">
+            
+                <a href="../object-mgmr.html">
+            
+                    
+                    对象管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../enum.html">
+            
+                <a href="../enum.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../object-common.html">
+            
+                <a href="../object-common.html">
+            
+                    
+                    对象通用行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../concurrent.html">
+            
+                <a href="../concurrent.html">
+            
+                    
+                    线程和并发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="how-to.html">
+            
+                <a href="how-to.html">
+            
+                    
+                    线程和线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="block-close.html">
+            
+                <a href="block-close.html">
+            
+                    
+                    线程阻塞和关闭
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="communicate.html">
+            
+                <a href="communicate.html">
+            
+                    
+                    线程协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.4" data-path="volatile.html">
+            
+                <a href="volatile.html">
+            
+                    
+                    活性失败-volatile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="lock.html">
+            
+                <a href="lock.html">
+            
+                    
+                    安全性失败-锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="thread-local.html">
+            
+                <a href="thread-local.html">
+            
+                    
+                    线程局部存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="others.html">
+            
+                <a href="others.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../collections.html">
+            
+                <a href="../collections.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../nio.html">
+            
+                <a href="../nio.html">
+            
+                    
+                    nio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../advance.html">
+            
+                <a href="../advance.html">
+            
+                    
+                    泛型，注解和反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../mem-gc.html">
+            
+                <a href="../mem-gc.html">
+            
+                    
+                    内存模型和GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../classloader.html">
+            
+                <a href="../classloader.html">
+            
+                    
+                    ClassLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Web</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../spring.html">
+            
+                <a href="../spring.html">
+            
+                    
+                    spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GUI</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../gui-1.html">
+            
+                <a href="../gui-1.html">
+            
+                    
+                    没事写个小界面什么的
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >活性失败-volatile</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6D3B;&#x6027;&#x5931;&#x8D25;-volatile">&#x6D3B;&#x6027;&#x5931;&#x8D25;-volatile</h1>
+<p>&#x7EBF;&#x7A0B;A&#x5BF9;&#x67D0;&#x53D8;&#x91CF;&#x503C;&#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x53EF;&#x80FD;&#x6CA1;&#x6709;&#x7ACB;&#x5373;&#x5728;&#x7EBF;&#x7A0B;B&#x4F53;&#x73B0;&#x51FA;&#x6765;&#xFF0C;&#x79F0;&#x4E3A;&#x6D3B;&#x6027;&#x5931;&#x8D25;&#x3002;<br>&#x6CE8;&#x610F;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5728;PC&#x548C;&#x5B89;&#x5353;&#x4E0A;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x53EF;&#x80FD;&#x4E0D;&#x4E00;&#x6837;&#xFF08;&#x5B89;&#x5353;&#x53EF;&#x80FD;&#x4E0D;&#x9700;&#x8981;volatile&#xFF09;</p>
+<p>&#x4F8B;&#x5B50;</p>
+<pre><code>
+public class VolatileTest extends  Thread {
+
+    /**
+     * &#x4F7F;&#x7528;&#x4E86;volatile&#xFF0C;&#x5219;1&#x79D2;&#x540E;&#xFF0C;&#x5B50;&#x7EBF;&#x7A0B;&#x4F1A;&#x9000;&#x51FA;&#x5FAA;&#x73AF;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x5C06;isRunning&#x7F6E;&#x4F4D;&#x4E3A;false
+     */
+    //private volatile boolean isRunning = true;
+
+    /**
+     * &#x4E0D;&#x4F7F;&#x7528;volatile&#xFF0C;1&#x79D2;&#x540E;&#xFF0C;&#x4E3B;&#x7EBF;&#x7A0B;&#x7F6E;&#x4F4D;isRunning&#x4E3A;false&#xFF0C;&#x4F46;&#x4E3B;&#x7EBF;&#x7A0B;&#x5BF9;isRunning&#x7684;&#x4FEE;&#x6539;&#x5BF9;&#x5B50;&#x7EBF;&#x7A0B;&#x4E0D;&#x53EF;&#x89C1;&#xFF0C;&#x5B50;&#x7EBF;&#x7A0B;&#x770B;&#x89C1;&#x7684;&#x8FD8;&#x662F;true&#xFF0C;&#x5FAA;&#x73AF;&#x7EE7;&#x7EED;
+     * 
+     * &#x5C06;setRunning&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;&#x4E3A;synchronized&#x4E5F;&#x53EF;&#x4EE5;&#x8FBE;&#x5230;volatile&#x7684;&#x6548;&#x679C;&#xFF0C;&#x610F;&#x601D;&#x5C31;&#x662F;&#x540C;&#x6B65;&#x4EE3;&#x7801;&#x5757;&#x4FDD;&#x62A4;&#x7684;&#x53D8;&#x91CF;&#x4FEE;&#x6539;&#x65F6;&#x4E5F;&#x4F1A;&#x76F4;&#x63A5;&#x5237;&#x65B0;&#x5230;&#x4E3B;&#x5B58;
+     * 
+     */
+    private boolean isRunning = true;
+
+    public boolean isRunning(){
+        return isRunning;
+    }
+
+    public void setRunning(boolean isRunning){
+        this.isRunning= isRunning;
+    }
+
+    public void run(){
+        System.out.println(&quot;&#x8FDB;&#x5165;&#x4E86;run...............&quot;);
+        while (isRunning){}
+        System.out.println(&quot;isUpdated&#x7684;&#x503C;&#x88AB;&#x4FEE;&#x6539;&#x4E3A;&#x4E3A;false,&#x7EBF;&#x7A0B;&#x5C06;&#x88AB;&#x505C;&#x6B62;&#x4E86;&quot;);
+    }
+    public static void main(String[] args) throws InterruptedException {
+        VolatileTest volatileThread = new VolatileTest();
+        volatileThread.start();
+        Thread.sleep(1000);
+        volatileThread.setRunning(false);   //&#x505C;&#x6B62;&#x7EBF;&#x7A0B;
+    }
+}
+</code></pre><p>Volatile&#x548C;&#x539F;&#x5B50;&#x6027;&#x6CA1;&#x4EC0;&#x4E48;&#x76F4;&#x63A5;&#x5173;&#x7CFB;<br>&#x5982;&#x679C;&#x53D8;&#x91CF;&#x88AB;&#x540C;&#x6B65;&#x4EE3;&#x7801;&#x4FDD;&#x62A4;&#x4E86;&#xFF0C;&#x5C31;&#x4E0D;&#x5FC5;&#x8003;&#x8651;volatile</p>
+<p>&#x636E;effective java&#x4E2D;&#x63CF;&#x8FF0;&#xFF0C;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x6D89;&#x53CA;&#x5230;JVM&#x5BF9;while(!flag)&#x8FD9;&#x79CD;&#x5F62;&#x5F0F;&#x6709;&#x4E00;&#x4E2A;&#x63D0;&#x5347;&#x7684;&#x4F18;&#x5316;&#xFF0C;&#x5373;&#xFF1A;</p>
+<pre><code>while(!flag){}
+
+&#x8FDB;&#x884C;&#x63D0;&#x5347;&#x4F18;&#x5316;&#xFF1A;
+
+if(flag){
+    while(true){}
+}
+</code></pre><p>&#x600E;&#x4E48;&#x5F15;&#x51FA;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5462;</p>
+<pre><code>public abstract class IntGenerator {
+  private volatile boolean canceled = false;  
+  public abstract int next();
+  // Allow this to be canceled:
+  public void cancel() { canceled = true; }
+  public boolean isCanceled() { return canceled; }
+}
+</code></pre><ul>
+<li>&#x5206;&#x6790;<ul>
+<li>&#x770B;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;canceled&#x5B57;&#x6BB5;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x4E00;&#x4E2A;IntGenerator&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x88AB;&#x591A;&#x4E2A;EventChecker&#x5BF9;&#x8C61;&#x8C03;&#x7528;cancel()</li>
+<li>&#x8FD9;&#x6837;&#x5C31;&#x5728;&#x6BCF;&#x4E2A;EventChecker&#x7684;&#x7EBF;&#x7A0B;&#x91CC;&#xFF0C;&#x4FDD;&#x7559;&#x4E86;&#x4E00;&#x4EFD;&#x5BF9;canceled&#x7684;&#x672C;&#x5730;&#x7F13;&#x5B58;&#xFF0C;&#x8FD9;&#x4E2A;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x53EF;&#x80FD;&#x662F;&#x6BCF;&#x4E2A;CPU&#x4E00;&#x4E2A;</li>
+<li>&#x5728;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x91CC;&#x8C03;&#x7528;&#x4FEE;&#x6539;cenceled&#x7684;&#x503C;&#xFF0C;&#x9996;&#x5148;&#x4F1A;&#x4FDD;&#x5B58;&#x5230;&#x672C;&#x5730;&#x7F13;&#x5B58;&#xFF0C;&#x7136;&#x540E;&#x4E5F;&#x4F1A;&#x540C;&#x6B65;&#x5230;&#x4E3B;&#x5B58;&#x91CC;&#xFF0C;&#x636E;&#x8BF4;&#x8FD9;&#x662F;&#x89C4;&#x5B9A;&#xFF0C;&#x5FC5;&#x987B;&#x7684;</li>
+<li>&#x4F46;&#x662F;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x901A;&#x8FC7;isCanceled()&#x8BFB;&#x53D6;&#x5B83;&#x7684;&#x503C;&#xFF0C;&#x662F;&#x4ECE;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x8BFB;&#xFF0C;&#x6CA1;&#x88AB;&#x6539;&#x53D8;&#xFF0C;&#x5373;&#x4E0D;&#x53EF;&#x89C1;&#xFF0C;&#x5B83;&#x5DF2;&#x7ECF;&#x770B;&#x4E0D;&#x89C1;&#x4E3B;&#x5B58;&#x91CC;&#x7684;&#x503C;&#x4E86;</li>
+<li>&#x6240;&#x4EE5;&#x7528;volatile&#x6765;&#x4FEE;&#x9970;&#xFF0C;&#x4FDD;&#x8BC1;&#x6BCF;&#x6B21;&#x5BF9;&#x5B83;&#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x90FD;&#x4F1A;&#x540C;&#x6B65;&#x5230;&#x4E3B;&#x5B58;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x4E5F;&#x4F1A;&#x5BF9;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x7684;&#x5185;&#x5B58;&#x53EF;&#x89C1;&#xFF0C;&#x6216;&#x8005;&#x5C31;&#x662F;&#x4FDD;&#x8BC1;&#x5BF9;&#x4E8E;volatile&#x53D8;&#x91CF;&#xFF0C;&#x4E0D;&#x4F1A;&#x5728;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#x4E2D;&#x62F7;&#x8D1D;&#x4E00;&#x4EFD;&#xFF0C;&#x90FD;&#x662F;&#x5728;&#x4E3B;&#x5B58;&#x4E2D;&#x8BFB;&#x5199; </li>
+<li>&#x6574;&#x4E86;&#x534A;&#x5929;&#xFF0C;&#x8FD8;&#x662F;&#x633A;&#x9EBB;&#x70E6;&#xFF0C;&#x63A8;&#x8350;&#x9996;&#x9009;&#x7528;&#x540C;&#x6B65;&#x6765;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#xFF0C;volatile&#x9002;&#x7528;&#x4E8E;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x53EF;&#x53D8;&#x7684;&#x60C5;&#x51B5;</li>
+</ul>
+</li>
+</ul>
+<p>&#x4E0B;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x6765;&#x81EA;&#x7F51;&#x9875;&#xFF1A;<a href="http://www.cnblogs.com/MOBIN/p/5407965.html?hmsr=toutiao.io&amp;utm_medium=toutiao.io&amp;utm_source=toutiao.io" target="_blank">http://www.cnblogs.com/MOBIN/p/5407965.html?hmsr=toutiao.io&amp;utm_medium=toutiao.io&amp;utm_source=toutiao.io</a></p>
+<ul>
+<li><p>&#x6458;&#x8981;</p>
+<ul>
+<li>Volatile&#x662F;Java&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x79CD;&#x5F31;&#x540C;&#x6B65;&#x673A;&#x5236;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x88AB;&#x58F0;&#x660E;&#x6210;volatile&#x7C7B;&#x578B;&#x540E;&#x7F16;&#x8BD1;&#x5668;&#x4E0D;&#x4F1A;&#x5C06;&#x8BE5;&#x53D8;&#x91CF;&#x7684;&#x64CD;&#x4F5C;&#x4E0E;&#x5176;&#x4ED6;&#x5185;&#x5B58;&#x64CD;&#x4F5C;&#x8FDB;&#x884C;&#x91CD;&#x6392;&#x5E8F;&#x3002;</li>
+<li>&#x5728;&#x67D0;&#x4E9B;&#x573A;&#x666F;&#x4E0B;&#x4F7F;&#x7528;volatile&#x4EE3;&#x66FF;&#x9501;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x4EE3;&#x7801;&#x91CF;&#x548C;&#x4F7F;&#x4EE3;&#x7801;&#x66F4;&#x6613;&#x9605;&#x8BFB;</li>
+</ul>
+</li>
+<li><p>Volatile&#x7684;&#x7279;&#x6027;</p>
+<ul>
+<li>&#x53EF;&#x89C1;&#x6027;&#xFF1A;&#x5F53;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#x5BF9;volatile&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x4E86;&#x4FEE;&#x6539;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x80FD;&#x7ACB;&#x5373;&#x77E5;&#x9053;&#x4FEE;&#x6539;&#x7684;&#x503C;&#xFF0C;&#x5373;&#x5F53;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;volatile&#x53D8;&#x91CF;&#x65F6;&#x603B;&#x662F;&#x8FD4;&#x56DE;&#x6700;&#x8FD1;&#x4E00;&#x6B21;&#x5199;&#x5165;&#x7684;&#x503C;</li>
+<li>&#x539F;&#x5B50;&#x6027;&#xFF1A;&#x5BF9;&#x4E8E;&#x5355;&#x4E2A;voatile&#x53D8;&#x91CF;&#x5176;&#x5177;&#x6709;&#x539F;&#x5B50;&#x6027;(&#x80FD;&#x4FDD;&#x8BC1;long double&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x5177;&#x6709;&#x539F;&#x5B50;&#x6027;)&#xFF0C;&#x4F46;&#x5BF9;&#x4E8E;i ++ &#x8FD9;&#x7C7B;&#x590D;&#x5408;&#x64CD;&#x4F5C;&#x5176;&#x4E0D;&#x5177;&#x6709;&#x539F;&#x5B50;&#x6027;(&#x89C1;&#x4E0B;&#x9762;&#x5206;&#x6790;)</li>
+</ul>
+</li>
+<li><p>Volatile&#x4F7F;&#x7528;&#x7684;&#x524D;&#x63D0;</p>
+<ul>
+<li>&#x5BF9;&#x53D8;&#x91CF;&#x7684;&#x5199;&#x5165;&#x64CD;&#x4F5C;&#x4E0D;&#x4F9D;&#x8D56;&#x53D8;&#x91CF;&#x7684;&#x5F53;&#x524D;&#x503C;&#xFF0C;&#x6216;&#x8005;&#x80FD;&#x591F;&#x786E;&#x4FDD;&#x53EA;&#x6709;&#x5355;&#x4E00;&#x7684;&#x7EBF;&#x7A0B;&#x4FEE;&#x6539;&#x53D8;&#x91CF;&#x7684;&#x503C;</li>
+<li>&#x8BE5;&#x53D8;&#x91CF;&#x4E0D;&#x4F1A;&#x4E0E;&#x5176;&#x4ED6;&#x72B6;&#x6001;&#x53D8;&#x91CF;&#x4E00;&#x8D77;&#x7EB3;&#x5165;&#x4E0D;&#x53D8;&#x6027;&#x6761;&#x4EF6;&#x4E2D;</li>
+<li>&#x5728;&#x8BBF;&#x95EE;&#x53D8;&#x91CF;&#x65F6;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x9501;</li>
+</ul>
+</li>
+</ul>
+<p>&#x539F;&#x7406;&#xFF1A;<br>&#x539F;&#x56E0;&#xFF1A;Java&#x5185;&#x5B58;&#x6A21;&#x578B;(JMM)&#x89C4;&#x5B9A;&#x4E86;&#x6240;&#x6709;&#x7684;&#x53D8;&#x91CF;&#x90FD;&#x5B58;&#x50A8;&#x5728;&#x4E3B;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x4E3B;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x4E3A;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#xFF0C;<br>&#x800C;&#x6BCF;&#x6761;&#x7EBF;&#x7A0B;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#xFF0C;&#x7EBF;&#x7A0B;&#x7684;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#x4FDD;&#x5B58;&#x4E86;&#x4ECE;&#x4E3B;&#x5185;&#x5B58;&#x62F7;&#x8D1D;&#x7684;&#x53D8;&#x91CF;&#xFF0C;<br>&#x6240;&#x6709;&#x5BF9;&#x53D8;&#x91CF;&#x7684;&#x64CD;&#x4F5C;&#x90FD;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#x4E2D;&#x8FDB;&#x884C;&#xFF0C;&#x5B8C;&#x6210;&#x540E;&#x518D;&#x5237;&#x65B0;&#x5230;&#x4E3B;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;<br>&#x56DE;&#x5230;&#x4F8B;1&#xFF0C;&#x7B2C;18&#x884C;&#x53F7;&#x4EE3;&#x7801;&#x4E3B;&#x7EBF;&#x7A0B;(&#x7EBF;&#x7A0B;main)&#x867D;&#x7136;&#x5BF9;isRunning&#x7684;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x4E86;&#x4FEE;&#x6539;&#x4E14;&#x6709;&#x5237;&#x65B0;<br>&#x56DE;&#x4E3B;&#x5185;&#x5B58;&#x4E2D;&#xFF08;<code>&#x300A;&#x6DF1;&#x5165;&#x7406;&#x89E3;java&#x865A;&#x62DF;&#x673A;&#x300B;&#x4E2D;&#x5173;&#x4E8E;&#x4E3B;&#x5185;&#x5B58;&#x4E0E;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#x7684;&#x4EA4;&#x4E92;&#x534F;&#x8BAE;&#x63D0;&#x5230;&#x53D8;&#x91CF;&#x5728;&#x5DE5;&#x4F5C;  
+&#x5185;&#x5B58;&#x4E2D;&#x6539;&#x53D8;&#x540E;&#x5FC5;&#x987B;&#x5C06;&#x8BE5;&#x53D8;&#x5316;&#x540C;&#x6B65;&#x56DE;&#x4E3B;&#x5185;&#x5B58;</code>&#xFF09;&#xFF0C;&#x4F46;volatileThread&#x7EBF;&#x7A0B;&#x8BFB;&#x7684;&#x4ECD;&#x662F;&#x81EA;&#x5DF1;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;<br>&#x7684;&#x65E7;&#x503C;&#x5BFC;&#x81F4;&#x51FA;&#x73B0;&#x591A;&#x7EBF;&#x7A0B;&#x7684;&#x53EF;&#x89C1;&#x6027;&#x95EE;&#x9898;&#xFF0C;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#x5C31;&#x662F;&#x7ED9;isRunning&#x53D8;&#x91CF;&#x52A0;&#x4E0A;volatile&#x5173;&#x952E;&#x5B57;&#x3002;  </p>
+<ul>
+<li>volatile&#x5185;&#x5B58;&#x8BED;&#x4E49;&#x603B;&#x7ED3;&#x5982;&#x4E0B;<ul>
+<li>&#x5F53;&#x7EBF;&#x7A0B;&#x5BF9;volatile&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x5199;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x4F1A;&#x5C06;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x503C;&#x5237;&#x65B0;&#x56DE;&#x4E3B;&#x5185;&#x5B58;</li>
+<li>&#x5F53;&#x7EBF;&#x7A0B;&#x5BF9;volatile&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x8BFB;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x4F1A;&#x5148;&#x5C06;&#x81EA;&#x5DF1;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x7F6E;&#x4E3A;&#x65E0;&#x6548;&#xFF0C;&#x4E4B;&#x540E;&#x518D;&#x901A;&#x8FC7;&#x4E3B;&#x5185;&#x5B58;&#x62F7;&#x8D1D;&#x65B0;&#x503C;&#x5230;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#x4E2D;&#x4F7F;&#x7528;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Synchronized&#x4E0E;volatile&#x533A;&#x522B; <ul>
+<li>volatile&#x53EA;&#x80FD;&#x4FEE;&#x9970;&#x53D8;&#x91CF;&#xFF0C;&#x800C;synchronized&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x53D8;&#x91CF;&#xFF0C;&#x65B9;&#x6CD5;&#x4EE5;&#x53CA;&#x4EE3;&#x7801;&#x5757;</li>
+<li>volatile&#x5728;&#x591A;&#x7EBF;&#x7A0B;&#x4E2D;&#x4E0D;&#x4F1A;&#x5B58;&#x5728;&#x963B;&#x585E;&#x95EE;&#x9898;&#xFF0C;synchronized&#x4F1A;&#x5B58;&#x5728;&#x963B;&#x585E;&#x95EE;&#x9898;</li>
+<li>volatile&#x80FD;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x7684;&#x53EF;&#x89C1;&#x6027;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x5B8C;&#x5168;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x7684;&#x539F;&#x5B50;&#x6027;&#xFF0C;synchronized&#x5373;&#x4FDD;&#x8BC1;&#x4E86;&#x6570;&#x636E;&#x7684;&#x53EF;&#x89C1;&#x6027;&#x4E5F;&#x4FDD;&#x8BC1;&#x4E86;&#x539F;&#x5B50;&#x6027;</li>
+<li>volatile&#x89E3;&#x51B3;&#x7684;&#x662F;&#x53D8;&#x91CF;&#x5728;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x7684;&#x53EF;&#x89C1;&#x6027;&#xFF0C;&#x800C;sychroized&#x89E3;&#x51B3;&#x7684;&#x662F;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x8BBF;&#x95EE;&#x8D44;&#x6E90;&#x7684;&#x540C;&#x6B65;&#x6027;</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="communicate.html" class="navigation navigation-prev " aria-label="Previous page: 线程协作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="lock.html" class="navigation navigation-next " aria-label="Next page: 安全性失败-锁">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"活性失败-volatile","level":"1.5.4","depth":2,"next":{"title":"安全性失败-锁","level":"1.5.5","depth":2,"path":"concurrent/lock.md","ref":"concurrent/lock.md","articles":[]},"previous":{"title":"线程协作","level":"1.5.3","depth":2,"path":"concurrent/communicate.md","ref":"concurrent/communicate.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"concurrent/volatile.md","mtime":"2017-04-09T06:00:27.447Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T06:05:34.294Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

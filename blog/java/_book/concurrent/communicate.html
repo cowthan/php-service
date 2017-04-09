@@ -1,0 +1,1604 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>线程协作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="volatile.html" />
+    
+    
+    <link rel="prev" href="block-close.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Java</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../object-mgmr.html">
+            
+                <a href="../object-mgmr.html">
+            
+                    
+                    对象管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../enum.html">
+            
+                <a href="../enum.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../object-common.html">
+            
+                <a href="../object-common.html">
+            
+                    
+                    对象通用行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../concurrent.html">
+            
+                <a href="../concurrent.html">
+            
+                    
+                    线程和并发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="how-to.html">
+            
+                <a href="how-to.html">
+            
+                    
+                    线程和线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="block-close.html">
+            
+                <a href="block-close.html">
+            
+                    
+                    线程阻塞和关闭
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="communicate.html">
+            
+                <a href="communicate.html">
+            
+                    
+                    线程协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="volatile.html">
+            
+                <a href="volatile.html">
+            
+                    
+                    活性失败-volatile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="lock.html">
+            
+                <a href="lock.html">
+            
+                    
+                    安全性失败-锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="thread-local.html">
+            
+                <a href="thread-local.html">
+            
+                    
+                    线程局部存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="others.html">
+            
+                <a href="others.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../collections.html">
+            
+                <a href="../collections.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../nio.html">
+            
+                <a href="../nio.html">
+            
+                    
+                    nio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../advance.html">
+            
+                <a href="../advance.html">
+            
+                    
+                    泛型，注解和反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../mem-gc.html">
+            
+                <a href="../mem-gc.html">
+            
+                    
+                    内存模型和GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../classloader.html">
+            
+                <a href="../classloader.html">
+            
+                    
+                    ClassLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Web</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../spring.html">
+            
+                <a href="../spring.html">
+            
+                    
+                    spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GUI</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../gui-1.html">
+            
+                <a href="../gui-1.html">
+            
+                    
+                    没事写个小界面什么的
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >线程协作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7EBF;&#x7A0B;&#x534F;&#x4F5C;">&#x7EBF;&#x7A0B;&#x534F;&#x4F5C;</h1>
+<p>&#x672C;&#x6587;&#x91CD;&#x70B9;&#x662F;&#x7EBF;&#x7A0B;&#x7684;&#x534F;&#x4F5C;&#xFF0C;&#x5982;&#x7EBF;&#x7A0B;&#x5E76;&#x53D1;&#x7684;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#xFF0C;&#x7EBF;&#x7A0B;A&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;B&#x5B8C;&#x6210;&#x540E;&#x518D;&#x63A5;&#x7740;&#x6267;&#x884C;&#xFF0C;&#x7EBF;&#x7A0B;A&#x548C;B&#x4EA4;&#x66FF;&#x7684;&#x6267;&#x884C;&#x67D0;&#x4E2A;&#x4EFB;&#x52A1;</p>
+<h2 id="1-join">1 join</h2>
+<p>&#x7EBF;&#x7A0B;A&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;B&#x6267;&#x884C;&#x5B8C;&#xFF0C;&#x5728;A&#x4E2D;&#x8C03;&#x7528;B.join()<br>A&#x4E2D;&#x7684;B.join()&#x53EF;&#x4EE5;&#x88AB;&#x4E2D;&#x65AD;<br>B&#x4E5F;&#x53EF;&#x4EE5;&#x88AB;&#x4E2D;&#x65AD;<br>B&#x88AB;&#x4E2D;&#x65AD;&#x540E;&#xFF0C;run&#x65B9;&#x6CD5;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x76F4;&#x5230;&#x8FD4;&#x56DE;&#xFF0C;&#x6B64;&#x523B;A&#x7684;join&#x4F9D;&#x65E7;&#x6709;&#x6548;
+A&#x88AB;&#x4E2D;&#x65AD;&#x540E;&#xFF0C;&#x6216;&#x8005;join&#x5230;&#x671F;&#x540E;&#xFF0C;run&#x65B9;&#x6CD5;&#x4E5F;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x52A0;&#x6761;&#x4EF6;&#x5224;&#x65AD;</p>
+<pre><code>
+public class C7 {
+
+    public static class Sleeper implements Runnable{
+
+        @Override
+        public void run() {
+            System.out.println(&quot;Sleeper&#xFF1A;&#x6211;&#x5148;&#x7761;&#x4E2A;5&#x79D2;...&quot;);
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                //e.printStackTrace();
+                System.out.println(&quot;Sleeper---&#x8C01;&#x4ED6;&#x5988;&#x5435;&#x9192;&#x6211;&#xFF01;&quot;);
+            }
+            System.out.println(&quot;Sleeper&#xFF1A;&#x6211;&#x9192;&#x4E86;!&quot;);
+        }
+    }
+
+    public static class Guest implements Runnable{
+
+        Thread sleeperThread;
+
+        public Guest(Thread sleeperThread){
+            this.sleeperThread = sleeperThread;
+        }
+
+        @Override
+        public void run() {
+            System.out.println(&quot;Guest&#xFF1A;&#x6211;&#x662F;&#x5BA2;&#x4EBA;&#xFF0C;&#x6211;&#x5728;&#x8FD9;&#x5750;&#x7740;&#x7B49;Sleeper&#x9192;&#x6765;&#x518D;&#x8BF4;&#x8BDD;&quot;);
+            try {
+                sleeperThread.join();
+            } catch (InterruptedException e) {
+                //e.printStackTrace();
+                System.out.println(&quot;Guest&#xFF1A;&#x522B;&#x6253;&#x6270;&#x6211;&#x7B49;&#x5F85;&#xFF0C;&#x6211;&#x5F97;&#x7B49;&#x4ED6;&#x7761;&#x9192;&#x4E86;&#x554A;&#xFF01;&quot;);
+            }
+            System.out.println(&quot;Guest&#xFF1A;&#x8FD9;&#x54E5;&#x7EC8;&#x4E8E;&#x7761;&#x9192;&#x4E86;&#xFF01;&quot;);
+        }
+
+    }
+
+    public static void main(String[] args) {
+        Thread sleeper = new Thread(new Sleeper());
+        Thread guest = new Thread(new Guest(sleeper));
+        sleeper.start();
+        guest.start();
+
+        ///&#x6CE8;&#x6389;&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#xFF0C;&#x5219;sleeper&#x4F1A;&#x7761;5&#x79D2;&#xFF0C;&#x4E0D;&#x6CE8;&#x6389;&#xFF0C;3&#x79D2;&#x540E;&#x5C31;&#x4F1A;&#x6253;&#x65AD;sleeper&#x7684;&#x7761;&#x7720;&#xFF1A;&#x88AB;interrupt&#x7684;&#x662F;sleep&#x65B9;&#x6CD5;
+//        ScheduledExecutorService exec = Executors.newScheduledThreadPool(2);
+//        exec.schedule(new Runnable() {
+//            public void run() {
+//                sleeper.interrupt();
+//            }
+//        }, 3, java.util.concurrent.TimeUnit.SECONDS);
+//        
+//        ///&#x6CE8;&#x6389;&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#xFF0C;&#x5219;guest&#x4F1A;&#x7B49;5&#x79D2;&#xFF0C;&#x4E0D;&#x6CE8;&#x6389;&#xFF0C;2&#x79D2;&#x540E;&#x5C31;&#x4F1A;&#x6253;&#x65AD;&#x7B49;&#x5F85;&#xFF1A;&#x88AB;interrupt&#x7684;&#x662F;join&#x65B9;&#x6CD5;
+//        exec.schedule(new Runnable() {
+//            public void run() {
+//                guest.interrupt();
+//            }
+//        }, 2, java.util.concurrent.TimeUnit.SECONDS);
+    }
+
+}
+</code></pre><p>&#x60F3;join&#x5230;&#x7EBF;&#x7A0B;t&#xFF0C;&#x5C31;&#x5F97;&#x8C03;&#x7528;t.join()&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7C7B;&#x4F3C;sleep&#xFF0C;&#x4F1A;&#x963B;&#x585E;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;interrupt&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x7684;&#x8BED;&#x4E49;&#x5C31;&#x662F;&#xFF0C;&#x6211;&#x8981;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;t&#x6267;&#x884C;&#x5B8C;&#x518D;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF0C;&#x5728;&#x6B64;&#x4E4B;&#x524D;&#x6211;&#x90FD;&#x7B49;&#x5F85;&#x3002;</p>
+<p>join()&#xFF1A;&#x6302;&#x8D77;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x7B49;&#x5F85;&#x76EE;&#x6807;&#x7EBF;&#x7A0B;&#xFF0C; t.join()&#xFF0C;&#x8FD9;&#x91CC;t&#x662F;&#x76EE;&#x6807;&#x7EBF;&#x7A0B;<br>join(millis&#xFF0C;nano)&#xFF1A;&#x8D85;&#x65F6;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x8FC7;&#x4E86;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x8FD8;&#x662F;&#x6CA1;&#x7B49;&#x5230;&#xFF0C;join&#x5C31;&#x5F3A;&#x5236;&#x8FD4;&#x56DE;</p>
+<p>sleeper&#x548C;guest&#xFF0C;guest&#x9700;&#x8981;&#x5728;sleeper&#x7684;&#x7EBF;&#x7A0B;&#x5BF9;&#x8C61;&#x4E0A;join&#xFF0C;&#x5373;sleeper.join()<br>&#x76F4;&#x5230;sleeper&#x7684;run&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#xFF0C;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#xFF0C;&#x624D;&#x4F1A;&#x6FC0;&#x6D3B;join&#xFF0C;guest&#x624D;&#x9000;&#x51FA;&#x963B;&#x585E;&#xFF0C;&#x7EE7;&#x7EED;&#x5F80;&#x4E0B;&#x6267;&#x884C;<br>sleeper&#x7ED3;&#x675F;&#x65F6;&#xFF0C;sleeper.isAlive()&#x4E3A;false</p>
+<p>&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x53EF;&#x4EE5;join&#x5230;&#x5176;&#x4ED6;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E0A;&#xFF0C;&#x7B49;&#x5230;&#x90FD;&#x7ED3;&#x675F;&#x4E86;&#x624D;&#x7EE7;&#x7EED;&#x6267;&#x884C;</p>
+<p>&#x5728;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;c&#x8C03;&#x7528;t.join()&#x8868;&#x793A;&#xFF1A;</p>
+<ul>
+<li>c&#x7B49;&#x5F85;t&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#xFF0C;&#x671F;&#x95F4;c&#x548C;t&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x4E2D;&#x65AD;</li>
+<li>t&#x5FC5;&#x987B;&#x662F;&#x4ECE;c&#x4EA7;&#x751F;&#x7684;&#x7EBF;&#x7A0B;</li>
+</ul>
+<p><code>&#x6709;&#x7C7B;&#x4F3C;&#x9700;&#x6C42;&#xFF0C;&#x53EF;&#x4EE5;&#x8003;&#x8651;CyclicBarrier&#xFF0C;&#x6805;&#x680F;&#xFF0C;&#x53EF;&#x80FD;&#x6BD4;join&#x66F4;&#x5408;&#x9002;</code></p>
+<h2 id="2-&#x7EBF;&#x7A0B;&#x901A;&#x4FE1;&#xFF0C;&#x7EBF;&#x7A0B;&#x534F;&#x4F5C;">2 &#x7EBF;&#x7A0B;&#x901A;&#x4FE1;&#xFF0C;&#x7EBF;&#x7A0B;&#x534F;&#x4F5C;</h2>
+<p>sleep&#x548C;yield&#x7B97;&#x662F;&#x534F;&#x4F5C;&#xFF0C;&#x6211;&#x8BA9;&#x4F60;&#x8BA9;&#x5927;&#x5BB6;&#x8BA9;&#xFF0C;&#x4F46;&#x592A;&#x5E95;&#x5C42;&#xFF0C;&#x800C;&#x4E14;&#x987A;&#x5E8F;&#x6839;&#x672C;&#x4E0D;&#x53EF;&#x63A7;&#xFF0C;&#x5B8C;&#x5168;&#x4E0D;&#x80FD;&#x4F9D;&#x8D56;<br>join&#x7B97;&#x662F;&#x534F;&#x4F5C;&#xFF0C;&#x7B49;&#x5F85;&#x561B;<br>wait&#x548C;notify&#xFF0C;&#x7B97;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x7684;&#x50CF;&#x6837;&#x7684;&#x534F;&#x4F5C;<br>&#x961F;&#x5217;<br>Piper  </p>
+<p>&#x751F;&#x4EA7;&#x8005;&#x548C;&#x6D88;&#x8D39;&#x8005;&#x6A21;&#x578B;<br>&#x2014;&#x2014;wait&#x548C;notify&#x7248;<br>&#x2014;&#x2014;&#x961F;&#x5217;&#x6A21;&#x578B;</p>
+<p>----java.utis.concurrent&#x4E2D;&#x7684;&#x6784;&#x4EF6;----<br>CoundDownLatch<br>CyclicBarrier<br>DelayQueue<br>PriorityBlockingQueue<br>Exchanger  </p>
+<hr>
+<p>&#x7A0B;&#x5E8F;&#x53EF;&#x80FD;&#x5728;&#x67D0;&#x4E2A;&#x5730;&#x65B9;&#x5FC5;&#x987B;&#x7B49;&#x5F85;&#x53E6;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x5B8C;&#x6210;&#x4EFB;&#x52A1;&#xFF0C;&#x5982;&#x679C;&#x7528;&#x65E0;&#x9650;&#x5FAA;&#x73AF;&#x6765;&#x68C0;&#x67E5;&#xFF0C;&#x8FD9;&#x53EB;&#x5FD9;&#x7B49;&#x5F85;&#xFF0C;&#x5F88;&#x8017;CPU</p>
+<h2 id="3-wait&#x548C;notify&#xFF0C;notifyall">3 wait&#x548C;notify&#xFF0C;notifyAll</h2>
+<h3 id="31-&#x7B80;&#x4ECB;">3.1 &#x7B80;&#x4ECB;</h3>
+<p>obj.wait()&#x548C;obj.notify()&#x7684;&#x4F5C;&#x7528;&#xFF1A;<br>&#x2014;&#x2014;wait&#x91CA;&#x653E;obj&#x4E0A;&#x7684;&#x9501;&#xFF0C;&#x6240;&#x4EE5;&#x5FC5;&#x987B;&#x5148;&#x6301;&#x6709;&#x9501;&#x4E86;&#xFF0C;&#x901A;&#x8FC7;synchronized<br>&#x2014;&#x2014;&#x7A0B;&#x5E8F;&#x5728;&#x8FD9;&#x91CC;&#x5F00;&#x59CB;&#x963B;&#x585E;&#xFF0C;&#x53D1;&#x51FA;&#x7684;&#x4FE1;&#x606F;&#x5C31;&#x662F;&#xFF1A;&#x6211;&#x5728;obj&#x4E0A;&#x7B49;&#x5F85;&#xFF0C;&#x91CA;&#x653E;&#x4E86;obj&#x7684;&#x9501;&#xFF0C;&#x5E76;&#x4E14;&#x7B49;&#x5F85;notify<br>&#x2014;&#x2014;&#x522B;&#x7684;&#x7A0B;&#x5E8F;&#x6B64;&#x65F6;&#x53EF;&#x4EE5;&#x62FF;&#x5230;obj&#x4E0A;&#x7684;&#x9501;&#x4E86;<br>&#x2014;&#x2014;notify&#x4E5F;&#x4F1A;&#x5148;&#x91CA;&#x653E;obj&#x7684;&#x9501;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x5F97;&#x5148;&#x62FF;&#x5230;&#x9501;&#xFF0C;obj.notify()&#x4F1A;&#x901A;&#x77E5;&#x5728;obj&#x4E0A;wait&#x7684;&#x5BF9;&#x8C61;<br>&#x2014;&#x2014;&#x6B64;&#x65F6;wait&#x7684;&#x5730;&#x65B9;&#x4F1A;&#x518D;&#x62FF;&#x5230;&#x9501;&#xFF0C;&#x7EE7;&#x7EED;&#x5F80;&#x4E0B;&#x6267;&#x884C;  </p>
+<pre><code>public class Test1 {
+
+
+    public static class Waiter implements Runnable{
+
+        @Override
+        public void run() {
+            synchronized (this) {
+                System.out.println(&quot;&#x6211;&#x62FF;&#x5230;&#x9501;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;wait&#x4E86;&#xFF0C;&#x9501;&#x5C31;&#x91CA;&#x653E;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;&#x7B49;&#x5F85;&#x9501;&quot;);
+                try {
+                    wait(3000);
+                    System.out.println(&quot;wait&#x62FF;&#x5230;&#x9501;&#xFF0C;&#x8FD4;&#x56DE;&#x4E86;&quot;);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+
+        Waiter w = new Waiter();
+        ExecutorService exec = Executors.newCachedThreadPool();
+        exec.execute(w);
+        exec.shutdown();
+//        Thread.sleep(2000);
+//        synchronized (w) {
+//            System.out.println(&quot;&#x62FF;&#x5230;&#x9501;&#x4E86;&quot;);
+//            Thread.sleep(2000);
+//            w.notify();
+//            Thread.sleep(2000);
+//            System.out.println(&quot;notify&#x4E86;&#xFF0C;notify&#x4E0D;&#x4F1A;&#x91CA;&#x653E;&#x9501;&#xFF0C;&#x8D70;&#x5230;&#x540C;&#x6B65;&#x4EE3;&#x7801;&#x6700;&#x540E;&#x624D;&#x91CA;&#x653E;&#x9501;&quot;);
+//        }
+
+    }
+
+}
+</code></pre><pre><code>public class Test2 {
+
+
+    public static class Waiter implements Runnable{
+
+        @Override
+        public void run() {
+            synchronized (this) {
+                System.out.println(&quot;&#x6211;&#x62FF;&#x5230;&#x9501;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;wait&#x4E86;&#xFF0C;&#x9501;&#x5C31;&#x91CA;&#x653E;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;&#x7B49;&#x5F85;&#x9501;&quot;);
+                try {
+                    wait();
+                    System.out.println(&quot;wait&#x62FF;&#x5230;&#x9501;&#xFF0C;&#x8FD4;&#x56DE;&#x4E86;&quot;);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+
+        Waiter w = new Waiter();
+        ExecutorService exec = Executors.newCachedThreadPool();
+        exec.execute(w);
+        exec.shutdown();
+        Thread.sleep(2000);
+        synchronized (w) {
+            System.out.println(&quot;&#x62FF;&#x5230;&#x9501;&#x4E86;&quot;);
+            Thread.sleep(2000);
+            w.notify();
+            Thread.sleep(2000);
+            System.out.println(&quot;notify&#x4E86;&#xFF0C;notify&#x4E0D;&#x4F1A;&#x91CA;&#x653E;&#x9501;&#xFF0C;&#x8D70;&#x5230;&#x540C;&#x6B65;&#x4EE3;&#x7801;&#x6700;&#x540E;&#x624D;&#x91CA;&#x653E;&#x9501;&quot;);
+        }
+
+    }
+
+}
+</code></pre><pre><code>
+public class Test3 {
+
+
+    public static class Waiter implements Runnable{
+
+        @Override
+        public void run() {
+            synchronized (this) {
+                System.out.println(&quot;&#x6211;&#x62FF;&#x5230;&#x9501;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;wait&#x4E86;&#xFF0C;&#x9501;&#x5C31;&#x91CA;&#x653E;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;&#x7B49;&#x5F85;&#x9501;&quot;);
+                while(true){
+                    try {
+                        wait();
+                        System.out.println(&quot;wait&#x62FF;&#x5230;&#x9501;&#xFF0C;&#x8FD4;&#x56DE;&#x4E86;&quot;);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+
+        Waiter w = new Waiter();
+        ExecutorService exec = Executors.newCachedThreadPool();
+        exec.execute(w);
+        exec.shutdown();
+        Thread.sleep(2000);
+        synchronized (w) {
+            System.out.println(&quot;&#x62FF;&#x5230;&#x9501;&#x4E86;&quot;);
+            Thread.sleep(2000);
+            w.notify();
+            Thread.sleep(2000);
+            System.out.println(&quot;notify&#x4E86;&#xFF0C;notify&#x4E0D;&#x4F1A;&#x91CA;&#x653E;&#x9501;&#xFF0C;&#x8D70;&#x5230;&#x540C;&#x6B65;&#x4EE3;&#x7801;&#x6700;&#x540E;&#x624D;&#x91CA;&#x653E;&#x9501;&quot;);
+        }
+
+    }
+
+}
+</code></pre><p>&#x8981;&#x4ECE;wait&#x4E2D;&#x6062;&#x590D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BA9;wait&#x8FD4;&#x56DE;&#xFF0C;&#x5FC5;&#x987B;&#x6EE1;&#x8DB3;&#x4E24;&#x4E2A;&#x6761;&#x4EF6;&#xFF1A;
+&#x2014;&#x2014;&#x6709;&#x4EBA;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E0A;notify&#x8FC7;<br>&#x2014;&#x2014;&#x540C;&#x4E00;&#x5BF9;&#x8C61;&#x7684;&#x9501;&#x88AB;&#x91CA;&#x653E;<br>&#x2014;&#x2014;&#x800C;notify&#x4E5F;&#x9700;&#x8981;&#x64CD;&#x4F5C;&#x9501;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x5FC5;&#x987B;&#x6301;&#x6709;&#x9501;&#xFF0C;&#x4F46;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x4E0D;&#x662F;&#x91CA;&#x653E;&#x9501;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;notify&#x4E4B;&#x540E;&#xFF0C;wait&#x8FD4;&#x56DE;&#x4E4B;&#x524D;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x53EA;&#x8981;&#x5728;&#x540C;&#x6B65;&#x5757;&#x91CC;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x673A;&#x5C31;&#x662F;&#x9501;&#x91CA;&#x653E;&#x4E4B;&#x524D;  </p>
+<h3 id="32-&#x5957;&#x8DEF;">3.2 &#x5957;&#x8DEF;</h3>
+<p>&#x4E00;&#x822C;&#x7528;&#x6CD5;&#x662F;&#xFF1A;</p>
+<pre><code>&#x5728;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x91CC;&#xFF1A;
+synchronized(obj){
+    while(condition&#x4E0D;&#x7B26;&#x5408;){
+        obj.wait(); //&#x7B49;&#x5230;condition&#x7B26;&#x5408;
+    }
+    //&#x5904;&#x7406;condition&#x7B26;&#x5408;&#x4E4B;&#x540E;&#x7684;&#x903B;&#x8F91;
+}
+
+
+&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x91CC;&#x6709;&#x4E2A;&#x6709;&#x7F3A;&#x9677;&#x7684;wait&#x7684;&#x7528;&#x6CD5;  
+while(condition&#x4E0D;&#x7B26;&#x5408;){
+    //Point-1&#xFF1A;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;
+    &#xFF09;&#x7EBF;&#x7A0B;&#x53EF;&#x80FD;&#x5207;&#x6362;&#x4E86;&#xFF0C;&#x5207;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF0C;&#x5E76;&#x4E14;&#x5BFC;&#x81F4;&#x4E86;condition&#x7B26;&#x5408;&#x4E86;&#xFF08;&#x5E76;notify&#xFF0C;&#x4F46;&#x6B64;&#x65F6;&#x8FD9;&#x91CC;&#x5E76;&#x672A;&#xFF0C;&#x7136;&#x540E;&#x5207;&#x6362;&#x56DE;&#x6765;&#xFF0C;wait&#x4E86;&#xFF0C;&#x5C31;&#x6B7B;&#x9501;&#x4E86;
+    synchronized(obj){
+        obj.wait(); 
+    }
+}
+
+
+
+&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x91CC;&#xFF1A;
+synchronized(obj){
+    ///&#x5904;&#x7406;condition&#xFF0C;&#x8BA9;&#x5176;&#x7B26;&#x5408;&#x6761;&#x4EF6;
+    obj.notify();
+    //&#x505A;&#x4E9B;wait&#x8FD4;&#x56DE;&#x4E4B;&#x524D;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x505A;&#x7684;&#x4E8B;
+    //&#x9501;&#x5728;&#x8FD9;&#x51C6;&#x5907;&#x91CA;&#x653E;&#x4E86;&#xFF0C;wait&#x590D;&#x6D3B;&#x7684;&#x4E24;&#x4E2A;&#x6761;&#x4EF6;&#x90FD;&#x6EE1;&#x8DB3;&#x4E86;
+}
+</code></pre><p>notify&#x4F1A;&#x5524;&#x9192;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5728;obj&#x4E0A;wait&#x7684;&#x7EBF;&#x7A0B;<br>notifyAll&#x4F1A;&#x5524;&#x9192;&#x6240;&#x6709;&#x5728;obj&#x4E0A;wait&#x7684;&#x7EBF;&#x7A0B;</p>
+<p>&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x65F6;&#x95F4;&#x53C2;&#x6570;&#x7684;wait&#xFF1A;<br>&#x2014;&#x2014;&#x7ED9;wait&#x4E2A;&#x8D85;&#x65F6;&#x65F6;&#x95F4;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;&#x5F88;&#x597D;&#x7684;&#x8BF4;&#x660E;&#x4E86;wait&#x548C;notify&#x600E;&#x4E48;&#x7528;</p>
+<pre><code>
+class Car {
+      private boolean waxOn = false;
+      public synchronized void waxed() {
+        waxOn = true; // Ready to buff
+        notifyAll();
+      }
+      public synchronized void buffed() {
+        waxOn = false; // Ready for another coat of wax
+        notifyAll();
+      }
+      public synchronized void waitForWaxing()
+      throws InterruptedException {
+        while(waxOn == false)
+          wait();
+      }
+      public synchronized void waitForBuffing()
+      throws InterruptedException {
+        while(waxOn == true)
+          wait();
+      }
+    }
+
+    class WaxOn implements Runnable {
+      private Car car;
+      public WaxOn(Car c) { car = c; }
+      public void run() {
+        try {
+          while(!Thread.interrupted()) {
+            System.out.println(&quot;Wax On! &quot;);
+            TimeUnit.MILLISECONDS.sleep(200);
+            car.waxed();
+            car.waitForBuffing();
+          }
+        } catch(InterruptedException e) {
+          System.out.println(&quot;Exiting via interrupt&quot;);
+        }
+        System.out.println(&quot;Ending Wax On task&quot;);
+      }
+    }
+
+    class WaxOff implements Runnable {
+      private Car car;
+      public WaxOff(Car c) { car = c; }
+      public void run() {
+        try {
+          while(!Thread.interrupted()) {
+            car.waitForWaxing();
+            System.out.println(&quot;Wax Off! &quot;);
+            TimeUnit.MILLISECONDS.sleep(200);
+            car.buffed();
+          }
+        } catch(InterruptedException e) {
+          System.out.println(&quot;Exiting via interrupt&quot;);
+        }
+        System.out.println(&quot;Ending Wax Off task&quot;);
+      }
+    }
+
+    public class WaxOMatic {
+      public static void main(String[] args) throws Exception {
+        Car car = new Car();
+        ExecutorService exec = Executors.newCachedThreadPool();
+        exec.execute(new WaxOff(car));
+        exec.execute(new WaxOn(car));
+        TimeUnit.SECONDS.sleep(5); // Run for a while...
+        exec.shutdownNow(); // Interrupt all tasks
+      }
+    } /* Output: (95% match)
+    Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Exiting via interrupt
+    Ending Wax On task
+    Exiting via interrupt
+    Ending Wax Off task
+    *///:~
+</code></pre><ul>
+<li>&#x603B;&#x7ED3;&#xFF1A;<ul>
+<li>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x6709;&#x70B9;&#x592A;&#x573A;&#x666F;&#x5316;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x592A;&#x7279;&#x6B8A;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x7528;&#x540C;&#x6B65;&#x961F;&#x5217;&#x6765;&#x5B9E;&#x73B0;&#xFF1A;</li>
+<li>&#x4E0A;&#x8721;&#x548C;&#x629B;&#x5149;&#x53EF;&#x4EE5;&#x770B;&#x505A;&#x662F;&#x4E24;&#x6761;&#x6D41;&#x6C34;&#x7EBF;&#xFF0C;&#x5E76;&#x4E14;&#x539F;&#x5219;&#x662F;&#xFF1A;&#x4E00;&#x6761;&#x6D41;&#x6C34;&#x7EBF;&#x5904;&#x7406;&#x4E00;&#x4E2A;&#x961F;&#x5217;&#x91CC;&#x7684;&#x6D88;&#x606F;</li>
+<li>&#x7B49;&#x5F85;&#x4E0A;&#x8721;&#x7684;&#x961F;&#x5217;&#xFF0C;&#x7B49;&#x5F85;&#x629B;&#x5149;&#x7684;&#x961F;&#x5217;&#xFF0C;&#x800C;&#x4E24;&#x6761;&#x6D41;&#x6C34;&#x7EBF;&#xFF0C;&#x5C31;&#x53D8;&#x6210;&#x4E86;&#x5728;queue.take()&#x6216;&#x8005;poll()&#x65F6;&#x963B;&#x585E;&#xFF0C;&#x601D;&#x8DEF;&#x5C31;&#x6E05;&#x695A;&#x591A;&#x4E86;</li>
+<li>&#x4F46;&#x662F;&#x6CE8;&#x610F;&#xFF0C;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;&#x4E1A;&#x52A1;&#x6A21;&#x578B;&#x90FD;&#x53EF;&#x4EE5;&#x6620;&#x5C04;&#x5230;&#x961F;&#x5217;&#x6A21;&#x578B;</li>
+</ul>
+</li>
+</ul>
+<h3 id="33-&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5728;whiletrue&#x91CC;wait">3.3 &#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5728;while(true)&#x91CC;wait</h3>
+<ul>
+<li>&#x518D;&#x8BF4;notifyAll&#x548C;while(true){wait();}&#x7684;&#x95EE;&#x9898;<ul>
+<li>&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x4EFB;&#x52A1;&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E0A;&#x7B49;&#x5F85;&#x540C;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#xFF0C;&#x4E0D;&#x7BA1;&#x8C01;&#x88AB;&#x5524;&#x9192;&#x4E4B;&#x540E;&#xFF0C;&#x6761;&#x4EF6;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x6539;&#x53D8;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;wait&#x9192;&#x6765;&#x4E4B;&#x540E;&#x8FD8;&#x662F;&#x8981;&#x5BF9;&#x6761;&#x4EF6;&#x8FDB;&#x884C;&#x68C0;&#x67E5;</li>
+<li>&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E0A;wait&#x7684;&#x7EBF;&#x7A0B;&#x53EF;&#x80FD;&#x6709;&#x591A;&#x4E2A;&#xFF0C;&#x800C;&#x4E14;&#x53EF;&#x80FD;&#x662F;&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x6240;&#x4EE5;&#x88AB;&#x5524;&#x9192;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x68C0;&#x67E5;&#x4E00;&#x4E0B;&#x662F;&#x5426;&#x81EA;&#x5DF1;&#x9700;&#x8981;&#x7684;&#x6761;&#x4EF6;</li>
+<li>&#x603B;&#x4E4B;&#xFF0C;wait&#x9192;&#x6765;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x68C0;&#x67E5;&#x81EA;&#x5DF1;&#x9700;&#x8981;&#x7684;&#x6761;&#x4EF6;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#xFF0C;&#x4E0D;&#x6EE1;&#x8DB3;&#x7684;&#x8BDD;&#x8FD8;&#x5F97;&#x7EE7;&#x7EED;wait</li>
+<li>&#x6240;&#x4EE5;&#xFF0C;&#x5728;while(true)&#x4E2D;wait&#x901A;&#x5E38;&#x662F;&#x6BD4;&#x8F83;&#x5408;&#x7406;&#x7684;&#x505A;&#x6CD5;<ul>
+<li>notify&#x53EA;&#x80FD;&#x5524;&#x9192;&#x4E00;&#x4E2A;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="34-notify&#x548C;notifyall&#x7684;&#x533A;&#x522B;">3.4 notify&#x548C;notifyAll&#x7684;&#x533A;&#x522B;</h3>
+<p>&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E0A;&#x6709;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;wait&#xFF0C;notify&#x5524;&#x9192;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x7B49;&#x5F85;&#x7684;&#xFF0C;notifyAll&#x5524;&#x9192;&#x6240;&#x6709;</p>
+<h2 id="4-condition&#xFF0C;await&#x548C;signal">4 Condition&#xFF0C;await&#x548C;signal</h2>
+<pre><code>import java.util.concurrent.*;
+import java.util.concurrent.locks.*;
+
+
+
+public class WaxOMatic2 {
+  public static void main(String[] args) throws Exception {
+    Car car = new Car();
+    ExecutorService exec = Executors.newCachedThreadPool();
+    exec.execute(new WaxOff(car));
+    exec.execute(new WaxOn(car));
+    TimeUnit.SECONDS.sleep(5);
+    exec.shutdownNow();
+  }
+
+
+  public static class Car {
+      private Lock lock = new ReentrantLock();
+      private Condition condition = lock.newCondition();
+      private boolean waxOn = false;
+      public void waxed() {
+        lock.lock();
+        try {
+          waxOn = true; // Ready to buff
+          condition.signalAll();
+        } finally {
+          lock.unlock();
+        }
+      }
+      public void buffed() {
+        lock.lock();
+        try {
+          waxOn = false; // Ready for another coat of wax
+          condition.signalAll();
+        } finally {
+          lock.unlock();
+        }
+      }
+      public void waitForWaxing() throws InterruptedException {
+        lock.lock();
+        try {
+          while(waxOn == false)
+            condition.await();
+        } finally {
+          lock.unlock();
+        }
+      }
+      public void waitForBuffing() throws InterruptedException{
+        lock.lock();
+        try {
+          while(waxOn == true)
+            condition.await();
+        } finally {
+          lock.unlock();
+        }
+      }
+    }
+
+  public static class WaxOn implements Runnable {
+      private Car car;
+      public WaxOn(Car c) { car = c; }
+      public void run() {
+        try {
+          while(!Thread.interrupted()) {
+            System.out.println(&quot;Wax On! &quot;);
+            TimeUnit.MILLISECONDS.sleep(200);
+            car.waxed();
+            car.waitForBuffing();
+          }
+        } catch(InterruptedException e) {
+          System.out.println(&quot;Exiting via interrupt&quot;);
+        }
+        System.out.println(&quot;Ending Wax On task&quot;);
+      }
+    }
+
+  public static class WaxOff implements Runnable {
+      private Car car;
+      public WaxOff(Car c) { car = c; }
+      public void run() {
+        try {
+          while(!Thread.interrupted()) {
+            car.waitForWaxing();
+            System.out.println(&quot;Wax Off! &quot;);
+            TimeUnit.MILLISECONDS.sleep(200);
+            car.buffed();
+          }
+        } catch(InterruptedException e) {
+          System.out.println(&quot;Exiting via interrupt&quot;);
+        }
+        System.out.println(&quot;Ending Wax Off task&quot;);
+      }
+    }
+} /* Output: (90% match)
+Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Exiting via interrupt
+Ending Wax Off task
+Exiting via interrupt
+Ending Wax On task
+*///:~
+</code></pre><p>&#x8FD9;&#x91CC;&#x8981;&#x7528;&#x5230;&#x7684;&#x9501;&#x5C31;&#x662F;ReentranLock</p>
+<h2 id="5-&#x540C;&#x6B65;&#x961F;&#x5217;&#xFF1A;&#x63A5;&#x53E3;blockingqueue">5 &#x540C;&#x6B65;&#x961F;&#x5217;&#xFF1A;&#x63A5;&#x53E3;BlockingQueue</h2>
+<h3 id="51--&#x7B80;&#x4ECB;">5.1  &#x7B80;&#x4ECB;</h3>
+<p>&#x603B;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x540C;&#x6B65;&#x961F;&#x5217;&#x53EF;&#x4EE5;&#x4F7F;&#x5F88;&#x591A;&#x4E1A;&#x52A1;&#x6A21;&#x578B;&#x5F97;&#x4EE5;&#x7B80;&#x5316;&#xFF0C;&#x5904;&#x7406;&#x95EE;&#x9898;&#x7684;&#x601D;&#x8DEF;&#x66F4;&#x7B80;&#x5355;</p>
+<p>java&#x63D0;&#x4F9B;&#x4E86;&#x5927;&#x91CF;&#x7684;BlockingQueue&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x4F8B;&#x5B50;&#x53C2;&#x8003;BlockingQueueTest</p>
+<pre><code>public interface BlockingQueue&lt;E&gt; extends Queue&lt;E&gt; {
+
+    /**
+     * &#x6DFB;&#x52A0;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7A7A;&#x95F4;&#xFF0C;&#x4F1A;&#x963B;&#x585E;&#x7B49;&#x5F85;
+     * @param e
+     * @throws InterruptedException
+     */
+    void put(E e) throws InterruptedException;
+
+    /**
+     * &#x79FB;&#x9664;&#x5E76;&#x8FD4;&#x56DE;&#xFF0C;&#x5982;&#x679C;empty&#xFF0C;&#x5219;&#x963B;&#x585E;&#x7B49;&#x5F85;
+     */
+    E take() throws InterruptedException;
+
+    /**
+     * &#x79FB;&#x9664;&#x5E76;&#x8FD4;&#x56DE;&#xFF0C;&#x5982;&#x679C;empty&#xFF0C;&#x4F1A;&#x7B49;&#x5F85;&#x6307;&#x5B9A;&#x65F6;&#x95F4;
+     * @param timeout
+     * @param unit
+     * @return
+     */
+    E poll(long timeout, TimeUnit unit);
+
+    /**
+     * Returns the number of additional elements that this queue can ideally
+     * (in the absence of memory or resource constraints) accept without
+     * blocking, or {@code Integer.MAX_VALUE} if there is no intrinsic
+     * limit.
+     *
+     * &lt;p&gt;Note that you &lt;em&gt;cannot&lt;/em&gt; always tell if an attempt to insert
+     * an element will succeed by inspecting {@code remainingCapacity}
+     * because it may be the case that another thread is about to
+     * insert or remove an element.
+     *
+     * @return the remaining capacity
+     */
+    int remainingCapacity();
+
+    public boolean contains(Object o);
+
+    /**
+     * &#x628A;&#x961F;&#x5217;&#x91CC;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x79FB;&#x5230;Collection&#x91CC;
+     * @param c
+     * @return
+     */
+    int drainTo(Collection&lt;? super E&gt; c);
+    int drainTo(Collection&lt;? super E&gt; c, int maxElements);
+
+}
+
+java.util.concurrent.BlockingQueue&lt;Message&gt; queue = 
+            //new ArrayBlockingQueue&lt;BlockingQueueTest.Message&gt;(10, true); //true&#x662F;access policy&#xFF0C;&#x8868;&#x793A;FIFO&#xFF0C;&#x5148;&#x8FDB;&#x5148;&#x51FA;
+            //new LinkedBlockingDeque&lt;BlockingQueueTest.Message&gt;(10);
+            //new DelayQueue&lt;BlockingQueueTest.Message&gt;();
+            //new PriorityBlockingQueue&lt;BlockingQueueTest.Message&gt;();
+            //new SynchronousQueue&lt;BlockingQueueTest.Message&gt;(true);
+            //new LinkedTransferQueue&lt;BlockingQueueTest.Message&gt;();
+</code></pre><p>&#x5E38;&#x89C4;&#xFF1A;<br>ArrayBlockingQueue<br>LinkedBlockingDeque  </p>
+<p>&#x5EF6;&#x8FDF;&#x961F;&#x5217;&#xFF1A;<br>DelayQueue  </p>
+<p>&#x4F18;&#x5148;&#x7EA7;&#x961F;&#x5217;<br>PriorityBlockingQueue</p>
+<p>&#x4E0D;&#x61C2;&#x7684;&#x961F;&#x5217;&#xFF1A;<br>SynchronousQueue
+LinkedTransferQueue</p>
+<h3 id="52-&#x4F8B;&#x5B50;">5.2 &#x4F8B;&#x5B50;</h3>
+<p>&#x4F8B;&#x5B50;1&#xFF1A;PriorityQueue&#xFF0C;&#x4F18;&#x5148;&#x7EA7;&#x961F;&#x5217;</p>
+<pre><code>import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Random;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.PriorityBlockingQueue;
+import java.util.concurrent.TimeUnit;
+
+class PrioritizedTask implements Runnable, Comparable&lt;PrioritizedTask&gt; {
+    private Random rand = new Random(47);
+    private static int counter = 0;
+    private final int id = counter++;
+    private final int priority;
+    protected static List&lt;PrioritizedTask&gt; sequence = new ArrayList&lt;PrioritizedTask&gt;();
+
+    public PrioritizedTask(int priority) {
+        this.priority = priority;
+        sequence.add(this);
+    }
+
+    public int compareTo(PrioritizedTask arg) {
+        return priority &lt; arg.priority ? 1 : (priority &gt; arg.priority ? -1 : 0);
+    }
+
+    public void run() {
+        try {
+            TimeUnit.MILLISECONDS.sleep(rand.nextInt(250));
+        } catch (InterruptedException e) {
+            // Acceptable way to exit
+        }
+        System.out.println(this);
+    }
+
+    public String toString() {
+        return String.format(&quot;[%1$-3d]&quot;, priority) + &quot; Task &quot; + id;
+    }
+
+    public String summary() {
+        return &quot;(&quot; + id + &quot;:&quot; + priority + &quot;)&quot;;
+    }
+
+    public static class EndSentinel extends PrioritizedTask {
+        private ExecutorService exec;
+
+        public EndSentinel(ExecutorService e) {
+            super(-1); // Lowest priority in this program
+            exec = e;
+        }
+
+        public void run() {
+            int count = 0;
+            for (PrioritizedTask pt : sequence) {
+                System.out.println(pt.summary());
+                if (++count % 5 == 0)
+                    System.out.println();
+            }
+            System.out.println();
+            System.out.println(this + &quot; Calling shutdownNow()&quot;);
+            exec.shutdownNow();
+        }
+    }
+}
+
+class PrioritizedTaskProducer implements Runnable {
+    private Random rand = new Random(47);
+    private Queue&lt;Runnable&gt; queue;
+    private ExecutorService exec;
+
+    public PrioritizedTaskProducer(Queue&lt;Runnable&gt; q, ExecutorService e) {
+        queue = q;
+        exec = e; // Used for EndSentinel
+    }
+
+    public void run() {
+        // Unbounded queue; never blocks.
+        // Fill it up fast with random priorities:
+        for (int i = 0; i &lt; 20; i++) {
+            queue.add(new PrioritizedTask(rand.nextInt(10)));
+            Thread.yield();
+        }
+        // Trickle in highest-priority jobs:
+        try {
+            for (int i = 0; i &lt; 10; i++) {
+                TimeUnit.MILLISECONDS.sleep(250);
+                queue.add(new PrioritizedTask(10));
+            }
+            // Add jobs, lowest priority first:
+            for (int i = 0; i &lt; 10; i++)
+                queue.add(new PrioritizedTask(i));
+            // A sentinel to stop all the tasks:
+            queue.add(new PrioritizedTask.EndSentinel(exec));
+        } catch (InterruptedException e) {
+            // Acceptable way to exit
+        }
+        System.out.println(&quot;Finished PrioritizedTaskProducer&quot;);
+    }
+}
+
+class PrioritizedTaskConsumer implements Runnable {
+    private PriorityBlockingQueue&lt;Runnable&gt; q;
+
+    public PrioritizedTaskConsumer(PriorityBlockingQueue&lt;Runnable&gt; q) {
+        this.q = q;
+    }
+
+    public void run() {
+        try {
+            while (!Thread.interrupted())
+                // Use current thread to run the task:
+                q.take().run();
+        } catch (InterruptedException e) {
+            // Acceptable way to exit
+        }
+        System.out.println(&quot;Finished PrioritizedTaskConsumer&quot;);
+    }
+}
+
+public class PriorityBlockingQueueDemo {
+    public static void main(String[] args) throws Exception {
+        Random rand = new Random(47);
+        ExecutorService exec = Executors.newCachedThreadPool();
+        PriorityBlockingQueue&lt;Runnable&gt; queue = new PriorityBlockingQueue&lt;Runnable&gt;();
+        exec.execute(new PrioritizedTaskProducer(queue, exec));
+        exec.execute(new PrioritizedTaskConsumer(queue));
+    }
+} /* (Execute to see output) */// :~
+</code></pre><ul>
+<li>&#x7B80;&#x4ECB;&#xFF1A;<ul>
+<li>&#x57FA;&#x4E8E;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x4F18;&#x5148;&#x7EA7;&#x7684;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#xFF0C;&#x7531;&#x4F60;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x5C31;&#x662F;&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;compareTo</li>
+<li>&#x7528;&#x5230;&#x4E86;add&#x548C;take&#x65B9;&#x6CD5;&#xFF0C;&#x548C;take&#x914D;&#x5BF9;&#x7684;&#x4E0D;&#x662F;put&#x5417;</li>
+<li>&#x961F;&#x5217;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;Task&#xFF0C;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;Comparable&#x6765;&#x5BF9;&#x4F18;&#x5148;&#x7EA7;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x4EE5;&#x4FDD;&#x8BC1;&#x6309;&#x4F18;&#x5148;&#x7EA7;&#x987A;&#x5E8F;&#x6765;</li>
+</ul>
+</li>
+</ul>
+<p>PriorityBlockingQueue&#x4EE3;&#x7801;1000&#x591A;&#x884C;&#x5462;</p>
+<p>&#x4F8B;&#x5B50;2&#xFF1A;DelayQueue&#xFF0C;&#x5EF6;&#x8FDF;&#x961F;&#x5217;</p>
+<pre><code>import static java.util.concurrent.TimeUnit.MILLISECONDS;
+import static java.util.concurrent.TimeUnit.NANOSECONDS;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.DelayQueue;
+import java.util.concurrent.Delayed;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
+class DelayedTask implements Runnable, Delayed {
+    private static int counter = 0;
+    private final int id = counter++;
+    private final int delta;
+    private final long trigger;
+    protected static List&lt;DelayedTask&gt; sequence = new ArrayList&lt;DelayedTask&gt;();
+
+    public DelayedTask(int delayInMilliseconds) {
+        delta = delayInMilliseconds;
+        trigger = System.nanoTime() + NANOSECONDS.convert(delta, MILLISECONDS);
+        sequence.add(this);
+    }
+
+    public long getDelay(TimeUnit unit) {
+        return unit.convert(trigger - System.nanoTime(), NANOSECONDS);
+    }
+
+    public int compareTo(Delayed arg) {
+        DelayedTask that = (DelayedTask) arg;
+        if (trigger &lt; that.trigger)
+            return -1;
+        if (trigger &gt; that.trigger)
+            return 1;
+        return 0;
+    }
+
+    public void run() {
+        System.out.println(this + &quot; &quot;);
+    }
+
+    public String toString() {
+        return String.format(&quot;[%1$-4d]&quot;, delta) + &quot; Task &quot; + id;
+    }
+
+    public String summary() {
+        return &quot;(&quot; + id + &quot;:&quot; + delta + &quot;)&quot;;
+    }
+
+    public static class EndSentinel extends DelayedTask {
+        private ExecutorService exec;
+
+        public EndSentinel(int delay, ExecutorService e) {
+            super(delay);
+            exec = e;
+        }
+
+        public void run() {
+            for (DelayedTask pt : sequence) {
+                System.out.println(pt.summary() + &quot; &quot;);
+            }
+            System.out.println();
+            System.out.println(this + &quot; Calling shutdownNow()&quot;);
+            exec.shutdownNow();
+        }
+    }
+}
+
+class DelayedTaskConsumer implements Runnable {
+    private DelayQueue&lt;DelayedTask&gt; q;
+
+    public DelayedTaskConsumer(DelayQueue&lt;DelayedTask&gt; q) {
+        this.q = q;
+    }
+
+    public void run() {
+        try {
+            while (!Thread.interrupted())
+                q.take().run(); // Run task with the current thread
+        } catch (InterruptedException e) {
+            // Acceptable way to exit
+        }
+        System.out.println(&quot;Finished DelayedTaskConsumer&quot;);
+    }
+}
+
+public class DelayQueueDemo {
+    public static void main(String[] args) {
+        Random rand = new Random(47);
+        ExecutorService exec = Executors.newCachedThreadPool();
+        DelayQueue&lt;DelayedTask&gt; queue = new DelayQueue&lt;DelayedTask&gt;();
+        // Fill with tasks that have random delays:
+        for (int i = 0; i &lt; 20; i++)
+            queue.put(new DelayedTask(rand.nextInt(5000)));
+        // Set the stopping point
+        queue.add(new DelayedTask.EndSentinel(5000, exec));
+        exec.execute(new DelayedTaskConsumer(queue));
+    }
+} /*
+ * Output: [128 ] Task 11 [200 ] Task 7 [429 ] Task 5 [520 ] Task 18 [555 ] Task
+ * 1 [961 ] Task 4 [998 ] Task 16 [1207] Task 9 [1693] Task 2 [1809] Task 14
+ * [1861] Task 3 [2278] Task 15 [3288] Task 10 [3551] Task 12 [4258] Task 0
+ * [4258] Task 19 [4522] Task 8 [4589] Task 13 [4861] Task 17 [4868] Task 6
+ * (0:4258) (1:555) (2:1693) (3:1861) (4:961) (5:429) (6:4868) (7:200) (8:4522)
+ * (9:1207) (10:3288) (11:128) (12:3551) (13:4589) (14:1809) (15:2278) (16:998)
+ * (17:4861) (18:520) (19:4258) (20:5000) [5000] Task 20 Calling shutdownNow()
+ * Finished DelayedTaskConsumer
+ */// :~
+</code></pre><ul>
+<li>&#x8981;&#x70B9;&#xFF1A;<ul>
+<li>&#x961F;&#x5217;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#xFF1A;&#x9700;&#x8981;&#x5B9E;&#x73B0;Delayed&#x63A5;&#x53E3;&#xFF0C;&#x5305;&#x62EC;getDelay()&#x548C;compareTo()&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;</li>
+<li>getDlay&#x51B3;&#x5B9A;&#x4E86;&#x4EFB;&#x52A1;&#x662F;&#x5426;&#x5230;&#x65F6;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;</li>
+<li>compareTo&#x51B3;&#x5B9A;&#x4E86;&#x961F;&#x5217;&#x4F1A;&#x6392;&#x5E8F;&#xFF0C;&#x5E76;&#x4E14;&#x961F;&#x5217;&#x5934;&#x5C31;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x5E94;&#x8BE5;&#x88AB;&#x8FD0;&#x884C;&#x7684;&#x4EFB;&#x52A1;</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>&#x5E26;&#x7740;&#x95EE;&#x9898;&#x770B;&#x4EE3;&#x7801;&#xFF1A;<ul>
+<li>&#x666E;&#x901A;&#x961F;&#x5217;&#x5728;take()&#x8FD9;&#x91CC;&#x963B;&#x585E;&#xFF0C;&#x6709;&#x65B0;&#x4EFB;&#x52A1;put&#x8FDB;&#x6765;&#xFF0C;&#x5219;&#x88AB;&#x5524;&#x9192;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x8981;&#x6709;&#x4EFB;&#x52A1;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x963B;&#x585E;</li>
+<li>DelayQueue&#x5373;&#x4F7F;&#x6709;&#x6D88;&#x606F;&#xFF0C;&#x4E5F;&#x4F1A;&#x963B;&#x585E;&#xFF0C;&#x8868;&#x793A;&#x4EFB;&#x52A1;&#x90FD;&#x6CA1;&#x5230;&#x65F6;&#x95F4;&#xFF0C;&#x8FD9;&#x79CD;&#x963B;&#x585E;&#xFF0C;&#x4F55;&#x65F6;&#x88AB;&#x5524;&#x9192;&#xFF1F;<ul>
+<li>DelayQueue&#x5185;&#x90E8;&#x6709;&#x4E2A;PriorityQueue</li>
+<li>&#x53C2;&#x8003;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5C31;&#x662F;DelayQueue&#x7684;take&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;<ul>
+<li>&#x53D6;&#x51FA;&#x961F;&#x5217;&#x5934;&#xFF08;peek&#xFF0C;&#x770B;&#x770B;&#xFF0C;&#x4E0D;&#x5220;&#x9664;&#xFF09;</li>
+<li>&#x5982;&#x679C;&#x662F;null&#xFF0C;&#x8BF4;&#x660E;&#x961F;&#x5217;&#x7A7A;&#xFF0C;&#x5219;Condition.await()</li>
+<li>&#x5982;&#x679C;&#x4E0D;&#x7A7A;&#xFF0C;&#x5219;&#x6839;&#x636E;&#x4EFB;&#x52A1;&#x7684;int delay = getDelay()&#x65B9;&#x6CD5;&#xFF0C;&#x8BA1;&#x7B97;&#x51FA;delay&#x65F6;&#x95F4;&#xFF0C;&#x5373;&#x591A;&#x4E45;&#x4E4B;&#x540E;&#x4EFB;&#x52A1;&#x53EF;&#x8FD0;&#x884C;<ul>
+<li>&#x6CE8;&#x610F;&#x961F;&#x5217;&#x662F;&#x6839;&#x636E;&#x4F60;&#x5B9E;&#x73B0;&#x7684;compareTo&#x6392;&#x597D;&#x5E8F;&#x7684;&#xFF0C;&#x961F;&#x5217;&#x5934;&#x5C31;&#x5E94;&#x8BE5;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x88AB;&#x8FD0;&#x884C;&#x7684;&#x4EFB;&#x52A1;</li>
+<li>getDelay()&#x65B9;&#x6CD5;&#x4E5F;&#x662F;&#x4F60;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x5728;&#x4EFB;&#x52A1;&#x5185;&#x90E8;&#xFF0C;&#x4F60;&#x8981;&#x8BB0;&#x5F55;&#x5EF6;&#x65F6;&#x65F6;&#x95F4;&#xFF08;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF09;&#xFF0C;&#x89E6;&#x53D1;&#x65F6;&#x95F4;&#xFF08;&#x5177;&#x4F53;&#x65F6;&#x523B;&#xFF0C;&#x8BA1;&#x7B97;&#x51FA;&#x6765;&#x5E76;&#x5B58;&#x597D;&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x968F;&#x65F6;&#x968F;&#x523B;&#x4F60;&#x90FD;&#x53EF;&#x4EE5;&#x5728;getDelay()&#x65B9;&#x6CD5;&#x4E2D;&#x8BA1;&#x7B97;&#x51FA;&#x4EFB;&#x52A1;&#x591A;&#x4E45;&#x4E4B;&#x540E;&#x5E94;&#x8BE5;&#x88AB;&#x89E6;&#x53D1;</li>
+<li>&#x5982;&#x679C;delay &lt;= 0&#xFF0C;&#x5C31;&#x8FD4;&#x56DE;(queue.poll())&#xFF0C;&#x4EFB;&#x52A1;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4E86;</li>
+<li>&#x5982;&#x679C;delay &gt; 0&#xFF0C;&#x8BF4;&#x660E;&#x8FD8;&#x6CA1;&#x5230;&#x65F6;&#xFF0C;&#x5219;Condition.awaitNanos(delay)&#xFF0C;&#x963B;&#x585E;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x540E;&#xFF0C;&#x518D;&#x5F00;&#x59CB;&#x65B0;&#x4E00;&#x8F6E;for&#x5FAA;&#x73AF;&#xFF0C;&#x6B64;&#x65F6;&#x961F;&#x5217;&#x5934;&#x7684;&#x4EFB;&#x52A1;&#x5E94;&#x8BE5;&#x5230;&#x65F6;&#x4E86;</li>
+<li>leader&#x4E0D;&#x77E5;&#x9053;&#x662F;&#x5E72;&#x5565;&#x7684;&#x554A;&#xFF0C;&#x5148;&#x5F53;&#x6210;&#x4E00;&#x76F4;&#x662F;null&#x6765;&#x7406;&#x89E3;&#x7684;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ReentrantLock&#x51B3;&#x5B9A;&#x4E86;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5728;&#x961F;&#x5217;&#x4E0A;take&#x65F6;&#xFF0C;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x4F1A;&#x8FDB;&#x5165;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x5728;await&#x4E0A;&#x963B;&#x585E;&#xFF0C;&#x5176;&#x4ED6;&#x4F1A;&#x5728;ReentrantLock&#x4E0A;&#x963B;&#x585E;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> E <span class="hljs-title">take</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> InterruptedException </span>{
+    <span class="hljs-keyword">final</span> ReentrantLock lock = <span class="hljs-keyword">this</span>.lock;
+    lock.lockInterruptibly();
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">for</span> (;;) {
+            E first = q.peek();
+            <span class="hljs-keyword">if</span> (first == <span class="hljs-keyword">null</span>)
+                available.await();
+            <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">long</span> delay = first.getDelay(NANOSECONDS);
+                <span class="hljs-keyword">if</span> (delay &lt;= <span class="hljs-number">0</span>)
+                    <span class="hljs-keyword">return</span> q.poll();
+                first = <span class="hljs-keyword">null</span>; <span class="hljs-comment">// don&apos;t retain ref while waiting</span>
+                <span class="hljs-keyword">if</span> (leader != <span class="hljs-keyword">null</span>)
+                    available.await();
+                <span class="hljs-keyword">else</span> {
+                    Thread thisThread = Thread.currentThread();
+                    leader = thisThread;
+                    <span class="hljs-keyword">try</span> {
+                        available.awaitNanos(delay);
+                    } <span class="hljs-keyword">finally</span> {
+                        <span class="hljs-keyword">if</span> (leader == thisThread)
+                            leader = <span class="hljs-keyword">null</span>;
+                    }
+                }
+            }
+        }
+    } <span class="hljs-keyword">finally</span> {
+        <span class="hljs-keyword">if</span> (leader == <span class="hljs-keyword">null</span> &amp;&amp; q.peek() != <span class="hljs-keyword">null</span>)
+            available.signal();
+        lock.unlock();
+    }
+    }
+</code></pre>
+<h5 id="">#</h5>
+<p><code>Thread leader</code>&#x7684;&#x4F5C;&#x7528;&#xFF1A;&#x6CA1;&#x660E;&#x767D;
+Thread designated to wait for the element at the head of
+the queue.  This variant of the Leader-Follower pattern
+(<a href="http://www.cs.wustl.edu/~schmidt/POSA/POSA2/" target="_blank">http://www.cs.wustl.edu/~schmidt/POSA/POSA2/</a>) serves to
+minimize unnecessary timed waiting.  When a thread becomes
+the leader, it waits only for the next delay to elapse, but
+other threads await indefinitely.  The leader thread must
+signal some other thread before returning from take() or
+poll(...), unless some other thread becomes leader in the
+interim.  Whenever the head of the queue is replaced with
+an element with an earlier expiration time, the leader
+field is invalidated by being reset to null, and some
+waiting thread, but not necessarily the current leader, is
+signalled.  So waiting threads must be prepared to acquire
+and lose leadership while waiting.</p>
+<h3 id="53&#x66F4;&#x591A;">5.3&#x66F4;&#x591A;</h3>
+<ul>
+<li>&#x4E00;&#x4E9B;&#x5B9E;&#x8DF5;&#x4E2D;&#x7684;&#x5E94;&#x7528;<ul>
+<li>&#x5B89;&#x5353;&#x7684;Looper&#x548C;Handler&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x7684;</li>
+<li>UI&#x6846;&#x67B6;&#x7684;&#x5927;&#x5FAA;&#x73AF;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x963B;&#x585E;&#x5F0F;&#x7684;&#xFF0C;&#x5FAA;&#x73AF;&#x5904;&#x7406;&#x7684;&#x5176;&#x5B9E;&#x662F;UI&#x4E0A;&#x7528;&#x6237;&#x64CD;&#x4F5C;&#x4EA7;&#x751F;&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;&#x754C;&#x9762;&#x4E0D;&#x4F1A;&#x9891;&#x7E41;&#x5237;&#x65B0;</li>
+<li>&#x6E38;&#x620F;&#x6846;&#x67B6;&#x7684;&#x5927;&#x5FAA;&#x73AF;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x963B;&#x585E;&#x5F0F;&#x7684;&#xFF0C;&#x6BCF;&#x4E00;&#x8F6E;&#x5FAA;&#x73AF;&#x5FC5;&#x987B;&#x5B8C;&#x6210;&#x5237;&#x65B0;&#x754C;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x4E5F;&#x5FC5;&#x987B;&#x5904;&#x7406;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x548C;&#x6E38;&#x620F;&#x903B;&#x8F91;&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x88AB;&#x9650;&#x5236;&#x7684;&#x5E27;&#x7387;</li>
+<li>&#x6709;&#x4E9B;&#x7279;&#x5B9A;&#x7684;&#x4E1A;&#x52A1;&#x6A21;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x961F;&#x5217;&#x6765;&#x7B80;&#x5316;&#xFF0C;&#x5982;&#x62A2;&#x5355;&#xFF1A;&#xFF08;&#x672C;&#x6765;&#x6253;&#x7B97;&#x5199;&#x5199;&#x62A2;&#x5355;&#x903B;&#x8F91;&#xFF0C;&#x4F46;&#x53D1;&#x73B0;&#x5355;&#x5355;&#x4ECE;&#x540C;&#x6B65;&#x961F;&#x5217;&#x6765;&#x8003;&#x8651;&#x8FD8;&#x4E0D;&#x591F;&#xFF09;<ul>
+<li>Model&#x5C42;&#x7684;repo&#x8D1F;&#x8D23;&#x5B58;&#x50A8;&#x8BA2;&#x5355;&#xFF0C;&#x63D0;&#x4F9B;&#x589E;&#x5220;&#x6539;&#x67E5;&#x64CD;&#x4F5C;&#xFF0C;&#x5E76;&#x5BF9;&#x5916;&#x901A;&#x8FC7;&#x4E8B;&#x4EF6;&#x603B;&#x7EBF;&#x53D1;&#x51FA;&#x901A;&#x77E5;</li>
+<li>&#x7EBF;&#x7A0B;A&#x8D1F;&#x8D23;&#x63A5;&#x6536;&#x670D;&#x52A1;&#x5668;&#x6765;&#x7684;&#x8BA2;&#x5355;&#x6D88;&#x606F;&#xFF0C;repo.add()</li>
+<li>&#x7EBF;&#x7A0B;B&#x8D1F;&#x8D23;&#x4E0D;&#x65AD;&#x904D;&#x5386;&#x6240;&#x6709;&#x8BA2;&#x5355;&#xFF0C;&#x5728;&#x540E;&#x53F0;&#x5237;&#x65B0;&#x6BCF;&#x4E2A;&#x8BA2;&#x5355;&#x7684;&#x5012;&#x8BA1;&#x65F6;&#x7B49;&#x6052;&#x53D8;&#x72B6;&#x6001;&#xFF0C;&#x5E76;&#x8C03;&#x7528;repo.update(), repo.delete()</li>
+<li>&#x4E3B;&#x7EBF;&#x7A0B;&#x8D1F;&#x8D23;&#xFF1A;&#x601D;&#x8DEF;&#x65AD;&#x4E86;</li>
+<li>&#x91CD;&#x65B0;&#x8C03;&#x6574;&#x601D;&#x8DEF;&#xFF1A;<ul>
+<li>Model&#x5C42;&#x4E0D;&#x53D8;</li>
+<li>&#x7EBF;&#x7A0B;A&#x4E0D;&#x53D8;</li>
+<li>&#x73B0;&#x5728;&#x8BF4;&#x8C01;&#x80FD;&#x6539;&#x53D8;&#x8BA2;&#x5355;&#x72B6;&#x6001;&#xFF1A;<ul>
+<li>&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x5404;&#x79CD;&#x5012;&#x8BA1;&#x65F6;</li>
+<li>&#x7528;&#x6237;&#x64CD;&#x4F5C;</li>
+</ul>
+</li>
+<li>&#x7F16;&#x4E0D;&#x4E0B;&#x53BB;&#x4E86;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="6-&#x7BA1;&#x9053;&#xFF1A;piperwriter&#x548C;piperreader">6 &#x7BA1;&#x9053;&#xFF1A;PiperWriter&#x548C;PiperReader</h2>
+<p>&#x8FD9;&#x4E2A;io&#x5728;read&#x4E0A;&#x7684;&#x963B;&#x585E;&#x662F;&#x53EF;&#x4EE5;interrupt&#x7684;&#xFF0C;&#x4E0E;&#x4E4B;&#x76F8;&#x6BD4;&#xFF0C;System.in.read()&#x5C31;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;</p>
+<h2 id="7-java&#x63D0;&#x4F9B;&#x7684;&#x5E76;&#x53D1;&#x6784;&#x4EF6;">7 java&#x63D0;&#x4F9B;&#x7684;&#x5E76;&#x53D1;&#x6784;&#x4EF6;</h2>
+<h3 id="71-countdownlatch">7.1 CountDownLatch</h3>
+<pre><code>package com.cowthan.concurrent.c14;
+
+//: concurrency/CountDownLatchDemo.java
+import java.util.concurrent.*;
+import java.util.*;
+
+// Performs some portion of a task:
+class TaskPortion implements Runnable {
+    private static int counter = 0;
+    private final int id = counter++;
+    private static Random rand = new Random(47);
+    private final CountDownLatch latch;
+
+    TaskPortion(CountDownLatch latch) {
+        this.latch = latch;
+    }
+
+    public void run() {
+        try {
+            doWork();
+            latch.countDown();
+        } catch (InterruptedException ex) {
+            // Acceptable way to exit
+        }
+    }
+
+    public void doWork() throws InterruptedException {
+        TimeUnit.MILLISECONDS.sleep(rand.nextInt(2000));
+        System.out.println(this + &quot;completed&quot;);
+    }
+
+    public String toString() {
+        return String.format(&quot;%1$-3d &quot;, id);
+    }
+}
+
+// Waits on the CountDownLatch:
+class WaitingTask implements Runnable {
+    private static int counter = 0;
+    private final int id = counter++;
+    private final CountDownLatch latch;
+
+    WaitingTask(CountDownLatch latch) {
+        this.latch = latch;
+    }
+
+    public void run() {
+        try {
+            latch.await();
+            System.out.println(&quot;Latch barrier passed for &quot; + this);
+        } catch (InterruptedException ex) {
+            System.out.println(this + &quot; interrupted&quot;);
+        }
+    }
+
+    public String toString() {
+        return String.format(&quot;WaitingTask %1$-3d &quot;, id);
+    }
+}
+
+public class CountDownLatchDemo {
+    static final int SIZE = 100;
+
+    public static void main(String[] args) throws Exception {
+        ExecutorService exec = Executors.newCachedThreadPool();
+        // All must share a single CountDownLatch object:
+        CountDownLatch latch = new CountDownLatch(SIZE);
+        for (int i = 0; i &lt; 10; i++)
+            exec.execute(new WaitingTask(latch));
+        for (int i = 0; i &lt; SIZE; i++)
+            exec.execute(new TaskPortion(latch));
+        System.out.println(&quot;Launched all tasks&quot;);
+        exec.shutdown(); // Quit when all tasks complete
+    }
+} /* (Execute to see output) */// :~
+</code></pre><ul>
+<li><p>&#x9002;&#x7528;&#x4E8E;&#xFF1A;</p>
+<ul>
+<li>&#x4E00;&#x7EC4;&#x5B50;&#x4EFB;&#x52A1;&#x5E76;&#x884C;&#x6267;&#x884C;&#xFF0C;&#x53E6;&#x4E00;&#x7EC4;&#x4EFB;&#x52A1;&#x7B49;&#x5F85;&#x7740;&#x4E00;&#x7EC4;&#x5B8C;&#x6210;&#x624D;&#x8FDB;&#x884C;&#xFF0C;&#x6216;&#x7B49;&#x5F85;&#x67D0;&#x4E2A;&#x6761;&#x4EF6;&#x5B8C;&#x6210;&#x624D;&#x8FDB;&#x884C;<ul>
+<li>&#x5E76;&#x884C;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x6570;&#xFF0C;&#x6216;&#x8005;&#x7B49;&#x5F85;&#x7684;&#x8FD9;&#x4E2A;&#x6761;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x62BD;&#x8C61;&#x6210;&#x5012;&#x6570;&#xFF0C;&#x5012;&#x6570;&#x5230;0&#xFF0C;&#x5219;&#x53E6;&#x4E00;&#x7EC4;&#x4EFB;&#x52A1;&#x5C31;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x6267;&#x884C;</li>
+</ul>
+</li>
+<li>&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x4F1A;&#x88AB;&#x5206;&#x89E3;&#x6210;&#x591A;&#x4E2A;&#x5B50;&#x4EFB;&#x52A1;x&#xFF0C;y&#xFF0C;z</li>
+<li>&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5B50;&#x4EFB;&#x52A1;B&#x4F1A;&#x7B49;&#x5F85;&#x5176;&#x4ED6;&#x51E0;&#x4E2A;&#x5B50;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x624D;&#x4F1A;&#x7EE7;&#x7EED;&#x6267;&#x884C;</li>
+<li>&#x6240;&#x4EE5;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;CountDownLatch&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x521D;&#x59CB;&#x503C;<ul>
+<li>&#x4EFB;&#x52A1;B&#x5728;CountDownLatch&#x5BF9;&#x8C61;&#x4E0A;await&#xFF1A;latch.await();</li>
+<li>&#x6BCF;&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x5B50;&#x4EFB;&#x52A1;&#xFF0C;&#x5C31;&#x5728;CountDownLatch&#x5BF9;&#x8C61;&#x4E0A;&#x5012;&#x6570;&#x4E00;&#x6B21;&#xFF1A;latch.countDown();</li>
+<li>&#x76F4;&#x5230;&#x5012;&#x6570;&#x5230;0&#xFF0C;await&#x7684;&#x5BF9;&#x8C61;&#x5C31;&#x4F1A;&#x88AB;&#x5524;&#x9192;</li>
+<li>&#x4EFB;&#x52A1;B&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x9650;&#x5236;&#xFF1A;</p>
+<ul>
+<li>&#x53EA;&#x80FD;&#x7528;&#x4E00;&#x6B21;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x7528;&#x591A;&#x6B21;&#xFF0C;&#x53C2;&#x8003;CyclicBarrier</li>
+</ul>
+</li>
+</ul>
+<h3 id="72-cyclicbarrier">7.2 CyclicBarrier</h3>
+<p>&#x4F8B;&#x5B50;</p>
+<pre><code>package com.cowthan.concurrent.c14;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.BrokenBarrierException;
+import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
+class Horse implements Runnable {
+    private static int counter = 0;
+    private final int id = counter++;
+    private int strides = 0;
+    private static Random rand = new Random(47);
+    private static CyclicBarrier barrier;
+
+    public Horse(CyclicBarrier b) {
+        barrier = b;
+    }
+
+    public synchronized int getStrides() {
+        return strides;
+    }
+
+    public void run() {
+        try {
+            while (!Thread.interrupted()) {
+                synchronized (this) {
+                    strides += rand.nextInt(3); // Produces 0, 1 or 2
+                }
+                barrier.await();
+            }
+        } catch (InterruptedException e) {
+            // A legitimate way to exit
+        } catch (BrokenBarrierException e) {
+            // This one we want to know about
+            throw new RuntimeException(e);
+        }
+    }
+
+    public String toString() {
+        return &quot;Horse &quot; + id + &quot; &quot;;
+    }
+
+    public String tracks() {
+        StringBuilder s = new StringBuilder();
+        for (int i = 0; i &lt; getStrides(); i++)
+            s.append(&quot;*&quot;);
+        s.append(id);
+        return s.toString();
+    }
+}
+
+class HorseRace {
+    static final int FINISH_LINE = 75;
+    private List&lt;Horse&gt; horses = new ArrayList&lt;Horse&gt;();
+    private ExecutorService exec = Executors.newCachedThreadPool();
+    private CyclicBarrier barrier;
+
+    public HorseRace(int nHorses, final int pause) {
+        barrier = new CyclicBarrier(nHorses, new Runnable() {
+            public void run() {
+                StringBuilder s = new StringBuilder();
+                for (int i = 0; i &lt; FINISH_LINE; i++)
+                    s.append(&quot;=&quot;); // The fence on the racetrack
+                System.out.println(s);
+                for (Horse horse : horses)
+                    System.out.println(horse.tracks());
+                for (Horse horse : horses)
+                    if (horse.getStrides() &gt;= FINISH_LINE) {
+                        System.out.println(horse + &quot;won!&quot;);
+                        exec.shutdownNow();
+                        return;
+                    }
+                try {
+                    TimeUnit.MILLISECONDS.sleep(pause);
+                } catch (InterruptedException e) {
+                    System.out.println(&quot;barrier-action sleep interrupted&quot;);
+                }
+            }
+        });
+        for (int i = 0; i &lt; nHorses; i++) {
+            Horse horse = new Horse(barrier);
+            horses.add(horse);
+            exec.execute(horse);
+        }
+    }
+
+}
+
+public class CyclicBarrierDemo {
+    public static void main(String[] args) {
+        int nHorses = 3;  //&#x51E0;&#x5339;&#x9A6C;
+        int pause = 200;  //&#x7B49;&#x591A;&#x4E45;&#x8D70;&#x4E00;&#x6B65;
+        new HorseRace(nHorses, pause);
+    }
+}
+</code></pre><ul>
+<li><p>&#x9002;&#x7528;&#x4E8E;&#xFF1A;</p>
+<ul>
+<li>&#x67D0;&#x4E2A;&#x4EBA;&#x7269;&#x8981;&#x7B49;&#x5F85;&#x591A;&#x4E2A;&#x4EFB;&#x52A1;&#x5E76;&#x884C;&#x8FDB;&#x884C;&#xFF0C;&#x76F4;&#x5230;&#x90FD;&#x5B8C;&#x6210;&#xFF0C;&#x624D;&#x4F1A;&#x6267;&#x884C;</li>
+<li>&#x53EF;&#x4EE5;&#x91CD;&#x7528;</li>
+<li>&#x4E0D;&#x5F97;&#x4E0D;&#x8BF4;&#xFF0C;CyclicBarrier&#x8FD8;&#x6709;&#x70B9;&#x4E0D;&#x597D;&#x7406;&#x89E3;&#xFF0C;&#x770B;&#x4E86;demo&#x4EE3;&#x7801;&#x8FD8;&#x662F;&#x6CA1;&#x6574;&#x660E;&#x767D;<ul>
+<li>&#x600E;&#x4E48;&#x662F;horse&#x5728;barrier&#x4E0A;await&#x5462;</li>
+<li>CyclicBarrier&#x6784;&#x9020;&#x600E;&#x4E48;&#x8FD8;&#x5F97;&#x4F20;&#x5165;&#x5FC5;&#x987B;await&#x7684;&#x7EBF;&#x7A0B;&#x4E2A;&#x6570;&#x5462;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x4ECB;&#x7ECD;</p>
+<ul>
+<li>&#x6784;&#x9020;&#xFF1A;barrier = new CyclicBarrier(n, new Runnable(){})<ul>
+<li>&#x53C2;&#x6570;1&#xFF1A;&#x8BA1;&#x6570;&#x503C;&#xFF0C;&#x5F53;&#x6709;&#x7EBF;&#x7A0B;&#x5728;barrier&#x4E0A;await&#x65F6;&#xFF0C;&#x8BA1;&#x6570;&#x51CF;&#x4E00;&#xFF0C;n&#x4E2A;&#x7EBF;&#x7A0B;&#x90FD;await&#x4E86;&#xFF0C;&#x8BA1;&#x6570;&#x5C31;&#x6210;0&#x4E86;&#xFF0C;&#x6805;&#x680F;&#x52A8;&#x4F5C;&#x5C31;&#x4F1A;&#x6267;&#x884C;</li>
+<li>&#x53C2;&#x6570;2&#xFF1A;&#x53EB;&#x505A;&#x6805;&#x680F;&#x52A8;&#x4F5C;&#xFF0C;&#x8BA1;&#x6570;&#x5230;0&#x65F6;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x6267;&#x884C;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>CyclicBarrierDemo&#x8BB2;&#x89E3;&#xFF1A;</p>
+<ul>
+<li>&#x6805;&#x680F;&#x52A8;&#x4F5C;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#xFF1A;<ul>
+<li>&#x6253;&#x5370;&#x7EBF;&#x8DEF;&#xFF0C;&#x6253;&#x5370;&#x7EC8;&#x70B9;</li>
+<li>&#x6253;&#x5370;&#x6BCF;&#x5339;&#x9A6C;&#x5F53;&#x524D;&#x7684;&#x4F4D;&#x7F6E;</li>
+<li>&#x5224;&#x65AD;&#x662F;&#x5426;&#x6709;&#x9A6C;&#x8D70;&#x5230;&#x7EC8;&#x70B9;&#xFF0C;&#x6709;&#x5219;&#x63D0;&#x793A;&#x593A;&#x51A0;&#xFF0C;&#x5E76;&#x7ED3;&#x675F;&#x6240;&#x6709;&#x7EBF;&#x7A0B;&#xFF08;shutdownNow)</li>
+</ul>
+</li>
+<li>&#x6805;&#x680F;&#x52A8;&#x4F5C;&#x6267;&#x884C;&#x5B8C;&#x540E;&#xFF0C;&#x8BA1;&#x6570;&#x53C8;&#x4F1A;&#x91CD;&#x7F6E;&#xFF0C;&#x6B64;&#x65F6;<ul>
+<li>&#x6BCF;&#x5339;&#x9A6C;&#x518D;&#x5411;&#x524D;&#x8D70;&#x4E00;&#x6B65;&#xFF0C;&#x8DDD;&#x79BB;&#x662F;&#x968F;&#x673A;&#x6570;</li>
+<li>&#x8D70;&#x5B8C;&#x4E4B;&#x540E;&#xFF0C;await&#x4E00;&#x4E0B;</li>
+<li>&#x6240;&#x6709;&#x9A6C;&#x90FD;&#x8D70;&#x5B8C;&#x4E00;&#x6B65;&#xFF0C;await&#x5012;&#x6570;&#x8BA1;&#x6570;&#x503C;&#x53C8;&#x662F;0&#x4E86;&#xFF0C;&#x518D;&#x6FC0;&#x6D3B;&#x6805;&#x680F;&#x52A8;&#x4F5C;</li>
+</ul>
+</li>
+<li>&#x5982;&#x6B64;&#x5FAA;&#x73AF;</li>
+<li>&#x6240;&#x4EE5;&#xFF0C;&#x6805;&#x680F;&#x52A8;&#x4F5C;&#x7B49;&#x6240;&#x6709;&#x5B50;&#x4EFB;&#x52A1;&#x90FD;await&#x4E86;&#xFF0C;&#x624D;&#x8FD0;&#x884C;&#xFF0C;&#x6B64;&#x65F6;&#x6240;&#x6709;&#x5B50;&#x4EFB;&#x52A1;&#x90FD;&#x963B;&#x585E;&#xFF0C;&#x5B50;&#x4EFB;&#x52A1;&#x7B49;&#x6805;&#x680F;&#x52A8;&#x4F5C;&#x5B8C;&#x6210;&#xFF0C;&#x8BA1;&#x6570;&#x81EA;&#x52A8;&#x91CD;&#x7F6E;&#xFF0C;&#x518D;&#x88AB;&#x5524;&#x9192;</li>
+</ul>
+</li>
+<li><p>&#x603B;&#x7ED3;&#xFF1A;</p>
+<ul>
+<li>&#x6784;&#x9020;&#x65F6;&#xFF0C;&#x4F20;&#x5165;&#x8BA1;&#x6570;&#x503C;&#x548C;&#x6805;&#x680F;&#x52A8;&#x4F5C;</li>
+<li>&#x8BA1;&#x6570;&#x503C;&#x51CF;&#x4E00;&#x64CD;&#x4F5C;&#x7531;&#x5B50;&#x4EFB;&#x52A1;&#x7684;await&#x5B8C;&#x6210;</li>
+<li>&#x6805;&#x680F;&#x52A8;&#x4F5C;&#x5728;&#x8BA1;&#x6570;&#x503C;&#x4E3A;0&#x65F6;&#x6FC0;&#x6D3B;&#xFF0C;&#x5E76;&#x4E14;&#x8FD0;&#x884C;&#x5B8C;&#x4F1A;&#x81EA;&#x52A8;&#x91CD;&#x7F6E;&#x8BA1;&#x6570;&#x503C;&#xFF0C;&#x5E76;&#x5524;&#x9192;await&#x7684;&#x7EBF;&#x7A0B;&#x4EEC;</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>&#x66F4;&#x591A;&#xFF1A;<ul>
+<li>&#x601D;&#x8003;&#xFF1A;&#x5982;&#x679C;&#x6CA1;&#x6709;CyclicBarrier&#xFF0C;&#x4EFF;&#x771F;&#x8D5B;&#x9A6C;&#x4F60;&#x4F1A;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#xFF1F;</li>
+<li>&#x4F60;&#x7684;&#x5B9E;&#x73B0;&#x4F1A;&#x8003;&#x8651;&#x8D77;&#x59CB;&#x548C;&#x7EC8;&#x7ED3;&#x7684;&#x60C5;&#x51B5;&#x5417;&#xFF1F;&#x5BA3;&#x5E03;&#x593A;&#x51A0;&#x4E4B;&#x540E;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x9A6C;&#x90FD;&#x80FD;&#x7ACB;&#x5373;&#x505C;&#x6B62;&#x524D;&#x8FDB;&#x5417;&#xFF1F;&#x7EDF;&#x8BA1;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x65F6;&#xFF0C;&#x6240;&#x6709;&#x9A6C;&#x7684;&#x72B6;&#x6001;&#x4FDD;&#x6301;&#x524D;&#x540E;&#x4E00;&#x81F4;&#x5417;&#xFF1F;</li>
+<li>&#x63D0;&#x793A;1&#xFF1A;CyclicBarrier&#x7684;&#x5B50;&#x4EFB;&#x52A1;&#xFF0C;&#x4F1A;&#x5728;await&#x4E0A;&#x7B49;&#x5F85;&#x6805;&#x680F;&#x52A8;&#x4F5C;&#x7684;&#x7ED3;&#x675F;&#xFF0C;&#x5E76;&#x4E14;await&#x662F;&#x53EF;&#x4EE5;&#x88AB;interrupt&#x7684;</li>
+<li>&#x63D0;&#x793A;2&#xFF1A;&#x8D5B;&#x573A;&#x7EDF;&#x8BA1;&#x662F;&#x7531;&#x6805;&#x680F;&#x52A8;&#x4F5C;&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x6B64;&#x52A8;&#x4F5C;&#x4F1A;&#x5728;&#x6BCF;&#x4E00;&#x6279;&#x9A6C;&#x90FD;&#x524D;&#x8FDB;&#x4E00;&#x6B65;&#x4E4B;&#x540E;&#xFF0C;&#x6240;&#x6709;&#x9A6C;&#x90FD;await&#xFF0C;&#x6805;&#x680F;&#x52A8;&#x4F5C;&#x5F00;&#x59CB;&#x7EDF;&#x8BA1;</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="block-close.html" class="navigation navigation-prev " aria-label="Previous page: 线程阻塞和关闭">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="volatile.html" class="navigation navigation-next " aria-label="Next page: 活性失败-volatile">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"线程协作","level":"1.5.3","depth":2,"next":{"title":"活性失败-volatile","level":"1.5.4","depth":2,"path":"concurrent/volatile.md","ref":"concurrent/volatile.md","articles":[]},"previous":{"title":"线程阻塞和关闭","level":"1.5.2","depth":2,"path":"concurrent/block-close.md","ref":"concurrent/block-close.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"concurrent/communicate.md","mtime":"2017-04-09T06:04:59.763Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T06:05:34.294Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,706 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>线程阻塞和关闭 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="communicate.html" />
+    
+    
+    <link rel="prev" href="how-to.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Java</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../object-mgmr.html">
+            
+                <a href="../object-mgmr.html">
+            
+                    
+                    对象管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../enum.html">
+            
+                <a href="../enum.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../object-common.html">
+            
+                <a href="../object-common.html">
+            
+                    
+                    对象通用行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../concurrent.html">
+            
+                <a href="../concurrent.html">
+            
+                    
+                    线程和并发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="how-to.html">
+            
+                <a href="how-to.html">
+            
+                    
+                    线程和线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="block-close.html">
+            
+                <a href="block-close.html">
+            
+                    
+                    线程阻塞和关闭
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="communicate.html">
+            
+                <a href="communicate.html">
+            
+                    
+                    线程协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="volatile.html">
+            
+                <a href="volatile.html">
+            
+                    
+                    活性失败-volatile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="lock.html">
+            
+                <a href="lock.html">
+            
+                    
+                    安全性失败-锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="thread-local.html">
+            
+                <a href="thread-local.html">
+            
+                    
+                    线程局部存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="others.html">
+            
+                <a href="others.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../collections.html">
+            
+                <a href="../collections.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../nio.html">
+            
+                <a href="../nio.html">
+            
+                    
+                    nio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../advance.html">
+            
+                <a href="../advance.html">
+            
+                    
+                    泛型，注解和反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../mem-gc.html">
+            
+                <a href="../mem-gc.html">
+            
+                    
+                    内存模型和GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../classloader.html">
+            
+                <a href="../classloader.html">
+            
+                    
+                    ClassLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Web</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../spring.html">
+            
+                <a href="../spring.html">
+            
+                    
+                    spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GUI</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../gui-1.html">
+            
+                <a href="../gui-1.html">
+            
+                    
+                    没事写个小界面什么的
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >线程阻塞和关闭</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7EBF;&#x7A0B;&#x7684;&#x963B;&#x585E;&#x548C;&#x5173;&#x95ED;">&#x7EBF;&#x7A0B;&#x7684;&#x963B;&#x585E;&#x548C;&#x5173;&#x95ED;</h1>
+<p>&#x672C;&#x8282;&#x91CD;&#x70B9;&#x8BF4;&#x8BF4;&#x7EBF;&#x7A0B;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F1A;&#x963B;&#x585E;&#xFF0C;&#x5982;&#x4F55;&#x5173;&#x95ED;</p>
+<h2 id="1-&#x8BA9;&#x51FA;&#x65F6;&#x95F4;&#x7247;">1 &#x8BA9;&#x51FA;&#x65F6;&#x95F4;&#x7247;</h2>
+<p><code>Thread.yield();</code><br>&#x901A;&#x77E5;&#x5E76;&#x5EFA;&#x8BAE;&#x7EBF;&#x7A0B;&#x8C03;&#x5EA6;&#x5668;&#xFF0C;&#x6211;&#x5DF2;&#x7ECF;&#x505A;&#x5B8C;&#x4E86;&#x4E3B;&#x8981;&#x5DE5;&#x4F5C;&#xFF0C;&#x65F6;&#x95F4;&#x7247;&#x4F60;&#x53EF;&#x4EE5;&#x5206;&#x7ED9;&#x522B;&#x4EBA;&#x4E86;<br>&#x5373;&#x4F7F;&#x8C03;&#x7528;&#x4E86;&#x8FD9;&#x4E2A;&#xFF0C;&#x8FD8;&#x662F;&#x53EF;&#x80FD;&#x6CA1;&#x6709;&#x5207;&#x6362;&#x65F6;&#x95F4;&#x7247;&#xFF0C;&#x6216;&#x8005;&#x5207;&#x6362;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x662F;&#x7ED9;&#x4E86;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;</p>
+<p><code>Thread.sleep(1000);</code><br>TimeUnit.SECOND.sleep(1);
+&#x8BA9;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x8FDB;&#x5165;&#x7761;&#x7720;&#x72B6;&#x6001;&#xFF0C;&#x7A0B;&#x5E8F;&#x5C31;&#x963B;&#x585E;&#x5728;&#x8FD9;&#x91CC;&#x4E86;
+&#x8FD9;&#x4E2A;&#x7684;&#x8868;&#x73B0;&#x5E94;&#x8BE5;&#x662F;&#x6BD4;yield&#x826F;&#x597D;&#x591A;&#x4E86;</p>
+<p>&#x4F46;&#x8FD9;&#x4E24;&#x4E2A;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x90FD;&#x4E0D;&#x5E94;&#x8BE5;&#x8FC7;&#x4E8E;&#x4F9D;&#x8D56;
+&#x56E0;&#x4E3A;&#x7CFB;&#x7EDF;&#x5BF9;&#x65F6;&#x95F4;&#x7247;&#x7684;&#x5212;&#x5206;&#x662F;&#x4E0D;&#x53EF;&#x4F9D;&#x8D56;&#x7684;
+&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x4E5F;&#x4E0D;&#x5E94;&#x5BF9;&#x65F6;&#x95F4;&#x7247;&#x7684;&#x5212;&#x5206;&#x6709;&#x4EC0;&#x4E48;&#x4F9D;&#x8D56;</p>
+<h2 id="2-&#x4EFB;&#x52A1;&#x7684;&#x81EA;&#x6211;&#x68C0;&#x67E5;">2 &#x4EFB;&#x52A1;&#x7684;&#x81EA;&#x6211;&#x68C0;&#x67E5;</h2>
+<p>&#x6709;&#x4E9B;&#x4EFB;&#x52A1;&#x4F1A;&#x5728;&#x5FAA;&#x73AF;&#x4E2D;&#x68C0;&#x67E5;&#x72B6;&#x6001;&#x503C;&#xFF0C;&#x5982;canceled&#x4E4B;&#x7C7B;&#x7684;&#xFF0C;&#x4F1A;&#x81EA;&#x5DF1;&#x9000;&#x51FA;&#x4EFB;&#x52A1;
+&#x4F46;&#x6709;&#x65F6;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4EFB;&#x52A1;&#x66F4;&#x7A81;&#x7136;&#x7684;&#x7EC8;&#x6B62;&#x4EFB;&#x52A1;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x6709;&#x6807;&#x5FD7;&#x4F4D;canceled&#xFF0C;isRunning&#x7B49;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E00;&#x822C;&#x662F;volatile&#x7684;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">volatile</span> <span class="hljs-keyword">boolean</span> isFinished = <span class="hljs-keyword">false</span>;
+
+<span class="hljs-keyword">while</span>(!isFinished){
+    <span class="hljs-comment">//do sth</span>
+}
+</code></pre>
+<p>&#x5982;&#x679C;&#x4E0D;&#x60F3;&#x7528;&#x6807;&#x5FD7;&#x4F4D;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x88AB;&#x4E2D;&#x65AD;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">while</span>(!Thread.currentThread().isInterrupted()){
+    <span class="hljs-comment">//do sth</span>
+}
+</code></pre>
+<h2 id="3-&#x963B;&#x585E;&#x65F6;&#x7EC8;&#x6B62;">3 &#x963B;&#x585E;&#x65F6;&#x7EC8;&#x6B62;</h2>
+<p>&#x4EFB;&#x52A1;&#x9664;&#x4E86;&#x81EA;&#x6211;&#x68C0;&#x67E5;&#x72B6;&#x6001;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x963B;&#x585E;&#x5728;sleep&#x4E2D;&#xFF0C;&#x6B64;&#x65F6;&#x53EF;&#x80FD;&#x4E5F;&#x9700;&#x8981;&#x5C06;&#x5176;&#x7EC8;&#x7ED3;</p>
+<p>&#x7EBF;&#x7A0B;&#x7684;&#x72B6;&#x6001;&#xFF1A;<br>&#x2014;&#x2014;new&#xFF1A;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x5B8C;&#x6BD5;&#xFF0C;&#x4E14;&#x5DF2;&#x7ECF;start&#xFF0C;&#x8D44;&#x6E90;&#x5206;&#x914D;&#x5B8C;&#x6BD5;&#xFF0C;&#x7B49;&#x5F85;&#x5206;&#x914D;&#x65F6;&#x95F4;&#x7247;&#x4E86;&#xFF0C;&#x8FD9;&#x4E2A;&#x72B6;&#x6001;&#x53EA;&#x4F1A;&#x6301;&#x7EED;&#x5F88;&#x77ED;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x4E0B;&#x4E00;&#x6B65;&#x5C31;&#x4F1A;&#x8FDB;&#x5165;&#x8FD0;&#x884C;&#x6216;&#x8005;&#x963B;&#x585E;<br>&#x2014;&#x2014;run&#xFF1A;&#x5C31;&#x7EEA;&#x72B6;&#x6001;&#xFF0C;&#x53EA;&#x8981;&#x7ED9;&#x4E86;&#x65F6;&#x95F4;&#x7247;&#xFF0C;&#x5C31;&#x4F1A;&#x8FD0;&#x884C;&#xFF0C;&#x5728;&#x4EFB;&#x4E00;&#x65F6;&#x523B;&#xFF0C;thread&#x53EF;&#x80FD;&#x8FD0;&#x884C;&#x4E5F;&#x53EF;&#x80FD;&#x4E0D;&#x8FD0;&#x884C;<br>&#x2014;&#x2014;block&#xFF1A;&#x963B;&#x585E;&#x72B6;&#x6001;&#xFF0C;&#x7A0B;&#x5E8F;&#x672C;&#x8EAB;&#x80FD;&#x591F;&#x8FD0;&#x884C;&#xFF0C;&#x4F46;&#x6709;&#x4E2A;&#x6761;&#x4EF6;&#x963B;&#x6B62;&#x4E86;&#x5B83;&#x8FD0;&#x884C;&#xFF0C;&#x8C03;&#x5EA6;&#x5668;&#x4F1A;&#x5FFD;&#x7565;&#x8FD9;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF0C;&#x76F4;&#x5230;&#x8DF3;&#x51FA;&#x963B;&#x585E;&#x6761;&#x4EF6;&#xFF0C;&#x91CD;&#x65B0;&#x8FDB;&#x5165;&#x5C31;&#x7EEA;&#x72B6;&#x6001;<br>&#x2014;&#x2014;dead&#xFF1A;run()&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#xFF0C;&#x6216;&#x8005;&#x88AB;&#x4E2D;&#x65AD;</p>
+<p>&#x90FD;&#x54EA;&#x4E9B;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x8FDB;&#x5165;block&#x72B6;&#x6001;&#xFF1A;<br>&#x2014;&#x2014;sleep&#xFF1A;&#x7B49;&#x65F6;&#x95F4;&#x5230;<br>&#x2014;&#x2014;wait&#xFF1A;&#x7B49;notify<br>&#x2014;&#x2014;&#x7B49;&#x5F85;IO,&#x5982;stream.read()<br>&#x2014;&#x2014;&#x7B49;&#x5F85;synchronized&#x9501;<br>&#x2014;&#x2014;&#x7B49;&#x5F85;Lock&#x9501;  </p>
+<pre><code>&#x53E6;&#x5916;&#xFF0C;&#x5982;&#x4E0B;&#x7684;&#x5927;&#x5FAA;&#x73AF;&#x4E5F;&#x53EF;&#x4EE5;interrupt
+while(!Thread.currentThread().isInterrupted()){
+    ThreadLocalVariableHolder.increment();
+    System.out.println(this);
+    Thread.yield();
+}
+</code></pre><h3 id="&#x7EC8;&#x7ED3;&#x60C5;&#x5F62;1&#xFF1A;">&#x7EC8;&#x7ED3;&#x60C5;&#x5F62;1&#xFF1A;</h3>
+<pre><code>//&#x6CE8;&#x610F;isCanceled&#x662F;&#x4E2A;boolean&#xFF0C;&#x800C;&#x4E14;&#x4E00;&#x822C;&#x4F1A;&#x9700;&#x8981;volatile&#x4FEE;&#x9970;
+public void run(){
+    while(!isCanceled){
+        //do some seriers work
+    }
+}
+</code></pre><h3 id="&#x7EC8;&#x7ED3;&#x60C5;&#x5F62;2&#xFF1A;">&#x7EC8;&#x7ED3;&#x60C5;&#x5F62;2&#xFF1A;</h3>
+<pre><code>//thread.interrupt()&#x53EF;&#x4EE5;&#x6253;&#x65AD;
+//Executors&#x5F97;&#x4E0D;&#x5230;thread&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x53EA;&#x80FD;&#x901A;&#x8FC7;ExecutorService.shutdownNow()&#x6765;&#x6253;&#x65AD;
+//&#x5982;&#x679C;&#x80FD;&#x62FF;&#x5230;Future&#xFF0C;&#x53EF;&#x4EE5;Future.cancel(true)&#x6765;&#x6253;&#x65AD;
+//exec.execute(Runnable)&#x770B;&#x6765;&#x662F;&#x6253;&#x65AD;&#x4E0D;&#x4E86;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x62FF;&#x4E0D;&#x5230;&#x4EC0;&#x4E48;&#x5F15;&#x7528;
+//exec.submit()&#xFF0C;&#x8FD8;&#x662F;&#x80FD;&#x6253;&#x65AD;&#x7684;&#xFF0C;&#x8FD4;&#x56DE;&#x4E86;Future
+//&#x672C;&#x8D28;&#x4E0A;&#x90FD;&#x662F;&#x8C03;&#x7528;&#x4E86;thread.interrupt()
+
+&#x5173;&#x4E8E;shutdown&#xFF1A;
+shutdown()&#xFF1A;&#x62D2;&#x7EDD;&#x518D;&#x63A5;&#x6536;&#x65B0;&#x7684;task&#xFF0C;&#x4F46;&#x5DF2;&#x6709;&#x7684;task&#x4F1A;&#x6267;&#x884C;&#x5230;terminate  
+shutdownNow()&#xFF1A;&#x7981;&#x6B62;&#x518D;&#x63A5;&#x6536;&#x65B0;&#x7684;task&#xFF0C;&#x5DF2;&#x6709;task&#xFF0C;&#x5728;waiting&#x7684;&#x4E0D;&#x4F1A;&#x518D;start&#xFF0C;&#x5DF2;&#x7ECF;&#x6267;&#x884C;&#x7684;&#x4F1A;&#x5C1D;&#x8BD5;stop&#x6389;  
+
+&#x672A;shutdown&#x72B6;&#x6001;&#xFF1A;&#x7EBF;&#x7A0B;&#x6C60;&#x8FD8;&#x5728;&#x8FD0;&#x884C;&#xFF0C;&#x4E0D;&#x7BA1;&#x6709;&#x6CA1;&#x6709;running&#xFF0C;waiting&#x7684;task&#xFF0C;&#x90FD;&#x4F1A;&#x4E00;&#x76F4;&#x7B49;&#x5F85;add&#x65B0;task&#xFF08;&#x901A;&#x8FC7;execute&#x6216;&#x8005;submit&#xFF09;  
+shutdown&#x72B6;&#x6001;&#xFF1A;&#x6267;&#x884C;&#x5B8C;&#x73B0;&#x6709;task&#xFF0C;&#x5C31;&#x4F1A;terminate
+
+public void run(){
+    while(!Thread.currentThread().isInterrupt()){   //&#x6216;&#x8005;&#x7528;Thread.interrupted()&#x5224;&#x65AD;
+        //do some seriers work
+    }
+}
+
+public void run(){
+    while(true){
+        Thread.sleep(1000); 
+        //&#x88AB;interrupt&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x56E0;&#x4E3A;&#x65E2;&#x7136;&#x662F;&#x963B;&#x585E;&#xFF0C;&#x88AB;&#x610F;&#x5916;&#x7EC8;&#x6B62;&#xFF0C;&#x5F02;&#x5E38;&#x770B;&#x4F3C;&#x633A;&#x5408;&#x7406;
+        //do some seriers work
+    }
+}
+</code></pre><h3 id="&#x7EC8;&#x7ED3;&#x60C5;&#x5F62;3&#xFF1A;&#x7EC8;&#x7ED3;&#x4E0D;&#x4E86;&#x7684;synchronized">&#x7EC8;&#x7ED3;&#x60C5;&#x5F62;3&#xFF1A;&#x7EC8;&#x7ED3;&#x4E0D;&#x4E86;&#x7684;synchronized</h3>
+<p>&#x5728;&#x7B49;&#x5F85;synchronized&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x4E0D;&#x53EF;&#x4EE5;&#x88AB;interrupt<br>&#x4F46;&#x662F;&#x6CE8;&#x610F;&#xFF0C;Lock&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x83B7;&#x53D6;&#x9501;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x963B;&#x585E;&#x7B49;&#x5F85;&#x9501;&#x7684;&#x65F6;&#x95F4;&#x9650;&#x5236;</p>
+<h3 id="&#x7EC8;&#x7ED3;&#x60C5;&#x5F62;4&#xFF1A;reentrantlocklockinterruptly">&#x7EC8;&#x7ED3;&#x60C5;&#x5F62;4&#xFF1A;ReentrantLock.lockInterruptly()</h3>
+<pre><code>ReentrantLock.lockInterruptly()&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x83B7;&#x53D6;&#x4E0D;&#x5230;&#x9501;&#xFF0C;&#x4F1A;&#x963B;&#x585E;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x88AB;interrupt&#x65B9;&#x6CD5;&#x4E2D;&#x65AD;
+
+import java.util.concurrent.*;
+import java.util.concurrent.locks.*;
+
+class BlockedMutex {
+  private Lock lock = new ReentrantLock();
+  public BlockedMutex() {
+    // Acquire it right away, to demonstrate interruption
+    // of a task blocked on a ReentrantLock:
+    lock.lock();
+  }
+  public void f() {
+    try {
+      // This will never be available to a second task
+      lock.lockInterruptibly(); // Special call
+      System.out.println(&quot;f()&#x65B9;&#x6CD5;&#x5F97;&#x5230;&#x9501;&#x4E86;&#xFF1F;&#xFF1F;&quot;);
+    } catch(InterruptedException e) {
+      System.out.println(&quot;f()&#x65B9;&#x6CD5;&#x6CA1;&#x5F97;&#x5230;&#x9501;&#xFF0C;&#x800C;&#x662F;&#x88AB;&#x4E2D;&#x65AD;&#x4E86;&#xFF0C;&#x88AB;interrupt&#x4E86;&quot;);
+    }
+  }
+}
+
+class Blocked2 implements Runnable {
+  BlockedMutex blocked = new BlockedMutex();
+  public void run() {
+    System.out.println(&quot;&#x7B49;f()&#x62FF;&#x5230;ReentranLock&quot;);
+    blocked.f();
+    System.out.println(&quot;&#x4ECE;f()&#x8FD4;&#x56DE;&#x4E86;&quot;);
+  }
+}
+
+public class Interrupting2 {
+  public static void main(String[] args) throws Exception {
+    Thread t = new Thread(new Blocked2());
+    t.start();
+    TimeUnit.SECONDS.sleep(1);
+    System.out.println(&quot;&#x8C03;&#x7528;&#x4E86;t.interrupt()&quot;);
+    t.interrupt();
+  }
+} /* Output:
+Waiting for f() in BlockedMutex
+Issuing t.interrupt()
+Interrupted from lock acquisition in f()
+Broken out of blocked call
+*///:~
+</code></pre><h3 id="&#x7EC8;&#x7ED3;&#x60C5;&#x5F62;5&#xFF1A;io&#x5BC6;&#x96C6;&#x578B;&#x963B;&#x585E;">&#x7EC8;&#x7ED3;&#x60C5;&#x5F62;5&#xFF1A;IO&#x5BC6;&#x96C6;&#x578B;&#x963B;&#x585E;</h3>
+<pre><code>&#x5728;&#x7B49;&#x5F85;InputStream.read()&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x4E0D;&#x53EF;&#x4EE5;&#x88AB;interrupt
+&#x4F46;&#x662F;&#x6709;&#x4E2A;&#x7B28;&#x529E;&#x6CD5;&#xFF1A;&#x5173;&#x95ED;&#x7EBF;&#x7A0B;&#x6B63;&#x5728;&#x7B49;&#x5F85;&#x7684;&#x5E95;&#x5C42;IO&#x8D44;&#x6E90;&#xFF0C;&#x5982;&#x5173;&#x95ED;Socket
+&#x8FD8;&#x6709;&#x4E2A;&#x66F4;&#x597D;&#x7684;&#x9009;&#x62E9;&#xFF1A;nio&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x4EBA;&#x6027;&#x5316;&#x7684;&#x4E2D;&#x65AD;&#xFF0C;&#x88AB;&#x963B;&#x585E;&#x7684;nio&#x901A;&#x9053;&#x4F1A;&#x81EA;&#x52A8;&#x54CD;&#x5E94;&#x4E2D;&#x65AD;
+</code></pre><h2 id="4-&#x5B9E;&#x4F8B;">4 &#x5B9E;&#x4F8B;</h2>
+<h3 id="&#x65E0;&#x6CD5;&#x88AB;&#x6253;&#x65AD;&#x7684;&#x4F8B;&#x5B50;">&#x65E0;&#x6CD5;&#x88AB;&#x6253;&#x65AD;&#x7684;&#x4F8B;&#x5B50;</h3>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>{
+    Thread t = <span class="hljs-keyword">new</span> Thread(<span class="hljs-keyword">new</span> Runnable() {
+
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">while</span>(<span class="hljs-keyword">true</span>){
+                System.out.println(<span class="hljs-string">&quot;go on...&quot;</span>);
+            }
+        }
+    });
+
+    t.start();
+
+    Thread.sleep(<span class="hljs-number">2000</span>);
+    t.interrupt();
+
+    <span class="hljs-keyword">while</span>(<span class="hljs-keyword">true</span>){
+        Thread.yield();
+    }
+}
+
+&#x5982;&#x679C;&#x4E00;&#x4E2A;Runnable&#x6CA1;&#x6709;cancel&#x7C7B;&#x7684;&#x6807;&#x5FD7;&#x4F4D;&#x68C0;&#x67E5;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x68C0;&#x67E5;isInterrupt()&#xFF0C;&#x8C03;&#x7528;interrupt()&#x4F1A;&#x600E;&#x4E48;&#x5730;&#xFF1F;  
+&#x662F;&#x5173;&#x4E0D;&#x6389;&#x7684;&#xFF0C;&#x4F46;&#x8FD9;&#x79CD;&#x5F62;&#x5F0F;&#x7684;&#x65E0;&#x9650;&#x5FAA;&#x73AF;&#xFF0C;&#x4E00;&#x822C;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x5728;&#x771F;&#x5B9E;&#x573A;&#x666F;&#x91CC;
+&#x771F;&#x5B9E;&#x573A;&#x666F;&#x4EC0;&#x4E48;&#x6837;&#xFF1F;&#x4E00;&#x822C;&#x662F;&#x4E00;&#x4E2A;&#x65E0;&#x9650;&#x5FAA;&#x73AF;&#xFF0C;&#x4F46;&#x91CC;&#x9762;&#x4F1A;&#x963B;&#x585E;&#xFF08;&#x7B49;&#x5F85;&#x6761;&#x4EF6;&#x6210;&#x719F;&#xFF09;&#xFF0C;&#x6709;&#x8DF3;&#x51FA;&#x6761;&#x4EF6;
+</code></pre>
+<h3 id="&#x5904;&#x7406;interrupttedexception">&#x5904;&#x7406;InterrupttedException</h3>
+<p>&#x7EBF;&#x7A0B;&#x88AB;&#x4E2D;&#x65AD;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x53D1;&#x5F02;&#x5E38;InterrupttedException&#xFF0C;&#x6709;&#x65F6;&#x9700;&#x8981;&#x6E05;&#x7406;&#x8D44;&#x6E90;&#xFF0C;&#x53C2;&#x8003;&#x7C7B;c10.InterruptingIdiom</p>
+<pre><code class="lang-java">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NeedsCleanup</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> id;
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">NeedsCleanup</span><span class="hljs-params">(<span class="hljs-keyword">int</span> ident)</span> </span>{
+    id = ident;
+    System.out.println(<span class="hljs-string">&quot;NeedsCleanup &quot;</span> + id);
+  }
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">cleanup</span><span class="hljs-params">()</span> </span>{
+    System.out.println(<span class="hljs-string">&quot;Cleaning up &quot;</span> + id);
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Blocked3</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">volatile</span> <span class="hljs-keyword">double</span> d = <span class="hljs-number">0.0</span>;
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">while</span>(!Thread.interrupted()) {
+        <span class="hljs-comment">// point1</span>
+        NeedsCleanup n1 = <span class="hljs-keyword">new</span> NeedsCleanup(<span class="hljs-number">1</span>);
+        <span class="hljs-comment">// Start try-finally immediately after definition</span>
+        <span class="hljs-comment">// of n1, to guarantee proper cleanup of n1:</span>
+        <span class="hljs-keyword">try</span> {
+          System.out.println(<span class="hljs-string">&quot;Sleeping&quot;</span>);
+          TimeUnit.SECONDS.sleep(<span class="hljs-number">1</span>);
+          <span class="hljs-comment">// point2</span>
+          NeedsCleanup n2 = <span class="hljs-keyword">new</span> NeedsCleanup(<span class="hljs-number">2</span>);
+          <span class="hljs-comment">// Guarantee proper cleanup of n2:</span>
+          <span class="hljs-keyword">try</span> {
+            System.out.println(<span class="hljs-string">&quot;Calculating&quot;</span>);
+            <span class="hljs-comment">// A time-consuming, non-blocking operation:</span>
+            <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; <span class="hljs-number">2500000</span>; i++)
+              d = d + (Math.PI + Math.E) / d;
+            System.out.println(<span class="hljs-string">&quot;Finished time-consuming operation&quot;</span>);
+          } <span class="hljs-keyword">finally</span> {
+            n2.cleanup();
+          }
+        } <span class="hljs-keyword">finally</span> {
+          n1.cleanup();
+        }
+      }
+      System.out.println(<span class="hljs-string">&quot;Exiting via while() test&quot;</span>);
+    } <span class="hljs-keyword">catch</span>(InterruptedException e) {
+      System.out.println(<span class="hljs-string">&quot;Exiting via InterruptedException&quot;</span>);
+    }
+  }
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InterruptingIdiom</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+    <span class="hljs-keyword">long</span> delay = <span class="hljs-number">2000</span>;
+    Thread t = <span class="hljs-keyword">new</span> Thread(<span class="hljs-keyword">new</span> Blocked3());
+    t.start();
+    TimeUnit.MILLISECONDS.sleep(delay);
+    t.interrupt();
+  }
+} <span class="hljs-comment">/* Output: (Sample)
+NeedsCleanup 1
+Sleeping
+NeedsCleanup 2
+Calculating
+Finished time-consuming operation
+Cleaning up 2
+Cleaning up 1
+NeedsCleanup 1
+Sleeping
+Cleaning up 1
+Exiting via InterruptedException
+*/</span><span class="hljs-comment">//:~</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="how-to.html" class="navigation navigation-prev " aria-label="Previous page: 线程和线程池">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="communicate.html" class="navigation navigation-next " aria-label="Next page: 线程协作">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"线程阻塞和关闭","level":"1.5.2","depth":2,"next":{"title":"线程协作","level":"1.5.3","depth":2,"path":"concurrent/communicate.md","ref":"concurrent/communicate.md","articles":[]},"previous":{"title":"线程和线程池","level":"1.5.1","depth":2,"path":"concurrent/how-to.md","ref":"concurrent/how-to.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"concurrent/block-close.md","mtime":"2017-04-09T05:59:25.192Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T06:05:34.294Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,870 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>泛型，注解和反射 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mem-gc.html" />
+    
+    
+    <link rel="prev" href="nio.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Java</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="object-mgmr.html">
+            
+                <a href="object-mgmr.html">
+            
+                    
+                    对象管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="enum.html">
+            
+                <a href="enum.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="object-common.html">
+            
+                <a href="object-common.html">
+            
+                    
+                    对象通用行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="concurrent.html">
+            
+                <a href="concurrent.html">
+            
+                    
+                    线程和并发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="concurrent/how-to.html">
+            
+                <a href="concurrent/how-to.html">
+            
+                    
+                    线程和线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="concurrent/block-close.html">
+            
+                <a href="concurrent/block-close.html">
+            
+                    
+                    线程阻塞和关闭
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="concurrent/communicate.html">
+            
+                <a href="concurrent/communicate.html">
+            
+                    
+                    线程协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="concurrent/volatile.html">
+            
+                <a href="concurrent/volatile.html">
+            
+                    
+                    活性失败-volatile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="concurrent/lock.html">
+            
+                <a href="concurrent/lock.html">
+            
+                    
+                    安全性失败-锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="concurrent/thread-local.html">
+            
+                <a href="concurrent/thread-local.html">
+            
+                    
+                    线程局部存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="concurrent/others.html">
+            
+                <a href="concurrent/others.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="collections.html">
+            
+                <a href="collections.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="nio.html">
+            
+                <a href="nio.html">
+            
+                    
+                    nio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="advance.html">
+            
+                <a href="advance.html">
+            
+                    
+                    泛型，注解和反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="mem-gc.html">
+            
+                <a href="mem-gc.html">
+            
+                    
+                    内存模型和GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="classloader.html">
+            
+                <a href="classloader.html">
+            
+                    
+                    ClassLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Web</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="spring.html">
+            
+                <a href="spring.html">
+            
+                    
+                    spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GUI</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="gui-1.html">
+            
+                <a href="gui-1.html">
+            
+                    
+                    没事写个小界面什么的
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >泛型，注解和反射</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="1-&#x6CDB;&#x578B;">1 &#x6CDB;&#x578B;</h1>
+<h2 id="11-&#x57FA;&#x672C;&#x6982;&#x5FF5;">1.1 &#x57FA;&#x672C;&#x6982;&#x5FF5;</h2>
+<p>&#x6CDB;&#x578B;&#x63D0;&#x4F9B;&#x4E86;&#x7F16;&#x8BD1;&#x671F;&#x7684;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#xFF0C;&#x4F46;&#x95EE;&#x9898;&#x8FDC;&#x975E;&#x8FD9;&#x4E48;&#x7B80;&#x5355;</p>
+<pre><code class="lang-java"><span class="hljs-comment">///&#x539F;&#x751F;&#x6001;&#x7C7B;&#x578B;</span>
+List list1 = <span class="hljs-keyword">new</span> ArrayList();   <span class="hljs-comment">///&#x89C4;&#x907F;&#x7684;&#x7C7B;&#x578B;&#x68C0;&#x67E5;</span>
+List list1 = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;();
+
+<span class="hljs-comment">///&#x53C2;&#x6570;&#x5316;&#x7C7B;&#x578B;</span>
+List&lt;Object&gt; list2 = <span class="hljs-keyword">new</span> ArrayList&lt;Object&gt;();  <span class="hljs-comment">//&#x53EF;&#x4EE5;&#x653E;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x6CA1;&#x6307;&#x5BFC;&#x610F;&#x4E49;</span>
+List&lt;String&gt; list3 = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;();
+
+<span class="hljs-comment">///&#x901A;&#x914D;&#x7B26;&#x7C7B;&#x578B;</span>
+<span class="hljs-comment">//&#x65E0;&#x9650;&#x5236;&#x901A;&#x914D;&#x7B26;&#x7C7B;&#x578B;</span>
+List&lt;?&gt; list4 = <span class="hljs-keyword">new</span> ArrayList&lt;Dog&gt;();
+<span class="hljs-comment">//&#x6709;&#x9650;&#x5236;&#x901A;&#x914D;&#x7B26;&#x7C7B;&#x578B;</span>
+List&lt;? extends Animal&gt; list4 = <span class="hljs-keyword">new</span> ArrayList&lt;Dog&gt;();
+List&lt;? extends Animal&gt; list4 = <span class="hljs-keyword">new</span> ArrayList&lt;Cat&gt;();
+
+
+List&lt;String&gt;&#x91CC;&#x7684;String&#x662F;&#xFF1A;&#x5B9E;&#x9645;&#x7C7B;&#x578B;&#x53C2;&#x6570;
+
+&#x5728;&#x7C7B;&#x548C;&#x65B9;&#x6CD5;&#x5B9A;&#x4E49;&#x65F6;&#xFF0C;&#x5F15;&#x5165;&#x5F62;&#x5F0F;&#x7C7B;&#x578B;&#x53C2;&#x6570;
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">List</span>&lt;<span class="hljs-title">T</span>&gt;</span>{
+    T[] data;
+}
+&#x8FD9;&#x91CC;T&#x662F;&#x5F62;&#x5F0F;&#x7C7B;&#x578B;&#x53C2;&#x6570;
+List&lt;T&gt;&#x5C31;&#x53EB;&#x505A;&#xFF1A;&#x6CDB;&#x578B;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PrimitiveList</span>&lt;<span class="hljs-title">E</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Number</span>&gt;</span>{
+    E[] data;
+}
+&lt;E extends Number&gt;&#x662F;&#x6709;&#x9650;&#x5236;&#x901A;&#x914D;&#x7B26;&#x7C7B;&#x578B;
+
+
+&#x6CDB;&#x578B;&#x65B9;&#x6CD5;
+<span class="hljs-keyword">public</span> &lt;E&gt; <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">do_sth</span><span class="hljs-params">(E e)</span></span>{
+
+}
+
+&#x7C7B;&#x578B;&#x4EE4;&#x724C;
+String.class
+List.class
+String[].class
+</code></pre>
+<p>&#x5E26;&#x6CDB;&#x578B;&#x7684;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x964D;&#x7EA7;&#x4E3A;&#x4E0D;&#x5E26;&#x6CDB;&#x578B;&#x7684;&#x7C7B;&#x578B;</p>
+<pre><code class="lang-java">
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
+    List&lt;String&gt; strings = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;();
+    unsafeAdd(strings, <span class="hljs-keyword">new</span> Integer(<span class="hljs-number">42</span>));
+    String s = strings.get(<span class="hljs-number">0</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">unsafeAdd</span><span class="hljs-params">(List list, Object o)</span></span>{
+    list.add(o);  <span class="hljs-comment">//unchecked call to add(E) in raw type list</span>
+}
+&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7F16;&#x8BD1;&#xFF0C;
+&#x4F46;&#x4F1A;&#x6536;&#x5230;&#x8B66;&#x544A;&#xFF0C;<span class="hljs-function">unchecked call to <span class="hljs-title">add</span><span class="hljs-params">(E)</span> in raw type list,
+&#x800C;&#x4E14;&#x660E;&#x663E;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x4F1A;&#x6536;&#x5230;ClassCastException
+
+&#x8FD9;&#x79CD;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x65E0;&#x662F;&#x5904;&#xFF0C;&#x5982;&#x679C;unsafeAdd&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x5173;&#x5FC3;List&#x5177;&#x4F53;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x7684;&#x5B9E;&#x73B0;&#x903B;&#x8F91;&#xFF0C;
+&#x6216;&#x8005;&#x6CA1;&#x6CD5;&#x77E5;&#x9053;List&#x7684;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#xFF0C;&#x6216;&#x8005;&#x9700;&#x8981;&#x5904;&#x7406;&#x5404;&#x79CD;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x7684;List&#xFF0C;&#x5219;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x662F;&#x53EF;&#x53D6;&#x7684;
+
+&#x5982;&#x679C;&#x8FD9;&#x6837;&#xFF0C;&#x5219;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;&#x7F16;&#x8BD1;
+<span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">unsafeAdd</span><span class="hljs-params">(List&lt;Object&gt; list, Object o)</span></span>{
+    list.add(o);  <span class="hljs-comment">//unchecked call to add(E) in raw type list</span>
+}
+</code></pre>
+<p>&#x65E0;&#x9650;&#x5236;&#x7684;&#x901A;&#x914D;&#x7B26;&#x7C7B;&#x578B;</p>
+<pre><code>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x4F20;&#x5165;List&#xFF0C;&#x4F46;&#x4E0D;&#x5173;&#x5FC3;List&#x7684;&#x5177;&#x4F53;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x95EE;&#x53F7;&#x4EE3;&#x66FF;&#x6CDB;&#x578B;&#xFF0C;
+&#x8FD9;&#x5C31;&#x662F;&#x65E0;&#x9650;&#x5236;&#x7684;&#x901A;&#x914D;&#x7B26;
+
+static int numElementsInCommon(Set&lt;?&gt; s1, Set&lt;?&gt; s2){
+    int result = 0;
+    for(Object o1: s1){
+        if(s2.contains(o1))){
+            result++;
+        }
+
+    }
+    return result;
+}
+
+Set&lt;?&gt; set1 = ..;
+Set set2 = ..;
+set1&#x548C;set2&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;
+1 &#x8FD9;&#x4E24;&#x4E2A;&#x90FD;&#x80FD;&#x63A5;&#x53D7;&#x6240;&#x6709;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x7684;Set
+2 &#x4F46;&#x662F;set1&#x53EA;&#x80FD;add&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;set2&#x53EF;&#x4EE5;add&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;
+</code></pre><p>&#x6709;&#x9650;&#x5236;&#x7684;&#x901A;&#x914D;&#x7B26;&#x7C7B;&#x578B;</p>
+<pre><code class="lang-java">Set&lt;? extends Aminal&gt; set = ..;
+
+
+&#x5BF9;&#x4E8E;Stack&lt;E&gt;&#xFF0C;&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x5982;&#x4E0B;&#x65B9;&#x6CD5;
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">pushAll</span><span class="hljs-params">(Iterable&lt;? exnteds E&gt; src)</span></span>{
+    <span class="hljs-keyword">for</span>(E e: src){
+        push(e);
+    }
+}
+&#x8BD5;&#x60F3;&#xFF0C;&#x5982;&#x679C;&#x53C2;&#x6570;&#x4E0D;&#x7528;&lt;? exnteds E&gt;&#xFF0C;&#x600E;&#x4E48;&#x6837;&#x624D;&#x5408;&#x9002;&#x5462;
+&lt;? exnteds E&gt;&#x5728;&#x8FD9;&#x91CC;&#x5C31;&#x662F;&#x6700;&#x597D;&#x7684;&#x9009;&#x62E9;
+
+
+&#x5BF9;&#x4E8E;Stack&lt;E&gt;&#xFF0C;&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x5982;&#x4E0B;&#x65B9;&#x6CD5;
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">popAll</span><span class="hljs-params">(Collection&lt;E&gt; dst)</span></span>{
+    <span class="hljs-keyword">while</span>(!isEmpty()) dst.add(pop());
+}
+&#x5982;&#x679C;&#x662F;Stack&lt;Dog&gt;&#xFF0C;&#x672C;&#x6765;&#x4F60;&#x7528;List&lt;Dog&gt;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x5165;&#xFF0C;&#x53EF;&#x4EE5;
+&#x4F46;&#x5982;&#x679C;&#x4F60;&#x8981;&#x7528;List&lt;Animal&gt;&#x4F20;&#x5165;&#xFF0C;&#x5C31;&#x4E0D;&#x884C;&#x4E86;&#xFF0C;&#x4F46;&#x903B;&#x8F91;&#x4E0A;&#x8FD9;&#x4E48;&#x505A;&#x662F;&#x6CA1;&#x95EE;&#x9898;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x65B9;&#x6CD5;&#x4E00;&#x6539;&#xFF1A;
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">popAll</span><span class="hljs-params">(Collection&lt;? <span class="hljs-keyword">super</span> E&gt; dst)</span></span>{
+
+}
+&#x610F;&#x601D;&#x662F;Collection&#x7684;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x662F;E&#x7684;&#x67D0;&#x4E2A;&#x8D85;&#x7C7B;
+
+
+&#x6240;&#x4EE5;&#x5BF9;&#x4E8E;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x5BF9;&#x5E94;&#x7684;&#x5BF9;&#x8C61;E e
+&#x5982;&#x679C;&#x4F60;&#x8981;&#x751F;&#x4EA7;&#xFF08;put&#xFF09;&#xFF0C;&#x5373;&#x7ED9;e&#x503C;&#xFF0C;&#x5219;E&#x548C;E&#x7684;&#x5B50;&#x7C7B;&#x90FD;&#x53EF;&#x4EE5;&#x7ED9;&#xFF0C;&lt;? extends E&gt;
+&#x5982;&#x679C;&#x4F60;&#x8981;&#x6D88;&#x8D39;&#xFF08;get&#xFF09;&#xFF0C;&#x5373;x = e&#xFF0C;&#x5219;x&#x5373;&#x53EF;&#x4EE5;&#x662F;E&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;E&#x7684;&#x57FA;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#xFF0C;&lt;? <span class="hljs-keyword">super</span> E&gt;
+&#x8FD9;&#x5C31;&#x662F;PECS&#x539F;&#x5219;&#xFF0C;Producer extends&#xFF0C;Consumer <span class="hljs-keyword">super</span>
+</code></pre>
+<h2 id="12-&#x5173;&#x4E8E;class&#x5BF9;&#x8C61;&#xFF1A;">1.2 &#x5173;&#x4E8E;class&#x5BF9;&#x8C61;&#xFF1A;</h2>
+<p>List.class<br>String[].class<br>int.class<br>&#x90FD;&#x662F;&#x5408;&#x6CD5;&#x7684;</p>
+<p>&#x4F46;&#x662F;List<string>.class&#x4E0D;&#x5408;&#x6CD5;&#xFF0C; List&lt;?&gt;.class&#x4E0D;&#x5408;&#x6CD5;</string></p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x6CDB;&#x578B;&#x662F;&#x7F16;&#x8BD1;&#x65F6;&#x4FE1;&#x606F;&#xFF0C;&#x8FD0;&#x884C;&#x65F6;&#x4F1A;&#x88AB;&#x64E6;&#x9664;&#xFF0C;&#x800C;class&#x662F;&#x8FD0;&#x884C;&#x65F6;&#x4FE1;&#x606F;</p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">if</span>(o <span class="hljs-keyword">instanceof</span> Set){
+    Set&lt;?&gt; m = (Set&lt;?&gt;)o;
+}
+
+&#x4F46;&#x4F60;&#x4E0D;&#x80FD; o <span class="hljs-keyword">instanceof</span> Set&lt;String&gt;
+</code></pre>
+<h2 id="13-&#x6D88;&#x9664;&#x975E;&#x53D7;&#x68C0;&#x8B66;&#x544A;&#xFF1A;">1.3 &#x6D88;&#x9664;&#x975E;&#x53D7;&#x68C0;&#x8B66;&#x544A;&#xFF1A;</h2>
+<p>&#x60C5;&#x51B5;1&#xFF1A;</p>
+<pre><code class="lang-java">
+Set&lt;Animal&gt; animals = <span class="hljs-keyword">new</span> HashSet();
+&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x7684;&#x5F97;&#x5230;&#x7F16;&#x8BD1;&#x5668;&#x63D0;&#x9192;unchecked
+</code></pre>
+<p>&#x60C5;&#x51B5;2&#xFF1A;<br>&#x5982;&#x679C;&#x4F60;&#x786E;&#x5B9A;&#x4EE3;&#x7801;&#x662F;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;@SuppressWarnings(&quot;unchecked&quot;)</p>
+<h2 id="14-&#x6570;&#x7EC4;&#x548C;&#x96C6;&#x5408;&#xFF1A;">1.4 &#x6570;&#x7EC4;&#x548C;&#x96C6;&#x5408;&#xFF1A;</h2>
+<pre><code class="lang-java">
+&#x6570;&#x7EC4;&#x662F;&#x534F;&#x53D8;&#x7684;
+Animal[] animals;
+Dog[] dogs = <span class="hljs-keyword">new</span> Dog[<span class="hljs-number">2</span>];
+animals = dogs;  <span class="hljs-comment">//&#x5BF9;&#x7684;</span>
+animals[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Cat(); <span class="hljs-comment">//&#x9519;&#x7684;&#xFF0C;ArrayStoreException</span>
+
+&#x6CDB;&#x578B;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;
+List&lt;Animal&gt; animals;
+List&lt;Dog&gt; dogs = <span class="hljs-keyword">new</span> ArrayList&lt;Dog&gt;();
+animals = dogs;  <span class="hljs-comment">//&#x9519;&#x8BEF;&#x7684;&#xFF0C;&#x7F16;&#x8BD1;&#x62A5;&#x7C7B;&#x578B;&#x4E0D;&#x5339;&#x914D;</span>
+
+&#x6570;&#x7EC4;&#x662F;&#x5177;&#x4F53;&#x5316;&#x7684;&#xFF0C;reified&#xFF0C;&#x6240;&#x4EE5;&#x6570;&#x7EC4;&#x4F1A;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x624D;&#x77E5;&#x9053;&#x5E76;&#x68C0;&#x67E5;&#x4ED6;&#x4EEC;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x7EA6;&#x675F;
+&#x6CDB;&#x578B;&#x662F;&#x901A;&#x8FC7;&#x64E6;&#x9664;&#x7684;&#xFF0C;erasure&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x5F3A;&#x5316;&#x5176;&#x7C7B;&#x578B;&#x4FE1;&#x606F;&#xFF0C;&#x8FD0;&#x884C;&#x65F6;&#x4E22;&#x5F03;
+
+&#x6709;&#x6CDB;&#x578B;&#x4FE1;&#x606F;&#x65F6;&#xFF0C;&#x4E0D;&#x80FD;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#xFF0C;&#x4EE5;&#x4E0B;&#x90FD;&#x975E;&#x6CD5;
+List&lt;E&gt;[]
+<span class="hljs-keyword">new</span> List&lt;String&gt;[]
+<span class="hljs-keyword">new</span> E[]
+&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x5462;&#xFF0C;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5982;&#x679C;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#x7684;&#x8BDD;&#xFF1A;
+List&lt;String&gt;[] stringLists = <span class="hljs-keyword">new</span> List&lt;String&gt;[<span class="hljs-number">1</span>];
+List&lt;Integer&gt; intList = Arrays.asList(<span class="hljs-number">42</span>);
+Object[] objects = stringLists;
+Object[<span class="hljs-number">0</span>] = intList;
+String s = stringLists[<span class="hljs-number">0</span>].get(<span class="hljs-number">0</span>);
+&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x7684;&#x9519;&#x8BEF;&#x5982;&#x679C;&#x653E;&#x5230;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x5C31;&#x662F;ClassCast&#x9519;&#x8BEF;&#xFF0C;&#x6240;&#x4EE5;&#x7F16;&#x8BD1;&#x65F6;&#x7B2C;&#x4E00;&#x884C;&#x5C31;&#x4F1A;&#x62A5;&#x9519;
+
+E, List&lt;E&gt;, List&lt;String&gt;
+&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x4E0D;&#x53EF;&#x5177;&#x4F53;&#x5316;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5176;&#x8FD0;&#x884C;&#x65F6;&#x8868;&#x793A;&#x6CD5;&#x5305;&#x542B;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x8981;&#x5C11;&#x4E8E;&#x5176;&#x7F16;&#x8BD1;&#x65F6;&#x8868;&#x793A;&#x6CD5;&#x5305;&#x542B;&#x7684;&#x4FE1;&#x606F;
+
+&#x6CE8;&#x610F;&#xFF1A;&#x521B;&#x5EFA;List&lt;?&gt;[] arr&#x662F;&#x5408;&#x6CD5;&#x7684;
+</code></pre>
+<h2 id="15-&#x6CDB;&#x578B;&#x7684;&#x7C7B;&#x578B;&#x63A8;&#x5BFC;">1.5 &#x6CDB;&#x578B;&#x7684;&#x7C7B;&#x578B;&#x63A8;&#x5BFC;</h2>
+<p>&#x5F88;&#x590D;&#x6742;&#xFF0C;&#x89C4;&#x5219;&#x5F88;&#x591A;&#xFF0C;&#x636E;&#x8BF4;&#x5149;&#x6587;&#x6863;&#x5C31;&#x6709;16&#x9875;</p>
+<p>Lang.<string>isEmpty(s)&#x8FD9;&#x79CD;&#x5F62;&#x5F0F;&#x53EB;&#x505A;&#x663E;&#x5F0F;&#x7C7B;&#x578B;&#x53C2;&#x6570;</string></p>
+<h2 id="16-&#x8FD0;&#x884C;&#x65F6;&#x83B7;&#x53D6;&#x6CDB;&#x578B;&#x7684;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#xFF1A;">1.6 &#x8FD0;&#x884C;&#x65F6;&#x83B7;&#x53D6;&#x6CDB;&#x578B;&#x7684;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#xFF1A;</h2>
+<p>&#x53C2;&#x8003;TypeToken</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.lang.reflect.ParameterizedType;
+<span class="hljs-keyword">import</span> java.lang.reflect.Type;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TypeToken</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Type type;
+
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-title">TypeToken</span><span class="hljs-params">()</span></span>{
+        Type superClass = getClass().getGenericSuperclass();
+
+        type = ((ParameterizedType) superClass).getActualTypeArguments()[<span class="hljs-number">0</span>];
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Type <span class="hljs-title">getType</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> type;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">static</span> Type LIST_STRING = <span class="hljs-keyword">new</span> TypeToken&lt;List&lt;String&gt;&gt;() {}.getType();
+
+
+
+}
+
+
+System.out.println(<span class="hljs-keyword">new</span> TypeToken&lt;List&lt;Animal&gt;&gt;(){}.getType());
+&#x6253;&#x5370;&#xFF1A;
+java.util.List&lt;com.cowthan.Animal&gt;
+</code></pre>
+<h1 id="2-&#x6CE8;&#x89E3;">2 &#x6CE8;&#x89E3;</h1>
+<p>&#x6CE8;&#x89E3;&#x662F;&#x5143;&#x6570;&#x636E;</p>
+<h2 id="21-&#x5185;&#x7F6E;&#x6CE8;&#x89E3;">2.1 &#x5185;&#x7F6E;&#x6CE8;&#x89E3;</h2>
+<p>&#x63D0;&#x9192;&#x7F16;&#x8BD1;&#x5668;&#x7684;<br>@Override<br>@Deprecated<br>@SuppressWarnings &#x5173;&#x95ED;&#x8B66;&#x544A;  </p>
+<h2 id="22-&#x81EA;&#x5B9A;&#x4E49;&#x6CE8;&#x89E3;">2.2 &#x81EA;&#x5B9A;&#x4E49;&#x6CE8;&#x89E3;</h2>
+<p><code>&#x56DB;&#x5927;&#x5143;&#x6CE8;&#x89E3;</code>&#xFF1A;</p>
+<ul>
+<li>@Target&#xFF1A;&#x6CE8;&#x89E3;&#x80FD;&#x7528;&#x5728;&#x54EA;&#x513F;<ul>
+<li>@Target(ElementType.METHOD)</li>
+<li>ElementType&#x53EF;&#x80FD;&#x7684;&#x503C;&#xFF1A;<ul>
+<li>TYPE          &#x7528;&#x4E8E;class&#x5B9A;&#x4E49;</li>
+<li>CONSTRUCTOR   &#x7528;&#x4E8E;&#x6784;&#x9020;&#x65B9;&#x6CD5;</li>
+<li>METHOD        &#x7528;&#x4E8E;&#x65B9;&#x6CD5;</li>
+<li>FIELD         &#x7528;&#x4E8E;&#x6210;&#x5458;&#x53D8;&#x91CF;</li>
+<li>LOCAL_VARIABLE &#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x58F0;&#x660E;</li>
+<li>PACKAGE       &#x5305;&#x58F0;&#x660E;</li>
+<li>PARAMETER    &#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x58F0;&#x660E;</li>
+<li>ANNOTATION_TYPE</li>
+<li>TYPE_PARAMETER</li>
+<li>TYPE_USE</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>@Retention&#xFF1A;&#x6CE8;&#x89E3;&#x4FE1;&#x606F;&#x5728;&#x54EA;&#x4E2A;&#x9636;&#x6BB5;&#x6709;&#x6548;<ul>
+<li>@Retention(RetentionPolicy.RUNTIME)</li>
+<li>RetentionPolicy&#x53EF;&#x80FD;&#x7684;&#x503C;&#xFF1A;<ul>
+<li>SOURCE&#xFF1A;&#x6E90;&#x7801;&#x9636;&#x6BB5;&#xFF0C;&#x7F16;&#x8BD1;&#x65F6;&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x7528;&#x6765;&#x544A;&#x8BC9;&#x7F16;&#x8BD1;&#x5668;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#xFF0C;&#x5C06;&#x88AB;&#x7F16;&#x8BD1;&#x5668;&#x4E22;&#x5F03;</li>
+<li>CLASS&#xFF1A;&#x6CE8;&#x89E3;&#x5728;class&#x6587;&#x4EF6;&#x4E2D;&#x53EF;&#x7528;&#xFF0C;&#x4F1A;&#x88AB;VM&#x4E22;&#x5F03;</li>
+<li>RUNTIME&#xFF1A;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;VM&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x4E5F;&#x4FDD;&#x7559;&#x6CE8;&#x89E3;&#xFF0C;&#x8FD9;&#x4E2A;&#x624D;&#x80FD;&#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x83B7;&#x53D6;&#x5230;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Documented<ul>
+<li>&#x5C06;&#x6B64;&#x6CE8;&#x89E3;&#x5305;&#x542B;&#x5728;JavaDoc&#x4E2D;</li>
+</ul>
+</li>
+<li>Inherited<ul>
+<li>&#x5141;&#x8BB8;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#x7236;&#x7C7B;&#x4E2D;&#x7684;&#x6CE8;&#x89E3;</li>
+</ul>
+</li>
+</ul>
+<p><code>&#x6CE8;&#x89E3; &#x5904;&#x7406;&#x5668;&#xFF1A;&#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x62FF;&#x5230;&#x6CE8;&#x89E3;</code></p>
+<h2 id="23-&#x81EA;&#x5B9A;&#x4E49;&#x6CE8;&#x89E3;&#x5B9E;&#x4F8B;">2.3 &#x81EA;&#x5B9A;&#x4E49;&#x6CE8;&#x89E3;&#x5B9E;&#x4F8B;</h2>
+<p>&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x53EA;&#x5C55;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x5B9A;&#x4E49;&#x548C;&#x4F7F;&#x7528;&#x6CE8;&#x89E3;&#xFF0C;&#x6CA1;&#x6709;&#x9610;&#x660E;&#x5982;&#x4F55;&#x5904;&#x7406;&#x6CE8;&#x89E3;</p>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * &#x63CF;&#x8FF0;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;
+ *
+ */</span>
+<span class="hljs-meta">@Target</span>(ElementType.METHOD)
+<span class="hljs-meta">@Retention</span>(RetentionPolicy.RUNTIME)
+<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> UseCase {
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">id</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">description</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> &quot;no description&quot;</span>;
+
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UseCaseDemo</span> </span>{
+
+    <span class="hljs-meta">@UseCase</span>(id = <span class="hljs-number">1</span>, description = <span class="hljs-string">&quot;&#x5BC6;&#x7801;&#x7684;&#x683C;&#x5F0F;&#x5FC5;&#x987B;&#x89C4;&#x8303;&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">testPassword</span><span class="hljs-params">(String password)</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+
+    <span class="hljs-meta">@UseCase</span>(id = <span class="hljs-number">2</span>, description = <span class="hljs-string">&quot;&#x7528;&#x6237;&#x540D;&#x7684;&#x683C;&#x5F0F;&#x5FC5;&#x987B;&#x89C4;&#x8303;&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">testUsername</span><span class="hljs-params">(String username)</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+
+    <span class="hljs-meta">@UseCase</span>(id = <span class="hljs-number">3</span>, description = <span class="hljs-string">&quot;&#x65B0;&#x5BC6;&#x7801;&#x4E0D;&#x80FD;&#x7B49;&#x4E8E;&#x65E7;&#x5BC6;&#x7801;&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">testNewPwd</span><span class="hljs-params">(String password)</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+}
+</code></pre>
+<h2 id="24-&#x5904;&#x7406;&#x6CE8;&#x89E3;&#xFF1A;&#x8FD0;&#x884C;&#x65F6;">2.4 &#x5904;&#x7406;&#x6CE8;&#x89E3;&#xFF1A;&#x8FD0;&#x884C;&#x65F6;</h2>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x6846;&#x67B6;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;&#x6CE8;&#x89E3;@Seriable&#x7684;&#x5B57;&#x6BB5;&#x53EF;&#x4EE5;&#x88AB;&#x5E8F;&#x5217;&#x5316;&#x4E3A;json</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Target</span>({ ElementType.FIELD, ElementType.TYPE })  
+<span class="hljs-meta">@Retention</span>(RetentionPolicy.RUNTIME)  
+<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> Seriable  
+{  
+
+}  
+
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span>  
+</span>{  
+    <span class="hljs-meta">@Seriable</span>  
+    <span class="hljs-keyword">private</span> String username;  
+    <span class="hljs-meta">@Seriable</span>  
+    <span class="hljs-keyword">private</span> String password;  
+
+    <span class="hljs-keyword">private</span> String three;  
+    <span class="hljs-keyword">private</span> String four;  
+}  
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isSeriable</span><span class="hljs-params">(Field f)</span></span>{
+    f.setAccessible(<span class="hljs-keyword">true</span>);
+    Seriable annotation = f.getAnnotation(Seriable.class);
+    <span class="hljs-keyword">if</span>(id == <span class="hljs-keyword">null</span>){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }<span class="hljs-keyword">else</span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+}
+</code></pre>
+<h2 id="25-&#x5904;&#x7406;&#x6CE8;&#x89E3;&#xFF1A;&#x7F16;&#x8BD1;&#x671F;">2.5 &#x5904;&#x7406;&#x6CE8;&#x89E3;&#xFF1A;&#x7F16;&#x8BD1;&#x671F;</h2>
+<p>ButterKnife&#x80FD;&#x6839;&#x636E;&#x6CE8;&#x89E3;&#x751F;&#x6210;&#x4EE3;&#x7801;&#xFF0C;&#x600E;&#x4E48;&#x505A;&#x5230;&#x7684;&#x5462;&#xFF0C;&#x6D89;&#x53CA;&#x5230;apt&#x548C;&#x7F16;&#x8BD1;&#x671F;&#x5904;&#x7406;&#x5668;</p>
+<p><a href="http://www.cnblogs.com/avenwu/p/4173899.html" target="_blank">http://www.cnblogs.com/avenwu/p/4173899.html</a></p>
+<p><a href="http://www.bubuko.com/infodetail-826234.html" target="_blank">http://www.bubuko.com/infodetail-826234.html</a>  &#x8FD9;&#x7BC7;&#x8BB2;&#x7684;&#x633A;&#x597D;</p>
+<p><a href="http://www.jianshu.com/p/1910762593be" target="_blank">http://www.jianshu.com/p/1910762593be</a> &#x5B89;&#x5353;&#x7248;</p>
+<p><a href="http://blog.csdn.net/lmj623565791/article/details/43452969" target="_blank">http://blog.csdn.net/lmj623565791/article/details/43452969</a></p>
+<ul>
+<li>&#x91CD;&#x70B9;&#x6709;&#x4E09;&#x4E2A;<ul>
+<li>&#x5B9A;&#x4E49;&#x6CE8;&#x89E3;&#x548C;&#x6CE8;&#x89E3;&#x5904;&#x7406;&#x5668;</li>
+<li>&#x6253;&#x6210;jar&#x5305;</li>
+<li>&#x5728;&#x4EFB;&#x4F55;&#x9879;&#x76EE;&#x91CC;&#x4F7F;&#x7528;&#x6CE8;&#x89E3;&#xFF0C;&#x7F16;&#x8BD1;&#x65F6;&#x89E6;&#x53D1;&#x6CE8;&#x89E3;&#x5904;&#x7406;&#x5668;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-java">
+<span class="hljs-keyword">import</span> javax.annotation.processing.AbstractProcessor;
+<span class="hljs-keyword">import</span> javax.annotation.processing.Messager;
+<span class="hljs-keyword">import</span> javax.annotation.processing.ProcessingEnvironment;
+<span class="hljs-keyword">import</span> javax.annotation.processing.RoundEnvironment;
+<span class="hljs-keyword">import</span> javax.annotation.processing.SupportedAnnotationTypes;
+<span class="hljs-keyword">import</span> javax.lang.model.SourceVersion;
+<span class="hljs-keyword">import</span> javax.lang.model.element.Element;
+<span class="hljs-keyword">import</span> javax.lang.model.element.Name;
+<span class="hljs-keyword">import</span> javax.lang.model.element.TypeElement;
+<span class="hljs-keyword">import</span> javax.lang.model.element.VariableElement;
+<span class="hljs-keyword">import</span> javax.lang.model.util.Elements;
+
+<span class="hljs-meta">@SupportedAnnotationTypes</span>({<span class="hljs-string">&quot;com.avenwu.annotation.PrintMe&quot;</span>})
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BeanProcessor</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AbstractProcessor</span> </span>{
+
+    <span class="hljs-comment">// &#x5143;&#x7D20;&#x64CD;&#x4F5C;&#x7684;&#x8F85;&#x52A9;&#x7C7B;</span>
+    Elements elementUtils;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">synchronized</span> <span class="hljs-keyword">void</span> <span class="hljs-title">init</span><span class="hljs-params">(ProcessingEnvironment processingEnv)</span> </span>{
+        <span class="hljs-keyword">super</span>.init(processingEnv);
+        <span class="hljs-comment">// &#x5143;&#x7D20;&#x64CD;&#x4F5C;&#x7684;&#x8F85;&#x52A9;&#x7C7B;</span>
+        elementUtils = processingEnv.getElementUtils();
+    }
+
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">process</span><span class="hljs-params">(Set&lt;? extends TypeElement&gt; annotations,
+            RoundEnvironment roundEnv)</span> </span>{
+
+        <span class="hljs-keyword">for</span> (TypeElement currentAnnotation : annotations) {
+            Name qualifiedName = currentAnnotation.getQualifiedName();
+            <span class="hljs-keyword">if</span> (qualifiedName.contentEquals(<span class="hljs-string">&quot;com.avenwu.annotation.PrintMe&quot;</span>)){
+                Set&lt;? extends Element&gt; annotatedElements = roundEnv.getElementsAnnotatedWith(currentAnnotation);
+                <span class="hljs-keyword">for</span> (Element element : annotatedElements) {
+                    Version v = element.getAnnotation(Version.class);
+                    <span class="hljs-keyword">int</span> major = v.major();
+                    <span class="hljs-keyword">int</span> minor = v.minor();
+                    <span class="hljs-keyword">if</span>(major &lt; <span class="hljs-number">0</span> || minor &lt; <span class="hljs-number">0</span>) {
+                        String errMsg = <span class="hljs-string">&quot;Version cannot be negative. major = &quot;</span> + major + <span class="hljs-string">&quot; minor = &quot;</span> + minor;
+                        Messager messager = <span class="hljs-keyword">this</span>.processingEnv.getMessager();
+                        messager.printMessage(javax.tools.Diagnostic.Kind.ERROR,errMsg,element);
+}
+                }
+            }
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> SourceVersion <span class="hljs-title">getSupportedSourceVersion</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> SourceVersion.latestSupported();
+    }
+
+}
+</code></pre>
+<h1 id="3-&#x53CD;&#x5C04;">3 &#x53CD;&#x5C04;</h1>
+<p>&#x53CD;&#x5C04;&#x7B49;&#x4EE5;&#x540E;&#x5427;&#xFF0C;&#x5B89;&#x5353;&#x91CC;&#x9762;&#x53CD;&#x5C04;&#x7528;&#x7684;&#x4E5F;&#x4E0D;&#x591A;&#xFF0C;EventBus2&#x5C31;&#x662F;&#x57FA;&#x4E8E;&#x53CD;&#x5C04;&#xFF0C;&#x5728;EventBus3&#x91CC;&#x5DF2;&#x7ECF;
+&#x6539;&#x6210;&#x4E86;&#x9884;&#x5904;&#x7406;&#x6CE8;&#x89E3;&#x7684;&#x65B9;&#x5F0F;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="nio.html" class="navigation navigation-prev " aria-label="Previous page: nio">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mem-gc.html" class="navigation navigation-next " aria-label="Next page: 内存模型和GC">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"泛型，注解和反射","level":"1.8","depth":1,"next":{"title":"内存模型和GC","level":"1.9","depth":1,"path":"mem-gc.md","ref":"mem-gc.md","articles":[]},"previous":{"title":"nio","level":"1.7","depth":1,"path":"nio.md","ref":"nio.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"advance.md","mtime":"2017-04-09T06:01:49.019Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T06:05:34.294Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

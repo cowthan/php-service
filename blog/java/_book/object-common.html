@@ -1,0 +1,616 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>对象通用行为 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="concurrent.html" />
+    
+    
+    <link rel="prev" href="enum.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Java</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="object-mgmr.html">
+            
+                <a href="object-mgmr.html">
+            
+                    
+                    对象管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="enum.html">
+            
+                <a href="enum.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="object-common.html">
+            
+                <a href="object-common.html">
+            
+                    
+                    对象通用行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="concurrent.html">
+            
+                <a href="concurrent.html">
+            
+                    
+                    线程和并发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="concurrent/how-to.html">
+            
+                <a href="concurrent/how-to.html">
+            
+                    
+                    线程和线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="concurrent/block-close.html">
+            
+                <a href="concurrent/block-close.html">
+            
+                    
+                    线程阻塞和关闭
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="concurrent/communicate.html">
+            
+                <a href="concurrent/communicate.html">
+            
+                    
+                    线程协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="concurrent/volatile.html">
+            
+                <a href="concurrent/volatile.html">
+            
+                    
+                    活性失败-volatile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="concurrent/lock.html">
+            
+                <a href="concurrent/lock.html">
+            
+                    
+                    安全性失败-锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="concurrent/thread-local.html">
+            
+                <a href="concurrent/thread-local.html">
+            
+                    
+                    线程局部存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="concurrent/others.html">
+            
+                <a href="concurrent/others.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="collections.html">
+            
+                <a href="collections.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="nio.html">
+            
+                <a href="nio.html">
+            
+                    
+                    nio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="advance.html">
+            
+                <a href="advance.html">
+            
+                    
+                    泛型，注解和反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="mem-gc.html">
+            
+                <a href="mem-gc.html">
+            
+                    
+                    内存模型和GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="classloader.html">
+            
+                <a href="classloader.html">
+            
+                    
+                    ClassLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Web</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="spring.html">
+            
+                <a href="spring.html">
+            
+                    
+                    spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GUI</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="gui-1.html">
+            
+                <a href="gui-1.html">
+            
+                    
+                    没事写个小界面什么的
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >对象通用行为</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5BF9;&#x8C61;&#x901A;&#x7528;&#x884C;&#x4E3A;">&#x5BF9;&#x8C61;&#x901A;&#x7528;&#x884C;&#x4E3A;</h1>
+<p>&#x672C;&#x6587;&#x8BF4;&#x7684;&#x662F;&#x7C7B;&#x7684;&#x901A;&#x7528;&#x884C;&#x4E3A;&#xFF0C;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x9996;&#x5148;&#x8003;&#x8651;&#x672C;&#x6587;&#x63D0;&#x5230;&#x7684;&#x51E0;&#x4E2A;&#x95EE;&#x9898;</p>
+<h2 id="0-&#x524D;&#x8A00;">0 &#x524D;&#x8A00;</h2>
+<ul>
+<li><p>&#x7C7B;&#x7684;&#x5206;&#x7C7B;&#xFF1A;</p>
+<ul>
+<li>&#x6D3B;&#x52A8;&#x5B9E;&#x4F53;&#xFF0C;&#x5982;Thread&#xFF0C;&#x5B89;&#x5353;&#x7684;Activity<ul>
+<li>&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x5C31;&#x662F;&#x4E00;&#x4E2A;Thread&#x5BF9;&#x8C61;&#xFF0C;&#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;&#x8981;&#x76F8;&#x7B49;&#xFF0C;&#x5C31;&#x5F97;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</li>
+<li>&#x4E00;&#x4E2A;&#x5B89;&#x5353;&#x754C;&#x9762;&#x5C31;&#x662F;&#x4E00;&#x4E2A;Activity&#x5BF9;&#x8C61;&#xFF0C;&#x4E24;&#x4E2A;&#x754C;&#x9762;&#x8981;&#x76F8;&#x7B49;&#xFF0C;&#x5C31;&#x5F97;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</li>
+</ul>
+</li>
+<li>&#x503C;&#x7C7B;&#xFF0C;&#x5982;Person<ul>
+<li>&#x4E00;&#x4E2A;&#x5B66;&#x751F;&#x53EF;&#x80FD;&#x5BF9;&#x5E94;&#x597D;&#x51E0;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8981;&#x5224;&#x65AD;&#x76F8;&#x7B49;&#xFF0C;&#x53EF;&#x4E0D;&#x80FD;&#x4F9D;&#x8D56;&#x4E8E;&#x4E24;&#x4E2A;&#x662F;&#x4E0D;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Java&#x7684;&#x5BF9;&#x8C61;</p>
+<ul>
+<li>&#x666E;&#x901A;&#x5BF9;&#x8C61;</li>
+<li>&#x6570;&#x7EC4;&#x5BF9;&#x8C61;</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-equals&#x65B9;&#x6CD5;">1 equals&#x65B9;&#x6CD5;</h2>
+<p>&#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x76F8;&#x7B49;&#xFF0C;&#x6709;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</p>
+<ul>
+<li>1 &#x6D3B;&#x52A8;&#x5B9E;&#x4F53;</li>
+<li>2 &#x503C;&#x7C7B;</li>
+<li>3 Random&#x7C7B;&#x4F3C;&#x7684;&#x7C7B;&#xFF0C;&#x76F8;&#x7B49;&#x7684;&#x903B;&#x8F91;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x80FD;&#x5426;&#x4EA7;&#x751F;&#x540C;&#x6837;&#x7684;&#x968F;&#x673A;&#x6570;&#x5E8F;&#x5217;&#xFF1F;</li>
+<li>4 Set&#xFF0C;Map&#xFF0C;List&#x7684;&#x76F8;&#x7B49;&#x903B;&#x8F91;</li>
+<li>5 &#x79C1;&#x6709;&#x7684;&#x7C7B;&#xFF0C;&#x5305;&#x7EA7;&#x79C1;&#x6709;&#x7684;&#x7C7B;&#xFF1A;equals&#x5E94;&#x8BE5;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x56E0;&#x4E3A;equals&#x65B9;&#x6CD5;&#x6C38;&#x8FDC;&#x4E0D;&#x5E94;&#x8BE5;&#x8C03;&#x7528;</li>
+</ul>
+<blockquote>
+<p>&#x503C;&#x7C7B;&#x4E00;&#x822C;&#x9700;&#x8981;&#x8986;&#x76D6;equals&#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x5B9E;&#x73B0;&#x81EA;&#x5DF1;&#x7684;&#x903B;&#x8F91;&#x76F8;&#x7B49;&#x7684;&#x6982;&#x5FF5;</p>
+</blockquote>
+<ul>
+<li>equals&#x7684;5&#x4E2A;&#x539F;&#x5219;&#xFF1A;<ul>
+<li><code>&#x81EA;&#x53CD;&#x6027;reflexive</code>&#xFF1A;x.equils(x)&#x5FC5;&#x987B;&#x8FD4;&#x56DE;true</li>
+<li><code>&#x5BF9;&#x79F0;&#x6027;symmetric</code>&#xFF1A;x.equals(y)&#x4E3A;true&#xFF0C;y.equals(x)&#x5FC5;&#x4E3A;true</li>
+<li><code>&#x4F20;&#x9012;&#x6027;transitive</code>&#xFF1A;x.equals(y)&#x4E3A;true&#xFF0C;y.equals(z)&#x4E3A;true&#xFF0C;&#x5219;x.equals(z)&#x5FC5;&#x4E3A;true</li>
+<li><code>&#x4E00;&#x81F4;&#x6027;consistent</code>&#xFF1A;&#x53EA;&#x8981;&#x6BD4;&#x8F83;&#x5B57;&#x6BB5;&#x6CA1;&#x6709;&#x4FEE;&#x6539;&#xFF0C;x.equals(y)&#x4E0D;&#x7BA1;&#x8C03;&#x591A;&#x5C11;&#x6B21;&#xFF0C;&#x90FD;&#x4E00;&#x81F4;&#x8FD4;&#x56DE;true&#x6216;false</li>
+<li>x.equals(null)&#x5FC5;&#x4E3A;false</li>
+</ul>
+</li>
+</ul>
+<p>EffectiveJava&#x7684;&#x4F5C;&#x8005;&#x786E;&#x5B9E;&#x7ED9;&#x51FA;&#x4E86;&#x51E0;&#x4E2A;&#x8FDD;&#x53CD;&#x8FD9;&#x51E0;&#x4E2A;&#x539F;&#x5219;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x6B64;&#x5904;&#x4E0D;&#x505A;&#x8FC7;&#x591A;&#x63CF;&#x8FF0;</p>
+<p>&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x7684;&#x7684;equals&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre><code class="lang-java">
+<span class="hljs-comment">//&#x5BF9;&#x4E8E;class T</span>
+<span class="hljs-meta">@Override</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">equals</span><span class="hljs-params">(Object o)</span></span>{
+
+    <span class="hljs-keyword">if</span>(<span class="hljs-keyword">this</span> == o) <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    <span class="hljs-keyword">if</span>(!(o <span class="hljs-keyword">instanceof</span> T)) <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    T t = (T)o;
+
+    <span class="hljs-comment">//&#x5BF9;&#x6BCF;&#x4E2A;&#x5173;&#x952E;&#x57DF;&#x8FDB;&#x884C;&#x68C0;&#x67E5;&#xFF0C;&#x5E76;&#x8981;&#x907F;&#x514D;null</span>
+    <span class="hljs-keyword">if</span>(!(field == t.field || (field != <span class="hljs-keyword">null</span> &amp;&amp; field.equals(t.field)))){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+
+    <span class="hljs-comment">//&#x7EE7;&#x7EED;&#x4E0B;&#x4E00;&#x4E2A;field&#xFF1A;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x4E0D;equals&#xFF0C;&#x90FD;&#x8FD4;&#x56DE;false</span>
+    <span class="hljs-comment">//...</span>
+
+    <span class="hljs-comment">//&#x901A;&#x8FC7;&#x6240;&#x6709;&#x68C0;&#x67E5;&#xFF0C;&#x8FD4;&#x56DE;true</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+
+
+    <span class="hljs-comment">//&#x8986;&#x76D6;&#x4E86;equals&#x65B9;&#x6CD5;&#xFF0C;&#x603B;&#x662F;&#x9700;&#x8981;&#x8986;&#x76D6;hashCode</span>
+}
+</code></pre>
+<h2 id="2-hashcode&#x65B9;&#x6CD5;">2 hashCode&#x65B9;&#x6CD5;</h2>
+<p>equals&#x5224;&#x65AD;&#x76F8;&#x7B49;&#x7684;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;hashCode&#x4E5F;&#x5E94;&#x8BE5;&#x4E00;&#x6837;</p>
+<p>&#x5982;&#x679C;&#x8986;&#x76D6;&#x4E86;equals&#x800C;&#x4E0D;&#x8986;&#x76D6;hashCode&#xFF0C;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#xFF1F;
+&#x4F8B;&#x5982;&#x5BF9;&#x4E8E;Person&#x7C7B;&#xFF0C;equals&#x88AB;&#x8986;&#x76D6;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;id&#x7684;&#x5B66;&#x751F;&#xFF0C;equals&#x4E3A;true&#xFF0C;&#x4F46;hashCode&#x6CA1;&#x8986;&#x76D6;</p>
+<p>Person p1 = new Person(1);
+Person p2 = new Person(1);</p>
+<p>p1.equals(ps)&#x8FD4;&#x56DE;true</p>
+<p>Map<person, course=""> map;</person,></p>
+<p>map.put(p1, course1);
+map.put(p2, course2);</p>
+<p>&#x73B0;&#x5728;&#xFF0C;map&#x91CC;&#x6709;&#x4E24;&#x4E2A;entry&#x4E86;&#xFF0C;p2&#x5E76;&#x4E0D;&#x80FD;&#x8986;&#x76D6;p1&#xFF0C;&#x56E0;&#x4E3A;hashCode&#x4E0D;&#x4E00;&#x6837;</p>
+<p>map.get(p2)&#x4F1A;&#x8FD4;&#x56DE;course1&#x8FD8;&#x662F;2&#x5462;&#xFF0C;course2</p>
+<p>map.get(new person(1))&#x4F1A;&#x8FD4;&#x56DE;&#x4EC0;&#x4E48;&#xFF1F;null&#xFF0C;&#x4F46;&#x4F60;&#x671F;&#x671B;&#x4ED6;&#x8FD4;&#x56DE;&#x4EC0;&#x4E48;&#x5462;</p>
+<p>hashCode&#x7684;&#x901A;&#x7528;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<ul>
+<li>&#x6CE8;&#x610F;&#xFF1A;<ul>
+<li>&#x5982;&#x679C;hash&#x8BA1;&#x7B97;&#x5F00;&#x9500;&#x8F83;&#x5927;&#xFF0C;&#x5E94;&#x8BE5;&#x7F13;&#x5B58;&#x8D77;&#x6765;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-java">
+<span class="hljs-comment">//&#x6CE8;&#x610F;&#xFF0C;&#x7528;&#x4E8E;&#x751F;&#x6210;hashCode&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x5E94;&#x8BE5;&#x662F;&#x6240;&#x6709;&#x7528;&#x4E8E;equals&#x6BD4;&#x8F83;&#x7684;&#x5B57;&#x6BB5;</span>
+<span class="hljs-comment">//&#x6CA1;&#x6709;&#x7528;&#x4E8E;equals&#x7684;&#xFF0C;&#x4E0D;&#x8981;&#x7528;&#x4E8E;hashCode</span>
+<span class="hljs-comment">//&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x57DF;&#x7684;&#x503C;&#x662F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5176;&#x4ED6;&#x57DF;&#x8BA1;&#x7B97;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x5C31;&#x662F;&#x5197;&#x4F59;&#x57DF;&#xFF0C;&#x4E0D;&#x8981;&#x53C2;&#x4E0E;hash</span>
+
+
+<span class="hljs-meta">@Override</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">hashCode</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">int</span> result = <span class="hljs-number">17</span>;
+
+    result = <span class="hljs-number">31</span> * result + <span class="hljs-keyword">int</span>;  <span class="hljs-comment">//byte, short, char, int&#x90FD;&#x8F6C;&#x4E3A;int</span>
+    result = <span class="hljs-number">31</span> * result + (<span class="hljs-keyword">boolean</span> ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>);
+    result = <span class="hljs-number">31</span> * result + (<span class="hljs-keyword">int</span>)(<span class="hljs-keyword">long</span> ^ (<span class="hljs-keyword">long</span> &gt;&gt;&gt; <span class="hljs-number">32</span>));
+    result = <span class="hljs-number">31</span> * result + Float.floatToIntBits(<span class="hljs-keyword">float</span>);
+
+    <span class="hljs-comment">//double</span>
+    <span class="hljs-keyword">long</span> ld = Double.doubleToLongBits(f);
+    result = <span class="hljs-number">31</span> * result + (<span class="hljs-keyword">int</span>)(ld ^ (ld &gt;&gt;&gt; <span class="hljs-number">32</span>));
+
+    <span class="hljs-comment">//&#x5F15;&#x7528;</span>
+    result = <span class="hljs-number">31</span> * result + (ref == <span class="hljs-keyword">null</span> ? <span class="hljs-number">0</span> : ref.hashCode());
+
+    <span class="hljs-comment">//&#x6570;&#x7EC4;</span>
+    <span class="hljs-keyword">if</span>(arr == <span class="hljs-keyword">null</span> || arr.length == <span class="hljs-number">0</span>){
+        result = <span class="hljs-number">31</span> * result + <span class="hljs-number">0</span>;
+    }<span class="hljs-keyword">else</span>{
+        &#x53D6;&#x51FA;&#x91CD;&#x8981;&#x5143;&#x7D20;&#xFF0C;&#x8BA1;&#x7B97;hash&#xFF0C;&#x6216;&#x8005;&#x5982;&#x679C;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x4E00;&#x6837;&#x91CD;&#x8981;&#xFF0C;&#x5219;&#xFF1A;
+        result = <span class="hljs-number">31</span> * result + Arrays.hashCode(arr);
+    }
+
+    <span class="hljs-keyword">return</span> result;
+}
+</code></pre>
+<h2 id="3-tostring">3 toString</h2>
+<p>toString&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x7684;&#x6253;&#x5370;&#xFF0C;&#x8FD9;&#x91CC;&#x6CA1;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x591A;&#x8BF4;&#x7684;</p>
+<h2 id="4-comparable&#x63A5;&#x53E3;">4 Comparable&#x63A5;&#x53E3;</h2>
+<p>Comparable&#x662F;&#x7C7B;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x7684;&#x63A5;&#x53E3;<br>Comparator&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x7B56;&#x7565;&#xFF0C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x4F20;&#x5165;&#x65B9;&#x6CD5;&#x5185;  </p>
+<h2 id="5-clone&#x65B9;&#x6CD5;">5 clone&#x65B9;&#x6CD5;</h2>
+<p>&#x53C2;&#x8003;&#x5BF9;&#x8C61;&#x7BA1;&#x7406;&#x7684;&#x7B2C;10&#x8282;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="enum.html" class="navigation navigation-prev " aria-label="Previous page: 枚举">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="concurrent.html" class="navigation navigation-next " aria-label="Next page: 线程和并发">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"对象通用行为","level":"1.4","depth":1,"next":{"title":"线程和并发","level":"1.5","depth":1,"path":"concurrent.md","ref":"concurrent.md","articles":[{"title":"线程和线程池","level":"1.5.1","depth":2,"path":"concurrent/how-to.md","ref":"concurrent/how-to.md","articles":[]},{"title":"线程阻塞和关闭","level":"1.5.2","depth":2,"path":"concurrent/block-close.md","ref":"concurrent/block-close.md","articles":[]},{"title":"线程协作","level":"1.5.3","depth":2,"path":"concurrent/communicate.md","ref":"concurrent/communicate.md","articles":[]},{"title":"活性失败-volatile","level":"1.5.4","depth":2,"path":"concurrent/volatile.md","ref":"concurrent/volatile.md","articles":[]},{"title":"安全性失败-锁","level":"1.5.5","depth":2,"path":"concurrent/lock.md","ref":"concurrent/lock.md","articles":[]},{"title":"线程局部存储","level":"1.5.6","depth":2,"path":"concurrent/thread-local.md","ref":"concurrent/thread-local.md","articles":[]},{"title":"其他","level":"1.5.7","depth":2,"path":"concurrent/others.md","ref":"concurrent/others.md","articles":[]}]},"previous":{"title":"枚举","level":"1.3","depth":1,"path":"enum.md","ref":"enum.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"object-common.md","mtime":"2017-04-09T05:58:46.406Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T06:05:34.294Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,694 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>安全性失败-锁 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="thread-local.html" />
+    
+    
+    <link rel="prev" href="volatile.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Java</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../object-mgmr.html">
+            
+                <a href="../object-mgmr.html">
+            
+                    
+                    对象管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../enum.html">
+            
+                <a href="../enum.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../object-common.html">
+            
+                <a href="../object-common.html">
+            
+                    
+                    对象通用行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../concurrent.html">
+            
+                <a href="../concurrent.html">
+            
+                    
+                    线程和并发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="how-to.html">
+            
+                <a href="how-to.html">
+            
+                    
+                    线程和线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="block-close.html">
+            
+                <a href="block-close.html">
+            
+                    
+                    线程阻塞和关闭
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="communicate.html">
+            
+                <a href="communicate.html">
+            
+                    
+                    线程协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="volatile.html">
+            
+                <a href="volatile.html">
+            
+                    
+                    活性失败-volatile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.5" data-path="lock.html">
+            
+                <a href="lock.html">
+            
+                    
+                    安全性失败-锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="thread-local.html">
+            
+                <a href="thread-local.html">
+            
+                    
+                    线程局部存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="others.html">
+            
+                <a href="others.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../collections.html">
+            
+                <a href="../collections.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../nio.html">
+            
+                <a href="../nio.html">
+            
+                    
+                    nio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../advance.html">
+            
+                <a href="../advance.html">
+            
+                    
+                    泛型，注解和反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../mem-gc.html">
+            
+                <a href="../mem-gc.html">
+            
+                    
+                    内存模型和GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../classloader.html">
+            
+                <a href="../classloader.html">
+            
+                    
+                    ClassLoader
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Web</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../spring.html">
+            
+                <a href="../spring.html">
+            
+                    
+                    spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GUI</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../gui-1.html">
+            
+                <a href="../gui-1.html">
+            
+                    
+                    没事写个小界面什么的
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >安全性失败-锁</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5B89;&#x5168;&#x6027;&#x5931;&#x8D25;-&#x9501;">&#x5B89;&#x5168;&#x6027;&#x5931;&#x8D25;-&#x9501;</h1>
+<p>&#x9996;&#x5148;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x9501;&#x4F1A;&#x8BA9;&#x5E76;&#x884C;&#x53D8;&#x4E3A;&#x4E32;&#x884C;&#xFF0C;&#x4F46;&#x5B89;&#x5168;&#x548C;&#x6548;&#x7387;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x6298;&#x8877;&#xFF0C;&#x5B89;&#x5168;&#x7B2C;&#x4E00;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x8981;&#x8FFD;&#x6C42;&#x7684;&#x5FC5;&#x987B;&#x662F;&#x9AD8;&#x6548;&#x5B89;&#x5168;</p>
+<ul>
+<li>&#x672C;&#x6587;&#x6D89;&#x53CA;&#x5230;&#xFF1A;<ul>
+<li>&#x539F;&#x5B50;&#x64CD;&#x4F5C;</li>
+<li>&#x4E34;&#x754C;&#x533A;</li>
+<li>&#x9501;</li>
+<li>&#x4FE1;&#x53F7;&#x91CF;</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-&#x5171;&#x4EAB;&#x53D7;&#x9650;&#x8D44;&#x6E90;">1 &#x5171;&#x4EAB;&#x53D7;&#x9650;&#x8D44;&#x6E90;</h2>
+<p>&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F1A;&#x51FA;&#x73B0;&#x5171;&#x4EAB;&#x53D7;&#x9650;&#x8D44;&#x6E90;&#x7684;&#x51B2;&#x7A81;&#xFF1F;<br>&#x6709;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#x6446;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x591A;&#x4E2A;worker&#x7EBF;&#x7A0B;&#x90FD;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x72B6;&#x6001;&#x5C31;&#x53EF;&#x80FD;&#x4F1A;&#x4E71;&#x4E86;  </p>
+<p>&#x603B;&#x4E4B;&#xFF0C;&#x6BCF;&#x6B21;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x8D44;&#x6E90;&#x65F6;&#xFF0C;&#x4ECE;&#x8FDB;&#x53BB;&#x5230;&#x51FA;&#x6765;&#xFF0C;&#x90FD;&#x8981;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x7684;&#x4E00;&#x81F4;&#x6027;</p>
+<p>&#x57FA;&#x672C;&#x4E0A;&#x6240;&#x6709;&#x4FDD;&#x62A4;&#x5171;&#x4EAB;&#x53D7;&#x9650;&#x8D44;&#x6E90;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x90FD;&#x662F;&#x5E8F;&#x5217;&#x5316;&#x5BF9;&#x53D7;&#x9650;&#x8D44;&#x6E90;&#x7684;&#x8BBF;&#x95EE;&#xFF08;&#x540C;&#x6B65;&#x5316;&#xFF09;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x7A0B;&#x5E8F;&#x5230;&#x8FD9;&#x91CC;&#x5C31;&#x53D8;&#x6210;&#x4E32;&#x884C;&#x4E86;&#xFF0C;&#x52A0;&#x4E2A;&#x9501;&#x4FDD;&#x8BC1;&#x540C;&#x65F6;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x8BBF;&#x95EE;&#xFF0C;&#x8FD9;&#x79CD;&#x673A;&#x5236;&#x5C31;&#x53EB;&#x4E92;&#x65A5;&#x91CF;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x6539;&#x53D8;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x662F;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<ul>
+<li>&#x8FD9;&#x671F;&#x95F4;&#x4F60;&#x6700;&#x597D;&#x4FDD;&#x8BC1;&#x4E0D;&#x8981;&#x51FA;&#x73B0;&#x4EFB;&#x4F55;&#x88AB;&#x6253;&#x65AD;&#x7684;&#x53EF;&#x80FD;</li>
+</ul>
+<h2 id="2-&#x539F;&#x5B50;&#x7C7B;">2 &#x539F;&#x5B50;&#x7C7B;</h2>
+<p>&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#x88AB;&#x7528;&#x6765;&#x5199;&#x65E0;&#x9501;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x907F;&#x514D;&#x540C;&#x6B65;</p>
+<p>&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#x4E0D;&#x662F;&#x540C;&#x6B65;&#x5316;&#x7684;&#xFF0C;&#x800C;&#x662F;&#x907F;&#x514D;&#x4E86;&#x540C;&#x6B65;&#x5316;&#xFF1A;<br>&#x2014;&#x2014;&#x666E;&#x901A;&#x7684;&#x8FD0;&#x7B97;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x4F9D;&#x8D56;&#x539F;&#x5B50;&#x6027;&#xFF0C;&#x8981;&#x8C28;&#x614E;&#x4F7F;&#x7528;&#xFF0C;&#x81F3;&#x5C11;&#x7F16;&#x7A0B;&#x601D;&#x60F3;&#x91CC;&#x4E0D;&#x63A8;&#x8350;&#x7684;&#xFF0C;&#x9664;&#x975E;&#x975E;&#x5E38;&#x61C2;JVM&#xFF0C;&#x80FD;&#x7F16;&#x5199;JVM&#xFF0C;&#x7F16;&#x7A0B;&#x601D;&#x60F3;&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x610F;&#x601D;<br>&#x2014;&#x2014;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Atom&#x7CFB;&#x5217;&#x7C7B;&#x6765;&#x4FDD;&#x8BC1;&#x5B89;&#x5168;</p>
+<p>&#x6709;&#x4E24;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#xFF1A;<br>&#x2014;&#x2014;&#x666E;&#x901A;&#x7684;&#x8FD0;&#x7B97;&#x64CD;&#x4F5C;&#x7684;&#x539F;&#x5B50;&#x6027;&#xFF0C;&#x5982;&#x52A0;&#x51CF;&#x4E58;&#x9664;&#xFF0C;&#x8FD9;&#x4E2A;&#x5F88;&#x96BE;&#x641E;&#x61C2;&#xFF0C;&#x4F60;&#x77E5;&#x9053;a+b&#x662F;&#x4E0D;&#x662F;&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#xFF1F;<br>&#x2014;&#x2014;Atom&#x7CFB;&#x5217;&#x7C7B;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x5957;&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#xFF0C;&#x57FA;&#x672C;&#x8FD8;&#x662F;&#x6709;&#x4FDD;&#x969C;&#x7684;</p>
+<h3 id="21-&#x539F;&#x5B50;&#x64CD;&#x4F5C;">2.1 &#x539F;&#x5B50;&#x64CD;&#x4F5C;</h3>
+<p>&#x666E;&#x901A;&#x8FD0;&#x7B97;&#x7684;&#x539F;&#x5B50;&#x6027;&#xFF1A;&#x6682;&#x65F6;&#x4E0D;&#x505A;&#x7814;&#x7A76;&#x4E86;<br>a++&#x4E0D;&#x662F;&#x539F;&#x5B50;&#x64CD;&#x4F5C;<br>+-*/&#x4E5F;&#x4E0D;&#x662F;&#x539F;&#x5B50;&#x64CD;&#x4F5C;<br>x = x + 1  =&#x4E5F;&#x4E0D;&#x662F;&#x539F;&#x5B50;&#x64CD;&#x4F5C;  </p>
+<p>&#x60F3;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#xFF0C;&#x518D;&#x770B;&#x4E00;&#x904D;&#x7F16;&#x7A0B;&#x601D;&#x60F3;</p>
+<h3 id="22-&#x539F;&#x5B50;&#x7C7B;">2.2 &#x539F;&#x5B50;&#x7C7B;</h3>
+<p>&#x539F;&#x5B50;&#x7C7B;&#x662F;&#x53EF;&#x4EE5;&#x4FE1;&#x8D56;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x505A;&#x6027;&#x80FD;&#x8C03;&#x4F18;&#xFF0C;&#x907F;&#x514D;&#x5199;&#x540C;&#x6B65;&#x4EE3;&#x7801;&#xFF0C;&#x907F;&#x514D;&#x5E8F;&#x5217;&#x5316;&#x8BBF;&#x95EE;&#x8D44;&#x6E90;</p>
+<pre><code>public class EvenGenerator extends IntGenerator {
+  private int currentEvenValue = 0;
+  public int next() {
+    ++currentEvenValue; // Danger point here!
+    ++currentEvenValue;
+    return currentEvenValue;
+  }
+  public static void main(String[] args) {
+    EvenChecker.test(new EvenGenerator());
+  }
+}
+</code></pre><p>&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#x5C31;&#x662F;&#x4E00;&#x6B65;&#x80FD;&#x5B8C;&#x6210;&#x7684;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre><code>AtomicInteger currentEvenValue = new AtomicInteger(0);
+return currentEvenValue.addAndGet(2);  //&#x8FD9;&#x91CC;&#x7ED9;value&#x589E;&#x52A0;&#x4E86;2&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x5176;&#x503C;
+</code></pre><ul>
+<li><p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ul>
+<li>&#x8BF4;&#x662F;&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#x88AB;&#x7528;&#x6765;&#x6784;&#x5EFA;Concurrent&#x5305;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F60;&#x7528;</li>
+<li>&#x7528;&#x4E86;&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#xFF0C;&#x5C31;&#x7701;&#x4E86;&#x5F88;&#x591A;&#x52A0;&#x9501;&#x64CD;&#x4F5C;</li>
+</ul>
+</li>
+<li><p>&#x90FD;&#x6709;&#x4EC0;&#x4E48;</p>
+<ul>
+<li>AtomicInteger</li>
+<li>AtomicLong</li>
+<li>AtomicReference</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-synchronized&#x4E34;&#x754C;&#x533A;">3 Synchronized&#x4E34;&#x754C;&#x533A;</h2>
+<p>&#x4F8B;&#x5B50;&#xFF1A; </p>
+<pre><code>public class SynchronizedEventGenerator extends IntGenerator {
+    private int currentEvenValue = 0;
+
+    public int next() {
+        synchronized (this) {
+            ++currentEvenValue; 
+            ++currentEvenValue;
+            return currentEvenValue;
+        }
+    }
+
+    public static void main(String[] args) {
+        EvenChecker.test(new SynchronizedEventGenerator());
+    }
+}
+</code></pre><pre><code>public synchronized int next() {
+    ++currentEvenValue; // Danger point here!
+    ++currentEvenValue;
+    return currentEvenValue;
+}
+
+&#x76F8;&#x5F53;&#x4E8E;&#xFF1A;
+public int next() {
+    synchronized (this) {
+        ++currentEvenValue; 
+        ++currentEvenValue;
+        return currentEvenValue;
+    }
+}
+</code></pre><ul>
+<li><p>synchronized&#x7684;&#x9501;&#x59CB;&#x7EC8;&#x662F;&#x52A0;&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E0A;</p>
+<ul>
+<li>&#x76F4;&#x63A5;&#x4FEE;&#x9970;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x5C31;&#x662F;this</li>
+<li>&#x5982;&#x679C;&#x591A;&#x4E2A;&#x5BF9;&#x8C61;&#x8BBF;&#x95EE;&#x540C;&#x4E00;&#x8D44;&#x6E90;&#xFF0C;&#x9501;&#x5C31;&#x5F97;&#x52A0;&#x5230;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x9759;&#x6001;&#x5BF9;&#x8C61;&#x4E0A;</li>
+<li>&#x4F5C;&#x7528;&#x4E8E;&#x9759;&#x6001;&#x65B9;&#x6CD5;/&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x9501;&#x4F4F;&#x7684;&#x662F;&#x5B58;&#x5728;&#x4E8E;&#x6C38;&#x4E45;&#x7684;Class&#x5BF9;&#x8C61;</li>
+</ul>
+</li>
+<li><p>synchronized&#x7684;&#x539F;&#x7406;&#xFF1A;</p>
+<ul>
+<li>&#x6BCF;&#x4E2A;object&#x5BF9;&#x8C61;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x5185;&#x7F6E;&#x7684;&#x9501;</li>
+<li>&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x90FD;&#x81EA;&#x52A8;&#x542B;&#x6709;&#x5355;&#x4E00;&#x7684;&#x9501;&#xFF0C;JVM&#x8D1F;&#x8D23;&#x8DDF;&#x8E2A;&#x5BF9;&#x8C61;&#x88AB;&#x52A0;&#x9501;&#x7684;&#x6B21;&#x6570;</li>
+<li>&#x5728;&#x4EFB;&#x52A1;&#xFF08;&#x7EBF;&#x7A0B;&#xFF09;&#x7B2C;&#x4E00;&#x6B21;&#x7ED9;&#x5BF9;&#x8C61;&#x52A0;&#x9501;&#x7684;&#x65F6;&#x5019;&#xFF0C; &#x8BA1;&#x6570;&#x53D8;&#x4E3A;1</li>
+<li>&#x6BCF;&#x5F53;&#x8FD9;&#x4E2A;&#x76F8;&#x540C;&#x7684;&#x4EFB;&#x52A1;&#xFF08;&#x7EBF;&#x7A0B;&#xFF09;&#x5728;&#x6B64;&#x5BF9;&#x8C61;&#x4E0A;&#x83B7;&#x5F97;&#x9501;&#x65F6;&#xFF0C;&#x8BA1;&#x6570;&#x4F1A;&#x9012;&#x589E;</li>
+<li>&#x53EA;&#x6709;&#x9996;&#x5148;&#x83B7;&#x5F97;&#x9501;&#x7684;&#x4EFB;&#x52A1;&#xFF08;&#x7EBF;&#x7A0B;&#xFF09;&#x624D;&#x80FD;&#x7EE7;&#x7EED;&#x83B7;&#x53D6;&#x8BE5;&#x5BF9;&#x8C61;&#x4E0A;&#x7684;&#x591A;&#x4E2A;&#x9501;</li>
+<li>&#x6BCF;&#x5F53;&#x4EFB;&#x52A1;&#x79BB;&#x5F00;&#x65F6;&#xFF0C;&#x8BA1;&#x6570;&#x9012;&#x51CF;&#xFF0C;&#x5F53;&#x8BA1;&#x6570;&#x4E3A;0&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9501;&#x88AB;&#x5B8C;&#x5168;&#x91CA;&#x653E;</li>
+<li>&#x5728;HotSpot&#x4E2D;JVM&#x5B9E;&#x73B0;&#x4E2D;&#xFF0C;&#x9501;&#x6709;&#x4E2A;&#x4E13;&#x95E8;&#x7684;&#x540D;&#x5B57;&#xFF1A;&#x5BF9;&#x8C61;&#x76D1;&#x89C6;&#x5668;</li>
+<li>&#x66F4;&#x6DF1;&#x5165;&#x7684;&#x8BB2;&#xFF1A;</li>
+<li>&#x5F53;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x8BF7;&#x6C42;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;&#x76D1;&#x89C6;&#x5668;&#x65F6;&#xFF0C;&#x5BF9;&#x8C61;&#x76D1;&#x89C6;&#x5668;&#x4F1A;&#x8BBE;&#x7F6E;&#x51E0;&#x79CD;&#x72B6;&#x6001;&#x7528;&#x6765;&#x533A;&#x5206;&#x8BF7;&#x6C42;&#x7684;&#x7EBF;&#x7A0B;</li>
+<li>Contention List&#xFF1A;&#x6240;&#x6709;&#x8BF7;&#x6C42;&#x9501;&#x7684;&#x7EBF;&#x7A0B;&#x5C06;&#x88AB;&#x9996;&#x5148;&#x653E;&#x7F6E;&#x5230;&#x8BE5;&#x7ADE;&#x4E89;&#x961F;&#x5217;&#xFF0C;&#x662F;&#x4E2A;&#x865A;&#x62DF;&#x961F;&#x5217;&#xFF0C;&#x4E0D;&#x662F;&#x5B9E;&#x9645;&#x7684;Queue&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;</li>
+<li>Entry List&#xFF1A;EntryList&#x4E0E;ContentionList&#x903B;&#x8F91;&#x4E0A;&#x540C;&#x5C5E;&#x7B49;&#x5F85;&#x961F;&#x5217;&#xFF0C;ContentionList&#x4F1A;&#x88AB;&#x7EBF;&#x7A0B;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#xFF0C;&#x4E3A;&#x4E86;&#x964D;&#x4F4E;&#x5BF9; ContentionList&#x961F;&#x5C3E;&#x7684;&#x4E89;&#x7528;&#xFF0C;&#x800C;&#x5EFA;&#x7ACB;EntryList</li>
+<li>Contention List&#x4E2D;&#x90A3;&#x4E9B;&#x6709;&#x8D44;&#x683C;&#x6210;&#x4E3A;&#x5019;&#x9009;&#x4EBA;&#x7684;&#x7EBF;&#x7A0B;&#x88AB;&#x79FB;&#x5230;Entry List </li>
+<li>Wait Set&#xFF1A;&#x90A3;&#x4E9B;&#x8C03;&#x7528;wait&#x65B9;&#x6CD5;&#x88AB;&#x963B;&#x585E;&#x7684;&#x7EBF;&#x7A0B;&#x88AB;&#x653E;&#x7F6E;&#x5230;Wait Set</li>
+<li>OnDeck&#xFF1A;&#x4EFB;&#x4F55;&#x65F6;&#x523B;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x6B63;&#x5728;&#x7ADE;&#x4E89;&#x9501;&#xFF0C;&#x8BE5;&#x7EBF;&#x7A0B;&#x79F0;&#x4E3A;OnDeck</li>
+</ul>
+</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#xFF1A;
+wait,notify&#x548C;synchronized&#x7684;&#x7528;&#x6CD5;</p>
+<h2 id="4-&#x9501;">4 &#x9501;</h2>
+<pre><code>import java.util.concurrent.locks.*;
+
+public class MutexEvenGenerator extends IntGenerator {
+    private int currentEvenValue = 0;
+    private Lock lock = new ReentrantLock();
+
+    public int next() {
+        lock.lock();
+        try {
+            ++currentEvenValue;
+            Thread.yield(); // Cause failure faster
+            ++currentEvenValue;
+            return currentEvenValue;
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public static void main(String[] args) {
+        EvenChecker.test(new MutexEvenGenerator());
+    }
+}
+</code></pre><p>&#x6BD4;synchronized&#x591A;&#x4E86;&#x4EC0;&#x4E48;&#x7279;&#x6027;&#xFF1A;<br>&#x2014;&#x2014;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x83B7;&#x53D6;&#x9501;&#xFF0C;&#x4E0D;&#x5FC5;&#x975E;&#x5F97;&#x963B;&#x585E;&#x5728;&#x8FD9;<br>&#x2014;&#x2014;&#x63D0;&#x4F9B;&#x4E86;&#x6BD4;synchronized&#x66F4;&#x7EC6;&#x7C92;&#x5EA6;&#x7684;&#x63A7;&#x5236;<br>&#x2014;&#x2014;&#x5728;&#x5B9E;&#x73B0;&#x94FE;&#x8868;&#x904D;&#x5386;&#x8282;&#x70B9;&#x65F6;&#xFF0C;&#x6709;&#x4E2A;&#x8282;&#x70B9;&#x4F20;&#x9012;&#x7684;&#x52A0;&#x9501;&#x673A;&#x5236;&#xFF08;&#x9501;&#x8026;&#x5408;&#xFF09;&#xFF0C;&#x5728;&#x91CA;&#x653E;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x9501;&#x4E4B;&#x524D;&#xFF0C;&#x5FC5;&#x987B;&#x6355;&#x83B7;&#x4E0B;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x9501;<br>&#x2014;&#x2014;synchronized&#x5F15;&#x8D77;&#x7684;&#x963B;&#x585E;&#x65E0;&#x6CD5;&#x88AB;interrupt&#x65B9;&#x6CD5;&#x4E2D;&#x65AD;&#xFF0C;&#x4F46;ReentrantLock&#x63D0;&#x4F9B;&#x4E86;&#x53EF;&#x4EE5;&#x88AB;&#x4E2D;&#x65AD;&#x7684;&#x673A;&#x5236;<br>&#x2014;&#x2014;ReentrantLock.lockInterruptly()&#xFF1A;&#x5982;&#x679C;&#x5F97;&#x4E0D;&#x5230;&#x9501;&#xFF08;&#x88AB;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#x5360;&#x7528;&#xFF09;&#xFF0C;&#x5C31;&#x4F1A;&#x963B;&#x585E;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x963B;&#x585E;&#x53EF;&#x4EE5;&#x88AB;interrupt()  </p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>import java.util.concurrent.*;
+import java.util.concurrent.locks.*;
+
+public class AttemptLocking {
+    private ReentrantLock lock = new ReentrantLock();
+
+    public void untimed() {
+        boolean captured = lock.tryLock();
+        try {
+            System.out.println(&quot;tryLock(): &quot; + captured);
+        } finally {
+            if (captured)
+                lock.unlock();
+        }
+    }
+
+    public void timed() {
+        boolean captured = false;
+        try {
+            captured = lock.tryLock(2, TimeUnit.SECONDS);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            System.out.println(&quot;tryLock(2, TimeUnit.SECONDS): &quot; + captured);
+        } finally {
+            if (captured)
+                lock.unlock();
+        }
+    }
+
+    public static void main(String[] args) {
+        final AttemptLocking al = new AttemptLocking();
+        al.untimed(); // True -- lock is available
+        al.timed(); // True -- lock is available
+        // Now create a separate task to grab the lock:
+        new Thread() {
+            {
+                setDaemon(true);
+            }
+
+            public void run() {
+                al.lock.lock();
+                System.out.println(&quot;acquired&quot;);
+            }
+        }.start();
+        Thread.yield(); // Give the 2nd task a chance
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        al.untimed(); // False -- lock grabbed by task
+        al.timed(); // False -- lock grabbed by task
+    }
+} /*
+ * Output: tryLock(): true tryLock(2, TimeUnit.SECONDS): true acquired
+ * tryLock(): false tryLock(2, TimeUnit.SECONDS): false
+ */// :~
+</code></pre><pre><code>boolean captured = lock.tryLock();//&#x4E0D;&#x4F1A;&#x963B;&#x585E;&#xFF0C;&#x4E0D;&#x7BA1;&#x6709;&#x6CA1;&#x6709;&#x5F97;&#x5230;&#x9501;&#xFF0C;&#x90FD;&#x5F80;&#x4E0B;&#x6267;&#x884C;
+captured = lock.tryLock(2, TimeUnit.SECONDS); //&#x4F1A;&#x963B;&#x585E;2&#x79D2;&#xFF0C;&#x7136;&#x540E;&#x4E0D;&#x7BA1;&#x6709;&#x6CA1;&#x6709;&#x5F97;&#x5230;&#x9501;&#xFF0C;&#x90FD;&#x5F80;&#x4E0B;&#x6267;&#x884C;
+</code></pre><h2 id="&#x5176;&#x4ED6;&#x9501;">&#x5176;&#x4ED6;&#x9501;</h2>
+<p>&#x5176;&#x4ED6;&#x9AD8;&#x7EA7;&#x9501;&#xFF0C;&#x4E0D;&#x597D;&#x610F;&#x601D;&#xFF0C;&#x6211;&#x8FD8;&#x6CA1;&#x7814;&#x7A76;&#x8FC7;</p>
+<h2 id="4-&#x4FE1;&#x53F7;&#xFF08;semaphore&#xFF09;">4 &#x4FE1;&#x53F7;&#xFF08;Semaphore&#xFF09;</h2>
+<p>&#x8FD9;&#x4E2A;&#xFF0C;&#x4E5F;&#x4E0D;&#x597D;&#x610F;&#x601D;&#xFF0C;&#x6211;&#x4E5F;&#x6CA1;&#x7814;&#x7A76;&#x8FC7;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="volatile.html" class="navigation navigation-prev " aria-label="Previous page: 活性失败-volatile">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="thread-local.html" class="navigation navigation-next " aria-label="Next page: 线程局部存储">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"安全性失败-锁","level":"1.5.5","depth":2,"next":{"title":"线程局部存储","level":"1.5.6","depth":2,"path":"concurrent/thread-local.md","ref":"concurrent/thread-local.md","articles":[]},"previous":{"title":"活性失败-volatile","level":"1.5.4","depth":2,"path":"concurrent/volatile.md","ref":"concurrent/volatile.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"concurrent/lock.md","mtime":"2017-04-09T06:00:37.978Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-09T06:05:34.294Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
