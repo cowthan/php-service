@@ -1,3 +1,4 @@
 Send POST https://api.jpush.cn/v3/push, body:{"platform":"all","audience":{"registration_id":["22"]},"notification":{"alert":"content"},"options":{"sendno":60588,"apns_production":false}}, times:1
 Send POST https://api.jpush.cn/v3/push, body:{"platform":"all","audience":{"registration_id":["22"]},"notification":{"alert":"4"},"options":{"sendno":81211,"apns_production":false}}, times:1
 Send POST https://api.jpush.cn/v3/push, body:{"platform":"all","audience":{"registration_id":["22"]},"notification":{"alert":"4"},"options":{"sendno":70043,"apns_production":false}}, times:1
+Send POST https://api.jpush.cn/v3/push, body:{"platform":"all","audience":{"registration_id":["sdd"]},"notification":{"alert":"sd"},"options":{"sendno":66633,"apns_production":false}}, times:1
