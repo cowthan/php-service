@@ -12,8 +12,9 @@ use xmpush\TargetedMessage;
 
 include_once(dirname(__FILE__) . '/autoload.php');
 
-$secret = 'your app secret';
-$package = 'your app packagename';
+$secret = 'WANJj+CY3iaqE5QT471M9A==';
+$package = 'com.iwomedia.taitai';
+///$resid = "KIDChgku66P+RPcaJ99YCZawOR2XS/bWqa5T26Bidh0=";
 
 // 常量设置必须在new Sender()方法之前调用
 Constants::setPackage($package);
@@ -36,8 +37,9 @@ $message1->extra(Builder::notifyForeground, 1); // 应用在前台是否展示�
 $message1->notifyId(2); // 通知类型。最多支持0-4 5个取值范围，同样的类型的通知会互相覆盖，不同类型可以在通知栏并存
 $message1->build();
 $targetMessage = new TargetedMessage();
-$targetMessage->setTarget('alias1', TargetedMessage::TARGET_TYPE_ALIAS); // 设置发送目标。可通过regID,alias和topic三种方式发送
+$targetMessage->setTarget("KIDChgku66P+RPcaJ99YCZawOR2XS/bWqa5T26Bidh0=", TargetedMessage::TARGET_TYPE_REGID); // 设置发送目标。可通过regID,alias和topic三种方式发送
 $targetMessage->setMessage($message1);
+$sender->send($message1, "KIDChgku66P+RPcaJ99YCZawOR2XS/bWqa5T26Bidh0=");
 
 // message2 演示预定义点击行为中的点击直接打开app行为
 $message2 = new Builder();
@@ -56,7 +58,7 @@ $targetMessage2->setMessage($message2);
 $targetMessageList = array($targetMessage, $targetMessage2);
 //print_r($sender->multiSend($targetMessageList,TargetedMessage::TARGET_TYPE_ALIAS)->getRaw());
 
-print_r($sender->sendToAliases($message1, $aliasList)->getRaw());
+//print_r($sender->sendToAliases($message1, $aliasList)->getRaw());
 //$stats = new Stats();
 //$startDate = '20140301';
 //$endDate = '20140312';
