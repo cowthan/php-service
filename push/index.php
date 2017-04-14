@@ -2,10 +2,11 @@
 
 /*
 太太学院
-AppKey cbe60baf9ee3f51ba28fc534
-Master Secret  47271201c2f6f51713fc3357
+AppKey 37250f16d832c50f0361d1be
+Master Secret  31e114ab551cee492f6abf4b
 */
-
+ini_set("display_errors", "On");
+error_reporting(E_ALL | E_STRICT);
 require_once("./vendor/autoload.php");
  
 function pushByJpush($app_key, $master_secret, $regid, $content){
@@ -92,31 +93,32 @@ function pushByJpush($app_key, $master_secret, $regid, $content){
 <p id="logo"><a href="" tabindex="-1">推送测试</a></p>
 <h1 class="screen-reader-text">那啥</h1>
 <form method="post" action="index.php">
-	<p><?php echo $res; ?></p>
+	<p style="border: 1px solid red;padding:3px;"><?php echo $res; ?></p>
+	<p style="border: 1px solid green;padding:3px;margin-top:5px"> 极光文档：http://docs.jiguang.cn/jpush/client/Android/android_api/</p>
 	<table class="form-table">
 		<tr>
 			<th scope="row"><label for="key">key</label></th>
-			<td><input name="key" id="key" type="text" size="25" value="" /></td>
+			<td><input name="key" id="key" type="text" size="25" value="37250f16d832c50f0361d1be" /></td>
 			<td>后台key</td>
 		</tr>
 		<tr>
 			<th scope="row"><label for="secret">secret</label></th>
-			<td><input name="secret" id="secret" type="text" size="25" value="" /></td>
+			<td><input name="secret" id="secret" type="text" size="25" value="31e114ab551cee492f6abf4b" /></td>
 			<td>后台secret</td>
 		</tr>
 		<tr>
 			<th scope="row"><label for="regid">reg id</label></th>
-			<td><input name="regid" id="regid" type="text" size="25" value="" autocomplete="off" /></td>
+			<td><input name="regid" id="regid" type="text" size="25" value="170976fa8a8c872bdb9" autocomplete="off" /></td>
 			<td>极光的Regitration Id</td>
 		</tr>
 		<tr>
 			<th scope="row"><label for="content">发送内容</label></th>
-			<td><input name="content" id="content" type="text" size="25" value="" /></td>
+			<td><input name="content" id="content" type="text" size="25" value="测试推送，1122334455-aabbccdd--嘿嘿嘿嘿嘿嘿嘿" /></td>
 			<td></td>
 		</tr>
 		<tr>
 			<th scope="row"><label for="platform">平台</label></th>
-			<td><input name="platform" id="platform" type="text" value="" size="25" /></td>
+			<td><input name="platform" id="platform" type="text" value="jpush" size="25" /></td>
 			<td>极光jpush, 小米xm</td>
 		</tr>
 	</table>
