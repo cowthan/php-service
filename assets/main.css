@@ -1,0 +1,589 @@
+/*
+Theme Name: renren
+Theme URI: http://www.renren.io/
+Version: 1.0
+Author: 人人编程
+Author URI: http://www.renren.io/
+Description: 人人编程 -- 编程其实很简单
+*/
+*{margin:0;padding:0;}
+.header,.footer,.main,.main2{
+    width: 1190px;
+    margin:0 auto;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+.clear{
+	clear:both;
+}
+.header{
+	height:90px;
+}
+.footer{
+	border-top:1px solid #e1e1e1;
+	padding:8px 0px 6px 0px;
+	margin-top:30px;
+	color:#999;
+	font-size: 13px;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+.footer span{
+	float:right;
+}
+.footer a{
+	color:#999;
+}
+.footer a:hover {
+    color: #4CAF50;
+}
+.logoss{
+    font-size: 46px;
+    display: block; 
+    float:left;
+    padding-top:24px;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+.logo {
+    float: left;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    height: 90px;
+    width:259px;
+    padding: 0;
+    background: url(../img/logo.png) no-repeat 0 0;
+    overflow: hidden;
+}
+
+.logo a{
+    display: block;
+    height: 90px;
+    line-height: 10em;
+    cursor: pointer;
+}
+
+.logo_desc{
+	display: inline-block;
+    zoom: 1;
+    color: #666;
+    vertical-align: bottom;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: normal;
+    padding:44px 20px 0 20px;
+    float: left;
+}
+.nav{
+	background-color: #5f5f5f;
+	min-width:1190px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+.nav ul{
+	width: 1190px;
+	margin:0 auto;
+	height:40px;
+	line-height:40px;
+}
+.nav ul li{
+	float:left;
+	height:40px;
+}
+.nav ul li a{
+    color: #f1f1f1;
+    font-size: 16px;
+    padding: 0px 15px 0px 15px;
+    height:40px;
+    display:block;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.nav ul a.active{
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+.nav ul li a:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+.nav ul a.active:hover {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+.main{
+	margin-top:10px;
+}
+.main2{
+	margin-top:10px;
+	background: transparent url(../img/wrapper.png) top left repeat-y;
+}
+.type_list{
+	margin:30px 0;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+.type_list h2{
+	border-bottom:1px solid #e1e1e1;
+	color:#555;
+	padding-bottom:5px;
+	font-size:20px;
+	font-family: "Segoe UI",Arial,sans-serif;
+}
+.type_list li{
+	float:left;
+	
+}
+.type_list a{
+	background-color: #f1f1f1;
+	display:block;
+	text-align: left;
+	width: 258px;
+    margin: 12px 10px 0px 0px;
+    height: 80px;
+    border-radius: 5px;
+    padding: 16px 16px;
+}
+.type_list a:hover {
+    background-color: #f1f1f1;
+}
+.type_list h3{
+    color: #4CAF50;
+    font-size: 16px;
+	position: relative;
+	left:-8px;
+}
+.type_list strong{
+	font-size:12px;
+	color: #666;
+	display:block;
+	line-height:16px;
+	margin-top:8px;
+}
+
+
+
+
+.menu{
+	width:200px;
+	float:left;
+	padding-bottom: 5px;
+	background-color: #f1f1f1!important;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+.menu h2 {
+    font-size: 18px;
+    padding-left: 10px;
+    color:#333;
+    padding-top: 10px;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+.menu ul{
+	margin-top:2px;
+}
+.menu a{
+	padding-left: 10px;
+	display:block;
+    font-size: 13px;
+    color:#000;
+    overflow: hidden;
+    height:24px;
+    line-height:24px;
+}
+.menu a:hover {
+    background-color: #dddddd;
+    color: #000000;
+}
+.menu a.active{
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+.content{
+	width:780px;
+	float:left;
+	background-color: #fff;
+	min-height:500px;
+	margin:21px 15px;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+.content .article{
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+	font-size:13px;
+	line-height:24px;
+}
+.content .article a{
+	color:#4CAF50;
+}
+.content .article a:hover{
+	text-decoration:underline;
+}
+.right{
+	width:180px;
+	float:right;
+}
+
+.spacing{
+	padding-top:1px;
+}
+
+.nav-tree{
+	font-size:13px;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;
+}
+.nav-tree label{
+	padding:6px 8px;
+	display:block;
+	font-size:16px;
+	background:#5f5f5f;
+	border-bottom:none;
+	color:#f1f1f1;
+}
+.nav-tree ul li{
+	border-bottom:1px solid #fff;
+}
+.nav-tree ul li ul{
+	position:absolute;
+	background:#f6f4f0;
+	right:100%;
+	top:0;
+	display:none;
+	float:left;
+	text-align:left;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap
+}
+.nav-tree ul li.selected{
+	z-index:10;
+	position:relative;
+}
+.nav-tree a{
+	color:#333;
+	padding:5px 10px 5px 10px;
+	display:block;
+	height:26px;
+	line-height:26px;
+	vertical-align:middle;
+}
+.nav-tree a:hover{
+	color:#333;
+	background-color: #dddddd;
+}
+
+.nav_ad{
+	padding:10px;
+	clear:both;
+}
+
+.content h1{
+	color:#000;
+	font-weight:normal;
+	font-size:26px;
+	border-bottom:1px solid #ccc;
+	padding-bottom:3px;
+}
+.content h2{
+	color:#000;
+	font-size:14px;
+}
+
+.content .chapter, .content .chapter2{
+	margin:20px 0px 20px 0px;
+	height:50px;
+}
+.content .chapter a, .content .chapter2 a{
+	display:block;
+	padding:6px 30px;
+	margin-right:20px;
+	float:left;
+	background-color: #f1f1f1;
+	border:1px solid #ddd;
+	color:#444;
+	font-size:13px;
+}
+.content .chapter a:hover, .content .chapter2 a:hover{
+	border:1px solid #bbb;
+}
+.content .chapter{
+	border-bottom:2px solid #ccc;
+}
+.content .chapter2{
+	border-top:2px solid #ccc;
+	padding-top:20px;
+	border-bottom:1px solid #ccc;
+}
+
+
+pre {
+    margin: 0px auto 10px auto;
+    font: 12px/20px 'courier new';
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+    border: 1px solid #ddd;
+    border-left: 6px solid #ddd;
+    background: #fbfbfb url(../img/code_bg.gif) top;
+    padding: 10px 15px;
+}
+
+
+
+.article hr{
+	border: 1px solid #ddd;
+	margin:15px 0;
+}
+
+.article p{
+	color:#444;
+	margin: 3px 0;
+}
+
+
+
+.article b{
+	color:#000;
+}
+
+.article ul li {
+    padding: 0 0 0 1.5em;
+    margin: 0 0 0em 1em;
+    background-image: url(../img/bullet.png);
+    background-repeat: no-repeat;
+    background-position: left .5em;
+    color:#555;
+}
+
+
+
+
+table.browserref {
+	border-collapse: collapse;
+	width: 100%
+}
+
+table.browserref tr:nth-child(even) {
+	background-color: #f6f4f0
+}
+
+table.browserref tr:nth-child(odd) {
+	background-color: #fff
+}
+
+table.browserref tr.fixzebra {
+	background-color: #f6f4f0
+}
+
+table.browserref th {
+	height: 32px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: 1px solid #d4d4d4;
+	background-color: #fff;
+	font-weight: normal;
+	color: #555;
+	padding: 5px;
+	vertical-align: middle
+}
+
+table.browserref td {
+	border: 1px solid #d4d4d4;
+	text-align: center;
+	padding: 5px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	vertical-align: top
+}
+
+table.lamp {
+	width: 100%;
+	padding: 0;
+	border: 1px solid #d4d4d4
+}
+
+table.lamp th {
+	color: #000;
+	background-color: #fff;
+	padding: 10px;
+	padding-right: 5px
+}
+
+table.lamp td {
+	padding: 4px;
+	padding-left: 0;
+	padding-right: 10px;
+	background-color: #fff
+}
+
+table.tecspec td, table.tecspec th {
+	border: 1px solid #d4d4d4;
+	padding: 5px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	vertical-align: top;
+	text-align: left
+}
+
+table.reference, table.tecspec {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 4px;
+	margin-top: 4px
+}
+
+table.reference tr:nth-child(odd) {
+	background-color: #f6f4f0
+}
+
+table.reference tr:nth-child(even) {
+	background-color: #fff
+}
+
+table.reference tr.fixzebra {
+	background-color: #f6f4f0
+}
+
+table.reference th {
+	color: #fff;
+	background-color: #555;
+	border: 1px solid #555;
+	font-size: 12px;
+	padding: 3px;
+	vertical-align: top;
+	text-align: left
+}
+
+table.reference th a:link, table.reference th a:visited {
+	color: #fff
+}
+
+table.reference th a:active, table.reference th a:hover {
+	color: #ee872a
+}
+
+table.reference td {
+	border: 1px solid #d4d4d4;
+	padding: 5px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	vertical-align: top
+}
+
+table.reference td.example_code {
+	vertical-align: bottom
+}
+
+table.summary {
+	border: 1px solid #d4d4d4;
+	padding: 5px;
+	font-size: 100%;
+	color: #555;
+	background-color: #fafad2
+}
+
+
+div.example {
+	width: 98%;
+	color: #000;
+	background-color: #f6f4f0;
+	background-color: #d0e69c;
+	background-color: #dcecb5;
+	background-color: #e5eecc;
+	margin: 0 0 5px 0;
+	padding: 5px;
+	border: 1px solid #d4d4d4;
+	background-image: -webkit-linear-gradient(#fff, #e5eecc 100px);
+	background-image: linear-gradient(#fff, #ddd 100px)
+}
+
+div.example_code {
+	width: 98%;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #d4d4d4;
+	font-size: 110%;
+	font-family: "courier new";
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+div.example_result {
+	background-color: #fff;
+	padding: 4px;
+	border: 1px solid #d4d4d4;
+	width: 98%
+}
+
+span.new {
+    float: right;
+    color: #fff;
+    background-color: #90b575;
+    font-weight: 700;
+    padding-left: 1px;
+    padding-right: 1px;
+    border: 1px solid #fff;
+    outline: 1px solid #90b575;
+    line-height: 16px;
+}
+
+
+table.browsersupport .bsIE {
+	background-image: url(/images/compatible_ie.gif)
+}
+
+table.browsersupport .bsFirefox {
+	background-image: url(/images/compatible_firefox.gif)
+}
+
+table.browsersupport .bsChrome {
+	background-image: url(/images/compatible_chrome.gif)
+}
+
+table.browsersupport .bsSafari {
+	background-image: url(/images/compatible_safari.gif)
+}
+
+table.browsersupport .bsOpera {
+	background-image: url(/images/compatible_opera.gif)
+}
+
+table.browsersupport .bsNoIE {
+	background-image: url(/images/incompatible_ie.gif)
+}
+
+table.browsersupport .bsNoFirefox {
+	background-image: url(/images/incompatible_firefox.gif)
+}
+
+table.browsersupport .bsNoChrome {
+	background-image: url(/images/incompatible_chrome.gif)
+}
+
+table.browsersupport .bsNoSafari {
+	background-image: url(/images/incompatible_safari.gif)
+}
+
+table.browsersupport .bsNoOpera {
+	background-image: url(/images/incompatible_opera.gif)
+}
+
+table.browsersupport .bsPreIE {
+	background-image: url(/images/precompatible_ie.gif)
+}
+
+table.browsersupport .bsPreFirefox {
+	background-image: url(/images/precompatible_firefox.gif)
+}
+
+table.browsersupport .bsPreChrome {
+	background-image: url(/images/precompatible_chrome.gif)
+}
+
+table.browsersupport .bsPreSafari {
+	background-image: url(/images/precompatible_safari.gif)
+}
+
+table.browsersupport .bsPreOpera {
+	background-image: url(/images/precompatible_opera.gif)
+}
