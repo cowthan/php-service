@@ -13,7 +13,8 @@
   http://chevereto.com/license
 
   --------------------------------------------------------------------- */
-
+ini_set("display_errors", "On");
+error_reporting(E_ALL | E_STRICT);
 define('access', 'index');
 
 /*** Load the G app ***/
