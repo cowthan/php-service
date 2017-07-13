@@ -28,11 +28,11 @@ class Admin extends CI_Controller {
 		if(!empty($_POST)){
 			$account = $this->input->post('account');
 			$password = $this->input->post('password');
-			$captcha = $this->input->post('captcha');
-			if(empty($account) || empty($password) || empty($captcha)){
+			$captcha = ""; //$this->input->post('captcha');
+			if(empty($account) || empty($password)){
 				$data['errmsg'] = '表单不能为空';
 			}else{
-				$cap_word = $this->session->cap_word;
+				$cap_word = ""; //$this->session->cap_word;
 				if($captcha!=$cap_word){
 					$data['errmsg'] = '验证码错误';
 				}else{
@@ -57,7 +57,7 @@ class Admin extends CI_Controller {
 		$cfg = config_captcha($img_path, $img_url);
 		$cap = create_captcha($cfg);
 		$data['cap_img_html'] = $cap['image'];
-		$this->session->cap_word = $cap['word'];
+		$this->session->cap_word = ''; //$cap['word'];
 		/* 验证码开始 */
 
 		$data['base_url'] = $this->config->item('base_url');
