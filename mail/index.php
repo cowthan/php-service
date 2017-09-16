@@ -168,7 +168,7 @@ function sendMail($to,$title,$content){
 $to = $_REQUEST ['to'];
 $subject = $_REQUEST ['subject'];
 $content = $_REQUEST ['content'];
-$flag = sendMail($to, $subject, $content);
+// $flag = sendMail($to, $subject, $content);
 if($flag){
     echo "ok";
 }else{
