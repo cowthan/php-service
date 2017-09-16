@@ -75,11 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'=> '',
-	'hostname' => 'localhost',
+	'hostname' => 'rm-bp16ad3ce8188drq6o.mysql.rds.aliyuncs.com',
 	'port'=>3306,
 	'username' => 'root',
-	'password' => '1234321',
-	'database' => 'app_versions',
+	'password' => 'cowthan_777',
+	'database' => 'apps',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

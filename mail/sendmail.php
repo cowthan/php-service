@@ -90,7 +90,7 @@ $to = $_REQUEST ['to'];
 $from = $_REQUEST ['from'];
 $subject = $_REQUEST ['subject'];
 $content = $_REQUEST ['content'];
-$flag = sendMail($username, $pwd, $showname, $from, $to, $subject, $content);
+// $flag = sendMail($username, $pwd, $showname, $from, $to, $subject, $content);
 if($flag){
     echo "ok";
 }else{
