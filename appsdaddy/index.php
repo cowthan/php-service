@@ -3,17 +3,32 @@ require_once("./utils/Utils.php");
 require_once("./model/Models.php");
 use Illuminate\Database\Capsule\Manager as Capsule;
 
+require_once("./app/AdminController.php");
+require_once("./app/HomeController.php");
+
 $route = [
-    'get:admin/login' => 'getAdminLogin',    //http://cowthan.com:8089/service/appsdaddy/index.php?r=admin/login.json
-    'post:admin/login' => 'postAdminLogin',
-    'delete:admin/delete' => 'deleteAdmin',
-    'put:admin/updatePassword' => 'updateAdminPassword',
-    'post:admin/regist' => 'postAdminRegist', //http://cowthan.com:8089/service/appsdaddy/index.php?r=admin/regist.json
+    'get:admin/login' => function(MyRequest $req){
+        return AdminController::getAdminLogin($req);
+    }, //http://cowthan.com:8089/service/appsdaddy/index.php?r=admin/login.json
+    'post:admin/login' => function(MyRequest $req){
+        return AdminController::postAdminLogin($req);
+    },
+    'delete:admin/delete' => function(MyRequest $req){
+        return AdminController::deleteAdmin($req);
+    },
+    'put:admin/updatePassword' => function(MyRequest $req){
+        return AdminController::updateAdminPassword($req);
+    },
+    'post:admin/regist' => function(MyRequest $req){
+        return AdminController::postAdminRegist($req);
+    }, //http://cowthan.com:8089/service/appsdaddy/index.php?r=admin/regist.json
 	
 	'post:user/login' => 'postUserLogin',  ///username password way:local和oauth, oauthId, oauthName, oauthToken
 	'post:user/regist' => 'postUserLocalRegist',
 	
-	'get:admin/home' => 'getAdminHome',
+	'get:admin/home' => function(MyRequest $req){
+        return HomeController::getAdminHome($req);
+    },
 	
 	'get:timeline/list' => 'getTimelineList',
 ];
@@ -27,7 +42,7 @@ function dispatch(){
     $method = strtolower($_SERVER['REQUEST_METHOD']);  //get, post, put, delete
     //echo $_SERVER['REQUEST_URI'];  ////service/appsdaddy/index.php?r=login
     if(isset($_GET['r'])){
-        $r = $_GET['r'];
+        $r = $_GET['r'];  //r=user/login.html
         $rs = explode(".", $r);
         $action = $method . ":" . $rs[0];
         if(isset($route[$action])){
@@ -69,7 +84,7 @@ function dispatch(){
 }
 
 
-
+/** 参数传入"json"，根据请求的url返回是否请求的json数据，r=admin/login.json会返回true */
 function isAcccept($f){
     $r = $_GET['r'];
     $format = 'html';
@@ -96,162 +111,19 @@ DB::init();
 dispatch();
 
 ///-----------------------------------------------------------------------------------------
-///validate相关
-///-----------------------------------------------------------------------------------------
-function validateRequire(MyRequest $request, $name, $notify){
-    if(!$request->has($name) || $request->input($name) == ''){
-        return $notify;
-    }else{
-        return true;
-    }
-}
-
-function validateLength(MyRequest $request, $name, $min_len, $max_len, $notify){
-    if(strlen($request->input($name)) < $min_len || strlen($request->input($name)) > $max_len){
-        return $notify;
-    }else{
-        return true;
-    }
-}
-
-function validateLengthMin(MyRequest $request, $name, $min_len, $notify){
-    if(strlen($request->input($name)) < $min_len ){
-        return $notify;
-    }else{
-        return true;
-    }
-}
-
-function validateLengthMax(MyRequest $request, $name, $max_len, $notify){
-    if(strlen($request->input($name)) > $max_len){
-        return $notify;
-    }else{
-        return true;
-    }
-}
-
-function validateNumeric(MyRequest $request, $name, $notify){
-    if(!is_numeric($request->input($name))){
-        return $notify;
-    }else{
-        return true;
-    }
-}
-
-function validateNumericRange(MyRequest $request, $name, $min, $max, $notify){
-    if(!is_numeric($request->input($name)) || $request->input($name) < $min || $request->input($name) > $max){
-        return $notify;
-    }else{
-        return true;
-    }
-}
-
-
-
-
-function validatePattern(MyRequest $request, $name, $pattern, $notify){
-    if(!preg_match($pattern, $request->input($name))){
-        return $notify;
-    }else{
-        return true;
-    }
-}
-///-----------------------------------------------------------------------------------------
 ///下面是所有Controller---admin
 ///-----------------------------------------------------------------------------------------
-function getAdminLogin($request){
-    return View::views('admin.login', []);
-}
-function postAdminLogin($request){
-    $notify = '必须填入用户名'; if(validateRequire($request, 'username', $notify) !== true) return jsonFail(400, $notify);
-    $notify = '必须填入密码'; if(validateRequire($request, 'password', $notify) !== true) return jsonFail(400, $notify);
-
-    $admin = Admin::query()
-            ->where("username", "=", $request->input("username"))
-            ->where("password", "=", $request->input('password'))
-            ->first();
-    if($admin != null){
-        return jsonOk(array(
-            'sid' => $admin->sid,
-        ));
-    }else{
-        return jsonFail(400, "用户名或密码错误");
-    }
-}
-function deleteAdmin($request){
-    $notify = '必须填入sid'; if(validateRequire($request, 'sid', $notify) !== true) return jsonFail(400, $notify);
-
-    $admin = Admin::query()->where("sid", "=", $request->input('sid'))->first();
-    if($admin != null){
-        $admin->delete();
-        return jsonOk(array());
-    }else{
-        return jsonFail(400, "不存在此用户--" . $request->input('sid'));
-    }
-}
-
-function updateAdminPassword($request){
-    $notify = '必须填入sid'; if(validateRequire($request, 'sid', $notify) !== true) return jsonFail(400, $notify);
-    $notify = '必须填入原密码'; if(validateRequire($request, 'oldPassword', $notify) !== true) return jsonFail(400, $notify);
-    $notify = '必须填入新密码'; if(validateRequire($request, 'newPassword', $notify) !== true) return jsonFail(400, $notify);
-    $notify = '必须填入新密码2'; if(validateRequire($request, 'newPassword2', $notify) !== true) return jsonFail(400, $notify);
-
-    if($request->input('newPassword') != $request->input('newPassword2')) return jsonFail(400, "两次密码不一致");
-    if($request->input('oldPassword') == $request->input('newPassword')) return jsonFail(400, "新旧密码怎么还一样呢");
-
-    $notify = '密码必须大于6位'; if(validateLengthMin($request, 'newPassword', 6, $notify) !== true) return jsonFail(400, $notify);
-
-    $admin = Admin::query()->where("sid", "=", $request->input('sid'))->first();
-    if($admin != null){
-        $admin->password = $request->input('newPassword');
-        $admin->updated();
-        return jsonOk(array());
-    }else{
-        return jsonFail(400, "不存在此用户--" . $request->input('sid'));
-    }
-}
-
-function postAdminRegist(MyRequest $request){
-    $notify = '必须填入用户名'; if(validateRequire($request, 'username', $notify) !== true) return jsonFail(400, $notify);
-    $notify = '必须填入密码'; if(validateRequire($request, 'password', $notify) !== true) return jsonFail(400, $notify);
-    $notify = '必须填入姓名'; if(validateRequire($request, 'realname', $notify) !== true) return jsonFail(400, $notify);
-    $notify = '必须填入公司'; if(validateRequire($request, 'company', $notify) !== true) return jsonFail(400, $notify);
-
-    $notify = '用户名必须是手机号'; if(validatePattern($request, 'username', PATTERN::PATTERN_PHONE, $notify) !== true) return jsonFail(400, $notify);
-    $notify = '密码必须大于6位'; if(validateLengthMin($request, 'password', 6, $notify) !== true) return jsonFail(400, $notify);
-    $notify = '姓名必须大于是1到32位长度'; if(validateLength($request, 'password', 1, 32, $notify) !== true) return jsonFail(400, $notify);
-
-    //username是否重复
-    $admin = Admin::query()->where("username", "=", $request->input("username"))->get();
-    if($admin != null && count($admin) > 0){
-        return jsonFail(400, "用户已经存在");
-    }
-
-    $admin = new Admin();
-    $admin->username = $request->input('username');
-    $admin->password = $request->input('password');
-    $admin->sid = md5(uniqid());
-    $admin->company = $request->input('company');
-    $admin->realname = $request->input('realname');
-    $admin->save();
-    return jsonOk([
-        "id" => $admin->id,
-        "sid" => $admin->sid,
-    ]);
-}
-
-
 ///-----------------------------------------------------------------------------------------
 ///下面是所有Controller---user
 ///-----------------------------------------------------------------------------------------
 
 function postUserLogin($request){
-    $notify = '必须指明登录方式'; if(validateRequire($request, 'way', $notify) !== true) return jsonFail(400, $notify); //way:local, oauth
+    $notify = '必须指明登录方式'; if(Utils::validateRequire($request, 'way', $notify) !== true) return jsonFail(400, $notify); //way:local, oauth
 
     if($request->input('way') === 'local'){
 
-        $notify = '必须填入用户名'; if(validateRequire($request, 'username', $notify) !== true) return jsonFail(400, $notify);
-        $notify = '必须填入密码'; if(validateRequire($request, 'password', $notify) !== true) return jsonFail(400, $notify);
+        $notify = '必须填入用户名'; if(Utils::validateRequire($request, 'username', $notify) !== true) return jsonFail(400, $notify);
+        $notify = '必须填入密码'; if(Utils::validateRequire($request, 'password', $notify) !== true) return jsonFail(400, $notify);
 
         $auth = LocalAuth::query()
             ->where("username", "=", $request->input("username"))
@@ -279,7 +151,7 @@ function postUserLogin($request){
 
 }
 function deleteUser($request){
-    $notify = '必须填入sid'; if(validateRequire($request, 'sid', $notify) !== true) return jsonFail(400, $notify);
+    $notify = '必须填入sid'; if(Utils::validateRequire($request, 'sid', $notify) !== true) return jsonFail(400, $notify);
 
     $profile = Profile::query()->where("sid", "=", $request->input('sid'))->first();
     if($profile != null){
@@ -293,13 +165,13 @@ function deleteUser($request){
     }
 }
 function postUserLocalRegist(MyRequest $request){
-    $notify = '必须填入用户名'; if(validateRequire($request, 'username', $notify) !== true) return jsonFail(400, $notify);
-    $notify = '必须填入密码'; if(validateRequire($request, 'password', $notify) !== true) return jsonFail(400, $notify);
-    $notify = '必须填入昵称'; if(validateRequire($request, 'nickname', $notify) !== true) return jsonFail(400, $notify);
+    $notify = '必须填入用户名'; if(Utils::validateRequire($request, 'username', $notify) !== true) return jsonFail(400, $notify);
+    $notify = '必须填入密码'; if(Utils::validateRequire($request, 'password', $notify) !== true) return jsonFail(400, $notify);
+    $notify = '必须填入昵称'; if(Utils::validateRequire($request, 'nickname', $notify) !== true) return jsonFail(400, $notify);
 
-    $notify = '用户名必须是手机号'; if(validatePattern($request, 'username', PATTERN::PATTERN_PHONE, $notify) !== true) return jsonFail(400, $notify);
-    $notify = '密码必须大于6位'; if(validateLengthMin($request, 'password', 6, $notify) !== true) return jsonFail(400, $notify);
-    $notify = '昵称必须大于是1到32位长度'; if(validateLength($request, 'nickname', 1, 32, $notify) !== true) return jsonFail(400, $notify);
+    $notify = '用户名必须是手机号'; if(Utils::validatePattern($request, 'username', PATTERN::PATTERN_PHONE, $notify) !== true) return jsonFail(400, $notify);
+    $notify = '密码必须大于6位'; if(Utils::validateLengthMin($request, 'password', 6, $notify) !== true) return jsonFail(400, $notify);
+    $notify = '昵称必须大于是1到32位长度'; if(Utils::validateLength($request, 'nickname', 1, 32, $notify) !== true) return jsonFail(400, $notify);
 
     //username是否重复
     $admin = LocalAuth::query()->where("username", "=", $request->input("username"))->get();
@@ -331,34 +203,6 @@ function userOAuthCreate($request){
 ///-----------------------------------------------------------------------------------------
 ///下面是所有Controller---后台主页
 ///-----------------------------------------------------------------------------------------
-function checkLogin(MyRequest $request){
-    if($request->has("sid")){
-        $admin = Admin::query()->where("sid", "=", $request->input("sid"))->first();
-        if($admin == null){
-            return jsonFail(402, "sid无效");
-        }else{
-            return true;
-        }
-    }else{
-        return jsonFail(401, "需要登录");
-    }
-}
-
-function getAdminHome(MyRequest $request){
-
-    $c = checkLogin($request);
-    if($c !== true){
-        return $c;
-    }
-
-    return View::views("admin.index", array(
-        'userCount' => 100,
-        'adminCount' => 100,
-        'taskCount' => 100,
-        'todayTaskCount' => 100,
-        'sid' => $request->input("sid"),
-    ));
-}
 
 
 ///-----------------------------------------------------------------------------------------

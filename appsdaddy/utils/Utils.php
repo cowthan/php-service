@@ -95,3 +95,66 @@ class Pattern{
     const PATTERN_PHONE = '/^1[34578]{1}\d{9}$/';
 
 }
+
+class Utils{
+
+///-----------------------------------------------------------------------------------------
+///validate相关
+///-----------------------------------------------------------------------------------------
+    static function validateRequire(MyRequest $request, $name, $notify){
+        if(!$request->has($name) || $request->input($name) == ''){
+            return $notify;
+        }else{
+            return true;
+        }
+    }
+
+    static function validateLength(MyRequest $request, $name, $min_len, $max_len, $notify){
+        if(strlen($request->input($name)) < $min_len || strlen($request->input($name)) > $max_len){
+            return $notify;
+        }else{
+            return true;
+        }
+    }
+
+    static function validateLengthMin(MyRequest $request, $name, $min_len, $notify){
+        if(strlen($request->input($name)) < $min_len ){
+            return $notify;
+        }else{
+            return true;
+        }
+    }
+
+    static function validateLengthMax(MyRequest $request, $name, $max_len, $notify){
+        if(strlen($request->input($name)) > $max_len){
+            return $notify;
+        }else{
+            return true;
+        }
+    }
+
+    static function validateNumeric(MyRequest $request, $name, $notify){
+        if(!is_numeric($request->input($name))){
+            return $notify;
+        }else{
+            return true;
+        }
+    }
+
+    static function validateNumericRange(MyRequest $request, $name, $min, $max, $notify){
+        if(!is_numeric($request->input($name)) || $request->input($name) < $min || $request->input($name) > $max){
+            return $notify;
+        }else{
+            return true;
+        }
+    }
+
+
+    static function validatePattern(MyRequest $request, $name, $pattern, $notify){
+        if(!preg_match($pattern, $request->input($name))){
+            return $notify;
+        }else{
+            return true;
+        }
+    }
+}

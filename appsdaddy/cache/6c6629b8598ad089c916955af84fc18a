@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mosaddek">
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-    <link rel="shortcut icon" href="<?php echo e($assets); ?>towers/img/favicon.html">
+    <link rel="shortcut icon" href="<?php echo e($assets); ?>towers/img/ring.jpg">
 
     <title><?php echo $__env->yieldContent('title'); ?></title>
 
@@ -99,13 +99,49 @@
                   <li class="sub-menu">
                       <a class="" href="user_mgmr.html&sid=<?php echo e($sid); ?>">
                           <i class="icon-cogs"></i>
-                          <span>日志管理</span>
+                          <span>操作日志</span>
+                      </a>
+                  </li>
+                  <li class="sub-menu">
+                      <a class="" href="user_mgmr.html&sid=<?php echo e($sid); ?>">
+                          <i class="icon-cogs"></i>
+                          <span>崩溃日志</span>
+                      </a>
+                  </li>
+                  <li class="sub-menu">
+                      <a class="" href="user_mgmr.html&sid=<?php echo e($sid); ?>">
+                          <i class="icon-cogs"></i>
+                          <span>请求日志</span>
                       </a>
                   </li>
                   <li class="sub-menu">
                       <a class="" href="admin_mgmr.html&sid=<?php echo e($sid); ?>">
                           <i class="icon-book"></i>
                           <span>leak & block</span>
+                      </a>
+                  </li>
+                  <li class="sub-menu">
+                      <a class="" href="admin_mgmr.html&sid=<?php echo e($sid); ?>">
+                          <i class="icon-book"></i>
+                          <span>推送测试</span>
+                      </a>
+                  </li>
+                  <li class="sub-menu">
+                      <a class="" href="admin_mgmr.html&sid=<?php echo e($sid); ?>">
+                          <i class="icon-book"></i>
+                          <span>手机数据库</span>
+                      </a>
+                  </li>
+                  <li class="sub-menu">
+                      <a class="" href="admin_mgmr.html&sid=<?php echo e($sid); ?>">
+                          <i class="icon-book"></i>
+                          <span>app resource管理</span>
+                      </a>
+                  </li>
+                  <li class="sub-menu">
+                      <a class="" href="admin_mgmr.html&sid=<?php echo e($sid); ?>">
+                          <i class="icon-book"></i>
+                          <span>代码片段查询</span>
                       </a>
                   </li>
                    <li class="sub-menu">
