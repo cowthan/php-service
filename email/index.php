@@ -36,7 +36,7 @@ function sendMail($to,$title,$content){
     // $mail->Helo = 'Hello smtp.qq.com Server';
 
     //设置发件人的主机域 可有可无 默认为localhost 内容任意，建议使用你的域名
-    $mail->Hostname = 'http://www.lsgogroup.com';
+    $mail->Hostname = '';//http://www.lsgogroup.com
 
     //设置发送的邮件的编码 可选GB2312 我喜欢utf-8 据说utf8在某些客户端收信下会乱码
     $mail->CharSet = 'UTF-8';
