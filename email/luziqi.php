@@ -83,7 +83,7 @@ function sendMail($to,$title,$content){
     }
 }
 
-http://localhost:7888/service/email/luziqi.php?to=317190770@qq.com&subject=ssss&content=%E5%93%88%E5%93%88%E5%93%88%E5%93%88%E5%93%88%E5%93%88
+//http://localhost:7888/service/email/luziqi.php?to=317190770@qq.com&subject=ssss&content=%E5%93%88%E5%93%88%E5%93%88%E5%93%88%E5%93%88%E5%93%88
 
 
 // function sendMail($to,$title,$content){
